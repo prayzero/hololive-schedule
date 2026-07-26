@@ -5,11 +5,14 @@ import {
   Check,
   ChevronRight,
   Clock3,
+  Disc3,
   ExternalLink,
   Globe2,
+  Headphones,
   History,
   Info,
   MapPin,
+  Music2,
   Play,
   Radio,
   Search,
@@ -29,11 +32,13 @@ import {
   type ReactNode,
 } from "react";
 import { DreamPage } from "./dream/DreamPage";
+import { MusicPage } from "./music/MusicPage";
 import type {
   CuratedEvent,
   EventRegion,
   EventsPayload,
   HololiveDreamsPayload,
+  MusicPayload,
   ScheduleEntry,
   SchedulePayload,
   SoloLive,
@@ -53,12 +58,20 @@ const DATA_URLS = {
   solos: `${BASE_URL}data/solo-lives.json`,
   youtubeLives: `${BASE_URL}data/youtube-lives.json`,
   hololiveDreams: `${BASE_URL}data/hololive-dreams.json`,
+  music: `${BASE_URL}data/music.json`,
 };
 const OFFICIAL_SCHEDULE_URL = "https://schedule.hololive.tv/lives/hololive";
 const OFFICIAL_TALENTS_URL = "https://hololive.hololivepro.com/en/talents";
 const OFFICIAL_DREAMS_URL = "https://www.hololive-dreams.com/en";
+const OFFICIAL_MUSIC_URL = "https://hololive.hololivepro.com/en/music/";
 
-type PageView = "schedule" | "concerts" | "solo" | "local" | "dream";
+type PageView =
+  | "schedule"
+  | "concerts"
+  | "solo"
+  | "local"
+  | "music"
+  | "dream";
 type ConcertPeriod = "upcoming" | "past";
 type DreamPanel = "collection" | "calculator";
 type YouTubeCategoryFilter = "all" | YouTubeLiveCategory;
@@ -124,6 +137,12 @@ const PAGE_META: Record<
     description:
       "팝업, 전시, 카페, 카드게임 등 공식 현지 콜라보를 지역별로 정리했습니다.",
   },
+  music: {
+    eyebrow: "HOLOLIVE MUSIC",
+    title: "한 사람의 목소리를, 한곳에서.",
+    description:
+      "기수와 데뷔 순으로 멤버를 찾고 솔로곡·앨범·콜라보·커버를 한 번에 확인하세요.",
+  },
   dream: {
     eyebrow: "HOLOLIVE DREAMS",
     title: "뽑은 순간부터, 나만의 컬렉션.",
@@ -137,6 +156,7 @@ const NAV_ITEMS: Array<{ id: PageView; label: string; shortLabel: string }> = [
   { id: "concerts", label: "콘서트", shortLabel: "공연" },
   { id: "solo", label: "YouTube 라이브", shortLabel: "영상" },
   { id: "local", label: "일본·한국", shortLabel: "현지" },
+  { id: "music", label: "음악", shortLabel: "음악" },
   { id: "dream", label: "홀로라이브 드림", shortLabel: "드림" },
 ];
 
@@ -856,6 +876,8 @@ function LoadingGrid() {
 export default function App() {
   const [data, setData] = useState<LoadedData | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [musicData, setMusicData] = useState<MusicPayload | null>(null);
+  const [musicError, setMusicError] = useState<string | null>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
   const [now, setNow] = useState(() => new Date());
   const [view, setView] = useState<PageView>(initialView);
@@ -912,11 +934,17 @@ export default function App() {
         ];
 
         if (responses.some((response) => !response.ok)) {
-          throw new Error("일정 데이터 일부를 불러오지 못했습니다.");
+          throw new Error("사이트 데이터 일부를 불러오지 못했습니다.");
         }
 
-        const [schedule, events, talents, solos, youtubeLives, hololiveDreams] =
-          await Promise.all([
+        const [
+          schedule,
+          events,
+          talents,
+          solos,
+          youtubeLives,
+          hololiveDreams,
+        ] = await Promise.all([
             scheduleResponse.json() as Promise<SchedulePayload>,
             eventsResponse.json() as Promise<EventsPayload>,
             talentsResponse.json() as Promise<TalentsPayload>,
@@ -938,7 +966,7 @@ export default function App() {
           setError(
             loadError instanceof Error
               ? loadError.message
-              : "일정을 불러오지 못했습니다.",
+              : "사이트 데이터를 불러오지 못했습니다.",
           );
         }
       }
@@ -947,6 +975,41 @@ export default function App() {
     void loadData();
     return () => controller.abort();
   }, []);
+
+  useEffect(() => {
+    if (view !== "music" || musicData) {
+      return;
+    }
+
+    const controller = new AbortController();
+
+    async function loadMusicData() {
+      try {
+        setMusicError(null);
+        const response = await fetch(DATA_URLS.music, {
+          cache: "no-store",
+          signal: controller.signal,
+        });
+
+        if (!response.ok) {
+          throw new Error("음악 데이터를 불러오지 못했습니다.");
+        }
+
+        setMusicData((await response.json()) as MusicPayload);
+      } catch (loadError) {
+        if (!controller.signal.aborted) {
+          setMusicError(
+            loadError instanceof Error
+              ? loadError.message
+              : "음악 데이터를 불러오지 못했습니다.",
+          );
+        }
+      }
+    }
+
+    void loadMusicData();
+    return () => controller.abort();
+  }, [musicData, view]);
 
   useEffect(() => {
     const timer = window.setInterval(() => setNow(new Date()), 60_000);
@@ -1004,6 +1067,10 @@ export default function App() {
       }
     }
 
+    if (view === "music" && selectedMemberId) {
+      params.set("member", selectedMemberId);
+    }
+
     if (view === "local" && region !== "ALL") {
       params.set("region", region);
     }
@@ -1032,7 +1099,26 @@ export default function App() {
   const talents = data?.talents.talents ?? [];
   const soloLives = data?.solos.lives ?? [];
   const youtubeLives = data?.youtubeLives.lives ?? [];
+  const musicTracks = musicData?.tracks ?? [];
   const normalizedQuery = normalizeSearch(query);
+
+  const musicOriginalCount = useMemo(
+    () => musicTracks.filter((track) => track.category !== "cover").length,
+    [musicTracks],
+  );
+  const musicCoverCount = useMemo(
+    () => musicTracks.filter((track) => track.category === "cover").length,
+    [musicTracks],
+  );
+  const musicAlbumCount = useMemo(
+    () =>
+      new Set(
+        musicTracks
+          .map((track) => track.albumTitle?.trim())
+          .filter((title): title is string => Boolean(title)),
+      ).size,
+    [musicTracks],
+  );
 
   const talentById = useMemo(
     () => new Map(talents.map((talent) => [talent.id, talent])),
@@ -1465,6 +1551,12 @@ export default function App() {
     }, 0);
   }
 
+  function openMusicArchive() {
+    document
+      .getElementById("hololive-music")
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
   const currentMeta = PAGE_META[view];
 
   return (
@@ -1507,11 +1599,21 @@ export default function App() {
 
         <a
           className="header-official-link"
-          href={view === "dream" ? OFFICIAL_DREAMS_URL : OFFICIAL_SCHEDULE_URL}
+          href={
+            view === "dream"
+              ? OFFICIAL_DREAMS_URL
+              : view === "music"
+                ? OFFICIAL_MUSIC_URL
+                : OFFICIAL_SCHEDULE_URL
+          }
           target="_blank"
           rel="noreferrer"
         >
-          {view === "dream" ? "공식 게임" : "공식 일정"}
+          {view === "dream"
+            ? "공식 게임"
+            : view === "music"
+              ? "공식 음악"
+              : "공식 일정"}
           <ArrowUpRight size={15} aria-hidden="true" />
         </a>
       </header>
@@ -1533,7 +1635,9 @@ export default function App() {
               <label className="sr-only" htmlFor="global-search">
                 {view === "dream"
                   ? "홀로라이브 드림 캐릭터 검색"
-                  : "멤버, 방송, 영상, 공연 검색"}
+                  : view === "music"
+                    ? "멤버, 곡, 앨범 검색"
+                    : "멤버, 방송, 영상, 공연 검색"}
               </label>
               <input
                 id="global-search"
@@ -1548,7 +1652,9 @@ export default function App() {
                 placeholder={
                   view === "dream"
                     ? "보유 캐릭터 이름 검색"
-                    : "멤버 · 방송 · 영상 · 공연 검색"
+                    : view === "music"
+                      ? "멤버 · 곡 · 앨범 검색"
+                      : "멤버 · 방송 · 영상 · 공연 검색"
                 }
                 autoComplete="off"
               />
@@ -1565,7 +1671,9 @@ export default function App() {
                 <kbd>/</kbd>
               )}
 
-              {view !== "dream" && matchingTalents.length > 0 ? (
+              {view !== "dream" &&
+              view !== "music" &&
+              matchingTalents.length > 0 ? (
                 <div className="search-popover" role="listbox">
                   <span>멤버를 누르면 YouTube 라이브가 열립니다</span>
                   {matchingTalents.map((talent) => (
@@ -1604,10 +1712,23 @@ export default function App() {
                     <Sparkles size={15} aria-hidden="true" /> 무료 확률 계산
                   </span>
                 </>
+              ) : view === "music" ? (
+                <>
+                  <span>
+                    <UsersRound size={15} aria-hidden="true" />{" "}
+                    {musicData?.members.length ?? 65}명 음악 기록
+                  </span>
+                  <span>
+                    <Disc3 size={15} aria-hidden="true" /> 앨범 · 콜라보 · 커버
+                  </span>
+                  <span>
+                    <Check size={15} aria-hidden="true" /> 공식 감상 링크
+                  </span>
+                </>
               ) : (
                 <>
                   <span>
-                    <Check size={15} aria-hidden="true" /> 여성 탤런트 전용
+                    <Check size={15} aria-hidden="true" /> hololive 채널 전용
                   </span>
                   <span>
                     <Globe2 size={15} aria-hidden="true" /> KST · JST
@@ -1622,7 +1743,13 @@ export default function App() {
 
           <aside
             className="hero-dashboard"
-            aria-label={view === "dream" ? "홀로라이브 드림 요약" : "오늘의 일정 요약"}
+            aria-label={
+              view === "dream"
+                ? "홀로라이브 드림 요약"
+                : view === "music"
+                  ? "홀로라이브 음악 아카이브 요약"
+                  : "오늘의 일정 요약"
+            }
           >
             {view === "dream" ? (
               <>
@@ -1657,6 +1784,49 @@ export default function App() {
                     <small>LUCK CALCULATOR</small>
                     <strong>이번 뽑기, 얼마나 운이 좋았을까요?</strong>
                     <em>실제 확률과 결과를 넣어 바로 계산해 보세요.</em>
+                  </span>
+                  <ArrowRight size={19} aria-hidden="true" />
+                </button>
+              </>
+            ) : view === "music" ? (
+              <>
+                <div className="dashboard-heading">
+                  <span>MEMBER MUSIC ARCHIVE</span>
+                  <time>
+                    {musicData?.checkedAt
+                      ? `${UPDATE_FORMATTER.format(
+                          new Date(musicData.checkedAt),
+                        )} 확인`
+                      : "데이터 준비 중"}
+                  </time>
+                </div>
+                <div className="dashboard-stats">
+                  <div>
+                    <UsersRound size={18} aria-hidden="true" />
+                    <strong>{musicData?.members.length ?? 0}</strong>
+                    <span>현재 멤버</span>
+                  </div>
+                  <div>
+                    <Music2 size={18} aria-hidden="true" />
+                    <strong>{musicOriginalCount}</strong>
+                    <span>오리지널 · 콜라보</span>
+                  </div>
+                  <div>
+                    <Headphones size={18} aria-hidden="true" />
+                    <strong>{musicCoverCount}</strong>
+                    <span>커버곡</span>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  className="featured-solo music-library-cta"
+                  onClick={openMusicArchive}
+                >
+                  <Disc3 size={30} aria-hidden="true" />
+                  <span>
+                    <small>{musicAlbumCount} ALBUM GROUPS</small>
+                    <strong>멤버별 디스코그래피 열기</strong>
+                    <em>곡 길이와 공식 감상 링크까지 확인하세요.</em>
                   </span>
                   <ArrowRight size={19} aria-hidden="true" />
                 </button>
@@ -1711,12 +1881,14 @@ export default function App() {
           </aside>
         </section>
 
-        {error ? (
+        {error || (view === "music" && musicError) ? (
           <div className="data-alert" role="alert">
             <Info size={20} aria-hidden="true" />
             <div>
-              <strong>일정 데이터를 불러오지 못했습니다.</strong>
-              <p>{error} 잠시 뒤 새로고침해 주세요.</p>
+              <strong>사이트 데이터를 불러오지 못했습니다.</strong>
+              <p>
+                {error ?? musicError} 잠시 뒤 새로고침해 주세요.
+              </p>
             </div>
           </div>
         ) : null}
@@ -1975,8 +2147,7 @@ export default function App() {
                 <div>
                   <strong>멤버 얼굴로 찾기</strong>
                   <span>
-                    JP · DEV_IS · EN · ID 순서로 모든 여성 탤런트를
-                    보여드려요.
+                    JP · DEV_IS · EN · ID 순서로 hololive 탤런트를 보여드려요.
                   </span>
                 </div>
                 {selectedTalent ? (
@@ -2159,6 +2330,22 @@ export default function App() {
           </section>
         ) : null}
 
+        {view === "music" ? (
+          data && musicData ? (
+            <MusicPage
+              payload={musicData}
+              talents={talents}
+              query={query}
+              selectedMemberId={selectedMemberId}
+              onSelectedMemberChange={setSelectedMemberId}
+            />
+          ) : (
+            <section className="page-section" id="hololive-music">
+              <LoadingGrid />
+            </section>
+          )
+        ) : null}
+
         {view === "dream" ? (
           data ? (
             <DreamPage
@@ -2192,6 +2379,9 @@ export default function App() {
           </a>
           <a href={OFFICIAL_TALENTS_URL} target="_blank" rel="noreferrer">
             공식 탤런트 <ExternalLink size={14} aria-hidden="true" />
+          </a>
+          <a href={OFFICIAL_MUSIC_URL} target="_blank" rel="noreferrer">
+            공식 음악 <ExternalLink size={14} aria-hidden="true" />
           </a>
           <a href={OFFICIAL_DREAMS_URL} target="_blank" rel="noreferrer">
             공식 게임 <ExternalLink size={14} aria-hidden="true" />

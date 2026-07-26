@@ -1,15 +1,17 @@
 # HOLO NOW — GitHub Pages 일정 사이트
 
-홀로라이브 여성 탤런트의 공개 방송 일정, 공식 콘서트 기록, 무료 YouTube
-라이브 아카이브, 일본·한국 현지 행사를 한눈에 보는 비공식 정적 페이지입니다.
+홀로라이브 탤런트의 공개 방송 일정, 공식 콘서트 기록, 무료 YouTube
+라이브 아카이브, 음악과 일본·한국 현지 행사를 한눈에 보는 비공식 정적 페이지입니다.
 
 ## 주요 기능
 
-- JP·EN·ID·DEV_IS 여성 브랜치만 수집하는 방송 일정
+- JP·EN·ID·DEV_IS hololive 채널만 수집하는 방송 일정
 - 공식 합동 공연과 정식·유료 솔로 공연을 합친 콘서트 아카이브
 - 한국어·영문·일문·별칭을 지원하는 검색
-- 모든 여성 탤런트의 얼굴과 카테고리로 찾는 무료 YouTube 라이브
+- 모든 현재 탤런트의 얼굴과 카테고리로 찾는 무료 YouTube 라이브
 - 일본·한국 공식 현지 행사 필터
+- 기수·데뷔 순 멤버 목록과 앨범별 솔로곡, 콜라보, 커버를 모은 음악 아카이브
+- 곡 길이 정렬과 YouTube·음원·앨범 감상 링크
 - `hololive Dreams` 공식 참여 멤버 54명의 브라우저 저장형 보유 체크리스트
 - 확인된 게임 내 제공 비율을 자동 적용하는 뽑기 확률·운 백분위 계산기
 - 모바일과 데스크톱에 맞춘 반응형 카드 UI
@@ -59,7 +61,7 @@ npm run build
     한국어 요약입니다.
   - 새 공식 발표가 나오면 이 파일을 검토해 추가합니다.
 - `public/data/talents.json`
-  - 공식 여성 로스터의 프로필, 얼굴 이미지, 검색용 별칭을 담습니다.
+  - 공식 hololive 로스터의 프로필, 얼굴 이미지, 검색용 별칭을 담습니다.
   - 과거 솔로 공연 연결을 위해 일부 졸업 멤버는 `alumni`로 별도 표시합니다.
 - `public/data/solo-lives.json`
   - 공식 이벤트·뉴스와 공식 주최·레이블 페이지에서 확인한 주요
@@ -71,6 +73,11 @@ npm run build
     콘서트 아카이브입니다.
   - 영상 ID, 멤버 ID, 카테고리, 공개일, 길이, 썸네일과 YouTube 링크를
     담으며 길이를 확인할 수 없는 영상도 지원합니다.
+- `public/data/music.json`
+  - 현재 활동·제휴 멤버를 기수와 공식 데뷔일 순으로 정렬할 수 있는 정보와
+    솔로곡·콜라보·커버의 제목, 앨범, 공개일, 곡 길이, 감상 링크를 담습니다.
+  - 공개 원곡·커버 목록을 공식 프로필 및 음악 링크와 대조하며, 원곡 길이는
+    공개 YouTube 재생 메타데이터에서 확인합니다. 확인할 수 없는 길이는 비워 둡니다.
 - `public/data/hololive-dreams.json`
   - `hololive Dreams` 공식 사이트의 출시 참여 멤버 54명과 공식 캐릭터
     썸네일을 담습니다.
@@ -89,6 +96,7 @@ npm run collect:youtube-archive
 npm run enrich:youtube-archive
 npm run update:youtube-archive
 npm run update:hololive-dreams
+npm run update:music
 ```
 
 ## 새 GitHub Pages로 배포

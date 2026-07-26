@@ -143,6 +143,45 @@ export interface YouTubeLivesPayload {
   lives: YouTubeLive[];
 }
 
+export type MusicCategory = "solo" | "collaboration" | "cover";
+export type MusicSort = "release" | "duration-asc" | "duration-desc";
+
+export interface MusicLink {
+  label: string;
+  kind: "youtube" | "streaming" | "music" | "album" | "other";
+  url: string;
+}
+
+export interface MusicMember {
+  talentId: string;
+  debutDate: string | null;
+  cohortOrder: number;
+  debutOrder: number;
+}
+
+export interface MusicTrack {
+  id: string;
+  title: string;
+  subtitle: string | null;
+  category: MusicCategory;
+  memberIds: string[];
+  artist: string;
+  releaseDate: string | null;
+  durationSeconds: number | null;
+  albumTitle: string | null;
+  releaseType: string | null;
+  thumbnailUrl: string | null;
+  links: MusicLink[];
+}
+
+export interface MusicPayload {
+  checkedAt: string;
+  sourceNote: string;
+  sourceUrls: string[];
+  members: MusicMember[];
+  tracks: MusicTrack[];
+}
+
 export interface DreamCharacter {
   id: string;
   talentId: string;

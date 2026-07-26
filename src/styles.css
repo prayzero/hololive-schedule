@@ -39,7 +39,8 @@ body {
 }
 
 button,
-input {
+input,
+select {
   font: inherit;
 }
 
@@ -282,6 +283,16 @@ img {
 .hero-local {
   --hero-primary: #31b99c;
   --hero-secondary: #4ba5ef;
+}
+
+.hero-music {
+  --hero-primary: #5577ed;
+  --hero-secondary: #d460c7;
+  background:
+    radial-gradient(circle at 85% 14%, rgba(229, 103, 193, 0.16), transparent 27%),
+    radial-gradient(circle at 18% 88%, rgba(58, 194, 220, 0.12), transparent 29%),
+    linear-gradient(125deg, rgba(255, 255, 255, 0.97), rgba(244, 246, 255, 0.84)),
+    #f1f3ff;
 }
 
 .hero-dream {
@@ -619,6 +630,13 @@ img {
 }
 
 .dream-calculator-cta > svg:first-child {
+  flex: 0 0 auto;
+  padding: 7px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.music-library-cta > svg:first-child {
   flex: 0 0 auto;
   padding: 7px;
   border-radius: 12px;
@@ -2197,7 +2215,8 @@ footer {
 
 button:focus-visible,
 a:focus-visible,
-input:focus-visible {
+input:focus-visible,
+select:focus-visible {
   outline: 3px solid rgba(38, 185, 214, 0.3);
   outline-offset: 3px;
 }

@@ -10,6 +10,8 @@
 - 한국어·영문·일문·별칭을 지원하는 검색
 - 모든 여성 탤런트의 얼굴과 카테고리로 찾는 무료 YouTube 라이브
 - 일본·한국 공식 현지 행사 필터
+- `hololive Dreams` 공식 참여 멤버 54명의 브라우저 저장형 보유 체크리스트
+- 게임 내 제공 비율을 직접 넣어 계산하는 뽑기 확률·운 백분위 계산기
 - 모바일과 데스크톱에 맞춘 반응형 카드 UI
 
 ## 비용
@@ -69,6 +71,13 @@ npm run build
     콘서트 아카이브입니다.
   - 영상 ID, 멤버 ID, 카테고리, 공개일, 길이, 썸네일과 YouTube 링크를
     담으며 길이를 확인할 수 없는 영상도 지원합니다.
+- `public/data/hololive-dreams.json`
+  - `hololive Dreams` 공식 사이트의 출시 참여 멤버 54명과 공식 캐릭터
+    썸네일을 담습니다.
+  - 공개 공식 웹에는 공통 소환 확률이 게시되어 있지 않아, 계산기에서는
+    게임 내 각 배너의 `제공 비율`을 사용자가 직접 입력합니다.
+  - 보유 체크 정보는 로그인이나 서버 없이 현재 브라우저의 로컬 저장소에만
+    저장됩니다.
 
 YouTube 아카이브 수집·정리 스크립트는 별도 API 키나 유료 서비스 없이
 실행됩니다.
@@ -77,6 +86,7 @@ YouTube 아카이브 수집·정리 스크립트는 별도 API 키나 유료 서
 npm run collect:youtube-archive
 npm run enrich:youtube-archive
 npm run update:youtube-archive
+npm run update:hololive-dreams
 ```
 
 ## 새 GitHub Pages로 배포

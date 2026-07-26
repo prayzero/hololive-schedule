@@ -9,6 +9,7 @@
     "collect:youtube-archive": "node scripts/collect-youtube-live-archive.mjs",
     "enrich:youtube-archive": "node scripts/enrich-youtube-live-metadata.mjs",
     "update:youtube-archive": "node scripts/compile-youtube-live-archive.mjs",
+    "update:hololive-dreams": "node scripts/update-hololive-dreams.mjs",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "check": "npm run build"

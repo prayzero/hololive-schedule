@@ -142,3 +142,38 @@ export interface YouTubeLivesPayload {
   missingMemberIds: string[];
   lives: YouTubeLive[];
 }
+
+export interface DreamCharacter {
+  id: string;
+  talentId: string;
+  name: string;
+  nameKo: string;
+  nativeName: string;
+  branch: TalentBranch;
+  generation: string;
+  imageUrl: string;
+  accent: string;
+}
+
+export interface DreamGameInfo {
+  title: string;
+  shortName: string;
+  genre: string;
+  pricing: string;
+  officialUrl: string;
+  appStoreUrl: string;
+  googlePlayUrl: string;
+  steamUrl: string;
+}
+
+export interface HololiveDreamsPayload {
+  checkedAt: string;
+  sourceUrl: string;
+  officialNewsUrl: string;
+  sourceNote: string;
+  launchDate: string;
+  game: DreamGameInfo;
+  rarities: number[];
+  ratesPublishedOnOfficialWeb: boolean;
+  characters: DreamCharacter[];
+}

@@ -284,6 +284,15 @@ img {
   --hero-secondary: #4ba5ef;
 }
 
+.hero-dream {
+  --hero-primary: #7d5cf5;
+  --hero-secondary: #21c3d8;
+  background:
+    radial-gradient(circle at 82% 18%, rgba(255, 200, 91, 0.16), transparent 25%),
+    linear-gradient(125deg, rgba(255, 255, 255, 0.96), rgba(245, 242, 255, 0.82)),
+    #f3f0ff;
+}
+
 .hero-glow {
   position: absolute;
   border-radius: 50%;
@@ -607,6 +616,13 @@ img {
 
 .featured-solo:hover {
   transform: translateY(-2px);
+}
+
+.dream-calculator-cta > svg:first-child {
+  flex: 0 0 auto;
+  padding: 7px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.16);
 }
 
 .featured-solo > span:nth-child(2) {
@@ -2246,7 +2262,7 @@ input:focus-visible {
 
   .primary-nav {
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
     overflow-x: auto;
     scrollbar-width: none;
   }
@@ -2335,8 +2351,9 @@ input:focus-visible {
   }
 
   .primary-nav button {
+    flex: 1 0 58px;
     min-height: 38px;
-    padding: 0 17px;
+    padding: 0 10px;
     font-size: 11px;
   }
 

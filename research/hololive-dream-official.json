@@ -1,0 +1,561 @@
+{
+  "checkedAt": "2026-07-26T12:24:21+09:00",
+  "game": {
+    "title": "hololive Dreams",
+    "shortName": "holodori",
+    "genre": "Rhythm & RPG",
+    "priceModel": "Free-to-play with in-app purchases",
+    "officialLaunchDateJst": "2026-07-23",
+    "platforms": [
+      "iOS",
+      "Android",
+      "Steam"
+    ],
+    "officialWebsiteUrl": "https://www.hololive-dreams.com/en/",
+    "officialLaunchSourceUrl": "https://hololive.hololivepro.com/en/news/20260723-01-401/",
+    "appStoreUrl": "https://apps.apple.com/jp/app/id6756641135",
+    "googlePlayUrl": "https://play.google.com/store/apps/details?id=game.qualiarts.hololive.dreams.jp",
+    "steamUrl": "https://store.steampowered.com/app/4282500/hololive_Dreams",
+    "publisher": "QualiArts, Inc.",
+    "developmentAndOperations": [
+      "COVER Corporation",
+      "QualiArts, Inc."
+    ]
+  },
+  "rosterScope": {
+    "officialLaunchRosterCount": 54,
+    "characterCountInThisFile": 54,
+    "includedGroups": [
+      "hololive",
+      "hololive English",
+      "hololive Indonesia",
+      "hololive DEV_IS"
+    ],
+    "holostarsIncluded": false,
+    "maleTalentsIncluded": false,
+    "scopeEvidence": "The official game site's complete 54-name Holomem list contains only the four female hololive groups above. No HOLOSTARS group or male talent appears in that official roster.",
+    "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+  },
+  "gacha": {
+    "collectionUnitRecommendedForTracker": "talent",
+    "rarityTiersOfficiallyDisclosed": [
+      3,
+      4,
+      5
+    ],
+    "raritySourceUrl": "https://pre-register.hololive-dreams.com/",
+    "starterRedraw": {
+      "available": true,
+      "result": "One talent of the player's choice at the highest rarity",
+      "sourceUrl": "https://hololive.hololivepro.com/en/news/20260723-01-401/"
+    },
+    "officialLaunchRewardConversion": {
+      "diamonds": 2500,
+      "pulls": 10,
+      "impliedDiamondsPerPull": 250,
+      "sourceUrl": "https://hololive.hololivepro.com/en/news/20260723-01-401/"
+    },
+    "publicOfficialProbabilityDisclosure": {
+      "status": "not-found-on-public-official-web",
+      "threeStarRate": null,
+      "fourStarRate": null,
+      "fiveStarRate": null,
+      "featuredRate": null,
+      "pityOrCeilingRule": null,
+      "note": "As of the checkedAt time, the official website, official public news page, official launch release, official stores, and pre-registration page did not publish numeric rarity rates or a pity/exchange ceiling. Exact numbers shown only inside the game should not be hard-coded without a captured official in-game notice.",
+      "calculatorRecommendation": "Keep the probability input editable and label any unverified default as user-entered. Do not present community guide numbers as official."
+    }
+  },
+  "fieldAvailability": {
+    "officiallyPublicPerTalent": [
+      "official game roster ID",
+      "English display name",
+      "group",
+      "unit or generation",
+      "official game-site thumbnail"
+    ],
+    "notEnumeratedOnPublicOfficialWebPerTalent": [
+      "individual card IDs",
+      "individual card rarity",
+      "card attribute or type",
+      "card stats",
+      "individual pull probability",
+      "card-specific gacha availability"
+    ]
+  },
+  "characters": [
+    {
+      "id": "todoroki-hajime",
+      "name": "Todoroki Hajime",
+      "group": "DEV_IS",
+      "unit": "ReGLOSS",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/e101f86f5834420d9e53952d4f939556/hajime-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "juufuutei-raden",
+      "name": "Juufuutei Raden",
+      "group": "DEV_IS",
+      "unit": "ReGLOSS",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/83b51c64bbbb4f4cac31719d6e429e56/raden-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "ichijou-ririka",
+      "name": "Ichijou Ririka",
+      "group": "DEV_IS",
+      "unit": "ReGLOSS",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/3e0d41f26b1d4665af990c557b9a89ee/ririka-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "otonose-kanade",
+      "name": "Otonose Kanade",
+      "group": "DEV_IS",
+      "unit": "ReGLOSS",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/5f46a4adcc0d410b978fd4385289e30e/kanade-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "mococo-abyssgard",
+      "name": "Mococo Abyssgard",
+      "group": "EN",
+      "unit": "Advent",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/3d55fa6360d043febba6c8744a35b725/mococo-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "fuwawa-abyssgard",
+      "name": "Fuwawa Abyssgard",
+      "group": "EN",
+      "unit": "Advent",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/c1df586021224c91b75d4338c8e40dfc/fuwawa-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "nerissa-ravencroft",
+      "name": "Nerissa Ravencroft",
+      "group": "EN",
+      "unit": "Advent",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/0043249dffda433e8e625bab0283f89f/nerissa-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "koseki-bijou",
+      "name": "Koseki Bijou",
+      "group": "EN",
+      "unit": "Advent",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/e7f7ce711b1949e2818ee550995093e2/bijou-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "shiori-novella",
+      "name": "Shiori Novella",
+      "group": "EN",
+      "unit": "Advent",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/d1eae5972a724e24bd43a35f00de3d87/shiori-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "hakos-baelz",
+      "name": "Hakos Baelz",
+      "group": "EN",
+      "unit": "Promise",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/aebe5e38086648aca61c7319c00873f0/baelz-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "ouro-kronii",
+      "name": "Ouro Kronii",
+      "group": "EN",
+      "unit": "Promise",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/66dfe4cfda194bb5aed236743f4c1ab5/kuronii-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "irys",
+      "name": "IRyS",
+      "group": "EN",
+      "unit": "Promise",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/c8caedbc91ed448d83e6303e19dc6e80/irys-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "ninomae-inanis",
+      "name": "Ninomae Ina'nis",
+      "group": "EN",
+      "unit": "Myth",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/b2974d0f9dc249e8b0762aa88397a9f7/inanis-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "takanashi-kiara",
+      "name": "Takanashi Kiara",
+      "group": "EN",
+      "unit": "Myth",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/8ffc14508c8a469b925a6e98ca1ff1d3/kiara-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "mori-calliope",
+      "name": "Mori Calliope",
+      "group": "EN",
+      "unit": "Myth",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/b337e9da4cf844f385235b7b5fb0a837/calliope-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "kobo-kanaeru",
+      "name": "Kobo Kanaeru",
+      "group": "ID",
+      "unit": "Gen 3",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/5c6adab15fbc4c2eb50643073064c940/kobo-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "kaela-kovalskia",
+      "name": "Kaela Kovalskia",
+      "group": "ID",
+      "unit": "Gen 3",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/9295a1461ad44730ab7ab6ea8fbb6365/kaela-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "vestia-zeta",
+      "name": "Vestia Zeta",
+      "group": "ID",
+      "unit": "Gen 3",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/f7471ae33bbf4a8f8518ae7a9194468b/zeta-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "pavolia-reine",
+      "name": "Pavolia Reine",
+      "group": "ID",
+      "unit": "Gen 2",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/368bc52be5974aee8c9543504c791fd7/reine-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "anya-melfissa",
+      "name": "Anya Melfissa",
+      "group": "ID",
+      "unit": "Gen 2",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/3a5ba19be7b04beb8c2462c1b51feacf/anya-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "kureiji-ollie",
+      "name": "Kureiji Ollie",
+      "group": "ID",
+      "unit": "Gen 2",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/ee27a4f327014ef28c3629e7b57a245b/ollie-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "airani-iofifteen",
+      "name": "Airani Iofifteen",
+      "group": "ID",
+      "unit": "Gen 1",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/207cc475944549a080a0c7aaf353416d/iofi-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "moona-hoshinova",
+      "name": "Moona Hoshinova",
+      "group": "ID",
+      "unit": "Gen 1",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/1bd39df2a5004650a8076cd7cfc1ffd2/moona-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "ayunda-risu",
+      "name": "Ayunda Risu",
+      "group": "ID",
+      "unit": "Gen 1",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/0299cbbb67ff4303a87c642e290a5ca3/risu-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "kazama-iroha",
+      "name": "Kazama Iroha",
+      "group": "JP",
+      "unit": "holoX",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/6a2c9f534dcb404d9ad1aa595029b9d3/iroha-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "hakui-koyori",
+      "name": "Hakui Koyori",
+      "group": "JP",
+      "unit": "holoX",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/c5405f9bf1aa41da8a722ae3cd402f75/koyori-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "takane-lui",
+      "name": "Takane Lui",
+      "group": "JP",
+      "unit": "holoX",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/b694fa24658b41968b467f176c92faa3/lui-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "la-darknesss",
+      "name": "La+ Darknesss",
+      "group": "JP",
+      "unit": "holoX",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/7e98a0c2018c4d7c935bce849fcbdfb0/la%2B-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "omaru-polka",
+      "name": "Omaru Polka",
+      "group": "JP",
+      "unit": "Gen 5",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/ec2dd64acb644126a4591f1e6dad2ec1/polka-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "shishiro-botan",
+      "name": "Shishiro Botan",
+      "group": "JP",
+      "unit": "Gen 5",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/984d6e499a414367a1c2a4d2e952a713/botan-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "momosuzu-nene",
+      "name": "Momosuzu Nene",
+      "group": "JP",
+      "unit": "Gen 5",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/156de050b066424cbbe0e1a6884ebd46/nene-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "yukihana-lamy",
+      "name": "Yukihana Lamy",
+      "group": "JP",
+      "unit": "Gen 5",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/39c701f7dd604c4fa0e0adc37517f318/lamy-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "himemori-luna",
+      "name": "Himemori Luna",
+      "group": "JP",
+      "unit": "Gen 4",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/773da20669dd4492bb91e29de166cb85/luna-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "tokoyami-towa",
+      "name": "Tokoyami Towa",
+      "group": "JP",
+      "unit": "Gen 4",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/c6c1d824d2ac41ed812480841d176fb3/towa-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "tsunomaki-watame",
+      "name": "Tsunomaki Watame",
+      "group": "JP",
+      "unit": "Gen 4",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/ee8ef07e5d2a46d3b95bd9441312719e/watame-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "houshou-marine",
+      "name": "Houshou Marine",
+      "group": "JP",
+      "unit": "Gen 3",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/9e910cb3fd8c4c5fb9de5ab9c1a698c6/marin-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "shirogane-noel",
+      "name": "Shirogane Noel",
+      "group": "JP",
+      "unit": "Gen 3",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/f7727067c2a54c84b77e2f079b9b3004/noel-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "shiranui-flare",
+      "name": "Shiranui Flare",
+      "group": "JP",
+      "unit": "Gen 3",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/81cadcd56bd24fee80d15f0cb6038713/flare-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "usada-pekora",
+      "name": "Usada Pekora",
+      "group": "JP",
+      "unit": "Gen 3",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/f847246c577a4a4d99c946887d042704/pecora-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "inugami-korone",
+      "name": "Inugami Korone",
+      "group": "JP",
+      "unit": "GAMERS",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/514f345adaa44287a1b2376c081ef5ba/korone-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "nekomata-okayu",
+      "name": "Nekomata Okayu",
+      "group": "JP",
+      "unit": "GAMERS",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/eac06ac6d39d4c35a97569bc0fcefacc/okayu-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "ookami-mio",
+      "name": "Ookami Mio",
+      "group": "JP",
+      "unit": "GAMERS",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/8778d0cbbfa3400c819cd72b36e18e0b/mio-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "oozora-subaru",
+      "name": "Oozora Subaru",
+      "group": "JP",
+      "unit": "Gen 2",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/18eb7c0e59a74d5db8356d7f02a2e5e8/subaru-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "yuzuki-choco",
+      "name": "Yuzuki Choco",
+      "group": "JP",
+      "unit": "Gen 2",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/42f07a56c29d44dfb5707f9a2e43f3a9/choco-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "nakiri-ayame",
+      "name": "Nakiri Ayame",
+      "group": "JP",
+      "unit": "Gen 2",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/95185f179aa3457ca56c4a7632430297/ayame-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "natsuiro-matsuri",
+      "name": "Natsuiro Matsuri",
+      "group": "JP",
+      "unit": "Gen 1",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/c40601152934484d94e00bd59664ecda/matsuri-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "shirakami-fubuki",
+      "name": "Shirakami Fubuki",
+      "group": "JP",
+      "unit": "Gen 1 / GAMERS",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/26a02f0fa8a5478d81d1aeeaf3845310/fubuki-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "akai-haato",
+      "name": "Akai Haato",
+      "group": "JP",
+      "unit": "Gen 1",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/328b0e08c0314187b229b815cd2b44ee/haato-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "aki-rosenthal",
+      "name": "Aki Rosenthal",
+      "group": "JP",
+      "unit": "Gen 1",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/f848d95faddc4fd7b43b34f188fd572c/aki-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "hoshimachi-suisei",
+      "name": "Hoshimachi Suisei",
+      "group": "JP",
+      "unit": "Gen 0",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/53f043a616784e88b28a52926dc1e5fc/suisei-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "sakuramiko",
+      "name": "Sakura Miko",
+      "group": "JP",
+      "unit": "Gen 0",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/06db26bc27854497abd82e77026b58ff/miko-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "azki",
+      "name": "AZKi",
+      "group": "JP",
+      "unit": "Gen 0",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/917f3db6fc27401a8cc20a9ad024825c/azki-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "roboco-san",
+      "name": "Robocosan",
+      "group": "JP",
+      "unit": "Gen 0",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/4aee93bd7e65456099c281e815c2c35b/robocosan-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    },
+    {
+      "id": "tokino-sora",
+      "name": "Tokino Sora",
+      "group": "JP",
+      "unit": "Gen 0",
+      "imageUrl": "https://images.microcms-assets.io/assets/f5f18e8e6a3c4c81af28f013b94e7f38/3a7e997f00454eefb330a41df03f63ea/tokino-sora-thumb.png",
+      "sourceUrl": "https://www.hololive-dreams.com/en/#Holomem"
+    }
+  ],
+  "sources": [
+    {
+      "name": "hololive Dreams official website",
+      "url": "https://www.hololive-dreams.com/en/",
+      "supports": [
+        "54-member roster",
+        "group and unit labels",
+        "official character thumbnails",
+        "free-to-play model",
+        "supported platforms"
+      ]
+    },
+    {
+      "name": "Official hololive launch announcement",
+      "url": "https://hololive.hololivepro.com/en/news/20260723-01-401/",
+      "supports": [
+        "2026-07-23 JST launch",
+        "54 participating talents",
+        "starter highest-rarity redraw choice",
+        "2500 Diamonds equals 10 Gacha pulls",
+        "official stores and operating companies"
+      ]
+    },
+    {
+      "name": "Official pre-registration campaign",
+      "url": "https://pre-register.hololive-dreams.com/",
+      "supports": [
+        "rarity tiers are 3-star, 4-star, and 5-star",
+        "4-star-or-higher guaranteed Gacha Ticket"
+      ]
+    },
+    {
+      "name": "Official Steam store",
+      "url": "https://store.steampowered.com/app/4282500/hololive_Dreams/",
+      "supports": [
+        "free-to-play PC release",
+        "in-app and chance-based purchases",
+        "developer and publisher"
+      ]
+    }
+  ]
+}

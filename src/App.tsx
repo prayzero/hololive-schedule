@@ -28,10 +28,12 @@ import {
   type CSSProperties,
   type ReactNode,
 } from "react";
+import { DreamPage } from "./dream/DreamPage";
 import type {
   CuratedEvent,
   EventRegion,
   EventsPayload,
+  HololiveDreamsPayload,
   ScheduleEntry,
   SchedulePayload,
   SoloLive,
@@ -50,12 +52,15 @@ const DATA_URLS = {
   talents: `${BASE_URL}data/talents.json`,
   solos: `${BASE_URL}data/solo-lives.json`,
   youtubeLives: `${BASE_URL}data/youtube-lives.json`,
+  hololiveDreams: `${BASE_URL}data/hololive-dreams.json`,
 };
 const OFFICIAL_SCHEDULE_URL = "https://schedule.hololive.tv/lives/hololive";
 const OFFICIAL_TALENTS_URL = "https://hololive.hololivepro.com/en/talents";
+const OFFICIAL_DREAMS_URL = "https://www.hololive-dreams.com/en";
 
-type PageView = "schedule" | "concerts" | "solo" | "local";
+type PageView = "schedule" | "concerts" | "solo" | "local" | "dream";
 type ConcertPeriod = "upcoming" | "past";
+type DreamPanel = "collection" | "calculator";
 type YouTubeCategoryFilter = "all" | YouTubeLiveCategory;
 type BroadcastStatus = "live" | "upcoming" | "ended";
 type EventStatus = "ongoing" | "upcoming" | "ended";
@@ -66,6 +71,7 @@ interface LoadedData {
   talents: TalentsPayload;
   solos: SoloLivesPayload;
   youtubeLives: YouTubeLivesPayload;
+  hololiveDreams: HololiveDreamsPayload;
 }
 
 type ConcertItem =
@@ -118,6 +124,12 @@ const PAGE_META: Record<
     description:
       "팝업, 전시, 카페, 카드게임 등 공식 현지 콜라보를 지역별로 정리했습니다.",
   },
+  dream: {
+    eyebrow: "HOLOLIVE DREAMS",
+    title: "뽑은 순간부터, 나만의 컬렉션.",
+    description:
+      "공식 게임 참여 멤버 54명의 보유 현황을 체크하고, 실제 뽑기 결과로 내 운도 계산해 보세요.",
+  },
 };
 
 const NAV_ITEMS: Array<{ id: PageView; label: string; shortLabel: string }> = [
@@ -125,6 +137,7 @@ const NAV_ITEMS: Array<{ id: PageView; label: string; shortLabel: string }> = [
   { id: "concerts", label: "콘서트", shortLabel: "공연" },
   { id: "solo", label: "YouTube 라이브", shortLabel: "영상" },
   { id: "local", label: "일본·한국", shortLabel: "현지" },
+  { id: "dream", label: "홀로라이브 드림", shortLabel: "드림" },
 ];
 
 const YOUTUBE_CATEGORY_OPTIONS: Array<{
@@ -250,6 +263,10 @@ function initialYouTubeCategory(): YouTubeCategoryFilter {
   return YOUTUBE_CATEGORY_OPTIONS.some((option) => option.id === value)
     ? (value as YouTubeCategoryFilter)
     : "all";
+}
+
+function initialDreamPanel(): DreamPanel {
+  return paramValue("dream") === "calculator" ? "calculator" : "collection";
 }
 
 function dateKey(date: Date): string {
@@ -851,6 +868,8 @@ export default function App() {
     useState<ConcertPeriod>(initialConcertPeriod);
   const [youtubeCategory, setYoutubeCategory] =
     useState<YouTubeCategoryFilter>(initialYouTubeCategory);
+  const [dreamPanel, setDreamPanel] =
+    useState<DreamPanel>(initialDreamPanel);
   const [selectedMemberId, setSelectedMemberId] = useState(
     () => paramValue("member") ?? "",
   );
@@ -870,6 +889,7 @@ export default function App() {
           talentsResponse,
           solosResponse,
           youtubeLivesResponse,
+          hololiveDreamsResponse,
         ] = await Promise.all([
           fetch(DATA_URLS.schedule, {
             cache: "no-store",
@@ -879,6 +899,7 @@ export default function App() {
           fetch(DATA_URLS.talents, { signal: controller.signal }),
           fetch(DATA_URLS.solos, { signal: controller.signal }),
           fetch(DATA_URLS.youtubeLives, { signal: controller.signal }),
+          fetch(DATA_URLS.hololiveDreams, { signal: controller.signal }),
         ]);
 
         const responses = [
@@ -887,22 +908,31 @@ export default function App() {
           talentsResponse,
           solosResponse,
           youtubeLivesResponse,
+          hololiveDreamsResponse,
         ];
 
         if (responses.some((response) => !response.ok)) {
           throw new Error("일정 데이터 일부를 불러오지 못했습니다.");
         }
 
-        const [schedule, events, talents, solos, youtubeLives] =
+        const [schedule, events, talents, solos, youtubeLives, hololiveDreams] =
           await Promise.all([
             scheduleResponse.json() as Promise<SchedulePayload>,
             eventsResponse.json() as Promise<EventsPayload>,
             talentsResponse.json() as Promise<TalentsPayload>,
             solosResponse.json() as Promise<SoloLivesPayload>,
             youtubeLivesResponse.json() as Promise<YouTubeLivesPayload>,
+            hololiveDreamsResponse.json() as Promise<HololiveDreamsPayload>,
           ]);
 
-        setData({ schedule, events, talents, solos, youtubeLives });
+        setData({
+          schedule,
+          events,
+          talents,
+          solos,
+          youtubeLives,
+          hololiveDreams,
+        });
       } catch (loadError) {
         if (!controller.signal.aborted) {
           setError(
@@ -978,6 +1008,10 @@ export default function App() {
       params.set("region", region);
     }
 
+    if (view === "dream") {
+      params.set("dream", dreamPanel);
+    }
+
     window.history.replaceState(
       null,
       "",
@@ -986,6 +1020,7 @@ export default function App() {
     document.title = `${PAGE_META[view].title} | HOLO NOW`;
   }, [
     concertPeriod,
+    dreamPanel,
     query,
     region,
     selectedDate,
@@ -1419,6 +1454,17 @@ export default function App() {
     }, 0);
   }
 
+  function openDreamCalculator() {
+    setView("dream");
+    setDreamPanel("calculator");
+    setQuery("");
+    window.setTimeout(() => {
+      document
+        .getElementById("hololive-dream")
+        ?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 0);
+  }
+
   const currentMeta = PAGE_META[view];
 
   return (
@@ -1461,11 +1507,11 @@ export default function App() {
 
         <a
           className="header-official-link"
-          href={OFFICIAL_SCHEDULE_URL}
+          href={view === "dream" ? OFFICIAL_DREAMS_URL : OFFICIAL_SCHEDULE_URL}
           target="_blank"
           rel="noreferrer"
         >
-          공식 일정
+          {view === "dream" ? "공식 게임" : "공식 일정"}
           <ArrowUpRight size={15} aria-hidden="true" />
         </a>
       </header>
@@ -1485,7 +1531,9 @@ export default function App() {
             <div className="search-wrap">
               <Search size={21} aria-hidden="true" />
               <label className="sr-only" htmlFor="global-search">
-                멤버, 방송, 영상, 공연 검색
+                {view === "dream"
+                  ? "홀로라이브 드림 캐릭터 검색"
+                  : "멤버, 방송, 영상, 공연 검색"}
               </label>
               <input
                 id="global-search"
@@ -1497,7 +1545,11 @@ export default function App() {
                     setQuery("");
                   }
                 }}
-                placeholder="멤버 · 방송 · 영상 · 공연 검색"
+                placeholder={
+                  view === "dream"
+                    ? "보유 캐릭터 이름 검색"
+                    : "멤버 · 방송 · 영상 · 공연 검색"
+                }
                 autoComplete="off"
               />
               {query ? (
@@ -1513,7 +1565,7 @@ export default function App() {
                 <kbd>/</kbd>
               )}
 
-              {matchingTalents.length > 0 ? (
+              {view !== "dream" && matchingTalents.length > 0 ? (
                 <div className="search-popover" role="listbox">
                   <span>멤버를 누르면 YouTube 라이브가 열립니다</span>
                   {matchingTalents.map((talent) => (
@@ -1540,61 +1592,121 @@ export default function App() {
             </div>
 
             <div className="hero-trust-row">
-              <span>
-                <Check size={15} aria-hidden="true" /> 여성 탤런트 전용
-              </span>
-              <span>
-                <Globe2 size={15} aria-hidden="true" /> KST · JST
-              </span>
-              <span>
-                <Sparkles size={15} aria-hidden="true" /> 무료 자동 업데이트
-              </span>
+              {view === "dream" ? (
+                <>
+                  <span>
+                    <UsersRound size={15} aria-hidden="true" /> 공식 참여 멤버 54명
+                  </span>
+                  <span>
+                    <Check size={15} aria-hidden="true" /> 이 브라우저에 자동 저장
+                  </span>
+                  <span>
+                    <Sparkles size={15} aria-hidden="true" /> 무료 확률 계산
+                  </span>
+                </>
+              ) : (
+                <>
+                  <span>
+                    <Check size={15} aria-hidden="true" /> 여성 탤런트 전용
+                  </span>
+                  <span>
+                    <Globe2 size={15} aria-hidden="true" /> KST · JST
+                  </span>
+                  <span>
+                    <Sparkles size={15} aria-hidden="true" /> 무료 자동 업데이트
+                  </span>
+                </>
+              )}
             </div>
           </div>
 
-          <aside className="hero-dashboard" aria-label="오늘의 일정 요약">
-            <div className="dashboard-heading">
-              <span>TODAY AT A GLANCE</span>
-              <time>{DATE_FORMATTER.format(now)}</time>
-            </div>
-            <div className="dashboard-stats">
-              <div>
-                <Radio size={18} aria-hidden="true" />
-                <strong>{liveNow.length}</strong>
-                <span>지금 LIVE</span>
-              </div>
-              <div>
-                <CalendarDays size={18} aria-hidden="true" />
-                <strong>{femaleSchedule.length}</strong>
-                <span>수집 방송</span>
-              </div>
-              <div>
-                <Video size={18} aria-hidden="true" />
-                <strong>{youtubeLives.length}</strong>
-                <span>라이브 영상</span>
-              </div>
-            </div>
-
-            {featuredSolo && featuredTalent ? (
-              <button
-                type="button"
-                className="featured-solo"
-                onClick={() => openConcertsForTalent(featuredTalent)}
-              >
-                <TalentAvatar talent={featuredTalent} size="medium" />
-                <span>
-                  <small>NEXT CONCERT</small>
-                  <strong>{featuredSolo.titleKo}</strong>
-                  <em>
-                    {featuredSolo.dateLabel} · {featuredSolo.venue}
-                  </em>
-                </span>
-                <ArrowRight size={19} aria-hidden="true" />
-              </button>
+          <aside
+            className="hero-dashboard"
+            aria-label={view === "dream" ? "홀로라이브 드림 요약" : "오늘의 일정 요약"}
+          >
+            {view === "dream" ? (
+              <>
+                <div className="dashboard-heading">
+                  <span>MY HOLOLIVE DREAMS</span>
+                  <time>2026. 07. 23 출시</time>
+                </div>
+                <div className="dashboard-stats">
+                  <div>
+                    <UsersRound size={18} aria-hidden="true" />
+                    <strong>{data?.hololiveDreams.characters.length ?? 54}</strong>
+                    <span>참여 멤버</span>
+                  </div>
+                  <div>
+                    <Sparkles size={18} aria-hidden="true" />
+                    <strong>3</strong>
+                    <span>★3 · ★4 · ★5</span>
+                  </div>
+                  <div>
+                    <Globe2 size={18} aria-hidden="true" />
+                    <strong>3</strong>
+                    <span>모바일 · PC</span>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  className="featured-solo dream-calculator-cta"
+                  onClick={openDreamCalculator}
+                >
+                  <Sparkles size={30} aria-hidden="true" />
+                  <span>
+                    <small>LUCK CALCULATOR</small>
+                    <strong>이번 뽑기, 얼마나 운이 좋았을까요?</strong>
+                    <em>실제 확률과 결과를 넣어 바로 계산해 보세요.</em>
+                  </span>
+                  <ArrowRight size={19} aria-hidden="true" />
+                </button>
+              </>
             ) : (
-              <div className="featured-solo featured-solo-empty">
-                다음 솔로 라이브 발표를 기다리고 있어요.
-              </div>
+              <>
+                <div className="dashboard-heading">
+                  <span>TODAY AT A GLANCE</span>
+                  <time>{DATE_FORMATTER.format(now)}</time>
+                </div>
+                <div className="dashboard-stats">
+                  <div>
+                    <Radio size={18} aria-hidden="true" />
+                    <strong>{liveNow.length}</strong>
+                    <span>지금 LIVE</span>
+                  </div>
+                  <div>
+                    <CalendarDays size={18} aria-hidden="true" />
+                    <strong>{femaleSchedule.length}</strong>
+                    <span>수집 방송</span>
+                  </div>
+                  <div>
+                    <Video size={18} aria-hidden="true" />
+                    <strong>{youtubeLives.length}</strong>
+                    <span>라이브 영상</span>
+                  </div>
+                </div>
+
+                {featuredSolo && featuredTalent ? (
+                  <button
+                    type="button"
+                    className="featured-solo"
+                    onClick={() => openConcertsForTalent(featuredTalent)}
+                  >
+                    <TalentAvatar talent={featuredTalent} size="medium" />
+                    <span>
+                      <small>NEXT CONCERT</small>
+                      <strong>{featuredSolo.titleKo}</strong>
+                      <em>
+                        {featuredSolo.dateLabel} · {featuredSolo.venue}
+                      </em>
+                    </span>
+                    <ArrowRight size={19} aria-hidden="true" />
+                  </button>
+                ) : (
+                  <div className="featured-solo featured-solo-empty">
+                    다음 솔로 라이브 발표를 기다리고 있어요.
+                  </div>
+                )}
+              </>
             )}
           </aside>
         </section>
@@ -2046,6 +2158,22 @@ export default function App() {
             </div>
           </section>
         ) : null}
+
+        {view === "dream" ? (
+          data ? (
+            <DreamPage
+              payload={data.hololiveDreams}
+              talents={talents}
+              query={query}
+              panel={dreamPanel}
+              onPanelChange={setDreamPanel}
+            />
+          ) : (
+            <section className="page-section" id="hololive-dream">
+              <LoadingGrid />
+            </section>
+          )
+        ) : null}
       </main>
 
       <footer>
@@ -2064,6 +2192,9 @@ export default function App() {
           </a>
           <a href={OFFICIAL_TALENTS_URL} target="_blank" rel="noreferrer">
             공식 탤런트 <ExternalLink size={14} aria-hidden="true" />
+          </a>
+          <a href={OFFICIAL_DREAMS_URL} target="_blank" rel="noreferrer">
+            공식 게임 <ExternalLink size={14} aria-hidden="true" />
           </a>
         </div>
         <p className="disclaimer">

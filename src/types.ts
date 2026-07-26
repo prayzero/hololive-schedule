@@ -166,6 +166,34 @@ export interface DreamGameInfo {
   steamUrl: string;
 }
 
+export interface DreamGachaRatePreset {
+  id: string;
+  label: string;
+  shortLabel: string;
+  ratePercent: number;
+  note: string;
+}
+
+export interface DreamGachaRates {
+  verifiedAt: string;
+  sourceLabel: string;
+  normalRates: {
+    star3: number;
+    star4: number;
+    star5: number;
+  };
+  guaranteedTenthRates: {
+    star3: number;
+    star4: number;
+    star5: number;
+  };
+  targetPresets: DreamGachaRatePreset[];
+  rateReferenceUrl: string;
+  pickupReferenceUrl: string;
+  screenshotReferenceUrl: string;
+  officialNoticeUrl: string;
+}
+
 export interface HololiveDreamsPayload {
   checkedAt: string;
   sourceUrl: string;
@@ -175,5 +203,6 @@ export interface HololiveDreamsPayload {
   game: DreamGameInfo;
   rarities: number[];
   ratesPublishedOnOfficialWeb: boolean;
+  gachaRates: DreamGachaRates;
   characters: DreamCharacter[];
 }

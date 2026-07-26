@@ -2,7 +2,7 @@
   "checkedAt": "2026-07-26T00:00:00+09:00",
   "sourceUrl": "https://www.hololive-dreams.com/en",
   "officialNewsUrl": "https://hololive.hololivepro.com/en/news/20260723-01-401/",
-  "sourceNote": "hololive Dreams 공식 영어 사이트에 공개된 출시 캐릭터 54명과 공식 썸네일을 사용합니다. 공개 공식 웹사이트에는 소환 확률·픽업 확률·천장 규칙이 게시되어 있지 않으므로 계산기에는 게임 내 배너의 제공 비율을 직접 입력해야 합니다.",
+  "sourceNote": "hololive Dreams 공식 영어 사이트에 공개된 출시 캐릭터 54명과 공식 썸네일을 사용합니다. 뽑기 확률은 게임 내 제공 비율 화면을 2026-07-26에 확인한 자료를 기준으로 하며, 공식 공개 웹사이트에는 확률표 원문이 게시되어 있지 않습니다.",
   "launchDate": "2026-07-23",
   "game": {
     "title": "hololive Dreams",
@@ -20,6 +20,54 @@
     5
   ],
   "ratesPublishedOnOfficialWeb": false,
+  "gachaRates": {
+    "verifiedAt": "2026-07-26T13:20:00+09:00",
+    "sourceLabel": "게임 내 제공 비율",
+    "normalRates": {
+      "star3": 85,
+      "star4": 10,
+      "star5": 5
+    },
+    "guaranteedTenthRates": {
+      "star3": 0,
+      "star4": 95,
+      "star5": 5
+    },
+    "targetPresets": [
+      {
+        "id": "standard-specific-star5",
+        "label": "통상 특정 ★5 멤버",
+        "shortLabel": "통상 특정 ★5",
+        "ratePercent": 0.0925,
+        "note": "상시 홀로도리 가챠의 특정 ★5 멤버 1명"
+      },
+      {
+        "id": "any-star5",
+        "label": "아무 ★5 멤버",
+        "shortLabel": "★5 전체",
+        "ratePercent": 5,
+        "note": "멤버와 관계없이 ★5가 나올 전체 확률"
+      },
+      {
+        "id": "beginner-selected-star5",
+        "label": "초심자 선택 픽업 ★5",
+        "shortLabel": "선택 픽업",
+        "ratePercent": 0.6666,
+        "note": "초심자 응원 가챠에서 선택한 특정 ★5 멤버 1명"
+      },
+      {
+        "id": "beginner-unselected-star5",
+        "label": "초심자 비선택 ★5",
+        "shortLabel": "비선택 ★5",
+        "ratePercent": 0.0588,
+        "note": "초심자 응원 가챠에서 선택하지 않은 특정 ★5 멤버 1명"
+      }
+    ],
+    "rateReferenceUrl": "https://game8.jp/hololive-dreams/800526",
+    "pickupReferenceUrl": "https://game8.jp/hololive-dreams/800932",
+    "screenshotReferenceUrl": "https://appmedia.jp/wp-content/uploads/2026/07/135040_8l2nf.webp",
+    "officialNoticeUrl": "https://www.hololive-dreams.com/news/detail/aku8rsuo9"
+  },
   "characters": [
     {
       "id": "anya-melfissa",

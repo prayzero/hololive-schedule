@@ -525,6 +525,7 @@
 }
 
 .dream-calculator-card,
+.dream-rate-board,
 .dream-chance-table,
 .dream-caution-card,
 .dream-official-card {
@@ -574,11 +575,137 @@
   word-break: keep-all;
 }
 
+.dream-rate-selector {
+  margin-top: 26px;
+}
+
+.dream-rate-selector-heading,
+.dream-selected-rate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.dream-rate-selector-heading > span {
+  color: #4e5c74;
+  font-size: 11px;
+  font-weight: 850;
+}
+
+.dream-rate-selector-heading > small {
+  color: #8e98ab;
+  font-size: 8px;
+  font-weight: 700;
+}
+
+.dream-rate-presets {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+  margin-top: 10px;
+}
+
+.dream-rate-presets button {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 4px 10px;
+  min-width: 0;
+  padding: 13px 14px;
+  border: 1px solid #dfe4ee;
+  border-radius: 16px;
+  color: #536077;
+  background: #fafbfe;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease,
+    background 160ms ease;
+}
+
+.dream-rate-presets button:hover {
+  border-color: #beb8ed;
+  transform: translateY(-1px);
+}
+
+.dream-rate-presets button.is-active {
+  border-color: #9286e9;
+  background: linear-gradient(135deg, #f4f1ff, #fff4fa);
+  box-shadow: 0 7px 20px rgba(111, 98, 217, 0.12);
+}
+
+.dream-rate-presets button > span {
+  overflow: hidden;
+  font-size: 10px;
+  font-weight: 850;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dream-rate-presets button > strong {
+  color: #7869dc;
+  font-size: 14px;
+}
+
+.dream-rate-presets button > small {
+  grid-column: 1 / -1;
+  overflow: hidden;
+  color: #969fb0;
+  font-size: 8px;
+  line-height: 1.4;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dream-selected-rate {
+  margin-top: 9px;
+  padding: 10px 13px;
+  border: 1px solid #e1dcf7;
+  border-radius: 14px;
+  color: #6d61c4;
+  background: #f8f6ff;
+}
+
+.dream-selected-rate > svg {
+  flex: 0 0 auto;
+}
+
+.dream-selected-rate > span {
+  display: flex;
+  min-width: 0;
+  margin-right: auto;
+  align-items: baseline;
+  gap: 7px;
+  font-size: 8px;
+  font-weight: 750;
+}
+
+.dream-selected-rate > span strong {
+  overflow: hidden;
+  color: #4b5570;
+  font-size: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dream-selected-rate > b {
+  flex: 0 0 auto;
+  color: #6758d2;
+  font-size: 15px;
+}
+
 .dream-input-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
   margin-top: 26px;
+}
+
+.dream-input-grid.is-count-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 19px;
 }
 
 .dream-input-grid label {
@@ -802,14 +929,98 @@
   gap: 15px;
 }
 
+.dream-rate-board,
 .dream-chance-table,
 .dream-caution-card,
 .dream-official-card {
   border-radius: 23px;
 }
 
+.dream-rate-board,
 .dream-chance-table {
   padding: 23px;
+}
+
+.dream-rarity-rates {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px;
+  margin-top: 17px;
+}
+
+.dream-rarity-rates > span {
+  display: grid;
+  min-width: 0;
+  padding: 11px 8px;
+  border: 1px solid #e3e7ef;
+  border-radius: 14px;
+  place-items: center;
+  background: #fafbfe;
+}
+
+.dream-rarity-rates small {
+  color: #8994a7;
+  font-size: 9px;
+  font-weight: 850;
+}
+
+.dream-rarity-rates strong {
+  margin-top: 2px;
+  color: #4f5e78;
+  font-size: 15px;
+}
+
+.dream-rarity-rates > span:last-child {
+  border-color: #dcd6f7;
+  background: linear-gradient(145deg, #f5f2ff, #fff5fa);
+}
+
+.dream-rarity-rates > span:last-child small,
+.dream-rarity-rates > span:last-child strong {
+  color: #7163d1;
+}
+
+.dream-guaranteed-rate {
+  display: grid;
+  gap: 4px;
+  margin-top: 8px;
+  padding: 11px 12px;
+  border-radius: 13px;
+  background: #f4f6fa;
+}
+
+.dream-guaranteed-rate span {
+  color: #929bad;
+  font-size: 8px;
+  font-weight: 750;
+}
+
+.dream-guaranteed-rate strong {
+  color: #536078;
+  font-size: 10px;
+}
+
+.dream-rate-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 13px;
+  margin-top: 12px;
+}
+
+.dream-rate-links a,
+.dream-caution-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: #7567d3;
+  font-size: 8px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.dream-rate-links a:hover,
+.dream-caution-card a:hover {
+  text-decoration: underline;
 }
 
 .dream-side-heading > svg {
@@ -891,6 +1102,11 @@
 
 .dream-caution-card p + p {
   margin-top: 7px;
+}
+
+.dream-caution-card a {
+  margin-top: 10px;
+  color: #9b7628;
 }
 
 .dream-official-card {
@@ -1162,6 +1378,10 @@
     grid-template-columns: 1fr;
   }
 
+  .dream-input-grid.is-count-grid {
+    grid-template-columns: 1fr;
+  }
+
   .dream-luck-result {
     grid-template-columns: 1fr;
     gap: 16px;
@@ -1189,6 +1409,10 @@
 @media (max-width: 410px) {
   .dream-character-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dream-rate-presets {
+    grid-template-columns: 1fr;
   }
 }
 

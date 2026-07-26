@@ -163,6 +163,13 @@ function formatExpected(value: number) {
   });
 }
 
+function formatRatePercent(value: number) {
+  return value.toLocaleString("ko-KR", {
+    maximumFractionDigits: 4,
+    minimumFractionDigits: 0,
+  });
+}
+
 export function DreamPage({
   payload,
   talents,
@@ -173,7 +180,9 @@ export function DreamPage({
   const [ownedIds, setOwnedIds] = useState<Set<string>>(readOwnedCharacters);
   const [branchFilter, setBranchFilter] = useState<BranchFilter>("ALL");
   const [ownedFilter, setOwnedFilter] = useState<OwnedFilter>("all");
-  const [rateInput, setRateInput] = useState("");
+  const [ratePresetId, setRatePresetId] = useState(
+    "standard-specific-star5",
+  );
   const [pullInput, setPullInput] = useState("10");
   const [acquiredInput, setAcquiredInput] = useState("0");
   const [guaranteedInput, setGuaranteedInput] = useState("0");
@@ -270,8 +279,18 @@ export function DreamPage({
     ],
   );
 
+  const selectedRatePreset =
+    payload.gachaRates.targetPresets.find(
+      (preset) => preset.id === ratePresetId,
+    ) ?? payload.gachaRates.targetPresets[0];
+  const selectedRatePercent = selectedRatePreset?.ratePercent ?? 0;
+  const selectedProbability = selectedRatePercent / 100;
+  const gachaVerifiedDate = payload.gachaRates.verifiedAt
+    .slice(0, 10)
+    .replace(/-/g, ".");
+
   const calculator = useMemo(() => {
-    const ratePercent = Number(rateInput);
+    const ratePercent = selectedRatePercent;
     const rawTrials = Number(pullInput);
     const rawAcquired = Number(acquiredInput);
     const rawGuaranteed = Number(guaranteedInput);
@@ -280,10 +299,7 @@ export function DreamPage({
     const guaranteed = clamp(toInteger(guaranteedInput), 0, 10_000);
     const naturalAcquired = Math.max(0, acquired - guaranteed);
     const isRateValid =
-      rateInput.trim() !== "" &&
-      Number.isFinite(ratePercent) &&
-      ratePercent > 0 &&
-      ratePercent <= 100;
+      Number.isFinite(ratePercent) && ratePercent > 0 && ratePercent <= 100;
     const isCountValid =
       pullInput.trim() !== "" &&
       acquiredInput.trim() !== "" &&
@@ -342,7 +358,12 @@ export function DreamPage({
       luckPercentile,
       luck,
     };
-  }, [acquiredInput, guaranteedInput, pullInput, rateInput]);
+  }, [
+    acquiredInput,
+    guaranteedInput,
+    pullInput,
+    selectedRatePercent,
+  ]);
 
   const toggleOwned = (id: string) => {
     setOwnedIds((current) => {
@@ -542,26 +563,47 @@ export function DreamPage({
               </div>
             </div>
 
-            <div className="dream-input-grid">
-              <label>
+            <div className="dream-rate-selector">
+              <div className="dream-rate-selector-heading">
+                <span>계산할 대상</span>
+                <small>
+                  {payload.gachaRates.sourceLabel} · {gachaVerifiedDate} 확인
+                </small>
+              </div>
+              <div
+                className="dream-rate-presets"
+                role="radiogroup"
+                aria-label="계산 대상 제공 비율"
+              >
+                {payload.gachaRates.targetPresets.map((preset) => {
+                  const isSelected = preset.id === selectedRatePreset?.id;
+                  return (
+                    <button
+                      type="button"
+                      key={preset.id}
+                      className={isSelected ? "is-active" : ""}
+                      role="radio"
+                      aria-checked={isSelected}
+                      onClick={() => setRatePresetId(preset.id)}
+                    >
+                      <span>{preset.shortLabel}</span>
+                      <strong>{formatRatePercent(preset.ratePercent)}%</strong>
+                      <small>{preset.note}</small>
+                    </button>
+                  );
+                })}
+              </div>
+              <div className="dream-selected-rate" aria-live="polite">
+                <Check size={15} aria-hidden="true" />
                 <span>
-                  대상 1회 확률
-                  <small>게임 내 제공 비율</small>
+                  현재 적용값
+                  <strong>{selectedRatePreset?.label ?? "제공 비율"}</strong>
                 </span>
-                <div className="dream-input-suffix">
-                  <input
-                    type="number"
-                    min="0.0001"
-                    max="100"
-                    step="0.01"
-                    inputMode="decimal"
-                    value={rateInput}
-                    placeholder="예: 1.5"
-                    onChange={(event) => setRateInput(event.target.value)}
-                  />
-                  <span>%</span>
-                </div>
-              </label>
+                <b>{formatRatePercent(selectedRatePercent)}%</b>
+              </div>
+            </div>
+
+            <div className="dream-input-grid is-count-grid">
               <label>
                 <span>
                   확률 적용 뽑기 수
@@ -621,17 +663,12 @@ export function DreamPage({
             {!calculator.valid ? (
               <div className="dream-calculator-placeholder" role="status">
                 <Sparkles size={27} aria-hidden="true" />
-                <strong>배너의 대상 확률을 입력해 주세요</strong>
+                <strong>입력값을 확인해 주세요</strong>
                 <p>
-                  실제 게임의 뽑기 화면에 표시된 제공 비율을 넣으면 결과를 바로
-                  계산합니다.
+                  뽑기 수와 획득 수는 0 이상 정수로 입력하고, 실제 획득 수는 확정
+                  획득 수 이상이어야 합니다.
                 </p>
-                {rateInput.trim() !== "" && (
-                  <span>
-                    확률은 0% 초과 100% 이하, 실제 획득 수는 확정 획득 수 이상이어야
-                    합니다.
-                  </span>
-                )}
+                <span>확률은 선택한 게임 내 제공 비율로 자동 적용됩니다.</span>
               </div>
             ) : (
               <>
@@ -684,32 +721,87 @@ export function DreamPage({
           </div>
 
           <aside className="dream-calculator-side">
+            <div className="dream-rate-board">
+              <div className="dream-side-heading">
+                <Sparkles size={18} aria-hidden="true" />
+                <div>
+                  <strong>확인된 기본 제공 비율</strong>
+                  <span>
+                    {payload.gachaRates.sourceLabel} · {gachaVerifiedDate} 확인
+                  </span>
+                </div>
+              </div>
+              <div className="dream-rarity-rates" aria-label="등급별 기본 제공 비율">
+                <span>
+                  <small>★3</small>
+                  <strong>{payload.gachaRates.normalRates.star3}%</strong>
+                </span>
+                <span>
+                  <small>★4</small>
+                  <strong>{payload.gachaRates.normalRates.star4}%</strong>
+                </span>
+                <span>
+                  <small>★5</small>
+                  <strong>{payload.gachaRates.normalRates.star5}%</strong>
+                </span>
+              </div>
+              <div className="dream-guaranteed-rate">
+                <span>10연 ★4 이상 확정칸</span>
+                <strong>
+                  ★4 {payload.gachaRates.guaranteedTenthRates.star4}% · ★5{" "}
+                  {payload.gachaRates.guaranteedTenthRates.star5}%
+                </strong>
+              </div>
+              <div className="dream-rate-links">
+                <a
+                  href={payload.gachaRates.rateReferenceUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  일반·확정칸 근거
+                  <ExternalLink size={12} aria-hidden="true" />
+                </a>
+                <a
+                  href={payload.gachaRates.screenshotReferenceUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  게임 화면 확인
+                  <ExternalLink size={12} aria-hidden="true" />
+                </a>
+                <a
+                  href={payload.gachaRates.pickupReferenceUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  픽업 비율 근거
+                  <ExternalLink size={12} aria-hidden="true" />
+                </a>
+              </div>
+            </div>
+
             <div className="dream-chance-table">
               <div className="dream-side-heading">
                 <BarChart3 size={18} aria-hidden="true" />
                 <div>
                   <strong>뽑기 횟수별 1개 이상 확률</strong>
                   <span>
-                    {calculator.valid
-                      ? `1회 ${calculator.ratePercent}% 기준`
-                      : "확률을 입력하면 표시됩니다"}
+                    {selectedRatePreset?.shortLabel ?? "선택 대상"} · 1회{" "}
+                    {formatRatePercent(selectedRatePercent)}%
                   </span>
                 </div>
               </div>
               <div className="dream-chance-rows">
                 {[10, 30, 50, 100].map((pulls) => {
-                  const chance = calculator.valid
-                    ? 1 - Math.pow(1 - calculator.probability, pulls)
-                    : 0;
+                  const chance =
+                    1 - Math.pow(1 - selectedProbability, pulls);
                   return (
                     <div key={pulls}>
                       <strong>{pulls}회</strong>
                       <i aria-hidden="true">
                         <b style={{ width: `${chance * 100}%` }} />
                       </i>
-                      <span>
-                        {calculator.valid ? formatProbability(chance) : "—"}
-                      </span>
+                      <span>{formatProbability(chance)}</span>
                     </div>
                   );
                 })}
@@ -721,14 +813,22 @@ export function DreamPage({
               <div>
                 <strong>계산 전에 확인해 주세요</strong>
                 <p>
-                  공식 공개 웹사이트에는 모든 배너에 공통으로 적용되는 제공 비율이
-                  안내되어 있지 않습니다. 게임 내 해당 배너의 수치를 직접 입력해
-                  주세요.
+                  수치는 게임 내 제공 비율 화면을 기준으로 2026년 7월 26일
+                  확인했습니다. 공식 웹 공지는 상세 확률을 게임 안에서 확인하도록
+                  안내하며, 배너가 바뀌면 수치도 달라질 수 있습니다.
                 </p>
                 <p>
-                  계산은 각 뽑기가 서로 독립이라는 이항분포를 사용합니다. 천장,
-                  스텝업, 픽업 확정 및 보정 규칙은 자동 반영하지 않습니다.
+                  10연 확정칸의 ★5 전체 확률도 5%입니다. 천장·교환·최초 재뽑기
+                  등 확률 외 획득은 ‘확정 획득 수’에 따로 입력해 주세요.
                 </p>
+                <a
+                  href={payload.gachaRates.officialNoticeUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  공식 게임 공지
+                  <ExternalLink size={12} aria-hidden="true" />
+                </a>
               </div>
             </div>
 
@@ -739,7 +839,7 @@ export function DreamPage({
               <div>
                 <small>OFFICIAL GAME</small>
                 <strong>hololive Dreams</strong>
-                <p>정확한 배너 정보와 제공 비율은 게임 안에서 확인해 주세요.</p>
+                <p>새 배너의 최신 제공 비율은 게임 안에서 확인할 수 있습니다.</p>
               </div>
               <a
                 href={payload.game.officialUrl}

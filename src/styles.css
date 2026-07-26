@@ -95,6 +95,173 @@ img {
   overflow: hidden;
 }
 
+.dream-broadcast-banner {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  color: #fff;
+  background:
+    radial-gradient(circle at 14% -90%, rgba(255, 255, 255, 0.52), transparent 36%),
+    linear-gradient(112deg, #43368f 0%, #705bd0 46%, #269fc3 100%);
+  text-decoration: none;
+  box-shadow: 0 10px 30px rgba(66, 55, 146, 0.2);
+}
+
+.dream-broadcast-banner::before,
+.dream-broadcast-banner::after {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 999px;
+  content: "";
+  pointer-events: none;
+  transform: rotate(-22deg);
+}
+
+.dream-broadcast-banner::before {
+  width: 210px;
+  height: 68px;
+  top: -42px;
+  left: max(18px, calc((100vw - 1320px) / 2));
+}
+
+.dream-broadcast-banner::after {
+  width: 250px;
+  height: 80px;
+  right: max(6px, calc((100vw - 1370px) / 2));
+  bottom: -66px;
+}
+
+.dream-broadcast-banner__inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
+  align-items: center;
+  width: min(1240px, calc(100% - 48px));
+  min-height: 68px;
+  gap: 15px;
+  margin: 0 auto;
+  padding: 8px 0;
+}
+
+.dream-broadcast-banner__icon {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.14);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.14);
+}
+
+.dream-broadcast-banner__copy {
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+}
+
+.dream-broadcast-banner__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.dream-broadcast-banner__live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: #ff9aad;
+  box-shadow: 0 0 0 4px rgba(255, 154, 173, 0.15);
+  animation: dream-broadcast-pulse 1.8s ease-in-out infinite;
+}
+
+.dream-broadcast-banner__copy strong {
+  overflow: hidden;
+  font-size: 15px;
+  font-weight: 850;
+  letter-spacing: -0.025em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dream-broadcast-banner__time {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: baseline;
+  column-gap: 8px;
+  padding: 4px 19px;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: right;
+}
+
+.dream-broadcast-banner__time > span {
+  grid-column: 1 / -1;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 10px;
+  font-weight: 750;
+}
+
+.dream-broadcast-banner__time strong {
+  font-size: 17px;
+  font-weight: 900;
+  letter-spacing: -0.025em;
+}
+
+.dream-broadcast-banner__time small {
+  color: rgba(255, 255, 255, 0.66);
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.dream-broadcast-banner__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  gap: 7px;
+  padding: 0 15px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 13px;
+  background: rgba(255, 255, 255, 0.14);
+  font-size: 12px;
+  font-weight: 850;
+  white-space: nowrap;
+  transition:
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.dream-broadcast-banner:hover .dream-broadcast-banner__cta {
+  background: rgba(255, 255, 255, 0.22);
+  transform: translateY(-1px);
+}
+
+.dream-broadcast-banner:hover .dream-broadcast-banner__cta svg {
+  transform: translate(2px, -2px);
+}
+
+.dream-broadcast-banner__cta svg {
+  transition: transform 160ms ease;
+}
+
+.dream-broadcast-banner:focus-visible {
+  outline-color: rgba(255, 255, 255, 0.92);
+  outline-offset: -4px;
+}
+
+@keyframes dream-broadcast-pulse {
+  50% {
+    opacity: 0.62;
+    transform: scale(0.82);
+  }
+}
+
 .site-header {
   position: sticky;
   z-index: 100;
@@ -2345,6 +2512,44 @@ select:focus-visible {
 @media (max-width: 620px) {
   html {
     scroll-padding-top: 114px;
+  }
+
+  .dream-broadcast-banner__inner {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    width: calc(100% - 24px);
+    min-height: 64px;
+    gap: 10px;
+  }
+
+  .dream-broadcast-banner__icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+  }
+
+  .dream-broadcast-banner__copy strong {
+    font-size: 13px;
+  }
+
+  .dream-broadcast-banner__time {
+    padding: 3px 0 3px 10px;
+    border-right: 0;
+  }
+
+  .dream-broadcast-banner__time > span {
+    font-size: 9px;
+  }
+
+  .dream-broadcast-banner__time strong {
+    font-size: 15px;
+  }
+
+  .dream-broadcast-banner__time small {
+    display: none;
+  }
+
+  .dream-broadcast-banner__cta {
+    display: none;
   }
 
   .site-header {

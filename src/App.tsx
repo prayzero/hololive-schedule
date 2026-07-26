@@ -64,6 +64,8 @@ const OFFICIAL_SCHEDULE_URL = "https://schedule.hololive.tv/lives/hololive";
 const OFFICIAL_TALENTS_URL = "https://hololive.hololivepro.com/en/talents";
 const OFFICIAL_DREAMS_URL = "https://www.hololive-dreams.com/en";
 const OFFICIAL_MUSIC_URL = "https://hololive.hololivepro.com/en/music/";
+const DREAMS_RELEASE_BROADCAST_URL =
+  "https://www.youtube.com/watch?v=_qHZCR8AcSg";
 
 type PageView =
   | "schedule"
@@ -1567,6 +1569,36 @@ export default function App() {
     <div className="app-shell">
       <a className="skip-link" href="#main-content">
         본문으로 바로가기
+      </a>
+
+      <a
+        className="dream-broadcast-banner"
+        href={DREAMS_RELEASE_BROADCAST_URL}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="hololive Dreams 릴리스 기념 특별 방송, 7월 27일 월요일 오후 7시, YouTube에서 보기 (새 창)"
+      >
+        <span className="dream-broadcast-banner__inner">
+          <span className="dream-broadcast-banner__icon" aria-hidden="true">
+            <Radio size={19} strokeWidth={2.2} />
+          </span>
+          <span className="dream-broadcast-banner__copy">
+            <span className="dream-broadcast-banner__eyebrow">
+              <span className="dream-broadcast-banner__live-dot" />
+              MONDAY SPECIAL
+            </span>
+            <strong>hololive Dreams 릴리스 기념 방송</strong>
+          </span>
+          <span className="dream-broadcast-banner__time">
+            <span>7월 27일 월요일</span>
+            <strong>오후 7:00</strong>
+            <small>KST · JST</small>
+          </span>
+          <span className="dream-broadcast-banner__cta">
+            방송 보러가기
+            <ArrowUpRight size={17} aria-hidden="true" />
+          </span>
+        </span>
       </a>
 
       <header className="site-header">

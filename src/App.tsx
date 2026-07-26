@@ -1725,7 +1725,7 @@ export default function App() {
           <section className="page-section schedule-page">
             <SectionHeading
               eyebrow="NOW & NEXT"
-              title="여성 탤런트 방송 일정"
+              title="방송 일정"
               description="Holodule의 hololive·English·Indonesia·DEV_IS 탭만 모아 15분 단위로 갱신합니다."
               action={
                 data ? (

@@ -44,6 +44,32 @@ const OWNED_FILTERS: Array<{ value: OwnedFilter; label: string }> = [
   { value: "missing", label: "미보유" },
 ];
 
+const DREAM_BRANCH_ORDER: Record<TalentBranch, number> = {
+  JP: 0,
+  DEV_IS: 1,
+  EN: 2,
+  ID: 3,
+};
+
+const DREAM_GENERATION_ORDER: Record<string, number> = {
+  "JP:0기생": 0,
+  "JP:1기생": 1,
+  "JP:1기생 · GAMERS": 1,
+  "JP:2기생": 2,
+  "JP:GAMERS": 3,
+  "JP:3기생": 4,
+  "JP:4기생": 5,
+  "JP:5기생": 6,
+  "JP:holoX": 7,
+  "DEV_IS:ReGLOSS": 0,
+  "EN:Myth": 0,
+  "EN:Promise": 1,
+  "EN:Advent": 2,
+  "ID:ID 1기생": 0,
+  "ID:ID 2기생": 1,
+  "ID:ID 3기생": 2,
+};
+
 const LUCK_LABELS = [
   { max: 5, label: "아주 아쉬운 편", tone: "low" },
   { max: 20, label: "조금 아쉬운 편", tone: "low" },
@@ -173,7 +199,18 @@ export function DreamPage({
     [talents],
   );
   const normalizedQuery = normalizeSearch(query);
-  const characters = payload.characters;
+  const characters = useMemo(
+    () =>
+      [...payload.characters].sort(
+        (left, right) =>
+          DREAM_BRANCH_ORDER[left.branch] - DREAM_BRANCH_ORDER[right.branch] ||
+          (DREAM_GENERATION_ORDER[`${left.branch}:${left.generation}`] ?? 999) -
+            (DREAM_GENERATION_ORDER[`${right.branch}:${right.generation}`] ??
+              999) ||
+          left.nameKo.localeCompare(right.nameKo, "ko"),
+      ),
+    [payload.characters],
+  );
   const validCharacterIds = useMemo(
     () => new Set(characters.map((character) => character.id)),
     [characters],
@@ -474,7 +511,9 @@ export function DreamPage({
                       </span>
                     </span>
                     <span className="dream-character-copy">
-                      <small>{character.branch}</small>
+                      <small>
+                        {character.branch} · {character.generation}
+                      </small>
                       <strong>{character.nameKo}</strong>
                       <span>{character.name}</span>
                     </span>

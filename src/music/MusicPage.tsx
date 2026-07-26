@@ -167,21 +167,21 @@ function linkLabel(link: MusicLink) {
 }
 
 function visibleTrackLinks(links: MusicLink[]) {
+  const listeningLinks = links.filter((link) => link.kind !== "album");
   const preferredKinds: MusicLink["kind"][] = [
     "youtube",
     "streaming",
     "music",
-    "album",
     "other",
   ];
   const selected = preferredKinds
-    .map((kind) => links.find((link) => link.kind === kind))
+    .map((kind) => listeningLinks.find((link) => link.kind === kind))
     .filter((link): link is MusicLink => Boolean(link))
     .slice(0, 4);
 
   if (selected.length < 4) {
     const selectedUrls = new Set(selected.map((link) => link.url));
-    for (const link of links) {
+    for (const link of listeningLinks) {
       if (!selectedUrls.has(link.url)) {
         selected.push(link);
         selectedUrls.add(link.url);

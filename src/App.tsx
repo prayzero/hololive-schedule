@@ -104,7 +104,7 @@ const PAGE_META: Record<
     eyebrow: "LIVE SCHEDULE",
     title: "오늘, 누구를 만나러 갈까요?",
     description:
-      "hololive JP·EN·ID·DEV_IS 여성 탤런트의 방송을 한국 시간으로 모았습니다.",
+      "hololive JP·EN·ID·DEV_IS 탤런트의 방송을 한국 시간으로 모았습니다.",
   },
   concerts: {
     eyebrow: "CONCERT CALENDAR",

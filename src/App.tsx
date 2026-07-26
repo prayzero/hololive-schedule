@@ -2007,21 +2007,6 @@ export default function App() {
               />
             )}
 
-            <div className="source-banner">
-              <Info size={18} aria-hidden="true" />
-              <p>
-                남성 그룹(HOLOSTARS)은 수집하지 않습니다. 방송 시간은 변경될
-                수 있으니 시청 전{" "}
-                <a
-                  href={OFFICIAL_SCHEDULE_URL}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  공식 Holodule
-                </a>
-                에서 한 번 더 확인해 주세요.
-              </p>
-            </div>
           </section>
         ) : null}
 

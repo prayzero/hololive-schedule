@@ -497,7 +497,7 @@ async function main() {
     checkedAt: new Date().toISOString(),
     collectorVersion: COLLECTOR_VERSION,
     sourceNote:
-      "공식 여성 탤런트 YouTube 채널 검색 결과에서 공개 상태의 생일·주년·3D·무료 솔로 음악 라이브만 선별했습니다.",
+      "공식 hololive 탤런트 YouTube 채널 검색 결과에서 공개 상태의 생일·주년·3D·무료 솔로 음악 라이브만 선별했습니다.",
     sourceUrl: "https://www.youtube.com/",
     talentCount: selectedTalents.length,
     membersWithLives: memberIdsWithLives.size,

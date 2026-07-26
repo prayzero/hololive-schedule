@@ -444,7 +444,7 @@ function talentSearchValues(talent: Talent): string[] {
   ];
 }
 
-function isFemaleScheduleEntry(entry: ScheduleEntry): boolean {
+function isHololiveScheduleEntry(entry: ScheduleEntry): boolean {
   const normalizedName = normalizeSearch(entry.name);
   return !MALE_NAME_MARKERS.some((marker) =>
     normalizedName.includes(normalizeSearch(marker)),
@@ -1158,11 +1158,13 @@ export default function App() {
     [normalizedQuery, youtubeTalents],
   );
 
-  const femaleSchedule = useMemo(
+  const hololiveSchedule = useMemo(
     () =>
-      (data?.schedule.entries ?? []).filter(isFemaleScheduleEntry).sort((a, b) =>
-        String(a.startsAt ?? "").localeCompare(String(b.startsAt ?? "")),
-      ),
+      (data?.schedule.entries ?? [])
+        .filter(isHololiveScheduleEntry)
+        .sort((a, b) =>
+          String(a.startsAt ?? "").localeCompare(String(b.startsAt ?? "")),
+        ),
     [data?.schedule.entries],
   );
 
@@ -1183,18 +1185,20 @@ export default function App() {
   const dateOptions = useMemo(() => {
     const uniqueDates = Array.from(
       new Set(
-        femaleSchedule
+        hololiveSchedule
           .map((entry) => entry.date)
           .filter((value): value is string => Boolean(value)),
       ),
     ).sort();
 
     return uniqueDates.map((value) => {
-      const count = femaleSchedule.filter((entry) => entry.date === value).length;
+      const count = hololiveSchedule.filter(
+        (entry) => entry.date === value,
+      ).length;
       const parsed = new Date(`${value}T12:00:00+09:00`);
       return { value, label: DAY_FORMATTER.format(parsed), count };
     });
-  }, [femaleSchedule]);
+  }, [hololiveSchedule]);
 
   useEffect(() => {
     if (
@@ -1211,7 +1215,7 @@ export default function App() {
 
   const visibleBroadcasts = useMemo(
     () =>
-      femaleSchedule.filter((entry) => {
+      hololiveSchedule.filter((entry) => {
         if (entry.date !== selectedDate) {
           return false;
         }
@@ -1225,23 +1229,23 @@ export default function App() {
           normalizedQuery,
         );
       }),
-    [femaleSchedule, hideEnded, normalizedQuery, now, selectedDate],
+    [hololiveSchedule, hideEnded, normalizedQuery, now, selectedDate],
   );
 
   const liveNow = useMemo(
     () =>
-      femaleSchedule.filter(
+      hololiveSchedule.filter(
         (entry) => broadcastStatus(entry, now) === "live",
       ),
-    [femaleSchedule, now],
+    [hololiveSchedule, now],
   );
 
   const nextBroadcast = useMemo(
     () =>
-      femaleSchedule.find(
+      hololiveSchedule.find(
         (entry) => broadcastStatus(entry, now) === "upcoming",
       ),
-    [femaleSchedule, now],
+    [hololiveSchedule, now],
   );
 
   const upcomingSoloLives = useMemo(
@@ -1845,7 +1849,7 @@ export default function App() {
                   </div>
                   <div>
                     <CalendarDays size={18} aria-hidden="true" />
-                    <strong>{femaleSchedule.length}</strong>
+                    <strong>{hololiveSchedule.length}</strong>
                     <span>수집 방송</span>
                   </div>
                   <div>

@@ -101,7 +101,7 @@ const payload = {
   checkedAt: new Date().toISOString(),
   collectorVersion: "curated-official-channel-1.0.0",
   sourceNote:
-    "공식 여성 탤런트 YouTube 채널에서 공개된 생일·주년·3D 음악 라이브와 무료 콘서트 기록입니다. 일반 노래방·게임·잡담·후일담·미리보기·Shorts·단일 곡 영상은 제외했습니다.",
+    "공식 hololive 탤런트 YouTube 채널에서 공개된 생일·주년·3D 음악 라이브와 무료 콘서트 기록입니다. 일반 노래방·게임·잡담·후일담·미리보기·Shorts·단일 곡 영상은 제외했습니다.",
   sourceUrl: "https://www.youtube.com/",
   talentCount: talentPayload.talents.length,
   membersWithLives: memberIdsWithLives.size,

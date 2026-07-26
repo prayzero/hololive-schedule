@@ -1,0 +1,1777 @@
+{
+  "checkedAt": "2026-07-26T02:53:25.866Z",
+  "sourceUrl": "https://www.youtube.com/",
+  "sourceNote": "큐레이션된 공식 채널 영상의 게시 시각·영상 길이를 YouTube player metadata로 교차 확인한 캐시입니다.",
+  "videos": [
+    {
+      "videoId": "_mThZIRqIBs",
+      "channelId": "UC_sFNM0z0MWm9A6WlKPuMMg",
+      "publishedAt": "2025-11-21T18:38:04-08:00",
+      "durationSeconds": 5390
+    },
+    {
+      "videoId": "_rgeHcQu0Tc",
+      "channelId": "UCIBY1ollUsauvVi4hW4cumw",
+      "publishedAt": "2023-05-18T06:14:20-07:00",
+      "durationSeconds": 3950
+    },
+    {
+      "videoId": "_SWjDWUBDio",
+      "channelId": "UC-hM6YJuNYVAmUWxeIr9FeA",
+      "publishedAt": "2020-10-21T06:21:21-07:00",
+      "durationSeconds": 4461
+    },
+    {
+      "videoId": "_tBlI-l8WLk",
+      "channelId": "UCFTLzh12_nrtzqBPsTCqenA",
+      "publishedAt": "2026-02-17T04:16:53-08:00",
+      "durationSeconds": 4280
+    },
+    {
+      "videoId": "_VKWFWDGhSQ",
+      "channelId": "UCP0BspO_AMEe3aQqqpo89Dg",
+      "publishedAt": "2022-09-16T07:06:23-07:00",
+      "durationSeconds": 3612
+    },
+    {
+      "videoId": "_vzFNtQsqJI",
+      "channelId": "UC6eWCld0KwmyHFbAqK3V-Rw",
+      "publishedAt": "2024-03-15T06:02:19-07:00",
+      "durationSeconds": 3632
+    },
+    {
+      "videoId": "_xL58zG9k5k",
+      "channelId": "UC1opHUrw8rvnsadT-iGp7Cg",
+      "publishedAt": "2021-09-05T11:59:04+00:00",
+      "durationSeconds": 3457
+    },
+    {
+      "videoId": "-0RzTyI5nOY",
+      "channelId": "UCl69AEx4MdqMZH7Jtsm7Tig",
+      "publishedAt": "2025-08-09T18:05:58-07:00",
+      "durationSeconds": 3972
+    },
+    {
+      "videoId": "-1iLScVyydk",
+      "channelId": "UCqm3BQLlJfvkTsX_hvm0UmA",
+      "publishedAt": "2020-09-05T05:06:25-07:00",
+      "durationSeconds": 3485
+    },
+    {
+      "videoId": "-7xDdu7T8Z4",
+      "channelId": "UCt9H_RpQzhxzlyBxFqrdHqA",
+      "publishedAt": "2025-07-30T20:34:28-07:00",
+      "durationSeconds": 5530
+    },
+    {
+      "videoId": "-dqLfiQ5IHU",
+      "channelId": "UCKMWFR6lAstLa7Vbf5dH7ig",
+      "publishedAt": "2026-07-08T05:11:27-07:00",
+      "durationSeconds": 4270
+    },
+    {
+      "videoId": "-GQKQ5vAskA",
+      "channelId": "UCmbs8T6MWqUHP1tIQvSgKrg",
+      "publishedAt": "2023-09-17T21:01:13-07:00",
+      "durationSeconds": 3598
+    },
+    {
+      "videoId": "0ih-OP2tiuE",
+      "channelId": "UC-hM6YJuNYVAmUWxeIr9FeA",
+      "publishedAt": "2025-12-25T03:58:33-08:00",
+      "durationSeconds": 2985
+    },
+    {
+      "videoId": "0kGVDYAKcGc",
+      "channelId": "UC1opHUrw8rvnsadT-iGp7Cg",
+      "publishedAt": "2021-11-08T12:01:12+00:00",
+      "durationSeconds": 2950
+    },
+    {
+      "videoId": "0LoG81pLS8c",
+      "channelId": "UCHsx4Hqa-1ORjQTh9TYDhww",
+      "publishedAt": "2024-10-05T18:04:59-07:00",
+      "durationSeconds": 3964
+    },
+    {
+      "videoId": "0NXvBO1E6fM",
+      "channelId": "UC0TXe_LYZ4scaW2XMyi5_kw",
+      "publishedAt": "2024-07-01T05:11:46-07:00",
+      "durationSeconds": 4052
+    },
+    {
+      "videoId": "0WLlmgirGD8",
+      "channelId": "UCp-5t9SrOQwXMU7iIjQfARg",
+      "publishedAt": "2022-12-07T04:08:34-08:00",
+      "durationSeconds": 3820
+    },
+    {
+      "videoId": "1ibr6Zav_Ag",
+      "channelId": "UCTvHWSfBZgtxE4sILOaurIQ",
+      "publishedAt": "2025-11-07T05:48:33-08:00",
+      "durationSeconds": 4360
+    },
+    {
+      "videoId": "1J1JG99KKCk",
+      "channelId": "UC1DCedRgGHBdm81E1llLhOQ",
+      "publishedAt": "2023-07-17T06:01:17-07:00",
+      "durationSeconds": 2620
+    },
+    {
+      "videoId": "1juU26jChug",
+      "channelId": "UCdXAk5MpyLD8594lm_OvtGQ",
+      "publishedAt": "2026-05-17T05:14:57-07:00",
+      "durationSeconds": 4440
+    },
+    {
+      "videoId": "1Ts7X3vtYgQ",
+      "channelId": "UCFTLzh12_nrtzqBPsTCqenA",
+      "publishedAt": "2021-03-17T06:08:57-07:00",
+      "durationSeconds": 3572
+    },
+    {
+      "videoId": "215Bq5oo9Bw",
+      "channelId": "UCFKOVgVbGmX65RxO3EtH3iw",
+      "publishedAt": "2023-09-29T05:07:10-07:00",
+      "durationSeconds": 3744
+    },
+    {
+      "videoId": "23UEX1Yh43U",
+      "channelId": "UC_vMYWcDjmfdpH6r4TTn1MQ",
+      "publishedAt": "2026-06-18T05:12:30-07:00",
+      "durationSeconds": 4275
+    },
+    {
+      "videoId": "28P_1Y0WbrM",
+      "channelId": "UCs9_O1tRPMQTHQ-N_L6FU2g",
+      "publishedAt": "2025-06-11T05:07:22-07:00",
+      "durationSeconds": 3934
+    },
+    {
+      "videoId": "2l3i7MulCgs",
+      "channelId": "UChAnqc_AY5_I3Px5dig3X1Q",
+      "publishedAt": "2021-10-01T06:03:49-07:00",
+      "durationSeconds": 3462
+    },
+    {
+      "videoId": "2Nob6f5dy7c",
+      "channelId": "UC_sFNM0z0MWm9A6WlKPuMMg",
+      "publishedAt": "2024-08-09T21:06:25-07:00",
+      "durationSeconds": 3674
+    },
+    {
+      "videoId": "2Qaek3gXDgg",
+      "channelId": "UCFKOVgVbGmX65RxO3EtH3iw",
+      "publishedAt": "2022-08-12T05:06:01-07:00",
+      "durationSeconds": 3682
+    },
+    {
+      "videoId": "2Saj0ywe170",
+      "channelId": "UCZlDXzGoo7d44bwdNObFacg",
+      "publishedAt": "2024-11-03T10:00:06+00:00",
+      "durationSeconds": 11163
+    },
+    {
+      "videoId": "2vEUfTlbzZ8",
+      "channelId": "UC_sFNM0z0MWm9A6WlKPuMMg",
+      "publishedAt": "2025-05-24T16:30:05-07:00",
+      "durationSeconds": 3382
+    },
+    {
+      "videoId": "3n9igJnSXtQ",
+      "channelId": "UCMwGHR0BTZuLsmjY_NT5Pwg",
+      "publishedAt": "2024-12-27T20:03:16-08:00",
+      "durationSeconds": 3518
+    },
+    {
+      "videoId": "3UVUtXHOtV4",
+      "channelId": "UCa9Y57gfeY0Zro_noHRVrnw",
+      "publishedAt": "2022-01-04T04:00:56-08:00",
+      "durationSeconds": 3378
+    },
+    {
+      "videoId": "42h4ydJS3zk",
+      "channelId": "UC_vMYWcDjmfdpH6r4TTn1MQ",
+      "publishedAt": "2025-06-18T05:19:37-07:00",
+      "durationSeconds": 4080
+    },
+    {
+      "videoId": "4JNyad4TTuY",
+      "channelId": "UCP0BspO_AMEe3aQqqpo89Dg",
+      "publishedAt": "2025-02-15T05:03:35-08:00",
+      "durationSeconds": 3472
+    },
+    {
+      "videoId": "54MJhdogNII",
+      "channelId": "UCAWSyEs_Io8MtpY3m-zqILA",
+      "publishedAt": "2026-03-01T07:34:09-08:00",
+      "durationSeconds": 3503
+    },
+    {
+      "videoId": "5LNv7CzFJgc",
+      "channelId": "UCHsx4Hqa-1ORjQTh9TYDhww",
+      "publishedAt": "2023-12-17T05:57:32-08:00",
+      "durationSeconds": 3125
+    },
+    {
+      "videoId": "5Ney9Z_WnTU",
+      "channelId": "UCAWSyEs_Io8MtpY3m-zqILA",
+      "publishedAt": "2023-11-11T05:15:52-08:00",
+      "durationSeconds": 4418
+    },
+    {
+      "videoId": "5QbfFvgT8OY",
+      "channelId": "UC-hM6YJuNYVAmUWxeIr9FeA",
+      "publishedAt": "2024-03-05T05:08:27-08:00",
+      "durationSeconds": 3776
+    },
+    {
+      "videoId": "5rns6j2eHcQ",
+      "channelId": "UC1suqwovbL1kzsoaZgFZLKg",
+      "publishedAt": "2024-02-14T03:10:37-08:00",
+      "durationSeconds": 3400
+    },
+    {
+      "videoId": "5z8osqEvceo",
+      "channelId": "UCuI_opAVX6qbxZY-a-AxFuQ",
+      "publishedAt": "2026-07-25T05:12:53-07:00",
+      "durationSeconds": 4295
+    },
+    {
+      "videoId": "6-PlITA_VWg",
+      "channelId": "UCTvHWSfBZgtxE4sILOaurIQ",
+      "publishedAt": "2023-10-15T07:08:42-07:00",
+      "durationSeconds": 3836
+    },
+    {
+      "videoId": "7995orE5Enc",
+      "channelId": "UCdn5BQ06XqgXoAxIhbqw5Rg",
+      "publishedAt": "2023-10-05T06:11:06-07:00",
+      "durationSeconds": 4158
+    },
+    {
+      "videoId": "7ctmEk_35Yc",
+      "channelId": "UC6eWCld0KwmyHFbAqK3V-Rw",
+      "publishedAt": "2023-03-15T06:14:38-07:00",
+      "durationSeconds": 3814
+    },
+    {
+      "videoId": "7M4E3WGWlRM",
+      "channelId": "UCt9H_RpQzhxzlyBxFqrdHqA",
+      "publishedAt": "2026-01-31T20:22:28-08:00",
+      "durationSeconds": 4600
+    },
+    {
+      "videoId": "7NGIDvFOhDE",
+      "channelId": "UC0TXe_LYZ4scaW2XMyi5_kw",
+      "publishedAt": "2019-11-15T04:17:13-08:00",
+      "durationSeconds": 7809
+    },
+    {
+      "videoId": "7Tm7dVsTPBk",
+      "channelId": "UCdn5BQ06XqgXoAxIhbqw5Rg",
+      "publishedAt": "2025-10-05T06:10:15-07:00",
+      "durationSeconds": 3828
+    },
+    {
+      "videoId": "7TtlKURvLDI",
+      "channelId": "UC0TXe_LYZ4scaW2XMyi5_kw",
+      "publishedAt": "2023-11-15T04:04:08-08:00",
+      "durationSeconds": 3678
+    },
+    {
+      "videoId": "7Vs-5Rwu8ks",
+      "channelId": "UCdn5BQ06XqgXoAxIhbqw5Rg",
+      "publishedAt": "2021-10-05T06:03:52-07:00",
+      "durationSeconds": 3487
+    },
+    {
+      "videoId": "7y8yAKaBzZw",
+      "channelId": "UCL_qhgtOy0dy1Agp8vkySQg",
+      "publishedAt": "2023-04-04T06:18:00-07:00",
+      "durationSeconds": 5685
+    },
+    {
+      "videoId": "88APiRAcQcc",
+      "channelId": "UC1CfXB_kRs3C-zaeTG3oGyg",
+      "publishedAt": "2021-11-18T04:14:02-08:00",
+      "durationSeconds": 3284
+    },
+    {
+      "videoId": "8lkam88qeZw",
+      "channelId": "UCZlDXzGoo7d44bwdNObFacg",
+      "publishedAt": "2021-01-02T12:00:36+00:00",
+      "durationSeconds": 3700
+    },
+    {
+      "videoId": "8W_Pml3XIdM",
+      "channelId": "UCENwRMx5Yh42zWpzURebzTw",
+      "publishedAt": "2026-05-25T05:04:33-07:00",
+      "durationSeconds": 3755
+    },
+    {
+      "videoId": "8xF1xccpc98",
+      "channelId": "UCjLEmnpCNeisMxy134KPwWw",
+      "publishedAt": "2023-10-27T07:09:37-07:00",
+      "durationSeconds": 4030
+    },
+    {
+      "videoId": "995QkX6r7RA",
+      "channelId": "UCOyYb1c43VlX9rc_lT6NKQw",
+      "publishedAt": "2025-01-15T06:07:12-08:00",
+      "durationSeconds": 3892
+    },
+    {
+      "videoId": "9Cc16ZBW0GY",
+      "channelId": "UCMwGHR0BTZuLsmjY_NT5Pwg",
+      "publishedAt": "2023-02-18T20:05:20-08:00",
+      "durationSeconds": 3770
+    },
+    {
+      "videoId": "abXN62S7pyU",
+      "channelId": "UCENwRMx5Yh42zWpzURebzTw",
+      "publishedAt": "2023-11-26T04:04:48-08:00",
+      "durationSeconds": 3571
+    },
+    {
+      "videoId": "Ajwv4ANSSg0",
+      "channelId": "UC5CwaMl1eIgY8h02uZw7u8A",
+      "publishedAt": "2021-04-13T06:26:37-07:00",
+      "durationSeconds": 4586
+    },
+    {
+      "videoId": "aLgQxWOWEnw",
+      "channelId": "UC6eWCld0KwmyHFbAqK3V-Rw",
+      "publishedAt": "2022-11-28T04:04:55-08:00",
+      "durationSeconds": 3744
+    },
+    {
+      "videoId": "APbMhuPbwkE",
+      "channelId": "UC1uv2Oq6kNxgATlCiez59hw",
+      "publishedAt": "2024-01-03T04:00:27-08:00",
+      "durationSeconds": 3382
+    },
+    {
+      "videoId": "aPHng8urnYY",
+      "channelId": "UCZlDXzGoo7d44bwdNObFacg",
+      "publishedAt": "2021-04-22T12:17:52+00:00",
+      "durationSeconds": 2776
+    },
+    {
+      "videoId": "APN3rNzfNnw",
+      "channelId": "UCQ0UDLQCjY0rmuxCDE38FGg",
+      "publishedAt": "2020-06-20T05:44:26-07:00",
+      "durationSeconds": 2401
+    },
+    {
+      "videoId": "APoXxcv37GU",
+      "channelId": "UCZlDXzGoo7d44bwdNObFacg",
+      "publishedAt": "2024-01-06T11:58:39+00:00",
+      "durationSeconds": 3596
+    },
+    {
+      "videoId": "aPSUhJaels0",
+      "channelId": "UCvN5h1ShZtc7nly3pezRayg",
+      "publishedAt": "2026-05-16T19:21:05-07:00",
+      "durationSeconds": 2059
+    },
+    {
+      "videoId": "AqEqeiqskEI",
+      "channelId": "UCCzUftO8KOVkV4wQG1vkUvg",
+      "publishedAt": "2023-07-30T06:03:20-07:00",
+      "durationSeconds": 3577
+    },
+    {
+      "videoId": "ASwjM25ax58",
+      "channelId": "UChAnqc_AY5_I3Px5dig3X1Q",
+      "publishedAt": "2025-04-13T05:02:51-07:00",
+      "durationSeconds": 3363
+    },
+    {
+      "videoId": "AtbVQjUesq4",
+      "channelId": "UCp6993wxpyDPHUpavwDFqgg",
+      "publishedAt": "2023-05-26T06:22:42-07:00",
+      "durationSeconds": 3950
+    },
+    {
+      "videoId": "au57Syx7wuQ",
+      "channelId": "UC_vMYWcDjmfdpH6r4TTn1MQ",
+      "publishedAt": "2022-11-30T04:08:00-08:00",
+      "durationSeconds": 3890
+    },
+    {
+      "videoId": "B3OxuRMofcM",
+      "channelId": "UC-hM6YJuNYVAmUWxeIr9FeA",
+      "publishedAt": "2026-03-05T05:13:48-08:00",
+      "durationSeconds": 3604
+    },
+    {
+      "videoId": "BacoqH2e86U",
+      "channelId": "UC1opHUrw8rvnsadT-iGp7Cg",
+      "publishedAt": "2019-04-08T13:03:10+00:00",
+      "durationSeconds": 3483
+    },
+    {
+      "videoId": "BADL5x3Ftzc",
+      "channelId": "UCqm3BQLlJfvkTsX_hvm0UmA",
+      "publishedAt": "2026-06-24T06:06:57-07:00",
+      "durationSeconds": 3700
+    },
+    {
+      "videoId": "Bb7UfPi8fhg",
+      "channelId": "UCvaTdHTWBGv3MKj3KVqJVCw",
+      "publishedAt": "2023-02-22T04:04:32-08:00",
+      "durationSeconds": 3525
+    },
+    {
+      "videoId": "bHXB9qI2olE",
+      "channelId": "UC0TXe_LYZ4scaW2XMyi5_kw",
+      "publishedAt": "2024-11-15T05:04:12-08:00",
+      "durationSeconds": 3827
+    },
+    {
+      "videoId": "bjPYXtxhm0I",
+      "channelId": "UC1iA6_NT4mtAcIII6ygrvCw",
+      "publishedAt": "2025-06-07T05:11:20-07:00",
+      "durationSeconds": 3975
+    },
+    {
+      "videoId": "bn7OaRnM9-A",
+      "channelId": "UC7fk0CB07ly8oSl0aqKkqFg",
+      "publishedAt": "2021-12-13T04:08:28-08:00",
+      "durationSeconds": 3698
+    },
+    {
+      "videoId": "BoVbE4adiwk",
+      "channelId": "UCZLZ8Jjx_RN2CXloOmgTHVg",
+      "publishedAt": "2026-03-26T08:51:12-07:00",
+      "durationSeconds": 2793
+    },
+    {
+      "videoId": "C-QdqYjdArM",
+      "channelId": "UC1uv2Oq6kNxgATlCiez59hw",
+      "publishedAt": "2024-08-08T05:04:30-07:00",
+      "durationSeconds": 3668
+    },
+    {
+      "videoId": "c9VW0E2Unl4",
+      "channelId": "UC1opHUrw8rvnsadT-iGp7Cg",
+      "publishedAt": "2023-08-15T10:58:24+00:00",
+      "durationSeconds": 3756
+    },
+    {
+      "videoId": "cB-8A760jtI",
+      "channelId": "UCQ0UDLQCjY0rmuxCDE38FGg",
+      "publishedAt": "2023-08-31T05:59:05-07:00",
+      "durationSeconds": 3302
+    },
+    {
+      "videoId": "cBQ2UD4LusU",
+      "channelId": "UC-hM6YJuNYVAmUWxeIr9FeA",
+      "publishedAt": "2021-08-01T06:05:59-07:00",
+      "durationSeconds": 3148
+    },
+    {
+      "videoId": "cc5SQqswwMM",
+      "channelId": "UC8rcEBzJSleTkf_-agPM20g",
+      "publishedAt": "2024-03-07T05:06:30-08:00",
+      "durationSeconds": 3904
+    },
+    {
+      "videoId": "ChMwx4yeI3g",
+      "channelId": "UCp-5t9SrOQwXMU7iIjQfARg",
+      "publishedAt": "2021-08-20T06:24:51-07:00",
+      "durationSeconds": 4619
+    },
+    {
+      "videoId": "CLxtrooDlP8",
+      "channelId": "UCmbs8T6MWqUHP1tIQvSgKrg",
+      "publishedAt": "2024-03-13T19:46:01-07:00",
+      "durationSeconds": 2724
+    },
+    {
+      "videoId": "CPUYPXa7D7s",
+      "channelId": "UC5CwaMl1eIgY8h02uZw7u8A",
+      "publishedAt": "2022-11-04T06:18:30-07:00",
+      "durationSeconds": 4035
+    },
+    {
+      "videoId": "CtOkB0YQljY",
+      "channelId": "UC1opHUrw8rvnsadT-iGp7Cg",
+      "publishedAt": "2021-08-09T12:00:07+00:00",
+      "durationSeconds": 3452
+    },
+    {
+      "videoId": "Cv_2tjVo-p4",
+      "channelId": "UC-hM6YJuNYVAmUWxeIr9FeA",
+      "publishedAt": "2022-03-05T05:10:30-08:00",
+      "durationSeconds": 3914
+    },
+    {
+      "videoId": "CXLL4W4w4I8",
+      "channelId": "UCQ0UDLQCjY0rmuxCDE38FGg",
+      "publishedAt": "2023-11-01T05:04:52-07:00",
+      "durationSeconds": 3541
+    },
+    {
+      "videoId": "czfjbNitJ4M",
+      "channelId": "UCAWSyEs_Io8MtpY3m-zqILA",
+      "publishedAt": "2022-03-02T05:05:34-08:00",
+      "durationSeconds": 3444
+    },
+    {
+      "videoId": "d-Ua7CIU34I",
+      "channelId": "UCAWSyEs_Io8MtpY3m-zqILA",
+      "publishedAt": "2025-03-29T05:25:50-07:00",
+      "durationSeconds": 4580
+    },
+    {
+      "videoId": "d7Rxu-f-Kz0",
+      "channelId": "UCqm3BQLlJfvkTsX_hvm0UmA",
+      "publishedAt": "2022-12-29T05:06:33-08:00",
+      "durationSeconds": 3784
+    },
+    {
+      "videoId": "Di8D8BvZZp0",
+      "channelId": "UC1DCedRgGHBdm81E1llLhOQ",
+      "publishedAt": "2022-07-17T06:06:07-07:00",
+      "durationSeconds": 3718
+    },
+    {
+      "videoId": "Dji-ehIz5_k",
+      "channelId": "UCZlDXzGoo7d44bwdNObFacg",
+      "publishedAt": "2021-12-27T11:57:35+00:00",
+      "durationSeconds": 3969
+    },
+    {
+      "videoId": "dLybZ8wDxVo",
+      "channelId": "UCs9_O1tRPMQTHQ-N_L6FU2g",
+      "publishedAt": "2024-06-11T05:08:30-07:00",
+      "durationSeconds": 3868
+    },
+    {
+      "videoId": "dN7gTC10XLE",
+      "channelId": "UCL_qhgtOy0dy1Agp8vkySQg",
+      "publishedAt": "2024-10-31T06:15:17-07:00",
+      "durationSeconds": 4031
+    },
+    {
+      "videoId": "Dn9ytVwQDpw",
+      "channelId": "UCvInZx9h3jC2JzsIzoOebWg",
+      "publishedAt": "2023-07-15T05:31:57-07:00",
+      "durationSeconds": 1759
+    },
+    {
+      "videoId": "DNDhaDTXta4",
+      "channelId": "UChgTyjG-pdNvxxhdsXfHQ5Q",
+      "publishedAt": "2024-09-09T07:11:40-07:00",
+      "durationSeconds": 5111
+    },
+    {
+      "videoId": "dR9q_J-8mfM",
+      "channelId": "UC8rcEBzJSleTkf_-agPM20g",
+      "publishedAt": "2023-08-19T21:16:29-07:00",
+      "durationSeconds": 4427
+    },
+    {
+      "videoId": "dsH4DXtSpqk",
+      "channelId": "UCUKD-uaobj9jiqB-VXt71mA",
+      "publishedAt": "2023-11-18T04:06:27-08:00",
+      "durationSeconds": 3770
+    },
+    {
+      "videoId": "dVlNi7Pby0w",
+      "channelId": "UCCzUftO8KOVkV4wQG1vkUvg",
+      "publishedAt": "2021-07-30T06:41:35-07:00",
+      "durationSeconds": 5258
+    },
+    {
+      "videoId": "DvNg5BT7WKM",
+      "channelId": "UC6eWCld0KwmyHFbAqK3V-Rw",
+      "publishedAt": "2024-11-28T04:05:54-08:00",
+      "durationSeconds": 3690
+    },
+    {
+      "videoId": "DW_8xrtourE",
+      "channelId": "UCK9V2B22uJYu3N7eR_BT9QA",
+      "publishedAt": "2023-01-30T04:06:25-08:00",
+      "durationSeconds": 3786
+    },
+    {
+      "videoId": "E1HXg-kjOI8",
+      "channelId": "UCdyqAaZDKHXg4Ahi7VENThQ",
+      "publishedAt": "2022-11-24T05:06:38-08:00",
+      "durationSeconds": 3826
+    },
+    {
+      "videoId": "E2D_YFRHFG8",
+      "channelId": "UC1DCedRgGHBdm81E1llLhOQ",
+      "publishedAt": "2025-08-31T06:20:17-07:00",
+      "durationSeconds": 4255
+    },
+    {
+      "videoId": "e3JBtoh9pOQ",
+      "channelId": "UC0TXe_LYZ4scaW2XMyi5_kw",
+      "publishedAt": "2023-07-01T04:03:47-07:00",
+      "durationSeconds": 3638
+    },
+    {
+      "videoId": "e4UUQwhMR4o",
+      "channelId": "UC1CfXB_kRs3C-zaeTG3oGyg",
+      "publishedAt": "2024-08-10T04:59:07-07:00",
+      "durationSeconds": 3270
+    },
+    {
+      "videoId": "ebv1wCiXBfI",
+      "channelId": "UCENwRMx5Yh42zWpzURebzTw",
+      "publishedAt": "2022-11-26T04:03:33-08:00",
+      "durationSeconds": 3603
+    },
+    {
+      "videoId": "epPYcIwJ5aQ",
+      "channelId": "UCvaTdHTWBGv3MKj3KVqJVCw",
+      "publishedAt": "2022-02-22T05:05:22-08:00",
+      "durationSeconds": 3387
+    },
+    {
+      "videoId": "ERIxQaoEbXs",
+      "channelId": "UC6eWCld0KwmyHFbAqK3V-Rw",
+      "publishedAt": "2025-03-15T05:19:43-07:00",
+      "durationSeconds": 4312
+    },
+    {
+      "videoId": "etiR9Qnqlmc",
+      "channelId": "UCFTLzh12_nrtzqBPsTCqenA",
+      "publishedAt": "2025-02-17T05:22:54-08:00",
+      "durationSeconds": 4606
+    },
+    {
+      "videoId": "eV59GTk0J3s",
+      "channelId": "UCdyqAaZDKHXg4Ahi7VENThQ",
+      "publishedAt": "2025-11-24T05:17:03-08:00",
+      "durationSeconds": 4080
+    },
+    {
+      "videoId": "Evoexs-ocNM",
+      "channelId": "UCqm3BQLlJfvkTsX_hvm0UmA",
+      "publishedAt": "2022-06-06T05:05:03-07:00",
+      "durationSeconds": 3648
+    },
+    {
+      "videoId": "eYLNO0v7ylg",
+      "channelId": "UCYz_5n-uDuChHtLo7My1HnQ",
+      "publishedAt": "2025-10-13T06:00:46-07:00",
+      "durationSeconds": 3350
+    },
+    {
+      "videoId": "f-UbyQUUykE",
+      "channelId": "UCHsx4Hqa-1ORjQTh9TYDhww",
+      "publishedAt": "2025-07-05T18:08:20-07:00",
+      "durationSeconds": 4116
+    },
+    {
+      "videoId": "f5QgEZjH53Y",
+      "channelId": "UCdXAk5MpyLD8594lm_OvtGQ",
+      "publishedAt": "2025-02-04T04:22:34-08:00",
+      "durationSeconds": 4504
+    },
+    {
+      "videoId": "fcFwvfav6mQ",
+      "channelId": "UCqm3BQLlJfvkTsX_hvm0UmA",
+      "publishedAt": "2024-06-06T06:06:47-07:00",
+      "durationSeconds": 3886
+    },
+    {
+      "videoId": "FgA6hgxJH4I",
+      "channelId": "UCvInZx9h3jC2JzsIzoOebWg",
+      "publishedAt": "2026-04-02T05:24:48-07:00",
+      "durationSeconds": 4715
+    },
+    {
+      "videoId": "FnzG3-mmivo",
+      "channelId": "UCL_qhgtOy0dy1Agp8vkySQg",
+      "publishedAt": "2023-08-17T21:04:19-07:00",
+      "durationSeconds": 3302
+    },
+    {
+      "videoId": "foUgVcpF4x8",
+      "channelId": "UCHsx4Hqa-1ORjQTh9TYDhww",
+      "publishedAt": "2026-07-06T17:34:54-07:00",
+      "durationSeconds": 4198
+    },
+    {
+      "videoId": "FQHJL5ueV64",
+      "channelId": "UC-hM6YJuNYVAmUWxeIr9FeA",
+      "publishedAt": "2023-03-05T05:13:11-08:00",
+      "durationSeconds": 3776
+    },
+    {
+      "videoId": "fTupWAFy6wo",
+      "channelId": "UCdyqAaZDKHXg4Ahi7VENThQ",
+      "publishedAt": "2024-11-24T05:15:29-08:00",
+      "durationSeconds": 4320
+    },
+    {
+      "videoId": "fuQ7VpAVFr4",
+      "channelId": "UCL_qhgtOy0dy1Agp8vkySQg",
+      "publishedAt": "2026-02-06T21:11:57-08:00",
+      "durationSeconds": 3762
+    },
+    {
+      "videoId": "FXLKbTnMP2M",
+      "channelId": "UC727SQYUvx5pDDGQpTICNWg",
+      "publishedAt": "2025-03-12T06:07:25-07:00",
+      "durationSeconds": 3502
+    },
+    {
+      "videoId": "GbIIr3waYzI",
+      "channelId": "UC5CwaMl1eIgY8h02uZw7u8A",
+      "publishedAt": "2023-03-22T05:20:38-07:00",
+      "durationSeconds": 4091
+    },
+    {
+      "videoId": "gdQ4eN9wzZg",
+      "channelId": "UC0TXe_LYZ4scaW2XMyi5_kw",
+      "publishedAt": "2025-07-01T05:10:07-07:00",
+      "durationSeconds": 3985
+    },
+    {
+      "videoId": "GEgMPHX6_c8",
+      "channelId": "UCvzGlP9oQwU--Y0r9id_jnA",
+      "publishedAt": "2024-02-25T05:02:28-08:00",
+      "durationSeconds": 3450
+    },
+    {
+      "videoId": "gf7RSwmp8dM",
+      "channelId": "UC1opHUrw8rvnsadT-iGp7Cg",
+      "publishedAt": "2021-05-09T11:59:58+00:00",
+      "durationSeconds": 3182
+    },
+    {
+      "videoId": "GmbIaroMuiU",
+      "channelId": "UCUKD-uaobj9jiqB-VXt71mA",
+      "publishedAt": "2025-09-08T05:17:35-07:00",
+      "durationSeconds": 4210
+    },
+    {
+      "videoId": "gvGDJyWKHbk",
+      "channelId": "UC9LSiN9hXI55svYEBrrK-tw",
+      "publishedAt": "2026-05-29T05:00:07-07:00",
+      "durationSeconds": 3435
+    },
+    {
+      "videoId": "h0jykfxgmj0",
+      "channelId": "UCjk2nKmHzgH5Xy-C5qYRd5A",
+      "publishedAt": "2026-06-16T06:05:49-07:00",
+      "durationSeconds": 3785
+    },
+    {
+      "videoId": "H1vf2vF1LmE",
+      "channelId": "UCvInZx9h3jC2JzsIzoOebWg",
+      "publishedAt": "2022-06-19T06:07:13-07:00",
+      "durationSeconds": 3832
+    },
+    {
+      "videoId": "HB8sU0qsePE",
+      "channelId": "UCtyWhCj3AqKh2dXctLkDtng",
+      "publishedAt": "2025-05-12T04:07:35-07:00",
+      "durationSeconds": 3655
+    },
+    {
+      "videoId": "hEkHj1WZekU",
+      "channelId": "UCFKOVgVbGmX65RxO3EtH3iw",
+      "publishedAt": "2021-11-15T04:13:14-08:00",
+      "durationSeconds": 3205
+    },
+    {
+      "videoId": "hlZi0IJnreg",
+      "channelId": "UC0TXe_LYZ4scaW2XMyi5_kw",
+      "publishedAt": "2020-11-15T03:25:24-08:00",
+      "durationSeconds": 4920
+    },
+    {
+      "videoId": "hoCCgeh-xIA",
+      "channelId": "UC6eWCld0KwmyHFbAqK3V-Rw",
+      "publishedAt": "2025-09-21T05:16:55-07:00",
+      "durationSeconds": 3988
+    },
+    {
+      "videoId": "hoDuE5v4a08",
+      "channelId": "UCUKD-uaobj9jiqB-VXt71mA",
+      "publishedAt": "2021-08-14T05:08:27-07:00",
+      "durationSeconds": 3470
+    },
+    {
+      "videoId": "hQB206l932M",
+      "channelId": "UCdn5BQ06XqgXoAxIhbqw5Rg",
+      "publishedAt": "2022-02-24T04:05:47-08:00",
+      "durationSeconds": 3626
+    },
+    {
+      "videoId": "hrcZEjdrkRg",
+      "channelId": "UCL_qhgtOy0dy1Agp8vkySQg",
+      "publishedAt": "2022-04-04T05:17:36-07:00",
+      "durationSeconds": 4244
+    },
+    {
+      "videoId": "hURqBaVxnSg",
+      "channelId": "UCFTLzh12_nrtzqBPsTCqenA",
+      "publishedAt": "2023-06-01T06:21:59-07:00",
+      "durationSeconds": 4805
+    },
+    {
+      "videoId": "I-J11Da5ONY",
+      "channelId": "UCMwGHR0BTZuLsmjY_NT5Pwg",
+      "publishedAt": "2025-05-20T20:11:17-07:00",
+      "durationSeconds": 4048
+    },
+    {
+      "videoId": "i0vqoGF6xFo",
+      "channelId": "UC5CwaMl1eIgY8h02uZw7u8A",
+      "publishedAt": "2024-03-22T05:01:50-07:00",
+      "durationSeconds": 3290
+    },
+    {
+      "videoId": "I4FbpwMb78U",
+      "channelId": "UC1uv2Oq6kNxgATlCiez59hw",
+      "publishedAt": "2025-08-08T04:55:28-07:00",
+      "durationSeconds": 3110
+    },
+    {
+      "videoId": "IhJW-YPJ-z0",
+      "channelId": "UCZlDXzGoo7d44bwdNObFacg",
+      "publishedAt": "2024-12-22T12:00:01+00:00",
+      "durationSeconds": 3240
+    },
+    {
+      "videoId": "IZDRnl38gvY",
+      "channelId": "UCp6993wxpyDPHUpavwDFqgg",
+      "publishedAt": "2025-05-15T05:21:01-07:00",
+      "durationSeconds": 4780
+    },
+    {
+      "videoId": "J53rX5brbUw",
+      "channelId": "UC8rcEBzJSleTkf_-agPM20g",
+      "publishedAt": "2026-03-20T21:11:35-07:00",
+      "durationSeconds": 4030
+    },
+    {
+      "videoId": "jdio7hLzy3w",
+      "channelId": "UCAWSyEs_Io8MtpY3m-zqILA",
+      "publishedAt": "2021-06-12T05:07:42-07:00",
+      "durationSeconds": 3628
+    },
+    {
+      "videoId": "JEyWbHwLKJE",
+      "channelId": "UCdyqAaZDKHXg4Ahi7VENThQ",
+      "publishedAt": "2021-06-26T06:10:42-07:00",
+      "durationSeconds": 3932
+    },
+    {
+      "videoId": "jgoJuJiWtf4",
+      "channelId": "UC1DCedRgGHBdm81E1llLhOQ",
+      "publishedAt": "2023-01-12T05:09:10-08:00",
+      "durationSeconds": 3654
+    },
+    {
+      "videoId": "jjLLByDa3Xc",
+      "channelId": "UCHsx4Hqa-1ORjQTh9TYDhww",
+      "publishedAt": "2025-04-20T18:13:12-07:00",
+      "durationSeconds": 4148
+    },
+    {
+      "videoId": "JmnlnzBgMOc",
+      "channelId": "UCDHABijvPBnJm7F-KlNME3w",
+      "publishedAt": "2026-05-16T18:48:10-07:00",
+      "durationSeconds": 2599
+    },
+    {
+      "videoId": "jNCGOv8Zz1A",
+      "channelId": "UCjLEmnpCNeisMxy134KPwWw",
+      "publishedAt": "2025-12-12T05:19:40-08:00",
+      "durationSeconds": 4276
+    },
+    {
+      "videoId": "JNmmnB4bP0M",
+      "channelId": "UC5CwaMl1eIgY8h02uZw7u8A",
+      "publishedAt": "2020-10-19T06:15:21-07:00",
+      "durationSeconds": 4015
+    },
+    {
+      "videoId": "jrUa3JpsNt4",
+      "channelId": "UC_vMYWcDjmfdpH6r4TTn1MQ",
+      "publishedAt": "2023-11-30T04:07:52-08:00",
+      "durationSeconds": 3884
+    },
+    {
+      "videoId": "JSitZSYYzfA",
+      "channelId": "UC1opHUrw8rvnsadT-iGp7Cg",
+      "publishedAt": "2021-12-01T12:00:22+00:00",
+      "durationSeconds": 3934
+    },
+    {
+      "videoId": "jtQy1xURcuQ",
+      "channelId": "UCa9Y57gfeY0Zro_noHRVrnw",
+      "publishedAt": "2025-10-10T06:18:33-07:00",
+      "durationSeconds": 3605
+    },
+    {
+      "videoId": "Jz2xEfAjC8Y",
+      "channelId": "UC5CwaMl1eIgY8h02uZw7u8A",
+      "publishedAt": "2026-03-22T05:03:43-07:00",
+      "durationSeconds": 3565
+    },
+    {
+      "videoId": "kAWOhajaCNo",
+      "channelId": "UCa9Y57gfeY0Zro_noHRVrnw",
+      "publishedAt": "2020-10-10T05:09:36-07:00",
+      "durationSeconds": 3673
+    },
+    {
+      "videoId": "khQRCrrtVjA",
+      "channelId": "UCgmPnx-EEeOrZSg5Tiw7ZRQ",
+      "publishedAt": "2026-02-27T20:11:47-08:00",
+      "durationSeconds": 3950
+    },
+    {
+      "videoId": "Kib9k58WLn0",
+      "channelId": "UC0TXe_LYZ4scaW2XMyi5_kw",
+      "publishedAt": "2026-07-01T05:22:34-07:00",
+      "durationSeconds": 4665
+    },
+    {
+      "videoId": "KJGX0gJhvrM",
+      "channelId": "UCvzGlP9oQwU--Y0r9id_jnA",
+      "publishedAt": "2025-03-02T05:12:25-08:00",
+      "durationSeconds": 3610
+    },
+    {
+      "videoId": "knb_mosTUvo",
+      "channelId": "UC1uv2Oq6kNxgATlCiez59hw",
+      "publishedAt": "2023-01-03T05:13:12-08:00",
+      "durationSeconds": 3676
+    },
+    {
+      "videoId": "KyURvb-eIU8",
+      "channelId": "UC1uv2Oq6kNxgATlCiez59hw",
+      "publishedAt": "2022-08-08T04:53:29-07:00",
+      "durationSeconds": 3123
+    },
+    {
+      "videoId": "L2y7a_zMi20",
+      "channelId": "UC1DCedRgGHBdm81E1llLhOQ",
+      "publishedAt": "2024-03-03T05:03:50-08:00",
+      "durationSeconds": 3546
+    },
+    {
+      "videoId": "LazLAQUMCzI",
+      "channelId": "UCvaTdHTWBGv3MKj3KVqJVCw",
+      "publishedAt": "2022-07-24T05:18:41-07:00",
+      "durationSeconds": 4410
+    },
+    {
+      "videoId": "lJLs49hA84g",
+      "channelId": "UC-hM6YJuNYVAmUWxeIr9FeA",
+      "publishedAt": "2024-07-21T05:05:38-07:00",
+      "durationSeconds": 3846
+    },
+    {
+      "videoId": "lVi3Wb7WShU",
+      "channelId": "UCDHABijvPBnJm7F-KlNME3w",
+      "publishedAt": "2025-08-02T18:15:50-07:00",
+      "durationSeconds": 4194
+    },
+    {
+      "videoId": "lVQlIvUr5Dc",
+      "channelId": "UCZlDXzGoo7d44bwdNObFacg",
+      "publishedAt": "2024-05-08T12:00:35+00:00",
+      "durationSeconds": 3161
+    },
+    {
+      "videoId": "Lw3sBpkC3Rw",
+      "channelId": "UCDqI2jOz0weumE8s7paEk6g",
+      "publishedAt": "2022-03-04T05:12:39-08:00",
+      "durationSeconds": 3734
+    },
+    {
+      "videoId": "lXdX1S1-Mxc",
+      "channelId": "UCp6993wxpyDPHUpavwDFqgg",
+      "publishedAt": "2021-05-15T05:00:07-07:00",
+      "durationSeconds": 3289
+    },
+    {
+      "videoId": "mjXO5WWADww",
+      "channelId": "UCFKOVgVbGmX65RxO3EtH3iw",
+      "publishedAt": "2025-11-15T04:05:12-08:00",
+      "durationSeconds": 3410
+    },
+    {
+      "videoId": "mknggf96fuI",
+      "channelId": "UCFTLzh12_nrtzqBPsTCqenA",
+      "publishedAt": "2022-06-01T06:09:00-07:00",
+      "durationSeconds": 3865
+    },
+    {
+      "videoId": "mlsJvmN-z74",
+      "channelId": "UCAWSyEs_Io8MtpY3m-zqILA",
+      "publishedAt": "2024-03-02T04:04:00-08:00",
+      "durationSeconds": 3790
+    },
+    {
+      "videoId": "mMDPWutdkDM",
+      "channelId": "UCAoy6rzhSf4ydcYjJw3WoVg",
+      "publishedAt": "2025-07-15T07:08:41-07:00",
+      "durationSeconds": 3825
+    },
+    {
+      "videoId": "mmUVwNut2-Y",
+      "channelId": "UCp-5t9SrOQwXMU7iIjQfARg",
+      "publishedAt": "2020-12-07T05:18:22-08:00",
+      "durationSeconds": 4090
+    },
+    {
+      "videoId": "MrLjWPYpkKM",
+      "channelId": "UC_vMYWcDjmfdpH6r4TTn1MQ",
+      "publishedAt": "2024-06-18T06:09:29-07:00",
+      "durationSeconds": 4027
+    },
+    {
+      "videoId": "mt8AyISL9Ig",
+      "channelId": "UCWQtYtq9EOB4-I5P-3fh8lA",
+      "publishedAt": "2025-04-20T05:13:06-07:00",
+      "durationSeconds": 4330
+    },
+    {
+      "videoId": "mwJGZ8YU7o4",
+      "channelId": "UC7fk0CB07ly8oSl0aqKkqFg",
+      "publishedAt": "2022-09-03T05:23:01-07:00",
+      "durationSeconds": 4562
+    },
+    {
+      "videoId": "MwooDDEEHWw",
+      "channelId": "UCAWSyEs_Io8MtpY3m-zqILA",
+      "publishedAt": "2022-10-22T06:14:25-07:00",
+      "durationSeconds": 4058
+    },
+    {
+      "videoId": "n-pNnnM2ERs",
+      "channelId": "UCFTLzh12_nrtzqBPsTCqenA",
+      "publishedAt": "2023-05-27T06:04:12-07:00",
+      "durationSeconds": 3865
+    },
+    {
+      "videoId": "N0mQHlL7Qo4",
+      "channelId": "UC7fk0CB07ly8oSl0aqKkqFg",
+      "publishedAt": "2021-10-02T05:09:06-07:00",
+      "durationSeconds": 3810
+    },
+    {
+      "videoId": "n6yep2gl1HY",
+      "channelId": "UCvzGlP9oQwU--Y0r9id_jnA",
+      "publishedAt": "2022-11-20T05:19:19-08:00",
+      "durationSeconds": 3872
+    },
+    {
+      "videoId": "NDYaVPFVtzk",
+      "channelId": "UC0TXe_LYZ4scaW2XMyi5_kw",
+      "publishedAt": "2021-07-16T10:30:14-07:00",
+      "durationSeconds": 3598
+    },
+    {
+      "videoId": "NfJsoMi1y0s",
+      "channelId": "UCvzGlP9oQwU--Y0r9id_jnA",
+      "publishedAt": "2026-03-29T06:07:05-07:00",
+      "durationSeconds": 3540
+    },
+    {
+      "videoId": "nlfGHej2OyA",
+      "channelId": "UCs9_O1tRPMQTHQ-N_L6FU2g",
+      "publishedAt": "2023-06-11T06:01:56-07:00",
+      "durationSeconds": 3465
+    },
+    {
+      "videoId": "NuOJhtBC7R4",
+      "channelId": "UC1uv2Oq6kNxgATlCiez59hw",
+      "publishedAt": "2021-08-08T05:05:30-07:00",
+      "durationSeconds": 3494
+    },
+    {
+      "videoId": "Nuy3XE8vjgc",
+      "channelId": "UCCzUftO8KOVkV4wQG1vkUvg",
+      "publishedAt": "2023-11-12T05:04:48-08:00",
+      "durationSeconds": 3746
+    },
+    {
+      "videoId": "NxtHvRVLzXM",
+      "channelId": "UCCzUftO8KOVkV4wQG1vkUvg",
+      "publishedAt": "2024-07-30T05:06:51-07:00",
+      "durationSeconds": 3599
+    },
+    {
+      "videoId": "o3JeicqyVG0",
+      "channelId": "UChAnqc_AY5_I3Px5dig3X1Q",
+      "publishedAt": "2023-04-13T06:13:32-07:00",
+      "durationSeconds": 3764
+    },
+    {
+      "videoId": "O4Ip7gZQOts",
+      "channelId": "UC1opHUrw8rvnsadT-iGp7Cg",
+      "publishedAt": "2022-08-11T11:55:35+00:00",
+      "durationSeconds": 3856
+    },
+    {
+      "videoId": "O607BZ8HwDk",
+      "channelId": "UCYz_5n-uDuChHtLo7My1HnQ",
+      "publishedAt": "2024-10-13T07:02:51-07:00",
+      "durationSeconds": 3712
+    },
+    {
+      "videoId": "o8PZa10DymU",
+      "channelId": "UCa9Y57gfeY0Zro_noHRVrnw",
+      "publishedAt": "2024-03-29T05:04:02-07:00",
+      "durationSeconds": 3485
+    },
+    {
+      "videoId": "oFn0ZypcaM8",
+      "channelId": "UCQ0UDLQCjY0rmuxCDE38FGg",
+      "publishedAt": "2022-07-22T05:19:00-07:00",
+      "durationSeconds": 3490
+    },
+    {
+      "videoId": "oU85vmx7jn8",
+      "channelId": "UCs9_O1tRPMQTHQ-N_L6FU2g",
+      "publishedAt": "2023-11-27T05:07:18-08:00",
+      "durationSeconds": 4062
+    },
+    {
+      "videoId": "ouQF2A1l_cI",
+      "channelId": "UCt9H_RpQzhxzlyBxFqrdHqA",
+      "publishedAt": "2025-02-01T20:25:12-08:00",
+      "durationSeconds": 4840
+    },
+    {
+      "videoId": "OyOl61s3X2k",
+      "channelId": "UC1DCedRgGHBdm81E1llLhOQ",
+      "publishedAt": "2022-01-12T05:11:36-08:00",
+      "durationSeconds": 3711
+    },
+    {
+      "videoId": "P7AQO14NFS8",
+      "channelId": "UCyl1z3jo3XHR1riLFKG5UAg",
+      "publishedAt": "2022-01-06T16:55:41-08:00",
+      "durationSeconds": 5734
+    },
+    {
+      "videoId": "paI8IDWnnAQ",
+      "channelId": "UCTvHWSfBZgtxE4sILOaurIQ",
+      "publishedAt": "2024-11-07T05:52:22-08:00",
+      "durationSeconds": 2926
+    },
+    {
+      "videoId": "pFZiKpoxuvw",
+      "channelId": "UCFTLzh12_nrtzqBPsTCqenA",
+      "publishedAt": "2024-02-17T05:02:56-08:00",
+      "durationSeconds": 3450
+    },
+    {
+      "videoId": "PGppUhILuP4",
+      "channelId": "UCW5uhrG1eCBYditmhL0Ykjw",
+      "publishedAt": "2026-04-25T06:03:23-07:00",
+      "durationSeconds": 3484
+    },
+    {
+      "videoId": "PHrZ_dRSy_4",
+      "channelId": "UCs9_O1tRPMQTHQ-N_L6FU2g",
+      "publishedAt": "2025-09-24T06:01:56-07:00",
+      "durationSeconds": 3662
+    },
+    {
+      "videoId": "pKc5qSSWJQs",
+      "channelId": "UCQ0UDLQCjY0rmuxCDE38FGg",
+      "publishedAt": "2024-11-01T04:56:11-07:00",
+      "durationSeconds": 3202
+    },
+    {
+      "videoId": "PlC7enNzbgE",
+      "channelId": "UC-hM6YJuNYVAmUWxeIr9FeA",
+      "publishedAt": "2025-03-05T05:12:26-08:00",
+      "durationSeconds": 3645
+    },
+    {
+      "videoId": "pmWH-wAJYRE",
+      "channelId": "UC1uv2Oq6kNxgATlCiez59hw",
+      "publishedAt": "2026-01-03T04:06:40-08:00",
+      "durationSeconds": 4080
+    },
+    {
+      "videoId": "POix3IWi5Uw",
+      "channelId": "UC_vMYWcDjmfdpH6r4TTn1MQ",
+      "publishedAt": "2024-11-30T04:31:06-08:00",
+      "durationSeconds": 4885
+    },
+    {
+      "videoId": "q0Uhp8IN5-w",
+      "channelId": "UCW5uhrG1eCBYditmhL0Ykjw",
+      "publishedAt": "2025-08-01T18:08:01-07:00",
+      "durationSeconds": 3988
+    },
+    {
+      "videoId": "Q2_fe1wtGn0",
+      "channelId": "UC0TXe_LYZ4scaW2XMyi5_kw",
+      "publishedAt": "2021-11-14T03:25:27-08:00",
+      "durationSeconds": 4646
+    },
+    {
+      "videoId": "q4XGBW-UGg0",
+      "channelId": "UCENwRMx5Yh42zWpzURebzTw",
+      "publishedAt": "2024-05-25T05:09:04-07:00",
+      "durationSeconds": 4140
+    },
+    {
+      "videoId": "Q7KmABONtXk",
+      "channelId": "UCdyqAaZDKHXg4Ahi7VENThQ",
+      "publishedAt": "2023-08-08T06:04:50-07:00",
+      "durationSeconds": 3710
+    },
+    {
+      "videoId": "qb_fih6glZk",
+      "channelId": "UC0TXe_LYZ4scaW2XMyi5_kw",
+      "publishedAt": "2021-05-16T04:21:23-07:00",
+      "durationSeconds": 4654
+    },
+    {
+      "videoId": "Qd5HBpoOIJA",
+      "channelId": "UCgmPnx-EEeOrZSg5Tiw7ZRQ",
+      "publishedAt": "2023-09-30T21:10:55-07:00",
+      "durationSeconds": 4008
+    },
+    {
+      "videoId": "qqi8yXuH35Y",
+      "channelId": "UCmbs8T6MWqUHP1tIQvSgKrg",
+      "publishedAt": "2026-03-13T20:18:03-07:00",
+      "durationSeconds": 4282
+    },
+    {
+      "videoId": "QVxgwstf-Aw",
+      "channelId": "UC727SQYUvx5pDDGQpTICNWg",
+      "publishedAt": "2023-07-28T07:14:54-07:00",
+      "durationSeconds": 4283
+    },
+    {
+      "videoId": "R3hmYr58m6E",
+      "channelId": "UCqm3BQLlJfvkTsX_hvm0UmA",
+      "publishedAt": "2023-06-06T06:00:30-07:00",
+      "durationSeconds": 3418
+    },
+    {
+      "videoId": "Rb163zkoNSo",
+      "channelId": "UCL_qhgtOy0dy1Agp8vkySQg",
+      "publishedAt": "2026-04-04T05:26:30-07:00",
+      "durationSeconds": 4225
+    },
+    {
+      "videoId": "RDHf9Tmdvpk",
+      "channelId": "UC5CwaMl1eIgY8h02uZw7u8A",
+      "publishedAt": "2022-03-31T06:07:05-07:00",
+      "durationSeconds": 3712
+    },
+    {
+      "videoId": "rhgRzAgYKDM",
+      "channelId": "UCqm3BQLlJfvkTsX_hvm0UmA",
+      "publishedAt": "2025-06-06T06:11:45-07:00",
+      "durationSeconds": 3740
+    },
+    {
+      "videoId": "RQn7biOiqHs",
+      "channelId": "UC8rcEBzJSleTkf_-agPM20g",
+      "publishedAt": "2024-11-16T20:03:06-08:00",
+      "durationSeconds": 3654
+    },
+    {
+      "videoId": "rvIy1IOZNtA",
+      "channelId": "UCIBY1ollUsauvVi4hW4cumw",
+      "publishedAt": "2024-05-18T06:03:23-07:00",
+      "durationSeconds": 3974
+    },
+    {
+      "videoId": "RxytWppYJq8",
+      "channelId": "UCvaTdHTWBGv3MKj3KVqJVCw",
+      "publishedAt": "2021-02-22T05:31:20-08:00",
+      "durationSeconds": 3677
+    },
+    {
+      "videoId": "RY_5mn2EY6s",
+      "channelId": "UCCzUftO8KOVkV4wQG1vkUvg",
+      "publishedAt": "2021-07-03T06:13:02-07:00",
+      "durationSeconds": 3792
+    },
+    {
+      "videoId": "rYpbqdD1oiQ",
+      "channelId": "UCvaTdHTWBGv3MKj3KVqJVCw",
+      "publishedAt": "2026-02-22T05:02:12-08:00",
+      "durationSeconds": 3385
+    },
+    {
+      "videoId": "RyrHynHHbmY",
+      "channelId": "UC0TXe_LYZ4scaW2XMyi5_kw",
+      "publishedAt": "2021-07-03T04:24:37-07:00",
+      "durationSeconds": 4536
+    },
+    {
+      "videoId": "s7hakOSsU-I",
+      "channelId": "UCp6993wxpyDPHUpavwDFqgg",
+      "publishedAt": "2021-09-07T06:08:34-07:00",
+      "durationSeconds": 3518
+    },
+    {
+      "videoId": "sA9hROO6Ua8",
+      "channelId": "UCyl1z3jo3XHR1riLFKG5UAg",
+      "publishedAt": "2024-01-06T18:37:48-08:00",
+      "durationSeconds": 5497
+    },
+    {
+      "videoId": "sdzbH7LX80w",
+      "channelId": "UCL_qhgtOy0dy1Agp8vkySQg",
+      "publishedAt": "2024-04-03T20:02:35-07:00",
+      "durationSeconds": 3537
+    },
+    {
+      "videoId": "SIU7AhRwCWQ",
+      "channelId": "UC0TXe_LYZ4scaW2XMyi5_kw",
+      "publishedAt": "2020-07-04T04:16:45-07:00",
+      "durationSeconds": 4525
+    },
+    {
+      "videoId": "SrUT9pCLlcY",
+      "channelId": "UC0TXe_LYZ4scaW2XMyi5_kw",
+      "publishedAt": "2022-11-15T04:05:25-08:00",
+      "durationSeconds": 3606
+    },
+    {
+      "videoId": "SSuRtcLXA0s",
+      "channelId": "UCjLEmnpCNeisMxy134KPwWw",
+      "publishedAt": "2025-03-27T09:07:11-07:00",
+      "durationSeconds": 3932
+    },
+    {
+      "videoId": "szUbg1Yar5c",
+      "channelId": "UCZlDXzGoo7d44bwdNObFacg",
+      "publishedAt": "2022-12-27T11:58:16+00:00",
+      "durationSeconds": 3598
+    },
+    {
+      "videoId": "T71ds94dnnM",
+      "channelId": "UCs9_O1tRPMQTHQ-N_L6FU2g",
+      "publishedAt": "2026-06-11T05:07:44-07:00",
+      "durationSeconds": 4065
+    },
+    {
+      "videoId": "TeLstIBwC6M",
+      "channelId": "UCa9Y57gfeY0Zro_noHRVrnw",
+      "publishedAt": "2024-10-10T05:02:23-07:00",
+      "durationSeconds": 3571
+    },
+    {
+      "videoId": "tIKQMFtbgOA",
+      "channelId": "UCgnfPPb9JI3e9A4cXHnWbyg",
+      "publishedAt": "2024-08-02T21:05:08-07:00",
+      "durationSeconds": 3136
+    },
+    {
+      "videoId": "Tmg_zSjOTtc",
+      "channelId": "UChgTyjG-pdNvxxhdsXfHQ5Q",
+      "publishedAt": "2022-09-09T07:14:37-07:00",
+      "durationSeconds": 3598
+    },
+    {
+      "videoId": "TQSikoeVXoE",
+      "channelId": "UCgmPnx-EEeOrZSg5Tiw7ZRQ",
+      "publishedAt": "2024-02-28T20:06:34-08:00",
+      "durationSeconds": 3859
+    },
+    {
+      "videoId": "TsRo8VuubSk",
+      "channelId": "UCFTLzh12_nrtzqBPsTCqenA",
+      "publishedAt": "2022-02-17T05:09:36-08:00",
+      "durationSeconds": 3404
+    },
+    {
+      "videoId": "TV8rLERH6yU",
+      "channelId": "UCqm3BQLlJfvkTsX_hvm0UmA",
+      "publishedAt": "2021-12-29T05:07:12-08:00",
+      "durationSeconds": 3701
+    },
+    {
+      "videoId": "TZiMgUFHN_Y",
+      "channelId": "UCW5uhrG1eCBYditmhL0Ykjw",
+      "publishedAt": "2025-09-27T21:32:32-07:00",
+      "durationSeconds": 5881
+    },
+    {
+      "videoId": "U6JzdFFuvgQ",
+      "channelId": "UC_vMYWcDjmfdpH6r4TTn1MQ",
+      "publishedAt": "2023-06-18T05:08:40-07:00",
+      "durationSeconds": 3952
+    },
+    {
+      "videoId": "u8AeA1ucX2o",
+      "channelId": "UCvInZx9h3jC2JzsIzoOebWg",
+      "publishedAt": "2024-04-02T06:03:38-07:00",
+      "durationSeconds": 3574
+    },
+    {
+      "videoId": "uB6GxHc7PRc",
+      "channelId": "UC1DCedRgGHBdm81E1llLhOQ",
+      "publishedAt": "2025-01-12T05:10:43-08:00",
+      "durationSeconds": 3848
+    },
+    {
+      "videoId": "UdbB5g1ncHs",
+      "channelId": "UCZlDXzGoo7d44bwdNObFacg",
+      "publishedAt": "2025-04-22T11:59:01+00:00",
+      "durationSeconds": 3250
+    },
+    {
+      "videoId": "uHtWZbAu7iE",
+      "channelId": "UC1suqwovbL1kzsoaZgFZLKg",
+      "publishedAt": "2022-02-14T04:15:23-08:00",
+      "durationSeconds": 3534
+    },
+    {
+      "videoId": "uMc2xEMA5Ek",
+      "channelId": "UCZLZ8Jjx_RN2CXloOmgTHVg",
+      "publishedAt": "2023-10-20T07:04:27-07:00",
+      "durationSeconds": 3659
+    },
+    {
+      "videoId": "uRa-uLMea7w",
+      "channelId": "UC7fk0CB07ly8oSl0aqKkqFg",
+      "publishedAt": "2025-09-03T05:10:48-07:00",
+      "durationSeconds": 3730
+    },
+    {
+      "videoId": "UtSY7tOqr4k",
+      "channelId": "UCdyqAaZDKHXg4Ahi7VENThQ",
+      "publishedAt": "2022-08-27T06:09:31-07:00",
+      "durationSeconds": 3770
+    },
+    {
+      "videoId": "UxNqEmXGO1s",
+      "channelId": "UCAoy6rzhSf4ydcYjJw3WoVg",
+      "publishedAt": "2024-07-15T07:09:47-07:00",
+      "durationSeconds": 4028
+    },
+    {
+      "videoId": "uzF43bRo5XU",
+      "channelId": "UC727SQYUvx5pDDGQpTICNWg",
+      "publishedAt": "2026-03-12T06:06:39-07:00",
+      "durationSeconds": 3535
+    },
+    {
+      "videoId": "V0plPBgyqPs",
+      "channelId": "UC8rcEBzJSleTkf_-agPM20g",
+      "publishedAt": "2025-03-15T21:09:03-07:00",
+      "durationSeconds": 4022
+    },
+    {
+      "videoId": "V1EE-eRaOFk",
+      "channelId": "UC-hM6YJuNYVAmUWxeIr9FeA",
+      "publishedAt": "2020-03-05T05:44:30-08:00",
+      "durationSeconds": 4064
+    },
+    {
+      "videoId": "V761LnbkXYQ",
+      "channelId": "UC-hM6YJuNYVAmUWxeIr9FeA",
+      "publishedAt": "2023-08-01T06:12:48-07:00",
+      "durationSeconds": 4092
+    },
+    {
+      "videoId": "v8tFy6_6R84",
+      "channelId": "UChAnqc_AY5_I3Px5dig3X1Q",
+      "publishedAt": "2021-04-01T07:06:34-07:00",
+      "durationSeconds": 3322
+    },
+    {
+      "videoId": "vBX1GpS8qLk",
+      "channelId": "UCp6993wxpyDPHUpavwDFqgg",
+      "publishedAt": "2023-09-07T06:05:36-07:00",
+      "durationSeconds": 3678
+    },
+    {
+      "videoId": "viPlIHvk724",
+      "channelId": "UCgmPnx-EEeOrZSg5Tiw7ZRQ",
+      "publishedAt": "2025-02-28T05:05:24-08:00",
+      "durationSeconds": 3618
+    },
+    {
+      "videoId": "vLGCYbnYhPg",
+      "channelId": "UCCzUftO8KOVkV4wQG1vkUvg",
+      "publishedAt": "2022-04-27T06:05:52-07:00",
+      "durationSeconds": 3662
+    },
+    {
+      "videoId": "vlqVuLuZl00",
+      "channelId": "UCa9Y57gfeY0Zro_noHRVrnw",
+      "publishedAt": "2022-10-10T04:59:43-07:00",
+      "durationSeconds": 3448
+    },
+    {
+      "videoId": "VQDvivMID-Y",
+      "channelId": "UCFTLzh12_nrtzqBPsTCqenA",
+      "publishedAt": "2026-03-13T06:41:11-07:00",
+      "durationSeconds": 3106
+    },
+    {
+      "videoId": "VQxFBBlec38",
+      "channelId": "UCL_qhgtOy0dy1Agp8vkySQg",
+      "publishedAt": "2024-08-16T21:31:34-07:00",
+      "durationSeconds": 1688
+    },
+    {
+      "videoId": "VsYtOSHzXHA",
+      "channelId": "UCUKD-uaobj9jiqB-VXt71mA",
+      "publishedAt": "2022-08-14T05:05:06-07:00",
+      "durationSeconds": 3714
+    },
+    {
+      "videoId": "vTsOdumJEOY",
+      "channelId": "UC1CfXB_kRs3C-zaeTG3oGyg",
+      "publishedAt": "2025-08-10T06:15:44-07:00",
+      "durationSeconds": 4050
+    },
+    {
+      "videoId": "VVQQcI6r3NU",
+      "channelId": "UCAWSyEs_Io8MtpY3m-zqILA",
+      "publishedAt": "2021-12-21T05:13:37-08:00",
+      "durationSeconds": 3604
+    },
+    {
+      "videoId": "Vw8dZIA2Nfc",
+      "channelId": "UCyl1z3jo3XHR1riLFKG5UAg",
+      "publishedAt": "2023-01-06T18:49:35-08:00",
+      "durationSeconds": 5611
+    },
+    {
+      "videoId": "VxnwBm49egM",
+      "channelId": "UCOyYb1c43VlX9rc_lT6NKQw",
+      "publishedAt": "2022-09-18T07:11:03-07:00",
+      "durationSeconds": 3720
+    },
+    {
+      "videoId": "VYSAfYJ6FhI",
+      "channelId": "UCOyYb1c43VlX9rc_lT6NKQw",
+      "publishedAt": "2026-01-15T05:56:47-08:00",
+      "durationSeconds": 3110
+    },
+    {
+      "videoId": "VzecQUmB1sY",
+      "channelId": "UCp-5t9SrOQwXMU7iIjQfARg",
+      "publishedAt": "2024-08-20T05:00:26-07:00",
+      "durationSeconds": 3328
+    },
+    {
+      "videoId": "W0lICCjnuDs",
+      "channelId": "UCHsx4Hqa-1ORjQTh9TYDhww",
+      "publishedAt": "2022-07-06T11:28:18-07:00",
+      "durationSeconds": 4683
+    },
+    {
+      "videoId": "w37yVSXhV_c",
+      "channelId": "UCl69AEx4MdqMZH7Jtsm7Tig",
+      "publishedAt": "2026-05-09T19:13:21-07:00",
+      "durationSeconds": 4144
+    },
+    {
+      "videoId": "W6hZ1EYa37g",
+      "channelId": "UCqm3BQLlJfvkTsX_hvm0UmA",
+      "publishedAt": "2023-12-29T05:04:26-08:00",
+      "durationSeconds": 3665
+    },
+    {
+      "videoId": "wF_VmniNI2I",
+      "channelId": "UCCzUftO8KOVkV4wQG1vkUvg",
+      "publishedAt": "2022-07-30T06:11:07-07:00",
+      "durationSeconds": 3414
+    },
+    {
+      "videoId": "WfGS8QW-b40",
+      "channelId": "UC9p_lqQ0FEDz327Vgf5JwqA",
+      "publishedAt": "2025-11-01T21:18:08-07:00",
+      "durationSeconds": 4225
+    },
+    {
+      "videoId": "wg4-Un6zTiU",
+      "channelId": "UC6eWCld0KwmyHFbAqK3V-Rw",
+      "publishedAt": "2023-11-28T05:05:50-08:00",
+      "durationSeconds": 3782
+    },
+    {
+      "videoId": "WJWg8kGKoP0",
+      "channelId": "UC1DCedRgGHBdm81E1llLhOQ",
+      "publishedAt": "2026-07-17T06:07:52-07:00",
+      "durationSeconds": 3835
+    },
+    {
+      "videoId": "WY26Jo2P9OU",
+      "channelId": "UCa9Y57gfeY0Zro_noHRVrnw",
+      "publishedAt": "2023-10-10T05:06:54-07:00",
+      "durationSeconds": 3650
+    },
+    {
+      "videoId": "xa7J8CE1Zms",
+      "channelId": "UCdyqAaZDKHXg4Ahi7VENThQ",
+      "publishedAt": "2021-09-26T06:06:34-07:00",
+      "durationSeconds": 3696
+    },
+    {
+      "videoId": "XcRns_s_wQ8",
+      "channelId": "UCvInZx9h3jC2JzsIzoOebWg",
+      "publishedAt": "2025-04-02T06:09:59-07:00",
+      "durationSeconds": 3882
+    },
+    {
+      "videoId": "XKBbbN7M44E",
+      "channelId": "UC1suqwovbL1kzsoaZgFZLKg",
+      "publishedAt": "2022-09-04T05:04:29-07:00",
+      "durationSeconds": 3578
+    },
+    {
+      "videoId": "XvrnWqU6MIs",
+      "channelId": "UCvaTdHTWBGv3MKj3KVqJVCw",
+      "publishedAt": "2021-06-19T05:52:47-07:00",
+      "durationSeconds": 2814
+    },
+    {
+      "videoId": "Y_n8tWcMFj8",
+      "channelId": "UCAWSyEs_Io8MtpY3m-zqILA",
+      "publishedAt": "2023-03-28T05:24:34-07:00",
+      "durationSeconds": 4707
+    },
+    {
+      "videoId": "y-gW-iI1eAo",
+      "channelId": "UCs9_O1tRPMQTHQ-N_L6FU2g",
+      "publishedAt": "2022-11-27T05:05:35-08:00",
+      "durationSeconds": 3538
+    },
+    {
+      "videoId": "y3Ed1eCwuOA",
+      "channelId": "UC0TXe_LYZ4scaW2XMyi5_kw",
+      "publishedAt": "2022-07-03T06:09:20-07:00",
+      "durationSeconds": 3866
+    },
+    {
+      "videoId": "yGN0gj0o1GU",
+      "channelId": "UC6eWCld0KwmyHFbAqK3V-Rw",
+      "publishedAt": "2026-03-28T05:07:54-07:00",
+      "durationSeconds": 3875
+    },
+    {
+      "videoId": "YgZNZM81OcA",
+      "channelId": "UCAWSyEs_Io8MtpY3m-zqILA",
+      "publishedAt": "2026-03-02T04:17:50-08:00",
+      "durationSeconds": 4365
+    },
+    {
+      "videoId": "YjTnRIIczcE",
+      "channelId": "UC1suqwovbL1kzsoaZgFZLKg",
+      "publishedAt": "2023-12-02T02:53:01-08:00",
+      "durationSeconds": 2992
+    },
+    {
+      "videoId": "YOnasn4-BH0",
+      "channelId": "UCIBY1ollUsauvVi4hW4cumw",
+      "publishedAt": "2022-11-29T05:01:45-08:00",
+      "durationSeconds": 3512
+    },
+    {
+      "videoId": "YqPVwYLcvrY",
+      "channelId": "UCp-5t9SrOQwXMU7iIjQfARg",
+      "publishedAt": "2023-12-07T04:57:48-08:00",
+      "durationSeconds": 3196
+    },
+    {
+      "videoId": "YRySeGZNzQ0",
+      "channelId": "UCL_qhgtOy0dy1Agp8vkySQg",
+      "publishedAt": "2025-04-04T21:06:31-07:00",
+      "durationSeconds": 3876
+    },
+    {
+      "videoId": "yT2ety9RfIo",
+      "channelId": "UCMwGHR0BTZuLsmjY_NT5Pwg",
+      "publishedAt": "2023-12-09T17:57:25-08:00",
+      "durationSeconds": 3175
+    },
+    {
+      "videoId": "Yw0zL5YshRk",
+      "channelId": "UC9p_lqQ0FEDz327Vgf5JwqA",
+      "publishedAt": "2024-08-03T21:01:36-07:00",
+      "durationSeconds": 3525
+    },
+    {
+      "videoId": "ywvR52V7HiI",
+      "channelId": "UCK9V2B22uJYu3N7eR_BT9QA",
+      "publishedAt": "2022-01-30T05:06:08-08:00",
+      "durationSeconds": 3761
+    },
+    {
+      "videoId": "Z1_nnb7LxYs",
+      "channelId": "UChAnqc_AY5_I3Px5dig3X1Q",
+      "publishedAt": "2026-06-15T05:08:22-07:00",
+      "durationSeconds": 3760
+    },
+    {
+      "videoId": "Z96aINLMDJo",
+      "channelId": "UC1suqwovbL1kzsoaZgFZLKg",
+      "publishedAt": "2025-02-14T04:02:24-08:00",
+      "durationSeconds": 3477
+    },
+    {
+      "videoId": "Zcx1344XAmI",
+      "channelId": "UC1iA6_NT4mtAcIII6ygrvCw",
+      "publishedAt": "2026-06-07T04:59:55-07:00",
+      "durationSeconds": 3660
+    },
+    {
+      "videoId": "zKuxe-5Jxyc",
+      "channelId": "UChgTyjG-pdNvxxhdsXfHQ5Q",
+      "publishedAt": "2025-09-09T07:12:49-07:00",
+      "durationSeconds": 3545
+    },
+    {
+      "videoId": "ZMlPAsIJslA",
+      "channelId": "UCvInZx9h3jC2JzsIzoOebWg",
+      "publishedAt": "2021-08-07T11:31:10-07:00",
+      "durationSeconds": 4016
+    },
+    {
+      "videoId": "zqiU63uqC9U",
+      "channelId": "UCt9H_RpQzhxzlyBxFqrdHqA",
+      "publishedAt": "2024-08-10T21:28:07-07:00",
+      "durationSeconds": 4870
+    },
+    {
+      "videoId": "Zvb8xKmP-9U",
+      "channelId": "UChAnqc_AY5_I3Px5dig3X1Q",
+      "publishedAt": "2022-11-22T05:04:19-08:00",
+      "durationSeconds": 3672
+    },
+    {
+      "videoId": "zZ2Ce3eDamU",
+      "channelId": "UCWQtYtq9EOB4-I5P-3fh8lA",
+      "publishedAt": "2026-04-20T05:15:16-07:00",
+      "durationSeconds": 4390
+    },
+    {
+      "videoId": "zZhyeaw148k",
+      "channelId": "UCgmPnx-EEeOrZSg5Tiw7ZRQ",
+      "publishedAt": "2024-10-26T21:04:24-07:00",
+      "durationSeconds": 3690
+    },
+    {
+      "videoId": "zzVcTQOdLZE",
+      "channelId": "UCK9V2B22uJYu3N7eR_BT9QA",
+      "publishedAt": "2026-01-30T05:16:27-08:00",
+      "durationSeconds": 4220
+    }
+  ]
+}

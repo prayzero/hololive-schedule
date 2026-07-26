@@ -10,11 +10,13 @@ import {
   History,
   Info,
   MapPin,
+  Play,
   Radio,
   Search,
   Sparkles,
   Ticket,
   UsersRound,
+  Video,
   X,
 } from "lucide-react";
 import {
@@ -36,6 +38,9 @@ import type {
   SoloLivesPayload,
   Talent,
   TalentsPayload,
+  YouTubeLive,
+  YouTubeLiveCategory,
+  YouTubeLivesPayload,
 } from "./types";
 
 const BASE_URL = import.meta.env.BASE_URL;
@@ -44,12 +49,14 @@ const DATA_URLS = {
   events: `${BASE_URL}data/events.json`,
   talents: `${BASE_URL}data/talents.json`,
   solos: `${BASE_URL}data/solo-lives.json`,
+  youtubeLives: `${BASE_URL}data/youtube-lives.json`,
 };
 const OFFICIAL_SCHEDULE_URL = "https://schedule.hololive.tv/lives/hololive";
 const OFFICIAL_TALENTS_URL = "https://hololive.hololivepro.com/en/talents";
 
 type PageView = "schedule" | "concerts" | "solo" | "local";
-type SoloPeriod = "upcoming" | "past";
+type ConcertPeriod = "upcoming" | "past";
+type YouTubeCategoryFilter = "all" | YouTubeLiveCategory;
 type BroadcastStatus = "live" | "upcoming" | "ended";
 type EventStatus = "ongoing" | "upcoming" | "ended";
 
@@ -58,7 +65,25 @@ interface LoadedData {
   events: EventsPayload;
   talents: TalentsPayload;
   solos: SoloLivesPayload;
+  youtubeLives: YouTubeLivesPayload;
 }
+
+type ConcertItem =
+  | {
+      kind: "event";
+      id: string;
+      startsAt: string;
+      endsAt: string;
+      event: CuratedEvent;
+      linkedSolo?: SoloLive;
+    }
+  | {
+      kind: "solo";
+      id: string;
+      startsAt: string;
+      endsAt: string;
+      live: SoloLive;
+    };
 
 interface IconTextProps {
   icon: ComponentType<{ size?: number; strokeWidth?: number }>;
@@ -79,13 +104,13 @@ const PAGE_META: Record<
     eyebrow: "CONCERT CALENDAR",
     title: "무대 위의 순간을 놓치지 않게.",
     description:
-      "공식 합동 공연과 페스티벌, 상영 일정을 큰 썸네일과 함께 확인하세요.",
+      "예정 공연부터 지난 솔로 무대까지, 공식 콘서트 기록을 한곳에서 확인하세요.",
   },
   solo: {
-    eyebrow: "SOLO LIVE ARCHIVE",
-    title: "한 사람의 무대, 처음부터 지금까지.",
+    eyebrow: "YOUTUBE LIVE ARCHIVE",
+    title: "다시 보고 싶은 무료 라이브를 한곳에.",
     description:
-      "예정된 솔로 라이브와 지난 공연을 나누어 보고, 멤버 얼굴을 눌러 개인 이력을 펼쳐보세요.",
+      "생일·주년·3D·무료 콘서트 영상을 멤버와 카테고리별로 찾아보세요.",
   },
   local: {
     eyebrow: "JP · KR LOCAL",
@@ -98,9 +123,36 @@ const PAGE_META: Record<
 const NAV_ITEMS: Array<{ id: PageView; label: string; shortLabel: string }> = [
   { id: "schedule", label: "방송 일정", shortLabel: "방송" },
   { id: "concerts", label: "콘서트", shortLabel: "공연" },
-  { id: "solo", label: "솔로 라이브", shortLabel: "솔로" },
+  { id: "solo", label: "YouTube 라이브", shortLabel: "영상" },
   { id: "local", label: "일본·한국", shortLabel: "현지" },
 ];
+
+const YOUTUBE_CATEGORY_OPTIONS: Array<{
+  id: YouTubeCategoryFilter;
+  label: string;
+}> = [
+  { id: "all", label: "전체" },
+  { id: "birthday", label: "생일" },
+  { id: "anniversary", label: "주년" },
+  { id: "3d", label: "3D" },
+  { id: "concert", label: "무료 콘서트" },
+  { id: "special", label: "스페셜" },
+];
+
+const YOUTUBE_CATEGORY_LABELS: Record<YouTubeLiveCategory, string> = {
+  birthday: "생일",
+  anniversary: "주년",
+  "3d": "3D",
+  concert: "무료 콘서트",
+  special: "스페셜",
+};
+
+const TALENT_BRANCH_ORDER: Record<Talent["branch"], number> = {
+  JP: 0,
+  DEV_IS: 1,
+  EN: 2,
+  ID: 3,
+};
 
 const MALE_NAME_MARKERS = [
   "altare",
@@ -171,6 +223,12 @@ const UPDATE_FORMATTER = new Intl.DateTimeFormat("ko-KR", {
   hour: "2-digit",
   minute: "2-digit",
 });
+const YOUTUBE_DATE_FORMATTER = new Intl.DateTimeFormat("ko-KR", {
+  timeZone: "Asia/Seoul",
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
 
 function paramValue(name: string): string | null {
   return new URLSearchParams(window.location.search).get(name);
@@ -183,8 +241,15 @@ function initialView(): PageView {
     : "schedule";
 }
 
-function initialSoloPeriod(): SoloPeriod {
-  return paramValue("solo") === "past" ? "past" : "upcoming";
+function initialConcertPeriod(): ConcertPeriod {
+  return paramValue("concert") === "past" ? "past" : "upcoming";
+}
+
+function initialYouTubeCategory(): YouTubeCategoryFilter {
+  const value = paramValue("category");
+  return YOUTUBE_CATEGORY_OPTIONS.some((option) => option.id === value)
+    ? (value as YouTubeCategoryFilter)
+    : "all";
 }
 
 function dateKey(date: Date): string {
@@ -210,6 +275,55 @@ function includesQuery(
 
 function soloTalentIds(live: SoloLive): string[] {
   return [live.memberId, ...(live.relatedMemberIds ?? [])];
+}
+
+function canonicalUrl(value?: string): string | null {
+  if (!value) {
+    return null;
+  }
+
+  try {
+    const url = new URL(value);
+    const path = url.pathname
+      .replace(/^\/en\//, "/")
+      .replace(/\/+$/, "")
+      .toLocaleLowerCase();
+    return `${url.hostname.toLocaleLowerCase()}${path}`;
+  } catch {
+    return value.replace(/\/+$/, "").toLocaleLowerCase();
+  }
+}
+
+function concertIdentityKeys(
+  sourceUrl: string,
+  officialUrl: string | undefined,
+  startsAt: string,
+  title: string,
+): string[] {
+  const urls = [canonicalUrl(sourceUrl), canonicalUrl(officialUrl)]
+    .filter((value): value is string => Boolean(value))
+    .map((value) => `url:${value}`);
+  const date = startsAt.slice(0, 10);
+  return [...urls, `fallback:${date}:${normalizeSearch(title)}`];
+}
+
+function formatDuration(totalSeconds: number | null): string | null {
+  if (totalSeconds === null || !Number.isFinite(totalSeconds)) {
+    return null;
+  }
+
+  const safeSeconds = Number.isFinite(totalSeconds)
+    ? Math.max(0, Math.round(totalSeconds))
+    : 0;
+  const hours = Math.floor(safeSeconds / 3600);
+  const minutes = Math.floor((safeSeconds % 3600) / 60);
+  const seconds = safeSeconds % 60;
+
+  if (hours > 0) {
+    return `${hours}:${String(minutes).padStart(2, "0")}:${String(seconds).padStart(2, "0")}`;
+  }
+
+  return `${minutes}:${String(seconds).padStart(2, "0")}`;
 }
 
 function broadcastStatus(
@@ -461,7 +575,7 @@ function BroadcastCard({
               type="button"
               className="avatar-button"
               onClick={() => onTalentSelect(talent)}
-              aria-label={`${talent.nameKo} 솔로 라이브 이력 보기`}
+              aria-label={`${talent.nameKo} YouTube 라이브 보기`}
             >
               <TalentAvatar talent={talent} size="small" />
             </button>
@@ -585,7 +699,7 @@ function SoloCard({
           type="button"
           className="solo-talent-link"
           onClick={() => onTalentSelect(talent)}
-          aria-label={`${talent.nameKo}의 솔로 라이브 이력만 보기`}
+          aria-label={`${talent.nameKo}의 YouTube 라이브 보기`}
         >
           <TalentAvatar talent={talent} size="small" />
           <span>
@@ -609,6 +723,98 @@ function SoloCard({
           {live.note ? <span>{live.note}</span> : <span />}
           <a href={live.sourceUrl} target="_blank" rel="noreferrer">
             공식 기록 <ArrowUpRight size={15} aria-hidden="true" />
+          </a>
+        </div>
+      </div>
+    </article>
+  );
+}
+
+function YouTubeLiveCard({
+  live,
+  talents,
+  onTalentSelect,
+}: {
+  live: YouTubeLive;
+  talents: Talent[];
+  onTalentSelect: (talent: Talent) => void;
+}) {
+  const primaryTalent = talents[0];
+  const duration = formatDuration(live.durationSeconds);
+  const talentNames =
+    talents.length > 0
+      ? talents.map((talent) => talent.nameKo).join(" · ")
+      : "hololive";
+
+  return (
+    <article
+      className="youtube-live-card"
+      style={
+        primaryTalent
+          ? ({ "--talent-accent": primaryTalent.accent } as CSSProperties)
+          : undefined
+      }
+    >
+      <a
+        className="youtube-live-media"
+        href={live.videoUrl}
+        target="_blank"
+        rel="noreferrer"
+        aria-label={`${live.title} YouTube에서 보기`}
+      >
+        <SmartImage
+          src={live.thumbnailUrl}
+          alt={`${live.title} 영상 썸네일`}
+          fallbackText="YouTube 라이브"
+        />
+        <span className={`youtube-category category-${live.category}`}>
+          {YOUTUBE_CATEGORY_LABELS[live.category]}
+        </span>
+        {duration ? <span className="youtube-duration">{duration}</span> : null}
+        <span className="youtube-play" aria-hidden="true">
+          <Play size={19} fill="currentColor" />
+        </span>
+      </a>
+      <div className="youtube-live-body">
+        <div className="youtube-live-member">
+          <div className="youtube-avatar-stack">
+            {talents.slice(0, 3).map((talent) => (
+              <button
+                type="button"
+                className="avatar-button"
+                key={talent.id}
+                onClick={() => onTalentSelect(talent)}
+                aria-label={`${talent.nameKo}의 YouTube 라이브만 보기`}
+              >
+                <TalentAvatar talent={talent} size="small" />
+              </button>
+            ))}
+          </div>
+          <div>
+            <strong>{talentNames}</strong>
+            <span>{primaryTalent?.branch ?? "hololive"} 공식 채널</span>
+          </div>
+        </div>
+        <h3>{live.title}</h3>
+        <div className="youtube-live-meta">
+          <IconText icon={CalendarDays}>
+            <time dateTime={live.publishedAt}>
+              {YOUTUBE_DATE_FORMATTER.format(new Date(live.publishedAt))}
+            </time>
+          </IconText>
+          {duration ? (
+            <IconText icon={Clock3}>영상 길이 {duration}</IconText>
+          ) : (
+            <IconText icon={Clock3}>길이 정보 없음</IconText>
+          )}
+        </div>
+        <div className="youtube-live-footer">
+          <span>
+            <Video size={14} aria-hidden="true" />
+            {YOUTUBE_CATEGORY_LABELS[live.category]}
+          </span>
+          <a href={live.videoUrl} target="_blank" rel="noreferrer">
+            YouTube <ArrowUpRight size={15} aria-hidden="true" />
           </a>
         </div>
       </div>
@@ -641,8 +847,10 @@ export default function App() {
     () => paramValue("day") ?? dateKey(new Date()),
   );
   const [hideEnded, setHideEnded] = useState(true);
-  const [soloPeriod, setSoloPeriod] =
-    useState<SoloPeriod>(initialSoloPeriod);
+  const [concertPeriod, setConcertPeriod] =
+    useState<ConcertPeriod>(initialConcertPeriod);
+  const [youtubeCategory, setYoutubeCategory] =
+    useState<YouTubeCategoryFilter>(initialYouTubeCategory);
   const [selectedMemberId, setSelectedMemberId] = useState(
     () => paramValue("member") ?? "",
   );
@@ -656,36 +864,45 @@ export default function App() {
 
     async function loadData() {
       try {
-        const [scheduleResponse, eventsResponse, talentsResponse, solosResponse] =
-          await Promise.all([
-            fetch(DATA_URLS.schedule, {
-              cache: "no-store",
-              signal: controller.signal,
-            }),
-            fetch(DATA_URLS.events, { signal: controller.signal }),
-            fetch(DATA_URLS.talents, { signal: controller.signal }),
-            fetch(DATA_URLS.solos, { signal: controller.signal }),
-          ]);
+        const [
+          scheduleResponse,
+          eventsResponse,
+          talentsResponse,
+          solosResponse,
+          youtubeLivesResponse,
+        ] = await Promise.all([
+          fetch(DATA_URLS.schedule, {
+            cache: "no-store",
+            signal: controller.signal,
+          }),
+          fetch(DATA_URLS.events, { signal: controller.signal }),
+          fetch(DATA_URLS.talents, { signal: controller.signal }),
+          fetch(DATA_URLS.solos, { signal: controller.signal }),
+          fetch(DATA_URLS.youtubeLives, { signal: controller.signal }),
+        ]);
 
         const responses = [
           scheduleResponse,
           eventsResponse,
           talentsResponse,
           solosResponse,
+          youtubeLivesResponse,
         ];
 
         if (responses.some((response) => !response.ok)) {
           throw new Error("일정 데이터 일부를 불러오지 못했습니다.");
         }
 
-        const [schedule, events, talents, solos] = await Promise.all([
-          scheduleResponse.json() as Promise<SchedulePayload>,
-          eventsResponse.json() as Promise<EventsPayload>,
-          talentsResponse.json() as Promise<TalentsPayload>,
-          solosResponse.json() as Promise<SoloLivesPayload>,
-        ]);
+        const [schedule, events, talents, solos, youtubeLives] =
+          await Promise.all([
+            scheduleResponse.json() as Promise<SchedulePayload>,
+            eventsResponse.json() as Promise<EventsPayload>,
+            talentsResponse.json() as Promise<TalentsPayload>,
+            solosResponse.json() as Promise<SoloLivesPayload>,
+            youtubeLivesResponse.json() as Promise<YouTubeLivesPayload>,
+          ]);
 
-        setData({ schedule, events, talents, solos });
+        setData({ schedule, events, talents, solos, youtubeLives });
       } catch (loadError) {
         if (!controller.signal.aborted) {
           setError(
@@ -744,8 +961,14 @@ export default function App() {
       params.set("day", selectedDate);
     }
 
+    if (view === "concerts") {
+      params.set("concert", concertPeriod);
+    }
+
     if (view === "solo") {
-      params.set("solo", soloPeriod);
+      if (youtubeCategory !== "all") {
+        params.set("category", youtubeCategory);
+      }
       if (selectedMemberId) {
         params.set("member", selectedMemberId);
       }
@@ -761,10 +984,19 @@ export default function App() {
       `${window.location.pathname}?${params.toString()}`,
     );
     document.title = `${PAGE_META[view].title} | HOLO NOW`;
-  }, [query, region, selectedDate, selectedMemberId, soloPeriod, view]);
+  }, [
+    concertPeriod,
+    query,
+    region,
+    selectedDate,
+    selectedMemberId,
+    view,
+    youtubeCategory,
+  ]);
 
   const talents = data?.talents.talents ?? [];
   const soloLives = data?.solos.lives ?? [];
+  const youtubeLives = data?.youtubeLives.lives ?? [];
   const normalizedQuery = normalizeSearch(query);
 
   const talentById = useMemo(
@@ -772,50 +1004,37 @@ export default function App() {
     [talents],
   );
 
-  const soloCountByTalent = useMemo(() => {
+  const youtubeCountByTalent = useMemo(() => {
     const counts = new Map<string, number>();
-    soloLives.forEach((live) => {
-      soloTalentIds(live).forEach((talentId) => {
+    youtubeLives.forEach((live) => {
+      live.memberIds.forEach((talentId) => {
         counts.set(talentId, (counts.get(talentId) ?? 0) + 1);
       });
     });
     return counts;
-  }, [soloLives]);
+  }, [youtubeLives]);
 
-  const archiveTalents = useMemo(
+  const youtubeTalents = useMemo(
     () =>
-      talents
-        .filter((talent) => soloCountByTalent.has(talent.id))
-        .sort((left, right) => {
-          const leftUpcoming = soloLives.some(
-            (live) =>
-              soloTalentIds(live).includes(left.id) &&
-              new Date(live.endsAt).getTime() >= now.getTime(),
-          );
-          const rightUpcoming = soloLives.some(
-            (live) =>
-              soloTalentIds(live).includes(right.id) &&
-              new Date(live.endsAt).getTime() >= now.getTime(),
-          );
-
-          return (
-            Number(rightUpcoming) - Number(leftUpcoming) ||
-            left.nameKo.localeCompare(right.nameKo, "ko")
-          );
-        }),
-    [now, soloCountByTalent, soloLives, talents],
+      [...talents].sort(
+        (left, right) =>
+          TALENT_BRANCH_ORDER[left.branch] -
+            TALENT_BRANCH_ORDER[right.branch] ||
+          left.nameKo.localeCompare(right.nameKo, "ko"),
+      ),
+    [talents],
   );
 
   const matchingTalents = useMemo(
     () =>
       normalizedQuery
-        ? archiveTalents
+        ? youtubeTalents
             .filter((talent) =>
               includesQuery(talentSearchValues(talent), normalizedQuery),
             )
             .slice(0, 6)
         : [],
-    [archiveTalents, normalizedQuery],
+    [normalizedQuery, youtubeTalents],
   );
 
   const femaleSchedule = useMemo(
@@ -916,98 +1135,223 @@ export default function App() {
     [now, soloLives],
   );
 
-  const pastSoloLives = useMemo(
-    () =>
-      soloLives
-        .filter((live) => new Date(live.endsAt).getTime() < now.getTime())
-        .sort(
-          (left, right) =>
-            new Date(right.startsAt).getTime() -
-            new Date(left.startsAt).getTime(),
-        ),
-    [now, soloLives],
-  );
-
   const selectedTalent = selectedMemberId
     ? talentById.get(selectedMemberId)
     : undefined;
 
-  const periodSoloLives =
-    soloPeriod === "upcoming" ? upcomingSoloLives : pastSoloLives;
+  const youtubeCategoryCounts = useMemo(() => {
+    const counts = new Map<YouTubeLiveCategory, number>();
+    youtubeLives
+      .filter(
+        (live) =>
+          !selectedMemberId || live.memberIds.includes(selectedMemberId),
+      )
+      .forEach((live) => {
+        counts.set(live.category, (counts.get(live.category) ?? 0) + 1);
+      });
+    return counts;
+  }, [selectedMemberId, youtubeLives]);
 
-  const visibleSoloLives = useMemo(
-    () =>
-      periodSoloLives.filter((live) => {
-        const associatedTalentIds = soloTalentIds(live);
+  const visibleYoutubeLives = useMemo(() => {
+    const deduplicated = new Map<string, YouTubeLive>();
 
-        if (
-          selectedMemberId &&
-          !associatedTalentIds.includes(selectedMemberId)
-        ) {
-          return false;
-        }
+    youtubeLives.forEach((live) => {
+      if (
+        selectedMemberId &&
+        !live.memberIds.includes(selectedMemberId)
+      ) {
+        return;
+      }
 
-        const associatedTalents = associatedTalentIds
-          .map((talentId) => talentById.get(talentId))
-          .filter((talent): talent is Talent => Boolean(talent));
+      if (
+        youtubeCategory !== "all" &&
+        live.category !== youtubeCategory
+      ) {
+        return;
+      }
 
-        return includesQuery(
+      const associatedTalents = live.memberIds
+        .map((talentId) => talentById.get(talentId))
+        .filter((talent): talent is Talent => Boolean(talent));
+
+      if (
+        !includesQuery(
           [
             live.title,
-            live.titleKo,
-            live.city,
-            live.venue,
+            YOUTUBE_CATEGORY_LABELS[live.category],
             ...associatedTalents.flatMap(talentSearchValues),
           ],
           normalizedQuery,
+        )
+      ) {
+        return;
+      }
+
+      deduplicated.set(live.videoId, live);
+    });
+
+    return Array.from(deduplicated.values()).sort(
+      (left, right) =>
+        new Date(right.publishedAt).getTime() -
+        new Date(left.publishedAt).getTime(),
+    );
+  }, [
+    normalizedQuery,
+    selectedMemberId,
+    talentById,
+    youtubeCategory,
+    youtubeLives,
+  ]);
+
+  const visibleYoutubeTalents = useMemo(() => {
+    if (!normalizedQuery) {
+      return youtubeTalents;
+    }
+
+    const matches = youtubeTalents.filter((talent) =>
+      includesQuery(talentSearchValues(talent), normalizedQuery),
+    );
+    return matches.length > 0 ? matches : youtubeTalents;
+  }, [normalizedQuery, youtubeTalents]);
+
+  const concertItems = useMemo(() => {
+    const items: ConcertItem[] = [];
+    const keyToIndex = new Map<string, number>();
+
+    (data?.events.events ?? [])
+      .filter((event) => event.categories.includes("concert"))
+      .forEach((event) => {
+        const keys = concertIdentityKeys(
+          event.sourceUrl,
+          event.officialUrl,
+          event.startsAt,
+          event.title,
         );
-      }),
-    [
-      normalizedQuery,
-      periodSoloLives,
-      selectedMemberId,
-      talentById,
-    ],
-  );
+        const duplicateIndex = keys
+          .map((key) => keyToIndex.get(key))
+          .find((value): value is number => value !== undefined);
 
-  const visibleArchiveTalents = useMemo(
-    () =>
-      normalizedQuery
-        ? archiveTalents.filter((talent) =>
-            includesQuery(talentSearchValues(talent), normalizedQuery),
-          )
-        : archiveTalents,
-    [archiveTalents, normalizedQuery],
-  );
+        if (duplicateIndex !== undefined) {
+          return;
+        }
 
-  const concertEvents = useMemo(
+        const index = items.length;
+        items.push({
+          kind: "event",
+          id: `event:${event.id}`,
+          startsAt: event.startsAt,
+          endsAt: event.endsAt,
+          event,
+        });
+        keys.forEach((key) => keyToIndex.set(key, index));
+      });
+
+    soloLives.forEach((live) => {
+      const keys = concertIdentityKeys(
+        live.sourceUrl,
+        live.officialUrl,
+        live.startsAt,
+        live.title,
+      );
+      const duplicateIndex = keys
+        .map((key) => keyToIndex.get(key))
+        .find((value): value is number => value !== undefined);
+
+      if (duplicateIndex !== undefined) {
+        const duplicate = items[duplicateIndex];
+        if (duplicate.kind === "event") {
+          duplicate.linkedSolo = live;
+        }
+        keys.forEach((key) => keyToIndex.set(key, duplicateIndex));
+        return;
+      }
+
+      const index = items.length;
+      items.push({
+        kind: "solo",
+        id: `solo:${live.id}`,
+        startsAt: live.startsAt,
+        endsAt: live.endsAt,
+        live,
+      });
+      keys.forEach((key) => keyToIndex.set(key, index));
+    });
+
+    return items;
+  }, [data?.events.events, soloLives]);
+
+  const upcomingConcerts = useMemo(
     () =>
-      (data?.events.events ?? [])
-        .filter(
-          (event) =>
-            event.categories.includes("concert") &&
-            !event.categories.includes("solo") &&
-            new Date(event.endsAt).getTime() >= now.getTime(),
-        )
-        .filter((event) =>
-          includesQuery(
-            [
-              event.title,
-              event.titleKo,
-              event.city,
-              event.venue,
-              ...event.participants,
-            ],
-            normalizedQuery,
-          ),
-        )
+      concertItems
+        .filter((item) => new Date(item.endsAt).getTime() >= now.getTime())
         .sort(
           (left, right) =>
             new Date(left.startsAt).getTime() -
             new Date(right.startsAt).getTime(),
         ),
-    [data?.events.events, normalizedQuery, now],
+    [concertItems, now],
   );
+
+  const pastConcerts = useMemo(
+    () =>
+      concertItems
+        .filter((item) => new Date(item.endsAt).getTime() < now.getTime())
+        .sort(
+          (left, right) =>
+            new Date(right.startsAt).getTime() -
+            new Date(left.startsAt).getTime(),
+        ),
+    [concertItems, now],
+  );
+
+  const visibleConcerts = useMemo(() => {
+    const periodItems =
+      concertPeriod === "upcoming" ? upcomingConcerts : pastConcerts;
+
+    return periodItems.filter((item) => {
+      if (item.kind === "event") {
+        const linkedTalents = item.linkedSolo
+          ? soloTalentIds(item.linkedSolo)
+              .map((talentId) => talentById.get(talentId))
+              .filter((talent): talent is Talent => Boolean(talent))
+          : [];
+        return includesQuery(
+          [
+            item.event.title,
+            item.event.titleKo,
+            item.event.city,
+            item.event.venue,
+            ...item.event.participants,
+            ...(item.linkedSolo
+              ? [item.linkedSolo.title, item.linkedSolo.titleKo]
+              : []),
+            ...linkedTalents.flatMap(talentSearchValues),
+          ],
+          normalizedQuery,
+        );
+      }
+
+      const associatedTalents = soloTalentIds(item.live)
+        .map((talentId) => talentById.get(talentId))
+        .filter((talent): talent is Talent => Boolean(talent));
+      return includesQuery(
+        [
+          item.live.title,
+          item.live.titleKo,
+          item.live.city,
+          item.live.venue,
+          ...associatedTalents.flatMap(talentSearchValues),
+        ],
+        normalizedQuery,
+      );
+    });
+  }, [
+    concertPeriod,
+    normalizedQuery,
+    pastConcerts,
+    talentById,
+    upcomingConcerts,
+  ]);
 
   const localEvents = useMemo(
     () =>
@@ -1052,20 +1396,25 @@ export default function App() {
     : undefined;
 
   function selectTalent(talent: Talent) {
-    const talentLives = soloLives.filter(
-      (live) => soloTalentIds(live).includes(talent.id),
-    );
-    const hasUpcoming = talentLives.some(
-      (live) => new Date(live.endsAt).getTime() >= now.getTime(),
-    );
-
     setView("solo");
     setSelectedMemberId(talent.id);
-    setSoloPeriod(hasUpcoming ? "upcoming" : "past");
+    setYoutubeCategory("all");
     setQuery("");
     window.setTimeout(() => {
       document
-        .getElementById("solo-archive")
+        .getElementById("youtube-live-archive")
+        ?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 0);
+  }
+
+  function openConcertsForTalent(talent: Talent) {
+    setView("concerts");
+    setConcertPeriod("upcoming");
+    setSelectedMemberId("");
+    setQuery(talent.nameKo);
+    window.setTimeout(() => {
+      document
+        .getElementById("concert-archive")
         ?.scrollIntoView({ behavior: "smooth", block: "start" });
     }, 0);
   }
@@ -1136,7 +1485,7 @@ export default function App() {
             <div className="search-wrap">
               <Search size={21} aria-hidden="true" />
               <label className="sr-only" htmlFor="global-search">
-                멤버, 방송, 공연 검색
+                멤버, 방송, 영상, 공연 검색
               </label>
               <input
                 id="global-search"
@@ -1148,7 +1497,7 @@ export default function App() {
                     setQuery("");
                   }
                 }}
-                placeholder="멤버 · 방송 · 공연 검색"
+                placeholder="멤버 · 방송 · 영상 · 공연 검색"
                 autoComplete="off"
               />
               {query ? (
@@ -1166,7 +1515,7 @@ export default function App() {
 
               {matchingTalents.length > 0 ? (
                 <div className="search-popover" role="listbox">
-                  <span>멤버를 누르면 솔로 공연 이력이 열립니다</span>
+                  <span>멤버를 누르면 YouTube 라이브가 열립니다</span>
                   {matchingTalents.map((talent) => (
                     <button
                       type="button"
@@ -1179,8 +1528,8 @@ export default function App() {
                       <span>
                         <strong>{talent.nameKo}</strong>
                         <small>
-                          {talent.name} · 공연 {soloCountByTalent.get(talent.id)}
-                          건
+                          {talent.name} · 영상{" "}
+                          {youtubeCountByTalent.get(talent.id) ?? 0}개
                         </small>
                       </span>
                       <ArrowRight size={17} aria-hidden="true" />
@@ -1220,9 +1569,9 @@ export default function App() {
                 <span>수집 방송</span>
               </div>
               <div>
-                <History size={18} aria-hidden="true" />
-                <strong>{pastSoloLives.length}</strong>
-                <span>지난 솔로</span>
+                <Video size={18} aria-hidden="true" />
+                <strong>{youtubeLives.length}</strong>
+                <span>라이브 영상</span>
               </div>
             </div>
 
@@ -1230,11 +1579,11 @@ export default function App() {
               <button
                 type="button"
                 className="featured-solo"
-                onClick={() => selectTalent(featuredTalent)}
+                onClick={() => openConcertsForTalent(featuredTalent)}
               >
                 <TalentAvatar talent={featuredTalent} size="medium" />
                 <span>
-                  <small>NEXT SOLO LIVE</small>
+                  <small>NEXT CONCERT</small>
                   <strong>{featuredSolo.titleKo}</strong>
                   <em>
                     {featuredSolo.dateLabel} · {featuredSolo.venue}
@@ -1393,62 +1742,130 @@ export default function App() {
         ) : null}
 
         {view === "concerts" ? (
-          <section className="page-section">
+          <section className="page-section" id="concert-archive">
             <SectionHeading
-              eyebrow="UPCOMING STAGES"
-              title="콘서트 · 페스티벌"
-              description="솔로 공연은 별도 아카이브에, 이곳에는 합동 무대와 공식 상영 일정을 모았습니다."
-              action={<span className="count-chip">{concertEvents.length}건</span>}
-            />
-
-            {!data ? (
-              <LoadingGrid />
-            ) : concertEvents.length > 0 ? (
-              <div className="event-grid">
-                {concertEvents.map((event) => (
-                  <EventCard event={event} now={now} key={event.id} />
-                ))}
-              </div>
-            ) : (
-              <EmptyState
-                title="검색 결과가 없습니다"
-                description="공연명이나 출연 멤버의 다른 표기로 검색해 보세요."
-              />
-            )}
-          </section>
-        ) : null}
-
-        {view === "solo" ? (
-          <section className="page-section solo-page" id="solo-archive">
-            <SectionHeading
-              eyebrow="MEMBER HISTORY"
-              title="솔로 라이브 아카이브"
-              description="공식 페이지에서 확인 가능한 주요 단독·원맨 공연을 멤버별로 연결했습니다."
+              eyebrow="OFFICIAL STAGES"
+              title="콘서트 아카이브"
+              description="공식 합동 공연과 정식·유료 솔로 공연을 예정·지난 공연으로 나누어 모았습니다."
               action={
-                <div className="segmented-tabs" aria-label="솔로 공연 시기">
+                <div className="segmented-tabs" aria-label="콘서트 시기">
                   <button
                     type="button"
-                    className={soloPeriod === "upcoming" ? "is-active" : ""}
-                    onClick={() => setSoloPeriod("upcoming")}
+                    className={
+                      concertPeriod === "upcoming" ? "is-active" : ""
+                    }
+                    onClick={() => setConcertPeriod("upcoming")}
                   >
-                    예정 <span>{upcomingSoloLives.length}</span>
+                    예정 <span>{upcomingConcerts.length}</span>
                   </button>
                   <button
                     type="button"
-                    className={soloPeriod === "past" ? "is-active" : ""}
-                    onClick={() => setSoloPeriod("past")}
+                    className={concertPeriod === "past" ? "is-active" : ""}
+                    onClick={() => setConcertPeriod("past")}
                   >
-                    지난 공연 <span>{pastSoloLives.length}</span>
+                    지난 공연 <span>{pastConcerts.length}</span>
                   </button>
                 </div>
               }
             />
 
+            {!data ? (
+              <LoadingGrid />
+            ) : visibleConcerts.length > 0 ? (
+              <div className="event-grid concert-grid">
+                {visibleConcerts.map((item) => {
+                  if (item.kind === "event") {
+                    return (
+                      <EventCard
+                        event={item.event}
+                        now={now}
+                        key={item.id}
+                      />
+                    );
+                  }
+
+                  const talent = talentById.get(item.live.memberId);
+                  return talent ? (
+                    <SoloCard
+                      key={item.id}
+                      live={item.live}
+                      talent={talent}
+                      now={now}
+                      onTalentSelect={selectTalent}
+                    />
+                  ) : null;
+                })}
+              </div>
+            ) : (
+              <EmptyState
+                title="검색 결과가 없습니다"
+                description={`${
+                  concertPeriod === "upcoming" ? "지난 공연" : "예정"
+                } 탭을 확인하거나 공연명·출연 멤버의 다른 표기로 검색해 보세요.`}
+              />
+            )}
+
+            <div className="source-banner">
+              <Ticket size={18} aria-hidden="true" />
+              <p>
+                공식 이벤트와 정식·유료 솔로 공연 기록을 함께 표시합니다. 같은
+                공연이 두 데이터에 있을 때는 공식 URL과 날짜·제목을 기준으로 한
+                번만 보여드려요.
+              </p>
+            </div>
+          </section>
+        ) : null}
+
+        {view === "solo" ? (
+          <section
+            className="page-section solo-page youtube-page"
+            id="youtube-live-archive"
+          >
+            <SectionHeading
+              eyebrow="FREE VIDEO ARCHIVE"
+              title="YouTube 라이브 아카이브"
+              description="공식 채널의 생일·주년·3D·무료 콘서트 영상을 멤버와 카테고리별로 찾아보세요."
+              action={
+                <span className="count-chip">
+                  {visibleYoutubeLives.length}개 영상
+                </span>
+              }
+            />
+
+            <div className="archive-filter-bar">
+              <div className="category-tabs" aria-label="영상 카테고리">
+                {YOUTUBE_CATEGORY_OPTIONS.map((option) => {
+                  const count =
+                    option.id === "all"
+                      ? selectedMemberId
+                        ? youtubeCountByTalent.get(selectedMemberId) ?? 0
+                        : youtubeLives.length
+                      : youtubeCategoryCounts.get(option.id) ?? 0;
+
+                  return (
+                    <button
+                      type="button"
+                      key={option.id}
+                      className={
+                        youtubeCategory === option.id ? "is-active" : ""
+                      }
+                      onClick={() => setYoutubeCategory(option.id)}
+                    >
+                      {option.label} <span>{count}</span>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
             <div className="talent-browser">
               <div className="talent-browser-heading">
                 <div>
                   <strong>멤버 얼굴로 찾기</strong>
-                  <span>누르면 해당 멤버의 공연 기록만 보여드려요.</span>
+                  <span>
+                    JP · DEV_IS · EN · ID 순서로 모든 여성 탤런트를
+                    보여드려요.
+                  </span>
                 </div>
                 {selectedTalent ? (
                   <button
@@ -1460,7 +1877,7 @@ export default function App() {
                 ) : null}
               </div>
               <div className="talent-rail">
-                {visibleArchiveTalents.map((talent) => (
+                {visibleYoutubeTalents.map((talent) => (
                   <button
                     type="button"
                     key={talent.id}
@@ -1471,12 +1888,14 @@ export default function App() {
                       { "--talent-accent": talent.accent } as CSSProperties
                     }
                     onClick={() => selectTalent(talent)}
-                    aria-label={`${talent.nameKo} 솔로 라이브 이력 보기`}
+                    aria-label={`${talent.nameKo} YouTube 라이브 보기`}
                     aria-pressed={selectedMemberId === talent.id}
                   >
                     <TalentAvatar talent={talent} size="large" />
                     <strong>{talent.nameKo}</strong>
-                    <span>{soloCountByTalent.get(talent.id)} stages</span>
+                    <span>
+                      {youtubeCountByTalent.get(talent.id) ?? 0}개 영상
+                    </span>
                   </button>
                 ))}
               </div>
@@ -1500,8 +1919,10 @@ export default function App() {
                   </p>
                 </div>
                 <div className="member-archive-stat">
-                  <strong>{soloCountByTalent.get(selectedTalent.id)}</strong>
-                  <span>공식 공연 기록</span>
+                  <strong>
+                    {youtubeCountByTalent.get(selectedTalent.id) ?? 0}
+                  </strong>
+                  <span>YouTube 라이브</span>
                 </div>
                 <a
                   href={selectedTalent.officialProfileUrl}
@@ -1515,49 +1936,40 @@ export default function App() {
 
             {!data ? (
               <LoadingGrid />
-            ) : visibleSoloLives.length > 0 ? (
-              <div className="solo-grid">
-                {visibleSoloLives.map((live) => {
-                  const talent =
-                    selectedTalent &&
-                    soloTalentIds(live).includes(selectedTalent.id)
-                      ? selectedTalent
-                      : talentById.get(live.memberId);
-                  return talent ? (
-                    <SoloCard
-                      key={live.id}
+            ) : visibleYoutubeLives.length > 0 ? (
+              <div className="youtube-live-grid">
+                {visibleYoutubeLives.map((live) => {
+                  const associatedTalents = live.memberIds
+                    .map((talentId) => talentById.get(talentId))
+                    .filter((talent): talent is Talent => Boolean(talent));
+
+                  return (
+                    <YouTubeLiveCard
+                      key={live.videoId}
                       live={live}
-                      talent={talent}
-                      now={now}
+                      talents={associatedTalents}
                       onTalentSelect={selectTalent}
                     />
-                  ) : null;
+                  );
                 })}
               </div>
             ) : (
               <EmptyState
                 title={
                   selectedTalent
-                    ? `${selectedTalent.nameKo}의 ${
-                        soloPeriod === "past" ? "지난" : "예정"
-                      } 공연이 없어요`
-                    : "조건에 맞는 솔로 공연이 없어요"
+                    ? `${selectedTalent.nameKo}의 조건에 맞는 영상이 없어요`
+                    : "조건에 맞는 YouTube 라이브가 없어요"
                 }
-                description={
-                  selectedTalent
-                    ? `‘${
-                        soloPeriod === "past" ? "예정" : "지난 공연"
-                      }’ 탭도 확인해 보세요.`
-                    : "검색어를 지우거나 다른 탭을 선택해 보세요."
-                }
+                description="검색어를 지우거나 다른 멤버·카테고리를 선택해 보세요."
               />
             )}
 
             <div className="source-banner source-banner-solo">
-              <History size={18} aria-hidden="true" />
+              <Video size={18} aria-hidden="true" />
               <p>
-                일반 생일 3D 라이브가 아닌, 공식 페이지에서 단독·원맨 공연으로
-                확인되는 주요 기록을 정리했습니다. 전체 로스터는{" "}
+                공식 공개 YouTube 채널에서 무료로 볼 수 있는 라이브 영상을
+                정리했습니다. 정식·유료 솔로 공연은 콘서트 탭에서 확인할 수
+                있으며, 전체 로스터는{" "}
                 <a
                   href={OFFICIAL_TALENTS_URL}
                   target="_blank"
@@ -1566,6 +1978,11 @@ export default function App() {
                   hololive 공식 탤런트 페이지
                 </a>
                 를 기준으로 합니다.
+                {data?.youtubeLives.checkedAt
+                  ? ` · ${UPDATE_FORMATTER.format(
+                      new Date(data.youtubeLives.checkedAt),
+                    )} 확인`
+                  : ""}
               </p>
             </div>
           </section>

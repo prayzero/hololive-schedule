@@ -1,0 +1,1740 @@
+{
+  "checkedAt": "2026-07-26T02:50:19.334Z",
+  "scope": "Official hololive JP women marked active or affiliate in talents.json. Public official-channel birthday, anniversary, 3D music live, free solo concert, and comparable special live archives only.",
+  "methodology": "YouTube searches were run against each official talent channel. Search renderers with a different owner channel ID or ownerless playlist-only entries were rejected, then accepted videos were hydrated through YouTube player metadata for an exact publication date and a second channel-ID check. Ordinary gameplay, chat, karaoke, aftertalks, previews, single-song clips, MVs, watchalongs, and videos shorter than 20 minutes were excluded.",
+  "publishedAtNote": "All accepted records had an exact publication timestamp in YouTube player metadata at the time checked.",
+  "dataCorrections": [
+    {
+      "memberId": "natsuiro-matsuri",
+      "field": "channelId",
+      "value": "UCQ0UDLQCjY0rmuxCDE38FGg",
+      "reason": "The current talents.json value UCJFZiqLMntJufDCHc6bQixg belongs to the hololive main channel, not Natsuiro Matsuri.",
+      "officialProfileUrl": "https://hololive.hololivepro.com/en/talents/natsuiro-matsuri/"
+    }
+  ],
+  "sourceType": "official-youtube-channel",
+  "memberCount": 31,
+  "recordCount": 191,
+  "missingMembers": [],
+  "records": [
+    {
+      "memberId": "akai-haato",
+      "videoId": "vTsOdumJEOY",
+      "title": "【3DLIVE】夏のホラー満載‼️#赤井はあと爆誕祭2025 👻【ゲスト多数&告知あり◎】【ホロライブ/赤井はあと】",
+      "publishedAt": "2025-08-10T06:15:44-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=vTsOdumJEOY",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vTsOdumJEOY/maxresdefault.jpg?v=68971847"
+    },
+    {
+      "memberId": "akai-haato",
+      "videoId": "e4UUQwhMR4o",
+      "title": "【#はあちゃま爆誕祭2024】🤪❤️‍🔥👆爆誕3DLIVE❤️‍🔥👆🤪【ホロライブ/赤井はあと】",
+      "publishedAt": "2024-08-10T04:59:07-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=e4UUQwhMR4o",
+      "thumbnailUrl": "https://i.ytimg.com/vi/e4UUQwhMR4o/maxresdefault.jpg?v=66b4e2cd"
+    },
+    {
+      "memberId": "akai-haato",
+      "videoId": "88APiRAcQcc",
+      "title": "【#はあちゃま生誕祭2021】🤪👆💫お誕生日3DLIVE💫👆🤪【はあちゃま/ホロライブ】",
+      "publishedAt": "2021-11-18T04:14:02-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=88APiRAcQcc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/88APiRAcQcc/maxresdefault.jpg?v=619627d9"
+    },
+    {
+      "memberId": "aki-rosenthal",
+      "videoId": "VQDvivMID-Y",
+      "title": "【ホロアース】ホロアースに集合！#アキロゼ生誕祭2026 アンコールライブinホロアース開演！！【ホロライブ/アキロゼ】",
+      "publishedAt": "2026-03-13T06:41:11-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=VQDvivMID-Y",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VQDvivMID-Y/maxresdefault.jpg?v=69b2d839"
+    },
+    {
+      "memberId": "aki-rosenthal",
+      "videoId": "_tBlI-l8WLk",
+      "title": "【 3DLIVE 】#アキロゼ生誕祭2026 ーLife is GAMEー【ホロライブ/アキ・ローゼンタール】",
+      "publishedAt": "2026-02-17T04:16:53-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=_tBlI-l8WLk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/_tBlI-l8WLk/maxresdefault.jpg?v=699315ce"
+    },
+    {
+      "memberId": "aki-rosenthal",
+      "videoId": "etiR9Qnqlmc",
+      "title": "【 3DLIVE 】#アキロゼ生誕祭2025 ーYour True Colorsー【ホロライブ/アキ・ローゼンタール】",
+      "publishedAt": "2025-02-17T05:22:54-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=etiR9Qnqlmc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/etiR9Qnqlmc/maxresdefault.jpg?v=67aa01e9"
+    },
+    {
+      "memberId": "aki-rosenthal",
+      "videoId": "pFZiKpoxuvw",
+      "title": "【 #アキロゼ生誕祭2024 】ーFantasia of Bremenー￤3DLIVE【ホロライブ/アキ・ローゼンタール】",
+      "publishedAt": "2024-02-17T05:02:56-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=pFZiKpoxuvw",
+      "thumbnailUrl": "https://i.ytimg.com/vi/pFZiKpoxuvw/maxresdefault.jpg?v=65cf550b"
+    },
+    {
+      "memberId": "aki-rosenthal",
+      "videoId": "hURqBaVxnSg",
+      "title": "【 #アキロゼ5周年Live 】ーHistoric ROUTE ５ー￤3DLIVE【ホロライブ/アキ・ローゼンタール】",
+      "publishedAt": "2023-06-01T06:21:59-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=hURqBaVxnSg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hURqBaVxnSg/maxresdefault.jpg?v=6471d57c"
+    },
+    {
+      "memberId": "aki-rosenthal",
+      "videoId": "n-pNnnM2ERs",
+      "title": "【  #アキロゼ生誕祭2023 】ーStart your journeyー￤3DLIVE【ホロライブ】",
+      "publishedAt": "2023-05-27T06:04:12-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=n-pNnnM2ERs",
+      "thumbnailUrl": "https://i.ytimg.com/vi/n-pNnnM2ERs/maxresdefault.jpg?v=64707ef4"
+    },
+    {
+      "memberId": "aki-rosenthal",
+      "videoId": "mknggf96fuI",
+      "title": "【#アキロゼ4周年LIVE】全編歌ライブ！みんなと歌って踊って3D LIVE 「ROSE of the LAMP」【アキ・ローゼンタール/ホロライブ】",
+      "publishedAt": "2022-06-01T06:09:00-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=mknggf96fuI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mknggf96fuI/maxresdefault.jpg?v=62964020"
+    },
+    {
+      "memberId": "aki-rosenthal",
+      "videoId": "TsRo8VuubSk",
+      "title": "【#アキロゼ生誕祭2022】Wonder Shower Musical !!!!【3DLIVE】",
+      "publishedAt": "2022-02-17T05:09:36-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=TsRo8VuubSk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TsRo8VuubSk/maxresdefault.jpg?v=620d17ea"
+    },
+    {
+      "memberId": "aki-rosenthal",
+      "videoId": "1Ts7X3vtYgQ",
+      "title": "【#アキロゼ生誕祭2021 #AkiRoseBirthday2021】初アイドル衣装で3D生誕祭だ～！【ホロライブ/アキロゼ】",
+      "publishedAt": "2021-03-17T06:08:57-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=1Ts7X3vtYgQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1Ts7X3vtYgQ/maxresdefault.jpg?v=6050c310"
+    },
+    {
+      "memberId": "azki",
+      "videoId": "Kib9k58WLn0",
+      "title": "【3D LIVE】AZKi 8th Birthday Live \"Cross Over\" 新衣装お披露目＆重大告知【#AZKi生誕ライブ2026】",
+      "publishedAt": "2026-07-01T05:22:34-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=Kib9k58WLn0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Kib9k58WLn0/maxresdefault.jpg?v=6a438c77"
+    },
+    {
+      "memberId": "azki",
+      "videoId": "gdQ4eN9wzZg",
+      "title": "【3D LIVE】AZKi 7th Birthday Live \"Sweet Pop Story\" 新衣装お披露目＆重大発表【#AZKi生誕ライブ2025】",
+      "publishedAt": "2025-07-01T05:10:07-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=gdQ4eN9wzZg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gdQ4eN9wzZg/maxresdefault.jpg?v=685ce206"
+    },
+    {
+      "memberId": "azki",
+      "videoId": "bHXB9qI2olE",
+      "title": "【新衣装3Dお披露目】AZKi 6th Anniversary Live \"百花繚乱\"【#AZKi新衣装3Dライブ】",
+      "publishedAt": "2024-11-15T05:04:12-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=bHXB9qI2olE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/bHXB9qI2olE/maxresdefault.jpg?v=67304a3f"
+    },
+    {
+      "memberId": "azki",
+      "videoId": "0NXvBO1E6fM",
+      "title": "【3D LIVE】Route AZKi 3D Acoustic LIVE 「Route If」アルバムリリース記念ライブ【#ルートAZKiライブ】",
+      "publishedAt": "2024-07-01T05:11:46-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=0NXvBO1E6fM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/0NXvBO1E6fM/maxresdefault.jpg?v=667e8b7a"
+    },
+    {
+      "memberId": "azki",
+      "videoId": "7TtlKURvLDI",
+      "title": "【3D新衣装お披露目】AZKi 5th Anniversary Live \"with U -みんなと一緒にこれからも-\"【#AZKi5周年ライブ】",
+      "publishedAt": "2023-11-15T04:04:08-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=7TtlKURvLDI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7TtlKURvLDI/maxresdefault.jpg?v=655394c7"
+    },
+    {
+      "memberId": "azki",
+      "videoId": "e3JBtoh9pOQ",
+      "title": "【3D LIVE】AZKi 5th Birthday Live \"DESTiNATiON -ちいさな心が行く先-\"【#AZKi生誕ライブ2023】",
+      "publishedAt": "2023-07-01T04:03:47-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=e3JBtoh9pOQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/e3JBtoh9pOQ/maxresdefault.jpg?v=649d932e"
+    },
+    {
+      "memberId": "azki",
+      "videoId": "SrUT9pCLlcY",
+      "title": "【#AZKi新ビジュアルお披露目】4th Anniversary Live \"Pages\" 活動4周年記念ライブ【ホロライブ/AZKi】",
+      "publishedAt": "2022-11-15T04:05:25-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=SrUT9pCLlcY",
+      "thumbnailUrl": "https://i.ytimg.com/vi/SrUT9pCLlcY/maxresdefault.jpg?v=636e2c26"
+    },
+    {
+      "memberId": "azki",
+      "videoId": "y3Ed1eCwuOA",
+      "title": "【3D LIVE】#AZKi生誕祭2022 【ゲスト：ときのそら / 星街すいせい】",
+      "publishedAt": "2022-07-03T06:09:20-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=y3Ed1eCwuOA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/y3Ed1eCwuOA/maxresdefault.jpg?v=62bac70e"
+    },
+    {
+      "memberId": "azki",
+      "videoId": "Q2_fe1wtGn0",
+      "title": "【#AZKi3周年】3rd Anniversary Live Over Light【新曲初公開も！？】",
+      "publishedAt": "2021-11-14T03:25:27-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=Q2_fe1wtGn0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Q2_fe1wtGn0/maxresdefault.jpg?v=618e1950"
+    },
+    {
+      "memberId": "azki",
+      "videoId": "NDYaVPFVtzk",
+      "title": "AZKi - 【3D LIVE】SPECiAL LiVE -NON FiCTiON- 【youtube music weekend】",
+      "publishedAt": "2021-07-16T10:30:14-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=NDYaVPFVtzk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/NDYaVPFVtzk/maxresdefault.jpg?v=60e2d691"
+    },
+    {
+      "memberId": "azki",
+      "videoId": "RyrHynHHbmY",
+      "title": "【3D LIVE】#AZKi超生誕祭2021 ゲスト：角巻わため／桃鈴ねね",
+      "publishedAt": "2021-07-03T04:24:37-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=RyrHynHHbmY",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RyrHynHHbmY/maxresdefault.jpg?v=60dc7bd2"
+    },
+    {
+      "memberId": "azki",
+      "videoId": "qb_fih6glZk",
+      "title": "【3D LIVE】AZKiのオリジナル曲サブスク再生数ランキングTOP10ライブ！！【 #AZKi生放送 】",
+      "publishedAt": "2021-05-16T04:21:23-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=qb_fih6glZk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qb_fih6glZk/maxresdefault.jpg?v=609e5844"
+    },
+    {
+      "memberId": "azki",
+      "videoId": "hlZi0IJnreg",
+      "title": "【活動2周年記念ライブ】TO THE NEXT WORLD #AZNEXT",
+      "publishedAt": "2020-11-15T03:25:24-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=hlZi0IJnreg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hlZi0IJnreg/maxresdefault.jpg?v=5facd921"
+    },
+    {
+      "memberId": "azki",
+      "videoId": "SIU7AhRwCWQ",
+      "title": "【新曲披露＆重大発表！！】AZKi生放送 #15　生誕ライブSP！",
+      "publishedAt": "2020-07-04T04:16:45-07:00",
+      "category": "special",
+      "sourceUrl": "https://www.youtube.com/watch?v=SIU7AhRwCWQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/SIU7AhRwCWQ/maxresdefault.jpg?v=5efb2377"
+    },
+    {
+      "memberId": "azki",
+      "videoId": "7NGIDvFOhDE",
+      "title": "【AZKi 1周年記念ライブ】NEXT TO U #AZ隣",
+      "publishedAt": "2019-11-15T04:17:13-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=7NGIDvFOhDE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7NGIDvFOhDE/maxresdefault.jpg?v=5dcd51d3"
+    },
+    {
+      "memberId": "hakui-koyori",
+      "videoId": "yGN0gj0o1GU",
+      "title": "【 3D LIVE 】新3Dお披露目！豪華ゲスト&重大告知あり！ゲームソングライブ開催だああ！🎮✨ #博衣こより生誕Live2026 【博衣こより/ホロライブ】",
+      "publishedAt": "2026-03-28T05:07:54-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=yGN0gj0o1GU",
+      "thumbnailUrl": "https://i.ytimg.com/vi/yGN0gj0o1GU/maxresdefault.jpg?v=69c7c0f1"
+    },
+    {
+      "memberId": "hakui-koyori",
+      "videoId": "hoCCgeh-xIA",
+      "title": "【完全生3Dライブ】アコースティックライブ in Summer 🌻 #holoAcousticLive 🎤🎶【大神ミオ・AZKi・森カリオペ・古石ビジュー・博衣こより/ホロライブ】",
+      "publishedAt": "2025-09-21T05:16:55-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=hoCCgeh-xIA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hoCCgeh-xIA/maxresdefault.jpg?v=68c7d98f"
+    },
+    {
+      "memberId": "hakui-koyori",
+      "videoId": "ERIxQaoEbXs",
+      "title": "【 3D LIVE 】豪華ゲスト & 生演奏 & 告知あり！ #博衣こより生誕Live2025 -FIRST STEP- 【博衣こより/ホロライブ】",
+      "publishedAt": "2025-03-15T05:19:43-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=ERIxQaoEbXs",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ERIxQaoEbXs/maxresdefault.jpg?v=67ceb889"
+    },
+    {
+      "memberId": "hakui-koyori",
+      "videoId": "DvNg5BT7WKM",
+      "title": "【 #博衣こより3周年記念ゴリラ 】超重大発表アリ‼自費3Dスタジオでゴリラ人狼＆新曲お披露目ライブ＆ほぼ新衣装お披露目だよ～～～！🎉【博衣こより/ホロライブ】",
+      "publishedAt": "2024-11-28T04:05:54-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=DvNg5BT7WKM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DvNg5BT7WKM/maxresdefault.jpg?v=6749dfff"
+    },
+    {
+      "memberId": "hakui-koyori",
+      "videoId": "_vzFNtQsqJI",
+      "title": "【3D Live】勝手にDay0⁉こんこよアイランドへようこそ！🏝 #博衣こより生誕Live2024 【博衣こより/ホロライブ】",
+      "publishedAt": "2024-03-15T06:02:19-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=_vzFNtQsqJI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/_vzFNtQsqJI/maxresdefault.jpg?v=65e9b841"
+    },
+    {
+      "memberId": "hakui-koyori",
+      "videoId": "wg4-Un6zTiU",
+      "title": "【 #博衣こより2周年ライブ 】想い出をライブで届けるMemories & Future!! ＜ゲスト多数！感謝✨＞【3D LIVE】",
+      "publishedAt": "2023-11-28T05:05:50-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=wg4-Un6zTiU",
+      "thumbnailUrl": "https://i.ytimg.com/vi/wg4-Un6zTiU/maxresdefault.jpg?v=65606ae4"
+    },
+    {
+      "memberId": "hakui-koyori",
+      "videoId": "7ctmEk_35Yc",
+      "title": "【3D LIVE】 #博衣こより生誕LIVE ～Memories～ ゲスト多数！重大告知アリ❣ Birthday Party 2023🎂🎉【博衣こより/ホロライブ】",
+      "publishedAt": "2023-03-15T06:14:38-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=7ctmEk_35Yc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7ctmEk_35Yc/maxresdefault.jpg?v=640da364"
+    },
+    {
+      "memberId": "hakui-koyori",
+      "videoId": "aLgQxWOWEnw",
+      "title": "【3DLIVE】歌に謎解きにホラーあり！？こよりらしさを詰め込んだライブ！ - THE KOYORI - 【 #博衣こより1周年 /ホロライブ】",
+      "publishedAt": "2022-11-28T04:04:55-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=aLgQxWOWEnw",
+      "thumbnailUrl": "https://i.ytimg.com/vi/aLgQxWOWEnw/maxresdefault.jpg?v=638325a8"
+    },
+    {
+      "memberId": "himemori-luna",
+      "videoId": "jtQy1xURcuQ",
+      "title": "【 #姫森ルーナ生誕LIVE2025 】Luna RebirthDay !! 💗 BIRTHDAY 3D LIVE【ホロライブ】",
+      "publishedAt": "2025-10-10T06:18:33-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=jtQy1xURcuQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jtQy1xURcuQ/maxresdefault.jpg?v=68e68cde"
+    },
+    {
+      "memberId": "himemori-luna",
+      "videoId": "TeLstIBwC6M",
+      "title": "【 #姫森ルーナ生誕アニソンLIVE 】Count Night TV !! 💗 BIRTHDAY 3D LIVE【ホロライブ】",
+      "publishedAt": "2024-10-10T05:02:23-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=TeLstIBwC6M",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TeLstIBwC6M/maxresdefault.jpg?v=6704f45f"
+    },
+    {
+      "memberId": "himemori-luna",
+      "videoId": "o8PZa10DymU",
+      "title": "【 #姫森ルーナ4周年記念LIVE 】Moon Galaxy🌙 4th Anniversary 3D LIVE !!【ホロライブ】",
+      "publishedAt": "2024-03-29T05:04:02-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=o8PZa10DymU",
+      "thumbnailUrl": "https://i.ytimg.com/vi/o8PZa10DymU/maxresdefault.jpg?v=6604e777"
+    },
+    {
+      "memberId": "himemori-luna",
+      "videoId": "WY26Jo2P9OU",
+      "title": "【 生誕祭 / 3D LIVE 】Cute Is Justice !!!【 #姫森ルーナ生誕祭2023 】",
+      "publishedAt": "2023-10-10T05:06:54-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=WY26Jo2P9OU",
+      "thumbnailUrl": "https://i.ytimg.com/vi/WY26Jo2P9OU/maxresdefault.jpg?v=65241bb3"
+    },
+    {
+      "memberId": "himemori-luna",
+      "videoId": "vlqVuLuZl00",
+      "title": "【 #姫森ルーナ誕生祭2022 】Loyalty To Luna 💗 BIRTHDAY 3D LIVE【ホロライブ】",
+      "publishedAt": "2022-10-10T04:59:43-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=vlqVuLuZl00",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vlqVuLuZl00/maxresdefault.jpg?v=6341f4b5"
+    },
+    {
+      "memberId": "himemori-luna",
+      "videoId": "3UVUtXHOtV4",
+      "title": "【 #姫森ルーナ2周年記念LIVE 】みんなへ感謝の気持ち届けたいのら！✨2nd Anniversary 3D LIVE !!💜【ホロライブ】",
+      "publishedAt": "2022-01-04T04:00:56-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=3UVUtXHOtV4",
+      "thumbnailUrl": "https://i.ytimg.com/vi/3UVUtXHOtV4/maxresdefault.jpg?v=61d2fd71"
+    },
+    {
+      "memberId": "himemori-luna",
+      "videoId": "kAWOhajaCNo",
+      "title": "枠バグ🥺【#姫森ルーナ誕生祭】３Ｄライブでみんなと一緒に誕生日をお祝いなのら！【姫森ルーナ/ホロライブ】",
+      "publishedAt": "2020-10-10T05:09:36-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=kAWOhajaCNo",
+      "thumbnailUrl": "https://i.ytimg.com/vi/kAWOhajaCNo/maxresdefault.jpg?v=5f8082a6"
+    },
+    {
+      "memberId": "hoshimachi-suisei",
+      "videoId": "Jz2xEfAjC8Y",
+      "title": "【8周年アコースティックLIVE】#星街すいせい重大発表LIVE",
+      "publishedAt": "2026-03-22T05:03:43-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=Jz2xEfAjC8Y",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Jz2xEfAjC8Y/maxresdefault.jpg?v=69bb9bf6"
+    },
+    {
+      "memberId": "hoshimachi-suisei",
+      "videoId": "i0vqoGF6xFo",
+      "title": "【3D LIVE】SheenderellaDay / ラストに告知アリ！【#⁠星街すいせい6周年記念LIVE】",
+      "publishedAt": "2024-03-22T05:01:50-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=i0vqoGF6xFo",
+      "thumbnailUrl": "https://i.ytimg.com/vi/i0vqoGF6xFo/maxresdefault.jpg?v=65fc3baf"
+    },
+    {
+      "memberId": "hoshimachi-suisei",
+      "videoId": "GbIIr3waYzI",
+      "title": "【3D LIVE】Shining Memory / ラストに重大告知‼【#星街すいせい5周年LIVE 】",
+      "publishedAt": "2023-03-22T05:20:38-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=GbIIr3waYzI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/GbIIr3waYzI/maxresdefault.jpg?v=64148893"
+    },
+    {
+      "memberId": "hoshimachi-suisei",
+      "videoId": "CPUYPXa7D7s",
+      "title": "【3DLIVE】遂に復帰‼重大告知ライブ【#星街すいせい重大告知】",
+      "publishedAt": "2022-11-04T06:18:30-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=CPUYPXa7D7s",
+      "thumbnailUrl": "https://i.ytimg.com/vi/CPUYPXa7D7s/maxresdefault.jpg?v=63612910"
+    },
+    {
+      "memberId": "hoshimachi-suisei",
+      "videoId": "RDHf9Tmdvpk",
+      "title": "【3D LIVE】Selfish of a Rough Stone【#星街すいせい４周年LIVE 】",
+      "publishedAt": "2022-03-31T06:07:05-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=RDHf9Tmdvpk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RDHf9Tmdvpk/maxresdefault.jpg?v=6240903d"
+    },
+    {
+      "memberId": "hoshimachi-suisei",
+      "videoId": "Ajwv4ANSSg0",
+      "title": "【3DLIVE】SPACE for Virtual GHOST【#星街すいせい3周年LIVE】",
+      "publishedAt": "2021-04-13T06:26:37-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=Ajwv4ANSSg0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Ajwv4ANSSg0/maxresdefault.jpg?v=607495c5"
+    },
+    {
+      "memberId": "hoshimachi-suisei",
+      "videoId": "JNmmnB4bP0M",
+      "title": "【3DLIVE】STARt IN THE SCREEEN!【#星街すいせい50万人記念ライブ】",
+      "publishedAt": "2020-10-19T06:15:21-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=JNmmnB4bP0M",
+      "thumbnailUrl": "https://i.ytimg.com/vi/JNmmnB4bP0M/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB1lZZQ5bRtYrk7CoLhlf2cRF7dFg"
+    },
+    {
+      "memberId": "houshou-marine",
+      "videoId": "NxtHvRVLzXM",
+      "title": "【重大発表あり!!!】宝鐘マリン生誕祭 3D LIVE！豪華ゲスト＆新曲お披露目！【ホロライブ/宝鐘マリン】",
+      "publishedAt": "2024-07-30T05:06:51-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=NxtHvRVLzXM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/NxtHvRVLzXM/maxresdefault.jpg?v=66a7bed6"
+    },
+    {
+      "memberId": "houshou-marine",
+      "videoId": "Nuy3XE8vjgc",
+      "title": "【昭和歌謡祭】宝鐘マリン4周年記念LIVE【ホロライブ/宝鐘マリン】",
+      "publishedAt": "2023-11-12T05:04:48-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=Nuy3XE8vjgc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Nuy3XE8vjgc/maxresdefault.jpg?v=6550bf12"
+    },
+    {
+      "memberId": "houshou-marine",
+      "videoId": "AqEqeiqskEI",
+      "title": "【#宝鐘マリン生誕LIVE2023】3rd Generation Girls Band !!!!【ホロライブ/宝鐘マリン】",
+      "publishedAt": "2023-07-30T06:03:20-07:00",
+      "category": "special",
+      "sourceUrl": "https://www.youtube.com/watch?v=AqEqeiqskEI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/AqEqeiqskEI/maxresdefault.jpg?v=64c53087"
+    },
+    {
+      "memberId": "houshou-marine",
+      "videoId": "wF_VmniNI2I",
+      "title": "【3D LIVE!!!】3D新衣装お披露目!! ゲストと歌って踊って生誕祭♪♪♪【hololive/宝鐘マリン】",
+      "publishedAt": "2022-07-30T06:11:07-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=wF_VmniNI2I",
+      "thumbnailUrl": "https://i.ytimg.com/vi/wF_VmniNI2I/maxresdefault.jpg?v=62e27b01"
+    },
+    {
+      "memberId": "houshou-marine",
+      "videoId": "vLGCYbnYhPg",
+      "title": "【#マリン出航3DLIVE】ゲストとワイワイ！Marine Set Sail!! Concert!!【ホロライブ/宝鐘マリン】",
+      "publishedAt": "2022-04-27T06:05:52-07:00",
+      "category": "concert",
+      "sourceUrl": "https://www.youtube.com/watch?v=vLGCYbnYhPg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vLGCYbnYhPg/maxresdefault.jpg?v=62682238"
+    },
+    {
+      "memberId": "houshou-marine",
+      "videoId": "dVlNi7Pby0w",
+      "title": "【#宝鐘マリン生誕祭2021】3DLIVE/ゲスト大勢！重大告知もりもり！【ホロライブ】",
+      "publishedAt": "2021-07-30T06:41:35-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=dVlNi7Pby0w",
+      "thumbnailUrl": "https://i.ytimg.com/vi/dVlNi7Pby0w/maxresdefault.jpg?v=6102cbc1"
+    },
+    {
+      "memberId": "houshou-marine",
+      "videoId": "RY_5mn2EY6s",
+      "title": "【#宝鐘マリン100万人記念ライブ / 3DLIVE】Connected Fantasia【ホロライブ】",
+      "publishedAt": "2021-07-03T06:13:02-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=RY_5mn2EY6s",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RY_5mn2EY6s/maxresdefault.jpg?v=60e6c403"
+    },
+    {
+      "memberId": "inugami-korone",
+      "videoId": "Z1_nnb7LxYs",
+      "title": "【3DLIVE】Lazy DOOG Night! 【戌神ころね】#戌神ころね7周年",
+      "publishedAt": "2026-06-15T05:08:22-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=Z1_nnb7LxYs",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Z1_nnb7LxYs/maxresdefault.jpg?v=6a2ac5ec"
+    },
+    {
+      "memberId": "inugami-korone",
+      "videoId": "ASwjM25ax58",
+      "title": "【3D Live】 戌神ころね6th記念★☆ 3D＆パペットライブ！？ 【#戌神ころね6周年】",
+      "publishedAt": "2025-04-13T05:02:51-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=ASwjM25ax58",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ASwjM25ax58/maxresdefault.jpg?v=67fa132d"
+    },
+    {
+      "memberId": "inugami-korone",
+      "videoId": "o3JeicqyVG0",
+      "title": "【#戌神ころね4周年】みんなのおかげで4周年、本当にありがとう！！！4th anniversary Live☆★【戌神ころね/ホロライブ】",
+      "publishedAt": "2023-04-13T06:13:32-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=o3JeicqyVG0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/o3JeicqyVG0/maxresdefault.jpg?v=6436d633"
+    },
+    {
+      "memberId": "inugami-korone",
+      "videoId": "Zvb8xKmP-9U",
+      "title": "【3D LIVE】遅れたけど、誕生日3Dライブやります！ /  BIRTHDAY 3D LIVE！【#戌神ころね生誕祭2022】",
+      "publishedAt": "2022-11-22T05:04:19-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=Zvb8xKmP-9U",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Zvb8xKmP-9U/maxresdefault.jpg?v=637b6fbd"
+    },
+    {
+      "memberId": "inugami-korone",
+      "videoId": "2l3i7MulCgs",
+      "title": "【#戌神ころね生誕祭2021】久しぶりの３Ｄライブ！？今年もいっぱいおめでとうをありがとう！【戌神ころね/ホロライブ】",
+      "publishedAt": "2021-10-01T06:03:49-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=2l3i7MulCgs",
+      "thumbnailUrl": "https://i.ytimg.com/vi/2l3i7MulCgs/maxresdefault.jpg?v=6155de6e"
+    },
+    {
+      "memberId": "inugami-korone",
+      "videoId": "v8tFy6_6R84",
+      "title": "【#おかころ2周年3Dライブ】デビューして2年になりました。みんなにありがとう！【戌神ころね/猫又おかゆ】",
+      "publishedAt": "2021-04-01T07:06:34-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=v8tFy6_6R84",
+      "thumbnailUrl": "https://i.ytimg.com/vi/v8tFy6_6R84/maxresdefault.jpg?v=6064a0af"
+    },
+    {
+      "memberId": "kazama-iroha",
+      "videoId": "23UEX1Yh43U",
+      "title": "【3DLIVE】Wind Trails🍃#風真いろは生誕ライブ2026 告知&ゲストあり🎈【風真いろは/ホロライブ】",
+      "publishedAt": "2026-06-18T05:12:30-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=23UEX1Yh43U",
+      "thumbnailUrl": "https://i.ytimg.com/vi/23UEX1Yh43U/maxresdefault.jpg?v=6a2f666a"
+    },
+    {
+      "memberId": "kazama-iroha",
+      "videoId": "42h4ydJS3zk",
+      "title": "【3DLIVE】#風真いろは生誕LIVE2025 告知&ゲストあり🎈これが風真いろはです！~Reversible~【風真いろは/ホロライブ】",
+      "publishedAt": "2025-06-18T05:19:37-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=42h4ydJS3zk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/42h4ydJS3zk/maxresdefault.jpg?v=6852e0f1"
+    },
+    {
+      "memberId": "kazama-iroha",
+      "videoId": "POix3IWi5Uw",
+      "title": "【ミニ3DLIVE】#風真いろは3周年 お披露目複数あり🎀ミニ３DLIVEあり🎺４年目へのスタートライン【風真いろは/ホロライブ】",
+      "publishedAt": "2024-11-30T04:31:06-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=POix3IWi5Uw",
+      "thumbnailUrl": "https://i.ytimg.com/vi/POix3IWi5Uw/maxresdefault.jpg?v=67499b60"
+    },
+    {
+      "memberId": "kazama-iroha",
+      "videoId": "MrLjWPYpkKM",
+      "title": "【3DLIVE】⁠#風真いろは生誕ライブ2024 可能性大❣いろんな『なりたい自分』✨ゲストあり&重大告知あり💡【風真いろは/ホロライブ】",
+      "publishedAt": "2024-06-18T06:09:29-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=MrLjWPYpkKM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/MrLjWPYpkKM/maxresdefault.jpg?v=666bc273"
+    },
+    {
+      "memberId": "kazama-iroha",
+      "videoId": "jrUa3JpsNt4",
+      "title": "【3DLIVE】#風真いろは2周年LIVE かざまの物語を最初から。感謝の気持ちを込めて💌重大告知アリ💡【風真いろは/ホロライブ】",
+      "publishedAt": "2023-11-30T04:07:52-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=jrUa3JpsNt4",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jrUa3JpsNt4/maxresdefault.jpg?v=6565fb04"
+    },
+    {
+      "memberId": "kazama-iroha",
+      "videoId": "U6JzdFFuvgQ",
+      "title": "【3DLIVE】⁠#風真いろは生誕ライブ2023 歌って踊って楽しむでござる🍃ゲストあり＆重大告知あり💡【風真いろは/ホロライブ】",
+      "publishedAt": "2023-06-18T05:08:40-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=U6JzdFFuvgQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/U6JzdFFuvgQ/maxresdefault.jpg?v=648d851f"
+    },
+    {
+      "memberId": "kazama-iroha",
+      "videoId": "au57Syx7wuQ",
+      "title": "【3DLIVE】#風真いろは1周年LIVE 四季を越え、またこの季節からスタート🌸🎆🍁❄️【風真いろは/ホロライブ】",
+      "publishedAt": "2022-11-30T04:08:00-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=au57Syx7wuQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/au57Syx7wuQ/maxresdefault.jpg?v=6386f062"
+    },
+    {
+      "memberId": "la-darknesss",
+      "videoId": "8W_Pml3XIdM",
+      "title": "【生誕3Dライブ】#ラプさま大解放2026 超超超豪華ゲストありのラプ様ご褒美ライブ⁉重大告知もあるよ‼🔥【ラプラス・ダークネス/ホロライブ】",
+      "publishedAt": "2026-05-25T05:04:33-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=8W_Pml3XIdM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8W_Pml3XIdM/maxresdefault.jpg?v=6a102108"
+    },
+    {
+      "memberId": "la-darknesss",
+      "videoId": "q4XGBW-UGg0",
+      "title": "🛸【ラプ様生誕祭2024】う、うまれる！#ラプ様と愉快な仲間たち【3D LIVE】💜",
+      "publishedAt": "2024-05-25T05:09:04-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=q4XGBW-UGg0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/q4XGBW-UGg0/maxresdefault.jpg?v=664dc78b"
+    },
+    {
+      "memberId": "la-darknesss",
+      "videoId": "abXN62S7pyU",
+      "title": "【 #ラプラス2周年LIVE 】アイドルLIVE！？やります！🔥 [ 超最強ゲスト多数参戦！]【3D LIVE】",
+      "publishedAt": "2023-11-26T04:04:48-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=abXN62S7pyU",
+      "thumbnailUrl": "https://i.ytimg.com/vi/abXN62S7pyU/maxresdefault.jpg?v=655f37e0"
+    },
+    {
+      "memberId": "la-darknesss",
+      "videoId": "ebv1wCiXBfI",
+      "title": "🛸【祝１周年！】ラプラス・ダークネスすぺしゃるLIVE！ゲストもお披露目もいっぱいあるぞ！【#ラプラス総帥1周年記念】💜",
+      "publishedAt": "2022-11-26T04:03:33-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=ebv1wCiXBfI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ebv1wCiXBfI/maxresdefault.jpg?v=6380cf44"
+    },
+    {
+      "memberId": "momosuzu-nene",
+      "videoId": "YgZNZM81OcA",
+      "title": "【 超重大告知あり‼ 】 #桃鈴ねね誕生日ライブ2026 ～Liminal～【 桃鈴ねね / 3DLive 】",
+      "publishedAt": "2026-03-02T04:17:50-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=YgZNZM81OcA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/YgZNZM81OcA/maxresdefault.jpg?v=69a44414"
+    },
+    {
+      "memberId": "momosuzu-nene",
+      "videoId": "54MJhdogNII",
+      "title": "【 #桃鈴ねね誕生日ライブ2026 】今年もみんなと迎えたい！お誕生日！！！【 桃鈴ねね / hololive 】",
+      "publishedAt": "2026-03-01T07:34:09-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=54MJhdogNII",
+      "thumbnailUrl": "https://i.ytimg.com/vi/54MJhdogNII/maxresdefault.jpg?v=69a4034e"
+    },
+    {
+      "memberId": "momosuzu-nene",
+      "videoId": "d-Ua7CIU34I",
+      "title": "【 #桃鈴ねね誕生日Live2025 】ゲストあり！新衣装お披露目あり！ねねリズムバースデーライブ！【 桃鈴ねね / hololive 】",
+      "publishedAt": "2025-03-29T05:25:50-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=d-Ua7CIU34I",
+      "thumbnailUrl": "https://i.ytimg.com/vi/d-Ua7CIU34I/maxresdefault.jpg?v=67e68dc9"
+    },
+    {
+      "memberId": "momosuzu-nene",
+      "videoId": "mlsJvmN-z74",
+      "title": "【 #桃鈴ねね生誕祭2024 】ムシキングとラブベリ実機で遊んでみた‼ライブパートもあるよん‼【桃鈴ねね/hololive】",
+      "publishedAt": "2024-03-02T04:04:00-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=mlsJvmN-z74",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mlsJvmN-z74/maxresdefault.jpg?v=65e2cc70"
+    },
+    {
+      "memberId": "momosuzu-nene",
+      "videoId": "5Ney9Z_WnTU",
+      "title": "【 3DLIVE 】ねね～ちらい～ぶ４年目もよろしくね！ゲストいっぱいでお祝い！【 #桃鈴ねねの４年目 】",
+      "publishedAt": "2023-11-11T05:15:52-08:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=5Ney9Z_WnTU",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5Ney9Z_WnTU/maxresdefault.jpg?v=654e2573"
+    },
+    {
+      "memberId": "momosuzu-nene",
+      "videoId": "Y_n8tWcMFj8",
+      "title": "【 #桃鈴ねね誕生日2023 】3D LIVE✨毎日誰かの誕生日！重大発表あり！【 桃鈴ねね / ホロライブ 】",
+      "publishedAt": "2023-03-28T05:24:34-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=Y_n8tWcMFj8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Y_n8tWcMFj8/maxresdefault.jpg?v=6421a359"
+    },
+    {
+      "memberId": "momosuzu-nene",
+      "videoId": "MwooDDEEHWw",
+      "title": "【 #桃鈴ねね２周年 】✨3DLIVE ✨３年目もよろしくね！いっぱい告知あり🍑【 桃鈴ねね / ホロライブ 】",
+      "publishedAt": "2022-10-22T06:14:25-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=MwooDDEEHWw",
+      "thumbnailUrl": "https://i.ytimg.com/vi/MwooDDEEHWw/maxresdefault.jpg?v=63521f6d"
+    },
+    {
+      "memberId": "momosuzu-nene",
+      "videoId": "czfjbNitJ4M",
+      "title": "【 3DLIVE 】ねねが主役！！！！！ #桃鈴ねね誕生日2022【 桃鈴ねね / ホロライブ 】",
+      "publishedAt": "2022-03-02T05:05:34-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=czfjbNitJ4M",
+      "thumbnailUrl": "https://i.ytimg.com/vi/czfjbNitJ4M/maxresdefault.jpg?v=621e3847"
+    },
+    {
+      "memberId": "momosuzu-nene",
+      "videoId": "VVQQcI6r3NU",
+      "title": "【3DLIVE】桃鈴ねね x 星街すいせい x 常闇トワ　Christmas Live【 #ねねすいトワクリスマスライブ 】",
+      "publishedAt": "2021-12-21T05:13:37-08:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=VVQQcI6r3NU",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VVQQcI6r3NU/maxresdefault.jpg?v=61c0a331"
+    },
+    {
+      "memberId": "momosuzu-nene",
+      "videoId": "jdio7hLzy3w",
+      "title": "【3DLIVE】🍑ねねいろらいぶ🍑【桃鈴ねね/ ホロライブ】",
+      "publishedAt": "2021-06-12T05:07:42-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=jdio7hLzy3w",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jdio7hLzy3w/maxresdefault.jpg?v=60c346b1"
+    },
+    {
+      "memberId": "nakiri-ayame",
+      "videoId": "uRa-uLMea7w",
+      "title": "【 #百鬼あやめ7周年新衣装3D 】百鬼あやめ７周年記念ライブ  ～天女繚華～ 【百鬼あやめ/ホロライブ】",
+      "publishedAt": "2025-09-03T05:10:48-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=uRa-uLMea7w",
+      "thumbnailUrl": "https://i.ytimg.com/vi/uRa-uLMea7w/maxresdefault.jpg?v=68b82b75"
+    },
+    {
+      "memberId": "nakiri-ayame",
+      "videoId": "mwJGZ8YU7o4",
+      "title": "【＃百鬼あやめ４周年記念 / 3DLIVE】Nakiriayame 4th anniversary　~Hapiness to you ♡~",
+      "publishedAt": "2022-09-03T05:23:01-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=mwJGZ8YU7o4",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mwJGZ8YU7o4/maxresdefault.jpg?v=6312ec72"
+    },
+    {
+      "memberId": "nakiri-ayame",
+      "videoId": "bn7OaRnM9-A",
+      "title": "【生誕祭】百鬼あやめ 4th Birth Dayライブ!!!!!!!!!!! 　＃百鬼あやめ4th生誕祭",
+      "publishedAt": "2021-12-13T04:08:28-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=bn7OaRnM9-A",
+      "thumbnailUrl": "https://i.ytimg.com/vi/bn7OaRnM9-A/maxresdefault.jpg?v=61b70252"
+    },
+    {
+      "memberId": "nakiri-ayame",
+      "videoId": "N0mQHlL7Qo4",
+      "title": "【３周年記念】祝３周年記念ライブ！！！宵の余、良い！！！！！！！🌸🌙　#百鬼あやめ３周年",
+      "publishedAt": "2021-10-02T05:09:06-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=N0mQHlL7Qo4",
+      "thumbnailUrl": "https://i.ytimg.com/vi/N0mQHlL7Qo4/maxresdefault.jpg?v=6157176c"
+    },
+    {
+      "memberId": "natsuiro-matsuri",
+      "videoId": "pKc5qSSWJQs",
+      "title": "【3D LIVE】#夏色FullBloom / 夏色まつり誕生ライブ【ホロライブ/夏色まつり】",
+      "publishedAt": "2024-11-01T04:56:11-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=pKc5qSSWJQs",
+      "thumbnailUrl": "https://i.ytimg.com/vi/pKc5qSSWJQs/maxresdefault.jpg?v=671ced8b"
+    },
+    {
+      "memberId": "natsuiro-matsuri",
+      "videoId": "CXLL4W4w4I8",
+      "title": "【3DLIVE】#まちゅまちゅ動画 ～インターネット老人会～【ホロライブ/夏色まつり】",
+      "publishedAt": "2023-11-01T05:04:52-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=CXLL4W4w4I8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/CXLL4W4w4I8/maxresdefault.jpg?v=653f9b61"
+    },
+    {
+      "memberId": "natsuiro-matsuri",
+      "videoId": "cB-8A760jtI",
+      "title": "【3DLIVE】夏色まつり Birthday Live🎂🎉 #今夜はdancethenight【ホロライブ/夏色まつり】",
+      "publishedAt": "2023-08-31T05:59:05-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=cB-8A760jtI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/cB-8A760jtI/maxresdefault.jpg?v=64ef116b"
+    },
+    {
+      "memberId": "natsuiro-matsuri",
+      "videoId": "oFn0ZypcaM8",
+      "title": "【#夏色ReSTART】BIRTHDAY 3DLIVE🎂~今日はまつりが主役~【ホロライブ/夏色まつり】",
+      "publishedAt": "2022-07-22T05:19:00-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=oFn0ZypcaM8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/oFn0ZypcaM8/maxresdefault.jpg?v=62d7cd4a"
+    },
+    {
+      "memberId": "natsuiro-matsuri",
+      "videoId": "APN3rNzfNnw",
+      "title": "【3Dライブ】2周年記念！今夜だけはまつりが主役！【ホロライブ/夏色まつり】",
+      "publishedAt": "2020-06-20T05:44:26-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=APN3rNzfNnw",
+      "thumbnailUrl": "https://i.ytimg.com/vi/APN3rNzfNnw/maxresdefault.jpg?v=5eea3ea3"
+    },
+    {
+      "memberId": "nekomata-okayu",
+      "videoId": "rYpbqdD1oiQ",
+      "title": "【 3D LIVE 】ゲストもたくさん❕重大告知アリ❕みんなで楽しも🍙💜💜【 #猫又おかゆ生誕祭2026 】",
+      "publishedAt": "2026-02-22T05:02:12-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=rYpbqdD1oiQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/rYpbqdD1oiQ/maxresdefault.jpg?v=69989337"
+    },
+    {
+      "memberId": "nekomata-okayu",
+      "videoId": "Bb7UfPi8fhg",
+      "title": "【お誕生日🍰】ゲスト盛り沢山✨日頃の感謝を込めて歌います！【 #猫又おかゆ2023生誕祭Live /ホロライブ】",
+      "publishedAt": "2023-02-22T04:04:32-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=Bb7UfPi8fhg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Bb7UfPi8fhg/maxresdefault.jpg?v=63f4e606"
+    },
+    {
+      "memberId": "nekomata-okayu",
+      "videoId": "LazLAQUMCzI",
+      "title": "【3Dライブ】重大発表!?何やらゲストも参戦してくれるらしい…⚡【#おかゆ重大発表 / ホロライブ】",
+      "publishedAt": "2022-07-24T05:18:41-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=LazLAQUMCzI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/LazLAQUMCzI/maxresdefault.jpg?v=62dc06eb"
+    },
+    {
+      "memberId": "nekomata-okayu",
+      "videoId": "epPYcIwJ5aQ",
+      "title": "【#猫又おかゆ生誕ライブ2022】歌って踊ってみんな！楽しんでって！✨：OKAYU Birthday Live🎉【ホロライブ】",
+      "publishedAt": "2022-02-22T05:05:22-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=epPYcIwJ5aQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/epPYcIwJ5aQ/maxresdefault.jpg?v=6213b5d5"
+    },
+    {
+      "memberId": "nekomata-okayu",
+      "videoId": "XvrnWqU6MIs",
+      "title": "【3DLIVE】🌧今宵はきっと雨が降る🌧【#おかゆの梅雨ライブ】",
+      "publishedAt": "2021-06-19T05:52:47-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=XvrnWqU6MIs",
+      "thumbnailUrl": "https://i.ytimg.com/vi/XvrnWqU6MIs/maxresdefault.jpg?v=60c4b380"
+    },
+    {
+      "memberId": "nekomata-okayu",
+      "videoId": "RxytWppYJq8",
+      "title": "【#おかゆの生誕祭2021】お誕生日なので3D歌ライブだ～～🎶🎶【ホロライブ】",
+      "publishedAt": "2021-02-22T05:31:20-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=RxytWppYJq8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RxytWppYJq8/maxresdefault.jpg?v=6033a09f"
+    },
+    {
+      "memberId": "omaru-polka",
+      "videoId": "zzVcTQOdLZE",
+      "title": "【#尾丸ポルカ生誕祭2026】Glitter of Love/誕生日記念3DLIVE【尾丸ポルカ/ホロライブ】",
+      "publishedAt": "2026-01-30T05:16:27-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=zzVcTQOdLZE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zzVcTQOdLZE/maxresdefault.jpg?v=69728c85"
+    },
+    {
+      "memberId": "omaru-polka",
+      "videoId": "DW_8xrtourE",
+      "title": "【BIRTHDAY💗3DLIVE】4人なら絶対てーきあつにまけないもん！【#尾丸ポルカ生誕祭2023】",
+      "publishedAt": "2023-01-30T04:06:25-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=DW_8xrtourE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DW_8xrtourE/maxresdefault.jpg?v=63d6749e"
+    },
+    {
+      "memberId": "omaru-polka",
+      "videoId": "ywvR52V7HiI",
+      "title": "【#尾丸ポルカ生誕祭】ポルカプロデュース!最強アイドルグループ3DLIVE!",
+      "publishedAt": "2022-01-30T05:06:08-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=ywvR52V7HiI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ywvR52V7HiI/maxresdefault.jpg?v=61f57d7a"
+    },
+    {
+      "memberId": "ookami-mio",
+      "videoId": "VzecQUmB1sY",
+      "title": "【３DLive】晴れ時々にわかミオ【 #大神ミオ生誕ライブ2024 】",
+      "publishedAt": "2024-08-20T05:00:26-07:00",
+      "category": "special",
+      "sourceUrl": "https://www.youtube.com/watch?v=VzecQUmB1sY",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VzecQUmB1sY/maxresdefault.jpg?v=66c3fded"
+    },
+    {
+      "memberId": "ookami-mio",
+      "videoId": "YqPVwYLcvrY",
+      "title": "大神ミオ５周年記念ライブ『ナイトループ』【 ホロライブ / 大神ミオ 】",
+      "publishedAt": "2023-12-07T04:57:48-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=YqPVwYLcvrY",
+      "thumbnailUrl": "https://i.ytimg.com/vi/YqPVwYLcvrY/maxresdefault.jpg?v=656ffcdc"
+    },
+    {
+      "memberId": "ookami-mio",
+      "videoId": "0WLlmgirGD8",
+      "title": "大神ミオ４周年記念ライブ - Mio Forest night party -",
+      "publishedAt": "2022-12-07T04:08:34-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=0WLlmgirGD8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/0WLlmgirGD8/maxresdefault.jpg?v=638d9b56"
+    },
+    {
+      "memberId": "ookami-mio",
+      "videoId": "ChMwx4yeI3g",
+      "title": "【３D】ライブも企画も！誕生日祭だーー！！！！【 #大神ミオ誕生日 】",
+      "publishedAt": "2021-08-20T06:24:51-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=ChMwx4yeI3g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ChMwx4yeI3g/maxresdefault.jpg?v=611ce1f5"
+    },
+    {
+      "memberId": "ookami-mio",
+      "videoId": "mmUVwNut2-Y",
+      "title": "大神ミオ２周年記念３Dライブ【2nd anniversary】",
+      "publishedAt": "2020-12-07T05:18:22-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=mmUVwNut2-Y",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mmUVwNut2-Y/maxresdefault.jpg?v=5fcc8d9c"
+    },
+    {
+      "memberId": "oozora-subaru",
+      "videoId": "NfJsoMi1y0s",
+      "title": "【#大空スバル7周年LIVE】大空スバル 7th 記念LIVE ラブミ❣：7th anniversary live【ホロライブ/大空スバル】",
+      "publishedAt": "2026-03-29T06:07:05-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=NfJsoMi1y0s",
+      "thumbnailUrl": "https://i.ytimg.com/vi/NfJsoMi1y0s/maxresdefault.jpg?v=69c573fc"
+    },
+    {
+      "memberId": "oozora-subaru",
+      "videoId": "KJGX0gJhvrM",
+      "title": "【#大空スバル6周年LIVE】大空スバル 6th 記念LIVE 星灯【ホロライブ/大空スバル】",
+      "publishedAt": "2025-03-02T05:12:25-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=KJGX0gJhvrM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/KJGX0gJhvrM/maxresdefault.jpg?v=67c3d378"
+    },
+    {
+      "memberId": "oozora-subaru",
+      "videoId": "GEgMPHX6_c8",
+      "title": "【 #大空スバル５周年 】大空スバル５周年記念ライブ ～ 5th Anniversary Live Stellar Symphony ～【ホロライブ/大空スバル】",
+      "publishedAt": "2024-02-25T05:02:28-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=GEgMPHX6_c8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/GEgMPHX6_c8/maxresdefault.jpg?v=65d9572e"
+    },
+    {
+      "memberId": "oozora-subaru",
+      "videoId": "n6yep2gl1HY",
+      "title": "【#大空スバル４周年】新衣装お披露目！！！！！４周年ありがとうございました！！！！！！！！：NEW 3D COSTUME !!! 4th anniversary Live【ホロライブ】",
+      "publishedAt": "2022-11-20T05:19:19-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=n6yep2gl1HY",
+      "thumbnailUrl": "https://i.ytimg.com/vi/n6yep2gl1HY/maxresdefault.jpg?v=6378c51c"
+    },
+    {
+      "memberId": "robocosan",
+      "videoId": "Lw3sBpkC3Rw",
+      "title": "【＃ロボ子4周年記念LIVE 】４周年３D IDOL LIVE🎉cuteにcoolに楽しんでIKZ🎉 【3D LIVE】",
+      "publishedAt": "2022-03-04T05:12:39-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=Lw3sBpkC3Rw",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Lw3sBpkC3Rw/maxresdefault.jpg?v=621f40bd"
+    },
+    {
+      "memberId": "sakamata-chloe",
+      "videoId": "rvIy1IOZNtA",
+      "title": "【 #沙花叉クロヱ生誕LIVE 】沙花叉クロヱと不思議なキノコ 【ホロライブ/沙花叉クロヱ】",
+      "publishedAt": "2024-05-18T06:03:23-07:00",
+      "category": "special",
+      "sourceUrl": "https://www.youtube.com/watch?v=rvIy1IOZNtA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/rvIy1IOZNtA/maxresdefault.jpg?v=66474894"
+    },
+    {
+      "memberId": "sakamata-chloe",
+      "videoId": "_rgeHcQu0Tc",
+      "title": "【#沙花叉クロヱ生誕LIVE】シャチ爆誕！初ゲストあり！【沙花叉クロヱ/ホロライブ】",
+      "publishedAt": "2023-05-18T06:14:20-07:00",
+      "category": "special",
+      "sourceUrl": "https://www.youtube.com/watch?v=_rgeHcQu0Tc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/_rgeHcQu0Tc/maxresdefault.jpg?v=6464f58e"
+    },
+    {
+      "memberId": "sakamata-chloe",
+      "videoId": "YOnasn4-BH0",
+      "title": "【#沙花叉クロヱ1周年記念ライブ】シャチ出没中【沙花叉クロヱ/ホロライブ】",
+      "publishedAt": "2022-11-29T05:01:45-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=YOnasn4-BH0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/YOnasn4-BH0/maxresdefault.jpg?v=638366fd"
+    },
+    {
+      "memberId": "sakura-miko",
+      "videoId": "B3OxuRMofcM",
+      "title": "【3D LIVE】ゲスト多数 &超告知＆新衣装あり‼ さくらみこ生誕祭2026\" Fashion Beat \" 🌸【 #さくらみこ生誕祭2026 】",
+      "publishedAt": "2026-03-05T05:13:48-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=B3OxuRMofcM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/B3OxuRMofcM/maxresdefault.jpg?v=69a57134"
+    },
+    {
+      "memberId": "sakura-miko",
+      "videoId": "0ih-OP2tiuE",
+      "title": "【 3D LIVE 】ゲスト＆重大告知あり！さくらみこ200万人＆新衣装お披露目LIVE \"Twinkle Idol Christmas\" 🎄🌸【 #さくらみこ新衣装XmasLIVE】",
+      "publishedAt": "2025-12-25T03:58:33-08:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=0ih-OP2tiuE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/0ih-OP2tiuE/maxresdefault.jpg?v=694a6527"
+    },
+    {
+      "memberId": "sakura-miko",
+      "videoId": "PlC7enNzbgE",
+      "title": "【 3D LIVE 】ゲスト多数 &告知あり！さくらみこ生誕祭2025 \" Re:member colors \" 🌸【 #さくらみこ生誕祭 】",
+      "publishedAt": "2025-03-05T05:12:26-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=PlC7enNzbgE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/PlC7enNzbgE/maxresdefault.jpg?v=67c6b2a8"
+    },
+    {
+      "memberId": "sakura-miko",
+      "videoId": "lJLs49hA84g",
+      "title": "【 3D LIVE 】#みこちDAIDAIDAI重大発表 するぞぉおおおおおおおお‼🌸🎉【ホロライブ/さくらみこ】",
+      "publishedAt": "2024-07-21T05:05:38-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=lJLs49hA84g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/lJLs49hA84g/maxresdefault.jpg?v=66992342"
+    },
+    {
+      "memberId": "sakura-miko",
+      "videoId": "5QbfFvgT8OY",
+      "title": "【3D LIVE】新衣装お披露目あり🎉きゅんきゅん生誕祭2024💖【#さくらみこ生誕祭】",
+      "publishedAt": "2024-03-05T05:08:27-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=5QbfFvgT8OY",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5QbfFvgT8OY/maxresdefault.jpg?v=65e5e78d"
+    },
+    {
+      "memberId": "sakura-miko",
+      "videoId": "V761LnbkXYQ",
+      "title": "【 ゲスト多数！新髪型お披露目！ 】#さくらみこ5周年 記念アイドルLIVE🌊アイドルよ🌟あてんしょんぷりーず！【ホロライブ/さくらみこ】",
+      "publishedAt": "2023-08-01T06:12:48-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=V761LnbkXYQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/V761LnbkXYQ/maxresdefault.jpg?v=65c47d6f"
+    },
+    {
+      "memberId": "sakura-miko",
+      "videoId": "FQHJL5ueV64",
+      "title": "【 3D LIVE 】ゲスト多数！新衣装お披露目&告知あり！ #さくらみこ生誕祭 Birthday Party 2023 🎂 【ホロライブ/さくらみこ】",
+      "publishedAt": "2023-03-05T05:13:11-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=FQHJL5ueV64",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FQHJL5ueV64/maxresdefault.jpg?v=6403c9c8"
+    },
+    {
+      "memberId": "sakura-miko",
+      "videoId": "Cv_2tjVo-p4",
+      "title": "【 #さくらみこ生誕祭 】BIRTHDAY PARTY 🎂 4th Virtual3DLive !!【ホロライブ/さくらみこ】",
+      "publishedAt": "2022-03-05T05:10:30-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=Cv_2tjVo-p4",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Cv_2tjVo-p4/maxresdefault.jpg?v=62241375"
+    },
+    {
+      "memberId": "sakura-miko",
+      "videoId": "cBQ2UD4LusU",
+      "title": "【 3DLIVE 】3rd Anniversary LIVE Shine more!!! 【#さくらみこ３周年LIVE】",
+      "publishedAt": "2021-08-01T06:05:59-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=cBQ2UD4LusU",
+      "thumbnailUrl": "https://i.ytimg.com/vi/cBQ2UD4LusU/maxresdefault.jpg?v=61051f79"
+    },
+    {
+      "memberId": "sakura-miko",
+      "videoId": "_SWjDWUBDio",
+      "title": "【#さくらみこ復帰LIVE】ただいま！２周年&復帰LIVE🌸I'm back Miko Live【hololive3DLIVE/さくらみこ】",
+      "publishedAt": "2020-10-21T06:21:21-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=_SWjDWUBDio",
+      "thumbnailUrl": "https://i.ytimg.com/vi/_SWjDWUBDio/maxresdefault.jpg?v=602bb1b2"
+    },
+    {
+      "memberId": "sakura-miko",
+      "videoId": "V1EE-eRaOFk",
+      "title": "【#さくらみこ生誕祭3D】さくらみこ生誕祭2020🌸本日の主役だにぇ🎉【ホロライブ/さくらみこ】",
+      "publishedAt": "2020-03-05T05:44:30-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=V1EE-eRaOFk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/V1EE-eRaOFk/maxresdefault.jpg?v=602bb1f2"
+    },
+    {
+      "memberId": "shirakami-fubuki",
+      "videoId": "7Tm7dVsTPBk",
+      "title": "【#冥ハロ2025】白上フブキ生誕３DLIVE「冥界Halloween Night!」【白上フブキ/ホロライブ】",
+      "publishedAt": "2025-10-05T06:10:15-07:00",
+      "category": "special",
+      "sourceUrl": "https://www.youtube.com/watch?v=7Tm7dVsTPBk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7Tm7dVsTPBk/maxresdefault.jpg?v=68e14efc"
+    },
+    {
+      "memberId": "shirakami-fubuki",
+      "videoId": "7995orE5Enc",
+      "title": "【3D LIVE】一番星の推し[あなた]へ届ける⇒ 『LETTER☆彡』【#白上フブキ生誕祭2023】",
+      "publishedAt": "2023-10-05T06:11:06-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=7995orE5Enc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7995orE5Enc/maxresdefault.jpg?v=6517b368"
+    },
+    {
+      "memberId": "shirakami-fubuki",
+      "videoId": "hQB206l932M",
+      "title": "【#バカタレ２周年記念LIVE】音楽ライブ♬　BAKATARATION PARTY【ホロライブ/白上フブキ/不知火フレア/角巻わため】",
+      "publishedAt": "2022-02-24T04:05:47-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=hQB206l932M",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hQB206l932M/maxresdefault.jpg?v=6214ec33"
+    },
+    {
+      "memberId": "shirakami-fubuki",
+      "videoId": "7Vs-5Rwu8ks",
+      "title": "【#白上フブキ生誕LIVE】Congrats Birthday FOX【ホロライブ/白上フブキ】",
+      "publishedAt": "2021-10-05T06:03:52-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=7Vs-5Rwu8ks",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7Vs-5Rwu8ks/maxresdefault.jpg?v=615c4ca1"
+    },
+    {
+      "memberId": "shiranui-flare",
+      "videoId": "FgA6hgxJH4I",
+      "title": "【 #不知火フレア生誕祭2026 】BEMANI楽曲３D LIVE！みんなで盛り上がれ！【不知火フレア/ホロライブ】",
+      "publishedAt": "2026-04-02T05:24:48-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=FgA6hgxJH4I",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FgA6hgxJH4I/maxresdefault.jpg?v=69cd1826"
+    },
+    {
+      "memberId": "shiranui-flare",
+      "videoId": "XcRns_s_wQ8",
+      "title": "【3DLIVE】３D新衣装も！ #不知火フレア生誕祭2025 ゲストと一緒に盛り上がろう🎉【不知火フレア/ホロライブ】",
+      "publishedAt": "2025-04-02T06:09:59-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=XcRns_s_wQ8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/XcRns_s_wQ8/maxresdefault.jpg?v=67ed306e"
+    },
+    {
+      "memberId": "shiranui-flare",
+      "videoId": "u8AeA1ucX2o",
+      "title": "【3DLIVE】#不知火フレア生誕祭2024 ゲストも沢山！みんなで盛り上がろう！🎉【不知火フレア/ホロライブ】",
+      "publishedAt": "2024-04-02T06:03:38-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=u8AeA1ucX2o",
+      "thumbnailUrl": "https://i.ytimg.com/vi/u8AeA1ucX2o/maxresdefault.jpg?v=660b1ad2"
+    },
+    {
+      "memberId": "shiranui-flare",
+      "videoId": "Dn9ytVwQDpw",
+      "title": "【#不知火フレア生誕祭2023】遅れてやってきたミニライブ！【不知火フレア/ホロライブ】",
+      "publishedAt": "2023-07-15T05:31:57-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=Dn9ytVwQDpw",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Dn9ytVwQDpw/maxresdefault.jpg?v=64b1f039"
+    },
+    {
+      "memberId": "shiranui-flare",
+      "videoId": "H1vf2vF1LmE",
+      "title": "【#不知火フレア生誕祭LIVE】遅れてやってきた私の誕生日LIVE！【不知火フレア/ホロライブ】",
+      "publishedAt": "2022-06-19T06:07:13-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=H1vf2vF1LmE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/H1vf2vF1LmE/maxresdefault.jpg?v=62adfc3f"
+    },
+    {
+      "memberId": "shiranui-flare",
+      "videoId": "ZMlPAsIJslA",
+      "title": "【＃不知火フレア2周年記念ライブ】３D LIVE！みんなで沢山盛り上がろう！【不知火フレア/ホロライブ】",
+      "publishedAt": "2021-08-07T11:31:10-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=ZMlPAsIJslA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ZMlPAsIJslA/maxresdefault.jpg?v=610d6de8"
+    },
+    {
+      "memberId": "shirogane-noel",
+      "videoId": "eV59GTk0J3s",
+      "title": "【#白銀ノエル生誕祭2025】生誕 3D LIVE 睡夢 - suimu -【白銀ノエル/ホロライブ】",
+      "publishedAt": "2025-11-24T05:17:03-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=eV59GTk0J3s",
+      "thumbnailUrl": "https://i.ytimg.com/vi/eV59GTk0J3s/maxresdefault.jpg?v=692461a8"
+    },
+    {
+      "memberId": "shirogane-noel",
+      "videoId": "fTupWAFy6wo",
+      "title": "【#白銀ノエル生誕祭2024】Shirogane Noel Xmas 3D LIVE 【白銀ノエル/ホロライブ】",
+      "publishedAt": "2024-11-24T05:15:29-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=fTupWAFy6wo",
+      "thumbnailUrl": "https://i.ytimg.com/vi/fTupWAFy6wo/maxresdefault.jpg?v=674200c6"
+    },
+    {
+      "memberId": "shirogane-noel",
+      "videoId": "Q7KmABONtXk",
+      "title": "【#白銀ノエル4周年】ゲストいっぱい！3D LIVE ✨最高の夏にしようね🎶【白銀ノエル/ホロライブ】",
+      "publishedAt": "2023-08-08T06:04:50-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=Q7KmABONtXk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Q7KmABONtXk/maxresdefault.jpg?v=64d1b051"
+    },
+    {
+      "memberId": "shirogane-noel",
+      "videoId": "E1HXg-kjOI8",
+      "title": "【#ノエル生誕はっぴーLIVE】今日は誕生日！！好きなことしてはっぴーになろおおお✨【白銀ノエル/ホロライブ】",
+      "publishedAt": "2022-11-24T05:06:38-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=E1HXg-kjOI8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/E1HXg-kjOI8/maxresdefault.jpg?v=637ed480"
+    },
+    {
+      "memberId": "shirogane-noel",
+      "videoId": "UtSY7tOqr4k",
+      "title": "【#白銀ノエル3周年記念】ゲストあり！！最高の夏の思い出LIVE🍉✨【白銀ノエル/ホロライブ】",
+      "publishedAt": "2022-08-27T06:09:31-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=UtSY7tOqr4k",
+      "thumbnailUrl": "https://i.ytimg.com/vi/UtSY7tOqr4k/maxresdefault.jpg?v=6308bfa4"
+    },
+    {
+      "memberId": "shirogane-noel",
+      "videoId": "xa7J8CE1Zms",
+      "title": "【#白銀ノエル2周年記念live】3Dライブ！いつもありがとう🍀全力でアイドルしまっする💪✨(重大告知あり...？！)【白銀ノエル/ホロライブ】",
+      "publishedAt": "2021-09-26T06:06:34-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=xa7J8CE1Zms",
+      "thumbnailUrl": "https://i.ytimg.com/vi/xa7J8CE1Zms/maxresdefault.jpg?v=614fe480"
+    },
+    {
+      "memberId": "shirogane-noel",
+      "videoId": "JEyWbHwLKJE",
+      "title": "【3D LIVE】100万人記念🎉いっぱい歌って踊って楽しんじゃお🎶【白銀ノエル/ホロライブ】",
+      "publishedAt": "2021-06-26T06:10:42-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=JEyWbHwLKJE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/JEyWbHwLKJE/maxresdefault.jpg?v=60d738bc"
+    },
+    {
+      "memberId": "shishiro-botan",
+      "videoId": "GmbIaroMuiU",
+      "title": "【3DLIVE】ゲスト＆告知あり✨獅白ぼたん生誕3D LIVE 『MUST RELIVE』【#獅白ぼたん生誕祭2025 /ホロライブ】",
+      "publishedAt": "2025-09-08T05:17:35-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=GmbIaroMuiU",
+      "thumbnailUrl": "https://i.ytimg.com/vi/GmbIaroMuiU/maxresdefault.jpg?v=68c1e59b"
+    },
+    {
+      "memberId": "shishiro-botan",
+      "videoId": "dsH4DXtSpqk",
+      "title": "【3DLIVE】『Connect Addict』✨3rd Anniversary Live【#獅白ぼたん3周年】",
+      "publishedAt": "2023-11-18T04:06:27-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=dsH4DXtSpqk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/dsH4DXtSpqk/maxresdefault.jpg?v=65575a61"
+    },
+    {
+      "memberId": "shishiro-botan",
+      "videoId": "VsYtOSHzXHA",
+      "title": "【3DLIVE】今年もアイドル💓獅白ぼたん2周年！2nd Anniversary Live【#獅白ぼたん2周年】",
+      "publishedAt": "2022-08-14T05:05:06-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=VsYtOSHzXHA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VsYtOSHzXHA/maxresdefault.jpg?v=62f66e2e"
+    },
+    {
+      "memberId": "shishiro-botan",
+      "videoId": "hoDuE5v4a08",
+      "title": "今日はアイドル💓3D LIVE！ースペシャルゲスト&告知あり！【#獅白ぼたん一周年】",
+      "publishedAt": "2021-08-14T05:08:27-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=hoDuE5v4a08",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hoDuE5v4a08/maxresdefault.jpg?v=61166b75"
+    },
+    {
+      "memberId": "takane-lui",
+      "videoId": "T71ds94dnnM",
+      "title": "【3DLIVE】超重大告知アリ！3D新衣装お披露目！！『Luminous Stairs』【鷹嶺ルイ/ホロライブ】#鷹嶺ルイ超重大生誕LIVE",
+      "publishedAt": "2026-06-11T05:07:44-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=T71ds94dnnM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/T71ds94dnnM/maxresdefault.jpg?v=6a2543b8"
+    },
+    {
+      "memberId": "takane-lui",
+      "videoId": "PHrZ_dRSy_4",
+      "title": "【 3D LIVE 】Lapis Lazuli / 重大告知アリ！【 #鷹嶺ルイ重大告知LIVE 】",
+      "publishedAt": "2025-09-24T06:01:56-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=PHrZ_dRSy_4",
+      "thumbnailUrl": "https://i.ytimg.com/vi/PHrZ_dRSy_4/maxresdefault.jpg?v=68d05d2b"
+    },
+    {
+      "memberId": "takane-lui",
+      "videoId": "28P_1Y0WbrM",
+      "title": "【3DLIVE】重大告知あり‼パワーアップして帰ってきた音楽番組『MUSIC GARDEN』🎤✨【#鷹嶺ルイ生誕祭2025】",
+      "publishedAt": "2025-06-11T05:07:22-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=28P_1Y0WbrM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/28P_1Y0WbrM/maxresdefault.jpg?v=6846aa52"
+    },
+    {
+      "memberId": "takane-lui",
+      "videoId": "dLybZ8wDxVo",
+      "title": "【 超重大告知あり‼ 】#鷹嶺ルイ生誕バンドLIVE 『L -challenger-』【生バンド3D LIVE】",
+      "publishedAt": "2024-06-11T05:08:30-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=dLybZ8wDxVo",
+      "thumbnailUrl": "https://i.ytimg.com/vi/dLybZ8wDxVo/maxresdefault.jpg?v=66642918"
+    },
+    {
+      "memberId": "takane-lui",
+      "videoId": "oU85vmx7jn8",
+      "title": "【 重大告知あり‼ 】#鷹嶺ルイ2周年LIVE 『ANIMAL』【3D LIVE】",
+      "publishedAt": "2023-11-27T05:07:18-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=oU85vmx7jn8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/oU85vmx7jn8/maxresdefault.jpg?v=656095d0"
+    },
+    {
+      "memberId": "takane-lui",
+      "videoId": "nlfGHej2OyA",
+      "title": "【3DLIVE】重大告知あり‼ゲスト多数の音楽番組『MUSIC GARDEN』🎤略してMガデ！【#鷹嶺ルイ生誕祭2023】",
+      "publishedAt": "2023-06-11T06:01:56-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=nlfGHej2OyA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/nlfGHej2OyA/maxresdefault.jpg?v=647f15da"
+    },
+    {
+      "memberId": "takane-lui",
+      "videoId": "y-gW-iI1eAo",
+      "title": "【#鷹嶺ルイ1周年LIVE】Growth ーこれが私の成長ー【3D LIVE】",
+      "publishedAt": "2022-11-27T05:05:35-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=y-gW-iI1eAo",
+      "thumbnailUrl": "https://i.ytimg.com/vi/y-gW-iI1eAo/maxresdefault.jpg?v=6380aa9e"
+    },
+    {
+      "memberId": "tokino-sora",
+      "videoId": "IZDRnl38gvY",
+      "title": "【#ときのそらお披露目誕生日2025】うれしい告知あり！ゲストあり！理想のライブはここにある【ホロライブ/ときのそら】",
+      "publishedAt": "2025-05-15T05:21:01-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=IZDRnl38gvY",
+      "thumbnailUrl": "https://i.ytimg.com/vi/IZDRnl38gvY/maxresdefault.jpg?v=6822055d"
+    },
+    {
+      "memberId": "tokino-sora",
+      "videoId": "vBX1GpS8qLk",
+      "title": "【#ときのそら６周年突破記念】アコースティックライブ～わたしの成長物語～【ときのそら/Tokinosora/ホロライブ 】",
+      "publishedAt": "2023-09-07T06:05:36-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=vBX1GpS8qLk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/vBX1GpS8qLk/maxresdefault.jpg?v=64f5b313"
+    },
+    {
+      "memberId": "tokino-sora",
+      "videoId": "AtbVQjUesq4",
+      "title": "【Birthdayお披露目】かわいいけどかっこいいを目指していくヴァ！！【#ときのそら生誕祭ライブ 】",
+      "publishedAt": "2023-05-26T06:22:42-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=AtbVQjUesq4",
+      "thumbnailUrl": "https://i.ytimg.com/vi/AtbVQjUesq4/maxresdefault.jpg?v=6460ea2b"
+    },
+    {
+      "memberId": "tokino-sora",
+      "videoId": "s7hakOSsU-I",
+      "title": "【3D配信】４周年記念ミニライブ【＃ときのそら4周年】",
+      "publishedAt": "2021-09-07T06:08:34-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=s7hakOSsU-I",
+      "thumbnailUrl": "https://i.ytimg.com/vi/s7hakOSsU-I/maxresdefault.jpg?v=613381ee"
+    },
+    {
+      "memberId": "tokino-sora",
+      "videoId": "lXdX1S1-Mxc",
+      "title": "【お誕生日】BirthdayLive2021【＃ときのそら誕生日2021】",
+      "publishedAt": "2021-05-15T05:00:07-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=lXdX1S1-Mxc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/lXdX1S1-Mxc/maxresdefault.jpg?v=609e4f1d"
+    },
+    {
+      "memberId": "tokoyami-towa",
+      "videoId": "pmWH-wAJYRE",
+      "title": "【 #常闇トワ6周年記念LIVE 】ROCK Festa !!!【 3DLIVE 】",
+      "publishedAt": "2026-01-03T04:06:40-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=pmWH-wAJYRE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/pmWH-wAJYRE/maxresdefault.jpg?v=69579d78"
+    },
+    {
+      "memberId": "tokoyami-towa",
+      "videoId": "I4FbpwMb78U",
+      "title": "【 #常闇トワ生誕祭2025 】超重大発表あり！Sincerely,Towa【 3DLIVE 】",
+      "publishedAt": "2025-08-08T04:55:28-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=I4FbpwMb78U",
+      "thumbnailUrl": "https://i.ytimg.com/vi/I4FbpwMb78U/maxresdefault.jpg?v=6892a6fd"
+    },
+    {
+      "memberId": "tokoyami-towa",
+      "videoId": "C-QdqYjdArM",
+      "title": "【#常闇トワ生誕祭2024】ｰ COLORFUL ｰ【3DLIVE】",
+      "publishedAt": "2024-08-08T05:04:30-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=C-QdqYjdArM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/C-QdqYjdArM/maxresdefault.jpg?v=66b45cba"
+    },
+    {
+      "memberId": "tokoyami-towa",
+      "videoId": "APbMhuPbwkE",
+      "title": "【#常闇トワ4周年記念LIVE】Special Thank U!! J Medley 【3DLIVE】",
+      "publishedAt": "2024-01-03T04:00:27-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=APbMhuPbwkE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/APbMhuPbwkE/maxresdefault.jpg?v=658f1d7d"
+    },
+    {
+      "memberId": "tokoyami-towa",
+      "videoId": "knb_mosTUvo",
+      "title": "【#常闇トワ3周年記念LIVE】MIX2 - 私の居場所 - 【3DLIVE】",
+      "publishedAt": "2023-01-03T05:13:12-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=knb_mosTUvo",
+      "thumbnailUrl": "https://i.ytimg.com/vi/knb_mosTUvo/maxresdefault.jpg?v=63b1a09c"
+    },
+    {
+      "memberId": "tokoyami-towa",
+      "videoId": "KyURvb-eIU8",
+      "title": "【#常闇トワ生誕祭2022】MIX -私の存在証明- 【3DLIVE】",
+      "publishedAt": "2022-08-08T04:53:29-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=KyURvb-eIU8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/KyURvb-eIU8/maxresdefault.jpg?v=62ed9448"
+    },
+    {
+      "memberId": "tokoyami-towa",
+      "videoId": "NuOJhtBC7R4",
+      "title": "【#常闇トワ生誕祭2021】ゲストもいっぱい！楽しんじゃお！✨【3DLIVE】",
+      "publishedAt": "2021-08-08T05:05:30-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=NuOJhtBC7R4",
+      "thumbnailUrl": "https://i.ytimg.com/vi/NuOJhtBC7R4/maxresdefault.jpg?v=610e1c2d"
+    },
+    {
+      "memberId": "tsunomaki-watame",
+      "videoId": "BADL5x3Ftzc",
+      "title": "【 3DLIVE 】\"アニソン Night Fever２\" / 重大告知あり！【 #角巻わため生誕祭2026 】",
+      "publishedAt": "2026-06-24T06:06:57-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=BADL5x3Ftzc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/BADL5x3Ftzc/maxresdefault.jpg?v=6a381499"
+    },
+    {
+      "memberId": "tsunomaki-watame",
+      "videoId": "rhgRzAgYKDM",
+      "title": "【3DLIVE】重大告知あり！\"アニソン Night Fever!!\"【#角巻わため生誕祭2025】",
+      "publishedAt": "2025-06-06T06:11:45-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=rhgRzAgYKDM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/rhgRzAgYKDM/maxresdefault.jpg?v=683f7841"
+    },
+    {
+      "memberId": "tsunomaki-watame",
+      "videoId": "fcFwvfav6mQ",
+      "title": "【3DLIVE】Revival / 重大告知あり！【#角巻わため生誕祭2024】",
+      "publishedAt": "2024-06-06T06:06:47-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=fcFwvfav6mQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/fcFwvfav6mQ/maxresdefault.jpg?v=66602213"
+    },
+    {
+      "memberId": "tsunomaki-watame",
+      "videoId": "W6hZ1EYa37g",
+      "title": "【3DLIVE】Amazing Swing / 3D新衣装お披露目＆重大告知あり！【 #角巻わため4周年 】",
+      "publishedAt": "2023-12-29T05:04:26-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=W6hZ1EYa37g",
+      "thumbnailUrl": "https://i.ytimg.com/vi/W6hZ1EYa37g/maxresdefault.jpg?v=658db30c"
+    },
+    {
+      "memberId": "tsunomaki-watame",
+      "videoId": "R3hmYr58m6E",
+      "title": "【3DLIVE】THE DAY / 重大告知あり！【#角巻わため生誕祭2023】",
+      "publishedAt": "2023-06-06T06:00:30-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=R3hmYr58m6E",
+      "thumbnailUrl": "https://i.ytimg.com/vi/R3hmYr58m6E/maxresdefault.jpg?v=647e08df"
+    },
+    {
+      "memberId": "tsunomaki-watame",
+      "videoId": "d7Rxu-f-Kz0",
+      "title": "【3DLIVE】わたROCKFES2022 ～My song～【#わたフェス】",
+      "publishedAt": "2022-12-29T05:06:33-08:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=d7Rxu-f-Kz0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/d7Rxu-f-Kz0/maxresdefault.jpg?v=63ac270b"
+    },
+    {
+      "memberId": "tsunomaki-watame",
+      "videoId": "Evoexs-ocNM",
+      "title": "【#角巻わため超絶生誕祭2022】角巻わため Special Hyper Birthday 3DLive！🎉【角巻わため/ホロライブ４期生】",
+      "publishedAt": "2022-06-06T05:05:03-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=Evoexs-ocNM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Evoexs-ocNM/maxresdefault.jpg?v=629cde34"
+    },
+    {
+      "memberId": "tsunomaki-watame",
+      "videoId": "TV8rLERH6yU",
+      "title": "【 #角巻わため2周年ライブ 】角巻わため 2nd Anniversary Live Fever!!🌟【ホロライブ４期生】",
+      "publishedAt": "2021-12-29T05:07:12-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=TV8rLERH6yU",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TV8rLERH6yU/maxresdefault.jpg?v=61cc59a3"
+    },
+    {
+      "memberId": "tsunomaki-watame",
+      "videoId": "-1iLScVyydk",
+      "title": "【#かなわたライブ】1st 3D LIVE！サイリウムの準備はいいか？？【天音かなた＆角巻わため/ホロライブ４期生】",
+      "publishedAt": "2020-09-05T05:06:25-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=-1iLScVyydk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-1iLScVyydk/maxresdefault.jpg?v=5f537db5"
+    },
+    {
+      "memberId": "usada-pekora",
+      "videoId": "WJWg8kGKoP0",
+      "title": "【#兎田ぺこら7周年記念LIVE】7周年3D LIVE！NewOutfit BONUS!!【ホロライブ/兎田ぺこら】",
+      "publishedAt": "2026-07-17T06:07:52-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=WJWg8kGKoP0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/WJWg8kGKoP0/maxresdefault.jpg?v=6a58ee01"
+    },
+    {
+      "memberId": "usada-pekora",
+      "videoId": "E2D_YFRHFG8",
+      "title": "【#兎田ぺこら6周年記念LIVE】周年3D LIVE！ぺこらRUSH！！！！！！！ぺこ！【ホロライブ/兎田ぺこら】",
+      "publishedAt": "2025-08-31T06:20:17-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=E2D_YFRHFG8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/E2D_YFRHFG8/maxresdefault.jpg?v=68b4b910"
+    },
+    {
+      "memberId": "usada-pekora",
+      "videoId": "uB6GxHc7PRc",
+      "title": "【#兎田ぺこら生誕祭2025】生誕3D LIVE！FEVER！！！！！！！ぺこ！【ホロライブ/兎田ぺこら】",
+      "publishedAt": "2025-01-12T05:10:43-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=uB6GxHc7PRc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/uB6GxHc7PRc/maxresdefault.jpg?v=6797b791"
+    },
+    {
+      "memberId": "usada-pekora",
+      "videoId": "L2y7a_zMi20",
+      "title": "【3D LIVE】みんなありがとう！ぺこーらありがとうLIVE！【ホロライブ/兎田ぺこら】",
+      "publishedAt": "2024-03-03T05:03:50-08:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=L2y7a_zMi20",
+      "thumbnailUrl": "https://i.ytimg.com/vi/L2y7a_zMi20/maxresdefault.jpg?v=65e38033"
+    },
+    {
+      "memberId": "usada-pekora",
+      "videoId": "1J1JG99KKCk",
+      "title": "【#ぺこーら24SpecialLive】3D LIVE!!!! 最後は歌って踊って盛り上がるぺこ！【ホロライブ/兎田ぺこら】",
+      "publishedAt": "2023-07-17T06:01:17-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=1J1JG99KKCk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1J1JG99KKCk/maxresdefault.jpg?v=64b34693"
+    },
+    {
+      "memberId": "usada-pekora",
+      "videoId": "jgoJuJiWtf4",
+      "title": "【3D LIVE】3D新衣装お披露目!! 兎田ぺこら生誕祭ライブ♪【ホロライブ/兎田ぺこら】",
+      "publishedAt": "2023-01-12T05:09:10-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=jgoJuJiWtf4",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jgoJuJiWtf4/maxresdefault.jpg?v=63bee6d3"
+    },
+    {
+      "memberId": "usada-pekora",
+      "videoId": "Di8D8BvZZp0",
+      "title": "【#兎田ぺこら３周年 / 3DLIVE】Chu! Summer Party♪【ホロライブ】",
+      "publishedAt": "2022-07-17T06:06:07-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=Di8D8BvZZp0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Di8D8BvZZp0/maxresdefault.jpg?v=62d2dff7"
+    },
+    {
+      "memberId": "usada-pekora",
+      "videoId": "OyOl61s3X2k",
+      "title": "【＃兎田ぺこら生誕祭】お誕生日記念🎉3rd Birthday LIVE【ホロライブ】",
+      "publishedAt": "2022-01-12T05:11:36-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=OyOl61s3X2k",
+      "thumbnailUrl": "https://i.ytimg.com/vi/OyOl61s3X2k/maxresdefault.jpg?v=61dd510c"
+    },
+    {
+      "memberId": "yukihana-lamy",
+      "videoId": "mjXO5WWADww",
+      "title": "【#ラミィ生誕3Dヒーローショー】雪花ラミィ生誕３DLIVE『 ホロレンジャー』ゲスト＆告知あり！【 雪花ラミィ /ホロライブ】",
+      "publishedAt": "2025-11-15T04:05:12-08:00",
+      "category": "special",
+      "sourceUrl": "https://www.youtube.com/watch?v=mjXO5WWADww",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mjXO5WWADww/maxresdefault.jpg?v=6916eff1"
+    },
+    {
+      "memberId": "yukihana-lamy",
+      "videoId": "215Bq5oo9Bw",
+      "title": "【#雪花ラミィ3周年LIVE】ラミィの『大好き』詰め合わせ！Lamy＊Love♡Fest☆【雪花ラミィ/ホロライブ】",
+      "publishedAt": "2023-09-29T05:07:10-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=215Bq5oo9Bw",
+      "thumbnailUrl": "https://i.ytimg.com/vi/215Bq5oo9Bw/maxresdefault.jpg?v=65154ba5"
+    },
+    {
+      "memberId": "yukihana-lamy",
+      "videoId": "2Qaek3gXDgg",
+      "title": "【 3DLIVE 】雪花ラミィ 2nd Anniversary Live!!! \"Fleur\"【 #雪花ラミィ2周年LIVE  】",
+      "publishedAt": "2022-08-12T05:06:01-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=2Qaek3gXDgg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/2Qaek3gXDgg/maxresdefault.jpg?v=62f5295b"
+    },
+    {
+      "memberId": "yukihana-lamy",
+      "videoId": "hEkHj1WZekU",
+      "title": "【#雪花ラミィ生誕ライブ】ゲストいっぱい！誕生日LIVE【雪花ラミィ/ホロライブ】",
+      "publishedAt": "2021-11-15T04:13:14-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=hEkHj1WZekU",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hEkHj1WZekU/maxresdefault.jpg?v=6191e4ea"
+    },
+    {
+      "memberId": "yuzuki-choco",
+      "videoId": "Z96aINLMDJo",
+      "title": "【#癒月ちょこ生誕祭2025】ゲスト多数！ちょこのお誕生日LIVE🎂【ホロライブ/癒月ちょこ】",
+      "publishedAt": "2025-02-14T04:02:24-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=Z96aINLMDJo",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Z96aINLMDJo/maxresdefault.jpg?v=67ab8719"
+    },
+    {
+      "memberId": "yuzuki-choco",
+      "videoId": "5rns6j2eHcQ",
+      "title": "【#癒月ちょこ生誕祭2024】‐ GotCheat‐コラボ者多数！重大告知あり！3DBirthdayLIVE!!!【ホロライブ/癒月ちょこ】",
+      "publishedAt": "2024-02-14T03:10:37-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=5rns6j2eHcQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5rns6j2eHcQ/maxresdefault.jpg?v=65c79a3e"
+    },
+    {
+      "memberId": "yuzuki-choco",
+      "videoId": "YjTnRIIczcE",
+      "title": "【#ブラちょこ】Black choco Christmas！5周年３DLIVE！【ホロライブ/癒月ちょこ】",
+      "publishedAt": "2023-12-02T02:53:01-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=YjTnRIIczcE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/YjTnRIIczcE/maxresdefault.jpg?v=65696b4c"
+    },
+    {
+      "memberId": "yuzuki-choco",
+      "videoId": "XKBbbN7M44E",
+      "title": "【#癒月ちょこ4周年LIVE】ちょこから感謝を込めて4周年3ＤLIVE‼【ホロライブ/癒月ちょこ】",
+      "publishedAt": "2022-09-04T05:04:29-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=XKBbbN7M44E",
+      "thumbnailUrl": "https://i.ytimg.com/vi/XKBbbN7M44E/maxresdefault.jpg?v=63132eff"
+    },
+    {
+      "memberId": "yuzuki-choco",
+      "videoId": "uHtWZbAu7iE",
+      "title": "【＃癒月ちょこ誕生日LIVE】重大告知あり？！3Dお誕生日ライブ！【ホロライブ/癒月ちょこ】",
+      "publishedAt": "2022-02-14T04:15:23-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=uHtWZbAu7iE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/uHtWZbAu7iE/maxresdefault.jpg?v=62066c54"
+    }
+  ]
+}

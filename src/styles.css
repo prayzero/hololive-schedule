@@ -1043,7 +1043,8 @@ img {
 
 .broadcast-card,
 .event-card,
-.solo-card {
+.solo-card,
+.youtube-live-card {
   min-width: 0;
   overflow: hidden;
   border: 1px solid #dfe7f1;
@@ -1064,7 +1065,9 @@ img {
 .event-card:hover,
 .event-card:focus-within,
 .solo-card:hover,
-.solo-card:focus-within {
+.solo-card:focus-within,
+.youtube-live-card:hover,
+.youtube-live-card:focus-within {
   border-color: #bddbe5;
   box-shadow: 0 20px 50px rgba(38, 70, 110, 0.13);
   transform: translateY(-4px);
@@ -1072,7 +1075,8 @@ img {
 
 .card-media,
 .event-media,
-.solo-media {
+.solo-media,
+.youtube-live-media {
   position: relative;
   display: block;
   overflow: hidden;
@@ -1086,9 +1090,11 @@ img {
 .card-media > img,
 .event-media > img,
 .solo-media > img,
+.youtube-live-media > img,
 .card-media > .image-fallback,
 .event-media > .image-fallback,
-.solo-media > .image-fallback {
+.solo-media > .image-fallback,
+.youtube-live-media > .image-fallback {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1097,7 +1103,8 @@ img {
 
 .broadcast-card:hover .card-media > img,
 .event-card:hover .event-media > img,
-.solo-card:hover .solo-media > img {
+.solo-card:hover .solo-media > img,
+.youtube-live-card:hover .youtube-live-media > img {
   transform: scale(1.035);
 }
 
@@ -1344,19 +1351,22 @@ img {
 }
 
 .event-grid,
-.solo-grid {
+.solo-grid,
+.youtube-live-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
 }
 
 .event-card,
-.solo-card {
+.solo-card,
+.youtube-live-card {
   border-radius: 26px;
 }
 
 .event-media,
-.solo-media {
+.solo-media,
+.youtube-live-media {
   aspect-ratio: 16 / 9;
 }
 
@@ -1525,6 +1535,66 @@ img {
 }
 
 .segmented-tabs button.is-active span {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.archive-filter-bar {
+  margin-bottom: 16px;
+}
+
+.category-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  padding: 8px;
+  border: 1px solid #dfe7f1;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: var(--shadow-sm);
+}
+
+.category-tabs button {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  gap: 7px;
+  padding: 0 13px;
+  border: 0;
+  border-radius: 12px;
+  color: #728199;
+  background: transparent;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 800;
+  transition:
+    color 160ms ease,
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.category-tabs button:hover {
+  color: #4d5e76;
+  background: #f1f5f9;
+}
+
+.category-tabs button.is-active {
+  color: #fff;
+  background: linear-gradient(135deg, #22bad3, #7e84eb);
+  box-shadow: 0 8px 18px rgba(53, 159, 210, 0.2);
+}
+
+.category-tabs button span {
+  display: grid;
+  min-width: 21px;
+  height: 21px;
+  padding-inline: 5px;
+  border-radius: 7px;
+  place-items: center;
+  background: rgba(105, 124, 148, 0.1);
+  font-size: 9px;
+}
+
+.category-tabs button.is-active span {
   background: rgba(255, 255, 255, 0.18);
 }
 
@@ -1764,6 +1834,223 @@ img {
   white-space: nowrap;
 }
 
+.youtube-live-card {
+  display: flex;
+  flex-direction: column;
+  border-top: 3px solid var(--talent-accent, #43b8d4);
+}
+
+.youtube-live-media {
+  color: #fff;
+}
+
+.youtube-live-media::after {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(17, 28, 47, 0.05) 42%,
+    rgba(17, 28, 47, 0.5)
+  );
+  content: "";
+  pointer-events: none;
+}
+
+.youtube-category,
+.youtube-duration,
+.youtube-play {
+  position: absolute;
+  z-index: 3;
+}
+
+.youtube-category {
+  top: 11px;
+  left: 11px;
+  min-height: 27px;
+  padding: 0 10px;
+  border-radius: 9px;
+  color: #fff;
+  background: rgba(28, 41, 64, 0.82);
+  box-shadow: 0 5px 14px rgba(18, 31, 51, 0.15);
+  font-size: 9px;
+  font-weight: 850;
+  line-height: 27px;
+  backdrop-filter: blur(8px);
+}
+
+.youtube-category.category-birthday {
+  background: rgba(239, 91, 127, 0.92);
+}
+
+.youtube-category.category-anniversary {
+  background: rgba(128, 105, 226, 0.92);
+}
+
+.youtube-category.category-3d {
+  background: rgba(27, 171, 190, 0.92);
+}
+
+.youtube-category.category-concert {
+  background: rgba(52, 105, 201, 0.92);
+}
+
+.youtube-duration {
+  right: 10px;
+  bottom: 9px;
+  min-height: 24px;
+  padding: 0 8px;
+  border-radius: 8px;
+  color: #fff;
+  background: rgba(11, 22, 39, 0.82);
+  font-size: 9px;
+  font-weight: 850;
+  line-height: 24px;
+  backdrop-filter: blur(7px);
+}
+
+.youtube-play {
+  display: grid;
+  width: 46px;
+  height: 46px;
+  top: 50%;
+  left: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  border-radius: 50%;
+  place-items: center;
+  color: #fff;
+  background: rgba(18, 31, 52, 0.56);
+  box-shadow: 0 10px 26px rgba(13, 25, 44, 0.22);
+  opacity: 0;
+  transform: translate(-50%, -45%) scale(0.88);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease,
+    background 180ms ease;
+  backdrop-filter: blur(7px);
+}
+
+.youtube-live-card:hover .youtube-play,
+.youtube-live-card:focus-within .youtube-play {
+  background: rgba(234, 55, 78, 0.9);
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.youtube-live-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 17px 19px 19px;
+}
+
+.youtube-live-member {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  gap: 10px;
+}
+
+.youtube-avatar-stack {
+  display: flex;
+  flex: 0 0 auto;
+  padding-left: 4px;
+}
+
+.youtube-avatar-stack .avatar-button {
+  margin-left: -4px;
+}
+
+.youtube-avatar-stack .avatar-button + .avatar-button {
+  margin-left: -13px;
+}
+
+.youtube-avatar-stack .avatar-button:hover,
+.youtube-avatar-stack .avatar-button:focus-visible {
+  z-index: 6;
+  transform: translateY(-2px);
+}
+
+.youtube-live-member > div:last-child {
+  display: grid;
+  min-width: 0;
+  gap: 2px;
+}
+
+.youtube-live-member strong {
+  overflow: hidden;
+  color: #2b3850;
+  font-size: 11px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.youtube-live-member span {
+  color: #8b97aa;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.youtube-live-body h3 {
+  display: -webkit-box;
+  min-height: 66px;
+  margin: 16px 0 13px;
+  overflow: hidden;
+  color: #18253e;
+  font-size: 16px;
+  font-weight: 830;
+  letter-spacing: -0.028em;
+  line-height: 1.45;
+  word-break: keep-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.youtube-live-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px 14px;
+  margin-bottom: 17px;
+  padding: 12px 13px;
+  border-radius: 14px;
+  background: #f5f8fb;
+}
+
+.youtube-live-meta .icon-text {
+  font-size: 9px;
+}
+
+.youtube-live-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 13px;
+  border-top: 1px solid #edf1f6;
+}
+
+.youtube-live-footer > span,
+.youtube-live-footer a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.youtube-live-footer > span {
+  color: #7d8ba0;
+}
+
+.youtube-live-footer > span svg {
+  color: #8b78e8;
+}
+
+.youtube-live-footer a {
+  color: #d93855;
+  text-decoration: none;
+}
+
 .source-banner-solo {
   border-color: #e3dff6;
   background: #f6f3ff;
@@ -1931,7 +2218,8 @@ input:focus-visible {
   }
 
   .event-grid,
-  .solo-grid {
+  .solo-grid,
+  .youtube-live-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -2161,13 +2449,15 @@ input:focus-visible {
 
   .card-grid,
   .event-grid,
-  .solo-grid {
+  .solo-grid,
+  .youtube-live-grid {
     grid-template-columns: 1fr;
   }
 
   .broadcast-card,
   .event-card,
-  .solo-card {
+  .solo-card,
+  .youtube-live-card {
     border-radius: 22px;
   }
 
@@ -2215,9 +2505,24 @@ input:focus-visible {
   }
 
   .event-body,
-  .solo-body {
+  .solo-body,
+  .youtube-live-body {
     padding-right: 17px;
     padding-left: 17px;
+  }
+
+  .category-tabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .category-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .category-tabs button {
+    flex: 0 0 auto;
   }
 
   footer {

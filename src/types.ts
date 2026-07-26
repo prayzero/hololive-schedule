@@ -110,3 +110,35 @@ export interface SoloLivesPayload {
   sourceNote: string;
   lives: SoloLive[];
 }
+
+export type YouTubeLiveCategory =
+  | "birthday"
+  | "anniversary"
+  | "3d"
+  | "concert"
+  | "special";
+
+export interface YouTubeLive {
+  id: string;
+  videoId: string;
+  memberIds: string[];
+  channelId: string;
+  title: string;
+  category: YouTubeLiveCategory;
+  publishedLabel: string | null;
+  publishedAt: string;
+  durationSeconds: number | null;
+  videoUrl: string;
+  thumbnailUrl: string;
+}
+
+export interface YouTubeLivesPayload {
+  checkedAt: string;
+  collectorVersion: string;
+  sourceNote: string;
+  sourceUrl: string;
+  talentCount: number;
+  membersWithLives: number;
+  missingMemberIds: string[];
+  lives: YouTubeLive[];
+}

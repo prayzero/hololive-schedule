@@ -1,0 +1,841 @@
+{
+  "generatedAt": "2026-07-26T02:36:51.580Z",
+  "scope": {
+    "branches": [
+      "EN",
+      "ID",
+      "DEV_IS"
+    ],
+    "officialChannelsOnly": true,
+    "included": "Public birthday lives, anniversary lives, 3D music performances/showcases, and free concert/special live archives.",
+    "excluded": "Routine karaoke, games, chatting, countdowns, after-talks, watchalongs, Shorts, isolated song clips, and paid-concert preview clips."
+  },
+  "records": [
+    {
+      "memberId": "koganei-niko",
+      "videoId": "5z8osqEvceo",
+      "title": "【生誕３Ｄライブ】星炎-Fierstra Diva-  ＃ニコたん生たん2026【虎金妃笑虎】",
+      "publishedAt": "2026-07-25T05:12:53-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=5z8osqEvceo",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5z8osqEvceo/maxresdefault.jpg?v=6a5ad665"
+    },
+    {
+      "memberId": "rindo-chihaya",
+      "videoId": "-dqLfiQ5IHU",
+      "title": "【 3D LIVE 】Flat Out  輪堂千速生誕祭2026 Summer Fes!🔧【#輪堂千速生誕祭2026 】",
+      "publishedAt": "2026-07-08T05:11:27-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=-dqLfiQ5IHU",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-dqLfiQ5IHU/maxresdefault.jpg?v=6a462fe1"
+    },
+    {
+      "memberId": "takanashi-kiara",
+      "videoId": "foUgVcpF4x8",
+      "title": "【3D CONCERT】H!P Cover Song Birthday Festival🎉🎉🎉 #KiaraBday2026",
+      "publishedAt": "2026-07-06T17:34:54-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=foUgVcpF4x8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/foUgVcpF4x8/maxresdefault.jpg?v=6a4c36f3"
+    },
+    {
+      "memberId": "mizumiya-su",
+      "videoId": "h0jykfxgmj0",
+      "title": "【 3DLIVE 】Step Into Dreams【水宮枢／ホロライブDEV_IS】#水宮枢生誕祭2026",
+      "publishedAt": "2026-06-16T06:05:49-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=h0jykfxgmj0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/h0jykfxgmj0/maxresdefault.jpg?v=6a2fec3c"
+    },
+    {
+      "memberId": "todoroki-hajime",
+      "videoId": "Zcx1344XAmI",
+      "title": "【3DLIVE】Rise In Motion【轟はじめ】 #轟はじめ生誕祭2026",
+      "publishedAt": "2026-06-07T04:59:55-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=Zcx1344XAmI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Zcx1344XAmI/maxresdefault.jpg?v=6a1ed583"
+    },
+    {
+      "memberId": "isaki-riona",
+      "videoId": "gvGDJyWKHbk",
+      "title": "【 3D LIVE 】THE ONE & ONLY【 #⁠響咲リオナ生誕祭2026】",
+      "publishedAt": "2026-05-29T05:00:07-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=gvGDJyWKHbk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/gvGDJyWKHbk/maxresdefault.jpg?v=6a103b6c"
+    },
+    {
+      "memberId": "juufuutei-raden",
+      "videoId": "1juU26jChug",
+      "title": "【 #らでん新衣装お披露目3Dライブ 】歌って踊ってミラクル重大発表祭り！【儒烏風亭らでん #ReGLOSS 】",
+      "publishedAt": "2026-05-17T05:14:57-07:00",
+      "category": "special",
+      "sourceUrl": "https://www.youtube.com/watch?v=1juU26jChug",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1juU26jChug/maxresdefault.jpg?v=6a09b0e0"
+    },
+    {
+      "memberId": "cecilia-immergreen",
+      "videoId": "aPSUhJaels0",
+      "title": "【3D LIVE】THE CCGG NETWORK PART 2 #AUTOFISTNETWORK @holoen_gigimurin",
+      "publishedAt": "2026-05-16T19:21:05-07:00",
+      "category": "special",
+      "sourceUrl": "https://www.youtube.com/watch?v=aPSUhJaels0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/aPSUhJaels0/maxresdefault.jpg?v=6a08ed80"
+    },
+    {
+      "memberId": "gigi-murin",
+      "videoId": "JmnlnzBgMOc",
+      "title": "【3D LIVE】THE CCGG NETWORK PT. 1 #AUTOFISTNETWORK @holoen_ceciliaimmergreen",
+      "publishedAt": "2026-05-16T18:48:10-07:00",
+      "category": "special",
+      "sourceUrl": "https://www.youtube.com/watch?v=JmnlnzBgMOc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/JmnlnzBgMOc/maxresdefault.jpg?v=6a07da59"
+    },
+    {
+      "memberId": "raora-panthera",
+      "videoId": "w37yVSXhV_c",
+      "title": "【3D LIVE CONCERT】Raora Panthera First Birthday Live Concert! #RaoraBday2026",
+      "publishedAt": "2026-05-09T19:13:21-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=w37yVSXhV_c",
+      "thumbnailUrl": "https://i.ytimg.com/vi/w37yVSXhV_c/maxresdefault.jpg?v=69ff6a55"
+    },
+    {
+      "memberId": "elizabeth-rose-bloodflame",
+      "videoId": "PGppUhILuP4",
+      "title": "【3D BIRTHDAY LIVE】NOW That's an 80s BOP! #ERBday2026",
+      "publishedAt": "2026-04-25T06:03:23-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=PGppUhILuP4",
+      "thumbnailUrl": "https://i.ytimg.com/vi/PGppUhILuP4/maxresdefault.jpg?v=69ea8887"
+    },
+    {
+      "memberId": "otonose-kanade",
+      "videoId": "zZ2Ce3eDamU",
+      "title": "【 3D LIVE  】IN PROGRESS【 #音乃瀬奏生誕祭2026 】#hololiveDEV_IS #ReGLOSS",
+      "publishedAt": "2026-04-20T05:15:16-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=zZ2Ce3eDamU",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zZ2Ce3eDamU/maxresdefault.jpg?v=69dce6d9"
+    },
+    {
+      "memberId": "mori-calliope",
+      "videoId": "Rb163zkoNSo",
+      "title": "【3D LIVE - UNCUT ROCK!!】Mori Calliope 6th Birthday (feat. LIVE BAND) #calliolive #UNCUTROCK",
+      "publishedAt": "2026-04-04T05:26:30-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=Rb163zkoNSo",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Rb163zkoNSo/maxresdefault.jpg?v=69ce2ae7"
+    },
+    {
+      "memberId": "kaela-kovalskia",
+      "videoId": "BoVbE4adiwk",
+      "title": "【#3DJAVU】Déjà vu: its all coming back to me now【3D Redebut Live】",
+      "publishedAt": "2026-03-26T08:51:12-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=BoVbE4adiwk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/BoVbE4adiwk/maxresdefault.jpg?v=69c22129"
+    },
+    {
+      "memberId": "irys",
+      "videoId": "J53rX5brbUw",
+      "title": "【3D LIVE - RACING TOWARDS HOPE】IRyS 2026 BIRTHDAY LIVE + 3D OUTFIT & BIG ANNOUNCEMENTS #IRySBDay2026",
+      "publishedAt": "2026-03-20T21:11:35-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=J53rX5brbUw",
+      "thumbnailUrl": "https://i.ytimg.com/vi/J53rX5brbUw/maxresdefault.jpg?v=69be1a93"
+    },
+    {
+      "memberId": "ouro-kronii",
+      "videoId": "qqi8yXuH35Y",
+      "title": "【3D Birthday Live + New Outfit】The Goddess Descends #krorigin",
+      "publishedAt": "2026-03-13T20:18:03-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=qqi8yXuH35Y",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qqi8yXuH35Y/maxresdefault.jpg?v=69b3b8b7"
+    },
+    {
+      "memberId": "anya-melfissa",
+      "videoId": "uzF43bRo5XU",
+      "title": "【3D BIRTHDAY LIVE 2026 3D生誕祭ライブ】The Great Ancient Detective's Bizarre Investigation #DetectiveAnya3D",
+      "publishedAt": "2026-03-12T06:06:39-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=uzF43bRo5XU",
+      "thumbnailUrl": "https://i.ytimg.com/vi/uzF43bRo5XU/maxresdefault.jpg?v=69b0e0d9"
+    },
+    {
+      "memberId": "hakos-baelz",
+      "videoId": "khQRCrrtVjA",
+      "title": "≪ReCOLOR 3D LIVE≫ Hakos Baelz Birthday Live 2026 + NEW 3D OUTFIT! #ReCOLOR3D",
+      "publishedAt": "2026-02-27T20:11:47-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=khQRCrrtVjA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/khQRCrrtVjA/maxresdefault.jpg?v=699c3fd6"
+    },
+    {
+      "memberId": "mori-calliope",
+      "videoId": "fuQ7VpAVFr4",
+      "title": "【3D LIVE】DISASTERSHOW || Disasterpiece Release Mini Show! || Mori Calliope #disastershow #calliolive",
+      "publishedAt": "2026-02-06T21:11:57-08:00",
+      "category": "special",
+      "sourceUrl": "https://www.youtube.com/watch?v=fuQ7VpAVFr4",
+      "thumbnailUrl": "https://i.ytimg.com/vi/fuQ7VpAVFr4/maxresdefault.jpg?v=69845143"
+    },
+    {
+      "memberId": "fuwawa-abyssgard",
+      "videoId": "7M4E3WGWlRM",
+      "title": "【3D LIVE CONCERT 生誕ライブ】FUWAMOCO wacha wacha birthday festival 🎂🐾 【#FWMCbday26】",
+      "publishedAt": "2026-01-31T20:22:28-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=7M4E3WGWlRM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7M4E3WGWlRM/maxresdefault.jpg?v=696d941a"
+    },
+    {
+      "memberId": "mococo-abyssgard",
+      "videoId": "7M4E3WGWlRM",
+      "title": "【3D LIVE CONCERT 生誕ライブ】FUWAMOCO wacha wacha birthday festival 🎂🐾 【#FWMCbday26】",
+      "publishedAt": "2026-01-31T20:22:28-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=7M4E3WGWlRM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7M4E3WGWlRM/maxresdefault.jpg?v=696d941a"
+    },
+    {
+      "memberId": "ayunda-risu",
+      "videoId": "VYSAfYJ6FhI",
+      "title": "【Ayunda Risu 3D Birthday】The Rise of the NUT Warrior 【#TheNutWarrior】",
+      "publishedAt": "2026-01-15T05:56:47-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=VYSAfYJ6FhI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VYSAfYJ6FhI/maxresdefault.jpg?v=69649aa8"
+    },
+    {
+      "memberId": "kobo-kanaeru",
+      "videoId": "jNCGOv8Zz1A",
+      "title": "【3D Live】Let My Voice Enchant You Tonight! #3DKobornDay2025",
+      "publishedAt": "2025-12-12T05:19:40-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=jNCGOv8Zz1A",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jNCGOv8Zz1A/maxresdefault.jpg?v=693bc713"
+    },
+    {
+      "memberId": "nerissa-ravencroft",
+      "videoId": "_mThZIRqIBs",
+      "title": "【3D BIRTHDAY LIVE】Let's party and sing with good friends! 🎂🎉 #RissaHatchDay25",
+      "publishedAt": "2025-11-21T18:38:04-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=_mThZIRqIBs",
+      "thumbnailUrl": "https://i.ytimg.com/vi/_mThZIRqIBs/maxresdefault.jpg?v=691be052"
+    },
+    {
+      "memberId": "vestia-zeta",
+      "videoId": "1ibr6Zav_Ag",
+      "title": "【3D BDAY】AGENT TEST START! ....LOADING...【#AgentTest3D】",
+      "publishedAt": "2025-11-07T05:48:33-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=1ibr6Zav_Ag",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1ibr6Zav_Ag/maxresdefault.jpg?v=6909dd22"
+    },
+    {
+      "memberId": "koseki-bijou",
+      "videoId": "WfGS8QW-b40",
+      "title": "【3D LIVE】LOG IN: GAME START #ROCKINBiboo",
+      "publishedAt": "2025-11-01T21:18:08-07:00",
+      "category": "concert",
+      "sourceUrl": "https://www.youtube.com/watch?v=WfGS8QW-b40",
+      "thumbnailUrl": "https://i.ytimg.com/vi/WfGS8QW-b40/maxresdefault.jpg?v=6907a8b8"
+    },
+    {
+      "memberId": "kureiji-ollie",
+      "videoId": "eYLNO0v7ylg",
+      "title": "【3D BIRTHDAY LIVE】 Lovin' you to the point I'm 𝓒𝓡𝓐𝓩𝓨 ♡ #KoishiteruZOMBIE  【Kureiji Ollie】",
+      "publishedAt": "2025-10-13T06:00:46-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=eYLNO0v7ylg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/eYLNO0v7ylg/maxresdefault.jpg?v=68e3c638"
+    },
+    {
+      "memberId": "elizabeth-rose-bloodflame",
+      "videoId": "TZiMgUFHN_Y",
+      "title": "【WAL】Everglow - 3D CONCERT! ~ FT. @KureijiOllie @ShioriNovella #HSEverglow 💄👁‍🗨 🧟‍♀️",
+      "publishedAt": "2025-09-27T21:32:32-07:00",
+      "category": "concert",
+      "sourceUrl": "https://www.youtube.com/watch?v=TZiMgUFHN_Y",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TZiMgUFHN_Y/maxresdefault.jpg?v=68d6fe27"
+    },
+    {
+      "memberId": "pavolia-reine",
+      "videoId": "zKuxe-5Jxyc",
+      "title": "《Peafowl of The Blue Flame》 Pavolia Reine 3D Birthday Live 2025 #ReineMEPtember2025",
+      "publishedAt": "2025-09-09T07:12:49-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=zKuxe-5Jxyc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zKuxe-5Jxyc/maxresdefault.jpg?v=68be5371"
+    },
+    {
+      "memberId": "raora-panthera",
+      "videoId": "-0RzTyI5nOY",
+      "title": "【3D DEBUT】BIG CAT MEANS BIG TROUBLE... in 3D! 😼RAOOOO~ #Raora3D",
+      "publishedAt": "2025-08-09T18:05:58-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=-0RzTyI5nOY",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-0RzTyI5nOY/maxresdefault.jpg?v=6897ef06"
+    },
+    {
+      "memberId": "gigi-murin",
+      "videoId": "lVi3Wb7WShU",
+      "title": "【3D DEBUT】GIIII~MURIN! × 3D Gigi Murin desu #GIGI3D",
+      "publishedAt": "2025-08-02T18:15:50-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=lVi3Wb7WShU",
+      "thumbnailUrl": "https://i.ytimg.com/vi/lVi3Wb7WShU/maxresdefault.jpg?v=688eb842"
+    },
+    {
+      "memberId": "elizabeth-rose-bloodflame",
+      "videoId": "q0Uhp8IN5-w",
+      "title": "【 3D SHOWCASE 】I'll Be Your Hero Too! ~ 💄#ERB3D #holojustice",
+      "publishedAt": "2025-08-01T18:08:01-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=q0Uhp8IN5-w",
+      "thumbnailUrl": "https://i.ytimg.com/vi/q0Uhp8IN5-w/maxresdefault.jpg?v=688e392c"
+    },
+    {
+      "memberId": "fuwawa-abyssgard",
+      "videoId": "-7xDdu7T8Z4",
+      "title": "【FUWAMOCO 2nd ANNIVERSARY】3D full body BAU BAU CELEBRATION + BIG ANNOUNCEMENTS 🐾✨️ #FWMC2nd 【重大発表】",
+      "publishedAt": "2025-07-30T20:34:28-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=-7xDdu7T8Z4",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-7xDdu7T8Z4/maxresdefault.jpg?v=6889b1c8"
+    },
+    {
+      "memberId": "mococo-abyssgard",
+      "videoId": "-7xDdu7T8Z4",
+      "title": "【FUWAMOCO 2nd ANNIVERSARY】3D full body BAU BAU CELEBRATION + BIG ANNOUNCEMENTS 🐾✨️ #FWMC2nd 【重大発表】",
+      "publishedAt": "2025-07-30T20:34:28-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=-7xDdu7T8Z4",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-7xDdu7T8Z4/maxresdefault.jpg?v=6889b1c8"
+    },
+    {
+      "memberId": "airani-iofifteen",
+      "videoId": "mMDPWutdkDM",
+      "title": "Airani iofifteen Birthday 2025 3D Live, Have a Nice Trip and Dream #iofiLucidDream",
+      "publishedAt": "2025-07-15T07:08:41-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=mMDPWutdkDM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mMDPWutdkDM/maxresdefault.jpg?v=68766096"
+    },
+    {
+      "memberId": "takanashi-kiara",
+      "videoId": "f-UbyQUUykE",
+      "title": "【3D LIVE】SUPER SPECIAL SUMMER BIRTHDAY LIVE! #KiaraBDay2025",
+      "publishedAt": "2025-07-05T18:08:20-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=f-UbyQUUykE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/f-UbyQUUykE/maxresdefault.jpg?v=6869cbe4"
+    },
+    {
+      "memberId": "todoroki-hajime",
+      "videoId": "bjPYXtxhm0I",
+      "title": "【3DLIVE】First Starring Role【轟はじめ/ReGLOSS】 #轟はじめ生誕祭2025",
+      "publishedAt": "2025-06-07T05:11:20-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=bjPYXtxhm0I",
+      "thumbnailUrl": "https://i.ytimg.com/vi/bjPYXtxhm0I/maxresdefault.jpg?v=683d4ed4"
+    },
+    {
+      "memberId": "nerissa-ravencroft",
+      "videoId": "2vEUfTlbzZ8",
+      "title": "【3D CONCERT】#RequiemforLove3D - A JukeBox Musical",
+      "publishedAt": "2025-05-24T16:30:05-07:00",
+      "category": "concert",
+      "sourceUrl": "https://www.youtube.com/watch?v=2vEUfTlbzZ8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/2vEUfTlbzZ8/maxresdefault.jpg?v=682d52c9"
+    },
+    {
+      "memberId": "ninomae-inanis",
+      "videoId": "I-J11Da5ONY",
+      "title": "【3D LIVE】『EVERMORE』 Ninomae Ina'nis Birthday Live 2025  #EvermoreLIVE",
+      "publishedAt": "2025-05-20T20:11:17-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=I-J11Da5ONY",
+      "thumbnailUrl": "https://i.ytimg.com/vi/I-J11Da5ONY/maxresdefault.jpg?v=682b0e6d"
+    },
+    {
+      "memberId": "ichijou-ririka",
+      "videoId": "HB8sU0qsePE",
+      "title": "【＃一条莉々華生誕祭2025】初の生誕ライブ開幕！！一条莉々華生誕祭ライブ2025【一条莉々華/hololive DEV_IS　ReGLOSS】",
+      "publishedAt": "2025-05-12T04:07:35-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=HB8sU0qsePE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/HB8sU0qsePE/maxresdefault.jpg?v=681c8093"
+    },
+    {
+      "memberId": "takanashi-kiara",
+      "videoId": "jjLLByDa3Xc",
+      "title": "【3D CONCERT】KIARA & FRIENDS: H!P Cover Song Spring Concert #HPmeetsHoloEN",
+      "publishedAt": "2025-04-20T18:13:12-07:00",
+      "category": "concert",
+      "sourceUrl": "https://www.youtube.com/watch?v=jjLLByDa3Xc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/jjLLByDa3Xc/maxresdefault.jpg?v=6804e8cd"
+    },
+    {
+      "memberId": "otonose-kanade",
+      "videoId": "mt8AyISL9Ig",
+      "title": "【 3D LIVE 】The First Note【 #⁠音乃瀬奏生誕祭2025 】#hololiveDEV_IS #ReGLOSS",
+      "publishedAt": "2025-04-20T05:13:06-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=mt8AyISL9Ig",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mt8AyISL9Ig/maxresdefault.jpg?v=6801fc2b"
+    },
+    {
+      "memberId": "mori-calliope",
+      "videoId": "YRySeGZNzQ0",
+      "title": "【3D BIRTHDAY LIVE】ARCANA - Mori Calliope's Birthday Concert! With Many Guests!",
+      "publishedAt": "2025-04-04T21:06:31-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=YRySeGZNzQ0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/YRySeGZNzQ0/maxresdefault.jpg?v=67e22e33"
+    },
+    {
+      "memberId": "kobo-kanaeru",
+      "videoId": "SSuRtcLXA0s",
+      "title": "【3D Live】KOBO BABY PARTY !!!! GUGU GAGA BABU BABU ???!!! #Kobo3rdAnniversary",
+      "publishedAt": "2025-03-27T09:07:11-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=SSuRtcLXA0s",
+      "thumbnailUrl": "https://i.ytimg.com/vi/SSuRtcLXA0s/maxresdefault.jpg?v=67e2af89"
+    },
+    {
+      "memberId": "irys",
+      "videoId": "V0plPBgyqPs",
+      "title": "【3D LIVE - HOPE UPON A STAR 】IRyS 2025 BIRTHDAY LIVE #IRySBDay2025",
+      "publishedAt": "2025-03-15T21:09:03-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=V0plPBgyqPs",
+      "thumbnailUrl": "https://i.ytimg.com/vi/V0plPBgyqPs/maxresdefault.jpg?v=67d5a0ee"
+    },
+    {
+      "memberId": "anya-melfissa",
+      "videoId": "FXLKbTnMP2M",
+      "title": "【3D BIRTHDAY LIVE】 Through the Curious Tune - Anya Melfissa 2025 Birthday Live 生誕祭ライブ #CuriousTune3D",
+      "publishedAt": "2025-03-12T06:07:25-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=FXLKbTnMP2M",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FXLKbTnMP2M/maxresdefault.jpg?v=67d100ee"
+    },
+    {
+      "memberId": "hakos-baelz",
+      "videoId": "viPlIHvk724",
+      "title": "≪-KAGURA- Dance of the Gods 3D LIVE≫ Hakos Baelz Birthday 2025 + ANNOUNCEMENTS! #BaeDDay2025",
+      "publishedAt": "2025-02-28T05:05:24-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=viPlIHvk724",
+      "thumbnailUrl": "https://i.ytimg.com/vi/viPlIHvk724/maxresdefault.jpg?v=67be8334"
+    },
+    {
+      "memberId": "moona-hoshinova",
+      "videoId": "4JNyad4TTuY",
+      "title": "【Eclipse Breaker】Moona Birthday Live #EclipseBreaker3DLive",
+      "publishedAt": "2025-02-15T05:03:35-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=4JNyad4TTuY",
+      "thumbnailUrl": "https://i.ytimg.com/vi/4JNyad4TTuY/maxresdefault.jpg?v=67ad3aa8"
+    },
+    {
+      "memberId": "juufuutei-raden",
+      "videoId": "f5QgEZjH53Y",
+      "title": "【 #らでん生誕祭2025 】初！生誕ライブ～ここで出会ったのもなにかのご縁～【儒烏風亭らでん #ReGLOSS 】",
+      "publishedAt": "2025-02-04T04:22:34-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=f5QgEZjH53Y",
+      "thumbnailUrl": "https://i.ytimg.com/vi/f5QgEZjH53Y/maxresdefault.jpg?v=67a08162"
+    },
+    {
+      "memberId": "fuwawa-abyssgard",
+      "videoId": "ouQF2A1l_cI",
+      "title": "【3D LIVE CONCERT 生誕ライブ】FUWAMOCO birthday party night 🎂🐾 【#FWMCbday25】",
+      "publishedAt": "2025-02-01T20:25:12-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=ouQF2A1l_cI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ouQF2A1l_cI/maxresdefault.jpg?v=67882e53"
+    },
+    {
+      "memberId": "mococo-abyssgard",
+      "videoId": "ouQF2A1l_cI",
+      "title": "【3D LIVE CONCERT 生誕ライブ】FUWAMOCO birthday party night 🎂🐾 【#FWMCbday25】",
+      "publishedAt": "2025-02-01T20:25:12-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=ouQF2A1l_cI",
+      "thumbnailUrl": "https://i.ytimg.com/vi/ouQF2A1l_cI/maxresdefault.jpg?v=67882e53"
+    },
+    {
+      "memberId": "ayunda-risu",
+      "videoId": "995QkX6r7RA",
+      "title": "【3D Birthday Performance】Risu's Isekai Express : Special Performance Delivery【#RiSekaiExpress】",
+      "publishedAt": "2025-01-15T06:07:12-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=995QkX6r7RA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/995QkX6r7RA/maxresdefault.jpg?v=67868777"
+    },
+    {
+      "memberId": "ninomae-inanis",
+      "videoId": "3n9igJnSXtQ",
+      "title": "【3D LIVE】『Pleides』Ninomae Ina'nis 2024 Live #Pleides3D",
+      "publishedAt": "2024-12-27T20:03:16-08:00",
+      "category": "concert",
+      "sourceUrl": "https://www.youtube.com/watch?v=3n9igJnSXtQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/3n9igJnSXtQ/maxresdefault.jpg?v=676d9d54"
+    },
+    {
+      "memberId": "irys",
+      "videoId": "RQn7biOiqHs",
+      "title": "【THE DEVIL WEARS HOPE 3D LIVE】 IRyS Anniversary LIVE #DevilWearsHope",
+      "publishedAt": "2024-11-16T20:03:06-08:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=RQn7biOiqHs",
+      "thumbnailUrl": "https://i.ytimg.com/vi/RQn7biOiqHs/maxresdefault.jpg?v=6731b667"
+    },
+    {
+      "memberId": "vestia-zeta",
+      "videoId": "paI8IDWnnAQ",
+      "title": "【#Jazzeta】Zeta's 3D Jazzeta Show! ♪ 【Vestia Zeta】",
+      "publishedAt": "2024-11-07T05:52:22-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=paI8IDWnnAQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/paI8IDWnnAQ/maxresdefault.jpg?v=67263030"
+    },
+    {
+      "memberId": "mori-calliope",
+      "videoId": "dN7gTC10XLE",
+      "title": "【3D LIVE CONCERT】J-RAP in JIGOKU! + NEW 3D MODEL REVEAL! #JRAPinJIGOKU",
+      "publishedAt": "2024-10-31T06:15:17-07:00",
+      "category": "concert",
+      "sourceUrl": "https://www.youtube.com/watch?v=dN7gTC10XLE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/dN7gTC10XLE/maxresdefault.jpg?v=6719ab2f"
+    },
+    {
+      "memberId": "hakos-baelz",
+      "videoId": "zZhyeaw148k",
+      "title": "≪3D PERFORMANCE LIVE≫ #CHU2BAE",
+      "publishedAt": "2024-10-26T21:04:24-07:00",
+      "category": "special",
+      "sourceUrl": "https://www.youtube.com/watch?v=zZhyeaw148k",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zZhyeaw148k/maxresdefault.jpg?v=671b28ee"
+    },
+    {
+      "memberId": "kureiji-ollie",
+      "videoId": "O607BZ8HwDk",
+      "title": "【#REBIRTH3D】Kureiji Ollie's 3D Birthday LIVE 2024 - REBIRTH, The True Me【hololive Indonesia】",
+      "publishedAt": "2024-10-13T07:02:51-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=O607BZ8HwDk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/O607BZ8HwDk/maxresdefault.jpg?v=670bd788"
+    },
+    {
+      "memberId": "takanashi-kiara",
+      "videoId": "0LoG81pLS8c",
+      "title": "【3D LIVE】Takanashi Kiara 4th Anniversary Live ~「MIRAGE」WITH A SURPRISE!? #Kiara4years",
+      "publishedAt": "2024-10-05T18:04:59-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=0LoG81pLS8c",
+      "thumbnailUrl": "https://i.ytimg.com/vi/0LoG81pLS8c/maxresdefault.jpg?v=6701afc9"
+    },
+    {
+      "memberId": "pavolia-reine",
+      "videoId": "DNDhaDTXta4",
+      "title": "《BIRDS NIGHT OUT》 Pavolia Reine 3D Birthday Live 2024 #ReineMeptember2024",
+      "publishedAt": "2024-09-09T07:11:40-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=DNDhaDTXta4",
+      "thumbnailUrl": "https://i.ytimg.com/vi/DNDhaDTXta4/maxresdefault.jpg?v=66e121ac"
+    },
+    {
+      "memberId": "mori-calliope",
+      "videoId": "VQxFBBlec38",
+      "title": "【3D LIVE】PHANTOMIME Release Mini Live Show! || Mori Calliope #calliolive",
+      "publishedAt": "2024-08-16T21:31:34-07:00",
+      "category": "special",
+      "sourceUrl": "https://www.youtube.com/watch?v=VQxFBBlec38",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VQxFBBlec38/maxresdefault.jpg?v=66bc2abd"
+    },
+    {
+      "memberId": "fuwawa-abyssgard",
+      "videoId": "zqiU63uqC9U",
+      "title": "【FUWAMOCO 3D DEBUT】BAU BAU and BEYOND 🐾🩵🩷 #FWMC3D 【3Dお披露目】",
+      "publishedAt": "2024-08-10T21:28:07-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=zqiU63uqC9U",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zqiU63uqC9U/maxresdefault.jpg?v=66b83b07"
+    },
+    {
+      "memberId": "mococo-abyssgard",
+      "videoId": "zqiU63uqC9U",
+      "title": "【FUWAMOCO 3D DEBUT】BAU BAU and BEYOND 🐾🩵🩷 #FWMC3D 【3Dお披露目】",
+      "publishedAt": "2024-08-10T21:28:07-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=zqiU63uqC9U",
+      "thumbnailUrl": "https://i.ytimg.com/vi/zqiU63uqC9U/maxresdefault.jpg?v=66b83b07"
+    },
+    {
+      "memberId": "nerissa-ravencroft",
+      "videoId": "2Nob6f5dy7c",
+      "title": "【3D Debut】Watch the way I move~ #3DemonDebut #holoadvent",
+      "publishedAt": "2024-08-09T21:06:25-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=2Nob6f5dy7c",
+      "thumbnailUrl": "https://i.ytimg.com/vi/2Nob6f5dy7c/maxresdefault.jpg?v=66b736a8"
+    },
+    {
+      "memberId": "koseki-bijou",
+      "videoId": "Yw0zL5YshRk",
+      "title": "【3D SHOWCASE】Kira Kira...KOSEKI! #Biboo3D",
+      "publishedAt": "2024-08-03T21:01:36-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=Yw0zL5YshRk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Yw0zL5YshRk/maxresdefault.jpg?v=66aeffb5"
+    },
+    {
+      "memberId": "shiori-novella",
+      "videoId": "tIKQMFtbgOA",
+      "title": "A New Chapter Begins! #Shiorin3D #holoadvent",
+      "publishedAt": "2024-08-02T21:05:08-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=tIKQMFtbgOA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/tIKQMFtbgOA/maxresdefault.jpg?v=66ada9c9"
+    },
+    {
+      "memberId": "airani-iofifteen",
+      "videoId": "UxNqEmXGO1s",
+      "title": "【#iofiGalaxyTicket】 Welcome to! Airani iofifteen 2024 Birthday 3D Live - Galaxy Ticket",
+      "publishedAt": "2024-07-15T07:09:47-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=UxNqEmXGO1s",
+      "thumbnailUrl": "https://i.ytimg.com/vi/UxNqEmXGO1s/maxresdefault.jpg?v=668f9860"
+    },
+    {
+      "memberId": "mori-calliope",
+      "videoId": "sdzbH7LX80w",
+      "title": "【NO DOWN TIME!!】Mori Calliope 3D Birthday Live 2024 #NODOWNTIME2024",
+      "publishedAt": "2024-04-03T20:02:35-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=sdzbH7LX80w",
+      "thumbnailUrl": "https://i.ytimg.com/vi/sdzbH7LX80w/maxresdefault.jpg?v=660a9f13"
+    },
+    {
+      "memberId": "ouro-kronii",
+      "videoId": "CLxtrooDlP8",
+      "title": "【3D Birthday Live】I'll Be Your Angle Or Yuor Devil #HELLoHALO",
+      "publishedAt": "2024-03-13T19:46:01-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=CLxtrooDlP8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/CLxtrooDlP8/maxresdefault.jpg?v=65f0ff47"
+    },
+    {
+      "memberId": "irys",
+      "videoId": "cc5SQqswwMM",
+      "title": "【HOPE TO THE FUTURE 3D LIVE】 IRyS 2024 Birthday Live! #IRySBDay",
+      "publishedAt": "2024-03-07T05:06:30-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=cc5SQqswwMM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/cc5SQqswwMM/maxresdefault.jpg?v=65e841b1"
+    },
+    {
+      "memberId": "hakos-baelz",
+      "videoId": "TQSikoeVXoE",
+      "title": "≪DREAMCATCHER 3D LIVE≫ Hakos Baelz Birthday Celebration 2024! #BaeDay2024",
+      "publishedAt": "2024-02-28T20:06:34-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=TQSikoeVXoE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TQSikoeVXoE/maxresdefault.jpg?v=65d9690f"
+    },
+    {
+      "memberId": "watson-amelia",
+      "videoId": "sA9hROO6Ua8",
+      "title": "【BDAY PARTY】Watson 3D Special!",
+      "publishedAt": "2024-01-06T18:37:48-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=sA9hROO6Ua8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/sA9hROO6Ua8/maxresdefault.jpg?v=65989a57"
+    },
+    {
+      "memberId": "takanashi-kiara",
+      "videoId": "5LNv7CzFJgc",
+      "title": "【3D CONCERT】Takanashi Kiara End Of The Year / Birthday Live 2023 小鳥遊キアラ生誕祭2023 #KFParty2023",
+      "publishedAt": "2023-12-17T05:57:32-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=5LNv7CzFJgc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5LNv7CzFJgc/maxresdefault.jpg?v=657de544"
+    },
+    {
+      "memberId": "ninomae-inanis",
+      "videoId": "yT2ety9RfIo",
+      "title": "【3D LIVE】『Neverland Paradox』 Ninomae Ina'nis Birthday Live 2023 #INAinaNeverland",
+      "publishedAt": "2023-12-09T17:57:25-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=yT2ety9RfIo",
+      "thumbnailUrl": "https://i.ytimg.com/vi/yT2ety9RfIo/maxresdefault.jpg?v=65751e80"
+    },
+    {
+      "memberId": "kobo-kanaeru",
+      "videoId": "8xF1xccpc98",
+      "title": "【3D SHOWCASE】LET THIS RAIN SHAMAN SHINE YOUR DAY!! REAL NO FAKE 100%!! EHEK! #KoboKanaeru3D",
+      "publishedAt": "2023-10-27T07:09:37-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=8xF1xccpc98",
+      "thumbnailUrl": "https://i.ytimg.com/vi/8xF1xccpc98/maxresdefault.jpg?v=653f67e9"
+    },
+    {
+      "memberId": "kaela-kovalskia",
+      "videoId": "uMc2xEMA5Ek",
+      "title": "【3D SHOWCASE】THE BLACKSMITH FITUBER'S DREAM【#KaelaKovalskia3D】",
+      "publishedAt": "2023-10-20T07:04:27-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=uMc2xEMA5Ek",
+      "thumbnailUrl": "https://i.ytimg.com/vi/uMc2xEMA5Ek/maxresdefault.jpg?v=65343c35"
+    },
+    {
+      "memberId": "vestia-zeta",
+      "videoId": "6-PlITA_VWg",
+      "title": "【3D SHOWCASE】LET ME INNNN !!!!!!!!!!!! #VestiaZeta3D",
+      "publishedAt": "2023-10-15T07:08:42-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=6-PlITA_VWg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/6-PlITA_VWg/maxresdefault.jpg?v=652d5222"
+    },
+    {
+      "memberId": "hakos-baelz",
+      "videoId": "Qd5HBpoOIJA",
+      "title": "≪3D SHOWCASE≫ ƎNOZ N∩Ⅎ ƎH⊥ O⊥ ƎWOϽ˥ƎM #RatIdol3D",
+      "publishedAt": "2023-09-30T21:10:55-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=Qd5HBpoOIJA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Qd5HBpoOIJA/maxresdefault.jpg?v=65197466"
+    },
+    {
+      "memberId": "ouro-kronii",
+      "videoId": "-GQKQ5vAskA",
+      "title": "【3D Showcase】3D Times The Charm #3Dronii",
+      "publishedAt": "2023-09-17T21:01:13-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=-GQKQ5vAskA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-GQKQ5vAskA/maxresdefault.jpg?v=65076f22"
+    },
+    {
+      "memberId": "irys",
+      "videoId": "dR9q_J-8mfM",
+      "title": "【3D SHOWCASE】HOPE IS ON THE MOVE! #3DRyS",
+      "publishedAt": "2023-08-19T21:16:29-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=dR9q_J-8mfM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/dR9q_J-8mfM/maxresdefault.jpg?v=64e192e6"
+    },
+    {
+      "memberId": "mori-calliope",
+      "videoId": "FnzG3-mmivo",
+      "title": "【3D CONCERT】JIGOKU 6 RELEASE LIVE !! 地獄でライブやってる！！",
+      "publishedAt": "2023-08-17T21:04:19-07:00",
+      "category": "special",
+      "sourceUrl": "https://www.youtube.com/watch?v=FnzG3-mmivo",
+      "thumbnailUrl": "https://i.ytimg.com/vi/FnzG3-mmivo/maxresdefault.jpg?v=64db7736"
+    },
+    {
+      "memberId": "anya-melfissa",
+      "videoId": "QVxgwstf-Aw",
+      "title": "【3D SHOWCASE】SHARPLY Unsheathed. Here I Go! 3Dお披露目配信！これが古代兵器の本気。 #AnyaMelfissa3D",
+      "publishedAt": "2023-07-28T07:14:54-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=QVxgwstf-Aw",
+      "thumbnailUrl": "https://i.ytimg.com/vi/QVxgwstf-Aw/maxresdefault.jpg?v=64c47815"
+    },
+    {
+      "memberId": "mori-calliope",
+      "videoId": "7y8yAKaBzZw",
+      "title": "【BIRTHDAY 3D】Karaoke Birthday Bash! #happymoriday",
+      "publishedAt": "2023-04-04T06:18:00-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=7y8yAKaBzZw",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7y8yAKaBzZw/maxresdefault.jpg?v=64298663"
+    },
+    {
+      "memberId": "ninomae-inanis",
+      "videoId": "9Cc16ZBW0GY",
+      "title": "【3D SHOWCASE】IT'S FINALLY TIME!!!!!!!!!!!!!! #TakoTimes3 #Myth3Dkitaaa",
+      "publishedAt": "2023-02-18T20:05:20-08:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=9Cc16ZBW0GY",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9Cc16ZBW0GY/maxresdefault.jpg?v=63ef748a"
+    },
+    {
+      "memberId": "watson-amelia",
+      "videoId": "Vw8dZIA2Nfc",
+      "title": "🎉〘BDAY〙Mini LIVE & Party!",
+      "publishedAt": "2023-01-06T18:49:35-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=Vw8dZIA2Nfc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Vw8dZIA2Nfc/maxresdefault.jpg?v=63b70802"
+    },
+    {
+      "memberId": "ayunda-risu",
+      "videoId": "VxnwBm49egM",
+      "title": "【3D Showcase】 Yes, a squirrel can be an Idol, too #AyundaRisu3D【Ayunda Risu / hololive ID 】",
+      "publishedAt": "2022-09-18T07:11:03-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=VxnwBm49egM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/VxnwBm49egM/maxresdefault.jpg?v=632724bb"
+    },
+    {
+      "memberId": "moona-hoshinova",
+      "videoId": "_VKWFWDGhSQ",
+      "title": "【3D Showcase】Total Eclipse of the Moon #MoonaHoshinova3D 【Moona Hoshinova / hololive ID】",
+      "publishedAt": "2022-09-16T07:06:23-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=_VKWFWDGhSQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/_VKWFWDGhSQ/maxresdefault.jpg?v=632494c6"
+    },
+    {
+      "memberId": "pavolia-reine",
+      "videoId": "Tmg_zSjOTtc",
+      "title": "【#Reine2ndMEPtember】BABY 3D BIRTHDAY CONCERT!!! (Surprises Inside)【Pavolia Reine/hololiveID 2nd gen】",
+      "publishedAt": "2022-09-09T07:14:37-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=Tmg_zSjOTtc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Tmg_zSjOTtc/maxresdefault.jpg?v=631a1733"
+    },
+    {
+      "memberId": "takanashi-kiara",
+      "videoId": "W0lICCjnuDs",
+      "title": "【#Kiara3DBirbday】DANCING TILL DAWN! 3D Birthday Concert!✨✨",
+      "publishedAt": "2022-07-06T11:28:18-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=W0lICCjnuDs",
+      "thumbnailUrl": "https://i.ytimg.com/vi/W0lICCjnuDs/maxresdefault.jpg?v=62c4b49c"
+    },
+    {
+      "memberId": "mori-calliope",
+      "videoId": "hrcZEjdrkRg",
+      "title": "【3D LIVE】Calliope Mori's First 3D Birthday Concert! #calli3DBD",
+      "publishedAt": "2022-04-04T05:17:36-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=hrcZEjdrkRg",
+      "thumbnailUrl": "https://i.ytimg.com/vi/hrcZEjdrkRg/maxresdefault.jpg?v=6249e205"
+    },
+    {
+      "memberId": "watson-amelia",
+      "videoId": "P7AQO14NFS8",
+      "title": "【BIRTHDAY LIVE】I'm the B-Day Girl!!!!!!!",
+      "publishedAt": "2022-01-06T16:55:41-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=P7AQO14NFS8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/P7AQO14NFS8/maxresdefault.jpg?v=61d65b91"
+    }
+  ],
+  "missingMembers": [
+    {
+      "memberId": "kikirara-vivi",
+      "reason": "No qualifying public solo birthday/anniversary/3D music live archive was found on her official channel as of 2026-07-26. Talk, game, Shorts, and isolated song clips were excluded."
+    }
+  ],
+  "verificationFailures": []
+}

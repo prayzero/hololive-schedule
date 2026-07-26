@@ -179,7 +179,7 @@
       "city": "도쿄",
       "venue": "도쿄 가든 시어터",
       "format": "현장 + 온라인 스트리밍",
-      "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Hoshimachi-Suisei_list_thumb.png",
+      "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2022/11/SiC_KV_design_RGB_01_1080p.jpg",
       "sourceUrl": "https://hololive.hololivepro.com/events/hoshimachi-suisei_shout-in-crisis/",
       "note": "두 번째 솔로 라이브"
     },
@@ -254,7 +254,7 @@
       "city": "사이타마 · 오사카 · 후쿠오카",
       "venue": "사이타마 슈퍼 아레나 외 2곳",
       "format": "3개 도시 투어 + 스트리밍",
-      "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Hoshimachi-Suisei_list_thumb.png",
+      "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2024/09/20240831_main_02.webp",
       "sourceUrl": "https://hololive.hololivepro.com/events/spectra-of-nova/",
       "officialUrl": "https://spectraofnova.hololivepro.com/",
       "note": "첫 라이브 투어"
@@ -285,7 +285,7 @@
       "city": "도쿄",
       "venue": "일본 무도관",
       "format": "현장 + SPWN/ZAIKO",
-      "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Hoshimachi-Suisei_list_thumb.png",
+      "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2024/11/supernova_KV.webp",
       "sourceUrl": "https://hololive.hololivepro.com/events/supernova/",
       "officialUrl": "https://supernova.hololivepro.com/",
       "note": "첫 일본 무도관 공연"
@@ -395,7 +395,7 @@
       "city": "요코하마",
       "venue": "K 아레나 요코하마",
       "format": "현장 + SPWN/ZAIKO",
-      "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2020/06/Hoshimachi-Suisei_list_thumb.png",
+      "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2025/11/251114_main.webp",
       "sourceUrl": "https://hololive.hololivepro.com/events/supernova-reboot/",
       "officialUrl": "https://supernova.hololivepro.com/",
       "note": "무도관 공연 재구성"
@@ -662,6 +662,51 @@
       "sourceUrl": "https://hololive.hololivepro.com/events/everyday-of-light/",
       "officialUrl": "https://tokinosora-live.com/sorapa2026-pia-arena-mm",
       "note": "9주년 기념 2회 공연"
+    },
+    {
+      "id": "towa-shinier-2025",
+      "memberId": "tokoyami-towa",
+      "title": "Tokoyami Towa 2nd Live “SHINier”",
+      "titleKo": "토코야미 토와 2nd Live ‘SHINier’",
+      "startsAt": "2025-10-29T18:30:00+09:00",
+      "endsAt": "2025-10-29T21:30:00+09:00",
+      "dateLabel": "2025. 10. 29",
+      "city": "도쿄",
+      "venue": "아리아케 아레나",
+      "format": "현장 + SPWN/ZAIKO",
+      "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2025/08/SHINier-KV-scaled.webp",
+      "sourceUrl": "https://hololive.hololivepro.com/events/shinier/",
+      "note": "두 번째 솔로 라이브"
+    },
+    {
+      "id": "suisei-once-upon-a-stellar-2026",
+      "memberId": "hoshimachi-suisei",
+      "title": "HOSHIMACHI SUISEI ARENA TOUR 2026 “Once Upon a Stellar”",
+      "titleKo": "호시마치 스이세이 아레나 투어 2026 ‘Once Upon a Stellar’",
+      "startsAt": "2026-09-08T19:00:00+09:00",
+      "endsAt": "2026-11-12T22:00:00+09:00",
+      "dateLabel": "2026. 09. 08 – 11. 12",
+      "city": "요코하마 · 고베 · 나고야 · 후쿠오카",
+      "venue": "K 아레나 요코하마 외 3개 아레나",
+      "format": "4개 도시 · 5회 아레나 투어",
+      "imageUrl": "https://hoshimachi-suisei-fc.jp/images/102/dd9/c14622c13881279ce6b4390885842.jpg",
+      "sourceUrl": "https://hoshimachi-suisei-fc.jp/Once_Upon_a_Stellar/",
+      "note": "9월 8·9일 요코하마, 10월 21일 고베, 11월 7일 나고야, 11월 12일 후쿠오카"
+    },
+    {
+      "id": "takane-lui-rebellion-2026",
+      "memberId": "takane-lui",
+      "title": "Takane Lui 1st Live “REBELLION”",
+      "titleKo": "타카네 루이 1st Live ‘REBELLION’",
+      "startsAt": "2026-12-16T00:00:00+09:00",
+      "endsAt": "2026-12-16T23:59:59+09:00",
+      "dateLabel": "2026. 12. 16",
+      "city": "도쿄",
+      "venue": "Kanadevia Hall",
+      "format": "현장 공연 · 시간·티켓 추후 공개",
+      "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/06/260611_main.webp",
+      "sourceUrl": "https://hololive.hololivepro.com/news/20260611-01-390/",
+      "note": "첫 솔로 라이브"
     }
   ]
 }

@@ -1,14 +1,14 @@
 # HOLO NOW — GitHub Pages 일정 사이트
 
-홀로라이브 여성 탤런트의 공개 방송 일정, 콘서트, 지난 솔로 라이브,
-일본·한국 현지 행사를 한눈에 보는 비공식 정적 페이지입니다.
+홀로라이브 여성 탤런트의 공개 방송 일정, 공식 콘서트 기록, 무료 YouTube
+라이브 아카이브, 일본·한국 현지 행사를 한눈에 보는 비공식 정적 페이지입니다.
 
 ## 주요 기능
 
 - JP·EN·ID·DEV_IS 여성 브랜치만 수집하는 방송 일정
-- 예정 공연과 지난 솔로 라이브를 나눈 전용 탭
+- 공식 합동 공연과 정식·유료 솔로 공연을 합친 콘서트 아카이브
 - 한국어·영문·일문·별칭을 지원하는 검색
-- 멤버 얼굴을 눌러 보는 개인 솔로 공연 기록
+- 모든 여성 탤런트의 얼굴과 카테고리로 찾는 무료 YouTube 라이브
 - 일본·한국 공식 현지 행사 필터
 - 모바일과 데스크톱에 맞춘 반응형 카드 UI
 
@@ -62,13 +62,29 @@ npm run build
 - `public/data/solo-lives.json`
   - 공식 이벤트·뉴스와 공식 주최·레이블 페이지에서 확인한 주요
     단독·원맨 공연 기록입니다.
+  - 화면에서는 `events.json`의 콘서트와 합치며, 공식 URL과 날짜·제목이
+    같은 공연은 한 번만 표시합니다.
+- `public/data/youtube-lives.json`
+  - 공식 공개 YouTube 채널에서 무료로 볼 수 있는 생일·주년·3D·무료
+    콘서트 아카이브입니다.
+  - 영상 ID, 멤버 ID, 카테고리, 공개일, 길이, 썸네일과 YouTube 링크를
+    담으며 길이를 확인할 수 없는 영상도 지원합니다.
+
+YouTube 아카이브 수집·정리 스크립트는 별도 API 키나 유료 서비스 없이
+실행됩니다.
+
+```powershell
+npm run collect:youtube-archive
+npm run enrich:youtube-archive
+npm run update:youtube-archive
+```
 
 ## 새 GitHub Pages로 배포
 
 1. 이 프로젝트를 GitHub **공개 저장소**에 올리고 기본 브랜치를 `main`으로 둡니다.
-3. 저장소의 `Settings → Pages → Build and deployment`에서 Source를
+2. 저장소의 `Settings → Pages → Build and deployment`에서 Source를
    **GitHub Actions**로 선택합니다.
-4. `Actions` 탭에서 `Update and deploy Hololive schedule`을 한 번
+3. `Actions` 탭에서 `Update and deploy Hololive schedule`을 한 번
    수동 실행합니다.
 
 `.github/workflows/deploy-pages.yml`이 다음 작업을 수행합니다.

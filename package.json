@@ -6,6 +6,9 @@
   "scripts": {
     "dev": "vite",
     "update:schedule": "node scripts/update-hololive-schedule.mjs",
+    "collect:youtube-archive": "node scripts/collect-youtube-live-archive.mjs",
+    "enrich:youtube-archive": "node scripts/enrich-youtube-live-metadata.mjs",
+    "update:youtube-archive": "node scripts/compile-youtube-live-archive.mjs",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "check": "npm run build"

@@ -340,6 +340,7 @@ export function DreamPage({
     }
 
     const luckPercentile = clamp((below + exact * 0.5) * 100, 0, 100);
+    const topPercent = clamp(100 - luckPercentile, 0, 100);
     const luck = LUCK_LABELS.find((item) => luckPercentile < item.max)!;
 
     return {
@@ -356,6 +357,7 @@ export function DreamPage({
       exact,
       atLeastObserved,
       luckPercentile,
+      topPercent,
       luck,
     };
   }, [
@@ -677,9 +679,9 @@ export function DreamPage({
                   aria-live="polite"
                 >
                   <div>
-                    <span>나의 운 백분위</span>
-                    <strong>{calculator.luckPercentile.toFixed(1)}</strong>
-                    <small>상위 {(100 - calculator.luckPercentile).toFixed(1)}%</small>
+                    <span>나의 운 상위 퍼센트</span>
+                    <strong>{calculator.topPercent.toFixed(1)}%</strong>
+                    <small>운 백분위 {calculator.luckPercentile.toFixed(1)}</small>
                   </div>
                   <div>
                     <Trophy size={25} aria-hidden="true" />

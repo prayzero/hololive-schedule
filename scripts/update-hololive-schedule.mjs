@@ -3,10 +3,16 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import * as cheerio from "cheerio";
 
-const SOURCE_URL = "https://schedule.hololive.tv/lives/all";
+const SOURCE_ROOT = "https://schedule.hololive.tv";
+const SOURCE_FEEDS = [
+  { branch: "JP", url: `${SOURCE_ROOT}/lives/hololive` },
+  { branch: "ID", url: `${SOURCE_ROOT}/lives/indonesia` },
+  { branch: "EN", url: `${SOURCE_ROOT}/lives/english` },
+  { branch: "DEV_IS", url: `${SOURCE_ROOT}/lives/dev_is` },
+];
 const SOURCE_TIMEZONE = "Asia/Tokyo";
 const SOURCE_REFRESH_MINUTES = 15;
-const COLLECTOR_VERSION = "1.0.0";
+const COLLECTOR_VERSION = "2.0.0";
 const REQUEST_TIMEOUT_MS = 20_000;
 
 const scriptDirectory = dirname(fileURLToPath(import.meta.url));
@@ -27,7 +33,7 @@ function normalizeUrl(value) {
   }
 
   try {
-    return new URL(candidate, SOURCE_URL).toString();
+    return new URL(candidate, SOURCE_ROOT).toString();
   } catch {
     return null;
   }
@@ -203,7 +209,7 @@ function hasLiveBorder($card) {
   });
 }
 
-function parseSchedule(html, now = new Date()) {
+function parseSchedule(html, branch, now = new Date()) {
   const $ = cheerio.load(html);
   const entries = [];
   const seenVideoIds = new Set();
@@ -256,6 +262,7 @@ function parseSchedule(html, now = new Date()) {
         thumbnail,
         avatar,
         isLive: hasLiveBorder($card),
+        branch,
       });
     });
   });
@@ -278,14 +285,15 @@ function parseSchedule(html, now = new Date()) {
   });
 }
 
-async function fetchSource() {
+async function fetchSource(feed) {
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
 
   try {
-    const response = await fetch(SOURCE_URL, {
+    const response = await fetch(feed.url, {
       headers: {
         Accept: "text/html,application/xhtml+xml",
+        "Accept-Language": "ja,en;q=0.8",
         "User-Agent":
           "hololive-schedule-pages/1.0 (+https://github.com/prayzero/hololive-schedule)",
       },
@@ -295,7 +303,7 @@ async function fetchSource() {
 
     if (!response.ok) {
       throw new Error(
-        `Holodule responded with ${response.status} ${response.statusText}`,
+        `Holodule ${feed.branch} responded with ${response.status} ${response.statusText}`,
       );
     }
 
@@ -320,8 +328,33 @@ async function writeAtomically(path, contents) {
 
 async function main() {
   const collectedAt = new Date();
-  const html = await fetchSource();
-  const entries = parseSchedule(html, collectedAt);
+  const pages = await Promise.all(
+    SOURCE_FEEDS.map(async (feed) => ({
+      feed,
+      html: await fetchSource(feed),
+    })),
+  );
+  const seenVideoIds = new Set();
+  const entries = pages
+    .flatMap(({ feed, html }) =>
+      parseSchedule(html, feed.branch, collectedAt),
+    )
+    .filter((entry) => {
+      if (seenVideoIds.has(entry.videoId)) {
+        return false;
+      }
+
+      seenVideoIds.add(entry.videoId);
+      return true;
+    })
+    .sort((left, right) => {
+      if (left.startsAt && right.startsAt) {
+        const startComparison = left.startsAt.localeCompare(right.startsAt);
+        return startComparison || left.name.localeCompare(right.name, "ko");
+      }
+
+      return left.startsAt ? -1 : right.startsAt ? 1 : 0;
+    });
 
   if (entries.length === 0) {
     throw new Error(
@@ -331,7 +364,8 @@ async function main() {
 
   const payload = {
     generatedAt: collectedAt.toISOString(),
-    source: SOURCE_URL,
+    source: SOURCE_FEEDS[0].url,
+    sources: SOURCE_FEEDS.map(({ url }) => url),
     sourceRefreshMinutes: SOURCE_REFRESH_MINUTES,
     collectorVersion: COLLECTOR_VERSION,
     timezone: SOURCE_TIMEZONE,

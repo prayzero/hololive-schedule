@@ -1,8 +1,14 @@
 {
-  "generatedAt": "2026-07-25T23:19:07.252Z",
-  "source": "https://schedule.hololive.tv/lives/all",
+  "generatedAt": "2026-07-26T01:03:13.818Z",
+  "source": "https://schedule.hololive.tv/lives/hololive",
+  "sources": [
+    "https://schedule.hololive.tv/lives/hololive",
+    "https://schedule.hololive.tv/lives/indonesia",
+    "https://schedule.hololive.tv/lives/english",
+    "https://schedule.hololive.tv/lives/dev_is"
+  ],
   "sourceRefreshMinutes": 15,
-  "collectorVersion": "1.0.0",
+  "collectorVersion": "2.0.0",
   "timezone": "Asia/Tokyo",
   "entries": [
     {
@@ -17,21 +23,8 @@
       "videoId": "Hh124TzQLPI",
       "thumbnail": "https://img.youtube.com/vi/Hh124TzQLPI/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "x22DxGh_2To",
-      "date": "2026-07-25",
-      "dateLabel": "07/25 (土)",
-      "time": "00:00",
-      "startsAt": "2026-07-25T00:00:00+09:00",
-      "name": "ホロドリ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=x22DxGh_2To",
-      "videoId": "x22DxGh_2To",
-      "thumbnail": "https://img.youtube.com/vi/x22DxGh_2To/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "nT_n_fp9eDo",
@@ -45,7 +38,8 @@
       "videoId": "nT_n_fp9eDo",
       "thumbnail": "https://img.youtube.com/vi/nT_n_fp9eDo/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "lIYN3ynr8cs",
@@ -59,7 +53,8 @@
       "videoId": "lIYN3ynr8cs",
       "thumbnail": "https://img.youtube.com/vi/lIYN3ynr8cs/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "oZJCOjYx85w",
@@ -73,7 +68,8 @@
       "videoId": "oZJCOjYx85w",
       "thumbnail": "https://img.youtube.com/vi/oZJCOjYx85w/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "JB03LBhWzVw",
@@ -87,7 +83,8 @@
       "videoId": "JB03LBhWzVw",
       "thumbnail": "https://img.youtube.com/vi/JB03LBhWzVw/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "0Wlpgew0oZw",
@@ -101,7 +98,8 @@
       "videoId": "0Wlpgew0oZw",
       "thumbnail": "https://img.youtube.com/vi/0Wlpgew0oZw/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "AJ7ec5FZ78U",
@@ -115,7 +113,8 @@
       "videoId": "AJ7ec5FZ78U",
       "thumbnail": "https://img.youtube.com/vi/AJ7ec5FZ78U/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "is6Ld9nVyqk",
@@ -129,21 +128,8 @@
       "videoId": "is6Ld9nVyqk",
       "thumbnail": "https://img.youtube.com/vi/is6Ld9nVyqk/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "TIkU9cmJzZg",
-      "date": "2026-07-25",
-      "dateLabel": "07/25 (土)",
-      "time": "09:08",
-      "startsAt": "2026-07-25T09:08:00+09:00",
-      "name": "Flayon",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=TIkU9cmJzZg",
-      "videoId": "TIkU9cmJzZg",
-      "thumbnail": "https://img.youtube.com/vi/TIkU9cmJzZg/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "Tk4tgquPrro",
@@ -157,21 +143,8 @@
       "videoId": "Tk4tgquPrro",
       "thumbnail": "https://img.youtube.com/vi/Tk4tgquPrro/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "QmyZZz6BLBI",
-      "date": "2026-07-25",
-      "dateLabel": "07/25 (土)",
-      "time": "10:01",
-      "startsAt": "2026-07-25T10:01:00+09:00",
-      "name": "Octavio",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=QmyZZz6BLBI",
-      "videoId": "QmyZZz6BLBI",
-      "thumbnail": "https://img.youtube.com/vi/QmyZZz6BLBI/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "rltNvZ_FY8Q",
@@ -185,7 +158,8 @@
       "videoId": "rltNvZ_FY8Q",
       "thumbnail": "https://img.youtube.com/vi/rltNvZ_FY8Q/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "YB7vrC2RyVg",
@@ -199,21 +173,8 @@
       "videoId": "YB7vrC2RyVg",
       "thumbnail": "https://img.youtube.com/vi/YB7vrC2RyVg/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "fp6yxhmRg_Y",
-      "date": "2026-07-25",
-      "dateLabel": "07/25 (土)",
-      "time": "10:57",
-      "startsAt": "2026-07-25T10:57:00+09:00",
-      "name": "Hakka",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=fp6yxhmRg_Y",
-      "videoId": "fp6yxhmRg_Y",
-      "thumbnail": "https://img.youtube.com/vi/fp6yxhmRg_Y/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "nU1i1dj9dIs",
@@ -227,35 +188,8 @@
       "videoId": "nU1i1dj9dIs",
       "thumbnail": "https://img.youtube.com/vi/nU1i1dj9dIs/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "MyFE1HXOARc",
-      "date": "2026-07-25",
-      "dateLabel": "07/25 (土)",
-      "time": "11:02",
-      "startsAt": "2026-07-25T11:02:00+09:00",
-      "name": "Octavio",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=MyFE1HXOARc",
-      "videoId": "MyFE1HXOARc",
-      "thumbnail": "https://img.youtube.com/vi/MyFE1HXOARc/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "VfzKWMyy5C4",
-      "date": "2026-07-25",
-      "dateLabel": "07/25 (土)",
-      "time": "11:02",
-      "startsAt": "2026-07-25T11:02:00+09:00",
-      "name": "Shinri",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=VfzKWMyy5C4",
-      "videoId": "VfzKWMyy5C4",
-      "thumbnail": "https://img.youtube.com/vi/VfzKWMyy5C4/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "BWGXHEIHHxQ",
@@ -269,7 +203,8 @@
       "videoId": "BWGXHEIHHxQ",
       "thumbnail": "https://img.youtube.com/vi/BWGXHEIHHxQ/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "OrMqXaCScp0",
@@ -283,35 +218,8 @@
       "videoId": "OrMqXaCScp0",
       "thumbnail": "https://img.youtube.com/vi/OrMqXaCScp0/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "8JyseCHW0bk",
-      "date": "2026-07-25",
-      "dateLabel": "07/25 (土)",
-      "time": "12:00",
-      "startsAt": "2026-07-25T12:00:00+09:00",
-      "name": "Jurard",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=8JyseCHW0bk",
-      "videoId": "8JyseCHW0bk",
-      "thumbnail": "https://img.youtube.com/vi/8JyseCHW0bk/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "bMqkfp7Amwc",
-      "date": "2026-07-25",
-      "dateLabel": "07/25 (土)",
-      "time": "12:03",
-      "startsAt": "2026-07-25T12:03:00+09:00",
-      "name": "Octavio",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=bMqkfp7Amwc",
-      "videoId": "bMqkfp7Amwc",
-      "thumbnail": "https://img.youtube.com/vi/bMqkfp7Amwc/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "1rK3fl8mA2E",
@@ -325,21 +233,8 @@
       "videoId": "1rK3fl8mA2E",
       "thumbnail": "https://img.youtube.com/vi/1rK3fl8mA2E/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "wNE7w9baPok",
-      "date": "2026-07-25",
-      "dateLabel": "07/25 (土)",
-      "time": "12:27",
-      "startsAt": "2026-07-25T12:27:00+09:00",
-      "name": "Octavio",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=wNE7w9baPok",
-      "videoId": "wNE7w9baPok",
-      "thumbnail": "https://img.youtube.com/vi/wNE7w9baPok/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "ragJNmyeX8A",
@@ -353,7 +248,8 @@
       "videoId": "ragJNmyeX8A",
       "thumbnail": "https://img.youtube.com/vi/ragJNmyeX8A/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "u-BWTgkGwB8",
@@ -367,7 +263,8 @@
       "videoId": "u-BWTgkGwB8",
       "thumbnail": "https://img.youtube.com/vi/u-BWTgkGwB8/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "MCUCNeWt-8o",
@@ -381,7 +278,8 @@
       "videoId": "MCUCNeWt-8o",
       "thumbnail": "https://img.youtube.com/vi/MCUCNeWt-8o/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "1ZOM2TsqsrY",
@@ -395,7 +293,8 @@
       "videoId": "1ZOM2TsqsrY",
       "thumbnail": "https://img.youtube.com/vi/1ZOM2TsqsrY/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "zJH6Wz946_U",
@@ -409,7 +308,8 @@
       "videoId": "zJH6Wz946_U",
       "thumbnail": "https://img.youtube.com/vi/zJH6Wz946_U/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "OjSS7Q9WOMw",
@@ -423,7 +323,8 @@
       "videoId": "OjSS7Q9WOMw",
       "thumbnail": "https://img.youtube.com/vi/OjSS7Q9WOMw/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "3WmYQDfi6JE",
@@ -437,7 +338,8 @@
       "videoId": "3WmYQDfi6JE",
       "thumbnail": "https://img.youtube.com/vi/3WmYQDfi6JE/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "pkAQfW3E2CA",
@@ -451,7 +353,8 @@
       "videoId": "pkAQfW3E2CA",
       "thumbnail": "https://img.youtube.com/vi/pkAQfW3E2CA/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "043G5mWQ-Pk",
@@ -465,7 +368,8 @@
       "videoId": "043G5mWQ-Pk",
       "thumbnail": "https://img.youtube.com/vi/043G5mWQ-Pk/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "zgDTNams1ns",
@@ -479,7 +383,8 @@
       "videoId": "zgDTNams1ns",
       "thumbnail": "https://img.youtube.com/vi/zgDTNams1ns/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "GpFkh-QWq6U",
@@ -493,35 +398,8 @@
       "videoId": "GpFkh-QWq6U",
       "thumbnail": "https://img.youtube.com/vi/GpFkh-QWq6U/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "04XdlvdvWAk",
-      "date": "2026-07-25",
-      "dateLabel": "07/25 (土)",
-      "time": "17:00",
-      "startsAt": "2026-07-25T17:00:00+09:00",
-      "name": "ホロドリ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=04XdlvdvWAk",
-      "videoId": "04XdlvdvWAk",
-      "thumbnail": "https://img.youtube.com/vi/04XdlvdvWAk/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "VWjK9SUAZQQ",
-      "date": "2026-07-25",
-      "dateLabel": "07/25 (土)",
-      "time": "17:00",
-      "startsAt": "2026-07-25T17:00:00+09:00",
-      "name": "ホロドリ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=VWjK9SUAZQQ",
-      "videoId": "VWjK9SUAZQQ",
-      "thumbnail": "https://img.youtube.com/vi/VWjK9SUAZQQ/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "Yy9xTh9wrLU",
@@ -535,7 +413,8 @@
       "videoId": "Yy9xTh9wrLU",
       "thumbnail": "https://img.youtube.com/vi/Yy9xTh9wrLU/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "ASxqwf97qhY",
@@ -549,7 +428,8 @@
       "videoId": "ASxqwf97qhY",
       "thumbnail": "https://img.youtube.com/vi/ASxqwf97qhY/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "qnbPKEr-O5M",
@@ -563,7 +443,8 @@
       "videoId": "qnbPKEr-O5M",
       "thumbnail": "https://img.youtube.com/vi/qnbPKEr-O5M/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "q176a2krHbg",
@@ -577,7 +458,8 @@
       "videoId": "q176a2krHbg",
       "thumbnail": "https://img.youtube.com/vi/q176a2krHbg/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "Lz56n8fa25o",
@@ -591,7 +473,8 @@
       "videoId": "Lz56n8fa25o",
       "thumbnail": "https://img.youtube.com/vi/Lz56n8fa25o/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "3GMa-obYD1k",
@@ -605,7 +488,8 @@
       "videoId": "3GMa-obYD1k",
       "thumbnail": "https://img.youtube.com/vi/3GMa-obYD1k/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "L2bT6Y2KHv8",
@@ -619,7 +503,8 @@
       "videoId": "L2bT6Y2KHv8",
       "thumbnail": "https://img.youtube.com/vi/L2bT6Y2KHv8/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "ZNiZIzU7Y78",
@@ -633,35 +518,8 @@
       "videoId": "ZNiZIzU7Y78",
       "thumbnail": "https://img.youtube.com/vi/ZNiZIzU7Y78/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "1DmbsjsCepg",
-      "date": "2026-07-25",
-      "dateLabel": "07/25 (土)",
-      "time": "18:00",
-      "startsAt": "2026-07-25T18:00:00+09:00",
-      "name": "ホロドリ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=1DmbsjsCepg",
-      "videoId": "1DmbsjsCepg",
-      "thumbnail": "https://img.youtube.com/vi/1DmbsjsCepg/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "2YBvbR6FUmw",
-      "date": "2026-07-25",
-      "dateLabel": "07/25 (土)",
-      "time": "18:00",
-      "startsAt": "2026-07-25T18:00:00+09:00",
-      "name": "ホロドリ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=2YBvbR6FUmw",
-      "videoId": "2YBvbR6FUmw",
-      "thumbnail": "https://img.youtube.com/vi/2YBvbR6FUmw/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "LcxyEh4iUVE",
@@ -675,7 +533,8 @@
       "videoId": "LcxyEh4iUVE",
       "thumbnail": "https://img.youtube.com/vi/LcxyEh4iUVE/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "CFqlF8tsJeE",
@@ -689,35 +548,8 @@
       "videoId": "CFqlF8tsJeE",
       "thumbnail": "https://img.youtube.com/vi/CFqlF8tsJeE/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "5FWjSYSWZRU",
-      "date": "2026-07-25",
-      "dateLabel": "07/25 (土)",
-      "time": "18:20",
-      "startsAt": "2026-07-25T18:20:00+09:00",
-      "name": "アステル・レダ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=5FWjSYSWZRU",
-      "videoId": "5FWjSYSWZRU",
-      "thumbnail": "https://img.youtube.com/vi/5FWjSYSWZRU/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "NLReAJms2So",
-      "date": "2026-07-25",
-      "dateLabel": "07/25 (土)",
-      "time": "19:00",
-      "startsAt": "2026-07-25T19:00:00+09:00",
-      "name": "ホロカ公式",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=NLReAJms2So",
-      "videoId": "NLReAJms2So",
-      "thumbnail": "https://img.youtube.com/vi/NLReAJms2So/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "l20nRqhLAe0",
@@ -731,7 +563,8 @@
       "videoId": "l20nRqhLAe0",
       "thumbnail": "https://img.youtube.com/vi/l20nRqhLAe0/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "ikhbg7qIUkQ",
@@ -745,7 +578,8 @@
       "videoId": "ikhbg7qIUkQ",
       "thumbnail": "https://img.youtube.com/vi/ikhbg7qIUkQ/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "5z8osqEvceo",
@@ -759,7 +593,8 @@
       "videoId": "5z8osqEvceo",
       "thumbnail": "https://img.youtube.com/vi/5z8osqEvceo/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "fJj8Ek0p6wc",
@@ -773,35 +608,8 @@
       "videoId": "fJj8Ek0p6wc",
       "thumbnail": "https://img.youtube.com/vi/fJj8Ek0p6wc/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "OKSrQ7def3Y",
-      "date": "2026-07-25",
-      "dateLabel": "07/25 (土)",
-      "time": "20:00",
-      "startsAt": "2026-07-25T20:00:00+09:00",
-      "name": "ホロドリ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=OKSrQ7def3Y",
-      "videoId": "OKSrQ7def3Y",
-      "thumbnail": "https://img.youtube.com/vi/OKSrQ7def3Y/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "jiV8e6w5-rQ",
-      "date": "2026-07-25",
-      "dateLabel": "07/25 (土)",
-      "time": "20:00",
-      "startsAt": "2026-07-25T20:00:00+09:00",
-      "name": "ホロドリ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=jiV8e6w5-rQ",
-      "videoId": "jiV8e6w5-rQ",
-      "thumbnail": "https://img.youtube.com/vi/jiV8e6w5-rQ/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "zoe_UJjS4Y4",
@@ -815,7 +623,8 @@
       "videoId": "zoe_UJjS4Y4",
       "thumbnail": "https://img.youtube.com/vi/zoe_UJjS4Y4/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "BMtdhvzgG_g",
@@ -829,7 +638,8 @@
       "videoId": "BMtdhvzgG_g",
       "thumbnail": "https://img.youtube.com/vi/BMtdhvzgG_g/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "GDnCJU7M36k",
@@ -843,35 +653,8 @@
       "videoId": "GDnCJU7M36k",
       "thumbnail": "https://img.youtube.com/vi/GDnCJU7M36k/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "-zGWdZRDG_k",
-      "date": "2026-07-25",
-      "dateLabel": "07/25 (土)",
-      "time": "21:00",
-      "startsAt": "2026-07-25T21:00:00+09:00",
-      "name": "UNIT B",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=-zGWdZRDG_k",
-      "videoId": "-zGWdZRDG_k",
-      "thumbnail": "https://img.youtube.com/vi/-zGWdZRDG_k/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "iOIlFcMMn8g",
-      "date": "2026-07-25",
-      "dateLabel": "07/25 (土)",
-      "time": "21:05",
-      "startsAt": "2026-07-25T21:05:00+09:00",
-      "name": "奏手イヅル",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=iOIlFcMMn8g",
-      "videoId": "iOIlFcMMn8g",
-      "thumbnail": "https://img.youtube.com/vi/iOIlFcMMn8g/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "GIHnaT_CBx0",
@@ -885,7 +668,8 @@
       "videoId": "GIHnaT_CBx0",
       "thumbnail": "https://img.youtube.com/vi/GIHnaT_CBx0/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "z2gIkj-Swlo",
@@ -899,7 +683,8 @@
       "videoId": "z2gIkj-Swlo",
       "thumbnail": "https://img.youtube.com/vi/z2gIkj-Swlo/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "n7QnI1kVTaI",
@@ -913,21 +698,8 @@
       "videoId": "n7QnI1kVTaI",
       "thumbnail": "https://img.youtube.com/vi/n7QnI1kVTaI/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "vh8ojtMqQa8",
-      "date": "2026-07-25",
-      "dateLabel": "07/25 (土)",
-      "time": "21:29",
-      "startsAt": "2026-07-25T21:29:00+09:00",
-      "name": "Hakka",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=vh8ojtMqQa8",
-      "videoId": "vh8ojtMqQa8",
-      "thumbnail": "https://img.youtube.com/vi/vh8ojtMqQa8/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "rohgEDh3zao",
@@ -941,21 +713,8 @@
       "videoId": "rohgEDh3zao",
       "thumbnail": "https://img.youtube.com/vi/rohgEDh3zao/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "DOvuLn1k5cw",
-      "date": "2026-07-25",
-      "dateLabel": "07/25 (土)",
-      "time": "22:00",
-      "startsAt": "2026-07-25T22:00:00+09:00",
-      "name": "ACHRORA",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=DOvuLn1k5cw",
-      "videoId": "DOvuLn1k5cw",
-      "thumbnail": "https://img.youtube.com/vi/DOvuLn1k5cw/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "aNYoBud3lw8",
@@ -969,21 +728,8 @@
       "videoId": "aNYoBud3lw8",
       "thumbnail": "https://img.youtube.com/vi/aNYoBud3lw8/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "IsyAOK70jQw",
-      "date": "2026-07-25",
-      "dateLabel": "07/25 (土)",
-      "time": "22:01",
-      "startsAt": "2026-07-25T22:01:00+09:00",
-      "name": "荒咬オウガ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=IsyAOK70jQw",
-      "videoId": "IsyAOK70jQw",
-      "thumbnail": "https://img.youtube.com/vi/IsyAOK70jQw/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "7jhetKbGc00",
@@ -997,7 +743,8 @@
       "videoId": "7jhetKbGc00",
       "thumbnail": "https://img.youtube.com/vi/7jhetKbGc00/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "bvaHq-LCbG4",
@@ -1011,7 +758,8 @@
       "videoId": "bvaHq-LCbG4",
       "thumbnail": "https://img.youtube.com/vi/bvaHq-LCbG4/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "W6ElEhnxK7I",
@@ -1025,7 +773,8 @@
       "videoId": "W6ElEhnxK7I",
       "thumbnail": "https://img.youtube.com/vi/W6ElEhnxK7I/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "Fz5TCsJqm_Q",
@@ -1039,7 +788,8 @@
       "videoId": "Fz5TCsJqm_Q",
       "thumbnail": "https://img.youtube.com/vi/Fz5TCsJqm_Q/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "-tW_lM1danM",
@@ -1053,7 +803,8 @@
       "videoId": "-tW_lM1danM",
       "thumbnail": "https://img.youtube.com/vi/-tW_lM1danM/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "cgQBNMhvmYo",
@@ -1067,7 +818,8 @@
       "videoId": "cgQBNMhvmYo",
       "thumbnail": "https://img.youtube.com/vi/cgQBNMhvmYo/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "zcGdKK_cQbE",
@@ -1081,7 +833,8 @@
       "videoId": "zcGdKK_cQbE",
       "thumbnail": "https://img.youtube.com/vi/zcGdKK_cQbE/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "0C5zs6WjtGI",
@@ -1095,7 +848,8 @@
       "videoId": "0C5zs6WjtGI",
       "thumbnail": "https://img.youtube.com/vi/0C5zs6WjtGI/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "XEu4XteaITU",
@@ -1109,35 +863,38 @@
       "videoId": "XEu4XteaITU",
       "thumbnail": "https://img.youtube.com/vi/XEu4XteaITU/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
-      "id": "9xEVTYHKsQE",
+      "id": "KPF1CNlszCU",
       "date": "2026-07-26",
       "dateLabel": "07/26 (日)",
-      "time": "09:15",
-      "startsAt": "2026-07-26T09:15:00+09:00",
-      "name": "Hakka",
+      "time": "09:00",
+      "startsAt": "2026-07-26T09:00:00+09:00",
+      "name": "FUWAMOCO",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=9xEVTYHKsQE",
-      "videoId": "9xEVTYHKsQE",
-      "thumbnail": "https://img.youtube.com/vi/9xEVTYHKsQE/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=KPF1CNlszCU",
+      "videoId": "KPF1CNlszCU",
+      "thumbnail": "https://img.youtube.com/vi/KPF1CNlszCU/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "EN"
     },
     {
-      "id": "qfI8ZW_rQX4",
+      "id": "O7ZITQoVeUQ",
       "date": "2026-07-26",
       "dateLabel": "07/26 (日)",
-      "time": "09:50",
-      "startsAt": "2026-07-26T09:50:00+09:00",
-      "name": "荒咬オウガ",
+      "time": "09:56",
+      "startsAt": "2026-07-26T09:56:00+09:00",
+      "name": "Nerissa",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=qfI8ZW_rQX4",
-      "videoId": "qfI8ZW_rQX4",
-      "thumbnail": "https://img.youtube.com/vi/qfI8ZW_rQX4/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=O7ZITQoVeUQ",
+      "videoId": "O7ZITQoVeUQ",
+      "thumbnail": "https://img.youtube.com/vi/O7ZITQoVeUQ/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": true,
+      "branch": "EN"
     },
     {
       "id": "nK2VbTDbhg8",
@@ -1151,7 +908,8 @@
       "videoId": "nK2VbTDbhg8",
       "thumbnail": "https://img.youtube.com/vi/nK2VbTDbhg8/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": true,
+      "branch": "JP"
     },
     {
       "id": "2jViS4EIDVg",
@@ -1165,35 +923,8 @@
       "videoId": "2jViS4EIDVg",
       "thumbnail": "https://img.youtube.com/vi/2jViS4EIDVg/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "O7ZITQoVeUQ",
-      "date": "2026-07-26",
-      "dateLabel": "07/26 (日)",
-      "time": "10:00",
-      "startsAt": "2026-07-26T10:00:00+09:00",
-      "name": "Nerissa",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=O7ZITQoVeUQ",
-      "videoId": "O7ZITQoVeUQ",
-      "thumbnail": "https://img.youtube.com/vi/O7ZITQoVeUQ/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "heFoWviL8-o",
-      "date": "2026-07-26",
-      "dateLabel": "07/26 (日)",
-      "time": "10:00",
-      "startsAt": "2026-07-26T10:00:00+09:00",
-      "name": "Shinri",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=heFoWviL8-o",
-      "videoId": "heFoWviL8-o",
-      "thumbnail": "https://img.youtube.com/vi/heFoWviL8-o/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
+      "isLive": true,
+      "branch": "EN"
     },
     {
       "id": "w16FUQih3-w",
@@ -1207,7 +938,8 @@
       "videoId": "w16FUQih3-w",
       "thumbnail": "https://img.youtube.com/vi/w16FUQih3-w/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "_SWW55lAGyc",
@@ -1221,7 +953,8 @@
       "videoId": "_SWW55lAGyc",
       "thumbnail": "https://img.youtube.com/vi/_SWW55lAGyc/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "VW2Jg618VnI",
@@ -1235,21 +968,8 @@
       "videoId": "VW2Jg618VnI",
       "thumbnail": "https://img.youtube.com/vi/VW2Jg618VnI/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "ZNFKLDFHxVc",
-      "date": "2026-07-26",
-      "dateLabel": "07/26 (日)",
-      "time": "12:00",
-      "startsAt": "2026-07-26T12:00:00+09:00",
-      "name": "Jurard",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=ZNFKLDFHxVc",
-      "videoId": "ZNFKLDFHxVc",
-      "thumbnail": "https://img.youtube.com/vi/ZNFKLDFHxVc/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "T7yC89jrsPI",
@@ -1263,7 +983,8 @@
       "videoId": "T7yC89jrsPI",
       "thumbnail": "https://img.youtube.com/vi/T7yC89jrsPI/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "6OAGiVhdi8g",
@@ -1277,7 +998,8 @@
       "videoId": "6OAGiVhdi8g",
       "thumbnail": "https://img.youtube.com/vi/6OAGiVhdi8g/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "LazH3ffYqDw",
@@ -1291,7 +1013,8 @@
       "videoId": "LazH3ffYqDw",
       "thumbnail": "https://img.youtube.com/vi/LazH3ffYqDw/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "DQemCAxKpAo",
@@ -1305,7 +1028,8 @@
       "videoId": "DQemCAxKpAo",
       "thumbnail": "https://img.youtube.com/vi/DQemCAxKpAo/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "Gq9n4v1Sm7c",
@@ -1319,21 +1043,8 @@
       "videoId": "Gq9n4v1Sm7c",
       "thumbnail": "https://img.youtube.com/vi/Gq9n4v1Sm7c/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "moMU1IrNlfg",
-      "date": "2026-07-26",
-      "dateLabel": "07/26 (日)",
-      "time": "19:00",
-      "startsAt": "2026-07-26T19:00:00+09:00",
-      "name": "ACHRORA",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=moMU1IrNlfg",
-      "videoId": "moMU1IrNlfg",
-      "thumbnail": "https://img.youtube.com/vi/moMU1IrNlfg/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "RKqVFt2gMCg",
@@ -1347,7 +1058,8 @@
       "videoId": "RKqVFt2gMCg",
       "thumbnail": "https://img.youtube.com/vi/RKqVFt2gMCg/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "XG8X6982PHE",
@@ -1361,7 +1073,8 @@
       "videoId": "XG8X6982PHE",
       "thumbnail": "https://img.youtube.com/vi/XG8X6982PHE/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "Q8ktjMwiE4I",
@@ -1375,7 +1088,8 @@
       "videoId": "Q8ktjMwiE4I",
       "thumbnail": "https://img.youtube.com/vi/Q8ktjMwiE4I/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "c23jj9JMyXM",
@@ -1389,7 +1103,8 @@
       "videoId": "c23jj9JMyXM",
       "thumbnail": "https://img.youtube.com/vi/c23jj9JMyXM/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "bbuTg5YJxpc",
@@ -1403,7 +1118,8 @@
       "videoId": "bbuTg5YJxpc",
       "thumbnail": "https://img.youtube.com/vi/bbuTg5YJxpc/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "ORH8I8YM5tA",
@@ -1417,7 +1133,8 @@
       "videoId": "ORH8I8YM5tA",
       "thumbnail": "https://img.youtube.com/vi/ORH8I8YM5tA/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "K9_hf1rwa3E",
@@ -1431,21 +1148,8 @@
       "videoId": "K9_hf1rwa3E",
       "thumbnail": "https://img.youtube.com/vi/K9_hf1rwa3E/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
-    },
-    {
-      "id": "zPEDxv4ZbFk",
-      "date": "2026-07-27",
-      "dateLabel": "07/27 (月)",
-      "time": "10:00",
-      "startsAt": "2026-07-27T10:00:00+09:00",
-      "name": "Flayon",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=zPEDxv4ZbFk",
-      "videoId": "zPEDxv4ZbFk",
-      "thumbnail": "https://img.youtube.com/vi/zPEDxv4ZbFk/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "JqHpSqQpR00",
@@ -1459,7 +1163,8 @@
       "videoId": "JqHpSqQpR00",
       "thumbnail": "https://img.youtube.com/vi/JqHpSqQpR00/mqdefault.jpg",
       "avatar": null,
-      "isLive": false
+      "isLive": false,
+      "branch": "JP"
     }
   ]
 }

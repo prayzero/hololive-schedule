@@ -1,7 +1,16 @@
 # HOLO NOW — GitHub Pages 일정 사이트
 
-홀로라이브의 공개 방송 일정, 콘서트, 솔로 라이브, 일본·한국 현지 행사를
-한눈에 보는 비공식 정적 페이지입니다.
+홀로라이브 여성 탤런트의 공개 방송 일정, 콘서트, 지난 솔로 라이브,
+일본·한국 현지 행사를 한눈에 보는 비공식 정적 페이지입니다.
+
+## 주요 기능
+
+- JP·EN·ID·DEV_IS 여성 브랜치만 수집하는 방송 일정
+- 예정 공연과 지난 솔로 라이브를 나눈 전용 탭
+- 한국어·영문·일문·별칭을 지원하는 검색
+- 멤버 얼굴을 눌러 보는 개인 솔로 공연 기록
+- 일본·한국 공식 현지 행사 필터
+- 모바일과 데스크톱에 맞춘 반응형 카드 UI
 
 ## 비용
 
@@ -35,14 +44,24 @@ npm run build
 ## 데이터 구성
 
 - `public/data/schedule.json`
-  - 공식 [Holodule](https://schedule.hololive.tv/lives/all)의 공개 HTML에서
+  - 공식 Holodule의 [JP](https://schedule.hololive.tv/lives/hololive),
+    [ID](https://schedule.hololive.tv/lives/indonesia),
+    [EN](https://schedule.hololive.tv/lives/english),
+    [DEV_IS](https://schedule.hololive.tv/lives/dev_is) 공개 HTML에서
     날짜, 시각, 채널, YouTube 링크, 썸네일, LIVE 표시를 수집합니다.
+  - 남성 그룹 HOLOSTARS 경로와 전체 혼합 경로는 사용하지 않습니다.
   - 원본 카드에 전체 영상 제목이 없으면 화면에는 `채널명 방송`으로 표시합니다.
   - 스크립트가 실패하거나 0건을 읽으면 기존 JSON을 덮어쓰지 않습니다.
 - `public/data/events.json`
   - hololive/COVER 또는 공식 협업사 공지에서 확인한 공연·현지 행사의
     한국어 요약입니다.
   - 새 공식 발표가 나오면 이 파일을 검토해 추가합니다.
+- `public/data/talents.json`
+  - 공식 여성 로스터의 프로필, 얼굴 이미지, 검색용 별칭을 담습니다.
+  - 과거 솔로 공연 연결을 위해 일부 졸업 멤버는 `alumni`로 별도 표시합니다.
+- `public/data/solo-lives.json`
+  - 공식 이벤트·뉴스와 공식 주최·레이블 페이지에서 확인한 주요
+    단독·원맨 공연 기록입니다.
 
 ## 새 GitHub Pages로 배포
 
@@ -52,7 +71,7 @@ npm run build
 4. `Actions` 탭에서 `Update and deploy Hololive schedule`을 한 번
    수동 실행합니다.
 
-`.github/workflows/deploy-schedule-pages.yml`이 다음 작업을 수행합니다.
+`.github/workflows/deploy-pages.yml`이 다음 작업을 수행합니다.
 
 ```text
 매시 07분·37분

@@ -1,3 +1,28 @@
+export type TalentBranch = "JP" | "EN" | "ID" | "DEV_IS";
+export type TalentStatus = "active" | "affiliate" | "alumni";
+
+export interface Talent {
+  id: string;
+  name: string;
+  nameKo: string;
+  nativeName: string;
+  branch: TalentBranch;
+  generation: string;
+  channelId: string;
+  aliases: string[];
+  portraitUrl: string;
+  officialProfileUrl: string;
+  status: TalentStatus;
+  accent: string;
+}
+
+export interface TalentsPayload {
+  checkedAt: string;
+  sourceUrl: string;
+  sourceNote: string;
+  talents: Talent[];
+}
+
 export interface ScheduleEntry {
   id: string;
   date: string | null;
@@ -11,11 +36,13 @@ export interface ScheduleEntry {
   thumbnail: string | null;
   avatar: string | null;
   isLive: boolean;
+  branch?: TalentBranch;
 }
 
 export interface SchedulePayload {
   generatedAt: string;
-  source: string;
+  source?: string;
+  sources?: string[];
   sourceRefreshMinutes: number;
   collectorVersion: string;
   timezone: string;
@@ -45,6 +72,7 @@ export interface CuratedEvent {
   timeLabel: string;
   format: string;
   participants: string[];
+  participantIds?: string[];
   description: string;
   imageUrl: string;
   sourceUrl: string;
@@ -56,4 +84,29 @@ export interface EventsPayload {
   checkedAt: string;
   sourceNote: string;
   events: CuratedEvent[];
+}
+
+export interface SoloLive {
+  id: string;
+  memberId: string;
+  relatedMemberIds?: string[];
+  title: string;
+  titleKo: string;
+  startsAt: string;
+  endsAt: string;
+  dateLabel: string;
+  city: string;
+  venue: string;
+  format: string;
+  imageUrl: string;
+  sourceUrl: string;
+  officialUrl?: string;
+  note?: string;
+}
+
+export interface SoloLivesPayload {
+  checkedAt: string;
+  sourceUrl: string;
+  sourceNote: string;
+  lives: SoloLive[];
 }

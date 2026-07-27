@@ -149,7 +149,7 @@ const PAGE_META: Record<
     eyebrow: "HOLOLIVE DREAMS",
     title: "뽑은 순간부터, 나만의 컬렉션.",
     description:
-      "공식 게임 참여 멤버 54명의 보유 현황을 체크하고, 실제 뽑기 결과로 내 운도 계산해 보세요.",
+      "기본 캐릭터와 신규 픽업 카드를 체크하고, 픽업별 결과를 저장해 역대 나의 운도 확인해 보세요.",
   },
 };
 
@@ -1671,7 +1671,7 @@ export default function App() {
               <Search size={21} aria-hidden="true" />
               <label className="sr-only" htmlFor="global-search">
                 {view === "dream"
-                  ? "홀로라이브 드림 캐릭터 검색"
+                  ? "홀로라이브 드림 수집 카드 검색"
                   : view === "music"
                     ? "멤버, 곡, 앨범 검색"
                     : "멤버, 방송, 영상, 공연 검색"}
@@ -1688,7 +1688,7 @@ export default function App() {
                 }}
                 placeholder={
                   view === "dream"
-                    ? "보유 캐릭터 이름 검색"
+                    ? "캐릭터 · 픽업 카드 검색"
                     : view === "music"
                       ? "멤버 · 곡 · 앨범 검색"
                       : "멤버 · 방송 · 영상 · 공연 검색"

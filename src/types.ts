@@ -247,6 +247,7 @@ export interface DreamPickup {
   id: string;
   title: string;
   subtitle: string;
+  targetRatePercent: number | null;
   startsOn: string;
   endsOn: string | null;
   announcedOn: string;

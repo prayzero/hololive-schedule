@@ -330,10 +330,72 @@
   font-size: 10px;
 }
 
+.dream-collection-groups {
+  display: grid;
+  gap: 31px;
+}
+
+.dream-collection-group {
+  display: grid;
+  gap: 14px;
+}
+
+.dream-collection-group__heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 0 4px;
+}
+
+.dream-collection-group__heading > div {
+  display: grid;
+}
+
+.dream-collection-group__heading small {
+  color: #8a96a9;
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.dream-collection-group__heading h3 {
+  margin: 3px 0 0;
+  color: #29364f;
+  font-size: 17px;
+  letter-spacing: -0.035em;
+}
+
+.dream-collection-group__heading > span {
+  display: grid;
+  min-width: 43px;
+  height: 30px;
+  padding-inline: 9px;
+  border-radius: 10px;
+  place-items: center;
+  color: #6d7890;
+  background: #eef2f7;
+  font-size: 9px;
+  font-weight: 850;
+}
+
+.dream-collection-group.is-pickup .dream-collection-group__heading small {
+  color: var(--dream-purple);
+}
+
+.dream-collection-group.is-pickup .dream-collection-group__heading > span {
+  color: #6558bc;
+  background: #efedff;
+}
+
 .dream-character-grid {
   display: grid;
   grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 17px;
+}
+
+.dream-character-grid.is-pickup-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .dream-character-card {
@@ -389,14 +451,16 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: var(--dream-image-position);
   filter: grayscale(1);
   opacity: 0.54;
-  transform: scale(1.015);
+  transform: scale(var(--dream-image-scale));
+  transform-origin: var(--dream-image-origin);
   transition: filter 220ms ease, opacity 220ms ease, transform 220ms ease;
 }
 
 .dream-character-card:hover .dream-character-image img {
-  transform: scale(1.04);
+  transform: scale(calc(var(--dream-image-scale) + 0.035));
 }
 
 .dream-character-card.is-owned .dream-character-image {
@@ -411,6 +475,44 @@
 .dream-character-card.is-owned .dream-character-image img {
   filter: none;
   opacity: 1;
+}
+
+.dream-character-card.is-pickup {
+  border-color: color-mix(in srgb, var(--dream-accent) 28%, #dfe5ef);
+  background:
+    radial-gradient(circle at 90% 0%, rgba(120, 108, 240, 0.1), transparent 36%),
+    #fff;
+}
+
+.dream-character-card.is-pickup .dream-character-image {
+  aspect-ratio: 2 / 1;
+}
+
+.dream-character-card.is-pickup .dream-character-copy {
+  border-top-color: color-mix(in srgb, var(--dream-accent) 78%, #fff);
+}
+
+.dream-character-pickup-badge {
+  position: absolute;
+  z-index: 3;
+  top: 10px;
+  left: 10px;
+  min-height: 24px;
+  padding: 0 9px;
+  border: 1px solid rgba(255, 255, 255, 0.44);
+  border-radius: 8px;
+  color: #fff;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--dream-accent) 88%, #313d67),
+    #7d6dea
+  );
+  box-shadow: 0 6px 16px rgba(44, 55, 91, 0.2);
+  font-size: 7px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  line-height: 22px;
+  backdrop-filter: blur(8px);
 }
 
 .dream-owned-check {
@@ -874,6 +976,506 @@
 
 .dream-pickup-feature__footer > a:hover {
   text-decoration: underline;
+}
+
+.dream-pickup-luck {
+  overflow: hidden;
+  border: 1px solid #dddff0;
+  border-radius: 28px;
+  background: #fff;
+  box-shadow: 0 16px 48px rgba(49, 65, 99, 0.09);
+}
+
+.dream-pickup-luck__summary {
+  display: grid;
+  grid-template-columns: minmax(250px, 1fr) minmax(160px, 0.42fr) minmax(390px, 1.2fr);
+  align-items: center;
+  gap: 23px;
+  padding: 24px 26px 17px;
+  background:
+    radial-gradient(circle at 0 0, rgba(49, 191, 214, 0.12), transparent 26%),
+    radial-gradient(circle at 100% 100%, rgba(240, 118, 169, 0.1), transparent 29%),
+    linear-gradient(120deg, #fff, #faf9ff);
+}
+
+.dream-pickup-luck__lead {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  gap: 14px;
+}
+
+.dream-pickup-luck__lead > span {
+  display: grid;
+  flex: 0 0 auto;
+  width: 47px;
+  height: 47px;
+  border-radius: 16px;
+  place-items: center;
+  color: #fff;
+  background: linear-gradient(135deg, #31bfd6, var(--dream-purple));
+  box-shadow: 0 9px 22px rgba(80, 119, 209, 0.22);
+}
+
+.dream-pickup-luck__lead > div {
+  display: grid;
+  min-width: 0;
+}
+
+.dream-pickup-luck__lead small {
+  color: var(--dream-purple);
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.dream-pickup-luck__lead h3 {
+  margin: 3px 0 0;
+  color: #1e2a43;
+  font-size: 19px;
+  letter-spacing: -0.035em;
+}
+
+.dream-pickup-luck__lead p {
+  margin: 5px 0 0;
+  color: #818da0;
+  font-size: 9px;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+
+.dream-pickup-luck__result {
+  display: grid;
+  min-height: 91px;
+  padding: 13px 16px;
+  border: 1px solid #dddff0;
+  border-radius: 17px;
+  place-items: center;
+  align-content: center;
+  background: rgba(255, 255, 255, 0.78);
+  text-align: center;
+}
+
+.dream-pickup-luck__result small {
+  color: #8a96a9;
+  font-size: 8px;
+  font-weight: 850;
+}
+
+.dream-pickup-luck__result strong {
+  margin-top: 2px;
+  color: #6558bd;
+  font-size: 25px;
+  letter-spacing: -0.045em;
+}
+
+.dream-pickup-luck__result span {
+  margin-top: 1px;
+  color: #7b879c;
+  font-size: 8px;
+  font-weight: 750;
+}
+
+.dream-pickup-luck__result.tone-high strong {
+  color: #0d9daf;
+}
+
+.dream-pickup-luck__result.tone-low strong {
+  color: #c8617e;
+}
+
+.dream-pickup-luck__empty-result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 91px;
+  gap: 9px;
+  padding: 13px 16px;
+  border: 1px dashed #d3d9e7;
+  border-radius: 17px;
+  color: #8b97a9;
+  background: rgba(255, 255, 255, 0.64);
+  font-size: 9px;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.dream-pickup-luck__empty-result svg {
+  flex: 0 0 auto;
+  color: var(--dream-purple);
+}
+
+.dream-pickup-luck__empty-result strong {
+  color: #6558bd;
+}
+
+.dream-pickup-luck__metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  overflow: hidden;
+  border: 1px solid #e1e5ee;
+  border-radius: 17px;
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.dream-pickup-luck__metrics > span {
+  display: grid;
+  min-height: 69px;
+  padding: 10px 8px;
+  place-items: center;
+  align-content: center;
+}
+
+.dream-pickup-luck__metrics > span + span {
+  border-left: 1px solid #e5e8ef;
+}
+
+.dream-pickup-luck__metrics small {
+  color: #909bad;
+  font-size: 7px;
+  font-weight: 750;
+}
+
+.dream-pickup-luck__metrics strong {
+  margin-top: 3px;
+  color: #46536a;
+  font-size: 12px;
+}
+
+.dream-pickup-luck__storage {
+  display: flex;
+  grid-column: 1 / -1;
+  align-items: center;
+  gap: 7px;
+  padding-top: 2px;
+  color: #929bad;
+  font-size: 8px;
+}
+
+.dream-pickup-luck__storage svg {
+  color: var(--dream-purple);
+}
+
+.dream-pickup-luck__records {
+  display: grid;
+  border-top: 1px solid #e3e6ee;
+}
+
+.dream-pickup-luck-record + .dream-pickup-luck-record {
+  border-top: 1px solid #e7eaf1;
+}
+
+.dream-pickup-luck-record__row {
+  display: grid;
+  grid-template-columns: minmax(240px, 1fr) minmax(190px, 0.52fr) auto;
+  align-items: center;
+  gap: 19px;
+  padding: 17px 22px;
+}
+
+.dream-pickup-luck-record__meta {
+  display: grid;
+  min-width: 0;
+}
+
+.dream-pickup-luck-record__meta small {
+  color: var(--dream-purple);
+  font-size: 8px;
+  font-weight: 850;
+}
+
+.dream-pickup-luck-record__meta strong {
+  margin-top: 3px;
+  overflow: hidden;
+  color: #35425b;
+  font-size: 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dream-pickup-luck-record__score {
+  display: grid;
+  min-width: 0;
+}
+
+.dream-pickup-luck-record__score small {
+  color: #949daf;
+  font-size: 7px;
+}
+
+.dream-pickup-luck-record__score strong {
+  margin-top: 1px;
+  color: #6558bd;
+  font-size: 11px;
+}
+
+.dream-pickup-luck-record__score.tone-high strong {
+  color: #0d96a8;
+}
+
+.dream-pickup-luck-record__score.tone-low strong {
+  color: #c35d7a;
+}
+
+.dream-pickup-luck-record__score span {
+  margin-top: 2px;
+  color: #8a95a7;
+  font-size: 8px;
+}
+
+.dream-pickup-luck-record__none {
+  color: #9ba4b4;
+  font-size: 8px;
+}
+
+.dream-pickup-luck-record__toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 94px;
+  min-height: 44px;
+  gap: 5px;
+  padding: 0 11px;
+  border: 1px solid #d9daef;
+  border-radius: 11px;
+  color: var(--dream-purple-dark);
+  background: #f6f5ff;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 850;
+}
+
+.dream-pickup-luck-record__toggle:hover {
+  border-color: #bcb4ed;
+  background: #efedff;
+}
+
+.dream-pickup-luck-record__toggle:disabled {
+  color: #a1a9b7;
+  background: #f1f3f6;
+  cursor: not-allowed;
+}
+
+.dream-pickup-luck-record__toggle svg {
+  transition: transform 160ms ease;
+}
+
+.dream-pickup-luck-record__toggle svg.is-open {
+  transform: rotate(180deg);
+}
+
+.dream-pickup-luck-editor {
+  display: grid;
+  gap: 16px;
+  padding: 19px 22px 21px;
+  border-top: 1px solid #e4e7ef;
+  background:
+    radial-gradient(circle at 100% 0, rgba(120, 108, 240, 0.08), transparent 28%),
+    #f8f9fc;
+}
+
+.dream-pickup-luck-editor__heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.dream-pickup-luck-editor__heading > div {
+  display: grid;
+}
+
+.dream-pickup-luck-editor__heading small {
+  color: var(--dream-purple);
+  font-size: 7px;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.dream-pickup-luck-editor__heading strong {
+  margin-top: 2px;
+  color: #46536b;
+  font-size: 11px;
+}
+
+.dream-pickup-luck-editor__heading > span {
+  color: #929dae;
+  font-size: 8px;
+}
+
+.dream-pickup-luck-form {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.dream-pickup-luck-form label {
+  display: grid;
+  gap: 7px;
+}
+
+.dream-pickup-luck-form label > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  color: #526079;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.dream-pickup-luck-form label > span small {
+  color: #9ba4b4;
+  font-size: 7px;
+  font-weight: 650;
+}
+
+.dream-pickup-luck-form label > div {
+  position: relative;
+}
+
+.dream-pickup-luck-form input {
+  width: 100%;
+  min-height: 44px;
+  padding: 0 43px 0 13px;
+  border: 1px solid #d7deea;
+  border-radius: 12px;
+  color: #29364f;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.dream-pickup-luck-form input[aria-invalid="true"] {
+  border-color: #d9859c;
+  background: #fff9fb;
+}
+
+.dream-pickup-luck-form label > div > span {
+  position: absolute;
+  top: 50%;
+  right: 13px;
+  color: #909bac;
+  font-size: 8px;
+  font-weight: 750;
+  transform: translateY(-50%);
+}
+
+.dream-pickup-luck-preview {
+  display: grid;
+  grid-template-columns: minmax(175px, 0.48fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 17px;
+  padding: 15px 17px;
+  border: 1px solid #d9dbed;
+  border-radius: 15px;
+  background: #fff;
+}
+
+.dream-pickup-luck-preview > div:first-child {
+  display: grid;
+  padding-right: 17px;
+  border-right: 1px solid #e2e5ed;
+}
+
+.dream-pickup-luck-preview > div:first-child small {
+  color: #909bad;
+  font-size: 7px;
+}
+
+.dream-pickup-luck-preview > div:first-child strong {
+  margin-top: 2px;
+  color: #6558bd;
+  font-size: 18px;
+  letter-spacing: -0.04em;
+}
+
+.dream-pickup-luck-preview.tone-high > div:first-child strong {
+  color: #0c98aa;
+}
+
+.dream-pickup-luck-preview.tone-low > div:first-child strong {
+  color: #c35d7a;
+}
+
+.dream-pickup-luck-preview > div:first-child span {
+  margin-top: 1px;
+  color: #7f8b9f;
+  font-size: 8px;
+}
+
+.dream-pickup-luck-preview > div:last-child {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.dream-pickup-luck-preview > div:last-child > span {
+  display: grid;
+  color: #909bad;
+  font-size: 7px;
+}
+
+.dream-pickup-luck-preview > div:last-child strong {
+  margin-top: 2px;
+  color: #46536b;
+  font-size: 11px;
+}
+
+.dream-pickup-luck-editor__guide {
+  padding: 12px 14px;
+  border: 1px dashed #d4dbe7;
+  border-radius: 13px;
+  color: #8e99aa;
+  background: rgba(255, 255, 255, 0.64);
+  font-size: 8px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.dream-pickup-luck-editor__guide.is-error {
+  border-color: #e1a6b7;
+  color: #b15370;
+  background: #fff8fa;
+}
+
+.dream-pickup-luck-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.dream-pickup-luck-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  gap: 6px;
+  padding: 0 14px;
+  border-radius: 11px;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 850;
+}
+
+.dream-pickup-luck-actions .is-delete {
+  border: 1px solid #e5cad3;
+  color: #ae5971;
+  background: #fff8fa;
+}
+
+.dream-pickup-luck-actions .is-save {
+  border: 0;
+  color: #fff;
+  background: linear-gradient(135deg, var(--dream-purple), var(--dream-pink));
+  box-shadow: 0 8px 18px rgba(121, 105, 230, 0.2);
+}
+
+.dream-pickup-luck-actions .is-save:disabled {
+  color: #a2aab7;
+  background: #e6e9ef;
+  box-shadow: none;
+  cursor: not-allowed;
 }
 
 .dream-pickup-empty {
@@ -1719,6 +2321,18 @@
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
+  .dream-character-grid.is-pickup-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .dream-pickup-luck__summary {
+    grid-template-columns: minmax(240px, 1fr) minmax(150px, 0.45fr);
+  }
+
+  .dream-pickup-luck__metrics {
+    grid-column: 1 / -1;
+  }
+
   .dream-calculator-layout {
     grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
   }
@@ -1760,6 +2374,10 @@
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
+  .dream-character-grid.is-pickup-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .dream-filter-bar {
     align-items: stretch;
     flex-wrap: wrap;
@@ -1798,6 +2416,11 @@
 
   .dream-pickup-history__note {
     grid-column: 2 / -1;
+  }
+
+  .dream-pickup-luck-record__row {
+    grid-template-columns: minmax(220px, 1fr) minmax(165px, 0.5fr) auto;
+    gap: 14px;
   }
 
   .dream-calculator-layout {
@@ -1880,6 +2503,35 @@
   .dream-character-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 10px;
+  }
+
+  .dream-character-grid.is-pickup-grid {
+    grid-template-columns: none;
+    grid-auto-columns: min(82vw, 330px);
+    grid-auto-flow: column;
+    gap: 10px;
+    margin-inline: -12px;
+    padding-inline: 12px;
+    overflow-x: auto;
+    scroll-padding-inline: 12px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .dream-character-grid.is-pickup-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .dream-character-grid.is-pickup-grid .dream-character-card {
+    scroll-snap-align: center;
+  }
+
+  .dream-collection-groups {
+    gap: 27px;
+  }
+
+  .dream-collection-group__heading h3 {
+    font-size: 15px;
   }
 
   .dream-character-card {
@@ -2012,6 +2664,101 @@
   .dream-pickup-history__list article > a {
     justify-content: center;
     width: 100%;
+  }
+
+  .dream-pickup-luck {
+    border-radius: 22px;
+  }
+
+  .dream-pickup-luck__summary {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 19px 17px 15px;
+  }
+
+  .dream-pickup-luck__lead {
+    align-items: flex-start;
+  }
+
+  .dream-pickup-luck__lead > span {
+    width: 41px;
+    height: 41px;
+    border-radius: 14px;
+  }
+
+  .dream-pickup-luck__result,
+  .dream-pickup-luck__empty-result {
+    min-height: 78px;
+  }
+
+  .dream-pickup-luck__metrics {
+    grid-column: auto;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dream-pickup-luck__metrics > span:nth-child(3) {
+    border-left: 0;
+    border-top: 1px solid #e5e8ef;
+  }
+
+  .dream-pickup-luck__metrics > span:nth-child(4) {
+    border-top: 1px solid #e5e8ef;
+  }
+
+  .dream-pickup-luck__storage {
+    grid-column: auto;
+  }
+
+  .dream-pickup-luck-record__row {
+    grid-template-columns: 1fr;
+    gap: 11px;
+    padding: 17px;
+  }
+
+  .dream-pickup-luck-record__toggle {
+    width: 100%;
+    min-height: 44px;
+  }
+
+  .dream-pickup-luck-editor {
+    padding: 17px;
+  }
+
+  .dream-pickup-luck-editor__heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+  }
+
+  .dream-pickup-luck-form {
+    grid-template-columns: 1fr;
+  }
+
+  .dream-pickup-luck-preview {
+    grid-template-columns: 1fr;
+  }
+
+  .dream-pickup-luck-preview > div:first-child {
+    padding: 0 0 13px;
+    border-right: 0;
+    border-bottom: 1px solid #e2e5ed;
+  }
+
+  .dream-pickup-luck-preview > div:last-child {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .dream-pickup-luck-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dream-pickup-luck-actions button {
+    min-height: 44px;
+  }
+
+  .dream-pickup-luck-actions .is-save:only-child {
+    grid-column: 1 / -1;
   }
 
   .dream-calculator-card {

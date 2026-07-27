@@ -103,6 +103,7 @@ const pickups = [
     id: "holonatsu-paradise-2026",
     title: "수영복 홀로멤 선택 픽업",
     subtitle: "신규 ★5 홀로멤 5명 중 원하는 1명을 선택 · 픽업 확률 1%",
+    targetRatePercent: 1,
     startsOn: "2026-07-28",
     endsOn: null,
     announcedOn: "2026-07-27",
@@ -274,14 +275,58 @@ for (const character of characters) {
   }
 }
 
+const pickupCardsById = new Map();
+const baseCharacterIds = new Set(characters.map(({ id }) => id));
 for (const pickup of pickups) {
   if (!pickup.id || !pickup.title || !pickup.startsOn || !pickup.sourceUrl) {
     throw new Error(`픽업 필수 정보가 비어 있습니다: ${pickup.id}`);
   }
+  if (
+    pickup.targetRatePercent !== null &&
+    (!Number.isFinite(pickup.targetRatePercent) ||
+      pickup.targetRatePercent <= 0 ||
+      pickup.targetRatePercent > 100)
+  ) {
+    throw new Error(`픽업 확률이 올바르지 않습니다: ${pickup.id}`);
+  }
   if (!pickup.cards.length) {
     throw new Error(`픽업 카드가 비어 있습니다: ${pickup.id}`);
   }
+  const cardIdsInPickup = new Set();
   for (const card of pickup.cards) {
+    if (!card.id || !card.imageUrl) {
+      throw new Error(`${pickup.id}: 픽업 카드 필수 정보가 비어 있습니다.`);
+    }
+    if (cardIdsInPickup.has(card.id)) {
+      throw new Error(
+        `같은 픽업 일정에 카드 ID가 중복되었습니다: ${pickup.id} · ${card.id}`,
+      );
+    }
+    cardIdsInPickup.add(card.id);
+    if (baseCharacterIds.has(card.id)) {
+      throw new Error(`픽업 카드 ID가 기본 캐릭터와 충돌합니다: ${card.id}`);
+    }
+    const previousCard = pickupCardsById.get(card.id);
+    if (previousCard) {
+      const identityFields = [
+        "talentId",
+        "rarity",
+        "imageUrl",
+        "imageAlt",
+        "imagePosition",
+        "imageScale",
+      ];
+      const hasConflictingIdentity = identityFields.some(
+        (field) => (previousCard[field] ?? null) !== (card[field] ?? null),
+      );
+      if (hasConflictingIdentity) {
+        throw new Error(
+          `같은 픽업 카드 ID에 서로 다른 카드 정보가 있습니다: ${card.id}`,
+        );
+      }
+    } else {
+      pickupCardsById.set(card.id, card);
+    }
     if (!talentPayload.talents.some(({ id }) => id === card.talentId)) {
       throw new Error(
         `${pickup.id}: talents.json에서 찾을 수 없는 픽업 멤버 ${card.talentId}`,

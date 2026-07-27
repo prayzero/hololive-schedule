@@ -14,15 +14,36 @@ import {
   Trophy,
   Users,
 } from "lucide-react";
-import type { HololiveDreamsPayload, Talent, TalentBranch } from "../types";
+import type {
+  DreamCharacter,
+  HololiveDreamsPayload,
+  Talent,
+  TalentBranch,
+} from "../types";
 import { DreamPickupPanel } from "./DreamPickupPanel";
+import {
+  calculateLuck,
+  formatExpected,
+  formatProbability,
+  formatRatePercent,
+} from "./luck";
 import "./dream.css";
 
 const STORAGE_KEY = "holo-now:dream-owned:v1";
 
 type DreamPanel = "collection" | "pickup" | "calculator";
-type BranchFilter = "ALL" | TalentBranch;
+type CollectionFilter = "ALL" | "PICKUP" | TalentBranch;
 type OwnedFilter = "all" | "owned" | "missing";
+
+interface CollectionCharacter extends DreamCharacter {
+  kind: "base" | "pickup";
+  rarity?: number | null;
+  pickupId?: string;
+  pickupTitle?: string;
+  imageAlt?: string;
+  imagePosition?: string;
+  imageScale?: number;
+}
 
 interface DreamPageProps {
   payload: HololiveDreamsPayload;
@@ -33,12 +54,20 @@ interface DreamPageProps {
   onPanelChange: (panel: DreamPanel) => void;
 }
 
-const BRANCHES: Array<{ value: BranchFilter; label: string }> = [
-  { value: "ALL", label: "전체" },
+const BRANCH_FILTERS: Array<{ value: TalentBranch; label: string }> = [
   { value: "JP", label: "JP" },
   { value: "DEV_IS", label: "DEV_IS" },
   { value: "EN", label: "EN" },
   { value: "ID", label: "ID" },
+];
+
+const COLLECTION_FILTERS: Array<{
+  value: CollectionFilter;
+  label: string;
+}> = [
+  { value: "ALL", label: "전체" },
+  { value: "PICKUP", label: "픽업" },
+  ...BRANCH_FILTERS,
 ];
 
 const OWNED_FILTERS: Array<{ value: OwnedFilter; label: string }> = [
@@ -73,14 +102,6 @@ const DREAM_GENERATION_ORDER: Record<string, number> = {
   "ID:ID 3기생": 2,
 };
 
-const LUCK_LABELS = [
-  { max: 5, label: "아주 아쉬운 편", tone: "low" },
-  { max: 20, label: "조금 아쉬운 편", tone: "low" },
-  { max: 80, label: "평균적인 범위", tone: "normal" },
-  { max: 95, label: "운이 좋은 편", tone: "high" },
-  { max: Number.POSITIVE_INFINITY, label: "매우 운이 좋은 편", tone: "high" },
-] as const;
-
 function readOwnedCharacters() {
   if (typeof window === "undefined") {
     return new Set<string>();
@@ -107,72 +128,6 @@ function normalizeSearch(value: string) {
     .toLocaleLowerCase();
 }
 
-function toInteger(value: string, fallback = 0) {
-  const parsed = Number(value);
-  return Number.isFinite(parsed) ? Math.floor(parsed) : fallback;
-}
-
-function clamp(value: number, min: number, max: number) {
-  return Math.min(max, Math.max(min, value));
-}
-
-function binomialDistribution(trials: number, probability: number) {
-  const result = new Float64Array(trials + 1);
-
-  if (probability <= 0) {
-    result[0] = 1;
-    return result;
-  }
-  if (probability >= 1) {
-    result[trials] = 1;
-    return result;
-  }
-
-  const q = 1 - probability;
-  const mode = clamp(Math.floor((trials + 1) * probability), 0, trials);
-  result[mode] = 1;
-
-  for (let k = mode; k > 0; k -= 1) {
-    result[k - 1] =
-      result[k] * (k / (trials - k + 1)) * (q / probability);
-  }
-  for (let k = mode; k < trials; k += 1) {
-    result[k + 1] =
-      result[k] * ((trials - k) / (k + 1)) * (probability / q);
-  }
-
-  let total = 0;
-  for (const value of result) total += value;
-  if (total > 0) {
-    for (let index = 0; index < result.length; index += 1) {
-      result[index] /= total;
-    }
-  }
-
-  return result;
-}
-
-function formatProbability(value: number) {
-  const percent = clamp(value * 100, 0, 100);
-  if (percent > 0 && percent < 0.01) return "<0.01%";
-  if (percent < 100 && percent > 99.99) return ">99.99%";
-  return `${percent.toFixed(2)}%`;
-}
-
-function formatExpected(value: number) {
-  return value.toLocaleString("ko-KR", {
-    maximumFractionDigits: 2,
-    minimumFractionDigits: 0,
-  });
-}
-
-function formatRatePercent(value: number) {
-  return value.toLocaleString("ko-KR", {
-    maximumFractionDigits: 4,
-    minimumFractionDigits: 0,
-  });
-}
-
 export function DreamPage({
   payload,
   talents,
@@ -182,7 +137,8 @@ export function DreamPage({
   onPanelChange,
 }: DreamPageProps) {
   const [ownedIds, setOwnedIds] = useState<Set<string>>(readOwnedCharacters);
-  const [branchFilter, setBranchFilter] = useState<BranchFilter>("ALL");
+  const [collectionFilter, setCollectionFilter] =
+    useState<CollectionFilter>("ALL");
   const [ownedFilter, setOwnedFilter] = useState<OwnedFilter>("all");
   const [ratePresetId, setRatePresetId] = useState(
     "summer-selected-star5",
@@ -212,34 +168,87 @@ export function DreamPage({
     [talents],
   );
   const normalizedQuery = normalizeSearch(query);
-  const characters = useMemo(
+  const baseCharacters = useMemo<CollectionCharacter[]>(
     () =>
-      [...payload.characters].sort(
-        (left, right) =>
-          DREAM_BRANCH_ORDER[left.branch] - DREAM_BRANCH_ORDER[right.branch] ||
-          (DREAM_GENERATION_ORDER[`${left.branch}:${left.generation}`] ?? 999) -
-            (DREAM_GENERATION_ORDER[`${right.branch}:${right.generation}`] ??
-              999) ||
-          left.nameKo.localeCompare(right.nameKo, "ko"),
-      ),
+      [...payload.characters]
+        .map((character) => ({
+          ...character,
+          kind: "base" as const,
+        }))
+        .sort(
+          (left, right) =>
+            DREAM_BRANCH_ORDER[left.branch] -
+              DREAM_BRANCH_ORDER[right.branch] ||
+            (DREAM_GENERATION_ORDER[
+              `${left.branch}:${left.generation}`
+            ] ?? 999) -
+              (DREAM_GENERATION_ORDER[
+                `${right.branch}:${right.generation}`
+              ] ?? 999) ||
+            left.nameKo.localeCompare(right.nameKo, "ko"),
+        ),
     [payload.characters],
   );
-  const validCharacterIds = useMemo(
-    () => new Set(characters.map((character) => character.id)),
-    [characters],
+
+  const pickupCharacters = useMemo<CollectionCharacter[]>(() => {
+    const uniqueCards = new Map<string, CollectionCharacter>();
+
+    for (const pickup of payload.pickups ?? []) {
+      for (const card of pickup.cards) {
+        if (uniqueCards.has(card.id)) continue;
+        const talent = talentById.get(card.talentId);
+        if (!talent) continue;
+        uniqueCards.set(card.id, {
+          id: card.id,
+          talentId: talent.id,
+          name: talent.name,
+          nameKo: talent.nameKo,
+          nativeName: talent.nativeName,
+          branch: talent.branch,
+          generation: talent.generation,
+          imageUrl: card.imageUrl,
+          accent: talent.accent,
+          kind: "pickup",
+          rarity: card.rarity,
+          pickupId: pickup.id,
+          pickupTitle: pickup.title,
+          imageAlt: card.imageAlt,
+          imagePosition: card.imagePosition,
+          imageScale: card.imageScale,
+        });
+      }
+    }
+
+    return [...uniqueCards.values()].sort(
+      (left, right) =>
+        DREAM_BRANCH_ORDER[left.branch] - DREAM_BRANCH_ORDER[right.branch] ||
+        (DREAM_GENERATION_ORDER[`${left.branch}:${left.generation}`] ?? 999) -
+          (DREAM_GENERATION_ORDER[`${right.branch}:${right.generation}`] ??
+            999) ||
+        left.nameKo.localeCompare(right.nameKo, "ko"),
+    );
+  }, [payload.pickups, talentById]);
+
+  const collectionCharacters = useMemo(
+    () => [...pickupCharacters, ...baseCharacters],
+    [baseCharacters, pickupCharacters],
+  );
+  const validCollectionIds = useMemo(
+    () => new Set(collectionCharacters.map((character) => character.id)),
+    [collectionCharacters],
   );
   const ownedCount = useMemo(
-    () => [...ownedIds].filter((id) => validCharacterIds.has(id)).length,
-    [ownedIds, validCharacterIds],
+    () => [...ownedIds].filter((id) => validCollectionIds.has(id)).length,
+    [ownedIds, validCollectionIds],
   );
-  const completion = characters.length
-    ? Math.round((ownedCount / characters.length) * 100)
+  const completion = collectionCharacters.length
+    ? Math.round((ownedCount / collectionCharacters.length) * 100)
     : 0;
 
   const branchProgress = useMemo(
     () =>
-      BRANCHES.slice(1).map(({ value, label }) => {
-        const branchCharacters = characters.filter(
+      BRANCH_FILTERS.map(({ value, label }) => {
+        const branchCharacters = collectionCharacters.filter(
           (character) => character.branch === value,
         );
         const owned = branchCharacters.filter((character) =>
@@ -247,15 +256,17 @@ export function DreamPage({
         ).length;
         return { value, label, owned, total: branchCharacters.length };
       }),
-    [characters, ownedIds],
+    [collectionCharacters, ownedIds],
   );
 
   const filteredCharacters = useMemo(
     () =>
-      characters.filter((character) => {
+      collectionCharacters.filter((character) => {
         const talent = talentById.get(character.talentId);
-        const matchesBranch =
-          branchFilter === "ALL" || character.branch === branchFilter;
+        const matchesCollection =
+          collectionFilter === "ALL" ||
+          (collectionFilter === "PICKUP" && character.kind === "pickup") ||
+          character.branch === collectionFilter;
         const isOwned = ownedIds.has(character.id);
         const matchesOwned =
           ownedFilter === "all" ||
@@ -266,21 +277,35 @@ export function DreamPage({
             character.name,
             character.nameKo,
             character.nativeName,
+            character.pickupTitle,
+            character.kind === "pickup"
+              ? `픽업${character.rarity ? ` ★${character.rarity}` : ""}`
+              : "기본",
             talent?.aliases.join(" "),
           ]
             .filter(Boolean)
             .join(" "),
         );
-        return matchesBranch && matchesOwned && searchable.includes(normalizedQuery);
+        return (
+          matchesCollection &&
+          matchesOwned &&
+          searchable.includes(normalizedQuery)
+        );
       }),
     [
-      branchFilter,
-      characters,
+      collectionCharacters,
+      collectionFilter,
       normalizedQuery,
       ownedFilter,
       ownedIds,
       talentById,
     ],
+  );
+  const filteredPickupCharacters = filteredCharacters.filter(
+    (character) => character.kind === "pickup",
+  );
+  const filteredBaseCharacters = filteredCharacters.filter(
+    (character) => character.kind === "base",
   );
 
   const selectedRatePreset =
@@ -293,83 +318,16 @@ export function DreamPage({
     .slice(0, 10)
     .replace(/-/g, ".");
 
-  const calculator = useMemo(() => {
-    const ratePercent = selectedRatePercent;
-    const rawTrials = Number(pullInput);
-    const rawAcquired = Number(acquiredInput);
-    const rawGuaranteed = Number(guaranteedInput);
-    const trials = clamp(toInteger(pullInput), 0, 10_000);
-    const acquired = clamp(toInteger(acquiredInput), 0, 10_000);
-    const guaranteed = clamp(toInteger(guaranteedInput), 0, 10_000);
-    const naturalAcquired = Math.max(0, acquired - guaranteed);
-    const isRateValid =
-      Number.isFinite(ratePercent) && ratePercent > 0 && ratePercent <= 100;
-    const isCountValid =
-      pullInput.trim() !== "" &&
-      acquiredInput.trim() !== "" &&
-      guaranteedInput.trim() !== "" &&
-      Number.isInteger(rawTrials) &&
-      Number.isInteger(rawAcquired) &&
-      Number.isInteger(rawGuaranteed) &&
-      rawTrials >= 0 &&
-      rawTrials <= 10_000 &&
-      rawAcquired >= 0 &&
-      rawAcquired <= 10_000 &&
-      rawGuaranteed >= 0 &&
-      rawGuaranteed <= 10_000 &&
-      acquired >= guaranteed &&
-      naturalAcquired <= trials;
-
-    if (!isRateValid || !isCountValid) {
-      return {
-        valid: false as const,
-        ratePercent,
-        trials,
-        acquired,
-        guaranteed,
-        naturalAcquired,
-      };
-    }
-
-    const probability = ratePercent / 100;
-    const distribution = binomialDistribution(trials, probability);
-    const exact = distribution[naturalAcquired] ?? 0;
-    let below = 0;
-    for (let index = 0; index < naturalAcquired; index += 1) {
-      below += distribution[index] ?? 0;
-    }
-    let atLeastObserved = 0;
-    for (let index = naturalAcquired; index < distribution.length; index += 1) {
-      atLeastObserved += distribution[index] ?? 0;
-    }
-
-    const luckPercentile = clamp((below + exact * 0.5) * 100, 0, 100);
-    const topPercent = clamp(100 - luckPercentile, 0, 100);
-    const luck = LUCK_LABELS.find((item) => luckPercentile < item.max)!;
-
-    return {
-      valid: true as const,
-      ratePercent,
-      probability,
-      trials,
-      acquired,
-      guaranteed,
-      naturalAcquired,
-      atLeastOne: 1 - Math.pow(1 - probability, trials),
-      expectedNatural: trials * probability,
-      expectedTotal: trials * probability + guaranteed,
-      exact,
-      atLeastObserved,
-      luckPercentile,
-      topPercent,
-      luck,
-    };
-  }, [
-    acquiredInput,
-    guaranteedInput,
-    pullInput,
-    selectedRatePercent,
-  ]);
+  const calculator = useMemo(
+    () =>
+      calculateLuck(
+        selectedRatePercent,
+        pullInput,
+        acquiredInput,
+        guaranteedInput,
+      ),
+    [acquiredInput, guaranteedInput, pullInput, selectedRatePercent],
+  );
 
   const toggleOwned = (id: string) => {
     setOwnedIds((current) => {
@@ -378,6 +336,72 @@ export function DreamPage({
       else next.add(id);
       return next;
     });
+  };
+
+  const renderCollectionCard = (character: CollectionCharacter) => {
+    const isOwned = ownedIds.has(character.id);
+    const talent = talentById.get(character.talentId);
+    const accent = character.accent || talent?.accent || "#7c83ee";
+    const cardStyle = {
+      "--dream-accent": accent,
+      "--dream-image-position": character.imagePosition ?? "50% 50%",
+      "--dream-image-scale": character.imageScale ?? 1,
+      "--dream-image-origin":
+        character.kind === "pickup" &&
+        character.imageScale &&
+        character.imageScale > 1
+          ? "43% 22%"
+          : "50% 50%",
+    } as CSSProperties;
+
+    return (
+      <button
+        type="button"
+        key={character.id}
+        className={`dream-character-card${
+          character.kind === "pickup" ? " is-pickup" : ""
+        }${isOwned ? " is-owned" : ""}`}
+        style={cardStyle}
+        aria-pressed={isOwned}
+        aria-label={`${character.nameKo} ${
+          character.kind === "pickup" ? "픽업 카드 " : ""
+        }${isOwned ? "보유 중. 미보유로 변경" : "미보유. 보유로 변경"}`}
+        onClick={() => toggleOwned(character.id)}
+      >
+        <span className="dream-character-image">
+          <img
+            src={character.imageUrl}
+            alt=""
+            loading="lazy"
+            decoding="async"
+          />
+          {character.kind === "pickup" ? (
+            <span className="dream-character-pickup-badge" aria-hidden="true">
+              {character.rarity ? `★${character.rarity} ` : ""}PICKUP
+            </span>
+          ) : null}
+          <span className="dream-owned-check" aria-hidden="true">
+            <Check size={16} strokeWidth={3} />
+          </span>
+          <span className="dream-owned-label">
+            {isOwned ? "보유" : "미보유"}
+          </span>
+        </span>
+        <span className="dream-character-copy">
+          <small>
+            {character.kind === "pickup"
+              ? `${character.branch} · ${character.generation} · 픽업 카드`
+              : `${character.branch} · ${character.generation}`}
+          </small>
+          <strong>{character.nameKo}</strong>
+          <span>
+            {character.kind === "pickup"
+              ? character.pickupTitle
+              : character.name}
+          </span>
+        </span>
+      </button>
+    );
   };
 
   return (
@@ -398,8 +422,9 @@ export function DreamPage({
             홀로도리를 한곳에서
           </h2>
           <p>
-            공식 출시 명단 {characters.length}명을 체크하고, 새 픽업 일정과
-            지난 기록을 확인한 뒤 실제 제공 비율로 뽑기 결과를 계산해 보세요.
+            기본 캐릭터 {baseCharacters.length}명과 픽업 카드{" "}
+            {pickupCharacters.length}장을 체크하고, 픽업별 나의 운 기록도
+            계속 모아 보세요.
           </p>
         </div>
 
@@ -448,11 +473,11 @@ export function DreamPage({
                 <span>MY COLLECTION</span>
                 <strong>
                   {ownedCount}
-                  <small> / {characters.length}명</small>
+                  <small> / {collectionCharacters.length}장</small>
                 </strong>
                 <p>
-                  캐릭터를 누르면 보유 상태가 바뀝니다. 모두 모을 때까지 한 명씩
-                  채워 보세요.
+                  기본 캐릭터와 같은 멤버의 픽업 카드는 별도로 체크됩니다.
+                  카드를 누르면 보유 상태가 바뀝니다.
                 </p>
               </div>
             </div>
@@ -486,16 +511,18 @@ export function DreamPage({
           </div>
 
           <div className="dream-filter-bar">
-            <div className="dream-branch-tabs" aria-label="지부 선택">
-              {BRANCHES.map((branch) => (
+            <div className="dream-branch-tabs" aria-label="수집 카드 분류 선택">
+              {COLLECTION_FILTERS.map((filter) => (
                 <button
                   type="button"
-                  key={branch.value}
-                  className={branchFilter === branch.value ? "is-active" : ""}
-                  aria-pressed={branchFilter === branch.value}
-                  onClick={() => setBranchFilter(branch.value)}
+                  key={filter.value}
+                  className={
+                    collectionFilter === filter.value ? "is-active" : ""
+                  }
+                  aria-pressed={collectionFilter === filter.value}
+                  onClick={() => setCollectionFilter(filter.value)}
                 >
-                  {branch.label}
+                  {filter.label}
                 </button>
               ))}
             </div>
@@ -512,56 +539,58 @@ export function DreamPage({
                 </button>
               ))}
             </div>
-            <strong className="dream-result-count">{filteredCharacters.length}명</strong>
+            <strong className="dream-result-count">
+              {filteredCharacters.length}장
+            </strong>
           </div>
 
           {filteredCharacters.length ? (
-            <div className="dream-character-grid">
-              {filteredCharacters.map((character) => {
-                const isOwned = ownedIds.has(character.id);
-                const talent = talentById.get(character.talentId);
-                const accent = character.accent || talent?.accent || "#7c83ee";
+            <div className="dream-collection-groups">
+              {filteredPickupCharacters.length ? (
+                <section
+                  className="dream-collection-group is-pickup"
+                  aria-labelledby="dream-pickup-collection-title"
+                >
+                  <div className="dream-collection-group__heading">
+                    <div>
+                      <small>PICKUP COLLECTION</small>
+                      <h3 id="dream-pickup-collection-title">
+                        픽업 카드
+                      </h3>
+                    </div>
+                    <span>{filteredPickupCharacters.length}장</span>
+                  </div>
+                  <div className="dream-character-grid is-pickup-grid">
+                    {filteredPickupCharacters.map(renderCollectionCard)}
+                  </div>
+                </section>
+              ) : null}
 
-                return (
-                  <button
-                    type="button"
-                    key={character.id}
-                    className={`dream-character-card${isOwned ? " is-owned" : ""}`}
-                    style={{ "--dream-accent": accent } as CSSProperties}
-                    aria-pressed={isOwned}
-                    aria-label={`${character.nameKo} ${isOwned ? "보유 중. 미보유로 변경" : "미보유. 보유로 변경"}`}
-                    onClick={() => toggleOwned(character.id)}
-                  >
-                    <span className="dream-character-image">
-                      <img
-                        src={character.imageUrl}
-                        alt=""
-                        loading="lazy"
-                        decoding="async"
-                      />
-                      <span className="dream-owned-check" aria-hidden="true">
-                        <Check size={16} strokeWidth={3} />
-                      </span>
-                      <span className="dream-owned-label">
-                        {isOwned ? "보유" : "미보유"}
-                      </span>
-                    </span>
-                    <span className="dream-character-copy">
-                      <small>
-                        {character.branch} · {character.generation}
-                      </small>
-                      <strong>{character.nameKo}</strong>
-                      <span>{character.name}</span>
-                    </span>
-                  </button>
-                );
-              })}
+              {filteredBaseCharacters.length ? (
+                <section
+                  className="dream-collection-group"
+                  aria-labelledby="dream-base-collection-title"
+                >
+                  <div className="dream-collection-group__heading">
+                    <div>
+                      <small>BASE COLLECTION</small>
+                      <h3 id="dream-base-collection-title">
+                        기본 캐릭터
+                      </h3>
+                    </div>
+                    <span>{filteredBaseCharacters.length}장</span>
+                  </div>
+                  <div className="dream-character-grid">
+                    {filteredBaseCharacters.map(renderCollectionCard)}
+                  </div>
+                </section>
+              ) : null}
             </div>
           ) : (
             <div className="dream-empty">
               <SearchX size={30} aria-hidden="true" />
-              <strong>조건에 맞는 캐릭터가 없습니다</strong>
-              <p>검색어나 지부·보유 필터를 바꿔 주세요.</p>
+              <strong>조건에 맞는 수집 카드가 없습니다</strong>
+              <p>검색어나 분류·보유 필터를 바꿔 주세요.</p>
             </div>
           )}
         </>
@@ -634,7 +663,7 @@ export function DreamPage({
                 <div className="dream-input-suffix">
                   <input
                     type="number"
-                    min="0"
+                    min="1"
                     max="10000"
                     step="1"
                     inputMode="numeric"
@@ -687,8 +716,8 @@ export function DreamPage({
                 <Sparkles size={27} aria-hidden="true" />
                 <strong>입력값을 확인해 주세요</strong>
                 <p>
-                  뽑기 수와 획득 수는 0 이상 정수로 입력하고, 실제 획득 수는 확정
-                  획득 수 이상이어야 합니다.
+                  뽑기 수는 1 이상, 획득 수는 0 이상 정수로 입력하고 실제 획득
+                  수는 확정 획득 수 이상이어야 합니다.
                 </p>
                 <span>확률은 선택한 게임 내 제공 비율로 자동 적용됩니다.</span>
               </div>

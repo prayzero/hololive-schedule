@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import { useMemo, type CSSProperties } from "react";
 import type { DreamPickup, Talent } from "../types";
+import { DreamPickupLuckArchive } from "./DreamPickupLuckArchive";
 
 type PickupStatus = "upcoming" | "ongoing" | "ended";
 
@@ -285,6 +286,10 @@ export function DreamPickupPanel({
           <p>멤버 이름이나 픽업 이름으로 다시 검색해 주세요.</p>
         </div>
       )}
+
+      <DreamPickupLuckArchive
+        pickups={pickupEntries.map(({ pickup }) => pickup)}
+      />
 
       <section
         className="dream-pickup-history"

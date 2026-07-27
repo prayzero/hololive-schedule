@@ -80,6 +80,7 @@
       "id": "holonatsu-paradise-2026",
       "title": "수영복 홀로멤 선택 픽업",
       "subtitle": "신규 ★5 홀로멤 5명 중 원하는 1명을 선택 · 픽업 확률 1%",
+      "targetRatePercent": 1,
       "startsOn": "2026-07-28",
       "endsOn": null,
       "announcedOn": "2026-07-27",

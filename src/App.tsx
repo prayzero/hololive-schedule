@@ -75,7 +75,7 @@ type PageView =
   | "music"
   | "dream";
 type ConcertPeriod = "upcoming" | "past";
-type DreamPanel = "collection" | "calculator";
+type DreamPanel = "collection" | "pickup" | "calculator";
 type YouTubeCategoryFilter = "all" | YouTubeLiveCategory;
 type BroadcastStatus = "live" | "upcoming" | "ended";
 type EventStatus = "ongoing" | "upcoming" | "ended";
@@ -288,7 +288,8 @@ function initialYouTubeCategory(): YouTubeCategoryFilter {
 }
 
 function initialDreamPanel(): DreamPanel {
-  return paramValue("dream") === "calculator" ? "calculator" : "collection";
+  const value = paramValue("dream");
+  return value === "pickup" || value === "calculator" ? value : "collection";
 }
 
 function dateKey(date: Date): string {
@@ -1546,9 +1547,9 @@ export default function App() {
     }, 0);
   }
 
-  function openDreamCalculator() {
+  function openDreamPickup() {
     setView("dream");
-    setDreamPanel("calculator");
+    setDreamPanel("pickup");
     setQuery("");
     window.setTimeout(() => {
       document
@@ -1745,7 +1746,7 @@ export default function App() {
                     <Check size={15} aria-hidden="true" /> 이 브라우저에 자동 저장
                   </span>
                   <span>
-                    <Sparkles size={15} aria-hidden="true" /> 무료 확률 계산
+                    <CalendarDays size={15} aria-hidden="true" /> 픽업 일정 · 기록
                   </span>
                 </>
               ) : view === "music" ? (
@@ -1805,21 +1806,21 @@ export default function App() {
                     <span>★3 · ★4 · ★5</span>
                   </div>
                   <div>
-                    <Globe2 size={18} aria-hidden="true" />
-                    <strong>3</strong>
-                    <span>모바일 · PC</span>
+                    <CalendarDays size={18} aria-hidden="true" />
+                    <strong>{data?.hololiveDreams.pickups?.length ?? 1}</strong>
+                    <span>픽업 기록</span>
                   </div>
                 </div>
                 <button
                   type="button"
                   className="featured-solo dream-calculator-cta"
-                  onClick={openDreamCalculator}
+                  onClick={openDreamPickup}
                 >
-                  <Sparkles size={30} aria-hidden="true" />
+                  <CalendarDays size={30} aria-hidden="true" />
                   <span>
-                    <small>LUCK CALCULATOR</small>
-                    <strong>이번 뽑기, 얼마나 운이 좋았을까요?</strong>
-                    <em>실제 확률과 결과를 넣어 바로 계산해 보세요.</em>
+                    <small>NEXT PICKUP · 07.28</small>
+                    <strong>수영복 홀로멤 선택 픽업</strong>
+                    <em>신규 ★5 홀로멤 5명과 선택 픽업 1%를 확인해 보세요.</em>
                   </span>
                   <ArrowRight size={19} aria-hidden="true" />
                 </button>
@@ -2374,6 +2375,7 @@ export default function App() {
               talents={talents}
               query={query}
               panel={dreamPanel}
+              now={now}
               onPanelChange={setDreamPanel}
             />
           ) : (

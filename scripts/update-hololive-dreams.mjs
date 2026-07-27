@@ -98,12 +98,76 @@ const characters = officialRoster.map(([officialName, imageUrl]) => {
   };
 });
 
+const pickups = [
+  {
+    id: "holonatsu-paradise-2026",
+    title: "수영복 홀로멤 선택 픽업",
+    subtitle: "신규 ★5 홀로멤 5명 중 원하는 1명을 선택 · 픽업 확률 1%",
+    startsOn: "2026-07-28",
+    endsOn: null,
+    announcedOn: "2026-07-27",
+    sourceLabel: "hololive Dreams 공식 릴리스 기념 방송",
+    sourceUrl: "https://www.youtube.com/watch?v=_qHZCR8AcSg",
+    scheduleNote:
+      "대상 5명은 이후 통상 가챠에도 추가 예정입니다. 종료 일정은 확인되는 대로 반영합니다.",
+    cards: [
+      {
+        id: "holonatsu-2026-otonose-kanade",
+        talentId: "otonose-kanade",
+        rarity: 5,
+        imageUrl:
+          "images/dream-pickups/holonatsu-2026/otonose-kanade.png",
+        imageAlt: "수영복 의상의 오토노세 카나데 픽업 일러스트",
+        imagePosition: "50% 45%",
+      },
+      {
+        id: "holonatsu-2026-shirogane-noel",
+        talentId: "shirogane-noel",
+        rarity: 5,
+        imageUrl:
+          "images/dream-pickups/holonatsu-2026/shirogane-noel.png",
+        imageAlt: "수영복 의상의 시로가네 노엘 픽업 일러스트",
+        imagePosition: "50% 44%",
+      },
+      {
+        id: "holonatsu-2026-shiranui-flare",
+        talentId: "shiranui-flare",
+        rarity: 5,
+        imageUrl:
+          "images/dream-pickups/holonatsu-2026/shiranui-flare.png",
+        imageAlt: "수영복 의상의 시라누이 후레아 픽업 일러스트",
+        imagePosition: "50% 42%",
+        imageScale: 1.22,
+      },
+      {
+        id: "holonatsu-2026-oozora-subaru",
+        talentId: "oozora-subaru",
+        rarity: 5,
+        imageUrl:
+          "images/dream-pickups/holonatsu-2026/oozora-subaru.png",
+        imageAlt: "수영복 의상의 오오조라 스바루 픽업 일러스트",
+        imagePosition: "50% 42%",
+        imageScale: 1.22,
+      },
+      {
+        id: "holonatsu-2026-tsunomaki-watame",
+        talentId: "tsunomaki-watame",
+        rarity: 5,
+        imageUrl:
+          "images/dream-pickups/holonatsu-2026/tsunomaki-watame.png",
+        imageAlt: "수영복 의상의 츠노마키 와타메 픽업 일러스트",
+        imagePosition: "50% 43%",
+      },
+    ],
+  },
+];
+
 const payload = {
-  checkedAt: "2026-07-26T00:00:00+09:00",
+  checkedAt: "2026-07-27T00:00:00+09:00",
   sourceUrl: "https://www.hololive-dreams.com/en",
   officialNewsUrl: "https://hololive.hololivepro.com/en/news/20260723-01-401/",
   sourceNote:
-    "hololive Dreams 공식 영어 사이트에 공개된 출시 캐릭터 54명과 공식 썸네일을 사용합니다. 뽑기 확률은 게임 내 제공 비율 화면을 2026-07-26에 확인한 자료를 기준으로 하며, 공식 공개 웹사이트에는 확률표 원문이 게시되어 있지 않습니다.",
+    "hololive Dreams 공식 영어 사이트에 공개된 출시 캐릭터 54명과 공식 썸네일을 사용합니다. 신규 픽업 일정·대상·선택 확률은 2026-07-27 공식 릴리스 기념 방송의 발표를, 기본 뽑기 확률은 게임 내 제공 비율 화면을 기준으로 합니다.",
   launchDate: "2026-07-23",
   game: {
     title: "hololive Dreams",
@@ -118,8 +182,8 @@ const payload = {
   rarities: [3, 4, 5],
   ratesPublishedOnOfficialWeb: false,
   gachaRates: {
-    verifiedAt: "2026-07-26T13:20:00+09:00",
-    sourceLabel: "게임 내 제공 비율",
+    verifiedAt: "2026-07-27T20:30:00+09:00",
+    sourceLabel: "게임 내 제공 비율 · 공식 방송",
     normalRates: {
       star3: 85,
       star4: 10,
@@ -131,6 +195,13 @@ const payload = {
       star5: 5,
     },
     targetPresets: [
+      {
+        id: "summer-selected-star5",
+        label: "수영복 선택 픽업 ★5",
+        shortLabel: "현재 픽업",
+        ratePercent: 1,
+        note: "수영복 홀로멤 5명 중 선택한 특정 ★5 멤버 1명",
+      },
       {
         id: "standard-specific-star5",
         label: "통상 특정 ★5 멤버",
@@ -161,12 +232,13 @@ const payload = {
       },
     ],
     rateReferenceUrl: "https://game8.jp/hololive-dreams/800526",
-    pickupReferenceUrl: "https://game8.jp/hololive-dreams/800932",
+    pickupReferenceUrl: "https://www.youtube.com/watch?v=_qHZCR8AcSg",
     screenshotReferenceUrl:
       "https://appmedia.jp/wp-content/uploads/2026/07/135040_8l2nf.webp",
     officialNoticeUrl:
       "https://www.hololive-dreams.com/news/detail/aku8rsuo9",
   },
+  pickups,
   characters,
 };
 
@@ -202,5 +274,23 @@ for (const character of characters) {
   }
 }
 
+for (const pickup of pickups) {
+  if (!pickup.id || !pickup.title || !pickup.startsOn || !pickup.sourceUrl) {
+    throw new Error(`픽업 필수 정보가 비어 있습니다: ${pickup.id}`);
+  }
+  if (!pickup.cards.length) {
+    throw new Error(`픽업 카드가 비어 있습니다: ${pickup.id}`);
+  }
+  for (const card of pickup.cards) {
+    if (!talentPayload.talents.some(({ id }) => id === card.talentId)) {
+      throw new Error(
+        `${pickup.id}: talents.json에서 찾을 수 없는 픽업 멤버 ${card.talentId}`,
+      );
+    }
+  }
+}
+
 await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
-console.log(`hololive Dreams 데이터 생성 완료: ${characters.length}명`);
+console.log(
+  `hololive Dreams 데이터 생성 완료: ${characters.length}명 · 픽업 ${pickups.length}건`,
+);

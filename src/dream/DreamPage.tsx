@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState, type CSSProperties } from "react";
 import {
   BarChart3,
   Calculator,
+  CalendarDays,
   Check,
   ChevronRight,
   ExternalLink,
@@ -14,11 +15,12 @@ import {
   Users,
 } from "lucide-react";
 import type { HololiveDreamsPayload, Talent, TalentBranch } from "../types";
+import { DreamPickupPanel } from "./DreamPickupPanel";
 import "./dream.css";
 
 const STORAGE_KEY = "holo-now:dream-owned:v1";
 
-type DreamPanel = "collection" | "calculator";
+type DreamPanel = "collection" | "pickup" | "calculator";
 type BranchFilter = "ALL" | TalentBranch;
 type OwnedFilter = "all" | "owned" | "missing";
 
@@ -27,6 +29,7 @@ interface DreamPageProps {
   talents: Talent[];
   query: string;
   panel: DreamPanel;
+  now: Date;
   onPanelChange: (panel: DreamPanel) => void;
 }
 
@@ -175,13 +178,14 @@ export function DreamPage({
   talents,
   query,
   panel,
+  now,
   onPanelChange,
 }: DreamPageProps) {
   const [ownedIds, setOwnedIds] = useState<Set<string>>(readOwnedCharacters);
   const [branchFilter, setBranchFilter] = useState<BranchFilter>("ALL");
   const [ownedFilter, setOwnedFilter] = useState<OwnedFilter>("all");
   const [ratePresetId, setRatePresetId] = useState(
-    "standard-specific-star5",
+    "summer-selected-star5",
   );
   const [pullInput, setPullInput] = useState("10");
   const [acquiredInput, setAcquiredInput] = useState("0");
@@ -389,13 +393,13 @@ export function DreamPage({
             HOLOLIVE DREAMS
           </span>
           <h2 id="dream-section-title">
-            뽑은 캐릭터와
+            캐릭터부터 픽업까지
             <br />
-            나의 운을 한곳에서
+            홀로도리를 한곳에서
           </h2>
           <p>
-            공식 출시 명단 {characters.length}명을 체크하고, 배너의 실제 제공
-            비율로 뽑기 결과를 계산해 보세요.
+            공식 출시 명단 {characters.length}명을 체크하고, 새 픽업 일정과
+            지난 기록을 확인한 뒤 실제 제공 비율로 뽑기 결과를 계산해 보세요.
           </p>
         </div>
 
@@ -411,12 +415,21 @@ export function DreamPage({
           </button>
           <button
             type="button"
+            className={panel === "pickup" ? "is-active" : ""}
+            aria-current={panel === "pickup" ? "page" : undefined}
+            onClick={() => onPanelChange("pickup")}
+          >
+            <CalendarDays size={17} aria-hidden="true" />
+            픽업 일정
+          </button>
+          <button
+            type="button"
             className={panel === "calculator" ? "is-active" : ""}
             aria-current={panel === "calculator" ? "page" : undefined}
             onClick={() => onPanelChange("calculator")}
           >
             <Calculator size={17} aria-hidden="true" />
-            확률 · 운 계산기
+            확률 계산기
           </button>
         </nav>
       </div>
@@ -552,6 +565,13 @@ export function DreamPage({
             </div>
           )}
         </>
+      ) : panel === "pickup" ? (
+        <DreamPickupPanel
+          pickups={payload.pickups ?? []}
+          talents={talents}
+          query={query}
+          now={now}
+        />
       ) : (
         <div className="dream-calculator-layout">
           <div className="dream-calculator-card">

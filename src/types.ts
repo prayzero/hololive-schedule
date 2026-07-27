@@ -233,6 +233,29 @@ export interface DreamGachaRates {
   officialNoticeUrl: string;
 }
 
+export interface DreamPickupCard {
+  id: string;
+  talentId: string;
+  rarity: number | null;
+  imageUrl: string;
+  imageAlt: string;
+  imagePosition?: string;
+  imageScale?: number;
+}
+
+export interface DreamPickup {
+  id: string;
+  title: string;
+  subtitle: string;
+  startsOn: string;
+  endsOn: string | null;
+  announcedOn: string;
+  sourceLabel: string;
+  sourceUrl: string;
+  scheduleNote: string;
+  cards: DreamPickupCard[];
+}
+
 export interface HololiveDreamsPayload {
   checkedAt: string;
   sourceUrl: string;
@@ -243,5 +266,6 @@ export interface HololiveDreamsPayload {
   rarities: number[];
   ratesPublishedOnOfficialWeb: boolean;
   gachaRates: DreamGachaRates;
+  pickups: DreamPickup[];
   characters: DreamCharacter[];
 }

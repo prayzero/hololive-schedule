@@ -77,6 +77,7 @@ type PageView =
 type ConcertPeriod = "upcoming" | "past";
 type DreamPanel = "collection" | "pickup" | "calculator";
 type YouTubeCategoryFilter = "all" | YouTubeLiveCategory;
+type LocalEventFilter = "ALL" | "JP" | "KR" | "ENDED";
 type BroadcastStatus = "live" | "upcoming" | "ended";
 type EventStatus = "ongoing" | "upcoming" | "ended";
 
@@ -898,7 +899,10 @@ export default function App() {
   const [selectedMemberId, setSelectedMemberId] = useState(
     () => paramValue("member") ?? "",
   );
-  const [region, setRegion] = useState<"ALL" | "JP" | "KR">(() => {
+  const [region, setRegion] = useState<LocalEventFilter>(() => {
+    if (paramValue("status") === "ended") {
+      return "ENDED";
+    }
     const value = paramValue("region");
     return value === "JP" || value === "KR" ? value : "ALL";
   });
@@ -920,7 +924,10 @@ export default function App() {
             cache: "no-store",
             signal: controller.signal,
           }),
-          fetch(DATA_URLS.events, { signal: controller.signal }),
+          fetch(DATA_URLS.events, {
+            cache: "no-store",
+            signal: controller.signal,
+          }),
           fetch(DATA_URLS.talents, { signal: controller.signal }),
           fetch(DATA_URLS.solos, { signal: controller.signal }),
           fetch(DATA_URLS.youtubeLives, { signal: controller.signal }),
@@ -1074,8 +1081,12 @@ export default function App() {
       params.set("member", selectedMemberId);
     }
 
-    if (view === "local" && region !== "ALL") {
-      params.set("region", region);
+    if (view === "local") {
+      if (region === "ENDED") {
+        params.set("status", "ended");
+      } else if (region !== "ALL") {
+        params.set("region", region);
+      }
     }
 
     if (view === "dream") {
@@ -1489,10 +1500,20 @@ export default function App() {
             (event.region === "JP" || event.region === "KR") &&
             (event.categories.includes("collaboration") ||
               event.categories.includes("exhibition") ||
-              event.categories.includes("festival")) &&
-            new Date(event.endsAt).getTime() >= now.getTime(),
+              event.categories.includes("festival")),
         )
-        .filter((event) => region === "ALL" || event.region === region)
+        .filter((event) => {
+          const status = eventStatus(event, now);
+          return region === "ENDED"
+            ? status === "ended"
+            : status !== "ended";
+        })
+        .filter(
+          (event) =>
+            region === "ALL" ||
+            region === "ENDED" ||
+            event.region === region,
+        )
         .filter((event) =>
           includesQuery(
             [
@@ -1506,6 +1527,12 @@ export default function App() {
           ),
         )
         .sort((left, right) => {
+          if (region === "ENDED") {
+            return (
+              new Date(right.endsAt).getTime() -
+              new Date(left.endsAt).getTime()
+            );
+          }
           const leftStatus = eventStatus(left, now);
           const rightStatus = eventStatus(right, now);
           return (
@@ -1736,46 +1763,32 @@ export default function App() {
               ) : null}
             </div>
 
-            <div className="hero-trust-row">
-              {view === "dream" ? (
-                <>
-                  <span>
-                    <UsersRound size={15} aria-hidden="true" /> 공식 참여 멤버 54명
-                  </span>
-                  <span>
-                    <Check size={15} aria-hidden="true" /> 이 브라우저에 자동 저장
-                  </span>
-                  <span>
-                    <CalendarDays size={15} aria-hidden="true" /> 픽업 일정 · 기록
-                  </span>
-                </>
-              ) : view === "music" ? (
-                <>
-                  <span>
-                    <UsersRound size={15} aria-hidden="true" />{" "}
-                    {musicData?.members.length ?? 65}명 음악 기록
-                  </span>
-                  <span>
-                    <Disc3 size={15} aria-hidden="true" /> 앨범 · 콜라보 · 커버
-                  </span>
-                  <span>
-                    <Check size={15} aria-hidden="true" /> 공식 감상 링크
-                  </span>
-                </>
-              ) : (
-                <>
-                  <span>
-                    <Check size={15} aria-hidden="true" /> hololive 채널 전용
-                  </span>
-                  <span>
-                    <Globe2 size={15} aria-hidden="true" /> KST · JST
-                  </span>
-                  <span>
-                    <Sparkles size={15} aria-hidden="true" /> 무료 자동 업데이트
-                  </span>
-                </>
-              )}
-            </div>
+            {view === "dream" ? (
+              <div className="hero-trust-row">
+                <span>
+                  <UsersRound size={15} aria-hidden="true" /> 공식 참여 멤버 54명
+                </span>
+                <span>
+                  <Check size={15} aria-hidden="true" /> 이 브라우저에 자동 저장
+                </span>
+                <span>
+                  <CalendarDays size={15} aria-hidden="true" /> 픽업 일정 · 기록
+                </span>
+              </div>
+            ) : view === "music" ? (
+              <div className="hero-trust-row">
+                <span>
+                  <UsersRound size={15} aria-hidden="true" />{" "}
+                  {musicData?.members.length ?? 65}명 음악 기록
+                </span>
+                <span>
+                  <Disc3 size={15} aria-hidden="true" /> 앨범 · 콜라보 · 커버
+                </span>
+                <span>
+                  <Check size={15} aria-hidden="true" /> 공식 감상 링크
+                </span>
+              </div>
+            ) : null}
           </div>
 
           <aside
@@ -2298,21 +2311,28 @@ export default function App() {
             <SectionHeading
               eyebrow="OFFLINE & COLLAB"
               title="일본 · 한국 현지 일정"
-              description="공식 공지와 협업사 페이지에서 기간과 장소가 확인된 행사만 실었습니다."
+              description="진행·예정 행사는 지역별로 보고, 기간이 지난 행사는 종료 기록에서 다시 볼 수 있습니다."
               action={
-                <div className="region-tabs" aria-label="지역 선택">
-                  {(["ALL", "JP", "KR"] as const).map((item) => (
+                <div
+                  className="region-tabs"
+                  aria-label="현지 일정 지역과 상태 선택"
+                >
+                  {(["ALL", "JP", "KR", "ENDED"] as const).map((item) => (
                     <button
                       type="button"
                       key={item}
-                      className={region === item ? "is-active" : ""}
+                      className={`${region === item ? "is-active" : ""}${
+                        item === "ENDED" ? " is-ended" : ""
+                      }`}
                       onClick={() => setRegion(item)}
                     >
                       {item === "ALL"
                         ? "전체"
                         : item === "JP"
                           ? "일본"
-                          : "한국"}
+                          : item === "KR"
+                            ? "한국"
+                            : "종료"}
                     </button>
                   ))}
                 </div>
@@ -2334,8 +2354,16 @@ export default function App() {
               </div>
             ) : (
               <EmptyState
-                title="조건에 맞는 현지 행사가 없습니다"
-                description="다른 지역을 선택하거나 검색어를 지워보세요."
+                title={
+                  region === "ENDED"
+                    ? "조건에 맞는 종료 행사가 없습니다"
+                    : "조건에 맞는 현지 행사가 없습니다"
+                }
+                description={
+                  region === "ENDED"
+                    ? "검색어를 지우면 보관된 종료 행사 전체를 볼 수 있습니다."
+                    : "다른 지역을 선택하거나 검색어를 지워보세요."
+                }
               />
             )}
 

@@ -1725,6 +1725,10 @@ img {
   background: linear-gradient(135deg, #25b99d, #429edc);
 }
 
+.region-tabs button.is-active.is-ended {
+  background: linear-gradient(135deg, #78869b, #606a7c);
+}
+
 .segmented-tabs button span {
   display: grid;
   min-width: 20px;

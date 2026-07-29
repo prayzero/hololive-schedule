@@ -1389,6 +1389,12 @@ export default function App() {
     }
   };
 
+  const openSchedule = () => {
+    setView("schedule");
+    setSelectedDate(dateKey(new Date()));
+    setHideEnded(true);
+  };
+
   const visibleBroadcasts = useMemo(
     () =>
       hololiveSchedule.filter((entry) => {
@@ -1843,7 +1849,7 @@ export default function App() {
         <button
           type="button"
           className="brand"
-          onClick={() => setView("schedule")}
+          onClick={openSchedule}
           aria-label="HOLO NOW 방송 일정 홈"
         >
           <span className="brand-mark" aria-hidden="true">
@@ -1862,7 +1868,9 @@ export default function App() {
               type="button"
               key={item.id}
               className={view === item.id ? "is-active" : ""}
-              onClick={() => setView(item.id)}
+              onClick={() =>
+                item.id === "schedule" ? openSchedule() : setView(item.id)
+              }
               aria-current={view === item.id ? "page" : undefined}
             >
               <span className="nav-full-label">{item.label}</span>

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-29T16:35:58.720Z",
+  "generatedAt": "2026-07-29T17:51:47.753Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -2711,6 +2711,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "LH9DzC2gaM0",
+      "date": "2026-07-30",
+      "dateLabel": "07/30 (木)",
+      "time": "12:00",
+      "startsAt": "2026-07-30T12:00:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=LH9DzC2gaM0",
+      "videoId": "LH9DzC2gaM0",
+      "thumbnail": "https://img.youtube.com/vi/LH9DzC2gaM0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "TmzVzJ5noWc",
+      "date": "2026-07-30",
+      "dateLabel": "07/30 (木)",
+      "time": "18:00",
+      "startsAt": "2026-07-30T18:00:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=TmzVzJ5noWc",
+      "videoId": "TmzVzJ5noWc",
+      "thumbnail": "https://img.youtube.com/vi/TmzVzJ5noWc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "SsA1gw9yCbw",

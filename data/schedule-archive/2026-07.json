@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-29T12:32:08.908Z",
+  "generatedAt": "2026-07-29T14:54:12.252Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -2503,26 +2503,11 @@
       "branch": "JP"
     },
     {
-      "id": "X6N4yyRtQKY",
-      "date": "2026-07-29",
-      "dateLabel": "07/29 (水)",
-      "time": "22:00",
-      "startsAt": "2026-07-29T22:00:00+09:00",
-      "name": "轟はじめ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=X6N4yyRtQKY",
-      "videoId": "X6N4yyRtQKY",
-      "thumbnail": "https://img.youtube.com/vi/X6N4yyRtQKY/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "DEV_IS"
-    },
-    {
       "id": "egKbcgtwcPc",
       "date": "2026-07-29",
       "dateLabel": "07/29 (水)",
-      "time": "22:00",
-      "startsAt": "2026-07-29T22:00:00+09:00",
+      "time": "21:59",
+      "startsAt": "2026-07-29T21:59:00+09:00",
       "name": "兎田ぺこら",
       "title": null,
       "url": "https://www.youtube.com/watch?v=egKbcgtwcPc",
@@ -2548,6 +2533,21 @@
       "branch": "ID"
     },
     {
+      "id": "X6N4yyRtQKY",
+      "date": "2026-07-29",
+      "dateLabel": "07/29 (水)",
+      "time": "22:02",
+      "startsAt": "2026-07-29T22:02:00+09:00",
+      "name": "轟はじめ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=X6N4yyRtQKY",
+      "videoId": "X6N4yyRtQKY",
+      "thumbnail": "https://img.youtube.com/vi/X6N4yyRtQKY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "DCeQspn6DUc",
       "date": "2026-07-29",
       "dateLabel": "07/29 (水)",
@@ -2561,6 +2561,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "szaHA4RcNUo",
+      "date": "2026-07-29",
+      "dateLabel": "07/29 (水)",
+      "time": "23:00",
+      "startsAt": "2026-07-29T23:00:00+09:00",
+      "name": "大神ミオ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=szaHA4RcNUo",
+      "videoId": "szaHA4RcNUo",
+      "thumbnail": "https://img.youtube.com/vi/szaHA4RcNUo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "wZmYx-1GdtM",
@@ -2596,8 +2611,8 @@
       "id": "iBwdA4RWQUM",
       "date": "2026-07-29",
       "dateLabel": "07/29 (水)",
-      "time": "23:00",
-      "startsAt": "2026-07-29T23:00:00+09:00",
+      "time": "23:01",
+      "startsAt": "2026-07-29T23:01:00+09:00",
       "name": "宝鐘マリン",
       "title": null,
       "url": "https://www.youtube.com/watch?v=iBwdA4RWQUM",
@@ -2611,8 +2626,8 @@
       "id": "H-00TwX9R0c",
       "date": "2026-07-29",
       "dateLabel": "07/29 (水)",
-      "time": "23:00",
-      "startsAt": "2026-07-29T23:00:00+09:00",
+      "time": "23:17",
+      "startsAt": "2026-07-29T23:17:00+09:00",
       "name": "Raora",
       "title": null,
       "url": "https://www.youtube.com/watch?v=H-00TwX9R0c",
@@ -2621,6 +2636,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "i9GLY24WvGU",
+      "date": "2026-07-29",
+      "dateLabel": "07/29 (水)",
+      "time": "23:32",
+      "startsAt": "2026-07-29T23:32:00+09:00",
+      "name": "Reine",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=i9GLY24WvGU",
+      "videoId": "i9GLY24WvGU",
+      "thumbnail": "https://img.youtube.com/vi/i9GLY24WvGU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "HAGJ50Zpzy0",
@@ -2668,6 +2698,21 @@
       "branch": "EN"
     },
     {
+      "id": "NAnq7y5YQCk",
+      "date": "2026-07-30",
+      "dateLabel": "07/30 (木)",
+      "time": "19:00",
+      "startsAt": "2026-07-30T19:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=NAnq7y5YQCk",
+      "videoId": "NAnq7y5YQCk",
+      "thumbnail": "https://img.youtube.com/vi/NAnq7y5YQCk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "DQemCAxKpAo",
       "date": "2026-07-30",
       "dateLabel": "07/30 (木)",
@@ -2693,6 +2738,21 @@
       "url": "https://www.youtube.com/watch?v=r2UcH814i7w",
       "videoId": "r2UcH814i7w",
       "thumbnail": "https://img.youtube.com/vi/r2UcH814i7w/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "ftGnFcTMdSE",
+      "date": "2026-07-30",
+      "dateLabel": "07/30 (木)",
+      "time": "20:00",
+      "startsAt": "2026-07-30T20:00:00+09:00",
+      "name": "白上フブキ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ftGnFcTMdSE",
+      "videoId": "ftGnFcTMdSE",
+      "thumbnail": "https://img.youtube.com/vi/ftGnFcTMdSE/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

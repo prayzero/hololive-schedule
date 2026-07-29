@@ -1130,11 +1130,52 @@ img {
   box-shadow: var(--shadow-sm);
 }
 
+.schedule-date-picker {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  align-items: center;
+  gap: 9px;
+}
+
+.date-jump-control {
+  display: flex;
+  flex: 0 0 172px;
+  min-height: 43px;
+  align-items: center;
+  gap: 8px;
+  padding: 0 10px 0 13px;
+  border: 1px solid #dbe5f0;
+  border-radius: 13px;
+  color: #7790a8;
+  background: #f8fbfe;
+}
+
+.date-jump-control > span {
+  flex: 0 0 auto;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.date-jump-control select {
+  min-width: 0;
+  flex: 1;
+  border: 0;
+  color: #40556d;
+  background: transparent;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 800;
+}
+
 .date-tabs {
   display: flex;
+  flex: 1;
   min-width: 0;
   gap: 5px;
   overflow-x: auto;
+  scroll-snap-type: x proximity;
   scrollbar-width: none;
 }
 
@@ -1158,6 +1199,7 @@ img {
   cursor: pointer;
   font-size: 12px;
   font-weight: 750;
+  scroll-snap-align: center;
 }
 
 .date-tabs button:hover {
@@ -2680,6 +2722,16 @@ select:focus-visible {
   .schedule-controls {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .schedule-date-picker {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .date-jump-control {
+    flex-basis: auto;
+    width: 100%;
   }
 
   .date-tabs {

@@ -49,6 +49,28 @@ export interface SchedulePayload {
   entries: ScheduleEntry[];
 }
 
+export interface ScheduleArchiveDate {
+  date: string;
+  month: string;
+  count: number;
+}
+
+export interface ScheduleArchiveMonth {
+  month: string;
+  count: number;
+  firstDate: string;
+  lastDate: string;
+  url: string;
+}
+
+export interface ScheduleIndexPayload {
+  updatedAt: string;
+  timezone: string;
+  totalEntries: number;
+  dates: ScheduleArchiveDate[];
+  months: ScheduleArchiveMonth[];
+}
+
 export type EventCategory =
   | "concert"
   | "solo"

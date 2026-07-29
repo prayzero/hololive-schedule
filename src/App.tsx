@@ -39,6 +39,7 @@ import type {
   EventsPayload,
   HololiveDreamsPayload,
   MusicPayload,
+  ScheduleIndexPayload,
   ScheduleEntry,
   SchedulePayload,
   SoloLive,
@@ -53,6 +54,7 @@ import type {
 const BASE_URL = import.meta.env.BASE_URL;
 const DATA_URLS = {
   schedule: `${BASE_URL}data/schedule.json`,
+  scheduleIndex: `${BASE_URL}data/schedule-index.json`,
   events: `${BASE_URL}data/events.json`,
   talents: `${BASE_URL}data/talents.json`,
   solos: `${BASE_URL}data/solo-lives.json`,
@@ -90,6 +92,7 @@ type EventStatus = "ongoing" | "upcoming" | "ended";
 
 interface LoadedData {
   schedule: SchedulePayload;
+  scheduleIndex: ScheduleIndexPayload;
   events: EventsPayload;
   talents: TalentsPayload;
   solos: SoloLivesPayload;
@@ -887,16 +890,27 @@ function LoadingGrid() {
 export default function App() {
   const [data, setData] = useState<LoadedData | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [archiveError, setArchiveError] = useState<string | null>(null);
+  const [archiveMonths, setArchiveMonths] = useState<
+    Record<string, ScheduleEntry[]>
+  >({});
+  const [archiveLoadingMonth, setArchiveLoadingMonth] = useState<string | null>(
+    null,
+  );
   const [musicData, setMusicData] = useState<MusicPayload | null>(null);
   const [musicError, setMusicError] = useState<string | null>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
+  const activeDateButtonRef = useRef<HTMLButtonElement>(null);
   const [now, setNow] = useState(() => new Date());
   const [view, setView] = useState<PageView>(initialView);
   const [query, setQuery] = useState(() => paramValue("q") ?? "");
   const [selectedDate, setSelectedDate] = useState(
     () => paramValue("day") ?? dateKey(new Date()),
   );
-  const [hideEnded, setHideEnded] = useState(true);
+  const [hideEnded, setHideEnded] = useState(() => {
+    const requestedDate = paramValue("day");
+    return !requestedDate || requestedDate >= dateKey(new Date());
+  });
   const [concertPeriod, setConcertPeriod] =
     useState<ConcertPeriod>(initialConcertPeriod);
   const [youtubeCategory, setYoutubeCategory] =
@@ -921,6 +935,7 @@ export default function App() {
       try {
         const [
           scheduleResponse,
+          scheduleIndexResponse,
           eventsResponse,
           talentsResponse,
           solosResponse,
@@ -928,6 +943,10 @@ export default function App() {
           hololiveDreamsResponse,
         ] = await Promise.all([
           fetch(DATA_URLS.schedule, {
+            cache: "no-store",
+            signal: controller.signal,
+          }),
+          fetch(DATA_URLS.scheduleIndex, {
             cache: "no-store",
             signal: controller.signal,
           }),
@@ -946,6 +965,7 @@ export default function App() {
 
         const responses = [
           scheduleResponse,
+          scheduleIndexResponse,
           eventsResponse,
           talentsResponse,
           solosResponse,
@@ -959,6 +979,7 @@ export default function App() {
 
         const [
           schedule,
+          scheduleIndex,
           events,
           talents,
           solos,
@@ -966,6 +987,7 @@ export default function App() {
           hololiveDreams,
         ] = await Promise.all([
             scheduleResponse.json() as Promise<SchedulePayload>,
+            scheduleIndexResponse.json() as Promise<ScheduleIndexPayload>,
             eventsResponse.json() as Promise<EventsPayload>,
             talentsResponse.json() as Promise<TalentsPayload>,
             solosResponse.json() as Promise<SoloLivesPayload>,
@@ -975,6 +997,7 @@ export default function App() {
 
         setData({
           schedule,
+          scheduleIndex,
           events,
           talents,
           solos,
@@ -1182,7 +1205,7 @@ export default function App() {
     [normalizedQuery, youtubeTalents],
   );
 
-  const hololiveSchedule = useMemo(
+  const currentSchedule = useMemo(
     () =>
       (data?.schedule.entries ?? [])
         .filter(isHololiveScheduleEntry)
@@ -1191,6 +1214,22 @@ export default function App() {
         ),
     [data?.schedule.entries],
   );
+
+  const hololiveSchedule = useMemo(() => {
+    const entriesByVideoId = new Map<string, ScheduleEntry>();
+
+    Object.values(archiveMonths)
+      .flat()
+      .filter(isHololiveScheduleEntry)
+      .forEach((entry) => entriesByVideoId.set(entry.videoId, entry));
+    currentSchedule.forEach((entry) =>
+      entriesByVideoId.set(entry.videoId, entry),
+    );
+
+    return [...entriesByVideoId.values()].sort((a, b) =>
+      String(a.startsAt ?? "").localeCompare(String(b.startsAt ?? "")),
+    );
+  }, [archiveMonths, currentSchedule]);
 
   const talentForBroadcast = (entry: ScheduleEntry): Talent | undefined => {
     const entryName = normalizeSearch(entry.name);
@@ -1207,22 +1246,27 @@ export default function App() {
   };
 
   const dateOptions = useMemo(() => {
-    const uniqueDates = Array.from(
-      new Set(
-        hololiveSchedule
-          .map((entry) => entry.date)
-          .filter((value): value is string => Boolean(value)),
-      ),
-    ).sort();
+    if (data?.scheduleIndex.dates.length) {
+      return data.scheduleIndex.dates.map(({ date, count }) => {
+        const parsed = new Date(`${date}T12:00:00+09:00`);
+        return { value: date, label: DAY_FORMATTER.format(parsed), count };
+      });
+    }
 
-    return uniqueDates.map((value) => {
-      const count = hololiveSchedule.filter(
-        (entry) => entry.date === value,
-      ).length;
+    const dateCounts = new Map<string, number>();
+    currentSchedule.forEach((entry) => {
+      if (entry.date) {
+        dateCounts.set(entry.date, (dateCounts.get(entry.date) ?? 0) + 1);
+      }
+    });
+
+    return [...dateCounts]
+      .sort(([left], [right]) => left.localeCompare(right))
+      .map(([value, count]) => {
       const parsed = new Date(`${value}T12:00:00+09:00`);
       return { value, label: DAY_FORMATTER.format(parsed), count };
-    });
-  }, [hololiveSchedule]);
+      });
+  }, [currentSchedule, data?.scheduleIndex.dates]);
 
   useEffect(() => {
     if (
@@ -1230,12 +1274,120 @@ export default function App() {
       !dateOptions.some((option) => option.value === selectedDate)
     ) {
       const today = dateKey(new Date());
+      const firstCurrentOrFuture = dateOptions.find(
+        (option) => option.value >= today,
+      );
       setSelectedDate(
         dateOptions.find((option) => option.value === today)?.value ??
-          dateOptions[0].value,
+          firstCurrentOrFuture?.value ??
+          dateOptions.at(-1)!.value,
       );
     }
   }, [dateOptions, selectedDate]);
+
+  const visibleDateOptions = useMemo(() => {
+    if (dateOptions.length <= 15) {
+      return dateOptions;
+    }
+
+    const selectedIndex = Math.max(
+      0,
+      dateOptions.findIndex((option) => option.value === selectedDate),
+    );
+    const start = Math.max(
+      0,
+      Math.min(selectedIndex - 7, dateOptions.length - 15),
+    );
+    return dateOptions.slice(start, start + 15);
+  }, [dateOptions, selectedDate]);
+
+  useEffect(() => {
+    const month = selectedDate.slice(0, 7);
+    const hasArchivedMonth = Object.hasOwn(archiveMonths, month);
+    const monthExists = data?.scheduleIndex.months.some(
+      (item) => item.month === month,
+    );
+
+    if (
+      !data ||
+      !monthExists ||
+      hasArchivedMonth
+    ) {
+      return;
+    }
+
+    const controller = new AbortController();
+    setArchiveError(null);
+    setArchiveLoadingMonth(month);
+
+    void fetch(
+      `${BASE_URL}data/schedule-archive/${encodeURIComponent(month)}.json`,
+      {
+        cache: "no-store",
+        signal: controller.signal,
+      },
+    )
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`방송 기록을 불러오지 못했습니다. (${response.status})`);
+        }
+        return response.json() as Promise<SchedulePayload>;
+      })
+      .then((payload) => {
+        if (!Array.isArray(payload.entries)) {
+          throw new Error("방송 기록 파일의 형식이 올바르지 않습니다.");
+        }
+        setArchiveMonths((previous) => ({
+          ...previous,
+          [month]: payload.entries,
+        }));
+      })
+      .catch((loadError: unknown) => {
+        if (!controller.signal.aborted) {
+          setArchiveError(
+            loadError instanceof Error
+              ? loadError.message
+              : "방송 기록을 불러오지 못했습니다.",
+          );
+        }
+      })
+      .finally(() => {
+        if (!controller.signal.aborted) {
+          setArchiveLoadingMonth((loadingMonth) =>
+            loadingMonth === month ? null : loadingMonth,
+          );
+        }
+      });
+
+    return () => controller.abort();
+  }, [
+    archiveMonths,
+    data,
+    selectedDate,
+  ]);
+
+  useEffect(() => {
+    const activeButton = activeDateButtonRef.current;
+    const dateTabs = activeButton?.parentElement;
+
+    if (!activeButton || !dateTabs) {
+      return;
+    }
+
+    dateTabs.scrollTo({
+      behavior: "smooth",
+      left:
+        activeButton.offsetLeft -
+        (dateTabs.clientWidth - activeButton.clientWidth) / 2,
+    });
+  }, [selectedDate, visibleDateOptions]);
+
+  const selectScheduleDate = (value: string) => {
+    setSelectedDate(value);
+    if (value < dateKey(new Date())) {
+      setHideEnded(false);
+    }
+  };
 
   const visibleBroadcasts = useMemo(
     () =>
@@ -1258,18 +1410,18 @@ export default function App() {
 
   const liveNow = useMemo(
     () =>
-      hololiveSchedule.filter(
+      currentSchedule.filter(
         (entry) => broadcastStatus(entry, now) === "live",
       ),
-    [hololiveSchedule, now],
+    [currentSchedule, now],
   );
 
   const nextBroadcast = useMemo(
     () =>
-      hololiveSchedule.find(
+      currentSchedule.find(
         (entry) => broadcastStatus(entry, now) === "upcoming",
       ),
-    [hololiveSchedule, now],
+    [currentSchedule, now],
   );
 
   const upcomingSoloLives = useMemo(
@@ -1971,7 +2123,12 @@ export default function App() {
                   </div>
                   <div>
                     <CalendarDays size={18} aria-hidden="true" />
-                    <strong>{hololiveSchedule.length}</strong>
+                    <strong>
+                      {(
+                        data?.scheduleIndex.totalEntries ??
+                        currentSchedule.length
+                      ).toLocaleString("ko-KR")}
+                    </strong>
                     <span>수집 방송</span>
                   </div>
                   <div>
@@ -2007,13 +2164,14 @@ export default function App() {
           </aside>
         </section>
 
-        {error || (view === "music" && musicError) ? (
+        {error || archiveError || (view === "music" && musicError) ? (
           <div className="data-alert" role="alert">
             <Info size={20} aria-hidden="true" />
             <div>
               <strong>사이트 데이터를 불러오지 못했습니다.</strong>
               <p>
-                {error ?? musicError} 잠시 뒤 새로고침해 주세요.
+                {error ?? archiveError ?? musicError} 잠시 뒤 새로고침해
+                주세요.
               </p>
             </div>
           </div>
@@ -2086,20 +2244,44 @@ export default function App() {
             </div>
 
             <div className="schedule-controls">
-              <div className="date-tabs" aria-label="방송 날짜 선택">
-                {dateOptions.map((option) => (
-                  <button
-                    type="button"
-                    key={option.value}
-                    className={
-                      selectedDate === option.value ? "is-active" : ""
+              <div className="schedule-date-picker">
+                <label className="date-jump-control">
+                  <span>전체 기록</span>
+                  <select
+                    aria-label="전체 방송 날짜 선택"
+                    value={selectedDate}
+                    onChange={(event) =>
+                      selectScheduleDate(event.target.value)
                     }
-                    onClick={() => setSelectedDate(option.value)}
                   >
-                    <span>{option.label}</span>
-                    <strong>{option.count}</strong>
-                  </button>
-                ))}
+                    {dateOptions.map((option) => (
+                      <option key={option.value} value={option.value}>
+                        {DATE_FORMATTER.format(
+                          new Date(`${option.value}T12:00:00+09:00`),
+                        )}{" "}
+                        · {option.count}개
+                      </option>
+                    ))}
+                  </select>
+                </label>
+                <div className="date-tabs" aria-label="방송 날짜 선택">
+                  {visibleDateOptions.map((option) => {
+                    const isActive = selectedDate === option.value;
+                    return (
+                      <button
+                        type="button"
+                        key={option.value}
+                        ref={isActive ? activeDateButtonRef : undefined}
+                        className={isActive ? "is-active" : ""}
+                        aria-current={isActive ? "date" : undefined}
+                        onClick={() => selectScheduleDate(option.value)}
+                      >
+                        <span>{option.label}</span>
+                        <strong>{option.count}</strong>
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
               <label className="switch-control">
                 <input
@@ -2112,7 +2294,7 @@ export default function App() {
               </label>
             </div>
 
-            {!data ? (
+            {!data || archiveLoadingMonth === selectedDate.slice(0, 7) ? (
               <LoadingGrid />
             ) : visibleBroadcasts.length > 0 ? (
               <div className="card-grid broadcast-grid">

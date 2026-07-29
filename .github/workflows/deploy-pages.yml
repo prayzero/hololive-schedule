@@ -9,20 +9,24 @@ on:
     - cron: "7,37 * * * *"
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
 concurrency:
   group: hololive-schedule-pages
-  cancel-in-progress: true
+  cancel-in-progress: false
+  queue: max
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -33,8 +37,53 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Collect official Holodule schedule
+      - name: Prepare cumulative schedule archive
+        shell: bash
+        run: |
+          archive_worktree="$RUNNER_TEMP/hololive-schedule-data"
+          echo "ARCHIVE_WORKTREE=$archive_worktree" >> "$GITHUB_ENV"
+
+          set +e
+          git ls-remote --exit-code --heads origin refs/heads/schedule-data >/dev/null
+          remote_status=$?
+          set -e
+
+          case "$remote_status" in
+            0)
+              git fetch origin refs/heads/schedule-data:refs/remotes/origin/schedule-data
+              git worktree add -b schedule-data "$archive_worktree" origin/schedule-data
+              ;;
+            2)
+              git worktree add -b schedule-data "$archive_worktree" origin/main
+              ;;
+            *)
+              echo "Could not inspect the schedule-data branch." >&2
+              exit "$remote_status"
+              ;;
+          esac
+
+          mkdir -p "$archive_worktree/data"
+
+      - name: Collect and merge official Holodule schedule
+        shell: bash
         run: npm run update:schedule
+        env:
+          SCHEDULE_ARCHIVE_ROOT: ${{ runner.temp }}/hololive-schedule-data/data
+
+      - name: Persist cumulative schedule archive
+        shell: bash
+        run: |
+          git -C "$ARCHIVE_WORKTREE" add -- data/schedule-index.json data/schedule-archive
+
+          if git -C "$ARCHIVE_WORKTREE" diff --cached --quiet; then
+            echo "No new or corrected broadcasts to archive."
+            exit 0
+          fi
+
+          git -C "$ARCHIVE_WORKTREE" config user.name "github-actions[bot]"
+          git -C "$ARCHIVE_WORKTREE" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C "$ARCHIVE_WORKTREE" commit -m "Archive Holodule schedule"
+          git -C "$ARCHIVE_WORKTREE" push origin schedule-data
 
       - name: Build schedule site
         run: npm run build
@@ -52,6 +101,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     needs: build
     steps:
       - name: Deploy to GitHub Pages

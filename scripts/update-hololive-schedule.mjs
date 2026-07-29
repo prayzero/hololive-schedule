@@ -1,4 +1,11 @@
-import { mkdir, rename, rm, writeFile } from "node:fs/promises";
+import {
+  mkdir,
+  readFile,
+  readdir,
+  rename,
+  rm,
+  writeFile,
+} from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import * as cheerio from "cheerio";
@@ -12,12 +19,31 @@ const SOURCE_FEEDS = [
 ];
 const SOURCE_TIMEZONE = "Asia/Tokyo";
 const SOURCE_REFRESH_MINUTES = 15;
-const COLLECTOR_VERSION = "2.0.0";
+const COLLECTOR_VERSION = "3.0.0";
 const REQUEST_TIMEOUT_MS = 20_000;
+const ARCHIVE_FILE_PATTERN = /^\d{4}-\d{2}\.json$/;
+const ISO_DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
 
 const scriptDirectory = dirname(fileURLToPath(import.meta.url));
 const projectRoot = resolve(scriptDirectory, "..");
-const outputPath = resolve(projectRoot, "public", "data", "schedule.json");
+const publicDataDirectory = resolve(projectRoot, "public", "data");
+const outputPath = resolve(publicDataDirectory, "schedule.json");
+const publicIndexPath = resolve(publicDataDirectory, "schedule-index.json");
+const publicArchiveDirectory = resolve(
+  publicDataDirectory,
+  "schedule-archive",
+);
+const durableDataDirectory = process.env.SCHEDULE_ARCHIVE_ROOT
+  ? resolve(process.env.SCHEDULE_ARCHIVE_ROOT)
+  : publicDataDirectory;
+const durableIndexPath = resolve(
+  durableDataDirectory,
+  "schedule-index.json",
+);
+const durableArchiveDirectory = resolve(
+  durableDataDirectory,
+  "schedule-archive",
+);
 
 function normalizeText(value) {
   return String(value ?? "")
@@ -267,7 +293,11 @@ function parseSchedule(html, branch, now = new Date()) {
     });
   });
 
-  return entries.sort((left, right) => {
+  return sortEntries(entries);
+}
+
+function sortEntries(entries) {
+  return [...entries].sort((left, right) => {
     if (left.startsAt && right.startsAt) {
       const startComparison = left.startsAt.localeCompare(right.startsAt);
       return startComparison || left.name.localeCompare(right.name, "ko");
@@ -281,8 +311,84 @@ function parseSchedule(html, branch, now = new Date()) {
       return 1;
     }
 
-    return left.name.localeCompare(right.name, "ko");
+    return (
+      String(left.date ?? "").localeCompare(String(right.date ?? "")) ||
+      left.name.localeCompare(right.name, "ko")
+    );
   });
+}
+
+function mergeEntry(previous, incoming, isLive = false) {
+  const value = (key, fallback = null) => {
+    const candidate = incoming?.[key];
+    return candidate === null ||
+      candidate === undefined ||
+      (typeof candidate === "string" && candidate.trim() === "")
+      ? previous?.[key] ?? fallback
+      : candidate;
+  };
+  const videoId = value("videoId", value("id"));
+
+  return {
+    id: videoId,
+    date: value("date"),
+    dateLabel: value("dateLabel"),
+    time: value("time"),
+    startsAt: value("startsAt"),
+    name: value("name", ""),
+    title: value("title"),
+    url: value(
+      "url",
+      videoId ? `https://www.youtube.com/watch?v=${videoId}` : "",
+    ),
+    videoId,
+    thumbnail: value("thumbnail"),
+    avatar: value("avatar"),
+    isLive,
+    branch: value("branch"),
+  };
+}
+
+function validIsoDate(value) {
+  const dateText = String(value ?? "");
+
+  if (!ISO_DATE_PATTERN.test(dateText)) {
+    return false;
+  }
+
+  const [year, month, day] = dateText.split("-").map(Number);
+  const candidate = new Date(Date.UTC(year, month - 1, day));
+  return (
+    candidate.getUTCFullYear() === year &&
+    candidate.getUTCMonth() === month - 1 &&
+    candidate.getUTCDate() === day
+  );
+}
+
+function validateEntries(entries, label) {
+  if (!Array.isArray(entries) || entries.length === 0) {
+    throw new Error(`${label} contains no schedule entries.`);
+  }
+
+  const seenVideoIds = new Set();
+
+  for (const entry of entries) {
+    if (
+      !entry ||
+      !/^[A-Za-z0-9_-]{6,20}$/.test(String(entry.videoId ?? "")) ||
+      seenVideoIds.has(entry.videoId)
+    ) {
+      throw new Error(`${label} contains an invalid or duplicate videoId.`);
+    }
+
+    if (!validIsoDate(entry.date)) {
+      throw new Error(
+        `${label} contains an invalid date for ${entry.videoId}.`,
+      );
+    }
+
+    seenVideoIds.add(entry.videoId);
+  }
 }
 
 async function fetchSource(feed) {
@@ -313,6 +419,111 @@ async function fetchSource(feed) {
   }
 }
 
+async function readJson(path) {
+  try {
+    return JSON.parse(await readFile(path, "utf8"));
+  } catch (error) {
+    if (error?.code === "ENOENT") {
+      return null;
+    }
+
+    throw new Error(`Could not read ${path}: ${error.message}`);
+  }
+}
+
+async function listArchiveFiles(directory) {
+  try {
+    return (await readdir(directory, { withFileTypes: true }))
+      .filter(
+        (entry) => entry.isFile() && ARCHIVE_FILE_PATTERN.test(entry.name),
+      )
+      .map((entry) => resolve(directory, entry.name))
+      .sort();
+  } catch (error) {
+    if (error?.code === "ENOENT") {
+      return [];
+    }
+
+    throw error;
+  }
+}
+
+async function loadArchive() {
+  const archiveEntries = new Map();
+  const knownMonths = new Set();
+  const durableMonthPayloads = new Map();
+  const durableFiles = await listArchiveFiles(durableArchiveDirectory);
+  const isBootstrap = durableFiles.length === 0;
+  const archiveSources = isBootstrap
+    ? [
+        {
+          paths: await listArchiveFiles(publicArchiveDirectory),
+          rememberPayload:
+            publicArchiveDirectory === durableArchiveDirectory,
+        },
+      ]
+    : [
+        {
+          paths: durableFiles,
+          rememberPayload: true,
+        },
+      ];
+
+  for (const source of archiveSources) {
+    for (const path of source.paths) {
+      const payload = await readJson(path);
+      const month = path.slice(-12, -5);
+
+      if (!payload || !Array.isArray(payload.entries)) {
+        throw new Error(`Archive file ${path} has an invalid payload.`);
+      }
+
+      knownMonths.add(month);
+      if (source.rememberPayload) {
+        durableMonthPayloads.set(month, payload);
+      }
+
+      for (const entry of payload.entries) {
+        if (!entry?.videoId) {
+          throw new Error(`Archive file ${path} contains a missing videoId.`);
+        }
+
+        archiveEntries.set(
+          entry.videoId,
+          mergeEntry(archiveEntries.get(entry.videoId), entry, false),
+        );
+      }
+    }
+  }
+
+  const seedPayload = isBootstrap ? await readJson(outputPath) : null;
+
+  if (seedPayload?.entries) {
+    for (const entry of seedPayload.entries) {
+      if (!entry?.videoId) {
+        throw new Error(
+          `Bootstrap schedule ${outputPath} contains a missing videoId.`,
+        );
+      }
+
+      archiveEntries.set(
+        entry.videoId,
+        mergeEntry(archiveEntries.get(entry.videoId), entry, false),
+      );
+      if (validIsoDate(entry.date)) {
+        knownMonths.add(entry.date.slice(0, 7));
+      }
+    }
+  }
+
+  return {
+    archiveEntries,
+    durableMonthPayloads,
+    knownMonths,
+    durableIndex: await readJson(durableIndexPath),
+  };
+}
+
 async function writeAtomically(path, contents) {
   await mkdir(dirname(path), { recursive: true });
   const temporaryPath = `${path}.${process.pid}.${Date.now()}.tmp`;
@@ -326,6 +537,52 @@ async function writeAtomically(path, contents) {
   }
 }
 
+async function writeJsonCopies(paths, payload) {
+  const uniquePaths = [...new Set(paths)];
+  const contents = `${JSON.stringify(payload, null, 2)}\n`;
+
+  for (const path of uniquePaths) {
+    await writeAtomically(path, contents);
+  }
+}
+
+function monthGroups(entries) {
+  const grouped = new Map();
+
+  for (const entry of entries) {
+    const month = entry.date.slice(0, 7);
+    const monthEntries = grouped.get(month) ?? [];
+    monthEntries.push(entry);
+    grouped.set(month, monthEntries);
+  }
+
+  for (const [month, monthEntries] of grouped) {
+    grouped.set(month, sortEntries(monthEntries));
+  }
+
+  return grouped;
+}
+
+function payloadCoreMatches(previous, entries) {
+  if (!previous || !Array.isArray(previous.entries)) {
+    return false;
+  }
+
+  return (
+    JSON.stringify(previous.entries.map((entry) => mergeEntry(null, entry))) ===
+    JSON.stringify(entries)
+  );
+}
+
+function indexCore(payload) {
+  return {
+    timezone: payload?.timezone,
+    totalEntries: payload?.totalEntries,
+    dates: payload?.dates,
+    months: payload?.months,
+  };
+}
+
 async function main() {
   const collectedAt = new Date();
   const pages = await Promise.all(
@@ -335,46 +592,138 @@ async function main() {
     })),
   );
   const seenVideoIds = new Set();
-  const entries = pages
-    .flatMap(({ feed, html }) =>
-      parseSchedule(html, feed.branch, collectedAt),
-    )
-    .filter((entry) => {
-      if (seenVideoIds.has(entry.videoId)) {
-        return false;
-      }
+  const currentRawEntries = sortEntries(
+    pages
+      .flatMap(({ feed, html }) =>
+        parseSchedule(html, feed.branch, collectedAt),
+      )
+      .filter((entry) => {
+        if (seenVideoIds.has(entry.videoId)) {
+          return false;
+        }
 
-      seenVideoIds.add(entry.videoId);
-      return true;
-    })
-    .sort((left, right) => {
-      if (left.startsAt && right.startsAt) {
-        const startComparison = left.startsAt.localeCompare(right.startsAt);
-        return startComparison || left.name.localeCompare(right.name, "ko");
-      }
+        seenVideoIds.add(entry.videoId);
+        return true;
+      }),
+  );
 
-      return left.startsAt ? -1 : right.startsAt ? 1 : 0;
-    });
+  validateEntries(currentRawEntries, "Current Holodule snapshot");
 
-  if (entries.length === 0) {
-    throw new Error(
-      "No Holodule entries were parsed; the existing schedule file was left unchanged.",
+  const {
+    archiveEntries,
+    durableMonthPayloads,
+    knownMonths,
+    durableIndex,
+  } = await loadArchive();
+  const previousIds = new Set(archiveEntries.keys());
+  const currentEntries = currentRawEntries.map((entry) =>
+    mergeEntry(archiveEntries.get(entry.videoId), entry, entry.isLive),
+  );
+
+  for (const entry of currentEntries) {
+    archiveEntries.set(
+      entry.videoId,
+      mergeEntry(archiveEntries.get(entry.videoId), entry, false),
     );
   }
 
-  const payload = {
+  const allEntries = sortEntries([...archiveEntries.values()]);
+  validateEntries(allEntries, "Cumulative Holodule archive");
+  const grouped = monthGroups(allEntries);
+
+  for (const month of grouped.keys()) {
+    knownMonths.add(month);
+  }
+
+  for (const month of [...knownMonths].sort()) {
+    const entries = grouped.get(month) ?? [];
+    const previous = durableMonthPayloads.get(month);
+    const generatedAt = payloadCoreMatches(previous, entries)
+      ? previous.generatedAt
+      : collectedAt.toISOString();
+    const payload = {
+      generatedAt,
+      source: SOURCE_FEEDS[0].url,
+      sources: SOURCE_FEEDS.map(({ url }) => url),
+      sourceRefreshMinutes: SOURCE_REFRESH_MINUTES,
+      collectorVersion: COLLECTOR_VERSION,
+      timezone: SOURCE_TIMEZONE,
+      month,
+      entries,
+    };
+
+    await writeJsonCopies(
+      [
+        resolve(durableArchiveDirectory, `${month}.json`),
+        resolve(publicArchiveDirectory, `${month}.json`),
+      ],
+      payload,
+    );
+  }
+
+  const dateCounts = new Map();
+
+  for (const entry of allEntries) {
+    dateCounts.set(entry.date, (dateCounts.get(entry.date) ?? 0) + 1);
+  }
+
+  const dates = [...dateCounts]
+    .sort(([left], [right]) => left.localeCompare(right))
+    .map(([date, count]) => ({
+      date,
+      month: date.slice(0, 7),
+      count,
+    }));
+  const months = [...grouped]
+    .filter(([, entries]) => entries.length > 0)
+    .sort(([left], [right]) => left.localeCompare(right))
+    .map(([month, entries]) => ({
+      month,
+      count: entries.length,
+      firstDate: entries[0].date,
+      lastDate: entries.at(-1).date,
+      url: `data/schedule-archive/${month}.json`,
+    }));
+  const nextIndexCore = {
+    timezone: SOURCE_TIMEZONE,
+    totalEntries: allEntries.length,
+    dates,
+    months,
+  };
+  const updatedAt =
+    JSON.stringify(indexCore(durableIndex)) === JSON.stringify(nextIndexCore)
+      ? durableIndex.updatedAt
+      : collectedAt.toISOString();
+  const indexPayload = {
+    updatedAt: updatedAt ?? collectedAt.toISOString(),
+    ...nextIndexCore,
+  };
+
+  await writeJsonCopies(
+    [durableIndexPath, publicIndexPath],
+    indexPayload,
+  );
+
+  const currentPayload = {
     generatedAt: collectedAt.toISOString(),
     source: SOURCE_FEEDS[0].url,
     sources: SOURCE_FEEDS.map(({ url }) => url),
     sourceRefreshMinutes: SOURCE_REFRESH_MINUTES,
     collectorVersion: COLLECTOR_VERSION,
     timezone: SOURCE_TIMEZONE,
-    entries,
+    entries: sortEntries(currentEntries),
   };
 
-  await writeAtomically(outputPath, `${JSON.stringify(payload, null, 2)}\n`);
+  await writeAtomically(
+    outputPath,
+    `${JSON.stringify(currentPayload, null, 2)}\n`,
+  );
+
+  const newEntryCount = allEntries.filter(
+    (entry) => !previousIds.has(entry.videoId),
+  ).length;
   console.log(
-    `Collected ${entries.length} Holodule entries into ${outputPath}`,
+    `Collected ${currentEntries.length} current entries; archive now has ${allEntries.length} entries across ${months.length} month(s), including ${newEntryCount} new video(s).`,
   );
 }
 

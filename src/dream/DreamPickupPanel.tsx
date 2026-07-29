@@ -6,9 +6,10 @@ import {
   Megaphone,
   Sparkles,
 } from "lucide-react";
-import { useMemo, type CSSProperties } from "react";
+import { useMemo, useState, type CSSProperties } from "react";
 import type { DreamPickup, Talent } from "../types";
 import { DreamPickupLuckArchive } from "./DreamPickupLuckArchive";
+import { formatRatePercent } from "./luck";
 
 type PickupStatus = "upcoming" | "ongoing" | "ended";
 
@@ -25,6 +26,17 @@ const KST_DATE_FORMATTER = new Intl.DateTimeFormat("ko-KR", {
   month: "2-digit",
   day: "2-digit",
   weekday: "short",
+});
+
+const KST_DATE_TIME_FORMATTER = new Intl.DateTimeFormat("ko-KR", {
+  timeZone: "Asia/Seoul",
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+  weekday: "short",
+  hour: "2-digit",
+  minute: "2-digit",
+  hourCycle: "h23",
 });
 
 function normalizeSearch(value: string) {
@@ -46,9 +58,24 @@ function kstDateKey(date: Date) {
   return `${value("year")}-${value("month")}-${value("day")}`;
 }
 
-function pickupStatus(pickup: DreamPickup, today: string): PickupStatus {
-  if (today < pickup.startsOn) return "upcoming";
-  if (pickup.endsOn && today > pickup.endsOn) return "ended";
+function pickupStartTime(pickup: DreamPickup) {
+  return Date.parse(
+    pickup.startsAt ?? `${pickup.startsOn}T00:00:00+09:00`,
+  );
+}
+
+function pickupEndTime(pickup: DreamPickup) {
+  if (pickup.endsAt) return Date.parse(pickup.endsAt);
+  if (pickup.endsOn) {
+    return Date.parse(`${pickup.endsOn}T23:59:59+09:00`);
+  }
+  return null;
+}
+
+function pickupStatus(pickup: DreamPickup, now: Date): PickupStatus {
+  if (now.getTime() < pickupStartTime(pickup)) return "upcoming";
+  const endsAt = pickupEndTime(pickup);
+  if (endsAt !== null && now.getTime() > endsAt) return "ended";
   return "ongoing";
 }
 
@@ -56,6 +83,12 @@ function formatDate(value: string) {
   return KST_DATE_FORMATTER.format(
     new Date(`${value}T00:00:00+09:00`),
   ).replace(/\s/g, "");
+}
+
+function formatDateTime(value: string) {
+  return KST_DATE_TIME_FORMATTER.format(new Date(value))
+    .replace(/\s+/g, " ")
+    .trim();
 }
 
 function daysBetween(left: string, right: string) {
@@ -80,9 +113,16 @@ function statusCopy(
 }
 
 function scheduleCopy(pickup: DreamPickup) {
-  const start = formatDate(pickup.startsOn);
-  return pickup.endsOn
-    ? `${start} – ${formatDate(pickup.endsOn)}`
+  const start = pickup.startsAt
+    ? formatDateTime(pickup.startsAt)
+    : formatDate(pickup.startsOn);
+  const end = pickup.endsAt
+    ? formatDateTime(pickup.endsAt)
+    : pickup.endsOn
+      ? formatDate(pickup.endsOn)
+      : null;
+  return end
+    ? `${start} – ${end}`
     : `${start} 시작`;
 }
 
@@ -92,6 +132,9 @@ export function DreamPickupPanel({
   query,
   now,
 }: DreamPickupPanelProps) {
+  const [selectedPickupId, setSelectedPickupId] = useState<string | null>(
+    null,
+  );
   const talentById = useMemo(
     () => new Map(talents.map((talent) => [talent.id, talent])),
     [talents],
@@ -104,7 +147,7 @@ export function DreamPickupPanel({
       pickups
         .map((pickup) => ({
           pickup,
-          status: pickupStatus(pickup, today),
+          status: pickupStatus(pickup, now),
         }))
         .sort((left, right) => {
           const statusOrder: Record<PickupStatus, number> = {
@@ -119,7 +162,7 @@ export function DreamPickupPanel({
               : left.pickup.startsOn.localeCompare(right.pickup.startsOn))
           );
         }),
-    [pickups, today],
+    [now, pickups],
   );
 
   const visibleEntries = useMemo(
@@ -157,6 +200,7 @@ export function DreamPickupPanel({
     { upcoming: 0, ongoing: 0, ended: 0 } as Record<PickupStatus, number>,
   );
   const featured =
+    visibleEntries.find(({ pickup }) => pickup.id === selectedPickupId) ??
     visibleEntries.find(({ status }) => status === "ongoing") ??
     visibleEntries.find(({ status }) => status === "upcoming") ??
     visibleEntries[0];
@@ -170,10 +214,10 @@ export function DreamPickupPanel({
           </span>
           <div>
             <small>PICKUP CALENDAR</small>
-            <h3>새 픽업부터 지난 일정까지</h3>
+            <h3>진행 중인 가챠부터 지난 일정까지</h3>
             <p>
-              공식 발표를 기준으로 픽업 대상과 기간을 기록합니다. 종료된
-              픽업도 이곳에 계속 남습니다.
+              같은 캠페인의 일반형·선택형도 실제 제공 비율에 맞춰 나눠
+              기록합니다. 종료된 가챠도 이곳에 계속 남습니다.
             </p>
           </div>
         </div>
@@ -193,6 +237,43 @@ export function DreamPickupPanel({
         </div>
       </div>
 
+      {visibleEntries.length > 1 ? (
+        <div
+          className="dream-pickup-switcher"
+          role="tablist"
+          aria-label="확인할 가챠 방식 선택"
+        >
+          {visibleEntries.map(({ pickup, status }) => {
+            const isSelected = featured?.pickup.id === pickup.id;
+            return (
+              <button
+                type="button"
+                role="tab"
+                aria-selected={isSelected}
+                className={isSelected ? "is-active" : ""}
+                key={pickup.id}
+                onClick={() => setSelectedPickupId(pickup.id)}
+              >
+                <span className={`dream-pickup-status is-${status}`}>
+                  <span aria-hidden="true" />
+                  {statusCopy(status, pickup, today)}
+                </span>
+                <span>
+                  <small>{pickup.rateLabel ?? "픽업 대상"}</small>
+                  <strong>{pickup.title}</strong>
+                </span>
+                {pickup.targetRatePercent ? (
+                  <b>
+                    {formatRatePercent(pickup.targetRatePercent)}
+                    <small>%</small>
+                  </b>
+                ) : null}
+              </button>
+            );
+          })}
+        </div>
+      ) : null}
+
       {featured ? (
         <article
           className={`dream-pickup-feature is-${featured.status}`}
@@ -206,7 +287,7 @@ export function DreamPickupPanel({
                 <span aria-hidden="true" />
                 {statusCopy(featured.status, featured.pickup, today)}
               </span>
-              <small>HOLOLIVE DREAMS · SUMMER PICKUP</small>
+              <small>HOLOLIVE DREAMS · PICKUP</small>
               <h3 id={`pickup-${featured.pickup.id}`}>
                 {featured.pickup.title}
               </h3>
@@ -219,12 +300,36 @@ export function DreamPickupPanel({
               </span>
               <strong>{scheduleCopy(featured.pickup)}</strong>
               <small>
-                {featured.pickup.endsOn
+                {featured.pickup.endsOn || featured.pickup.endsAt
                   ? "한국·일본 시간 기준"
                   : "종료 일정 확인 중"}
               </small>
             </div>
           </header>
+
+          <div
+            className="dream-pickup-rate-breakdown"
+            aria-label={`${featured.pickup.title} 세부 제공 비율`}
+          >
+            {(featured.pickup.rateBreakdown ??
+              (featured.pickup.targetRatePercent
+                ? [
+                    {
+                      label: featured.pickup.rateLabel ?? "픽업 대상",
+                      ratePercent: featured.pickup.targetRatePercent,
+                    },
+                  ]
+                : [])
+            ).map((rate) => (
+              <span key={`${rate.label}-${rate.ratePercent}`}>
+                <small>{rate.label}</small>
+                <strong>
+                  {formatRatePercent(rate.ratePercent)}
+                  <small>%</small>
+                </strong>
+              </span>
+            ))}
+          </div>
 
           <div className="dream-pickup-gallery">
             {featured.pickup.cards.map((card) => {
@@ -253,9 +358,12 @@ export function DreamPickupPanel({
                   />
                   <figcaption>
                     <small>
-                      {card.rarity ? `★${card.rarity} PICK UP` : "PICK UP"}
+                      {card.rarity ? `★${card.rarity}` : "PICK UP"} ·{" "}
+                      {talent?.nameKo ?? card.talentId}
                     </small>
-                    <strong>{talent?.nameKo ?? card.talentId}</strong>
+                    <strong>
+                      {card.cardTitle ?? talent?.nameKo ?? card.talentId}
+                    </strong>
                   </figcaption>
                 </figure>
               );
@@ -324,7 +432,14 @@ export function DreamPickupPanel({
                   <div>
                     <small>{scheduleCopy(pickup)}</small>
                     <strong>{pickup.title}</strong>
-                    <p>{names}</p>
+                    <p>
+                      {pickup.rateLabel ?? "픽업 대상"}
+                      {pickup.targetRatePercent
+                        ? ` ${formatRatePercent(pickup.targetRatePercent)}%`
+                        : ""}
+                      {" · "}
+                      {names}
+                    </p>
                   </div>
                   <div className="dream-pickup-history__note">
                     <Clock3 size={14} aria-hidden="true" />

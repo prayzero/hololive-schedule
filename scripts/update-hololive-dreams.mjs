@@ -1,4 +1,4 @@
-import { readFile, writeFile } from "node:fs/promises";
+import { access, readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
@@ -98,77 +98,111 @@ const characters = officialRoster.map(([officialName, imageUrl]) => {
   };
 });
 
+const summerPickupCards = [
+  {
+    id: "holonatsu-2026-oozora-subaru",
+    talentId: "oozora-subaru",
+    cardTitle: "Energeticスプラッシュ！",
+    rarity: 5,
+    imageUrl: "images/dream-pickups/holonatsu-2026/oozora-subaru.png",
+    imageAlt: "★5 Energetic 스플래시! 오오조라 스바루 카드 일러스트",
+    imagePosition: "50% 42%",
+    imageScale: 1.22,
+  },
+  {
+    id: "holonatsu-2026-shiranui-flare",
+    talentId: "shiranui-flare",
+    cardTitle: "sparks sunset",
+    rarity: 5,
+    imageUrl: "images/dream-pickups/holonatsu-2026/shiranui-flare.png",
+    imageAlt: "★5 sparks sunset 시라누이 후레아 카드 일러스트",
+    imagePosition: "50% 42%",
+    imageScale: 1.22,
+  },
+  {
+    id: "holonatsu-2026-shirogane-noel",
+    talentId: "shirogane-noel",
+    cardTitle: "波まとうゆるふわKnight",
+    rarity: 5,
+    imageUrl: "images/dream-pickups/holonatsu-2026/shirogane-noel.png",
+    imageAlt: "★5 파도를 두른 폭신폭신 Knight 시로가네 노엘 카드 일러스트",
+    imagePosition: "50% 44%",
+  },
+  {
+    id: "holonatsu-2026-tsunomaki-watame",
+    talentId: "tsunomaki-watame",
+    cardTitle: "真夏のもふもふフロートタイム",
+    rarity: 5,
+    imageUrl: "images/dream-pickups/holonatsu-2026/tsunomaki-watame.png",
+    imageAlt: "★5 한여름의 복슬복슬 플로트 타임 츠노마키 와타메 카드 일러스트",
+    imagePosition: "50% 43%",
+  },
+  {
+    id: "holonatsu-2026-otonose-kanade",
+    talentId: "otonose-kanade",
+    cardTitle: "潮風にのせる、笑顔のハーモニー",
+    rarity: 5,
+    imageUrl: "images/dream-pickups/holonatsu-2026/otonose-kanade.png",
+    imageAlt: "★5 바닷바람에 싣는, 미소의 하모니 오토노세 카나데 카드 일러스트",
+    imagePosition: "50% 45%",
+  },
+];
+
 const pickups = [
   {
     id: "holonatsu-paradise-2026",
-    title: "수영복 홀로멤 선택 픽업",
-    subtitle: "신규 ★5 홀로멤 5명 중 원하는 1명을 선택 · 픽업 확률 1%",
+    title: "선택 가능! sunny summer 바캉스! 가챠",
+    subtitle: "신규 수영복 ★5 5명 중 1명을 선택 · 선택 1% · 나머지 각 0.25%",
     targetRatePercent: 1,
-    startsOn: "2026-07-28",
-    endsOn: null,
-    announcedOn: "2026-07-27",
-    sourceLabel: "hololive Dreams 공식 릴리스 기념 방송",
-    sourceUrl: "https://www.youtube.com/watch?v=_qHZCR8AcSg",
-    scheduleNote:
-      "대상 5명은 이후 통상 가챠에도 추가 예정입니다. 종료 일정은 확인되는 대로 반영합니다.",
-    cards: [
-      {
-        id: "holonatsu-2026-otonose-kanade",
-        talentId: "otonose-kanade",
-        rarity: 5,
-        imageUrl:
-          "images/dream-pickups/holonatsu-2026/otonose-kanade.png",
-        imageAlt: "수영복 의상의 오토노세 카나데 픽업 일러스트",
-        imagePosition: "50% 45%",
-      },
-      {
-        id: "holonatsu-2026-shirogane-noel",
-        talentId: "shirogane-noel",
-        rarity: 5,
-        imageUrl:
-          "images/dream-pickups/holonatsu-2026/shirogane-noel.png",
-        imageAlt: "수영복 의상의 시로가네 노엘 픽업 일러스트",
-        imagePosition: "50% 44%",
-      },
-      {
-        id: "holonatsu-2026-shiranui-flare",
-        talentId: "shiranui-flare",
-        rarity: 5,
-        imageUrl:
-          "images/dream-pickups/holonatsu-2026/shiranui-flare.png",
-        imageAlt: "수영복 의상의 시라누이 후레아 픽업 일러스트",
-        imagePosition: "50% 42%",
-        imageScale: 1.22,
-      },
-      {
-        id: "holonatsu-2026-oozora-subaru",
-        talentId: "oozora-subaru",
-        rarity: 5,
-        imageUrl:
-          "images/dream-pickups/holonatsu-2026/oozora-subaru.png",
-        imageAlt: "수영복 의상의 오오조라 스바루 픽업 일러스트",
-        imagePosition: "50% 42%",
-        imageScale: 1.22,
-      },
-      {
-        id: "holonatsu-2026-tsunomaki-watame",
-        talentId: "tsunomaki-watame",
-        rarity: 5,
-        imageUrl:
-          "images/dream-pickups/holonatsu-2026/tsunomaki-watame.png",
-        imageAlt: "수영복 의상의 츠노마키 와타메 픽업 일러스트",
-        imagePosition: "50% 43%",
-      },
+    rateLabel: "선택한 수영복 ★5 한 명",
+    rateBreakdown: [
+      { label: "선택한 수영복 ★5", ratePercent: 1 },
+      { label: "나머지 수영복 ★5 각", ratePercent: 0.25 },
+      { label: "통상 ★5 각", ratePercent: 0.0555 },
+      { label: "★5 전체", ratePercent: 5 },
     ],
+    startsOn: "2026-07-28",
+    endsOn: "2026-08-07",
+    startsAt: "2026-07-28T11:00:00+09:00",
+    endsAt: "2026-08-07T10:59:59+09:00",
+    announcedOn: "2026-07-27",
+    sourceLabel: "hololive Dreams 공식 X 픽업 공지",
+    sourceUrl: "https://x.com/hololive_dreams/status/2081924023081210346",
+    scheduleNote:
+      "선택한 카드 1%, 나머지 4장은 각 0.25%입니다. 일반형과 가챠Pt를 공유하며, 200Pt 교환 대상은 게임 내 교환소에서 확인할 수 있습니다.",
+    cards: summerPickupCards,
+  },
+  {
+    id: "sunny-summer-vacation-standard-2026",
+    title: "sunny summer 바캉스! 가챠",
+    subtitle: "신규 수영복 ★5 5명 각 0.4% · 다섯 명 전체 획득 확률 2%",
+    targetRatePercent: 2,
+    rateLabel: "수영복 ★5 다섯 명 전체",
+    rateBreakdown: [
+      { label: "수영복 ★5 각", ratePercent: 0.4 },
+      { label: "수영복 ★5 5명 전체", ratePercent: 2 },
+      { label: "통상 ★5 각", ratePercent: 0.0555 },
+      { label: "★5 전체", ratePercent: 5 },
+    ],
+    startsOn: "2026-07-28",
+    endsOn: "2026-08-07",
+    startsAt: "2026-07-28T11:00:00+09:00",
+    endsAt: "2026-08-07T10:59:59+09:00",
+    announcedOn: "2026-07-27",
+    sourceLabel: "hololive Dreams 공식 X 픽업 공지",
+    sourceUrl: "https://x.com/hololive_dreams/status/2081924023081210346",
+    scheduleNote:
+      "신규 5장은 각 0.4%(합계 2%)입니다. 선택형과 가챠Pt를 공유하며, 향후 이벤트 가챠에는 다시 등장하지만 상시 홀로도리 가챠에서는 배출되지 않습니다.",
+    cards: summerPickupCards,
   },
 ];
 
 const payload = {
-  checkedAt: "2026-07-27T00:00:00+09:00",
+  checkedAt: "2026-07-29T12:00:00+09:00",
   sourceUrl: "https://www.hololive-dreams.com/en",
   officialNewsUrl: "https://hololive.hololivepro.com/en/news/20260723-01-401/",
   sourceNote:
-    "hololive Dreams 공식 영어 사이트에 공개된 출시 캐릭터 54명과 공식 썸네일을 사용합니다. 신규 픽업 일정·대상·선택 확률은 2026-07-27 공식 릴리스 기념 방송의 발표를, 기본 뽑기 확률은 게임 내 제공 비율 화면을 기준으로 합니다.",
+    "hololive Dreams 공식 사이트에 공개된 출시 캐릭터 54명과 공식 썸네일을 사용합니다. 현재 픽업의 대상과 동시 개최 정보는 공식 X 공지, 정확한 종료 시각은 QualiArts·COVER 배포 행사 안내, 개별 제공 비율은 게임 내 제공 비율 화면을 기준으로 2026-07-29 확인했습니다.",
   launchDate: "2026-07-23",
   game: {
     title: "hololive Dreams",
@@ -183,8 +217,8 @@ const payload = {
   rarities: [3, 4, 5],
   ratesPublishedOnOfficialWeb: false,
   gachaRates: {
-    verifiedAt: "2026-07-27T20:30:00+09:00",
-    sourceLabel: "게임 내 제공 비율 · 공식 방송",
+    verifiedAt: "2026-07-29T12:00:00+09:00",
+    sourceLabel: "게임 내 제공 비율",
     normalRates: {
       star3: 85,
       star4: 10,
@@ -198,10 +232,38 @@ const payload = {
     targetPresets: [
       {
         id: "summer-selected-star5",
-        label: "수영복 선택 픽업 ★5",
-        shortLabel: "현재 픽업",
+        label: "선택형에서 고른 수영복 ★5 1명",
+        shortLabel: "선택한 1명",
         ratePercent: 1,
-        note: "수영복 홀로멤 5명 중 선택한 특정 ★5 멤버 1명",
+        note: "선택 가능 가챠에서 직접 고른 수영복 ★5 한 명",
+      },
+      {
+        id: "summer-any-star5",
+        label: "일반형 수영복 ★5 5명 전체",
+        shortLabel: "수영복 5명",
+        ratePercent: 2,
+        note: "일반형에서 신규 수영복 ★5 다섯 명 중 아무나",
+      },
+      {
+        id: "summer-standard-specific-star5",
+        label: "일반형 특정 수영복 ★5 1명",
+        shortLabel: "수영복 특정 1명",
+        ratePercent: 0.4,
+        note: "일반형에서 지정한 수영복 ★5 한 명",
+      },
+      {
+        id: "summer-unselected-star5",
+        label: "선택형 비선택 수영복 ★5 1명",
+        shortLabel: "비선택 수영복",
+        ratePercent: 0.25,
+        note: "선택형에서 고르지 않은 수영복 ★5 한 명",
+      },
+      {
+        id: "summer-permanent-specific-star5",
+        label: "여름 가챠 통상 ★5 1명",
+        shortLabel: "여름 통상 ★5",
+        ratePercent: 0.0555,
+        note: "두 여름 가챠에 포함된 통상 ★5 중 특정 한 명",
       },
       {
         id: "standard-specific-star5",
@@ -232,8 +294,8 @@ const payload = {
         note: "초심자 응원 가챠에서 선택하지 않은 특정 ★5 멤버 1명",
       },
     ],
-    rateReferenceUrl: "https://game8.jp/hololive-dreams/800526",
-    pickupReferenceUrl: "https://www.youtube.com/watch?v=_qHZCR8AcSg",
+    rateReferenceUrl: "https://game8.jp/hololive-dreams/801993",
+    pickupReferenceUrl: "https://x.com/hololive_dreams/status/2081924023081210346",
     screenshotReferenceUrl:
       "https://appmedia.jp/wp-content/uploads/2026/07/135040_8l2nf.webp",
     officialNoticeUrl:
@@ -277,9 +339,41 @@ for (const character of characters) {
 
 const pickupCardsById = new Map();
 const baseCharacterIds = new Set(characters.map(({ id }) => id));
+const pickupIds = new Set();
+const publicRoot = path.join(projectRoot, "public");
 for (const pickup of pickups) {
-  if (!pickup.id || !pickup.title || !pickup.startsOn || !pickup.sourceUrl) {
+  if (
+    !pickup.id ||
+    !pickup.title ||
+    !pickup.rateLabel ||
+    !pickup.startsOn ||
+    !pickup.sourceUrl
+  ) {
     throw new Error(`픽업 필수 정보가 비어 있습니다: ${pickup.id}`);
+  }
+  if (pickupIds.has(pickup.id)) {
+    throw new Error(`픽업 ID가 중복되었습니다: ${pickup.id}`);
+  }
+  pickupIds.add(pickup.id);
+  if (
+    !/^\d{4}-\d{2}-\d{2}$/.test(pickup.startsOn) ||
+    (pickup.endsOn !== null && !/^\d{4}-\d{2}-\d{2}$/.test(pickup.endsOn))
+  ) {
+    throw new Error(`픽업 날짜 형식이 올바르지 않습니다: ${pickup.id}`);
+  }
+  const startsAt = Date.parse(
+    pickup.startsAt ?? `${pickup.startsOn}T00:00:00+09:00`,
+  );
+  const endsAt = pickup.endsAt
+    ? Date.parse(pickup.endsAt)
+    : pickup.endsOn
+      ? Date.parse(`${pickup.endsOn}T23:59:59+09:00`)
+      : null;
+  if (
+    !Number.isFinite(startsAt) ||
+    (endsAt !== null && (!Number.isFinite(endsAt) || startsAt > endsAt))
+  ) {
+    throw new Error(`픽업 시작·종료 시각이 올바르지 않습니다: ${pickup.id}`);
   }
   if (
     pickup.targetRatePercent !== null &&
@@ -289,12 +383,24 @@ for (const pickup of pickups) {
   ) {
     throw new Error(`픽업 확률이 올바르지 않습니다: ${pickup.id}`);
   }
+  if (
+    !pickup.rateBreakdown.length ||
+    pickup.rateBreakdown.some(
+      ({ label, ratePercent }) =>
+        !label ||
+        !Number.isFinite(ratePercent) ||
+        ratePercent <= 0 ||
+        ratePercent > 100,
+    )
+  ) {
+    throw new Error(`픽업 세부 확률이 올바르지 않습니다: ${pickup.id}`);
+  }
   if (!pickup.cards.length) {
     throw new Error(`픽업 카드가 비어 있습니다: ${pickup.id}`);
   }
   const cardIdsInPickup = new Set();
   for (const card of pickup.cards) {
-    if (!card.id || !card.imageUrl) {
+    if (!card.id || !card.cardTitle || !card.imageUrl || !card.imageAlt) {
       throw new Error(`${pickup.id}: 픽업 카드 필수 정보가 비어 있습니다.`);
     }
     if (cardIdsInPickup.has(card.id)) {
@@ -310,6 +416,7 @@ for (const pickup of pickups) {
     if (previousCard) {
       const identityFields = [
         "talentId",
+        "cardTitle",
         "rarity",
         "imageUrl",
         "imageAlt",
@@ -332,6 +439,28 @@ for (const pickup of pickups) {
         `${pickup.id}: talents.json에서 찾을 수 없는 픽업 멤버 ${card.talentId}`,
       );
     }
+    if (card.rarity !== null && !payload.rarities.includes(card.rarity)) {
+      throw new Error(`${pickup.id}: 지원하지 않는 카드 등급 ${card.rarity}`);
+    }
+    if (
+      card.imageScale !== undefined &&
+      (!Number.isFinite(card.imageScale) ||
+        card.imageScale < 0.5 ||
+        card.imageScale > 3)
+    ) {
+      throw new Error(`${pickup.id}: 이미지 배율이 올바르지 않습니다: ${card.id}`);
+    }
+    if (
+      card.imagePosition !== undefined &&
+      !/^\d+(?:\.\d+)?%\s+\d+(?:\.\d+)?%$/.test(card.imagePosition)
+    ) {
+      throw new Error(`${pickup.id}: 이미지 위치가 올바르지 않습니다: ${card.id}`);
+    }
+    const cardImagePath = path.resolve(publicRoot, card.imageUrl);
+    if (!cardImagePath.startsWith(`${publicRoot}${path.sep}`)) {
+      throw new Error(`${pickup.id}: 이미지 경로가 public 밖을 가리킵니다.`);
+    }
+    await access(cardImagePath);
   }
 }
 

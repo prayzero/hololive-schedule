@@ -236,6 +236,7 @@ export interface DreamGachaRates {
 export interface DreamPickupCard {
   id: string;
   talentId: string;
+  cardTitle: string;
   rarity: number | null;
   imageUrl: string;
   imageAlt: string;
@@ -243,13 +244,22 @@ export interface DreamPickupCard {
   imageScale?: number;
 }
 
+export interface DreamPickupRate {
+  label: string;
+  ratePercent: number;
+}
+
 export interface DreamPickup {
   id: string;
   title: string;
   subtitle: string;
   targetRatePercent: number | null;
+  rateLabel: string;
+  rateBreakdown: DreamPickupRate[];
   startsOn: string;
   endsOn: string | null;
+  startsAt?: string;
+  endsAt?: string | null;
   announcedOn: string;
   sourceLabel: string;
   sourceUrl: string;

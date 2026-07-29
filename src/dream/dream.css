@@ -742,6 +742,79 @@
   box-shadow: 0 20px 55px rgba(49, 65, 99, 0.11);
 }
 
+.dream-pickup-switcher {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 11px;
+}
+
+.dream-pickup-switcher > button {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  min-width: 0;
+  gap: 13px;
+  padding: 13px 15px;
+  border: 1px solid #dde1ef;
+  border-radius: 18px;
+  color: #34405a;
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: 0 8px 24px rgba(56, 68, 108, 0.06);
+  cursor: pointer;
+  text-align: left;
+  transition:
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.dream-pickup-switcher > button:hover {
+  border-color: #c8c3ef;
+  box-shadow: 0 11px 28px rgba(76, 68, 145, 0.1);
+  transform: translateY(-1px);
+}
+
+.dream-pickup-switcher > button.is-active {
+  border-color: rgba(116, 102, 217, 0.45);
+  background:
+    linear-gradient(135deg, rgba(241, 239, 255, 0.98), rgba(236, 250, 253, 0.98));
+  box-shadow: 0 12px 32px rgba(79, 69, 157, 0.13);
+}
+
+.dream-pickup-switcher > button > span:nth-child(2) {
+  display: grid;
+  min-width: 0;
+  gap: 3px;
+}
+
+.dream-pickup-switcher > button > span:nth-child(2) small {
+  overflow: hidden;
+  color: #8b94a7;
+  font-size: 8px;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dream-pickup-switcher > button > span:nth-child(2) strong {
+  overflow: hidden;
+  font-size: 11px;
+  font-weight: 850;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dream-pickup-switcher > button > b {
+  color: var(--dream-purple-dark);
+  font-size: 18px;
+  letter-spacing: -0.04em;
+}
+
+.dream-pickup-switcher > button > b small {
+  margin-left: 1px;
+  font-size: 9px;
+}
+
 .dream-pickup-feature::before {
   position: absolute;
   width: 280px;
@@ -860,6 +933,45 @@
   font-weight: 700;
 }
 
+.dream-pickup-rate-breakdown {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+  padding: 0 25px 17px;
+}
+
+.dream-pickup-rate-breakdown > span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 0;
+  gap: 10px;
+  padding: 11px 13px;
+  border: 1px solid rgba(216, 220, 237, 0.9);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.dream-pickup-rate-breakdown > span > small {
+  overflow: hidden;
+  color: #7f8a9e;
+  font-size: 8px;
+  font-weight: 800;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dream-pickup-rate-breakdown > span > strong {
+  flex: 0 0 auto;
+  color: #6d5fc9;
+  font-size: 14px;
+}
+
+.dream-pickup-rate-breakdown > span > strong small {
+  margin-left: 1px;
+  font-size: 8px;
+}
+
 .dream-pickup-gallery {
   position: relative;
   display: grid;
@@ -924,6 +1036,7 @@
 }
 
 .dream-pickup-art figcaption small {
+  flex: 0 0 auto;
   color: rgba(255, 255, 255, 0.75);
   font-size: 7px;
   font-weight: 900;
@@ -931,8 +1044,15 @@
 }
 
 .dream-pickup-art figcaption strong {
+  display: -webkit-box;
+  min-width: 0;
+  max-width: 66%;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
   font-size: 11px;
   font-weight: 850;
+  line-height: 1.25;
   text-align: right;
   text-shadow: 0 2px 8px rgba(16, 31, 53, 0.28);
 }
@@ -2410,6 +2530,10 @@
     min-width: 0;
   }
 
+  .dream-pickup-rate-breakdown {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .dream-pickup-history__list > article {
     grid-template-columns: auto minmax(0, 1fr) auto;
   }
@@ -2592,6 +2716,14 @@
     padding-inline: 8px;
   }
 
+  .dream-pickup-switcher {
+    grid-template-columns: 1fr;
+  }
+
+  .dream-pickup-switcher > button {
+    padding: 12px;
+  }
+
   .dream-pickup-feature {
     border-radius: 23px;
   }
@@ -2607,6 +2739,15 @@
 
   .dream-pickup-feature__header > div:first-child > p {
     font-size: 11px;
+  }
+
+  .dream-pickup-rate-breakdown {
+    gap: 6px;
+    padding: 0 16px 15px;
+  }
+
+  .dream-pickup-rate-breakdown > span {
+    padding: 10px;
   }
 
   .dream-pickup-gallery {

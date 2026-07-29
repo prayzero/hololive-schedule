@@ -226,7 +226,7 @@ export function DreamPickupLuckArchive({
       guaranteed: calculation.guaranteed,
       ratePercentSnapshot: calculation.ratePercent,
       pickupTitleSnapshot: pickup.title,
-      rateLabelSnapshot: "선택 픽업 대상",
+      rateLabelSnapshot: pickup.rateLabel ?? "픽업 대상",
       updatedAt: new Date().toISOString(),
     };
     setRecords((current) => ({ ...current, [pickup.id]: record }));
@@ -344,6 +344,8 @@ export function DreamPickupLuckArchive({
           const record = records[pickup.id];
           const rate =
             record?.ratePercentSnapshot ?? pickup.targetRatePercent ?? 0;
+          const rateLabel =
+            record?.rateLabelSnapshot ?? pickup.rateLabel ?? "픽업 대상";
           const draft =
             drafts[pickup.id] ?? draftFromRecord(record);
           const calculation = calculateLuck(
@@ -429,7 +431,7 @@ export function DreamPickupLuckArchive({
                     <div>
                       <small>AUTO RATE</small>
                       <strong>
-                        선택 대상 확률 {formatRatePercent(rate)}% 자동 적용
+                        {rateLabel} {formatRatePercent(rate)}% 자동 적용
                       </strong>
                     </div>
                     {record ? (
@@ -468,7 +470,7 @@ export function DreamPickupLuckArchive({
                     </label>
                     <label>
                       <span>
-                        실제 획득 수
+                        실제 대상 획득 수
                         <small>확정 획득 포함</small>
                       </span>
                       <div>

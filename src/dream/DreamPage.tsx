@@ -40,6 +40,7 @@ interface CollectionCharacter extends DreamCharacter {
   rarity?: number | null;
   pickupId?: string;
   pickupTitle?: string;
+  cardTitle?: string;
   imageAlt?: string;
   imagePosition?: string;
   imageScale?: number;
@@ -212,6 +213,7 @@ export function DreamPage({
           rarity: card.rarity,
           pickupId: pickup.id,
           pickupTitle: pickup.title,
+          cardTitle: card.cardTitle,
           imageAlt: card.imageAlt,
           imagePosition: card.imagePosition,
           imageScale: card.imageScale,
@@ -278,6 +280,7 @@ export function DreamPage({
             character.nameKo,
             character.nativeName,
             character.pickupTitle,
+            character.cardTitle,
             character.kind === "pickup"
               ? `픽업${character.rarity ? ` ★${character.rarity}` : ""}`
               : "기본",
@@ -396,7 +399,7 @@ export function DreamPage({
           <strong>{character.nameKo}</strong>
           <span>
             {character.kind === "pickup"
-              ? character.pickupTitle
+              ? character.cardTitle ?? character.pickupTitle
               : character.name}
           </span>
         </span>

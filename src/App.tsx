@@ -64,8 +64,15 @@ const OFFICIAL_SCHEDULE_URL = "https://schedule.hololive.tv/lives/hololive";
 const OFFICIAL_TALENTS_URL = "https://hololive.hololivepro.com/en/talents";
 const OFFICIAL_DREAMS_URL = "https://www.hololive-dreams.com/en";
 const OFFICIAL_MUSIC_URL = "https://hololive.hololivepro.com/en/music/";
-const DREAMS_RELEASE_BROADCAST_URL =
-  "https://www.youtube.com/watch?v=_qHZCR8AcSg";
+
+const DREAM_PICKUP_MOMENT_FORMATTER = new Intl.DateTimeFormat("ko-KR", {
+  timeZone: "Asia/Seoul",
+  month: "long",
+  day: "numeric",
+  hour: "2-digit",
+  minute: "2-digit",
+  hourCycle: "h23",
+});
 
 type PageView =
   | "schedule"
@@ -931,7 +938,10 @@ export default function App() {
           fetch(DATA_URLS.talents, { signal: controller.signal }),
           fetch(DATA_URLS.solos, { signal: controller.signal }),
           fetch(DATA_URLS.youtubeLives, { signal: controller.signal }),
-          fetch(DATA_URLS.hololiveDreams, { signal: controller.signal }),
+          fetch(DATA_URLS.hololiveDreams, {
+            cache: "no-store",
+            signal: controller.signal,
+          }),
         ]);
 
         const responses = [
@@ -1591,6 +1601,36 @@ export default function App() {
       ?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
+  const dreamPickupHighlight = useMemo(() => {
+    const entries = (data?.hololiveDreams.pickups ?? [])
+      .map((pickup) => {
+        const startsAt = Date.parse(
+          pickup.startsAt ?? `${pickup.startsOn}T00:00:00+09:00`,
+        );
+        const endsAt = pickup.endsAt
+          ? Date.parse(pickup.endsAt)
+          : pickup.endsOn
+            ? Date.parse(`${pickup.endsOn}T23:59:59+09:00`)
+            : null;
+        return { pickup, startsAt, endsAt };
+      })
+      .sort((left, right) => left.startsAt - right.startsAt);
+    const nowTime = now.getTime();
+    const active = entries.filter(
+      ({ startsAt, endsAt }) =>
+        startsAt <= nowTime && (endsAt === null || nowTime <= endsAt),
+    );
+    const upcoming = entries.filter(({ startsAt }) => startsAt > nowTime);
+    const ended = entries
+      .filter(({ endsAt }) => endsAt !== null && endsAt < nowTime)
+      .sort((left, right) => right.startsAt - left.startsAt);
+    return {
+      primary: active[0] ?? upcoming[0] ?? ended[0] ?? null,
+      banner: active[0] ?? upcoming[0] ?? null,
+      activeCount: active.length,
+    };
+  }, [data?.hololiveDreams.pickups, now]);
+
   const currentMeta = PAGE_META[view];
 
   return (
@@ -1599,35 +1639,53 @@ export default function App() {
         본문으로 바로가기
       </a>
 
-      <a
-        className="dream-broadcast-banner"
-        href={DREAMS_RELEASE_BROADCAST_URL}
-        target="_blank"
-        rel="noreferrer"
-        aria-label="hololive Dreams 릴리스 기념 특별 방송, 7월 27일 월요일 오후 7시, YouTube에서 보기 (새 창)"
-      >
-        <span className="dream-broadcast-banner__inner">
-          <span className="dream-broadcast-banner__icon" aria-hidden="true">
-            <Radio size={19} strokeWidth={2.2} />
-          </span>
-          <span className="dream-broadcast-banner__copy">
-            <span className="dream-broadcast-banner__eyebrow">
-              <span className="dream-broadcast-banner__live-dot" />
-              MONDAY SPECIAL
+      {dreamPickupHighlight.banner ? (
+        <a
+          className="dream-broadcast-banner"
+          href="?view=dream&dream=pickup"
+          onClick={(event) => {
+            event.preventDefault();
+            openDreamPickup();
+          }}
+          aria-label={`${dreamPickupHighlight.banner.pickup.title} 픽업 일정과 확률 보기`}
+        >
+          <span className="dream-broadcast-banner__inner">
+            <span className="dream-broadcast-banner__icon" aria-hidden="true">
+              <CalendarDays size={19} strokeWidth={2.2} />
             </span>
-            <strong>hololive Dreams 릴리스 기념 방송</strong>
+            <span className="dream-broadcast-banner__copy">
+              <span className="dream-broadcast-banner__eyebrow">
+                <span className="dream-broadcast-banner__live-dot" />
+                CURRENT PICKUP
+                {dreamPickupHighlight.activeCount > 1
+                  ? ` · ${dreamPickupHighlight.activeCount}종 동시 진행`
+                  : ""}
+              </span>
+              <strong>{dreamPickupHighlight.banner.pickup.title}</strong>
+            </span>
+            <span className="dream-broadcast-banner__time">
+              <span>
+                {DREAM_PICKUP_MOMENT_FORMATTER.format(
+                  new Date(dreamPickupHighlight.banner.startsAt),
+                )}{" "}
+                시작
+              </span>
+              <strong>
+                {dreamPickupHighlight.banner.endsAt
+                  ? DREAM_PICKUP_MOMENT_FORMATTER.format(
+                      new Date(dreamPickupHighlight.banner.endsAt),
+                    )
+                  : "종료 일정 확인 중"}
+              </strong>
+              <small>KST · JST</small>
+            </span>
+            <span className="dream-broadcast-banner__cta">
+              일정·확률 보기
+              <ArrowRight size={17} aria-hidden="true" />
+            </span>
           </span>
-          <span className="dream-broadcast-banner__time">
-            <span>7월 27일 월요일</span>
-            <strong>오후 7:00</strong>
-            <small>KST · JST</small>
-          </span>
-          <span className="dream-broadcast-banner__cta">
-            방송 보러가기
-            <ArrowUpRight size={17} aria-hidden="true" />
-          </span>
-        </span>
-      </a>
+        </a>
+      ) : null}
 
       <header className="site-header">
         <button
@@ -1831,9 +1889,27 @@ export default function App() {
                 >
                   <CalendarDays size={30} aria-hidden="true" />
                   <span>
-                    <small>NEXT PICKUP · 07.28</small>
-                    <strong>수영복 홀로멤 선택 픽업</strong>
-                    <em>신규 ★5 홀로멤 5명과 선택 픽업 1%를 확인해 보세요.</em>
+                    <small>
+                      {dreamPickupHighlight.banner
+                        ? `NOW PICKUP · ${
+                            dreamPickupHighlight.banner.endsAt
+                              ? `${DREAM_PICKUP_MOMENT_FORMATTER.format(
+                                  new Date(
+                                    dreamPickupHighlight.banner.endsAt,
+                                  ),
+                                )}까지`
+                              : "진행 중"
+                          }`
+                        : "PICKUP ARCHIVE"}
+                    </small>
+                    <strong>
+                      {dreamPickupHighlight.primary?.pickup.title ??
+                        "픽업 일정 기록"}
+                    </strong>
+                    <em>
+                      {dreamPickupHighlight.primary?.pickup.subtitle ??
+                        "진행 중인 픽업과 지난 제공 비율을 확인해 보세요."}
+                    </em>
                   </span>
                   <ArrowRight size={19} aria-hidden="true" />
                 </button>

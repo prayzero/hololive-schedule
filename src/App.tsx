@@ -900,6 +900,7 @@ export default function App() {
   const [musicData, setMusicData] = useState<MusicPayload | null>(null);
   const [musicError, setMusicError] = useState<string | null>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
+  const dateInputRef = useRef<HTMLInputElement>(null);
   const activeDateButtonRef = useRef<HTMLButtonElement>(null);
   const [now, setNow] = useState(() => new Date());
   const [view, setView] = useState<PageView>(initialView);
@@ -1386,6 +1387,20 @@ export default function App() {
     setSelectedDate(value);
     if (value < dateKey(new Date())) {
       setHideEnded(false);
+    }
+  };
+
+  const openDatePicker = () => {
+    const input = dateInputRef.current;
+
+    if (!input) {
+      return;
+    }
+
+    try {
+      input.showPicker();
+    } catch {
+      input.focus();
     }
   };
 
@@ -2253,25 +2268,26 @@ export default function App() {
 
             <div className="schedule-controls">
               <div className="schedule-date-picker">
-                <label className="date-jump-control">
-                  <span>전체 기록</span>
-                  <select
+                <div className="date-jump-control">
+                  <button
+                    type="button"
+                    className="date-jump-trigger"
+                    onClick={openDatePicker}
+                  >
+                    전체 기록
+                  </button>
+                  <input
+                    ref={dateInputRef}
+                    type="date"
                     aria-label="전체 방송 날짜 선택"
                     value={selectedDate}
+                    min={dateOptions[0]?.value}
+                    max={dateOptions.at(-1)?.value}
                     onChange={(event) =>
                       selectScheduleDate(event.target.value)
                     }
-                  >
-                    {dateOptions.map((option) => (
-                      <option key={option.value} value={option.value}>
-                        {DATE_FORMATTER.format(
-                          new Date(`${option.value}T12:00:00+09:00`),
-                        )}{" "}
-                        · {option.count}개
-                      </option>
-                    ))}
-                  </select>
-                </label>
+                  />
+                </div>
                 <div className="date-tabs" aria-label="방송 날짜 선택">
                   {visibleDateOptions.map((option) => {
                     const isActive = selectedDate === option.value;

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T19:44:54.468Z",
+  "generatedAt": "2026-07-30T21:19:19.839Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -3376,8 +3376,8 @@
       "id": "CkkWwUj6pH0",
       "date": "2026-07-31",
       "dateLabel": "07/31 (金)",
-      "time": "06:00",
-      "startsAt": "2026-07-31T06:00:00+09:00",
+      "time": "05:55",
+      "startsAt": "2026-07-31T05:55:00+09:00",
       "name": "Shiori",
       "title": null,
       "url": "https://www.youtube.com/watch?v=CkkWwUj6pH0",
@@ -3386,6 +3386,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "SjuhALn0NLs",
+      "date": "2026-07-31",
+      "dateLabel": "07/31 (金)",
+      "time": "06:00",
+      "startsAt": "2026-07-31T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=SjuhALn0NLs",
+      "videoId": "SjuhALn0NLs",
+      "thumbnail": "https://img.youtube.com/vi/SjuhALn0NLs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "SXuzMygAO-M",

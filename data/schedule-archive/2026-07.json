@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T10:01:02.350Z",
+  "generatedAt": "2026-07-30T11:58:28.284Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -3013,21 +3013,6 @@
       "branch": "JP"
     },
     {
-      "id": "w5K09LcvPVY",
-      "date": "2026-07-30",
-      "dateLabel": "07/30 (木)",
-      "time": "19:00",
-      "startsAt": "2026-07-30T19:00:00+09:00",
-      "name": "星街すいせい",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=w5K09LcvPVY",
-      "videoId": "w5K09LcvPVY",
-      "thumbnail": "https://img.youtube.com/vi/w5K09LcvPVY/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "DQemCAxKpAo",
       "date": "2026-07-30",
       "dateLabel": "07/30 (木)",
@@ -3056,6 +3041,51 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "w5K09LcvPVY",
+      "date": "2026-07-30",
+      "dateLabel": "07/30 (木)",
+      "time": "19:01",
+      "startsAt": "2026-07-30T19:01:00+09:00",
+      "name": "星街すいせい",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=w5K09LcvPVY",
+      "videoId": "w5K09LcvPVY",
+      "thumbnail": "https://img.youtube.com/vi/w5K09LcvPVY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "gTdqGtIw5hk",
+      "date": "2026-07-30",
+      "dateLabel": "07/30 (木)",
+      "time": "19:30",
+      "startsAt": "2026-07-30T19:30:00+09:00",
+      "name": "虎金妃笑虎",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=gTdqGtIw5hk",
+      "videoId": "gTdqGtIw5hk",
+      "thumbnail": "https://img.youtube.com/vi/gTdqGtIw5hk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "QixQ-byabOc",
+      "date": "2026-07-30",
+      "dateLabel": "07/30 (木)",
+      "time": "19:59",
+      "startsAt": "2026-07-30T19:59:00+09:00",
+      "name": "宝鐘マリン",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=QixQ-byabOc",
+      "videoId": "QixQ-byabOc",
+      "thumbnail": "https://img.youtube.com/vi/QixQ-byabOc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "r2UcH814i7w",
@@ -3103,19 +3133,19 @@
       "branch": "JP"
     },
     {
-      "id": "QixQ-byabOc",
+      "id": "fHj47rziifo",
       "date": "2026-07-30",
       "dateLabel": "07/30 (木)",
-      "time": "20:00",
-      "startsAt": "2026-07-30T20:00:00+09:00",
-      "name": "宝鐘マリン",
+      "time": "21:00",
+      "startsAt": "2026-07-30T21:00:00+09:00",
+      "name": "一条莉々華",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=QixQ-byabOc",
-      "videoId": "QixQ-byabOc",
-      "thumbnail": "https://img.youtube.com/vi/QixQ-byabOc/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=fHj47rziifo",
+      "videoId": "fHj47rziifo",
+      "thumbnail": "https://img.youtube.com/vi/fHj47rziifo/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
-      "branch": "JP"
+      "branch": "DEV_IS"
     },
     {
       "id": "E98jW5bc0qg",
@@ -3163,6 +3193,21 @@
       "branch": "JP"
     },
     {
+      "id": "w5uXRpYvV0E",
+      "date": "2026-07-30",
+      "dateLabel": "07/30 (木)",
+      "time": "21:30",
+      "startsAt": "2026-07-30T21:30:00+09:00",
+      "name": "大神ミオ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=w5uXRpYvV0E",
+      "videoId": "w5uXRpYvV0E",
+      "thumbnail": "https://img.youtube.com/vi/w5uXRpYvV0E/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "7KQhaycHZ50",
       "date": "2026-07-30",
       "dateLabel": "07/30 (木)",
@@ -3173,6 +3218,21 @@
       "url": "https://www.youtube.com/watch?v=7KQhaycHZ50",
       "videoId": "7KQhaycHZ50",
       "thumbnail": "https://img.youtube.com/vi/7KQhaycHZ50/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "m6QqokYtLV4",
+      "date": "2026-07-30",
+      "dateLabel": "07/30 (木)",
+      "time": "22:00",
+      "startsAt": "2026-07-30T22:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=m6QqokYtLV4",
+      "videoId": "m6QqokYtLV4",
+      "thumbnail": "https://img.youtube.com/vi/m6QqokYtLV4/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -3191,6 +3251,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "bkmk27C29e0",
+      "date": "2026-07-30",
+      "dateLabel": "07/30 (木)",
+      "time": "22:00",
+      "startsAt": "2026-07-30T22:00:00+09:00",
+      "name": "Ollie",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=bkmk27C29e0",
+      "videoId": "bkmk27C29e0",
+      "thumbnail": "https://img.youtube.com/vi/bkmk27C29e0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "HIgp_OHYQtc",
@@ -3298,6 +3373,21 @@
       "branch": "EN"
     },
     {
+      "id": "z1vE21rZEv8",
+      "date": "2026-07-31",
+      "dateLabel": "07/31 (金)",
+      "time": "12:00",
+      "startsAt": "2026-07-31T12:00:00+09:00",
+      "name": "FUWAMOCO",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=z1vE21rZEv8",
+      "videoId": "z1vE21rZEv8",
+      "thumbnail": "https://img.youtube.com/vi/z1vE21rZEv8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "YgRGMmcfHO8",
       "date": "2026-07-31",
       "dateLabel": "07/31 (金)",
@@ -3308,6 +3398,21 @@
       "url": "https://www.youtube.com/watch?v=YgRGMmcfHO8",
       "videoId": "YgRGMmcfHO8",
       "thumbnail": "https://img.youtube.com/vi/YgRGMmcfHO8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "7K2atJEZLsM",
+      "date": "2026-07-31",
+      "dateLabel": "07/31 (金)",
+      "time": "14:30",
+      "startsAt": "2026-07-31T14:30:00+09:00",
+      "name": "FUWAMOCO",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=7K2atJEZLsM",
+      "videoId": "7K2atJEZLsM",
+      "thumbnail": "https://img.youtube.com/vi/7K2atJEZLsM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T16:09:22.876Z",
+  "generatedAt": "2026-07-30T17:58:46.078Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -38,6 +38,21 @@
       "url": "https://www.youtube.com/watch?v=d0ce8qQxEhU",
       "videoId": "d0ce8qQxEhU",
       "thumbnail": "https://img.youtube.com/vi/d0ce8qQxEhU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "wmBV_fyuyqk",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "13:00",
+      "startsAt": "2026-08-01T13:00:00+09:00",
+      "name": "FUWAMOCO",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=wmBV_fyuyqk",
+      "videoId": "wmBV_fyuyqk",
+      "thumbnail": "https://img.youtube.com/vi/wmBV_fyuyqk/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

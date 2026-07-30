@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-29T23:35:15.147Z",
+  "generatedAt": "2026-07-30T00:58:47.353Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -2716,8 +2716,8 @@
       "id": "1xV8zKmL4wc",
       "date": "2026-07-30",
       "dateLabel": "07/30 (木)",
-      "time": "10:00",
-      "startsAt": "2026-07-30T10:00:00+09:00",
+      "time": "09:55",
+      "startsAt": "2026-07-30T09:55:00+09:00",
       "name": "Bijou",
       "title": null,
       "url": "https://www.youtube.com/watch?v=1xV8zKmL4wc",
@@ -2758,6 +2758,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "NAnq7y5YQCk",
+      "date": "2026-07-30",
+      "dateLabel": "07/30 (木)",
+      "time": "18:30",
+      "startsAt": "2026-07-30T18:30:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=NAnq7y5YQCk",
+      "videoId": "NAnq7y5YQCk",
+      "thumbnail": "https://img.youtube.com/vi/NAnq7y5YQCk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "SsA1gw9yCbw",
       "date": "2026-07-30",
       "dateLabel": "07/30 (木)",
@@ -2768,21 +2783,6 @@
       "url": "https://www.youtube.com/watch?v=SsA1gw9yCbw",
       "videoId": "SsA1gw9yCbw",
       "thumbnail": "https://img.youtube.com/vi/SsA1gw9yCbw/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
-      "id": "NAnq7y5YQCk",
-      "date": "2026-07-30",
-      "dateLabel": "07/30 (木)",
-      "time": "19:00",
-      "startsAt": "2026-07-30T19:00:00+09:00",
-      "name": "博衣こより",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=NAnq7y5YQCk",
-      "videoId": "NAnq7y5YQCk",
-      "thumbnail": "https://img.youtube.com/vi/NAnq7y5YQCk/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -2843,6 +2843,21 @@
       "url": "https://www.youtube.com/watch?v=JIEAeX-Ruc8",
       "videoId": "JIEAeX-Ruc8",
       "thumbnail": "https://img.youtube.com/vi/JIEAeX-Ruc8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "QixQ-byabOc",
+      "date": "2026-07-30",
+      "dateLabel": "07/30 (木)",
+      "time": "20:00",
+      "startsAt": "2026-07-30T20:00:00+09:00",
+      "name": "宝鐘マリン",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=QixQ-byabOc",
+      "videoId": "QixQ-byabOc",
+      "thumbnail": "https://img.youtube.com/vi/QixQ-byabOc/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

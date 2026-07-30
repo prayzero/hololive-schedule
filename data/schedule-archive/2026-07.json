@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T14:25:14.836Z",
+  "generatedAt": "2026-07-30T16:09:22.876Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -3418,6 +3418,21 @@
       "branch": "EN"
     },
     {
+      "id": "HuSpy_RX1YI",
+      "date": "2026-07-31",
+      "dateLabel": "07/31 (金)",
+      "time": "10:00",
+      "startsAt": "2026-07-31T10:00:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=HuSpy_RX1YI",
+      "videoId": "HuSpy_RX1YI",
+      "thumbnail": "https://img.youtube.com/vi/HuSpy_RX1YI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "jA6-A-BCRC8",
       "date": "2026-07-31",
       "dateLabel": "07/31 (金)",
@@ -3478,6 +3493,21 @@
       "branch": "EN"
     },
     {
+      "id": "TQSU4ylXGVk",
+      "date": "2026-07-31",
+      "dateLabel": "07/31 (金)",
+      "time": "19:00",
+      "startsAt": "2026-07-31T19:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=TQSU4ylXGVk",
+      "videoId": "TQSU4ylXGVk",
+      "thumbnail": "https://img.youtube.com/vi/TQSU4ylXGVk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "wZTVdKbkvRI",
       "date": "2026-07-31",
       "dateLabel": "07/31 (金)",
@@ -3491,6 +3521,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "Gzk1f44KTAw",
+      "date": "2026-07-31",
+      "dateLabel": "07/31 (金)",
+      "time": "20:00",
+      "startsAt": "2026-07-31T20:00:00+09:00",
+      "name": "猫又おかゆ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Gzk1f44KTAw",
+      "videoId": "Gzk1f44KTAw",
+      "thumbnail": "https://img.youtube.com/vi/Gzk1f44KTAw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "lhELE09P530",
@@ -3533,6 +3578,21 @@
       "url": "https://www.youtube.com/watch?v=L8tcseL2jJs",
       "videoId": "L8tcseL2jJs",
       "thumbnail": "https://img.youtube.com/vi/L8tcseL2jJs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "pwA0t-UJMPM",
+      "date": "2026-07-31",
+      "dateLabel": "07/31 (金)",
+      "time": "21:00",
+      "startsAt": "2026-07-31T21:00:00+09:00",
+      "name": "猫又おかゆ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=pwA0t-UJMPM",
+      "videoId": "pwA0t-UJMPM",
+      "thumbnail": "https://img.youtube.com/vi/pwA0t-UJMPM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

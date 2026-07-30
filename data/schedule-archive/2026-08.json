@@ -1,0 +1,76 @@
+{
+  "generatedAt": "2026-07-30T16:09:22.876Z",
+  "source": "https://schedule.hololive.tv/lives/hololive",
+  "sources": [
+    "https://schedule.hololive.tv/lives/hololive",
+    "https://schedule.hololive.tv/lives/indonesia",
+    "https://schedule.hololive.tv/lives/english",
+    "https://schedule.hololive.tv/lives/dev_is"
+  ],
+  "sourceRefreshMinutes": 15,
+  "collectorVersion": "3.0.0",
+  "timezone": "Asia/Tokyo",
+  "month": "2026-08",
+  "entries": [
+    {
+      "id": "5VaKS2rSDgM",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "08:00",
+      "startsAt": "2026-08-01T08:00:00+09:00",
+      "name": "ReGLOSS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=5VaKS2rSDgM",
+      "videoId": "5VaKS2rSDgM",
+      "thumbnail": "https://img.youtube.com/vi/5VaKS2rSDgM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "d0ce8qQxEhU",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "11:00",
+      "startsAt": "2026-08-01T11:00:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=d0ce8qQxEhU",
+      "videoId": "d0ce8qQxEhU",
+      "thumbnail": "https://img.youtube.com/vi/d0ce8qQxEhU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "-9ZtMcOQQOU",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "20:00",
+      "startsAt": "2026-08-01T20:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=-9ZtMcOQQOU",
+      "videoId": "-9ZtMcOQQOU",
+      "thumbnail": "https://img.youtube.com/vi/-9ZtMcOQQOU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "L5K85bMDymA",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "21:00",
+      "startsAt": "2026-08-01T21:00:00+09:00",
+      "name": "さくらみこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=L5K85bMDymA",
+      "videoId": "L5K85bMDymA",
+      "thumbnail": "https://img.youtube.com/vi/L5K85bMDymA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    }
+  ]
+}

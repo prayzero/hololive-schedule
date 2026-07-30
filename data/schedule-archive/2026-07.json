@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T04:13:10.520Z",
+  "generatedAt": "2026-07-30T07:16:52.909Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -2758,6 +2758,36 @@
       "branch": "ID"
     },
     {
+      "id": "THj2YtafVUM",
+      "date": "2026-07-30",
+      "dateLabel": "07/30 (木)",
+      "time": "16:00",
+      "startsAt": "2026-07-30T16:00:00+09:00",
+      "name": "Zeta",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=THj2YtafVUM",
+      "videoId": "THj2YtafVUM",
+      "thumbnail": "https://img.youtube.com/vi/THj2YtafVUM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "DCW0CvsJAnw",
+      "date": "2026-07-30",
+      "dateLabel": "07/30 (木)",
+      "time": "17:30",
+      "startsAt": "2026-07-30T17:30:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=DCW0CvsJAnw",
+      "videoId": "DCW0CvsJAnw",
+      "thumbnail": "https://img.youtube.com/vi/DCW0CvsJAnw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "TmzVzJ5noWc",
       "date": "2026-07-30",
       "dateLabel": "07/30 (木)",
@@ -2893,6 +2923,21 @@
       "branch": "JP"
     },
     {
+      "id": "E98jW5bc0qg",
+      "date": "2026-07-30",
+      "dateLabel": "07/30 (木)",
+      "time": "21:00",
+      "startsAt": "2026-07-30T21:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=E98jW5bc0qg",
+      "videoId": "E98jW5bc0qg",
+      "thumbnail": "https://img.youtube.com/vi/E98jW5bc0qg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "zfYGdSqliRU",
       "date": "2026-07-30",
       "dateLabel": "07/30 (木)",
@@ -2938,6 +2983,21 @@
       "branch": "JP"
     },
     {
+      "id": "G8IVNgQLlTw",
+      "date": "2026-07-30",
+      "dateLabel": "07/30 (木)",
+      "time": "22:00",
+      "startsAt": "2026-07-30T22:00:00+09:00",
+      "name": "AZKi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=G8IVNgQLlTw",
+      "videoId": "G8IVNgQLlTw",
+      "thumbnail": "https://img.youtube.com/vi/G8IVNgQLlTw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "HIgp_OHYQtc",
       "date": "2026-07-30",
       "dateLabel": "07/30 (木)",
@@ -2951,6 +3011,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "tKVo6rotrWY",
+      "date": "2026-07-30",
+      "dateLabel": "07/30 (木)",
+      "time": "23:00",
+      "startsAt": "2026-07-30T23:00:00+09:00",
+      "name": "FUWAMOCO",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=tKVo6rotrWY",
+      "videoId": "tKVo6rotrWY",
+      "thumbnail": "https://img.youtube.com/vi/tKVo6rotrWY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "RNROdqy1XDM",

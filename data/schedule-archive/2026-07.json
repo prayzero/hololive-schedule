@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-30T00:58:47.353Z",
+  "generatedAt": "2026-07-30T04:13:10.520Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -2731,8 +2731,8 @@
       "id": "LH9DzC2gaM0",
       "date": "2026-07-30",
       "dateLabel": "07/30 (木)",
-      "time": "12:00",
-      "startsAt": "2026-07-30T12:00:00+09:00",
+      "time": "12:03",
+      "startsAt": "2026-07-30T12:03:00+09:00",
       "name": "響咲リオナ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=LH9DzC2gaM0",
@@ -2741,6 +2741,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "6DwCbNT90b8",
+      "date": "2026-07-30",
+      "dateLabel": "07/30 (木)",
+      "time": "12:29",
+      "startsAt": "2026-07-30T12:29:00+09:00",
+      "name": "Anya",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=6DwCbNT90b8",
+      "videoId": "6DwCbNT90b8",
+      "thumbnail": "https://img.youtube.com/vi/6DwCbNT90b8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "TmzVzJ5noWc",
@@ -2783,6 +2798,21 @@
       "url": "https://www.youtube.com/watch?v=SsA1gw9yCbw",
       "videoId": "SsA1gw9yCbw",
       "thumbnail": "https://img.youtube.com/vi/SsA1gw9yCbw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "abVLnc17jYo",
+      "date": "2026-07-30",
+      "dateLabel": "07/30 (木)",
+      "time": "19:00",
+      "startsAt": "2026-07-30T19:00:00+09:00",
+      "name": "尾丸ポルカ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=abVLnc17jYo",
+      "videoId": "abVLnc17jYo",
+      "thumbnail": "https://img.youtube.com/vi/abVLnc17jYo/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -2858,6 +2888,21 @@
       "url": "https://www.youtube.com/watch?v=QixQ-byabOc",
       "videoId": "QixQ-byabOc",
       "thumbnail": "https://img.youtube.com/vi/QixQ-byabOc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "zfYGdSqliRU",
+      "date": "2026-07-30",
+      "dateLabel": "07/30 (木)",
+      "time": "21:00",
+      "startsAt": "2026-07-30T21:00:00+09:00",
+      "name": "宝鐘マリン",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=zfYGdSqliRU",
+      "videoId": "zfYGdSqliRU",
+      "thumbnail": "https://img.youtube.com/vi/zfYGdSqliRU/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -2953,6 +2998,21 @@
       "branch": "EN"
     },
     {
+      "id": "jA6-A-BCRC8",
+      "date": "2026-07-31",
+      "dateLabel": "07/31 (金)",
+      "time": "10:00",
+      "startsAt": "2026-07-31T10:00:00+09:00",
+      "name": "Nerissa",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jA6-A-BCRC8",
+      "videoId": "jA6-A-BCRC8",
+      "thumbnail": "https://img.youtube.com/vi/jA6-A-BCRC8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "YgRGMmcfHO8",
       "date": "2026-07-31",
       "dateLabel": "07/31 (金)",
@@ -2966,6 +3026,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "lhELE09P530",
+      "date": "2026-07-31",
+      "dateLabel": "07/31 (金)",
+      "time": "20:00",
+      "startsAt": "2026-07-31T20:00:00+09:00",
+      "name": "儒烏風亭らでん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=lhELE09P530",
+      "videoId": "lhELE09P530",
+      "thumbnail": "https://img.youtube.com/vi/lhELE09P530/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "Gh23DYnNskw",

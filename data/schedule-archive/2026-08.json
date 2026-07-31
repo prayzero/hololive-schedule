@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T15:03:05.208Z",
+  "generatedAt": "2026-07-31T16:51:04.934Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -13,11 +13,26 @@
   "month": "2026-08",
   "entries": [
     {
+      "id": "5eOV9QLcFNE",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "00:04",
+      "startsAt": "2026-08-01T00:04:00+09:00",
+      "name": "ときのそら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=5eOV9QLcFNE",
+      "videoId": "5eOV9QLcFNE",
+      "thumbnail": "https://img.youtube.com/vi/5eOV9QLcFNE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "_tiM7L-HNFw",
       "date": "2026-08-01",
       "dateLabel": "08/01 (土)",
-      "time": "00:15",
-      "startsAt": "2026-08-01T00:15:00+09:00",
+      "time": "00:19",
+      "startsAt": "2026-08-01T00:19:00+09:00",
       "name": "癒月ちょこ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=_tiM7L-HNFw",

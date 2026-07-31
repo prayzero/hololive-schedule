@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T16:51:04.934Z",
+  "generatedAt": "2026-07-31T20:05:48.555Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -323,6 +323,36 @@
       "url": "https://www.youtube.com/watch?v=L5K85bMDymA",
       "videoId": "L5K85bMDymA",
       "thumbnail": "https://img.youtube.com/vi/L5K85bMDymA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "4kviHxHFJHI",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "22:00",
+      "startsAt": "2026-08-01T22:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=4kviHxHFJHI",
+      "videoId": "4kviHxHFJHI",
+      "thumbnail": "https://img.youtube.com/vi/4kviHxHFJHI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "gF4UwqAvFOE",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "22:10",
+      "startsAt": "2026-08-01T22:10:00+09:00",
+      "name": "さくらみこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=gF4UwqAvFOE",
+      "videoId": "gF4UwqAvFOE",
+      "thumbnail": "https://img.youtube.com/vi/gF4UwqAvFOE/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

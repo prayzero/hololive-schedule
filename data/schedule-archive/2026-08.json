@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T12:08:14.712Z",
+  "generatedAt": "2026-07-31T15:03:05.208Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -88,6 +88,21 @@
       "branch": "EN"
     },
     {
+      "id": "hq5-D6hv_X0",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "10:00",
+      "startsAt": "2026-08-01T10:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=hq5-D6hv_X0",
+      "videoId": "hq5-D6hv_X0",
+      "thumbnail": "https://img.youtube.com/vi/hq5-D6hv_X0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "wg2BTTC0Mic",
       "date": "2026-08-01",
       "dateLabel": "08/01 (土)",
@@ -101,6 +116,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "IAEqokFnEwI",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "10:00",
+      "startsAt": "2026-08-01T10:00:00+09:00",
+      "name": "Baelz",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=IAEqokFnEwI",
+      "videoId": "IAEqokFnEwI",
+      "thumbnail": "https://img.youtube.com/vi/IAEqokFnEwI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "J0WwJaYsgxc",
@@ -208,6 +238,21 @@
       "branch": "JP"
     },
     {
+      "id": "LFK0qVASPo0",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "20:00",
+      "startsAt": "2026-08-01T20:00:00+09:00",
+      "name": "猫又おかゆ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=LFK0qVASPo0",
+      "videoId": "LFK0qVASPo0",
+      "thumbnail": "https://img.youtube.com/vi/LFK0qVASPo0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "-9ZtMcOQQOU",
       "date": "2026-08-01",
       "dateLabel": "08/01 (土)",
@@ -263,6 +308,66 @@
       "url": "https://www.youtube.com/watch?v=L5K85bMDymA",
       "videoId": "L5K85bMDymA",
       "thumbnail": "https://img.youtube.com/vi/L5K85bMDymA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "cUa4N6zurbw",
+      "date": "2026-08-02",
+      "dateLabel": "08/02 (日)",
+      "time": "13:00",
+      "startsAt": "2026-08-02T13:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=cUa4N6zurbw",
+      "videoId": "cUa4N6zurbw",
+      "thumbnail": "https://img.youtube.com/vi/cUa4N6zurbw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "ftGnFcTMdSE",
+      "date": "2026-08-02",
+      "dateLabel": "08/02 (日)",
+      "time": "13:00",
+      "startsAt": "2026-08-02T13:00:00+09:00",
+      "name": "白上フブキ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ftGnFcTMdSE",
+      "videoId": "ftGnFcTMdSE",
+      "thumbnail": "https://img.youtube.com/vi/ftGnFcTMdSE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "9uv6ihLUXtQ",
+      "date": "2026-08-02",
+      "dateLabel": "08/02 (日)",
+      "time": "20:00",
+      "startsAt": "2026-08-02T20:00:00+09:00",
+      "name": "ロボ子さん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=9uv6ihLUXtQ",
+      "videoId": "9uv6ihLUXtQ",
+      "thumbnail": "https://img.youtube.com/vi/9uv6ihLUXtQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "FF7CxNDMxU4",
+      "date": "2026-08-02",
+      "dateLabel": "08/02 (日)",
+      "time": "21:00",
+      "startsAt": "2026-08-02T21:00:00+09:00",
+      "name": "白上フブキ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=FF7CxNDMxU4",
+      "videoId": "FF7CxNDMxU4",
+      "thumbnail": "https://img.youtube.com/vi/FF7CxNDMxU4/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

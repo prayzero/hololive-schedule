@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T06:51:58.525Z",
+  "generatedAt": "2026-07-31T09:50:47.705Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12,6 +12,36 @@
   "timezone": "Asia/Tokyo",
   "month": "2026-08",
   "entries": [
+    {
+      "id": "_tiM7L-HNFw",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "00:15",
+      "startsAt": "2026-08-01T00:15:00+09:00",
+      "name": "癒月ちょこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=_tiM7L-HNFw",
+      "videoId": "_tiM7L-HNFw",
+      "thumbnail": "https://img.youtube.com/vi/_tiM7L-HNFw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "sbZtiy3Eyuw",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "06:00",
+      "startsAt": "2026-08-01T06:00:00+09:00",
+      "name": "Gigi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=sbZtiy3Eyuw",
+      "videoId": "sbZtiy3Eyuw",
+      "thumbnail": "https://img.youtube.com/vi/sbZtiy3Eyuw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
     {
       "id": "5VaKS2rSDgM",
       "date": "2026-08-01",
@@ -103,6 +133,51 @@
       "branch": "EN"
     },
     {
+      "id": "2VfquzoEaRk",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "19:00",
+      "startsAt": "2026-08-01T19:00:00+09:00",
+      "name": "ReGLOSS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=2VfquzoEaRk",
+      "videoId": "2VfquzoEaRk",
+      "thumbnail": "https://img.youtube.com/vi/2VfquzoEaRk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "c9nDZMcCC9E",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "19:00",
+      "startsAt": "2026-08-01T19:00:00+09:00",
+      "name": "ラプラス",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=c9nDZMcCC9E",
+      "videoId": "c9nDZMcCC9E",
+      "thumbnail": "https://img.youtube.com/vi/c9nDZMcCC9E/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "18FoBknzzYs",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "19:30",
+      "startsAt": "2026-08-01T19:30:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=18FoBknzzYs",
+      "videoId": "18FoBknzzYs",
+      "thumbnail": "https://img.youtube.com/vi/18FoBknzzYs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "-9ZtMcOQQOU",
       "date": "2026-08-01",
       "dateLabel": "08/01 (土)",
@@ -113,6 +188,21 @@
       "url": "https://www.youtube.com/watch?v=-9ZtMcOQQOU",
       "videoId": "-9ZtMcOQQOU",
       "thumbnail": "https://img.youtube.com/vi/-9ZtMcOQQOU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "IAe2VqUvnpQ",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "20:00",
+      "startsAt": "2026-08-01T20:00:00+09:00",
+      "name": "姫森ルーナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=IAe2VqUvnpQ",
+      "videoId": "IAe2VqUvnpQ",
+      "thumbnail": "https://img.youtube.com/vi/IAe2VqUvnpQ/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

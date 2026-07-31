@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-07-31T06:51:58.525Z",
+  "updatedAt": "2026-07-31T09:50:47.705Z",
   "timezone": "Asia/Tokyo",
-  "totalEntries": 258,
+  "totalEntries": 277,
   "dates": [
     {
       "date": "2026-07-25",
@@ -36,25 +36,25 @@
     {
       "date": "2026-07-31",
       "month": "2026-07",
-      "count": 28
+      "count": 41
     },
     {
       "date": "2026-08-01",
       "month": "2026-08",
-      "count": 8
+      "count": 14
     }
   ],
   "months": [
     {
       "month": "2026-07",
-      "count": 250,
+      "count": 263,
       "firstDate": "2026-07-25",
       "lastDate": "2026-07-31",
       "url": "data/schedule-archive/2026-07.json"
     },
     {
       "month": "2026-08",
-      "count": 8,
+      "count": 14,
       "firstDate": "2026-08-01",
       "lastDate": "2026-08-01",
       "url": "data/schedule-archive/2026-08.json"

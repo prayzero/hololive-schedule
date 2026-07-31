@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T00:11:55.583Z",
+  "generatedAt": "2026-07-31T06:51:58.525Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -26,6 +26,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "wg2BTTC0Mic",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "10:00",
+      "startsAt": "2026-08-01T10:00:00+09:00",
+      "name": "儒烏風亭らでん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=wg2BTTC0Mic",
+      "videoId": "wg2BTTC0Mic",
+      "thumbnail": "https://img.youtube.com/vi/wg2BTTC0Mic/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "J0WwJaYsgxc",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "11:00",
+      "startsAt": "2026-08-01T11:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=J0WwJaYsgxc",
+      "videoId": "J0WwJaYsgxc",
+      "thumbnail": "https://img.youtube.com/vi/J0WwJaYsgxc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "d0ce8qQxEhU",

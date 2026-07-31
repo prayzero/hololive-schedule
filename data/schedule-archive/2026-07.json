@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T04:03:42.484Z",
+  "generatedAt": "2026-07-31T06:51:58.525Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -3538,26 +3538,11 @@
       "branch": "EN"
     },
     {
-      "id": "7K2atJEZLsM",
-      "date": "2026-07-31",
-      "dateLabel": "07/31 (金)",
-      "time": "14:30",
-      "startsAt": "2026-07-31T14:30:00+09:00",
-      "name": "FUWAMOCO",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=7K2atJEZLsM",
-      "videoId": "7K2atJEZLsM",
-      "thumbnail": "https://img.youtube.com/vi/7K2atJEZLsM/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "EN"
-    },
-    {
       "id": "HTTp3EVJBkc",
       "date": "2026-07-31",
       "dateLabel": "07/31 (金)",
-      "time": "14:30",
-      "startsAt": "2026-07-31T14:30:00+09:00",
+      "time": "14:25",
+      "startsAt": "2026-07-31T14:25:00+09:00",
       "name": "Kaela",
       "title": null,
       "url": "https://www.youtube.com/watch?v=HTTp3EVJBkc",
@@ -3566,6 +3551,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
+    },
+    {
+      "id": "7K2atJEZLsM",
+      "date": "2026-07-31",
+      "dateLabel": "07/31 (金)",
+      "time": "14:36",
+      "startsAt": "2026-07-31T14:36:00+09:00",
+      "name": "FUWAMOCO",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=7K2atJEZLsM",
+      "videoId": "7K2atJEZLsM",
+      "thumbnail": "https://img.youtube.com/vi/7K2atJEZLsM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "YzSIyY3gaoQ",
@@ -3728,6 +3728,21 @@
       "url": "https://www.youtube.com/watch?v=gyeo_J_F28g",
       "videoId": "gyeo_J_F28g",
       "thumbnail": "https://img.youtube.com/vi/gyeo_J_F28g/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "WMhY2qqtDPY",
+      "date": "2026-07-31",
+      "dateLabel": "07/31 (金)",
+      "time": "22:00",
+      "startsAt": "2026-07-31T22:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=WMhY2qqtDPY",
+      "videoId": "WMhY2qqtDPY",
+      "thumbnail": "https://img.youtube.com/vi/WMhY2qqtDPY/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

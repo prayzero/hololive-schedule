@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T14:08:18.940Z",
+  "generatedAt": "2026-08-01T15:40:00.453Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -191,21 +191,6 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
-    },
-    {
-      "id": "d0ce8qQxEhU",
-      "date": "2026-08-01",
-      "dateLabel": "08/01 (土)",
-      "time": "11:00",
-      "startsAt": "2026-08-01T11:00:00+09:00",
-      "name": "Calli",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=d0ce8qQxEhU",
-      "videoId": "d0ce8qQxEhU",
-      "thumbnail": "https://img.youtube.com/vi/d0ce8qQxEhU/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "EN"
     },
     {
       "id": "TBfi05BxwRs",
@@ -1123,6 +1108,21 @@
       "branch": "JP"
     },
     {
+      "id": "UqWS3MWsHss",
+      "date": "2026-08-02",
+      "dateLabel": "08/02 (日)",
+      "time": "20:00",
+      "startsAt": "2026-08-02T20:00:00+09:00",
+      "name": "猫又おかゆ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=UqWS3MWsHss",
+      "videoId": "UqWS3MWsHss",
+      "thumbnail": "https://img.youtube.com/vi/UqWS3MWsHss/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "9uv6ihLUXtQ",
       "date": "2026-08-02",
       "dateLabel": "08/02 (日)",
@@ -1153,6 +1153,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "E1XPVTLEpvs",
+      "date": "2026-08-02",
+      "dateLabel": "08/02 (日)",
+      "time": "21:00",
+      "startsAt": "2026-08-02T21:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=E1XPVTLEpvs",
+      "videoId": "E1XPVTLEpvs",
+      "thumbnail": "https://img.youtube.com/vi/E1XPVTLEpvs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "FF7CxNDMxU4",
       "date": "2026-08-02",
       "dateLabel": "08/02 (日)",
@@ -1181,6 +1196,51 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "d0ce8qQxEhU",
+      "date": "2026-08-03",
+      "dateLabel": "08/03 (月)",
+      "time": "09:00",
+      "startsAt": "2026-08-03T09:00:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=d0ce8qQxEhU",
+      "videoId": "d0ce8qQxEhU",
+      "thumbnail": "https://img.youtube.com/vi/d0ce8qQxEhU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "C1hXB1NIGmM",
+      "date": "2026-08-03",
+      "dateLabel": "08/03 (月)",
+      "time": "18:00",
+      "startsAt": "2026-08-03T18:00:00+09:00",
+      "name": "夏色まつり",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=C1hXB1NIGmM",
+      "videoId": "C1hXB1NIGmM",
+      "thumbnail": "https://img.youtube.com/vi/C1hXB1NIGmM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "88WcglQIKkI",
+      "date": "2026-08-03",
+      "dateLabel": "08/03 (月)",
+      "time": "23:40",
+      "startsAt": "2026-08-03T23:40:00+09:00",
+      "name": "アキロゼ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=88WcglQIKkI",
+      "videoId": "88WcglQIKkI",
+      "thumbnail": "https://img.youtube.com/vi/88WcglQIKkI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     }
   ]
 }

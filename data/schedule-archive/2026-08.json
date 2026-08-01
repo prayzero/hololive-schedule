@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T11:03:04.303Z",
+  "generatedAt": "2026-08-01T12:08:15.070Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -718,6 +718,36 @@
       "branch": "JP"
     },
     {
+      "id": "L5K85bMDymA",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "20:57",
+      "startsAt": "2026-08-01T20:57:00+09:00",
+      "name": "さくらみこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=L5K85bMDymA",
+      "videoId": "L5K85bMDymA",
+      "thumbnail": "https://img.youtube.com/vi/L5K85bMDymA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "a0rbViMJZVs",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "21:00",
+      "startsAt": "2026-08-01T21:00:00+09:00",
+      "name": "虎金妃笑虎",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=a0rbViMJZVs",
+      "videoId": "a0rbViMJZVs",
+      "thumbnail": "https://img.youtube.com/vi/a0rbViMJZVs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "nNqnTpCBDXs",
       "date": "2026-08-01",
       "dateLabel": "08/01 (土)",
@@ -733,19 +763,19 @@
       "branch": "ID"
     },
     {
-      "id": "L5K85bMDymA",
+      "id": "d3X7rbNaETQ",
       "date": "2026-08-01",
       "dateLabel": "08/01 (土)",
-      "time": "21:00",
-      "startsAt": "2026-08-01T21:00:00+09:00",
-      "name": "さくらみこ",
+      "time": "21:15",
+      "startsAt": "2026-08-01T21:15:00+09:00",
+      "name": "Kobo",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=L5K85bMDymA",
-      "videoId": "L5K85bMDymA",
-      "thumbnail": "https://img.youtube.com/vi/L5K85bMDymA/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=d3X7rbNaETQ",
+      "videoId": "d3X7rbNaETQ",
+      "thumbnail": "https://img.youtube.com/vi/d3X7rbNaETQ/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
-      "branch": "JP"
+      "branch": "ID"
     },
     {
       "id": "4kviHxHFJHI",
@@ -821,6 +851,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "gcS0kU8RdrE",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "22:00",
+      "startsAt": "2026-08-01T22:00:00+09:00",
+      "name": "IRyS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=gcS0kU8RdrE",
+      "videoId": "gcS0kU8RdrE",
+      "thumbnail": "https://img.youtube.com/vi/gcS0kU8RdrE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "wf5IV4Uo7_o",
@@ -926,6 +971,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "ZSLfgSfL2Ik",
+      "date": "2026-08-02",
+      "dateLabel": "08/02 (日)",
+      "time": "10:00",
+      "startsAt": "2026-08-02T10:00:00+09:00",
+      "name": "FUWAMOCO",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ZSLfgSfL2Ik",
+      "videoId": "ZSLfgSfL2Ik",
+      "thumbnail": "https://img.youtube.com/vi/ZSLfgSfL2Ik/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "jk6GIUH_ojo",

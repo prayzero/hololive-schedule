@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T12:08:15.070Z",
+  "generatedAt": "2026-08-01T14:08:18.940Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -766,13 +766,28 @@
       "id": "d3X7rbNaETQ",
       "date": "2026-08-01",
       "dateLabel": "08/01 (土)",
-      "time": "21:15",
-      "startsAt": "2026-08-01T21:15:00+09:00",
+      "time": "21:34",
+      "startsAt": "2026-08-01T21:34:00+09:00",
       "name": "Kobo",
       "title": null,
       "url": "https://www.youtube.com/watch?v=d3X7rbNaETQ",
       "videoId": "d3X7rbNaETQ",
       "thumbnail": "https://img.youtube.com/vi/d3X7rbNaETQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "mdexgYovM80",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "21:48",
+      "startsAt": "2026-08-01T21:48:00+09:00",
+      "name": "Zeta",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=mdexgYovM80",
+      "videoId": "mdexgYovM80",
+      "thumbnail": "https://img.youtube.com/vi/mdexgYovM80/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "ID"
@@ -791,21 +806,6 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
-    },
-    {
-      "id": "pcyDnKZzIFQ",
-      "date": "2026-08-01",
-      "dateLabel": "08/01 (土)",
-      "time": "22:00",
-      "startsAt": "2026-08-01T22:00:00+09:00",
-      "name": "輪堂千速",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=pcyDnKZzIFQ",
-      "videoId": "pcyDnKZzIFQ",
-      "thumbnail": "https://img.youtube.com/vi/pcyDnKZzIFQ/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "DEV_IS"
     },
     {
       "id": "v2N1El1K-_o",
@@ -841,8 +841,8 @@
       "id": "lDGKhxAncEw",
       "date": "2026-08-01",
       "dateLabel": "08/01 (土)",
-      "time": "22:00",
-      "startsAt": "2026-08-01T22:00:00+09:00",
+      "time": "22:01",
+      "startsAt": "2026-08-01T22:01:00+09:00",
       "name": "AZKi",
       "title": null,
       "url": "https://www.youtube.com/watch?v=lDGKhxAncEw",
@@ -853,26 +853,11 @@
       "branch": "JP"
     },
     {
-      "id": "gcS0kU8RdrE",
-      "date": "2026-08-01",
-      "dateLabel": "08/01 (土)",
-      "time": "22:00",
-      "startsAt": "2026-08-01T22:00:00+09:00",
-      "name": "IRyS",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=gcS0kU8RdrE",
-      "videoId": "gcS0kU8RdrE",
-      "thumbnail": "https://img.youtube.com/vi/gcS0kU8RdrE/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "EN"
-    },
-    {
       "id": "wf5IV4Uo7_o",
       "date": "2026-08-01",
       "dateLabel": "08/01 (土)",
-      "time": "22:00",
-      "startsAt": "2026-08-01T22:00:00+09:00",
+      "time": "22:02",
+      "startsAt": "2026-08-01T22:02:00+09:00",
       "name": "Kaela",
       "title": null,
       "url": "https://www.youtube.com/watch?v=wf5IV4Uo7_o",
@@ -881,6 +866,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
+    },
+    {
+      "id": "gcS0kU8RdrE",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "22:04",
+      "startsAt": "2026-08-01T22:04:00+09:00",
+      "name": "IRyS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=gcS0kU8RdrE",
+      "videoId": "gcS0kU8RdrE",
+      "thumbnail": "https://img.youtube.com/vi/gcS0kU8RdrE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "gF4UwqAvFOE",
@@ -898,11 +898,41 @@
       "branch": "JP"
     },
     {
+      "id": "i5xPfcyizDU",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "22:15",
+      "startsAt": "2026-08-01T22:15:00+09:00",
+      "name": "さくらみこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=i5xPfcyizDU",
+      "videoId": "i5xPfcyizDU",
+      "thumbnail": "https://img.youtube.com/vi/i5xPfcyizDU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "KSocvyNSRzI",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "22:33",
+      "startsAt": "2026-08-01T22:33:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=KSocvyNSRzI",
+      "videoId": "KSocvyNSRzI",
+      "thumbnail": "https://img.youtube.com/vi/KSocvyNSRzI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "63XO5GzHeVs",
       "date": "2026-08-01",
       "dateLabel": "08/01 (土)",
-      "time": "23:00",
-      "startsAt": "2026-08-01T23:00:00+09:00",
+      "time": "23:04",
+      "startsAt": "2026-08-01T23:04:00+09:00",
       "name": "Raora",
       "title": null,
       "url": "https://www.youtube.com/watch?v=63XO5GzHeVs",
@@ -1048,6 +1078,36 @@
       "branch": "JP"
     },
     {
+      "id": "wllGPle-8yQ",
+      "date": "2026-08-02",
+      "dateLabel": "08/02 (日)",
+      "time": "14:00",
+      "startsAt": "2026-08-02T14:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=wllGPle-8yQ",
+      "videoId": "wllGPle-8yQ",
+      "thumbnail": "https://img.youtube.com/vi/wllGPle-8yQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "ZZEPAVRUR5M",
+      "date": "2026-08-02",
+      "dateLabel": "08/02 (日)",
+      "time": "18:00",
+      "startsAt": "2026-08-02T18:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ZZEPAVRUR5M",
+      "videoId": "ZZEPAVRUR5M",
+      "thumbnail": "https://img.youtube.com/vi/ZZEPAVRUR5M/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "JgYdwU4ABlY",
       "date": "2026-08-02",
       "dateLabel": "08/02 (日)",
@@ -1078,6 +1138,21 @@
       "branch": "JP"
     },
     {
+      "id": "pcyDnKZzIFQ",
+      "date": "2026-08-02",
+      "dateLabel": "08/02 (日)",
+      "time": "21:00",
+      "startsAt": "2026-08-02T21:00:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=pcyDnKZzIFQ",
+      "videoId": "pcyDnKZzIFQ",
+      "thumbnail": "https://img.youtube.com/vi/pcyDnKZzIFQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "FF7CxNDMxU4",
       "date": "2026-08-02",
       "dateLabel": "08/02 (日)",
@@ -1091,6 +1166,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "NVUfFkAd6sc",
+      "date": "2026-08-02",
+      "dateLabel": "08/02 (日)",
+      "time": "22:30",
+      "startsAt": "2026-08-02T22:30:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=NVUfFkAd6sc",
+      "videoId": "NVUfFkAd6sc",
+      "thumbnail": "https://img.youtube.com/vi/NVUfFkAd6sc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T18:32:41.062Z",
+  "generatedAt": "2026-08-01T19:46:39.602Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -1256,6 +1256,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "ztK38xxakx0",
+      "date": "2026-08-03",
+      "dateLabel": "08/03 (月)",
+      "time": "04:00",
+      "startsAt": "2026-08-03T04:00:00+09:00",
+      "name": "Elizabeth",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ztK38xxakx0",
+      "videoId": "ztK38xxakx0",
+      "thumbnail": "https://img.youtube.com/vi/ztK38xxakx0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "d0ce8qQxEhU",

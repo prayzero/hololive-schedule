@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-01T17:10:17.370Z",
+  "generatedAt": "2026-08-01T18:32:41.062Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -928,6 +928,21 @@
       "branch": "EN"
     },
     {
+      "id": "RLx4trQNLLs",
+      "date": "2026-08-02",
+      "dateLabel": "08/02 (日)",
+      "time": "03:00",
+      "startsAt": "2026-08-02T03:00:00+09:00",
+      "name": "Nerissa",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=RLx4trQNLLs",
+      "videoId": "RLx4trQNLLs",
+      "thumbnail": "https://img.youtube.com/vi/RLx4trQNLLs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "k78QzbKx9yE",
       "date": "2026-08-02",
       "dateLabel": "08/02 (日)",
@@ -1048,6 +1063,21 @@
       "branch": "JP"
     },
     {
+      "id": "zwLbl7YcKuU",
+      "date": "2026-08-02",
+      "dateLabel": "08/02 (日)",
+      "time": "11:00",
+      "startsAt": "2026-08-02T11:00:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=zwLbl7YcKuU",
+      "videoId": "zwLbl7YcKuU",
+      "thumbnail": "https://img.youtube.com/vi/zwLbl7YcKuU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "cUa4N6zurbw",
       "date": "2026-08-02",
       "dateLabel": "08/02 (日)",
@@ -1118,6 +1148,21 @@
       "url": "https://www.youtube.com/watch?v=JgYdwU4ABlY",
       "videoId": "JgYdwU4ABlY",
       "thumbnail": "https://img.youtube.com/vi/JgYdwU4ABlY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "88SRyvDisQo",
+      "date": "2026-08-02",
+      "dateLabel": "08/02 (日)",
+      "time": "18:00",
+      "startsAt": "2026-08-02T18:00:00+09:00",
+      "name": "姫森ルーナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=88SRyvDisQo",
+      "videoId": "88SRyvDisQo",
+      "thumbnail": "https://img.youtube.com/vi/88SRyvDisQo/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

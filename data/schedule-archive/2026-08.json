@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T23:36:54.883Z",
+  "generatedAt": "2026-08-01T01:09:42.300Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -106,8 +106,8 @@
       "id": "J3G4zr8LyFs",
       "date": "2026-08-01",
       "dateLabel": "08/01 (土)",
-      "time": "09:00",
-      "startsAt": "2026-08-01T09:00:00+09:00",
+      "time": "09:02",
+      "startsAt": "2026-08-01T09:02:00+09:00",
       "name": "Calli",
       "title": null,
       "url": "https://www.youtube.com/watch?v=J3G4zr8LyFs",
@@ -116,21 +116,6 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
-    },
-    {
-      "id": "hq5-D6hv_X0",
-      "date": "2026-08-01",
-      "dateLabel": "08/01 (土)",
-      "time": "10:00",
-      "startsAt": "2026-08-01T10:00:00+09:00",
-      "name": "大空スバル",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=hq5-D6hv_X0",
-      "videoId": "hq5-D6hv_X0",
-      "thumbnail": "https://img.youtube.com/vi/hq5-D6hv_X0/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
     },
     {
       "id": "wg2BTTC0Mic",
@@ -161,6 +146,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "hq5-D6hv_X0",
+      "date": "2026-08-01",
+      "dateLabel": "08/01 (土)",
+      "time": "10:01",
+      "startsAt": "2026-08-01T10:01:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=hq5-D6hv_X0",
+      "videoId": "hq5-D6hv_X0",
+      "thumbnail": "https://img.youtube.com/vi/hq5-D6hv_X0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "J0WwJaYsgxc",

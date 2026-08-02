@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T11:03:41.326Z",
+  "generatedAt": "2026-08-02T12:10:43.030Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -1558,11 +1558,26 @@
       "branch": "JP"
     },
     {
-      "id": "FF7CxNDMxU4",
+      "id": "_buc53b7gs8",
       "date": "2026-08-02",
       "dateLabel": "08/02 (日)",
       "time": "21:00",
       "startsAt": "2026-08-02T21:00:00+09:00",
+      "name": "ロボ子さん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=_buc53b7gs8",
+      "videoId": "_buc53b7gs8",
+      "thumbnail": "https://img.youtube.com/vi/_buc53b7gs8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "FF7CxNDMxU4",
+      "date": "2026-08-02",
+      "dateLabel": "08/02 (日)",
+      "time": "21:01",
+      "startsAt": "2026-08-02T21:01:00+09:00",
       "name": "白上フブキ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=FF7CxNDMxU4",
@@ -1576,8 +1591,8 @@
       "id": "EG96NO25yhA",
       "date": "2026-08-02",
       "dateLabel": "08/02 (日)",
-      "time": "21:00",
-      "startsAt": "2026-08-02T21:00:00+09:00",
+      "time": "21:01",
+      "startsAt": "2026-08-02T21:01:00+09:00",
       "name": "一条莉々華",
       "title": null,
       "url": "https://www.youtube.com/watch?v=EG96NO25yhA",
@@ -1588,26 +1603,11 @@
       "branch": "DEV_IS"
     },
     {
-      "id": "8ljVms5SVSQ",
-      "date": "2026-08-02",
-      "dateLabel": "08/02 (日)",
-      "time": "21:00",
-      "startsAt": "2026-08-02T21:00:00+09:00",
-      "name": "兎田ぺこら",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=8ljVms5SVSQ",
-      "videoId": "8ljVms5SVSQ",
-      "thumbnail": "https://img.youtube.com/vi/8ljVms5SVSQ/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "bdlT5P0G5uU",
       "date": "2026-08-02",
       "dateLabel": "08/02 (日)",
-      "time": "21:00",
-      "startsAt": "2026-08-02T21:00:00+09:00",
+      "time": "21:01",
+      "startsAt": "2026-08-02T21:01:00+09:00",
       "name": "さくらみこ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=bdlT5P0G5uU",
@@ -1618,11 +1618,26 @@
       "branch": "JP"
     },
     {
+      "id": "8ljVms5SVSQ",
+      "date": "2026-08-02",
+      "dateLabel": "08/02 (日)",
+      "time": "21:02",
+      "startsAt": "2026-08-02T21:02:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=8ljVms5SVSQ",
+      "videoId": "8ljVms5SVSQ",
+      "thumbnail": "https://img.youtube.com/vi/8ljVms5SVSQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "Bzy5Cxg3Bpg",
       "date": "2026-08-02",
       "dateLabel": "08/02 (日)",
-      "time": "21:00",
-      "startsAt": "2026-08-02T21:00:00+09:00",
+      "time": "21:15",
+      "startsAt": "2026-08-02T21:15:00+09:00",
       "name": "ロボ子さん",
       "title": null,
       "url": "https://www.youtube.com/watch?v=Bzy5Cxg3Bpg",
@@ -1633,19 +1648,19 @@
       "branch": "JP"
     },
     {
-      "id": "_buc53b7gs8",
+      "id": "v4j2KHJGfp4",
       "date": "2026-08-02",
       "dateLabel": "08/02 (日)",
-      "time": "21:02",
-      "startsAt": "2026-08-02T21:02:00+09:00",
-      "name": "ロボ子さん",
+      "time": "21:30",
+      "startsAt": "2026-08-02T21:30:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=_buc53b7gs8",
-      "videoId": "_buc53b7gs8",
-      "thumbnail": "https://img.youtube.com/vi/_buc53b7gs8/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=v4j2KHJGfp4",
+      "videoId": "v4j2KHJGfp4",
+      "thumbnail": "https://img.youtube.com/vi/v4j2KHJGfp4/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
-      "branch": "JP"
+      "branch": "DEV_IS"
     },
     {
       "id": "Lj0IAiINbEw",
@@ -1708,6 +1723,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "GdDQnsDqJps",
+      "date": "2026-08-02",
+      "dateLabel": "08/02 (日)",
+      "time": "23:00",
+      "startsAt": "2026-08-02T23:00:00+09:00",
+      "name": "癒月ちょこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=GdDQnsDqJps",
+      "videoId": "GdDQnsDqJps",
+      "thumbnail": "https://img.youtube.com/vi/GdDQnsDqJps/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "u8Nec47lfb4",
       "date": "2026-08-03",
       "dateLabel": "08/03 (月)",
@@ -1751,6 +1781,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "VbJcErxLlFI",
+      "date": "2026-08-03",
+      "dateLabel": "08/03 (月)",
+      "time": "07:30",
+      "startsAt": "2026-08-03T07:30:00+09:00",
+      "name": "大神ミオ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=VbJcErxLlFI",
+      "videoId": "VbJcErxLlFI",
+      "thumbnail": "https://img.youtube.com/vi/VbJcErxLlFI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "AkXACF1rWNk",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T22:04:50.669Z",
+  "generatedAt": "2026-08-02T23:04:55.254Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -1861,8 +1861,8 @@
       "id": "VbJcErxLlFI",
       "date": "2026-08-03",
       "dateLabel": "08/03 (月)",
-      "time": "07:30",
-      "startsAt": "2026-08-03T07:30:00+09:00",
+      "time": "07:31",
+      "startsAt": "2026-08-03T07:31:00+09:00",
       "name": "大神ミオ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=VbJcErxLlFI",
@@ -1873,11 +1873,26 @@
       "branch": "JP"
     },
     {
+      "id": "b_doJBhYF9s",
+      "date": "2026-08-03",
+      "dateLabel": "08/03 (月)",
+      "time": "07:40",
+      "startsAt": "2026-08-03T07:40:00+09:00",
+      "name": "Kronii",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=b_doJBhYF9s",
+      "videoId": "b_doJBhYF9s",
+      "thumbnail": "https://img.youtube.com/vi/b_doJBhYF9s/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "2Qoc1B-Sqog",
       "date": "2026-08-03",
       "dateLabel": "08/03 (月)",
-      "time": "08:00",
-      "startsAt": "2026-08-03T08:00:00+09:00",
+      "time": "07:57",
+      "startsAt": "2026-08-03T07:57:00+09:00",
       "name": "Bijou",
       "title": null,
       "url": "https://www.youtube.com/watch?v=2Qoc1B-Sqog",
@@ -1901,6 +1916,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "1xhMDws0iUg",
+      "date": "2026-08-03",
+      "dateLabel": "08/03 (月)",
+      "time": "08:00",
+      "startsAt": "2026-08-03T08:00:00+09:00",
+      "name": "Shiori",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=1xhMDws0iUg",
+      "videoId": "1xhMDws0iUg",
+      "thumbnail": "https://img.youtube.com/vi/1xhMDws0iUg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "d0ce8qQxEhU",

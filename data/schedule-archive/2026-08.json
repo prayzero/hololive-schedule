@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T09:16:28.015Z",
+  "generatedAt": "2026-08-02T11:03:41.326Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -1498,6 +1498,21 @@
       "branch": "JP"
     },
     {
+      "id": "9uv6ihLUXtQ",
+      "date": "2026-08-02",
+      "dateLabel": "08/02 (日)",
+      "time": "19:55",
+      "startsAt": "2026-08-02T19:55:00+09:00",
+      "name": "ロボ子さん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=9uv6ihLUXtQ",
+      "videoId": "9uv6ihLUXtQ",
+      "thumbnail": "https://img.youtube.com/vi/9uv6ihLUXtQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "UqWS3MWsHss",
       "date": "2026-08-02",
       "dateLabel": "08/02 (日)",
@@ -1508,21 +1523,6 @@
       "url": "https://www.youtube.com/watch?v=UqWS3MWsHss",
       "videoId": "UqWS3MWsHss",
       "thumbnail": "https://img.youtube.com/vi/UqWS3MWsHss/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
-      "id": "9uv6ihLUXtQ",
-      "date": "2026-08-02",
-      "dateLabel": "08/02 (日)",
-      "time": "20:00",
-      "startsAt": "2026-08-02T20:00:00+09:00",
-      "name": "ロボ子さん",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=9uv6ihLUXtQ",
-      "videoId": "9uv6ihLUXtQ",
-      "thumbnail": "https://img.youtube.com/vi/9uv6ihLUXtQ/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -1573,6 +1573,21 @@
       "branch": "JP"
     },
     {
+      "id": "EG96NO25yhA",
+      "date": "2026-08-02",
+      "dateLabel": "08/02 (日)",
+      "time": "21:00",
+      "startsAt": "2026-08-02T21:00:00+09:00",
+      "name": "一条莉々華",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=EG96NO25yhA",
+      "videoId": "EG96NO25yhA",
+      "thumbnail": "https://img.youtube.com/vi/EG96NO25yhA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "8ljVms5SVSQ",
       "date": "2026-08-02",
       "dateLabel": "08/02 (日)",
@@ -1598,6 +1613,36 @@
       "url": "https://www.youtube.com/watch?v=bdlT5P0G5uU",
       "videoId": "bdlT5P0G5uU",
       "thumbnail": "https://img.youtube.com/vi/bdlT5P0G5uU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Bzy5Cxg3Bpg",
+      "date": "2026-08-02",
+      "dateLabel": "08/02 (日)",
+      "time": "21:00",
+      "startsAt": "2026-08-02T21:00:00+09:00",
+      "name": "ロボ子さん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Bzy5Cxg3Bpg",
+      "videoId": "Bzy5Cxg3Bpg",
+      "thumbnail": "https://img.youtube.com/vi/Bzy5Cxg3Bpg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "_buc53b7gs8",
+      "date": "2026-08-02",
+      "dateLabel": "08/02 (日)",
+      "time": "21:02",
+      "startsAt": "2026-08-02T21:02:00+09:00",
+      "name": "ロボ子さん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=_buc53b7gs8",
+      "videoId": "_buc53b7gs8",
+      "thumbnail": "https://img.youtube.com/vi/_buc53b7gs8/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -1661,6 +1706,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "u8Nec47lfb4",
+      "date": "2026-08-03",
+      "dateLabel": "08/03 (月)",
+      "time": "00:30",
+      "startsAt": "2026-08-03T00:30:00+09:00",
+      "name": "風真いろは",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=u8Nec47lfb4",
+      "videoId": "u8Nec47lfb4",
+      "thumbnail": "https://img.youtube.com/vi/u8Nec47lfb4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "ztK38xxakx0",

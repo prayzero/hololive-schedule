@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T19:46:29.941Z",
+  "generatedAt": "2026-08-02T21:04:49.840Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -1828,11 +1828,26 @@
       "branch": "EN"
     },
     {
-      "id": "BKRFouYnTgY",
+      "id": "tUOFvPgpH7I",
       "date": "2026-08-03",
       "dateLabel": "08/03 (月)",
       "time": "06:00",
       "startsAt": "2026-08-03T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=tUOFvPgpH7I",
+      "videoId": "tUOFvPgpH7I",
+      "thumbnail": "https://img.youtube.com/vi/tUOFvPgpH7I/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "BKRFouYnTgY",
+      "date": "2026-08-03",
+      "dateLabel": "08/03 (月)",
+      "time": "06:01",
+      "startsAt": "2026-08-03T06:01:00+09:00",
       "name": "Gigi",
       "title": null,
       "url": "https://www.youtube.com/watch?v=BKRFouYnTgY",
@@ -1958,6 +1973,21 @@
       "url": "https://www.youtube.com/watch?v=KArLrSHxlfI",
       "videoId": "KArLrSHxlfI",
       "thumbnail": "https://img.youtube.com/vi/KArLrSHxlfI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "V1CpHfFWA04",
+      "date": "2026-08-03",
+      "dateLabel": "08/03 (月)",
+      "time": "21:00",
+      "startsAt": "2026-08-03T21:00:00+09:00",
+      "name": "猫又おかゆ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=V1CpHfFWA04",
+      "videoId": "V1CpHfFWA04",
+      "thumbnail": "https://img.youtube.com/vi/V1CpHfFWA04/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

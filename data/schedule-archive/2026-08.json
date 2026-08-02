@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T03:47:22.206Z",
+  "generatedAt": "2026-08-02T06:40:48.889Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -1078,21 +1078,6 @@
       "branch": "EN"
     },
     {
-      "id": "zwLbl7YcKuU",
-      "date": "2026-08-02",
-      "dateLabel": "08/02 (日)",
-      "time": "11:00",
-      "startsAt": "2026-08-02T11:00:00+09:00",
-      "name": "Kobo",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=zwLbl7YcKuU",
-      "videoId": "zwLbl7YcKuU",
-      "thumbnail": "https://img.youtube.com/vi/zwLbl7YcKuU/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "ID"
-    },
-    {
       "id": "0p7DGwOOlQs",
       "date": "2026-08-02",
       "dateLabel": "08/02 (日)",
@@ -1198,26 +1183,11 @@
       "branch": "DEV_IS"
     },
     {
-      "id": "cUa4N6zurbw",
-      "date": "2026-08-02",
-      "dateLabel": "08/02 (日)",
-      "time": "13:00",
-      "startsAt": "2026-08-02T13:00:00+09:00",
-      "name": "大空スバル",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=cUa4N6zurbw",
-      "videoId": "cUa4N6zurbw",
-      "thumbnail": "https://img.youtube.com/vi/cUa4N6zurbw/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "ftGnFcTMdSE",
       "date": "2026-08-02",
       "dateLabel": "08/02 (日)",
-      "time": "13:00",
-      "startsAt": "2026-08-02T13:00:00+09:00",
+      "time": "12:59",
+      "startsAt": "2026-08-02T12:59:00+09:00",
       "name": "白上フブキ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=ftGnFcTMdSE",
@@ -1228,11 +1198,26 @@
       "branch": "JP"
     },
     {
+      "id": "cUa4N6zurbw",
+      "date": "2026-08-02",
+      "dateLabel": "08/02 (日)",
+      "time": "13:01",
+      "startsAt": "2026-08-02T13:01:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=cUa4N6zurbw",
+      "videoId": "cUa4N6zurbw",
+      "thumbnail": "https://img.youtube.com/vi/cUa4N6zurbw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "wllGPle-8yQ",
       "date": "2026-08-02",
       "dateLabel": "08/02 (日)",
-      "time": "14:00",
-      "startsAt": "2026-08-02T14:00:00+09:00",
+      "time": "14:01",
+      "startsAt": "2026-08-02T14:01:00+09:00",
       "name": "鷹嶺ルイ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=wllGPle-8yQ",
@@ -1246,8 +1231,8 @@
       "id": "BW4ZFKfVmYM",
       "date": "2026-08-02",
       "dateLabel": "08/02 (日)",
-      "time": "14:00",
-      "startsAt": "2026-08-02T14:00:00+09:00",
+      "time": "14:01",
+      "startsAt": "2026-08-02T14:01:00+09:00",
       "name": "風真いろは",
       "title": null,
       "url": "https://www.youtube.com/watch?v=BW4ZFKfVmYM",
@@ -1256,6 +1241,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "zwLbl7YcKuU",
+      "date": "2026-08-02",
+      "dateLabel": "08/02 (日)",
+      "time": "14:41",
+      "startsAt": "2026-08-02T14:41:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=zwLbl7YcKuU",
+      "videoId": "zwLbl7YcKuU",
+      "thumbnail": "https://img.youtube.com/vi/zwLbl7YcKuU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "mkRMphI5oJM",
@@ -1271,6 +1271,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "n6ZkZ6nspKo",
+      "date": "2026-08-02",
+      "dateLabel": "08/02 (日)",
+      "time": "17:00",
+      "startsAt": "2026-08-02T17:00:00+09:00",
+      "name": "大神ミオ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=n6ZkZ6nspKo",
+      "videoId": "n6ZkZ6nspKo",
+      "thumbnail": "https://img.youtube.com/vi/n6ZkZ6nspKo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "ZZEPAVRUR5M",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T15:41:18.010Z",
+  "generatedAt": "2026-08-02T17:10:36.144Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -1948,6 +1948,21 @@
       "branch": "JP"
     },
     {
+      "id": "cr__ipWe5GI",
+      "date": "2026-08-03",
+      "dateLabel": "08/03 (月)",
+      "time": "22:30",
+      "startsAt": "2026-08-03T22:30:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=cr__ipWe5GI",
+      "videoId": "cr__ipWe5GI",
+      "thumbnail": "https://img.youtube.com/vi/cr__ipWe5GI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "88WcglQIKkI",
       "date": "2026-08-03",
       "dateLabel": "08/03 (月)",
@@ -1961,6 +1976,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "qGavbN7ub3o",
+      "date": "2026-08-04",
+      "dateLabel": "08/04 (火)",
+      "time": "19:00",
+      "startsAt": "2026-08-04T19:00:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=qGavbN7ub3o",
+      "videoId": "qGavbN7ub3o",
+      "thumbnail": "https://img.youtube.com/vi/qGavbN7ub3o/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     }
   ]
 }

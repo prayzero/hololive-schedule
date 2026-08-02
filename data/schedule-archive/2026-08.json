@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-02T14:10:36.126Z",
+  "generatedAt": "2026-08-02T15:41:18.010Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -1783,6 +1783,21 @@
       "branch": "JP"
     },
     {
+      "id": "2pGJoE9SdN0",
+      "date": "2026-08-03",
+      "dateLabel": "08/03 (月)",
+      "time": "00:10",
+      "startsAt": "2026-08-03T00:10:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=2pGJoE9SdN0",
+      "videoId": "2pGJoE9SdN0",
+      "thumbnail": "https://img.youtube.com/vi/2pGJoE9SdN0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "u8Nec47lfb4",
       "date": "2026-08-03",
       "dateLabel": "08/03 (月)",
@@ -1843,6 +1858,21 @@
       "branch": "JP"
     },
     {
+      "id": "2Qoc1B-Sqog",
+      "date": "2026-08-03",
+      "dateLabel": "08/03 (月)",
+      "time": "08:00",
+      "startsAt": "2026-08-03T08:00:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=2Qoc1B-Sqog",
+      "videoId": "2Qoc1B-Sqog",
+      "thumbnail": "https://img.youtube.com/vi/2Qoc1B-Sqog/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "AkXACF1rWNk",
       "date": "2026-08-03",
       "dateLabel": "08/03 (月)",
@@ -1868,6 +1898,36 @@
       "url": "https://www.youtube.com/watch?v=d0ce8qQxEhU",
       "videoId": "d0ce8qQxEhU",
       "thumbnail": "https://img.youtube.com/vi/d0ce8qQxEhU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "EDJtY-cNgtA",
+      "date": "2026-08-03",
+      "dateLabel": "08/03 (月)",
+      "time": "10:00",
+      "startsAt": "2026-08-03T10:00:00+09:00",
+      "name": "儒烏風亭らでん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=EDJtY-cNgtA",
+      "videoId": "EDJtY-cNgtA",
+      "thumbnail": "https://img.youtube.com/vi/EDJtY-cNgtA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "e3wbmVi1ivs",
+      "date": "2026-08-03",
+      "dateLabel": "08/03 (月)",
+      "time": "10:00",
+      "startsAt": "2026-08-03T10:00:00+09:00",
+      "name": "Baelz",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=e3wbmVi1ivs",
+      "videoId": "e3wbmVi1ivs",
+      "thumbnail": "https://img.youtube.com/vi/e3wbmVi1ivs/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

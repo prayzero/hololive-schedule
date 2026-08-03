@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T11:36:54.061Z",
+  "generatedAt": "2026-08-03T14:00:02.302Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -2446,8 +2446,8 @@
       "id": "7vV_cvRmrVM",
       "date": "2026-08-03",
       "dateLabel": "08/03 (月)",
-      "time": "21:00",
-      "startsAt": "2026-08-03T21:00:00+09:00",
+      "time": "21:01",
+      "startsAt": "2026-08-03T21:01:00+09:00",
       "name": "Risu",
       "title": null,
       "url": "https://www.youtube.com/watch?v=7vV_cvRmrVM",
@@ -2456,6 +2456,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
+    },
+    {
+      "id": "yc12qF6W0YI",
+      "date": "2026-08-03",
+      "dateLabel": "08/03 (月)",
+      "time": "21:03",
+      "startsAt": "2026-08-03T21:03:00+09:00",
+      "name": "ときのそら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=yc12qF6W0YI",
+      "videoId": "yc12qF6W0YI",
+      "thumbnail": "https://img.youtube.com/vi/yc12qF6W0YI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "WfM_Hdxh2E4",
@@ -2488,6 +2503,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "lYHgHlgqdTw",
+      "date": "2026-08-03",
+      "dateLabel": "08/03 (月)",
+      "time": "22:03",
+      "startsAt": "2026-08-03T22:03:00+09:00",
+      "name": "不知火フレア",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=lYHgHlgqdTw",
+      "videoId": "lYHgHlgqdTw",
+      "thumbnail": "https://img.youtube.com/vi/lYHgHlgqdTw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "cr__ipWe5GI",
       "date": "2026-08-03",
       "dateLabel": "08/03 (月)",
@@ -2503,6 +2533,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "25Ku_Yr5dEk",
+      "date": "2026-08-03",
+      "dateLabel": "08/03 (月)",
+      "time": "23:00",
+      "startsAt": "2026-08-03T23:00:00+09:00",
+      "name": "戌神ころね",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=25Ku_Yr5dEk",
+      "videoId": "25Ku_Yr5dEk",
+      "thumbnail": "https://img.youtube.com/vi/25Ku_Yr5dEk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "88WcglQIKkI",
       "date": "2026-08-03",
       "dateLabel": "08/03 (月)",
@@ -2516,6 +2561,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "ebcxietWa1k",
+      "date": "2026-08-04",
+      "dateLabel": "08/04 (火)",
+      "time": "00:30",
+      "startsAt": "2026-08-04T00:30:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ebcxietWa1k",
+      "videoId": "ebcxietWa1k",
+      "thumbnail": "https://img.youtube.com/vi/ebcxietWa1k/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "b8_j8m0nPYk",
@@ -2548,6 +2608,21 @@
       "branch": "JP"
     },
     {
+      "id": "iR7U7czME9o",
+      "date": "2026-08-04",
+      "dateLabel": "08/04 (火)",
+      "time": "08:00",
+      "startsAt": "2026-08-04T08:00:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=iR7U7czME9o",
+      "videoId": "iR7U7czME9o",
+      "thumbnail": "https://img.youtube.com/vi/iR7U7czME9o/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "LK6D6Mo9AKk",
       "date": "2026-08-04",
       "dateLabel": "08/04 (火)",
@@ -2558,6 +2633,21 @@
       "url": "https://www.youtube.com/watch?v=LK6D6Mo9AKk",
       "videoId": "LK6D6Mo9AKk",
       "thumbnail": "https://img.youtube.com/vi/LK6D6Mo9AKk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "M8XGagAzSWM",
+      "date": "2026-08-04",
+      "dateLabel": "08/04 (火)",
+      "time": "10:00",
+      "startsAt": "2026-08-04T10:00:00+09:00",
+      "name": "儒烏風亭らでん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=M8XGagAzSWM",
+      "videoId": "M8XGagAzSWM",
+      "thumbnail": "https://img.youtube.com/vi/M8XGagAzSWM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
@@ -2576,6 +2666,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "TL7ze9Ckvks",
+      "date": "2026-08-04",
+      "dateLabel": "08/04 (火)",
+      "time": "21:00",
+      "startsAt": "2026-08-04T21:00:00+09:00",
+      "name": "さくらみこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=TL7ze9Ckvks",
+      "videoId": "TL7ze9Ckvks",
+      "thumbnail": "https://img.youtube.com/vi/TL7ze9Ckvks/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     }
   ]
 }

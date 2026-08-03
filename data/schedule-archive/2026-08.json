@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T16:32:54.376Z",
+  "generatedAt": "2026-08-03T18:20:01.608Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -2638,6 +2638,36 @@
       "branch": "ID"
     },
     {
+      "id": "vChzeSYNamw",
+      "date": "2026-08-04",
+      "dateLabel": "08/04 (火)",
+      "time": "02:04",
+      "startsAt": "2026-08-04T02:04:00+09:00",
+      "name": "Elizabeth Sub",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=vChzeSYNamw",
+      "videoId": "vChzeSYNamw",
+      "thumbnail": "https://img.youtube.com/vi/vChzeSYNamw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "p63IWBBe010",
+      "date": "2026-08-04",
+      "dateLabel": "08/04 (火)",
+      "time": "02:28",
+      "startsAt": "2026-08-04T02:28:00+09:00",
+      "name": "Reine",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=p63IWBBe010",
+      "videoId": "p63IWBBe010",
+      "thumbnail": "https://img.youtube.com/vi/p63IWBBe010/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "b8_j8m0nPYk",
       "date": "2026-08-04",
       "dateLabel": "08/04 (火)",
@@ -2753,6 +2783,21 @@
       "url": "https://www.youtube.com/watch?v=9n8ZF9NdYKs",
       "videoId": "9n8ZF9NdYKs",
       "thumbnail": "https://img.youtube.com/vi/9n8ZF9NdYKs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "y57Lc18Dkvc",
+      "date": "2026-08-04",
+      "dateLabel": "08/04 (火)",
+      "time": "21:00",
+      "startsAt": "2026-08-04T21:00:00+09:00",
+      "name": "戌神ころね",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=y57Lc18Dkvc",
+      "videoId": "y57Lc18Dkvc",
+      "thumbnail": "https://img.youtube.com/vi/y57Lc18Dkvc/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

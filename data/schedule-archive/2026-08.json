@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T20:15:18.893Z",
+  "generatedAt": "2026-08-03T21:43:47.735Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -2683,6 +2683,21 @@
       "branch": "EN"
     },
     {
+      "id": "3hCHg72a7A8",
+      "date": "2026-08-04",
+      "dateLabel": "08/04 (火)",
+      "time": "06:00",
+      "startsAt": "2026-08-04T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=3hCHg72a7A8",
+      "videoId": "3hCHg72a7A8",
+      "thumbnail": "https://img.youtube.com/vi/3hCHg72a7A8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "mHOabgRDHuo",
       "date": "2026-08-04",
       "dateLabel": "08/04 (火)",
@@ -2741,6 +2756,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "QEaVIry_L3w",
+      "date": "2026-08-04",
+      "dateLabel": "08/04 (火)",
+      "time": "19:00",
+      "startsAt": "2026-08-04T19:00:00+09:00",
+      "name": "猫又おかゆ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=QEaVIry_L3w",
+      "videoId": "QEaVIry_L3w",
+      "thumbnail": "https://img.youtube.com/vi/QEaVIry_L3w/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "CPrKbRc3mos",

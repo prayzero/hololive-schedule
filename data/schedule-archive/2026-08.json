@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T04:09:26.825Z",
+  "generatedAt": "2026-08-03T07:59:53.045Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -1993,6 +1993,21 @@
       "branch": "ID"
     },
     {
+      "id": "6huk2SatBSs",
+      "date": "2026-08-03",
+      "dateLabel": "08/03 (月)",
+      "time": "15:06",
+      "startsAt": "2026-08-03T15:06:00+09:00",
+      "name": "Kaela",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=6huk2SatBSs",
+      "videoId": "6huk2SatBSs",
+      "thumbnail": "https://img.youtube.com/vi/6huk2SatBSs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "gokwtyh4G_8",
       "date": "2026-08-03",
       "dateLabel": "08/03 (月)",
@@ -2008,6 +2023,51 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "90J4KKSex-A",
+      "date": "2026-08-03",
+      "dateLabel": "08/03 (月)",
+      "time": "18:00",
+      "startsAt": "2026-08-03T18:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=90J4KKSex-A",
+      "videoId": "90J4KKSex-A",
+      "thumbnail": "https://img.youtube.com/vi/90J4KKSex-A/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "SIlH4P5SICE",
+      "date": "2026-08-03",
+      "dateLabel": "08/03 (月)",
+      "time": "18:00",
+      "startsAt": "2026-08-03T18:00:00+09:00",
+      "name": "桃鈴ねね",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=SIlH4P5SICE",
+      "videoId": "SIlH4P5SICE",
+      "thumbnail": "https://img.youtube.com/vi/SIlH4P5SICE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "M57tn7JWOfQ",
+      "date": "2026-08-03",
+      "dateLabel": "08/03 (月)",
+      "time": "18:00",
+      "startsAt": "2026-08-03T18:00:00+09:00",
+      "name": "音乃瀬奏",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=M57tn7JWOfQ",
+      "videoId": "M57tn7JWOfQ",
+      "thumbnail": "https://img.youtube.com/vi/M57tn7JWOfQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "C1hXB1NIGmM",
       "date": "2026-08-03",
       "dateLabel": "08/03 (月)",
@@ -2018,6 +2078,21 @@
       "url": "https://www.youtube.com/watch?v=C1hXB1NIGmM",
       "videoId": "C1hXB1NIGmM",
       "thumbnail": "https://img.youtube.com/vi/C1hXB1NIGmM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "vgnSIAtqMxQ",
+      "date": "2026-08-03",
+      "dateLabel": "08/03 (月)",
+      "time": "18:00",
+      "startsAt": "2026-08-03T18:00:00+09:00",
+      "name": "ロボ子さん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=vgnSIAtqMxQ",
+      "videoId": "vgnSIAtqMxQ",
+      "thumbnail": "https://img.youtube.com/vi/vgnSIAtqMxQ/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -2066,6 +2141,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "wWqJZVGknjY",
+      "date": "2026-08-03",
+      "dateLabel": "08/03 (月)",
+      "time": "20:00",
+      "startsAt": "2026-08-03T20:00:00+09:00",
+      "name": "Kiara",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=wWqJZVGknjY",
+      "videoId": "wWqJZVGknjY",
+      "thumbnail": "https://img.youtube.com/vi/wWqJZVGknjY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "V1CpHfFWA04",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T21:43:47.735Z",
+  "generatedAt": "2026-08-03T23:13:01.003Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -2701,8 +2701,8 @@
       "id": "mHOabgRDHuo",
       "date": "2026-08-04",
       "dateLabel": "08/04 (火)",
-      "time": "07:00",
-      "startsAt": "2026-08-04T07:00:00+09:00",
+      "time": "07:01",
+      "startsAt": "2026-08-04T07:01:00+09:00",
       "name": "博衣こより",
       "title": null,
       "url": "https://www.youtube.com/watch?v=mHOabgRDHuo",
@@ -2723,6 +2723,21 @@
       "url": "https://www.youtube.com/watch?v=iR7U7czME9o",
       "videoId": "iR7U7czME9o",
       "thumbnail": "https://img.youtube.com/vi/iR7U7czME9o/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "nOb5Kz9JnHg",
+      "date": "2026-08-04",
+      "dateLabel": "08/04 (火)",
+      "time": "08:00",
+      "startsAt": "2026-08-04T08:00:00+09:00",
+      "name": "FUWAMOCO",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=nOb5Kz9JnHg",
+      "videoId": "nOb5Kz9JnHg",
+      "thumbnail": "https://img.youtube.com/vi/nOb5Kz9JnHg/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"
@@ -2858,6 +2873,21 @@
       "url": "https://www.youtube.com/watch?v=cUUIsoI4dAI",
       "videoId": "cUUIsoI4dAI",
       "thumbnail": "https://img.youtube.com/vi/cUUIsoI4dAI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "46L0IrN63v0",
+      "date": "2026-08-05",
+      "dateLabel": "08/05 (水)",
+      "time": "05:00",
+      "startsAt": "2026-08-05T05:00:00+09:00",
+      "name": "Shiori",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=46L0IrN63v0",
+      "videoId": "46L0IrN63v0",
+      "thumbnail": "https://img.youtube.com/vi/46L0IrN63v0/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

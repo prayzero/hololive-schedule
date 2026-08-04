@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T04:20:18.348Z",
+  "generatedAt": "2026-08-04T07:17:47.494Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -2833,6 +2833,51 @@
       "branch": "JP"
     },
     {
+      "id": "_tb7ljjD5mQ",
+      "date": "2026-08-04",
+      "dateLabel": "08/04 (火)",
+      "time": "14:59",
+      "startsAt": "2026-08-04T14:59:00+09:00",
+      "name": "ロボ子さん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=_tb7ljjD5mQ",
+      "videoId": "_tb7ljjD5mQ",
+      "thumbnail": "https://img.youtube.com/vi/_tb7ljjD5mQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "1SHBXJ6zPhQ",
+      "date": "2026-08-04",
+      "dateLabel": "08/04 (火)",
+      "time": "15:59",
+      "startsAt": "2026-08-04T15:59:00+09:00",
+      "name": "Risu",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=1SHBXJ6zPhQ",
+      "videoId": "1SHBXJ6zPhQ",
+      "thumbnail": "https://img.youtube.com/vi/1SHBXJ6zPhQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "mc5B6oogrEM",
+      "date": "2026-08-04",
+      "dateLabel": "08/04 (火)",
+      "time": "16:02",
+      "startsAt": "2026-08-04T16:02:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=mc5B6oogrEM",
+      "videoId": "mc5B6oogrEM",
+      "thumbnail": "https://img.youtube.com/vi/mc5B6oogrEM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "kw1TzX8ZYZs",
       "date": "2026-08-04",
       "dateLabel": "08/04 (火)",
@@ -2846,6 +2891,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "tMo6o2kGHuM",
+      "date": "2026-08-04",
+      "dateLabel": "08/04 (火)",
+      "time": "18:00",
+      "startsAt": "2026-08-04T18:00:00+09:00",
+      "name": "Zeta",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=tMo6o2kGHuM",
+      "videoId": "tMo6o2kGHuM",
+      "thumbnail": "https://img.youtube.com/vi/tMo6o2kGHuM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "gQ_nUUdiDwo",
@@ -2908,6 +2968,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "AZX3tWkfk3M",
+      "date": "2026-08-04",
+      "dateLabel": "08/04 (火)",
+      "time": "20:00",
+      "startsAt": "2026-08-04T20:00:00+09:00",
+      "name": "宝鐘マリン",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=AZX3tWkfk3M",
+      "videoId": "AZX3tWkfk3M",
+      "thumbnail": "https://img.youtube.com/vi/AZX3tWkfk3M/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "9n8ZF9NdYKs",
       "date": "2026-08-04",
       "dateLabel": "08/04 (火)",
@@ -2933,6 +3008,36 @@
       "url": "https://www.youtube.com/watch?v=y57Lc18Dkvc",
       "videoId": "y57Lc18Dkvc",
       "thumbnail": "https://img.youtube.com/vi/y57Lc18Dkvc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "p6TytOHcqNI",
+      "date": "2026-08-04",
+      "dateLabel": "08/04 (火)",
+      "time": "21:00",
+      "startsAt": "2026-08-04T21:00:00+09:00",
+      "name": "音乃瀬奏",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=p6TytOHcqNI",
+      "videoId": "p6TytOHcqNI",
+      "thumbnail": "https://img.youtube.com/vi/p6TytOHcqNI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "70KLoMyGs4k",
+      "date": "2026-08-04",
+      "dateLabel": "08/04 (火)",
+      "time": "21:00",
+      "startsAt": "2026-08-04T21:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=70KLoMyGs4k",
+      "videoId": "70KLoMyGs4k",
+      "thumbnail": "https://img.youtube.com/vi/70KLoMyGs4k/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -2998,6 +3103,21 @@
       "branch": "EN"
     },
     {
+      "id": "SnxEkGpNT9k",
+      "date": "2026-08-04",
+      "dateLabel": "08/04 (火)",
+      "time": "23:00",
+      "startsAt": "2026-08-04T23:00:00+09:00",
+      "name": "儒烏風亭らでん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=SnxEkGpNT9k",
+      "videoId": "SnxEkGpNT9k",
+      "thumbnail": "https://img.youtube.com/vi/SnxEkGpNT9k/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "YVc5seLdkdY",
       "date": "2026-08-04",
       "dateLabel": "08/04 (火)",
@@ -3026,6 +3146,51 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "9GePiNITvSQ",
+      "date": "2026-08-05",
+      "dateLabel": "08/05 (水)",
+      "time": "08:00",
+      "startsAt": "2026-08-05T08:00:00+09:00",
+      "name": "ReGLOSS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=9GePiNITvSQ",
+      "videoId": "9GePiNITvSQ",
+      "thumbnail": "https://img.youtube.com/vi/9GePiNITvSQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "S67vkAxw78k",
+      "date": "2026-08-05",
+      "dateLabel": "08/05 (水)",
+      "time": "10:00",
+      "startsAt": "2026-08-05T10:00:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=S67vkAxw78k",
+      "videoId": "S67vkAxw78k",
+      "thumbnail": "https://img.youtube.com/vi/S67vkAxw78k/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "hzFSozl4CSQ",
+      "date": "2026-08-05",
+      "dateLabel": "08/05 (水)",
+      "time": "18:00",
+      "startsAt": "2026-08-05T18:00:00+09:00",
+      "name": "赤井はあと",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=hzFSozl4CSQ",
+      "videoId": "hzFSozl4CSQ",
+      "thumbnail": "https://img.youtube.com/vi/hzFSozl4CSQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "5YJX-sZqFuo",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T23:13:01.003Z",
+  "generatedAt": "2026-08-04T01:02:42.383Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -2773,6 +2773,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "0DkC5Z4ncMA",
+      "date": "2026-08-04",
+      "dateLabel": "08/04 (火)",
+      "time": "10:00",
+      "startsAt": "2026-08-04T10:00:00+09:00",
+      "name": "Ina",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=0DkC5Z4ncMA",
+      "videoId": "0DkC5Z4ncMA",
+      "thumbnail": "https://img.youtube.com/vi/0DkC5Z4ncMA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "QEaVIry_L3w",
       "date": "2026-08-04",
       "dateLabel": "08/04 (火)",
@@ -2873,6 +2888,21 @@
       "url": "https://www.youtube.com/watch?v=cUUIsoI4dAI",
       "videoId": "cUUIsoI4dAI",
       "thumbnail": "https://img.youtube.com/vi/cUUIsoI4dAI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "YVc5seLdkdY",
+      "date": "2026-08-04",
+      "dateLabel": "08/04 (火)",
+      "time": "23:00",
+      "startsAt": "2026-08-04T23:00:00+09:00",
+      "name": "Raora",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=YVc5seLdkdY",
+      "videoId": "YVc5seLdkdY",
+      "thumbnail": "https://img.youtube.com/vi/YVc5seLdkdY/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

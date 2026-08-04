@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T18:44:17.676Z",
+  "generatedAt": "2026-08-04T20:38:45.792Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -3541,8 +3541,8 @@
       "id": "46L0IrN63v0",
       "date": "2026-08-05",
       "dateLabel": "08/05 (水)",
-      "time": "05:00",
-      "startsAt": "2026-08-05T05:00:00+09:00",
+      "time": "04:55",
+      "startsAt": "2026-08-05T04:55:00+09:00",
       "name": "Shiori",
       "title": null,
       "url": "https://www.youtube.com/watch?v=46L0IrN63v0",
@@ -3748,6 +3748,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "ts_djN8fLAY",
+      "date": "2026-08-05",
+      "dateLabel": "08/05 (水)",
+      "time": "22:00",
+      "startsAt": "2026-08-05T22:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ts_djN8fLAY",
+      "videoId": "ts_djN8fLAY",
+      "thumbnail": "https://img.youtube.com/vi/ts_djN8fLAY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "npR1Nqg65ec",
       "date": "2026-08-05",
       "dateLabel": "08/05 (水)",
@@ -3761,6 +3776,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "__5wzG3g-es",
+      "date": "2026-08-05",
+      "dateLabel": "08/05 (水)",
+      "time": "22:00",
+      "startsAt": "2026-08-05T22:00:00+09:00",
+      "name": "Kaela",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=__5wzG3g-es",
+      "videoId": "__5wzG3g-es",
+      "thumbnail": "https://img.youtube.com/vi/__5wzG3g-es/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "GTpQYXMbPgY",
@@ -3818,6 +3848,21 @@
       "url": "https://www.youtube.com/watch?v=_HB7v530TEA",
       "videoId": "_HB7v530TEA",
       "thumbnail": "https://img.youtube.com/vi/_HB7v530TEA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "npr2NKqfwnY",
+      "date": "2026-08-06",
+      "dateLabel": "08/06 (木)",
+      "time": "22:30",
+      "startsAt": "2026-08-06T22:30:00+09:00",
+      "name": "Kaela",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=npr2NKqfwnY",
+      "videoId": "npr2NKqfwnY",
+      "thumbnail": "https://img.youtube.com/vi/npr2NKqfwnY/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "ID"

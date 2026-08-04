@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T17:00:19.062Z",
+  "generatedAt": "2026-08-04T18:44:17.676Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -3583,6 +3583,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "Acbs1tKDQCw",
+      "date": "2026-08-05",
+      "dateLabel": "08/05 (水)",
+      "time": "10:00",
+      "startsAt": "2026-08-05T10:00:00+09:00",
+      "name": "儒烏風亭らでん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Acbs1tKDQCw",
+      "videoId": "Acbs1tKDQCw",
+      "thumbnail": "https://img.youtube.com/vi/Acbs1tKDQCw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "S67vkAxw78k",
       "date": "2026-08-05",
       "dateLabel": "08/05 (水)",
@@ -3718,6 +3733,21 @@
       "branch": "JP"
     },
     {
+      "id": "h6TTIgm4ThA",
+      "date": "2026-08-05",
+      "dateLabel": "08/05 (水)",
+      "time": "21:00",
+      "startsAt": "2026-08-05T21:00:00+09:00",
+      "name": "儒烏風亭らでん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=h6TTIgm4ThA",
+      "videoId": "h6TTIgm4ThA",
+      "thumbnail": "https://img.youtube.com/vi/h6TTIgm4ThA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "npR1Nqg65ec",
       "date": "2026-08-05",
       "dateLabel": "08/05 (水)",
@@ -3776,6 +3806,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "_HB7v530TEA",
+      "date": "2026-08-06",
+      "dateLabel": "08/06 (木)",
+      "time": "21:00",
+      "startsAt": "2026-08-06T21:00:00+09:00",
+      "name": "Ollie",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=_HB7v530TEA",
+      "videoId": "_HB7v530TEA",
+      "thumbnail": "https://img.youtube.com/vi/_HB7v530TEA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     }
   ]
 }

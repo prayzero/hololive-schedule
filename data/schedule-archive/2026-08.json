@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T15:05:21.499Z",
+  "generatedAt": "2026-08-04T17:00:19.062Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -3526,8 +3526,8 @@
       "id": "6jHJGGmPnBo",
       "date": "2026-08-05",
       "dateLabel": "08/05 (水)",
-      "time": "00:30",
-      "startsAt": "2026-08-05T00:30:00+09:00",
+      "time": "00:31",
+      "startsAt": "2026-08-05T00:31:00+09:00",
       "name": "Reine",
       "title": null,
       "url": "https://www.youtube.com/watch?v=6jHJGGmPnBo",
@@ -3613,6 +3613,36 @@
       "branch": "EN"
     },
     {
+      "id": "MdrVdcOHLiw",
+      "date": "2026-08-05",
+      "dateLabel": "08/05 (水)",
+      "time": "11:00",
+      "startsAt": "2026-08-05T11:00:00+09:00",
+      "name": "Kiara",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=MdrVdcOHLiw",
+      "videoId": "MdrVdcOHLiw",
+      "thumbnail": "https://img.youtube.com/vi/MdrVdcOHLiw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "6q8r87DzVNU",
+      "date": "2026-08-05",
+      "dateLabel": "08/05 (水)",
+      "time": "11:00",
+      "startsAt": "2026-08-05T11:00:00+09:00",
+      "name": "Ollie",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=6q8r87DzVNU",
+      "videoId": "6q8r87DzVNU",
+      "thumbnail": "https://img.youtube.com/vi/6q8r87DzVNU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "hzFSozl4CSQ",
       "date": "2026-08-05",
       "dateLabel": "08/05 (水)",
@@ -3623,6 +3653,21 @@
       "url": "https://www.youtube.com/watch?v=hzFSozl4CSQ",
       "videoId": "hzFSozl4CSQ",
       "thumbnail": "https://img.youtube.com/vi/hzFSozl4CSQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "bBH4eLTZTZY",
+      "date": "2026-08-05",
+      "dateLabel": "08/05 (水)",
+      "time": "20:00",
+      "startsAt": "2026-08-05T20:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=bBH4eLTZTZY",
+      "videoId": "bBH4eLTZTZY",
+      "thumbnail": "https://img.youtube.com/vi/bBH4eLTZTZY/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -3643,6 +3688,21 @@
       "branch": "JP"
     },
     {
+      "id": "YKPB946K7yU",
+      "date": "2026-08-05",
+      "dateLabel": "08/05 (水)",
+      "time": "20:00",
+      "startsAt": "2026-08-05T20:00:00+09:00",
+      "name": "Ollie",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=YKPB946K7yU",
+      "videoId": "YKPB946K7yU",
+      "thumbnail": "https://img.youtube.com/vi/YKPB946K7yU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "W-r4wqpIuN4",
       "date": "2026-08-05",
       "dateLabel": "08/05 (水)",
@@ -3653,6 +3713,21 @@
       "url": "https://www.youtube.com/watch?v=W-r4wqpIuN4",
       "videoId": "W-r4wqpIuN4",
       "thumbnail": "https://img.youtube.com/vi/W-r4wqpIuN4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "npR1Nqg65ec",
+      "date": "2026-08-05",
+      "dateLabel": "08/05 (水)",
+      "time": "22:00",
+      "startsAt": "2026-08-05T22:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=npR1Nqg65ec",
+      "videoId": "npR1Nqg65ec",
+      "thumbnail": "https://img.youtube.com/vi/npR1Nqg65ec/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -3671,6 +3746,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "otOyCJ3awWE",
+      "date": "2026-08-06",
+      "dateLabel": "08/06 (木)",
+      "time": "11:00",
+      "startsAt": "2026-08-06T11:00:00+09:00",
+      "name": "Ollie",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=otOyCJ3awWE",
+      "videoId": "otOyCJ3awWE",
+      "thumbnail": "https://img.youtube.com/vi/otOyCJ3awWE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "tXd2yQbtfCQ",
+      "date": "2026-08-06",
+      "dateLabel": "08/06 (木)",
+      "time": "21:00",
+      "startsAt": "2026-08-06T21:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=tXd2yQbtfCQ",
+      "videoId": "tXd2yQbtfCQ",
+      "thumbnail": "https://img.youtube.com/vi/tXd2yQbtfCQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     }
   ]
 }

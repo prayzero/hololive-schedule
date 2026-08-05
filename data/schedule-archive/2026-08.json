@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-04T23:35:19.464Z",
+  "generatedAt": "2026-08-05T00:58:41.857Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -3598,6 +3598,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "roWaAwUYqFI",
+      "date": "2026-08-05",
+      "dateLabel": "08/05 (水)",
+      "time": "09:55",
+      "startsAt": "2026-08-05T09:55:00+09:00",
+      "name": "Nerissa",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=roWaAwUYqFI",
+      "videoId": "roWaAwUYqFI",
+      "thumbnail": "https://img.youtube.com/vi/roWaAwUYqFI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "Acbs1tKDQCw",
       "date": "2026-08-05",
       "dateLabel": "08/05 (水)",
@@ -3628,16 +3643,16 @@
       "branch": "EN"
     },
     {
-      "id": "roWaAwUYqFI",
+      "id": "xY0NhmbNwfY",
       "date": "2026-08-05",
       "dateLabel": "08/05 (水)",
       "time": "10:00",
       "startsAt": "2026-08-05T10:00:00+09:00",
-      "name": "Nerissa",
+      "name": "Kronii",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=roWaAwUYqFI",
-      "videoId": "roWaAwUYqFI",
-      "thumbnail": "https://img.youtube.com/vi/roWaAwUYqFI/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=xY0NhmbNwfY",
+      "videoId": "xY0NhmbNwfY",
+      "thumbnail": "https://img.youtube.com/vi/xY0NhmbNwfY/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

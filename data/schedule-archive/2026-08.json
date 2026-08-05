@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T14:58:20.859Z",
+  "generatedAt": "2026-08-05T16:48:01.152Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -4348,6 +4348,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "hmG29VpEcRs",
+      "date": "2026-08-06",
+      "dateLabel": "08/06 (木)",
+      "time": "00:50",
+      "startsAt": "2026-08-06T00:50:00+09:00",
+      "name": "Kiara",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=hmG29VpEcRs",
+      "videoId": "hmG29VpEcRs",
+      "thumbnail": "https://img.youtube.com/vi/hmG29VpEcRs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "whjZZ4ZMnBk",
       "date": "2026-08-06",
       "dateLabel": "08/06 (木)",
@@ -4523,6 +4538,36 @@
       "url": "https://www.youtube.com/watch?v=npr2NKqfwnY",
       "videoId": "npr2NKqfwnY",
       "thumbnail": "https://img.youtube.com/vi/npr2NKqfwnY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "F_Lg4nGV1XM",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "11:00",
+      "startsAt": "2026-08-07T11:00:00+09:00",
+      "name": "Ollie",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=F_Lg4nGV1XM",
+      "videoId": "F_Lg4nGV1XM",
+      "thumbnail": "https://img.youtube.com/vi/F_Lg4nGV1XM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "lT3Y5f2nKOU",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "14:30",
+      "startsAt": "2026-08-07T14:30:00+09:00",
+      "name": "Kaela",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=lT3Y5f2nKOU",
+      "videoId": "lT3Y5f2nKOU",
+      "thumbnail": "https://img.youtube.com/vi/lT3Y5f2nKOU/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "ID"

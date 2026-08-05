@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T04:18:49.879Z",
+  "generatedAt": "2026-08-05T07:18:36.981Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -3718,11 +3718,26 @@
       "branch": "EN"
     },
     {
-      "id": "l1Nopa2Y2jo",
+      "id": "uSXzwqYJdt8",
       "date": "2026-08-05",
       "dateLabel": "08/05 (水)",
       "time": "14:00",
       "startsAt": "2026-08-05T14:00:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=uSXzwqYJdt8",
+      "videoId": "uSXzwqYJdt8",
+      "thumbnail": "https://img.youtube.com/vi/uSXzwqYJdt8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "l1Nopa2Y2jo",
+      "date": "2026-08-05",
+      "dateLabel": "08/05 (水)",
+      "time": "14:08",
+      "startsAt": "2026-08-05T14:08:00+09:00",
       "name": "Zeta",
       "title": null,
       "url": "https://www.youtube.com/watch?v=l1Nopa2Y2jo",
@@ -3731,6 +3746,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
+    },
+    {
+      "id": "nAoPfknYdjA",
+      "date": "2026-08-05",
+      "dateLabel": "08/05 (水)",
+      "time": "18:00",
+      "startsAt": "2026-08-05T18:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=nAoPfknYdjA",
+      "videoId": "nAoPfknYdjA",
+      "thumbnail": "https://img.youtube.com/vi/nAoPfknYdjA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "5bnELTTvpuk",
+      "date": "2026-08-05",
+      "dateLabel": "08/05 (水)",
+      "time": "18:00",
+      "startsAt": "2026-08-05T18:00:00+09:00",
+      "name": "白銀ノエル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=5bnELTTvpuk",
+      "videoId": "5bnELTTvpuk",
+      "thumbnail": "https://img.youtube.com/vi/5bnELTTvpuk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "hzFSozl4CSQ",
@@ -3743,6 +3788,36 @@
       "url": "https://www.youtube.com/watch?v=hzFSozl4CSQ",
       "videoId": "hzFSozl4CSQ",
       "thumbnail": "https://img.youtube.com/vi/hzFSozl4CSQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "a3qWcPf9PRc",
+      "date": "2026-08-05",
+      "dateLabel": "08/05 (水)",
+      "time": "19:00",
+      "startsAt": "2026-08-05T19:00:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=a3qWcPf9PRc",
+      "videoId": "a3qWcPf9PRc",
+      "thumbnail": "https://img.youtube.com/vi/a3qWcPf9PRc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "mf5OVC9r29A",
+      "date": "2026-08-05",
+      "dateLabel": "08/05 (水)",
+      "time": "19:00",
+      "startsAt": "2026-08-05T19:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=mf5OVC9r29A",
+      "videoId": "mf5OVC9r29A",
+      "thumbnail": "https://img.youtube.com/vi/mf5OVC9r29A/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T20:36:50.850Z",
+  "generatedAt": "2026-08-05T21:51:54.167Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -4378,11 +4378,26 @@
       "branch": "EN"
     },
     {
-      "id": "YBO8AbDdBKc",
+      "id": "TFP8LGCtkyE",
       "date": "2026-08-06",
       "dateLabel": "08/06 (木)",
       "time": "06:00",
       "startsAt": "2026-08-06T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=TFP8LGCtkyE",
+      "videoId": "TFP8LGCtkyE",
+      "thumbnail": "https://img.youtube.com/vi/TFP8LGCtkyE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "YBO8AbDdBKc",
+      "date": "2026-08-06",
+      "dateLabel": "08/06 (木)",
+      "time": "06:06",
+      "startsAt": "2026-08-06T06:06:00+09:00",
       "name": "Gigi",
       "title": null,
       "url": "https://www.youtube.com/watch?v=YBO8AbDdBKc",

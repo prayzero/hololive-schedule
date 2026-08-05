@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T21:51:54.167Z",
+  "generatedAt": "2026-08-05T23:11:14.767Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -4438,6 +4438,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "i08i3tsFRo4",
+      "date": "2026-08-06",
+      "dateLabel": "08/06 (木)",
+      "time": "10:00",
+      "startsAt": "2026-08-06T10:00:00+09:00",
+      "name": "Kronii",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=i08i3tsFRo4",
+      "videoId": "i08i3tsFRo4",
+      "thumbnail": "https://img.youtube.com/vi/i08i3tsFRo4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "GTpQYXMbPgY",
       "date": "2026-08-06",
       "dateLabel": "08/06 (木)",
@@ -4478,6 +4493,21 @@
       "url": "https://www.youtube.com/watch?v=PjSNkxKVv90",
       "videoId": "PjSNkxKVv90",
       "thumbnail": "https://img.youtube.com/vi/PjSNkxKVv90/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "-TT2aKZThyk",
+      "date": "2026-08-06",
+      "dateLabel": "08/06 (木)",
+      "time": "18:00",
+      "startsAt": "2026-08-06T18:00:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=-TT2aKZThyk",
+      "videoId": "-TT2aKZThyk",
+      "thumbnail": "https://img.youtube.com/vi/-TT2aKZThyk/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"

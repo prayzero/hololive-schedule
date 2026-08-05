@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T16:48:01.152Z",
+  "generatedAt": "2026-08-05T18:41:13.197Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -4453,6 +4453,21 @@
       "branch": "ID"
     },
     {
+      "id": "PjSNkxKVv90",
+      "date": "2026-08-06",
+      "dateLabel": "08/06 (木)",
+      "time": "12:00",
+      "startsAt": "2026-08-06T12:00:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=PjSNkxKVv90",
+      "videoId": "PjSNkxKVv90",
+      "thumbnail": "https://img.youtube.com/vi/PjSNkxKVv90/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "VmKCcGnOv2c",
       "date": "2026-08-06",
       "dateLabel": "08/06 (木)",
@@ -4508,6 +4523,21 @@
       "url": "https://www.youtube.com/watch?v=ts_djN8fLAY",
       "videoId": "ts_djN8fLAY",
       "thumbnail": "https://img.youtube.com/vi/ts_djN8fLAY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "koFXxIaC2R4",
+      "date": "2026-08-06",
+      "dateLabel": "08/06 (木)",
+      "time": "22:00",
+      "startsAt": "2026-08-06T22:00:00+09:00",
+      "name": "猫又おかゆ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=koFXxIaC2R4",
+      "videoId": "koFXxIaC2R4",
+      "thumbnail": "https://img.youtube.com/vi/koFXxIaC2R4/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

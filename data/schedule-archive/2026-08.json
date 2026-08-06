@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-05T23:11:14.767Z",
+  "generatedAt": "2026-08-06T04:21:46.592Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -4441,8 +4441,8 @@
       "id": "i08i3tsFRo4",
       "date": "2026-08-06",
       "dateLabel": "08/06 (木)",
-      "time": "10:00",
-      "startsAt": "2026-08-06T10:00:00+09:00",
+      "time": "10:01",
+      "startsAt": "2026-08-06T10:01:00+09:00",
       "name": "Kronii",
       "title": null,
       "url": "https://www.youtube.com/watch?v=i08i3tsFRo4",
@@ -4483,6 +4483,21 @@
       "branch": "ID"
     },
     {
+      "id": "x2m9f2To3A4",
+      "date": "2026-08-06",
+      "dateLabel": "08/06 (木)",
+      "time": "12:00",
+      "startsAt": "2026-08-06T12:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=x2m9f2To3A4",
+      "videoId": "x2m9f2To3A4",
+      "thumbnail": "https://img.youtube.com/vi/x2m9f2To3A4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "PjSNkxKVv90",
       "date": "2026-08-06",
       "dateLabel": "08/06 (木)",
@@ -4498,6 +4513,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "0W9v3sE22rY",
+      "date": "2026-08-06",
+      "dateLabel": "08/06 (木)",
+      "time": "13:04",
+      "startsAt": "2026-08-06T13:04:00+09:00",
+      "name": "ロボ子さん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=0W9v3sE22rY",
+      "videoId": "0W9v3sE22rY",
+      "thumbnail": "https://img.youtube.com/vi/0W9v3sE22rY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "-TT2aKZThyk",
       "date": "2026-08-06",
       "dateLabel": "08/06 (木)",
@@ -4511,6 +4541,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "N9yRMCeu-Gs",
+      "date": "2026-08-06",
+      "dateLabel": "08/06 (木)",
+      "time": "18:00",
+      "startsAt": "2026-08-06T18:00:00+09:00",
+      "name": "ホロライブ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=N9yRMCeu-Gs",
+      "videoId": "N9yRMCeu-Gs",
+      "thumbnail": "https://img.youtube.com/vi/N9yRMCeu-Gs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "VmKCcGnOv2c",
@@ -4588,6 +4633,36 @@
       "branch": "JP"
     },
     {
+      "id": "ny8JVNSYMs4",
+      "date": "2026-08-06",
+      "dateLabel": "08/06 (木)",
+      "time": "22:00",
+      "startsAt": "2026-08-06T22:00:00+09:00",
+      "name": "白銀ノエル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ny8JVNSYMs4",
+      "videoId": "ny8JVNSYMs4",
+      "thumbnail": "https://img.youtube.com/vi/ny8JVNSYMs4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "yTqthLzeahQ",
+      "date": "2026-08-06",
+      "dateLabel": "08/06 (木)",
+      "time": "22:00",
+      "startsAt": "2026-08-06T22:00:00+09:00",
+      "name": "儒烏風亭らでん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=yTqthLzeahQ",
+      "videoId": "yTqthLzeahQ",
+      "thumbnail": "https://img.youtube.com/vi/yTqthLzeahQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "wVT3HJhRjhQ",
       "date": "2026-08-06",
       "dateLabel": "08/06 (木)",
@@ -4616,6 +4691,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
+    },
+    {
+      "id": "v20tKX4gLIg",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "05:00",
+      "startsAt": "2026-08-07T05:00:00+09:00",
+      "name": "Shiori",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=v20tKX4gLIg",
+      "videoId": "v20tKX4gLIg",
+      "thumbnail": "https://img.youtube.com/vi/v20tKX4gLIg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "F_Lg4nGV1XM",

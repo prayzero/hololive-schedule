@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-06T04:21:46.592Z",
+  "generatedAt": "2026-08-06T07:20:29.814Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -4528,6 +4528,81 @@
       "branch": "JP"
     },
     {
+      "id": "uBjueDa9eZs",
+      "date": "2026-08-06",
+      "dateLabel": "08/06 (木)",
+      "time": "14:00",
+      "startsAt": "2026-08-06T14:00:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=uBjueDa9eZs",
+      "videoId": "uBjueDa9eZs",
+      "thumbnail": "https://img.youtube.com/vi/uBjueDa9eZs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "u70VzTl8kKQ",
+      "date": "2026-08-06",
+      "dateLabel": "08/06 (木)",
+      "time": "14:38",
+      "startsAt": "2026-08-06T14:38:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=u70VzTl8kKQ",
+      "videoId": "u70VzTl8kKQ",
+      "thumbnail": "https://img.youtube.com/vi/u70VzTl8kKQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "kfZbugoiyIc",
+      "date": "2026-08-06",
+      "dateLabel": "08/06 (木)",
+      "time": "14:53",
+      "startsAt": "2026-08-06T14:53:00+09:00",
+      "name": "Iofi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=kfZbugoiyIc",
+      "videoId": "kfZbugoiyIc",
+      "thumbnail": "https://img.youtube.com/vi/kfZbugoiyIc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "NZD6r0F6wFk",
+      "date": "2026-08-06",
+      "dateLabel": "08/06 (木)",
+      "time": "18:00",
+      "startsAt": "2026-08-06T18:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=NZD6r0F6wFk",
+      "videoId": "NZD6r0F6wFk",
+      "thumbnail": "https://img.youtube.com/vi/NZD6r0F6wFk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "-Kn4_NE1F3E",
+      "date": "2026-08-06",
+      "dateLabel": "08/06 (木)",
+      "time": "18:00",
+      "startsAt": "2026-08-06T18:00:00+09:00",
+      "name": "常闇トワ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=-Kn4_NE1F3E",
+      "videoId": "-Kn4_NE1F3E",
+      "thumbnail": "https://img.youtube.com/vi/-Kn4_NE1F3E/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "-TT2aKZThyk",
       "date": "2026-08-06",
       "dateLabel": "08/06 (木)",
@@ -4558,6 +4633,36 @@
       "branch": "JP"
     },
     {
+      "id": "ysUk_VF8ch0",
+      "date": "2026-08-06",
+      "dateLabel": "08/06 (木)",
+      "time": "19:00",
+      "startsAt": "2026-08-06T19:00:00+09:00",
+      "name": "尾丸ポルカ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ysUk_VF8ch0",
+      "videoId": "ysUk_VF8ch0",
+      "thumbnail": "https://img.youtube.com/vi/ysUk_VF8ch0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "dQFvlxqx44E",
+      "date": "2026-08-06",
+      "dateLabel": "08/06 (木)",
+      "time": "20:00",
+      "startsAt": "2026-08-06T20:00:00+09:00",
+      "name": "戌神ころね",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=dQFvlxqx44E",
+      "videoId": "dQFvlxqx44E",
+      "thumbnail": "https://img.youtube.com/vi/dQFvlxqx44E/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "VmKCcGnOv2c",
       "date": "2026-08-06",
       "dateLabel": "08/06 (木)",
@@ -4573,6 +4678,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "GOPkIHDR8k0",
+      "date": "2026-08-06",
+      "dateLabel": "08/06 (木)",
+      "time": "20:00",
+      "startsAt": "2026-08-06T20:00:00+09:00",
+      "name": "宝鐘マリン",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=GOPkIHDR8k0",
+      "videoId": "GOPkIHDR8k0",
+      "thumbnail": "https://img.youtube.com/vi/GOPkIHDR8k0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "tXd2yQbtfCQ",
       "date": "2026-08-06",
       "dateLabel": "08/06 (木)",
@@ -4583,6 +4703,36 @@
       "url": "https://www.youtube.com/watch?v=tXd2yQbtfCQ",
       "videoId": "tXd2yQbtfCQ",
       "thumbnail": "https://img.youtube.com/vi/tXd2yQbtfCQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "gogcP73JeM8",
+      "date": "2026-08-06",
+      "dateLabel": "08/06 (木)",
+      "time": "21:00",
+      "startsAt": "2026-08-06T21:00:00+09:00",
+      "name": "一条莉々華",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=gogcP73JeM8",
+      "videoId": "gogcP73JeM8",
+      "thumbnail": "https://img.youtube.com/vi/gogcP73JeM8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "J8SWR9hq1TU",
+      "date": "2026-08-06",
+      "dateLabel": "08/06 (木)",
+      "time": "21:00",
+      "startsAt": "2026-08-06T21:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=J8SWR9hq1TU",
+      "videoId": "J8SWR9hq1TU",
+      "thumbnail": "https://img.youtube.com/vi/J8SWR9hq1TU/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -4708,6 +4858,36 @@
       "branch": "EN"
     },
     {
+      "id": "YU05ZltlR-E",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "06:00",
+      "startsAt": "2026-08-07T06:00:00+09:00",
+      "name": "Gigi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=YU05ZltlR-E",
+      "videoId": "YU05ZltlR-E",
+      "thumbnail": "https://img.youtube.com/vi/YU05ZltlR-E/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "Z9FwBFOLIwc",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "09:00",
+      "startsAt": "2026-08-07T09:00:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Z9FwBFOLIwc",
+      "videoId": "Z9FwBFOLIwc",
+      "thumbnail": "https://img.youtube.com/vi/Z9FwBFOLIwc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "F_Lg4nGV1XM",
       "date": "2026-08-07",
       "dateLabel": "08/07 (金)",
@@ -4736,6 +4916,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
+    },
+    {
+      "id": "0xGbjx3gCE4",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "23:00",
+      "startsAt": "2026-08-07T23:00:00+09:00",
+      "name": "常闇トワ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=0xGbjx3gCE4",
+      "videoId": "0xGbjx3gCE4",
+      "thumbnail": "https://img.youtube.com/vi/0xGbjx3gCE4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     }
   ]
 }

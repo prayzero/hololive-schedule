@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-07-26T05:27:02.549Z",
+  "checkedAt": "2026-08-06T02:29:54.312Z",
   "sourceNote": "hololive 공식 프로필의 Debut/Debut Stream/Debut date와 공개 원곡·커버곡 시트를 결합했습니다. AZKi는 COVER 공식 데뷔 발표일을 사용했습니다. 원곡 길이는 YouTube player metadata와 확인된 음원 길이로 보완하며, 조회 실패 항목은 null입니다.",
   "sourceUrls": [
     "https://docs.google.com/spreadsheets/d/1NYZza5QTN4ZIyot6XWvD8VwROL1R0EptlkJttySZ4Ew/edit#gid=387240143",
@@ -10249,7 +10249,7 @@
     },
     {
       "id": "original-b4c6749be3316f",
-      "title": "Excuse me, but RIP♡",
+      "title": "Excuse My Rudeness, But Could You Please RIP?",
       "subtitle": "失礼しますが、RIP♡",
       "category": "solo",
       "memberIds": [
@@ -12321,7 +12321,7 @@
     },
     {
       "id": "original-eb90870f996894",
-      "title": "Gate OPEN: START!",
+      "title": "Gate Open: START!",
       "subtitle": null,
       "category": "solo",
       "memberIds": [
@@ -12347,7 +12347,7 @@
         {
           "label": "스트리밍",
           "kind": "streaming",
-          "url": "https://reine.fanlink.to/start"
+          "url": "https://reine.fanlink.tv/start"
         },
         {
           "label": "음원",
@@ -17131,6 +17131,28 @@
       ]
     },
     {
+      "id": "original-cf2d1477a52366",
+      "title": "REGRET",
+      "subtitle": null,
+      "category": "solo",
+      "memberIds": [
+        "watson-amelia"
+      ],
+      "artist": "Watson Amelia",
+      "releaseDate": "2021-07-11",
+      "durationSeconds": 32,
+      "albumTitle": null,
+      "releaseType": "single",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Jj2JFtU7c78/hqdefault.jpg",
+      "links": [
+        {
+          "label": "YouTube",
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=Jj2JFtU7c78"
+        }
+      ]
+    },
+    {
       "id": "original-4a1254a04c4799",
       "title": "Caesura of Despair (attacca ver.)",
       "subtitle": null,
@@ -19587,7 +19609,7 @@
     },
     {
       "id": "original-087f57862fdf47",
-      "title": "Gate OPEN: START! - Japanese ver.",
+      "title": "Gate Open: START!",
       "subtitle": null,
       "category": "solo",
       "memberIds": [
@@ -21325,7 +21347,7 @@
     },
     {
       "id": "original-94eae8618b3535",
-      "title": "The Boundary to Tomorrow",
+      "title": "Asuenokyokaisen",
       "subtitle": "明日への境界線",
       "category": "solo",
       "memberIds": [
@@ -23355,7 +23377,7 @@
     },
     {
       "id": "original-ed8ef66dd77442",
-      "title": "ShishiWata Cooking",
+      "title": "Shishi Wata Cooking",
       "subtitle": "ししわたクッキング",
       "category": "collaboration",
       "memberIds": [
@@ -45252,7 +45274,7 @@
     },
     {
       "id": "original-c3425b2fa1dc7a",
-      "title": "Impure contradiction",
+      "title": "Fujun Mujun",
       "subtitle": "不純矛盾",
       "category": "collaboration",
       "memberIds": [
@@ -45450,7 +45472,7 @@
     },
     {
       "id": "original-bcd83085bb6f24",
-      "title": "Touching the wound again",
+      "title": "Touch the Hurt Again",
       "subtitle": "また傷に触れる",
       "category": "collaboration",
       "memberIds": [
@@ -48544,7 +48566,7 @@
     },
     {
       "id": "original-a45603198fee6f",
-      "title": "Gyudon Carnival!",
+      "title": "Gyu-Don Carnival!",
       "subtitle": "ぎゅーどんかーにばる！",
       "category": "solo",
       "memberIds": [
@@ -53252,7 +53274,7 @@
     },
     {
       "id": "original-eb6731bdab9227",
-      "title": "Zigoku de Aouze! SubaChocoLunaTan",
+      "title": "zigokudeaouze! subachocolunatan",
       "subtitle": "地獄で会おうぜ！ スバちょこるなたん",
       "category": "collaboration",
       "memberIds": [
@@ -57230,7 +57252,7 @@
       ],
       "artist": "Inugami Korone",
       "releaseDate": "2024-04-13",
-      "durationSeconds": null,
+      "durationSeconds": 208,
       "albumTitle": null,
       "releaseType": "single",
       "thumbnailUrl": "https://i.ytimg.com/vi/R8csmx4Ufhs/hqdefault.jpg",
@@ -57863,7 +57885,7 @@
       ],
       "artist": "Hoshimachi Suisei, Takane Lui(, Rikka, Asumi Sena, Gabu Rieru, Fuji Aoi, Iori Matsunaga, Minase, Yusuke, Ryushen)",
       "releaseDate": "2024-05-04",
-      "durationSeconds": null,
+      "durationSeconds": 271,
       "albumTitle": null,
       "releaseType": "single",
       "thumbnailUrl": "https://i.ytimg.com/vi/LAai3trLRRo/hqdefault.jpg",
@@ -58076,7 +58098,7 @@
       ],
       "artist": "Juufuutei Raden",
       "releaseDate": "2024-05-11",
-      "durationSeconds": null,
+      "durationSeconds": 45,
       "albumTitle": null,
       "releaseType": "single",
       "thumbnailUrl": "https://i.ytimg.com/vi/S_bQcTKmnkA/hqdefault.jpg",
@@ -60935,7 +60957,7 @@
     },
     {
       "id": "original-cc58704706915f",
-      "title": "Dead Ma’am’s Chest",
+      "title": "Dead Ma'am's Chest",
       "subtitle": "幽霊船戦",
       "category": "solo",
       "memberIds": [
@@ -61301,7 +61323,7 @@
       ],
       "artist": "Nerissa Ravencroft",
       "releaseDate": "2024-08-08",
-      "durationSeconds": null,
+      "durationSeconds": 208,
       "albumTitle": "In My Feelings",
       "releaseType": "ep",
       "thumbnailUrl": "https://i.ytimg.com/vi/KosO_Mcike4/hqdefault.jpg",
@@ -62433,7 +62455,7 @@
       ],
       "artist": "hololive Indonesia (Ayunda Risu, Moona Hoshinova, Airani Iofifteen, Kureiji Ollie, Anya Melfissa, Pavolia Reine, Vestia Zeta, Kaela Kovalsika, Kobo Kanaeru)",
       "releaseDate": "2024-08-18",
-      "durationSeconds": null,
+      "durationSeconds": 219,
       "albumTitle": null,
       "releaseType": "single",
       "thumbnailUrl": "https://i.ytimg.com/vi/hMCvELID7yg/hqdefault.jpg",
@@ -63265,7 +63287,7 @@
       ],
       "artist": "Tokino Sora",
       "releaseDate": "2024-09-07",
-      "durationSeconds": null,
+      "durationSeconds": 267,
       "albumTitle": "おかえりなさい, Pulse",
       "releaseType": "album",
       "thumbnailUrl": "https://i.ytimg.com/vi/wCOvi_bp3uE/hqdefault.jpg",
@@ -64856,7 +64878,7 @@
       ],
       "artist": "Houshou Marine",
       "releaseDate": "2024-10-16",
-      "durationSeconds": null,
+      "durationSeconds": 275,
       "albumTitle": "Ahoy!! キミたちみんなパイレーツ♡",
       "releaseType": "album",
       "thumbnailUrl": "https://i.ytimg.com/vi/Vgipg_bXYwg/hqdefault.jpg",
@@ -65900,7 +65922,7 @@
       ],
       "artist": "Watson Amelia",
       "releaseDate": "2024-10-25",
-      "durationSeconds": null,
+      "durationSeconds": 239,
       "albumTitle": "hololive English Eurobeat Remix Album",
       "releaseType": "album",
       "thumbnailUrl": "https://i.ytimg.com/vi/BvEz6bJUUE4/hqdefault.jpg",
@@ -66122,7 +66144,7 @@
       ],
       "artist": "Mori Calliope",
       "releaseDate": "2024-10-25",
-      "durationSeconds": null,
+      "durationSeconds": 312,
       "albumTitle": "hololive English Eurobeat Remix Album",
       "releaseType": "album",
       "thumbnailUrl": "https://i.ytimg.com/vi/mWSobt_nFH8/hqdefault.jpg",
@@ -66527,7 +66549,7 @@
       ],
       "artist": "Mori Calliope",
       "releaseDate": "2024-10-31",
-      "durationSeconds": null,
+      "durationSeconds": 196,
       "albumTitle": null,
       "releaseType": "single",
       "thumbnailUrl": "https://i.ytimg.com/vi/VgBEboGBJfA/hqdefault.jpg",
@@ -67029,7 +67051,7 @@
       ],
       "artist": "FLOW GLOW (Isaki Riona, Koganei Niko, Mizumiya Su, Rindo Chihaya, Kikirara Vivi)",
       "releaseDate": "2024-11-08",
-      "durationSeconds": null,
+      "durationSeconds": 181,
       "albumTitle": "FLOW GLOW",
       "releaseType": "album",
       "thumbnailUrl": "https://i.ytimg.com/vi/IenFrufsAfU/hqdefault.jpg",
@@ -67265,7 +67287,7 @@
       ],
       "artist": "Moona Hoshinova",
       "releaseDate": "2024-11-11",
-      "durationSeconds": null,
+      "durationSeconds": 207,
       "albumTitle": null,
       "releaseType": "single",
       "thumbnailUrl": "https://i.ytimg.com/vi/b_ix9vA4oP8/hqdefault.jpg",
@@ -68598,7 +68620,7 @@
       ],
       "artist": "Rindo Chihaya",
       "releaseDate": "2024-12-10",
-      "durationSeconds": null,
+      "durationSeconds": 182,
       "albumTitle": null,
       "releaseType": "single",
       "thumbnailUrl": "https://i.ytimg.com/vi/dRkZH-28mbU/hqdefault.jpg",
@@ -68652,7 +68674,7 @@
       ],
       "artist": "Juufuutei Raden",
       "releaseDate": "2024-12-12",
-      "durationSeconds": null,
+      "durationSeconds": 59,
       "albumTitle": null,
       "releaseType": "single",
       "thumbnailUrl": "https://i.ytimg.com/vi/6AlcswBNwmg/hqdefault.jpg",
@@ -69091,7 +69113,7 @@
       ],
       "artist": "Nekomata Okayu",
       "releaseDate": "2024-12-26",
-      "durationSeconds": null,
+      "durationSeconds": 196,
       "albumTitle": null,
       "releaseType": "single",
       "thumbnailUrl": "https://i.ytimg.com/vi/WBU1B6jqksg/hqdefault.jpg",
@@ -69239,7 +69261,7 @@
       ],
       "artist": "Ninomae Ina'nis",
       "releaseDate": "2024-12-28",
-      "durationSeconds": null,
+      "durationSeconds": 244,
       "albumTitle": "re:VISION",
       "releaseType": "ep",
       "thumbnailUrl": "https://i.ytimg.com/vi/tXb394z4lY8/hqdefault.jpg",
@@ -72813,7 +72835,7 @@
       ],
       "artist": "Anya Melfissa",
       "releaseDate": "2025-03-12",
-      "durationSeconds": null,
+      "durationSeconds": 196,
       "albumTitle": null,
       "releaseType": "single",
       "thumbnailUrl": "https://i.ytimg.com/vi/g-Vzig3k6D8/hqdefault.jpg",
@@ -73602,7 +73624,7 @@
       ],
       "artist": "Vestia Zeta",
       "releaseDate": "2025-03-22",
-      "durationSeconds": null,
+      "durationSeconds": 177,
       "albumTitle": null,
       "releaseType": "single",
       "thumbnailUrl": "https://i.ytimg.com/vi/vqdSVnmn_v8/hqdefault.jpg",
@@ -75167,7 +75189,7 @@
       ],
       "artist": "Ookami Mio",
       "releaseDate": "2025-05-04",
-      "durationSeconds": null,
+      "durationSeconds": 193,
       "albumTitle": "My Sparkle",
       "releaseType": "album",
       "thumbnailUrl": "https://i.ytimg.com/vi/at0dWpW06lU/hqdefault.jpg",
@@ -76059,7 +76081,7 @@
       ],
       "artist": "La+ Darknesss",
       "releaseDate": "2025-05-25",
-      "durationSeconds": null,
+      "durationSeconds": 170,
       "albumTitle": null,
       "releaseType": "single",
       "thumbnailUrl": "https://i.ytimg.com/vi/kGeKUop1iUw/hqdefault.jpg",
@@ -77883,7 +77905,7 @@
       ],
       "artist": "Tokino Sora",
       "releaseDate": "2025-07-15",
-      "durationSeconds": null,
+      "durationSeconds": 205,
       "albumTitle": "Pulse",
       "releaseType": "album",
       "thumbnailUrl": "https://i.ytimg.com/vi/9V4TpG1ODfg/hqdefault.jpg",
@@ -78771,7 +78793,7 @@
       ],
       "artist": "Shiranui Flare",
       "releaseDate": "2025-08-07",
-      "durationSeconds": null,
+      "durationSeconds": 151,
       "albumTitle": null,
       "releaseType": "single",
       "thumbnailUrl": "https://i.ytimg.com/vi/tKtNKMUw1Ls/hqdefault.jpg",
@@ -82219,7 +82241,7 @@
       ],
       "artist": "Hoshimachi Suisei",
       "releaseDate": "2025-10-07",
-      "durationSeconds": null,
+      "durationSeconds": 225,
       "albumTitle": null,
       "releaseType": "single",
       "thumbnailUrl": "https://i.ytimg.com/vi/E5hVng18OvA/hqdefault.jpg",
@@ -82540,7 +82562,7 @@
       ],
       "artist": "Himemori Luna",
       "releaseDate": "2025-10-10",
-      "durationSeconds": null,
+      "durationSeconds": 220,
       "albumTitle": null,
       "releaseType": "single",
       "thumbnailUrl": "https://i.ytimg.com/vi/SZrcW5LN-CY/hqdefault.jpg",
@@ -82886,7 +82908,7 @@
       ],
       "artist": "Gigi Murin",
       "releaseDate": "2025-10-19",
-      "durationSeconds": null,
+      "durationSeconds": 147,
       "albumTitle": null,
       "releaseType": "single",
       "thumbnailUrl": "https://i.ytimg.com/vi/M2Xe-zXhTDQ/hqdefault.jpg",
@@ -82976,7 +82998,7 @@
       ],
       "artist": "Raora Panthera",
       "releaseDate": "2025-10-25",
-      "durationSeconds": null,
+      "durationSeconds": 187,
       "albumTitle": null,
       "releaseType": "single",
       "thumbnailUrl": "https://i.ytimg.com/vi/EdyUDHPlshg/hqdefault.jpg",
@@ -83245,7 +83267,7 @@
       ],
       "artist": "FUWAMOCO (Fuwawa Abyssgard, Mococo Abyssgard)",
       "releaseDate": "2025-10-31",
-      "durationSeconds": null,
+      "durationSeconds": 174,
       "albumTitle": null,
       "releaseType": "single",
       "thumbnailUrl": "https://i.ytimg.com/vi/6C7POFnPCrQ/hqdefault.jpg",
@@ -83874,7 +83896,7 @@
       ],
       "artist": "AZKi",
       "releaseDate": "2025-11-05",
-      "durationSeconds": null,
+      "durationSeconds": 198,
       "albumTitle": "Re:Start",
       "releaseType": "ep",
       "thumbnailUrl": "https://i.ytimg.com/vi/iFmE8mk0MFw/hqdefault.jpg",
@@ -84535,7 +84557,7 @@
       ],
       "artist": "hololive 3rd Generation (Usada Pekora, Shiranui Flare, Shirogane Noel, Houshou Marine)",
       "releaseDate": "2025-11-19",
-      "durationSeconds": null,
+      "durationSeconds": 239,
       "albumTitle": "#OperationHeartfulCuties ~You've Got No Choice but to Love the Strongest Idols~",
       "releaseType": "ep",
       "thumbnailUrl": "https://i.ytimg.com/vi/Yffso2iTwIk/hqdefault.jpg",
@@ -84611,7 +84633,7 @@
       ],
       "artist": "holoX(La+ Darknesss, Hakui Koyori)",
       "releaseDate": "2025-11-20",
-      "durationSeconds": null,
+      "durationSeconds": 199,
       "albumTitle": "SECRET ORDER",
       "releaseType": "album",
       "thumbnailUrl": "https://i.ytimg.com/vi/wpJMse-TlIk/hqdefault.jpg",
@@ -85393,7 +85415,7 @@
       ],
       "artist": "Kureiji Ollie",
       "releaseDate": "2025-12-03",
-      "durationSeconds": null,
+      "durationSeconds": 179,
       "albumTitle": null,
       "releaseType": "single",
       "thumbnailUrl": "https://i.ytimg.com/vi/KJIaAqxRM68/hqdefault.jpg",
@@ -86593,8 +86615,8 @@
       "artist": "Sakura Miko",
       "releaseDate": "2025-12-25",
       "durationSeconds": 215,
-      "albumTitle": null,
-      "releaseType": "single",
+      "albumTitle": "Blooming Cinderella",
+      "releaseType": "album",
       "thumbnailUrl": "https://i.ytimg.com/vi/uSnTLgdue_4/hqdefault.jpg",
       "links": [
         {
@@ -88996,7 +89018,7 @@
       ],
       "artist": "Aki Rosenthal",
       "releaseDate": "2026-02-18",
-      "durationSeconds": null,
+      "durationSeconds": 167,
       "albumTitle": null,
       "releaseType": "single",
       "thumbnailUrl": "https://i.ytimg.com/vi/BqY-wHSoq8k/hqdefault.jpg",
@@ -89092,7 +89114,7 @@
       ],
       "artist": "Shirakami Fubuki, Shiranui Flare, Tsunomaki Watame, Omaru Polka",
       "releaseDate": "2026-02-21",
-      "durationSeconds": null,
+      "durationSeconds": 211,
       "albumTitle": null,
       "releaseType": "single",
       "thumbnailUrl": "https://i.ytimg.com/vi/FOFldSOzfCI/hqdefault.jpg",
@@ -89279,7 +89301,7 @@
       ],
       "artist": "Natsuiro Matsuri",
       "releaseDate": "2026-02-25",
-      "durationSeconds": null,
+      "durationSeconds": 207,
       "albumTitle": "Chasing the Dream ~After School Spotlight~",
       "releaseType": "album",
       "thumbnailUrl": "https://i.ytimg.com/vi/q7kxjGDSZjQ/hqdefault.jpg",
@@ -89311,7 +89333,7 @@
       ],
       "artist": "Rindo Chihaya",
       "releaseDate": "2026-02-25",
-      "durationSeconds": null,
+      "durationSeconds": 642,
       "albumTitle": "Tokyo Xtreme Racer ORIGINAL SOUNDTRACK",
       "releaseType": "album",
       "thumbnailUrl": "https://i.ytimg.com/vi/g5ov5En_RbQ/hqdefault.jpg",
@@ -89494,7 +89516,7 @@
       ],
       "artist": "Momosuzu Nene",
       "releaseDate": "2026-03-02",
-      "durationSeconds": null,
+      "durationSeconds": 328,
       "albumTitle": null,
       "releaseType": "single",
       "thumbnailUrl": "https://i.ytimg.com/vi/4FlN5KR7a9o/hqdefault.jpg",
@@ -89527,8 +89549,8 @@
       "artist": "Sakura Miko",
       "releaseDate": "2026-03-05",
       "durationSeconds": 172,
-      "albumTitle": null,
-      "releaseType": "single",
+      "albumTitle": "Blooming Cinderella",
+      "releaseType": "album",
       "thumbnailUrl": "https://i.ytimg.com/vi/l1wCLh5UM1s/hqdefault.jpg",
       "links": [
         {
@@ -89711,7 +89733,7 @@
       ],
       "artist": "Yuzuki Choco",
       "releaseDate": "2026-03-14",
-      "durationSeconds": null,
+      "durationSeconds": 248,
       "albumTitle": null,
       "releaseType": "single",
       "thumbnailUrl": "https://i.ytimg.com/vi/TCDjOEJjeSI/hqdefault.jpg",
@@ -91062,7 +91084,7 @@
     },
     {
       "id": "original-6129b4a11f56b7",
-      "title": "You and aIzu",
+      "title": "You & aIzu",
       "subtitle": "You&合図",
       "category": "solo",
       "memberIds": [
@@ -92308,7 +92330,7 @@
       ],
       "artist": "Mizumiya Su",
       "releaseDate": "2026-06-16",
-      "durationSeconds": null,
+      "durationSeconds": 184,
       "albumTitle": null,
       "releaseType": "single",
       "thumbnailUrl": "https://i.ytimg.com/vi/vrhr40bvgLs/hqdefault.jpg",
@@ -92340,7 +92362,7 @@
       ],
       "artist": "Kazama Iroha",
       "releaseDate": "2026-06-18",
-      "durationSeconds": null,
+      "durationSeconds": 244,
       "albumTitle": null,
       "releaseType": "single",
       "thumbnailUrl": "https://i.ytimg.com/vi/DYDEeXyrNxw/hqdefault.jpg",
@@ -92562,7 +92584,7 @@
         {
           "label": "YouTube",
           "kind": "youtube",
-          "url": "https://www.youtube.com/watch?v=CFH1s2D8y1w"
+          "url": "https://www.youtube.com/watch?v=zfYGdSqliRU"
         },
         {
           "label": "스트리밍",
@@ -93152,7 +93174,7 @@
         {
           "label": "스트리밍",
           "kind": "streaming",
-          "url": "https://cover.lnk.to/UrDNS9"
+          "url": "https://cover.lnk.to/tYy5y3"
         },
         {
           "label": "음원",
@@ -93371,6 +93393,254 @@
       ]
     },
     {
+      "id": "original-091be2fb5099a1",
+      "title": "Boom! Boom! Tropica Vacation",
+      "subtitle": "爆夏!!トロピカバケーション",
+      "category": "collaboration",
+      "memberIds": [
+        "oozora-subaru",
+        "shiranui-flare",
+        "shirogane-noel",
+        "tsunomaki-watame",
+        "otonose-kanade"
+      ],
+      "artist": "hololive IDOL PROJECT (Oozora Subaru, Shiranui Flare, Shirogane Noel, Tsunomaki Watame, Otonose Kanade)",
+      "releaseDate": "2026-07-29",
+      "durationSeconds": 137,
+      "albumTitle": null,
+      "releaseType": "single",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Z3rqP6VmqU4/hqdefault.jpg",
+      "links": [
+        {
+          "label": "YouTube",
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=Z3rqP6VmqU4"
+        },
+        {
+          "label": "YouTube",
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=ebF1IKo5jx0"
+        }
+      ]
+    },
+    {
+      "id": "original-65b9f8ba8e5243",
+      "title": "The Pink Hourglass",
+      "subtitle": "ももいろの砂時計",
+      "category": "solo",
+      "memberIds": [
+        "momosuzu-nene"
+      ],
+      "artist": "Momosuzu Nene",
+      "releaseDate": "2026-07-30",
+      "durationSeconds": 209,
+      "albumTitle": null,
+      "releaseType": "single",
+      "thumbnailUrl": "https://i.ytimg.com/vi/Tess3wtT19M/hqdefault.jpg",
+      "links": [
+        {
+          "label": "YouTube",
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=M_lEYDMxHhY"
+        },
+        {
+          "label": "스트리밍",
+          "kind": "streaming",
+          "url": "https://cover.lnk.to/jubQTO"
+        },
+        {
+          "label": "음원",
+          "kind": "music",
+          "url": "https://youtu.be/Tess3wtT19M"
+        }
+      ]
+    },
+    {
+      "id": "original-82873bf1ed100b",
+      "title": "Spotlight",
+      "subtitle": null,
+      "category": "collaboration",
+      "memberIds": [
+        "shiori-novella",
+        "koseki-bijou",
+        "nerissa-ravencroft",
+        "fuwawa-abyssgard",
+        "mococo-abyssgard"
+      ],
+      "artist": "hololive English -Advent-(Shiori Novella,Koseki Bijou,Nerissa Ravencroft,Fuwawa Abyssgard,Mococo Abyssgard)",
+      "releaseDate": "2026-08-01",
+      "durationSeconds": 216,
+      "albumTitle": null,
+      "releaseType": "single",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7bPNXiVZ7Eo/hqdefault.jpg",
+      "links": [
+        {
+          "label": "YouTube",
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=hpZUwzlOBOY"
+        },
+        {
+          "label": "스트리밍",
+          "kind": "streaming",
+          "url": "https://cover.lnk.to/bSgD1b"
+        },
+        {
+          "label": "음원",
+          "kind": "music",
+          "url": "https://youtu.be/7bPNXiVZ7Eo"
+        }
+      ]
+    },
+    {
+      "id": "original-c53626a3680258",
+      "title": "Sakimidare Apparade",
+      "subtitle": "サキミダレアッパレード♪",
+      "category": "solo",
+      "memberIds": [
+        "sakura-miko"
+      ],
+      "artist": "Sakura Miko",
+      "releaseDate": "2026-08-01",
+      "durationSeconds": 265,
+      "albumTitle": null,
+      "releaseType": "single",
+      "thumbnailUrl": "https://i.ytimg.com/vi/boXhSOPRa4Q/hqdefault.jpg",
+      "links": [
+        {
+          "label": "YouTube",
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=gF4UwqAvFOE"
+        },
+        {
+          "label": "스트리밍",
+          "kind": "streaming",
+          "url": "https://cover.lnk.to/A7Exwx"
+        },
+        {
+          "label": "음원",
+          "kind": "music",
+          "url": "https://youtu.be/boXhSOPRa4Q"
+        }
+      ]
+    },
+    {
+      "id": "original-7b570fef4be592",
+      "title": "Utsushiyo Alice",
+      "subtitle": "現世アリス",
+      "category": "solo",
+      "memberIds": [
+        "robocosan"
+      ],
+      "artist": "Roboco-san",
+      "releaseDate": "2026-08-02",
+      "durationSeconds": 196,
+      "albumTitle": null,
+      "releaseType": "single",
+      "thumbnailUrl": "https://i.ytimg.com/vi/yzhMEOjQY7I/hqdefault.jpg",
+      "links": [
+        {
+          "label": "YouTube",
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=_buc53b7gs8"
+        },
+        {
+          "label": "스트리밍",
+          "kind": "streaming",
+          "url": "https://cover.lnk.to/s1EKZf"
+        },
+        {
+          "label": "음원",
+          "kind": "music",
+          "url": "https://youtu.be/yzhMEOjQY7I"
+        }
+      ]
+    },
+    {
+      "id": "original-f3110127ea7641",
+      "title": "Kirameki MODE! feat. Isaki Riona",
+      "subtitle": "キラメキMODE! feat. 響咲リオナ",
+      "category": "collaboration",
+      "memberIds": [
+        "tokino-sora",
+        "isaki-riona"
+      ],
+      "artist": "Tokino Sora, Isaki Riona",
+      "releaseDate": "2026-08-05",
+      "durationSeconds": 189,
+      "albumTitle": null,
+      "releaseType": "single",
+      "thumbnailUrl": "https://i.ytimg.com/vi/oZbqT1Mjm3I/hqdefault.jpg",
+      "links": [
+        {
+          "label": "YouTube",
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=oZbqT1Mjm3I"
+        },
+        {
+          "label": "스트리밍",
+          "kind": "streaming",
+          "url": "https://tokinosora.lnk.to/KIRAMEKIMODE"
+        },
+        {
+          "label": "음원",
+          "kind": "music",
+          "url": "https://youtu.be/oZbqT1Mjm3I"
+        }
+      ]
+    },
+    {
+      "id": "original-2fd3d8eea24ced",
+      "title": "Windy Traveler",
+      "subtitle": null,
+      "category": "collaboration",
+      "memberIds": [
+        "tokino-sora",
+        "irys",
+        "ayunda-risu",
+        "otonose-kanade"
+      ],
+      "artist": "Tokino Sora, Ayunda Risu, IRyS, Otonose Kanade",
+      "releaseDate": "2026-08-06",
+      "durationSeconds": null,
+      "albumTitle": null,
+      "releaseType": "single",
+      "thumbnailUrl": "https://i.ytimg.com/vi/GTpQYXMbPgY/hqdefault.jpg",
+      "links": [
+        {
+          "label": "YouTube",
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=GTpQYXMbPgY"
+        },
+        {
+          "label": "스트리밍",
+          "kind": "streaming",
+          "url": "https://cover.lnk.to/9iQJXl"
+        }
+      ]
+    },
+    {
+      "id": "original-d16c0aabad9367",
+      "title": "LOVE MISSION♡",
+      "subtitle": null,
+      "category": "solo",
+      "memberIds": [
+        "vestia-zeta"
+      ],
+      "artist": "Vestia Zeta",
+      "releaseDate": "2026-08-07",
+      "durationSeconds": null,
+      "albumTitle": null,
+      "releaseType": "single",
+      "thumbnailUrl": "https://i.ytimg.com/vi/GTpQYXMbPgY/hqdefault.jpg",
+      "links": [
+        {
+          "label": "YouTube",
+          "kind": "youtube",
+          "url": "https://www.youtube.com/watch?v=GTpQYXMbPgY"
+        }
+      ]
+    },
+    {
       "id": "original-eb89dbf0ed42c6",
       "title": "Hibiscus",
       "subtitle": null,
@@ -93435,6 +93705,54 @@
       "links": []
     },
     {
+      "id": "original-55c1954735aee1",
+      "title": "AttentionPlease! (Blooming Cinderella ver.)",
+      "subtitle": "あてんしょんぷりーず! (Blooming Cinderella ver.)",
+      "category": "solo",
+      "memberIds": [
+        "sakura-miko"
+      ],
+      "artist": "Sakura Miko",
+      "releaseDate": "2026-10-30",
+      "durationSeconds": null,
+      "albumTitle": "Blooming Cinderella",
+      "releaseType": "album",
+      "thumbnailUrl": null,
+      "links": []
+    },
+    {
+      "id": "original-0dbdf523c778f7",
+      "title": "Cinderella Story",
+      "subtitle": "シンデレラ・ストーリー",
+      "category": "solo",
+      "memberIds": [
+        "sakura-miko"
+      ],
+      "artist": "Sakura Miko",
+      "releaseDate": "2026-10-30",
+      "durationSeconds": null,
+      "albumTitle": "Blooming Cinderella",
+      "releaseType": "album",
+      "thumbnailUrl": null,
+      "links": []
+    },
+    {
+      "id": "original-f3e8fcdefb5198",
+      "title": "Denno Kagura Miko Beat",
+      "subtitle": "電脳神楽ミコビート",
+      "category": "solo",
+      "memberIds": [
+        "sakura-miko"
+      ],
+      "artist": "Sakura Miko",
+      "releaseDate": "2026-10-30",
+      "durationSeconds": null,
+      "albumTitle": "Blooming Cinderella",
+      "releaseType": "album",
+      "thumbnailUrl": null,
+      "links": []
+    },
+    {
       "id": "original-20430c884b5a65",
       "title": "Lucu Juga",
       "subtitle": null,
@@ -93443,7 +93761,103 @@
         "airani-iofifteen"
       ],
       "artist": "Airani Iofifteen",
-      "releaseDate": null,
+      "releaseDate": "2026-10-30",
+      "durationSeconds": null,
+      "albumTitle": null,
+      "releaseType": "single",
+      "thumbnailUrl": null,
+      "links": []
+    },
+    {
+      "id": "original-6ace5a608fe555",
+      "title": "Ouka Kenran Uta Gassen",
+      "subtitle": "桜華絢爛歌合戦",
+      "category": "solo",
+      "memberIds": [
+        "sakura-miko"
+      ],
+      "artist": "Sakura Miko",
+      "releaseDate": "2026-10-30",
+      "durationSeconds": null,
+      "albumTitle": "Blooming Cinderella",
+      "releaseType": "album",
+      "thumbnailUrl": null,
+      "links": []
+    },
+    {
+      "id": "original-91087da8efd7af",
+      "title": "PON-DERFUL!!!",
+      "subtitle": null,
+      "category": "solo",
+      "memberIds": [
+        "sakura-miko"
+      ],
+      "artist": "Sakura Miko",
+      "releaseDate": "2026-10-30",
+      "durationSeconds": null,
+      "albumTitle": "Blooming Cinderella",
+      "releaseType": "album",
+      "thumbnailUrl": null,
+      "links": []
+    },
+    {
+      "id": "original-c25243ffa85a3a",
+      "title": "Sakuraful March",
+      "subtitle": null,
+      "category": "solo",
+      "memberIds": [
+        "sakura-miko"
+      ],
+      "artist": "Sakura Miko",
+      "releaseDate": "2026-10-30",
+      "durationSeconds": null,
+      "albumTitle": "Blooming Cinderella",
+      "releaseType": "album",
+      "thumbnailUrl": null,
+      "links": []
+    },
+    {
+      "id": "original-f6bb25c438a89e",
+      "title": "your petal",
+      "subtitle": null,
+      "category": "solo",
+      "memberIds": [
+        "sakura-miko"
+      ],
+      "artist": "Sakura Miko",
+      "releaseDate": "2026-10-30",
+      "durationSeconds": null,
+      "albumTitle": "Blooming Cinderella",
+      "releaseType": "album",
+      "thumbnailUrl": null,
+      "links": []
+    },
+    {
+      "id": "original-4786503bc7f440",
+      "title": "Zenkai! Mankai! Idol Road!",
+      "subtitle": "全開! 満開! アイドル道!",
+      "category": "solo",
+      "memberIds": [
+        "sakura-miko"
+      ],
+      "artist": "Sakura Miko",
+      "releaseDate": "2026-10-30",
+      "durationSeconds": null,
+      "albumTitle": "Blooming Cinderella",
+      "releaseType": "album",
+      "thumbnailUrl": null,
+      "links": []
+    },
+    {
+      "id": "original-e51b0225bd20ed",
+      "title": "New EP",
+      "subtitle": null,
+      "category": "solo",
+      "memberIds": [
+        "takane-lui"
+      ],
+      "artist": "Takane Lui",
+      "releaseDate": "2026-12-30",
       "durationSeconds": null,
       "albumTitle": null,
       "releaseType": "single",

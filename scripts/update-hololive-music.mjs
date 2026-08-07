@@ -141,13 +141,11 @@ if (missingDebuts.length > 0) {
 }
 
 const originalDrafts = originalRows
-  .map((row, index) =>
-    originalTrackFromRow(row, index, talentMatchers),
-  )
+  .map((row) => originalTrackFromRow(row, talentMatchers))
   .filter(Boolean);
 const coverDrafts = deduplicateCoverTracks(
   coverRows
-    .map((row, index) => coverTrackFromRow(row, index, talentMatchers))
+    .map((row) => coverTrackFromRow(row, talentMatchers))
     .filter(Boolean),
 );
 
@@ -240,7 +238,11 @@ const originalTracks = originalDrafts.map(
 const coverTracks = coverDrafts.map(
   ({ youtubeVideoId: _youtubeVideoId, ...track }) => track,
 );
-const tracks = [...originalTracks, ...coverTracks].sort(compareTracks);
+const sortedTracks = [...originalTracks, ...coverTracks].sort(compareTracks);
+const { tracks, preservedIdCount, newIdCount } = reconcileTrackIds(
+  sortedTracks,
+  previousMusicPayload.tracks,
+);
 
 const payload = {
   checkedAt: new Date().toISOString(),
@@ -280,6 +282,9 @@ console.log(
     (durationCount / Math.max(tracks.length, 1)) *
     100
   ).toFixed(1)}%).`,
+);
+console.log(
+  `Track IDs: preserved ${preservedIdCount}; new ${newIdCount}.`,
 );
 
 function parseCsv(input) {
@@ -383,7 +388,7 @@ function matchTalentIds(value, matchers) {
     .map((matcher) => matcher.id);
 }
 
-function originalTrackFromRow(row, index, matchers) {
+function originalTrackFromRow(row, matchers) {
   const memberIds = matchTalentIds(row.Members_Romaji, matchers);
   if (memberIds.length === 0) {
     return null;
@@ -398,7 +403,7 @@ function originalTrackFromRow(row, index, matchers) {
     nativeTitle ??
     translatedTitle ??
     romanizedTitle ??
-    `Original song ${index + 1}`;
+    "Untitled original song";
   const subtitle = firstDistinct(
     title,
     nativeTitle,
@@ -407,12 +412,16 @@ function originalTrackFromRow(row, index, matchers) {
   );
   const videoId =
     firstYouTubeId(row.Music_link) ?? firstYouTubeId(row.Video_link);
-  const releaseType = releaseTypeFromLocation(row.Song_Location);
+  const releaseType = releaseTypeFromLocation(
+    row.Song_location || row.Song_Location || row.Song_type,
+  );
   const albumTitle =
     releaseType === "album" || releaseType === "ep"
       ? cleanValue(row.CD_source)
       : null;
-  const membersAmount = normalizeName(row.Members_Amount);
+  const membersAmount = normalizeName(
+    row.Members_amount || row.Members_Amount,
+  );
   const isExplicitlySolo =
     membersAmount === "solo" ||
     membersAmount === "1" ||
@@ -434,7 +443,6 @@ function originalTrackFromRow(row, index, matchers) {
       title,
       cleanValue(row.Members_Romaji),
       releaseDate,
-      index,
     ]),
     title,
     subtitle,
@@ -456,7 +464,7 @@ function originalTrackFromRow(row, index, matchers) {
   };
 }
 
-function coverTrackFromRow(row, index, matchers) {
+function coverTrackFromRow(row, matchers) {
   const memberIds = matchTalentIds(row.performers, matchers);
   if (memberIds.length === 0) {
     return null;
@@ -469,7 +477,7 @@ function coverTrackFromRow(row, index, matchers) {
       : null);
   const musicName = cleanValue(row.music_name);
   const videoTitle = cleanValue(row.title);
-  const title = musicName ?? videoTitle ?? `Cover song ${index + 1}`;
+  const title = musicName ?? videoTitle ?? "Untitled cover song";
   const originalArtist = cleanValue(row.original_artist);
   const subtitle = firstDistinct(title, originalArtist, videoTitle);
   const duration = positiveInteger(row.duration);
@@ -493,7 +501,6 @@ function coverTrackFromRow(row, index, matchers) {
           title,
           cleanValue(row.performers),
           releaseDate,
-          index,
         ]),
     title,
     subtitle,
@@ -962,6 +969,277 @@ function stableTrackId(prefix, parts) {
     .digest("hex")
     .slice(0, 14);
   return `${prefix}-${digest}`;
+}
+
+function reconcileTrackIds(tracks, previousTracks) {
+  const previous = (previousTracks ?? []).filter(
+    (track) =>
+      track &&
+      typeof track.id === "string" &&
+      /^(?:original|cover)-[a-f0-9]{14}$/.test(track.id),
+  );
+  const previousByIdentity = new Map();
+
+  for (const track of previous) {
+    for (const { key } of trackIdentityKeys(track)) {
+      const candidates = previousByIdentity.get(key) ?? [];
+      candidates.push(track);
+      previousByIdentity.set(key, candidates);
+    }
+  }
+
+  const claimedPreviousIds = new Set();
+  const assignedIds = new Set();
+  const reservedPreviousIds = new Set(previous.map((track) => track.id));
+  const freshIdentityCounts = new Map();
+  let preservedIdCount = 0;
+  let newIdCount = 0;
+
+  const resolvedTracks = tracks.map((track) => {
+    const previousTrack = claimPreviousTrack(
+      track,
+      previousByIdentity,
+      claimedPreviousIds,
+    );
+
+    if (previousTrack) {
+      claimedPreviousIds.add(previousTrack.id);
+      assignedIds.add(previousTrack.id);
+      preservedIdCount += 1;
+      return {
+        ...track,
+        category: previousTrack.category,
+        id: previousTrack.id,
+      };
+    }
+
+    const prefix = trackKind(track);
+    const identityParts = freshTrackIdentityParts(track);
+    const identity = identityParts.join("\u001f");
+    let occurrence = freshIdentityCounts.get(identity) ?? 0;
+    let id;
+
+    do {
+      id = stableTrackId(
+        prefix,
+        occurrence === 0
+          ? identityParts
+          : [...identityParts, `duplicate:${occurrence}`],
+      );
+      occurrence += 1;
+    } while (assignedIds.has(id) || reservedPreviousIds.has(id));
+
+    freshIdentityCounts.set(identity, occurrence);
+    assignedIds.add(id);
+    newIdCount += 1;
+    return { ...track, id };
+  });
+
+  return {
+    tracks: resolvedTracks,
+    preservedIdCount,
+    newIdCount,
+  };
+}
+
+function claimPreviousTrack(
+  track,
+  previousByIdentity,
+  claimedPreviousIds,
+) {
+  for (const { key, allowEquivalentDuplicates } of trackIdentityKeys(track)) {
+    const candidates = (previousByIdentity.get(key) ?? []).filter(
+      (candidate) => !claimedPreviousIds.has(candidate.id),
+    );
+
+    if (candidates.length === 0) {
+      continue;
+    }
+    if (candidates.length > 1 && !allowEquivalentDuplicates) {
+      continue;
+    }
+
+    return candidates.sort(
+      (left, right) =>
+        trackSimilarityScore(track, right) -
+          trackSimilarityScore(track, left) ||
+        left.id.localeCompare(right.id),
+    )[0];
+  }
+
+  return null;
+}
+
+function trackIdentityKeys(track) {
+  const kind = trackKind(track);
+  const title = normalizeName(track.title);
+  const members = trackMemberKey(track);
+  const releaseDate = String(track.releaseDate ?? "");
+  const album = normalizeName(track.albumTitle);
+  const releaseType = normalizeName(track.releaseType);
+  const artist = normalizeName(track.artist);
+  const videoIds = trackYouTubeIds(track);
+  const keys = [];
+
+  if (title && members && releaseDate) {
+    keys.push({
+      key: identityKey(
+        "catalog",
+        kind,
+        title,
+        members,
+        releaseDate,
+        album,
+        releaseType,
+      ),
+      allowEquivalentDuplicates: true,
+    });
+    keys.push({
+      key: identityKey("semantic", kind, title, members, releaseDate),
+      allowEquivalentDuplicates: true,
+    });
+  }
+
+  for (const videoId of videoIds) {
+    if (title && members) {
+      keys.push({
+        key: identityKey(
+          "video-title-members",
+          kind,
+          videoId,
+          title,
+          members,
+        ),
+        allowEquivalentDuplicates: true,
+      });
+    }
+    if (title) {
+      keys.push({
+        key: identityKey("video-title", kind, videoId, title),
+        allowEquivalentDuplicates: false,
+      });
+    }
+    if (members && releaseDate) {
+      keys.push({
+        key: identityKey(
+          "video-members-date",
+          kind,
+          videoId,
+          members,
+          releaseDate,
+        ),
+        allowEquivalentDuplicates: false,
+      });
+    }
+  }
+
+  if (title && members && album) {
+    keys.push({
+      key: identityKey("title-members-album", kind, title, members, album),
+      allowEquivalentDuplicates: false,
+    });
+  }
+  if (title && artist && releaseDate) {
+    keys.push({
+      key: identityKey("title-artist-date", kind, title, artist, releaseDate),
+      allowEquivalentDuplicates: false,
+    });
+  }
+  if (title && members) {
+    keys.push({
+      key: identityKey("title-members", kind, title, members),
+      allowEquivalentDuplicates: false,
+    });
+  }
+
+  const seen = new Set();
+  return keys.filter(({ key }) => {
+    if (seen.has(key)) {
+      return false;
+    }
+    seen.add(key);
+    return true;
+  });
+}
+
+function identityKey(label, ...parts) {
+  return [label, ...parts].join("\u001f");
+}
+
+function trackKind(track) {
+  return track.category === "cover" ? "cover" : "original";
+}
+
+function trackMemberKey(track) {
+  return Array.from(new Set(track.memberIds ?? []))
+    .map((memberId) => String(memberId))
+    .sort()
+    .join(",");
+}
+
+function trackYouTubeIds(track) {
+  const videoIds = [];
+  const thumbnailVideoId = String(track.thumbnailUrl ?? "").match(
+    /i\.ytimg\.com\/vi\/([A-Za-z0-9_-]{11})\//,
+  )?.[1];
+
+  if (thumbnailVideoId) {
+    videoIds.push(thumbnailVideoId);
+  }
+  for (const link of track.links ?? []) {
+    const videoId = youtubeIdFromUrl(link.url);
+    if (videoId) {
+      videoIds.push(videoId);
+    }
+  }
+
+  return Array.from(new Set(videoIds)).sort();
+}
+
+function trackSimilarityScore(left, right) {
+  let score = 0;
+
+  if (normalizeName(left.title) === normalizeName(right.title)) score += 64;
+  if (trackMemberKey(left) === trackMemberKey(right)) score += 32;
+  if (
+    left.releaseDate &&
+    right.releaseDate &&
+    left.releaseDate === right.releaseDate
+  ) {
+    score += 16;
+  }
+  if (
+    trackYouTubeIds(left).some((videoId) =>
+      trackYouTubeIds(right).includes(videoId),
+    )
+  ) {
+    score += 8;
+  }
+  if (
+    left.albumTitle &&
+    right.albumTitle &&
+    normalizeName(left.albumTitle) === normalizeName(right.albumTitle)
+  ) {
+    score += 4;
+  }
+  if (normalizeName(left.artist) === normalizeName(right.artist)) score += 2;
+  if (left.category === right.category) score += 1;
+
+  return score;
+}
+
+function freshTrackIdentityParts(track) {
+  return [
+    "music-track-v2",
+    trackKind(track),
+    normalizeName(track.title),
+    trackMemberKey(track),
+    String(track.releaseDate ?? ""),
+    normalizeName(track.albumTitle),
+    normalizeName(track.releaseType),
+    trackYouTubeIds(track).join(","),
+    normalizeName(track.artist),
+  ];
 }
 
 function previousDurationCache(tracks) {

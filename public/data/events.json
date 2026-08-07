@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-07-28T00:00:00+09:00",
+  "checkedAt": "2026-08-06T00:00:00+09:00",
   "sourceNote": "hololive/COVER 및 공식 협업사 공지에서 날짜·장소를 확인했습니다.",
   "events": [
     {
@@ -81,6 +81,46 @@
       "note": "스트리밍 티켓 판매 중"
     },
     {
+      "id": "hololive-7th-fes-after-screening-2026",
+      "title": "hololive 7th fes. Ridin’ on Dreams — After Screening",
+      "titleKo": "홀로라이브 7th fes. 전국 영화관 애프터 상영",
+      "categories": ["concert", "festival"],
+      "region": "JP",
+      "city": "일본 전국",
+      "venue": "전국 영화관",
+      "startsAt": "2026-08-29T15:00:00+09:00",
+      "endsAt": "2026-09-06T18:00:00+09:00",
+      "dateLabel": "2026. 08. 29·30 / 09. 05·06",
+      "timeLabel": "각 15:00 시작",
+      "format": "전국 영화관 공식 응원 상영",
+      "participants": ["hololive 7th fes. STAGE1–4 출연진"],
+      "description": "7th fes. 네 개 스테이지를 나흘에 걸쳐 전국 영화관에서 다시 상영하며, 각 회차마다 출연 멤버의 한정 코멘트 영상도 제공합니다.",
+      "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/07/260710_main3.webp",
+      "sourceUrl": "https://hololive.hololivepro.com/news/20260710-01-396/",
+      "officialUrl": "https://hololivefes-delayviewing.com/",
+      "note": "응원 상영 · 일반 판매 8월 15일 시작"
+    },
+    {
+      "id": "regloss-3rd-anniversary-talk-festival-2026",
+      "title": "ReGLOSS3周年記念おしゃべりフェス",
+      "titleKo": "ReGLOSS 3주년 기념 대화 페스티벌",
+      "categories": ["collaboration", "festival"],
+      "region": "JP",
+      "city": "도쿄",
+      "venue": "도쿄 도내 비공개 장소",
+      "startsAt": "2026-09-20T12:00:00+09:00",
+      "endsAt": "2026-09-20T18:15:00+09:00",
+      "dateLabel": "2026. 09. 20 (일)",
+      "timeLabel": "접수 12:00 · 1부 13:00 · 2부 16:30",
+      "format": "현장 1:1 토크 이벤트",
+      "participants": ["音乃瀬奏", "一条莉々華", "儒烏風亭らでん", "轟はじめ"],
+      "participantIds": ["otonose-kanade", "ichijou-ririka", "juufuutei-raden", "todoroki-hajime"],
+      "description": "ReGLOSS 네 멤버와 티켓 한 장당 1분 동안 일대일로 대화하는 3주년 기념 현장 행사입니다.",
+      "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/07/260710_regloss_oshaberifes_kv.webp",
+      "sourceUrl": "https://hololive.hololivepro.com/events/regloss-shabefes/",
+      "note": "티켓 구매자에게 장소 개별 안내"
+    },
+    {
       "id": "irys-hope-beyond-stars-2026",
       "title": "IRyS 1st Concert “HOPE ||: Beyond the Stars”",
       "titleKo": "IRyS 첫 솔로 콘서트",
@@ -99,6 +139,27 @@
       "sourceUrl": "https://hololive.hololivepro.com/en/events/hope-beyond-the-stars/",
       "officialUrl": "https://hope-beyond-the-stars.hololivepro.com/",
       "note": "현장·스트리밍 티켓 안내 공개"
+    },
+    {
+      "id": "sakura-miko-blooming-parade-2026",
+      "title": "Sakura Miko 2nd Live “Blooming Parade!!”",
+      "titleKo": "사쿠라 미코 2nd Live ‘Blooming Parade!!’",
+      "categories": ["solo", "concert"],
+      "region": "JP",
+      "city": "요코하마",
+      "venue": "K 아레나 요코하마",
+      "startsAt": "2026-10-29T18:30:00+09:00",
+      "endsAt": "2026-10-29T21:30:00+09:00",
+      "dateLabel": "2026. 10. 29 (목)",
+      "timeLabel": "입장 17:00 · 스트림 18:00 · 공연 18:30",
+      "format": "현장 + SPWN/ZAIKO 유료 스트리밍",
+      "participants": ["さくらみこ"],
+      "participantIds": ["sakura-miko"],
+      "description": "사쿠라 미코의 두 번째 단독 라이브로, K 아레나 요코하마 현장과 글로벌 스트리밍으로 진행됩니다.",
+      "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/08/260801_main.webp",
+      "sourceUrl": "https://hololive.hololivepro.com/news/20260801-01-402/",
+      "officialUrl": "https://blooming-parade.hololivepro.com/",
+      "note": "스트리밍 판매 중 · 현장 1차 선행 8월 10일 시작"
     },
     {
       "id": "tokino-sora-everyday-of-light-2026",

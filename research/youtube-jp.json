@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-07-26T02:50:19.334Z",
+  "checkedAt": "2026-08-06T02:23:25.070Z",
   "scope": "Official hololive JP talents marked active or affiliate in talents.json. Public official-channel birthday, anniversary, 3D music live, free solo concert, and comparable special live archives only.",
   "methodology": "YouTube searches were run against each official talent channel. Search renderers with a different owner channel ID or ownerless playlist-only entries were rejected, then accepted videos were hydrated through YouTube player metadata for an exact publication date and a second channel-ID check. Ordinary gameplay, chat, karaoke, aftertalks, previews, single-song clips, MVs, watchalongs, and videos shorter than 20 minutes were excluded.",
   "publishedAtNote": "All accepted records had an exact publication timestamp in YouTube player metadata at the time checked.",
@@ -14,7 +14,7 @@
   ],
   "sourceType": "official-youtube-channel",
   "memberCount": 31,
-  "recordCount": 191,
+  "recordCount": 194,
   "missingMembers": [],
   "records": [
     {
@@ -457,6 +457,15 @@
       "category": "3d",
       "sourceUrl": "https://www.youtube.com/watch?v=JNmmnB4bP0M",
       "thumbnailUrl": "https://i.ytimg.com/vi/JNmmnB4bP0M/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB1lZZQ5bRtYrk7CoLhlf2cRF7dFg"
+    },
+    {
+      "memberId": "houshou-marine",
+      "videoId": "QixQ-byabOc",
+      "title": "【#宝鐘マリン生誕祭2026】重大告知が7個あります!!!!!!!7周年だけに!!!!!!!【ホロライブ/宝鐘マリン】",
+      "publishedAt": "2026-07-30T10:59:29+00:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=QixQ-byabOc",
+      "thumbnailUrl": "https://i.ytimg.com/vi/QixQ-byabOc/maxresdefault.jpg"
     },
     {
       "memberId": "houshou-marine",
@@ -1009,6 +1018,15 @@
     },
     {
       "memberId": "robocosan",
+      "videoId": "9uv6ihLUXtQ",
+      "title": "【3DLIVE】重大告知付き! 今年は深海で #ロボ子海底3Dライブ 🪸 【ホロライブ/ロボ子さん】",
+      "publishedAt": "2026-08-02T10:55:30+00:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=9uv6ihLUXtQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/9uv6ihLUXtQ/maxresdefault.jpg"
+    },
+    {
+      "memberId": "robocosan",
       "videoId": "Lw3sBpkC3Rw",
       "title": "【＃ロボ子4周年記念LIVE 】４周年３D IDOL LIVE🎉cuteにcoolに楽しんでIKZ🎉 【3D LIVE】",
       "publishedAt": "2022-03-04T05:12:39-08:00",
@@ -1042,6 +1060,15 @@
       "category": "anniversary",
       "sourceUrl": "https://www.youtube.com/watch?v=YOnasn4-BH0",
       "thumbnailUrl": "https://i.ytimg.com/vi/YOnasn4-BH0/maxresdefault.jpg?v=638366fd"
+    },
+    {
+      "memberId": "sakura-miko",
+      "videoId": "L5K85bMDymA",
+      "title": "【 3D 】8周年記念🌸みこち密告!?超❣重大発表だにぇ~~~!!【#みこち超重大発表】",
+      "publishedAt": "2026-08-01T11:57:05+00:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=L5K85bMDymA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/L5K85bMDymA/maxresdefault.jpg"
     },
     {
       "memberId": "sakura-miko",

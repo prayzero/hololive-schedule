@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-07-26T02:53:25.866Z",
+  "checkedAt": "2026-08-06T02:27:35.707Z",
   "sourceUrl": "https://www.youtube.com/",
   "sourceNote": "큐레이션된 공식 채널 영상의 게시 시각·영상 길이를 YouTube player metadata로 교차 확인한 캐시입니다.",
   "videos": [
@@ -326,6 +326,12 @@
       "channelId": "UCMwGHR0BTZuLsmjY_NT5Pwg",
       "publishedAt": "2023-02-18T20:05:20-08:00",
       "durationSeconds": 3770
+    },
+    {
+      "videoId": "9uv6ihLUXtQ",
+      "channelId": "UCDqI2jOz0weumE8s7paEk6g",
+      "publishedAt": "2026-08-02T10:55:30+00:00",
+      "durationSeconds": 3755
     },
     {
       "videoId": "abXN62S7pyU",
@@ -964,6 +970,12 @@
       "durationSeconds": 3546
     },
     {
+      "videoId": "L5K85bMDymA",
+      "channelId": "UC-hM6YJuNYVAmUWxeIr9FeA",
+      "publishedAt": "2026-08-01T11:57:05+00:00",
+      "durationSeconds": 4504
+    },
+    {
       "videoId": "LazLAQUMCzI",
       "channelId": "UCvaTdHTWBGv3MKj3KVqJVCw",
       "publishedAt": "2022-07-24T05:18:41-07:00",
@@ -1244,6 +1256,12 @@
       "channelId": "UCgmPnx-EEeOrZSg5Tiw7ZRQ",
       "publishedAt": "2023-09-30T21:10:55-07:00",
       "durationSeconds": 4008
+    },
+    {
+      "videoId": "QixQ-byabOc",
+      "channelId": "UCCzUftO8KOVkV4wQG1vkUvg",
+      "publishedAt": "2026-07-30T10:59:29+00:00",
+      "durationSeconds": 3715
     },
     {
       "videoId": "qqi8yXuH35Y",

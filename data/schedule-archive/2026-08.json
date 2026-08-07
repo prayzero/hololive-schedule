@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T16:03:15.811Z",
+  "generatedAt": "2026-08-07T17:01:56.291Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -6358,11 +6358,26 @@
       "branch": "JP"
     },
     {
+      "id": "bkJFVsXBIZk",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "01:27",
+      "startsAt": "2026-08-08T01:27:00+09:00",
+      "name": "Kaela",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=bkJFVsXBIZk",
+      "videoId": "bkJFVsXBIZk",
+      "thumbnail": "https://img.youtube.com/vi/bkJFVsXBIZk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "I-FOpjETaeU",
       "date": "2026-08-08",
       "dateLabel": "08/08 (土)",
-      "time": "01:30",
-      "startsAt": "2026-08-08T01:30:00+09:00",
+      "time": "01:31",
+      "startsAt": "2026-08-08T01:31:00+09:00",
       "name": "鷹嶺ルイ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=I-FOpjETaeU",
@@ -6523,6 +6538,36 @@
       "branch": "JP"
     },
     {
+      "id": "7QGfUDLv3zI",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "12:00",
+      "startsAt": "2026-08-08T12:00:00+09:00",
+      "name": "IRyS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=7QGfUDLv3zI",
+      "videoId": "7QGfUDLv3zI",
+      "thumbnail": "https://img.youtube.com/vi/7QGfUDLv3zI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "q8MU2PSEGA0",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "13:00",
+      "startsAt": "2026-08-08T13:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=q8MU2PSEGA0",
+      "videoId": "q8MU2PSEGA0",
+      "thumbnail": "https://img.youtube.com/vi/q8MU2PSEGA0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "g533TG_MqkQ",
       "date": "2026-08-08",
       "dateLabel": "08/08 (土)",
@@ -6566,6 +6611,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "AZgKPA0t6Is",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "19:00",
+      "startsAt": "2026-08-08T19:00:00+09:00",
+      "name": "轟はじめ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=AZgKPA0t6Is",
+      "videoId": "AZgKPA0t6Is",
+      "thumbnail": "https://img.youtube.com/vi/AZgKPA0t6Is/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "7iFYOWm8N2U",
@@ -6701,6 +6761,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "oMWLmp2VoBY",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "13:00",
+      "startsAt": "2026-08-09T13:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=oMWLmp2VoBY",
+      "videoId": "oMWLmp2VoBY",
+      "thumbnail": "https://img.youtube.com/vi/oMWLmp2VoBY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "kTSDH_CE-uc",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "18:00",
+      "startsAt": "2026-08-09T18:00:00+09:00",
+      "name": "姫森ルーナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=kTSDH_CE-uc",
+      "videoId": "kTSDH_CE-uc",
+      "thumbnail": "https://img.youtube.com/vi/kTSDH_CE-uc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "3KzdBBAMg8E",

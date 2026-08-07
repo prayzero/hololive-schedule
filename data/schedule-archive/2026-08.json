@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T17:01:56.291Z",
+  "generatedAt": "2026-08-07T21:18:27.597Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -6388,11 +6388,26 @@
       "branch": "JP"
     },
     {
-      "id": "ENlNsWX4PEI",
+      "id": "6POYmYsIHt8",
       "date": "2026-08-08",
       "dateLabel": "08/08 (土)",
       "time": "06:00",
       "startsAt": "2026-08-08T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=6POYmYsIHt8",
+      "videoId": "6POYmYsIHt8",
+      "thumbnail": "https://img.youtube.com/vi/6POYmYsIHt8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "ENlNsWX4PEI",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "06:02",
+      "startsAt": "2026-08-08T06:02:00+09:00",
       "name": "Gigi",
       "title": null,
       "url": "https://www.youtube.com/watch?v=ENlNsWX4PEI",
@@ -6701,6 +6716,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "Z3jD62ToMeM",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "21:00",
+      "startsAt": "2026-08-08T21:00:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Z3jD62ToMeM",
+      "videoId": "Z3jD62ToMeM",
+      "thumbnail": "https://img.youtube.com/vi/Z3jD62ToMeM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "sD8EPO2Mhgs",

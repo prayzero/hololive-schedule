@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T06:50:57.600Z",
+  "generatedAt": "2026-08-07T08:19:20.668Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -5608,11 +5608,56 @@
       "branch": "ID"
     },
     {
-      "id": "VUad6DmWeXg",
+      "id": "CJ7iyrQ5q1c",
       "date": "2026-08-07",
       "dateLabel": "08/07 (金)",
       "time": "17:00",
       "startsAt": "2026-08-07T17:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=CJ7iyrQ5q1c",
+      "videoId": "CJ7iyrQ5q1c",
+      "thumbnail": "https://img.youtube.com/vi/CJ7iyrQ5q1c/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "8ddrHhYHDN4",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "17:00",
+      "startsAt": "2026-08-07T17:00:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=8ddrHhYHDN4",
+      "videoId": "8ddrHhYHDN4",
+      "thumbnail": "https://img.youtube.com/vi/8ddrHhYHDN4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "abx0nWSYFB8",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "17:00",
+      "startsAt": "2026-08-07T17:00:00+09:00",
+      "name": "ロボ子さん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=abx0nWSYFB8",
+      "videoId": "abx0nWSYFB8",
+      "thumbnail": "https://img.youtube.com/vi/abx0nWSYFB8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "VUad6DmWeXg",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "17:02",
+      "startsAt": "2026-08-07T17:02:00+09:00",
       "name": "鷹嶺ルイ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=VUad6DmWeXg",
@@ -5621,6 +5666,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "qe3iBe1SiVg",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "17:08",
+      "startsAt": "2026-08-07T17:08:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=qe3iBe1SiVg",
+      "videoId": "qe3iBe1SiVg",
+      "thumbnail": "https://img.youtube.com/vi/qe3iBe1SiVg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "Yyl9sBUvVc0",
@@ -5758,6 +5818,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "rVFmMr06_DI",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "21:00",
+      "startsAt": "2026-08-07T21:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=rVFmMr06_DI",
+      "videoId": "rVFmMr06_DI",
+      "thumbnail": "https://img.youtube.com/vi/rVFmMr06_DI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "XdgzEDySUS8",
       "date": "2026-08-07",
       "dateLabel": "08/07 (金)",
@@ -5771,6 +5846,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
+    },
+    {
+      "id": "TMXFBpkOeDc",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "21:00",
+      "startsAt": "2026-08-07T21:00:00+09:00",
+      "name": "さくらみこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=TMXFBpkOeDc",
+      "videoId": "TMXFBpkOeDc",
+      "thumbnail": "https://img.youtube.com/vi/TMXFBpkOeDc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "U83ZaZwuPgY",
@@ -5888,6 +5978,21 @@
       "url": "https://www.youtube.com/watch?v=Z2tLYg--Ego",
       "videoId": "Z2tLYg--Ego",
       "thumbnail": "https://img.youtube.com/vi/Z2tLYg--Ego/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "by6RUFdt4Y8",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "23:30",
+      "startsAt": "2026-08-07T23:30:00+09:00",
+      "name": "白銀ノエル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=by6RUFdt4Y8",
+      "videoId": "by6RUFdt4Y8",
+      "thumbnail": "https://img.youtube.com/vi/by6RUFdt4Y8/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

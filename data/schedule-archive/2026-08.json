@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T01:57:58.622Z",
+  "generatedAt": "2026-08-07T02:20:45.950Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -5473,11 +5473,26 @@
       "branch": "EN"
     },
     {
-      "id": "F_Lg4nGV1XM",
+      "id": "M-LFJF0gO7U",
       "date": "2026-08-07",
       "dateLabel": "08/07 (金)",
       "time": "11:00",
       "startsAt": "2026-08-07T11:00:00+09:00",
+      "name": "holo EN",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=M-LFJF0gO7U",
+      "videoId": "M-LFJF0gO7U",
+      "thumbnail": "https://img.youtube.com/vi/M-LFJF0gO7U/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "F_Lg4nGV1XM",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "11:01",
+      "startsAt": "2026-08-07T11:01:00+09:00",
       "name": "Ollie",
       "title": null,
       "url": "https://www.youtube.com/watch?v=F_Lg4nGV1XM",
@@ -5576,6 +5591,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "YG14cnOcF2w",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "20:00",
+      "startsAt": "2026-08-07T20:00:00+09:00",
+      "name": "轟はじめ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=YG14cnOcF2w",
+      "videoId": "YG14cnOcF2w",
+      "thumbnail": "https://img.youtube.com/vi/YG14cnOcF2w/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "pTKn5cBCB8M",
@@ -5723,6 +5753,21 @@
       "url": "https://www.youtube.com/watch?v=6qjuPobAdp0",
       "videoId": "6qjuPobAdp0",
       "thumbnail": "https://img.youtube.com/vi/6qjuPobAdp0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "BVg1H-COU6I",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "18:00",
+      "startsAt": "2026-08-08T18:00:00+09:00",
+      "name": "ロボ子さん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=BVg1H-COU6I",
+      "videoId": "BVg1H-COU6I",
+      "thumbnail": "https://img.youtube.com/vi/BVg1H-COU6I/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

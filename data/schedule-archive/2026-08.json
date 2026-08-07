@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T11:16:48.425Z",
+  "generatedAt": "2026-08-07T12:24:40.073Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -5983,19 +5983,19 @@
       "branch": "JP"
     },
     {
-      "id": "1A5zaFvdW4k",
+      "id": "LG4pFUkZxAw",
       "date": "2026-08-07",
       "dateLabel": "08/07 (金)",
-      "time": "21:00",
-      "startsAt": "2026-08-07T21:00:00+09:00",
-      "name": "不知火フレア",
+      "time": "20:30",
+      "startsAt": "2026-08-07T20:30:00+09:00",
+      "name": "Kobo",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=1A5zaFvdW4k",
-      "videoId": "1A5zaFvdW4k",
-      "thumbnail": "https://img.youtube.com/vi/1A5zaFvdW4k/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=LG4pFUkZxAw",
+      "videoId": "LG4pFUkZxAw",
+      "thumbnail": "https://img.youtube.com/vi/LG4pFUkZxAw/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
-      "branch": "JP"
+      "branch": "ID"
     },
     {
       "id": "rVFmMr06_DI",
@@ -6028,11 +6028,26 @@
       "branch": "ID"
     },
     {
+      "id": "1A5zaFvdW4k",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "21:02",
+      "startsAt": "2026-08-07T21:02:00+09:00",
+      "name": "不知火フレア",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=1A5zaFvdW4k",
+      "videoId": "1A5zaFvdW4k",
+      "thumbnail": "https://img.youtube.com/vi/1A5zaFvdW4k/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "TMXFBpkOeDc",
       "date": "2026-08-07",
       "dateLabel": "08/07 (金)",
-      "time": "21:00",
-      "startsAt": "2026-08-07T21:00:00+09:00",
+      "time": "21:04",
+      "startsAt": "2026-08-07T21:04:00+09:00",
       "name": "さくらみこ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=TMXFBpkOeDc",
@@ -6041,6 +6056,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "GeojFgx24yw",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "21:09",
+      "startsAt": "2026-08-07T21:09:00+09:00",
+      "name": "Zeta",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=GeojFgx24yw",
+      "videoId": "GeojFgx24yw",
+      "thumbnail": "https://img.youtube.com/vi/GeojFgx24yw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "U83ZaZwuPgY",
@@ -6281,6 +6311,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "ENlNsWX4PEI",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "06:00",
+      "startsAt": "2026-08-08T06:00:00+09:00",
+      "name": "Gigi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ENlNsWX4PEI",
+      "videoId": "ENlNsWX4PEI",
+      "thumbnail": "https://img.youtube.com/vi/ENlNsWX4PEI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "CyioAPpM_yc",

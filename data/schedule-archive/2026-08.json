@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T09:35:20.463Z",
+  "generatedAt": "2026-08-07T10:29:38.408Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -5818,6 +5818,21 @@
       "branch": "JP"
     },
     {
+      "id": "tWv8xSRGfag",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "19:00",
+      "startsAt": "2026-08-07T19:00:00+09:00",
+      "name": "holo EN",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=tWv8xSRGfag",
+      "videoId": "tWv8xSRGfag",
+      "thumbnail": "https://img.youtube.com/vi/tWv8xSRGfag/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "K0fJZ32s6RI",
       "date": "2026-08-07",
       "dateLabel": "08/07 (金)",
@@ -5828,6 +5843,21 @@
       "url": "https://www.youtube.com/watch?v=K0fJZ32s6RI",
       "videoId": "K0fJZ32s6RI",
       "thumbnail": "https://img.youtube.com/vi/K0fJZ32s6RI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "0-rjPvcqCnA",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "19:00",
+      "startsAt": "2026-08-07T19:00:00+09:00",
+      "name": "ホロライブ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=0-rjPvcqCnA",
+      "videoId": "0-rjPvcqCnA",
+      "thumbnail": "https://img.youtube.com/vi/0-rjPvcqCnA/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -5906,6 +5936,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "1A5zaFvdW4k",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "21:00",
+      "startsAt": "2026-08-07T21:00:00+09:00",
+      "name": "不知火フレア",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=1A5zaFvdW4k",
+      "videoId": "1A5zaFvdW4k",
+      "thumbnail": "https://img.youtube.com/vi/1A5zaFvdW4k/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "rVFmMr06_DI",
@@ -6073,21 +6118,6 @@
       "branch": "JP"
     },
     {
-      "id": "0xGbjx3gCE4",
-      "date": "2026-08-07",
-      "dateLabel": "08/07 (金)",
-      "time": "23:00",
-      "startsAt": "2026-08-07T23:00:00+09:00",
-      "name": "常闇トワ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=0xGbjx3gCE4",
-      "videoId": "0xGbjx3gCE4",
-      "thumbnail": "https://img.youtube.com/vi/0xGbjx3gCE4/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "Z2tLYg--Ego",
       "date": "2026-08-07",
       "dateLabel": "08/07 (金)",
@@ -6113,6 +6143,21 @@
       "url": "https://www.youtube.com/watch?v=by6RUFdt4Y8",
       "videoId": "by6RUFdt4Y8",
       "thumbnail": "https://img.youtube.com/vi/by6RUFdt4Y8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "0xGbjx3gCE4",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "23:30",
+      "startsAt": "2026-08-07T23:30:00+09:00",
+      "name": "常闇トワ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=0xGbjx3gCE4",
+      "videoId": "0xGbjx3gCE4",
+      "thumbnail": "https://img.youtube.com/vi/0xGbjx3gCE4/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -6193,6 +6238,21 @@
       "branch": "JP"
     },
     {
+      "id": "7iFYOWm8N2U",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "19:00",
+      "startsAt": "2026-08-08T19:00:00+09:00",
+      "name": "ReGLOSS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=7iFYOWm8N2U",
+      "videoId": "7iFYOWm8N2U",
+      "thumbnail": "https://img.youtube.com/vi/7iFYOWm8N2U/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "07qx3PL4b3U",
       "date": "2026-08-08",
       "dateLabel": "08/08 (土)",
@@ -6233,6 +6293,21 @@
       "url": "https://www.youtube.com/watch?v=sD8EPO2Mhgs",
       "videoId": "sD8EPO2Mhgs",
       "thumbnail": "https://img.youtube.com/vi/sD8EPO2Mhgs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "V_09zQsoH1o",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "22:00",
+      "startsAt": "2026-08-08T22:00:00+09:00",
+      "name": "Zeta",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=V_09zQsoH1o",
+      "videoId": "V_09zQsoH1o",
+      "thumbnail": "https://img.youtube.com/vi/V_09zQsoH1o/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "ID"

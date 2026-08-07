@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T10:29:38.408Z",
+  "generatedAt": "2026-08-07T11:16:48.425Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -5866,8 +5866,8 @@
       "id": "5IpdYy91D-Y",
       "date": "2026-08-07",
       "dateLabel": "08/07 (金)",
-      "time": "19:30",
-      "startsAt": "2026-08-07T19:30:00+09:00",
+      "time": "19:32",
+      "startsAt": "2026-08-07T19:32:00+09:00",
       "name": "ときのそら",
       "title": null,
       "url": "https://www.youtube.com/watch?v=5IpdYy91D-Y",
@@ -5876,6 +5876,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "1ywaeTf3Dcc",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "19:43",
+      "startsAt": "2026-08-07T19:43:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=1ywaeTf3Dcc",
+      "videoId": "1ywaeTf3Dcc",
+      "thumbnail": "https://img.youtube.com/vi/1ywaeTf3Dcc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "YG14cnOcF2w",
@@ -5908,11 +5923,26 @@
       "branch": "JP"
     },
     {
-      "id": "WYTT4KQZF3Q",
+      "id": "8JNJ8GYgTQk",
       "date": "2026-08-07",
       "dateLabel": "08/07 (金)",
       "time": "20:00",
       "startsAt": "2026-08-07T20:00:00+09:00",
+      "name": "音乃瀬奏",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=8JNJ8GYgTQk",
+      "videoId": "8JNJ8GYgTQk",
+      "thumbnail": "https://img.youtube.com/vi/8JNJ8GYgTQk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "WYTT4KQZF3Q",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "20:01",
+      "startsAt": "2026-08-07T20:01:00+09:00",
       "name": "白上フブキ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=WYTT4KQZF3Q",
@@ -5926,8 +5956,8 @@
       "id": "pL4Xt1D3iCU",
       "date": "2026-08-07",
       "dateLabel": "08/07 (金)",
-      "time": "20:00",
-      "startsAt": "2026-08-07T20:00:00+09:00",
+      "time": "20:01",
+      "startsAt": "2026-08-07T20:01:00+09:00",
       "name": "一条莉々華",
       "title": null,
       "url": "https://www.youtube.com/watch?v=pL4Xt1D3iCU",
@@ -5936,6 +5966,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "WxCvxQlMT0E",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "20:02",
+      "startsAt": "2026-08-07T20:02:00+09:00",
+      "name": "夏色まつり",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=WxCvxQlMT0E",
+      "videoId": "WxCvxQlMT0E",
+      "thumbnail": "https://img.youtube.com/vi/WxCvxQlMT0E/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "1A5zaFvdW4k",
@@ -6028,6 +6073,21 @@
       "branch": "JP"
     },
     {
+      "id": "JUXIXgRI-TY",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "22:00",
+      "startsAt": "2026-08-07T22:00:00+09:00",
+      "name": "不知火フレア",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=JUXIXgRI-TY",
+      "videoId": "JUXIXgRI-TY",
+      "thumbnail": "https://img.youtube.com/vi/JUXIXgRI-TY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "_-pHFzBwKek",
       "date": "2026-08-07",
       "dateLabel": "08/07 (金)",
@@ -6056,6 +6116,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "iTkheD46Skk",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "22:00",
+      "startsAt": "2026-08-07T22:00:00+09:00",
+      "name": "Iofi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=iTkheD46Skk",
+      "videoId": "iTkheD46Skk",
+      "thumbnail": "https://img.youtube.com/vi/iTkheD46Skk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "x8D5QvYw5bI",
@@ -6088,6 +6163,21 @@
       "branch": "ID"
     },
     {
+      "id": "zn2VL5wWC1c",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "22:00",
+      "startsAt": "2026-08-07T22:00:00+09:00",
+      "name": "Risu",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=zn2VL5wWC1c",
+      "videoId": "zn2VL5wWC1c",
+      "thumbnail": "https://img.youtube.com/vi/zn2VL5wWC1c/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "otPr96TPQ5E",
       "date": "2026-08-07",
       "dateLabel": "08/07 (金)",
@@ -6101,6 +6191,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "9qTheQgvzZY",
+      "date": "2026-08-07",
+      "dateLabel": "08/07 (金)",
+      "time": "23:00",
+      "startsAt": "2026-08-07T23:00:00+09:00",
+      "name": "大神ミオ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=9qTheQgvzZY",
+      "videoId": "9qTheQgvzZY",
+      "thumbnail": "https://img.youtube.com/vi/9qTheQgvzZY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "R2BSE9fah5s",

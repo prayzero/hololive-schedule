@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T15:03:15.795Z",
+  "generatedAt": "2026-08-07T16:03:15.811Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -6653,6 +6653,21 @@
       "url": "https://www.youtube.com/watch?v=sD8EPO2Mhgs",
       "videoId": "sD8EPO2Mhgs",
       "thumbnail": "https://img.youtube.com/vi/sD8EPO2Mhgs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "Sm7X9Ms-iok",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "22:00",
+      "startsAt": "2026-08-08T22:00:00+09:00",
+      "name": "Risu",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Sm7X9Ms-iok",
+      "videoId": "Sm7X9Ms-iok",
+      "thumbnail": "https://img.youtube.com/vi/Sm7X9Ms-iok/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "ID"

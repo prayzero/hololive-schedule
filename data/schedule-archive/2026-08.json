@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-07T21:18:27.597Z",
+  "generatedAt": "2026-08-07T23:08:36.742Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -6421,8 +6421,8 @@
       "id": "VybvJDejY3k",
       "date": "2026-08-08",
       "dateLabel": "08/08 (土)",
-      "time": "08:00",
-      "startsAt": "2026-08-08T08:00:00+09:00",
+      "time": "07:56",
+      "startsAt": "2026-08-08T07:56:00+09:00",
       "name": "Bijou",
       "title": null,
       "url": "https://www.youtube.com/watch?v=VybvJDejY3k",
@@ -6776,6 +6776,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
+    },
+    {
+      "id": "z9MZH1pbukc",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "23:00",
+      "startsAt": "2026-08-08T23:00:00+09:00",
+      "name": "Raora",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=z9MZH1pbukc",
+      "videoId": "z9MZH1pbukc",
+      "thumbnail": "https://img.youtube.com/vi/z9MZH1pbukc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "E_2Z0-JkakE",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "08:00",
+      "startsAt": "2026-08-09T08:00:00+09:00",
+      "name": "ReGLOSS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=E_2Z0-JkakE",
+      "videoId": "E_2Z0-JkakE",
+      "thumbnail": "https://img.youtube.com/vi/E_2Z0-JkakE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "54oaXuyyfMc",

@@ -204,6 +204,18 @@ export function DreamPickupPanel({
     visibleEntries.find(({ status }) => status === "ongoing") ??
     visibleEntries.find(({ status }) => status === "upcoming") ??
     visibleEntries[0];
+  const featuredRates = featured
+    ? featured.pickup.rateBreakdown.length
+      ? featured.pickup.rateBreakdown
+      : featured.pickup.targetRatePercent
+        ? [
+            {
+              label: featured.pickup.rateLabel ?? "픽업 대상",
+              ratePercent: featured.pickup.targetRatePercent,
+            },
+          ]
+        : []
+    : [];
 
   return (
     <div className="dream-pickup-panel">
@@ -311,27 +323,29 @@ export function DreamPickupPanel({
             className="dream-pickup-rate-breakdown"
             aria-label={`${featured.pickup.title} 세부 제공 비율`}
           >
-            {(featured.pickup.rateBreakdown ??
-              (featured.pickup.targetRatePercent
-                ? [
-                    {
-                      label: featured.pickup.rateLabel ?? "픽업 대상",
-                      ratePercent: featured.pickup.targetRatePercent,
-                    },
-                  ]
-                : [])
-            ).map((rate) => (
-              <span key={`${rate.label}-${rate.ratePercent}`}>
-                <small>{rate.label}</small>
-                <strong>
-                  {formatRatePercent(rate.ratePercent)}
-                  <small>%</small>
-                </strong>
+            {featuredRates.length ? (
+              featuredRates.map((rate) => (
+                <span key={`${rate.label}-${rate.ratePercent}`}>
+                  <small>{rate.label}</small>
+                  <strong>
+                    {formatRatePercent(rate.ratePercent)}
+                    <small>%</small>
+                  </strong>
+                </span>
+              ))
+            ) : (
+              <span>
+                <small>제공 비율</small>
+                <strong>게임 내 공지 확인</strong>
               </span>
-            ))}
+            )}
           </div>
 
-          <div className="dream-pickup-gallery">
+          <div
+            className={`dream-pickup-gallery${
+              featured.pickup.cards.length === 2 ? " is-duo" : ""
+            }`}
+          >
             {featured.pickup.cards.map((card) => {
               const talent = talentById.get(card.talentId);
               const style = {

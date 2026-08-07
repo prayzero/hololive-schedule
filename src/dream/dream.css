@@ -996,6 +996,10 @@
   grid-column: span 3;
 }
 
+.dream-pickup-gallery.is-duo .dream-pickup-art {
+  grid-column: span 3;
+}
+
 .dream-pickup-art::after {
   position: absolute;
   inset: 0;
@@ -2767,7 +2771,8 @@
   }
 
   .dream-pickup-art,
-  .dream-pickup-art:nth-child(n + 4) {
+  .dream-pickup-art:nth-child(n + 4),
+  .dream-pickup-gallery.is-duo .dream-pickup-art {
     grid-column: auto;
     border-radius: 16px;
     scroll-snap-align: center;

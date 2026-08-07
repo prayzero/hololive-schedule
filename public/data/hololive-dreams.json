@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-08-06T11:19:17+09:00",
+  "checkedAt": "2026-08-07T11:11:40+09:00",
   "sourceUrl": "https://www.hololive-dreams.com/en",
   "officialNewsUrl": "https://hololive.hololivepro.com/en/news/20260723-01-401/",
-  "sourceNote": "hololive Dreams 공식 사이트에 공개된 출시 캐릭터 54명과 공식 썸네일을 사용합니다. 로스터·다운로드 링크와 현재 픽업은 공식 웹·X에서 2026-08-06 재확인했고, 개별 제공 비율은 게임 내 제공 비율 화면을 기준으로 2026-07-29 확인했습니다.",
+  "sourceNote": "hololive Dreams 공식 사이트에 공개된 출시 캐릭터 54명과 공식 썸네일을 사용합니다. 로스터·다운로드 링크와 현재 픽업은 공식 웹·X에서 2026-08-07 재확인했고, 개별 제공 비율은 게임 내 제공 비율 화면을 기준으로 2026-07-29 확인했습니다. 8월 7일 신규 미코·스이세이 픽업의 종료 시각과 제공 비율은 외부 공식 채널에 공개되지 않아 확인 중으로 표시합니다.",
   "launchDate": "2026-07-23",
   "game": {
     "title": "hololive Dreams",
@@ -99,11 +99,49 @@
       }
     ],
     "rateReferenceUrl": "https://game8.jp/hololive-dreams/801993",
-    "pickupReferenceUrl": "https://x.com/hololive_dreams/status/2081924023081210346",
+    "pickupReferenceUrl": "https://x.com/hololive_dreams/status/2085547563827302723",
     "screenshotReferenceUrl": "https://appmedia.jp/wp-content/uploads/2026/07/135040_8l2nf.webp",
     "officialNoticeUrl": "https://www.hololive-dreams.com/news/detail/aku8rsuo9"
   },
   "pickups": [
+    {
+      "id": "summer-sniper-2026",
+      "title": "「두 사람이 여름을 저격!」 가챠",
+      "subtitle": "신규 수영복 ★5 사쿠라 미코·호시마치 스이세이 · 파크·라이브 의상 포함",
+      "targetRatePercent": null,
+      "rateLabel": "신규 수영복 ★5 미코·스이세이",
+      "rateBreakdown": [],
+      "startsOn": "2026-08-07",
+      "endsOn": null,
+      "startsAt": "2026-08-07T11:00:00+09:00",
+      "endsAt": null,
+      "announcedOn": "2026-08-07",
+      "sourceLabel": "hololive Dreams 공식 X 신규 픽업 공지",
+      "sourceUrl": "https://x.com/hololive_dreams/status/2085547563827302723",
+      "scheduleNote": "2026년 8월 7일 11시부터 등장합니다. 두 카드를 획득하면 각각 파크 의상과 라이브 의상도 함께 획득합니다. 종료 시각과 제공 비율은 공식 X에 공개되지 않아 게임 내 공지에서 확인해야 합니다. 신규 멤버는 다음 개최 예정 가챠부터도 등장하며 상시 홀로드리 가챠에서는 배출되지 않습니다.",
+      "cards": [
+        {
+          "id": "summer-sniper-2026-sakura-miko",
+          "talentId": "sakura-miko",
+          "cardTitle": "ビーチで弾ける、光彩ショット！",
+          "rarity": 5,
+          "imageUrl": "images/dream-pickups/summer-sniper-2026/sakura-miko.jpg",
+          "imageAlt": "★5 해변에서 터지는, 광채 샷! 사쿠라 미코 카드 일러스트",
+          "imagePosition": "48% 36%",
+          "imageScale": 1.22
+        },
+        {
+          "id": "summer-sniper-2026-hoshimachi-suisei",
+          "talentId": "hoshimachi-suisei",
+          "cardTitle": "夏に一閃！水鉄砲のアルペジオ",
+          "rarity": 5,
+          "imageUrl": "images/dream-pickups/summer-sniper-2026/hoshimachi-suisei.jpg",
+          "imageAlt": "★5 여름에 일섬! 물총의 아르페지오 호시마치 스이세이 카드 일러스트",
+          "imagePosition": "58% 36%",
+          "imageScale": 1.22
+        }
+      ]
+    },
     {
       "id": "holonatsu-paradise-2026",
       "title": "선택 가능! sunny summer 바캉스! 가챠",

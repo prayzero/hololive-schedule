@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T10:42:46.613Z",
+  "generatedAt": "2026-08-08T11:36:28.247Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -6958,6 +6958,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "p3enDeUFzvU",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "19:59",
+      "startsAt": "2026-08-08T19:59:00+09:00",
+      "name": "姫森ルーナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=p3enDeUFzvU",
+      "videoId": "p3enDeUFzvU",
+      "thumbnail": "https://img.youtube.com/vi/p3enDeUFzvU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "B5xCTjUjxwQ",
       "date": "2026-08-08",
       "dateLabel": "08/08 (土)",
@@ -6988,19 +7003,34 @@
       "branch": "JP"
     },
     {
-      "id": "p3enDeUFzvU",
+      "id": "m8xdKYVhfiQ",
       "date": "2026-08-08",
       "dateLabel": "08/08 (土)",
-      "time": "20:00",
-      "startsAt": "2026-08-08T20:00:00+09:00",
-      "name": "姫森ルーナ",
+      "time": "20:09",
+      "startsAt": "2026-08-08T20:09:00+09:00",
+      "name": "夏色まつり",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=p3enDeUFzvU",
-      "videoId": "p3enDeUFzvU",
-      "thumbnail": "https://img.youtube.com/vi/p3enDeUFzvU/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=m8xdKYVhfiQ",
+      "videoId": "m8xdKYVhfiQ",
+      "thumbnail": "https://img.youtube.com/vi/m8xdKYVhfiQ/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "1_F7mRHYz1k",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "20:23",
+      "startsAt": "2026-08-08T20:23:00+09:00",
+      "name": "Kaela",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=1_F7mRHYz1k",
+      "videoId": "1_F7mRHYz1k",
+      "thumbnail": "https://img.youtube.com/vi/1_F7mRHYz1k/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "cD3MYP8hJRM",
@@ -7091,21 +7121,6 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
-    },
-    {
-      "id": "1_F7mRHYz1k",
-      "date": "2026-08-08",
-      "dateLabel": "08/08 (土)",
-      "time": "21:00",
-      "startsAt": "2026-08-08T21:00:00+09:00",
-      "name": "Kaela",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=1_F7mRHYz1k",
-      "videoId": "1_F7mRHYz1k",
-      "thumbnail": "https://img.youtube.com/vi/1_F7mRHYz1k/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "ID"
     },
     {
       "id": "093fOeOl188",

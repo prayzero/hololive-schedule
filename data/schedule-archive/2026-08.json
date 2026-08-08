@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T09:48:19.012Z",
+  "generatedAt": "2026-08-08T10:42:46.613Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -6943,6 +6943,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "u_9W0FCNmAo",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "19:30",
+      "startsAt": "2026-08-08T19:30:00+09:00",
+      "name": "虎金妃笑虎",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=u_9W0FCNmAo",
+      "videoId": "u_9W0FCNmAo",
+      "thumbnail": "https://img.youtube.com/vi/u_9W0FCNmAo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "B5xCTjUjxwQ",
       "date": "2026-08-08",
       "dateLabel": "08/08 (土)",
@@ -7061,6 +7076,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "ThyfEJ-h9Gs",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "21:00",
+      "startsAt": "2026-08-08T21:00:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ThyfEJ-h9Gs",
+      "videoId": "ThyfEJ-h9Gs",
+      "thumbnail": "https://img.youtube.com/vi/ThyfEJ-h9Gs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "1_F7mRHYz1k",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T05:05:58.736Z",
+  "generatedAt": "2026-08-08T05:52:53.651Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -6743,6 +6743,21 @@
       "url": "https://www.youtube.com/watch?v=BVg1H-COU6I",
       "videoId": "BVg1H-COU6I",
       "thumbnail": "https://img.youtube.com/vi/BVg1H-COU6I/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "1IuOKoNqWug",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "19:00",
+      "startsAt": "2026-08-08T19:00:00+09:00",
+      "name": "戌神ころね",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=1IuOKoNqWug",
+      "videoId": "1IuOKoNqWug",
+      "thumbnail": "https://img.youtube.com/vi/1IuOKoNqWug/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

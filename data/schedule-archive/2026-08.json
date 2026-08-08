@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T08:53:04.114Z",
+  "generatedAt": "2026-08-08T09:48:19.012Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -6793,21 +6793,6 @@
       "branch": "DEV_IS"
     },
     {
-      "id": "WLFS6ah-D60",
-      "date": "2026-08-08",
-      "dateLabel": "08/08 (土)",
-      "time": "18:00",
-      "startsAt": "2026-08-08T18:00:00+09:00",
-      "name": "大神ミオ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=WLFS6ah-D60",
-      "videoId": "WLFS6ah-D60",
-      "thumbnail": "https://img.youtube.com/vi/WLFS6ah-D60/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "3j_Vk9KgDD4",
       "date": "2026-08-08",
       "dateLabel": "08/08 (土)",
@@ -6818,6 +6803,21 @@
       "url": "https://www.youtube.com/watch?v=3j_Vk9KgDD4",
       "videoId": "3j_Vk9KgDD4",
       "thumbnail": "https://img.youtube.com/vi/3j_Vk9KgDD4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "NCBzuep4GrU",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "18:00",
+      "startsAt": "2026-08-08T18:00:00+09:00",
+      "name": "雪花ラミィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=NCBzuep4GrU",
+      "videoId": "NCBzuep4GrU",
+      "thumbnail": "https://img.youtube.com/vi/NCBzuep4GrU/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -6838,6 +6838,36 @@
       "branch": "JP"
     },
     {
+      "id": "7--MvprOeM4",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "18:00",
+      "startsAt": "2026-08-08T18:00:00+09:00",
+      "name": "FLOW GLOW",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=7--MvprOeM4",
+      "videoId": "7--MvprOeM4",
+      "thumbnail": "https://img.youtube.com/vi/7--MvprOeM4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "kDRZt0xxYt4",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "18:00",
+      "startsAt": "2026-08-08T18:00:00+09:00",
+      "name": "ReGLOSS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=kDRZt0xxYt4",
+      "videoId": "kDRZt0xxYt4",
+      "thumbnail": "https://img.youtube.com/vi/kDRZt0xxYt4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "BVg1H-COU6I",
       "date": "2026-08-08",
       "dateLabel": "08/08 (土)",
@@ -6848,6 +6878,21 @@
       "url": "https://www.youtube.com/watch?v=BVg1H-COU6I",
       "videoId": "BVg1H-COU6I",
       "thumbnail": "https://img.youtube.com/vi/BVg1H-COU6I/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "WLFS6ah-D60",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "18:01",
+      "startsAt": "2026-08-08T18:01:00+09:00",
+      "name": "大神ミオ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=WLFS6ah-D60",
+      "videoId": "WLFS6ah-D60",
+      "thumbnail": "https://img.youtube.com/vi/WLFS6ah-D60/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

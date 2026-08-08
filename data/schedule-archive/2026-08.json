@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T16:45:20.109Z",
+  "generatedAt": "2026-08-08T17:38:36.446Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -7613,6 +7613,21 @@
       "url": "https://www.youtube.com/watch?v=vrnsDry3DNY",
       "videoId": "vrnsDry3DNY",
       "thumbnail": "https://img.youtube.com/vi/vrnsDry3DNY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "L3kboCesUTo",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "20:00",
+      "startsAt": "2026-08-09T20:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=L3kboCesUTo",
+      "videoId": "L3kboCesUTo",
+      "thumbnail": "https://img.youtube.com/vi/L3kboCesUTo/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

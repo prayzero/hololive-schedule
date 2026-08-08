@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T17:38:36.446Z",
+  "generatedAt": "2026-08-08T18:51:35.525Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -7363,11 +7363,26 @@
       "branch": "EN"
     },
     {
+      "id": "2NsFyfnChX8",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "02:52",
+      "startsAt": "2026-08-09T02:52:00+09:00",
+      "name": "Kaela",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=2NsFyfnChX8",
+      "videoId": "2NsFyfnChX8",
+      "thumbnail": "https://img.youtube.com/vi/2NsFyfnChX8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "jbyWNcRUCrk",
       "date": "2026-08-09",
       "dateLabel": "08/09 (日)",
-      "time": "03:00",
-      "startsAt": "2026-08-09T03:00:00+09:00",
+      "time": "03:02",
+      "startsAt": "2026-08-09T03:02:00+09:00",
       "name": "Cecilia",
       "title": null,
       "url": "https://www.youtube.com/watch?v=jbyWNcRUCrk",
@@ -7553,6 +7568,21 @@
       "url": "https://www.youtube.com/watch?v=6qcM1XVVzKg",
       "videoId": "6qcM1XVVzKg",
       "thumbnail": "https://img.youtube.com/vi/6qcM1XVVzKg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "ruhsNdv5lOI",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "18:00",
+      "startsAt": "2026-08-09T18:00:00+09:00",
+      "name": "轟はじめ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ruhsNdv5lOI",
+      "videoId": "ruhsNdv5lOI",
+      "thumbnail": "https://img.youtube.com/vi/ruhsNdv5lOI/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"

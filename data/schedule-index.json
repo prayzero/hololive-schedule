@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-08T07:06:20.754Z",
+  "updatedAt": "2026-08-08T08:53:04.114Z",
   "timezone": "Asia/Tokyo",
-  "totalEntries": 750,
+  "totalEntries": 757,
   "dates": [
     {
       "date": "2026-07-25",
@@ -76,7 +76,7 @@
     {
       "date": "2026-08-08",
       "month": "2026-08",
-      "count": 49
+      "count": 56
     },
     {
       "date": "2026-08-09",
@@ -94,7 +94,7 @@
     },
     {
       "month": "2026-08",
-      "count": 479,
+      "count": 486,
       "firstDate": "2026-08-01",
       "lastDate": "2026-08-09",
       "url": "data/schedule-archive/2026-08.json"

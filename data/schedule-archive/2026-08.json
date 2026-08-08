@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T05:52:53.651Z",
+  "generatedAt": "2026-08-08T07:06:20.754Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -6691,8 +6691,8 @@
       "id": "j_OXQBc1vKY",
       "date": "2026-08-08",
       "dateLabel": "08/08 (土)",
-      "time": "15:00",
-      "startsAt": "2026-08-08T15:00:00+09:00",
+      "time": "15:01",
+      "startsAt": "2026-08-08T15:01:00+09:00",
       "name": "綺々羅々ヴィヴィ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=j_OXQBc1vKY",
@@ -6701,6 +6701,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "I21oKXB4LRk",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "15:22",
+      "startsAt": "2026-08-08T15:22:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=I21oKXB4LRk",
+      "videoId": "I21oKXB4LRk",
+      "thumbnail": "https://img.youtube.com/vi/I21oKXB4LRk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "EylR8tDIzMM",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "16:00",
+      "startsAt": "2026-08-08T16:00:00+09:00",
+      "name": "Risu",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=EylR8tDIzMM",
+      "videoId": "EylR8tDIzMM",
+      "thumbnail": "https://img.youtube.com/vi/EylR8tDIzMM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "AZgKPA0t6Is",
@@ -6716,6 +6746,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "3j_Vk9KgDD4",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "18:00",
+      "startsAt": "2026-08-08T18:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=3j_Vk9KgDD4",
+      "videoId": "3j_Vk9KgDD4",
+      "thumbnail": "https://img.youtube.com/vi/3j_Vk9KgDD4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "8vgd_p8_chw",
@@ -6958,6 +7003,21 @@
       "branch": "JP"
     },
     {
+      "id": "gNui7mRucYA",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "22:00",
+      "startsAt": "2026-08-08T22:00:00+09:00",
+      "name": "AZKi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=gNui7mRucYA",
+      "videoId": "gNui7mRucYA",
+      "thumbnail": "https://img.youtube.com/vi/gNui7mRucYA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "sD8EPO2Mhgs",
       "date": "2026-08-08",
       "dateLabel": "08/08 (土)",
@@ -7001,6 +7061,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
+    },
+    {
+      "id": "sDXwaagq_jU",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "22:00",
+      "startsAt": "2026-08-08T22:00:00+09:00",
+      "name": "さくらみこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=sDXwaagq_jU",
+      "videoId": "sDXwaagq_jU",
+      "thumbnail": "https://img.youtube.com/vi/sDXwaagq_jU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "z9MZH1pbukc",

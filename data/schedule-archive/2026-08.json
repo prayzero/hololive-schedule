@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T02:10:07.689Z",
+  "generatedAt": "2026-08-08T03:52:55.108Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -6568,11 +6568,56 @@
       "branch": "JP"
     },
     {
-      "id": "6qjuPobAdp0",
+      "id": "QDI1pDu8akA",
       "date": "2026-08-08",
       "dateLabel": "08/08 (土)",
       "time": "12:00",
       "startsAt": "2026-08-08T12:00:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=QDI1pDu8akA",
+      "videoId": "QDI1pDu8akA",
+      "thumbnail": "https://img.youtube.com/vi/QDI1pDu8akA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "u1UX-2gJl6U",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "12:00",
+      "startsAt": "2026-08-08T12:00:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=u1UX-2gJl6U",
+      "videoId": "u1UX-2gJl6U",
+      "thumbnail": "https://img.youtube.com/vi/u1UX-2gJl6U/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "jtXffcADSew",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "12:00",
+      "startsAt": "2026-08-08T12:00:00+09:00",
+      "name": "さくらみこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jtXffcADSew",
+      "videoId": "jtXffcADSew",
+      "thumbnail": "https://img.youtube.com/vi/jtXffcADSew/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "6qjuPobAdp0",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "12:03",
+      "startsAt": "2026-08-08T12:03:00+09:00",
       "name": "鷹嶺ルイ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=6qjuPobAdp0",
@@ -6586,8 +6631,8 @@
       "id": "7QGfUDLv3zI",
       "date": "2026-08-08",
       "dateLabel": "08/08 (土)",
-      "time": "12:00",
-      "startsAt": "2026-08-08T12:00:00+09:00",
+      "time": "12:04",
+      "startsAt": "2026-08-08T12:04:00+09:00",
       "name": "IRyS",
       "title": null,
       "url": "https://www.youtube.com/watch?v=7QGfUDLv3zI",
@@ -6628,6 +6673,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "AZgKPA0t6Is",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "18:00",
+      "startsAt": "2026-08-08T18:00:00+09:00",
+      "name": "轟はじめ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=AZgKPA0t6Is",
+      "videoId": "AZgKPA0t6Is",
+      "thumbnail": "https://img.youtube.com/vi/AZgKPA0t6Is/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "8vgd_p8_chw",
       "date": "2026-08-08",
       "dateLabel": "08/08 (土)",
@@ -6656,21 +6716,6 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
-    },
-    {
-      "id": "AZgKPA0t6Is",
-      "date": "2026-08-08",
-      "dateLabel": "08/08 (土)",
-      "time": "19:00",
-      "startsAt": "2026-08-08T19:00:00+09:00",
-      "name": "轟はじめ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=AZgKPA0t6Is",
-      "videoId": "AZgKPA0t6Is",
-      "thumbnail": "https://img.youtube.com/vi/AZgKPA0t6Is/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "DEV_IS"
     },
     {
       "id": "7iFYOWm8N2U",
@@ -6733,6 +6778,21 @@
       "branch": "JP"
     },
     {
+      "id": "cD3MYP8hJRM",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "21:00",
+      "startsAt": "2026-08-08T21:00:00+09:00",
+      "name": "桃鈴ねね",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=cD3MYP8hJRM",
+      "videoId": "cD3MYP8hJRM",
+      "thumbnail": "https://img.youtube.com/vi/cD3MYP8hJRM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "D--q3378QzY",
       "date": "2026-08-08",
       "dateLabel": "08/08 (土)",
@@ -6743,6 +6803,21 @@
       "url": "https://www.youtube.com/watch?v=D--q3378QzY",
       "videoId": "D--q3378QzY",
       "thumbnail": "https://img.youtube.com/vi/D--q3378QzY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "S0MmPlFXUqE",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "21:00",
+      "startsAt": "2026-08-08T21:00:00+09:00",
+      "name": "白銀ノエル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=S0MmPlFXUqE",
+      "videoId": "S0MmPlFXUqE",
+      "thumbnail": "https://img.youtube.com/vi/S0MmPlFXUqE/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -6761,6 +6836,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "1_F7mRHYz1k",
+      "date": "2026-08-08",
+      "dateLabel": "08/08 (土)",
+      "time": "21:00",
+      "startsAt": "2026-08-08T21:00:00+09:00",
+      "name": "Kaela",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=1_F7mRHYz1k",
+      "videoId": "1_F7mRHYz1k",
+      "thumbnail": "https://img.youtube.com/vi/1_F7mRHYz1k/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "093fOeOl188",

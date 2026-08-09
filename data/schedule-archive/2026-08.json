@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T15:03:29.293Z",
+  "generatedAt": "2026-08-09T18:53:48.914Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -8258,6 +8258,21 @@
       "url": "https://www.youtube.com/watch?v=HgQoVlTocj0",
       "videoId": "HgQoVlTocj0",
       "thumbnail": "https://img.youtube.com/vi/HgQoVlTocj0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "q8KmpC_6lNI",
+      "date": "2026-08-10",
+      "dateLabel": "08/10 (月)",
+      "time": "04:30",
+      "startsAt": "2026-08-10T04:30:00+09:00",
+      "name": "Cecilia",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=q8KmpC_6lNI",
+      "videoId": "q8KmpC_6lNI",
+      "thumbnail": "https://img.youtube.com/vi/q8KmpC_6lNI/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T07:36:40.231Z",
+  "generatedAt": "2026-08-09T08:20:11.848Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -7708,6 +7708,36 @@
       "branch": "ID"
     },
     {
+      "id": "SC295SM-I7Y",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "17:00",
+      "startsAt": "2026-08-09T17:00:00+09:00",
+      "name": "癒月ちょこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=SC295SM-I7Y",
+      "videoId": "SC295SM-I7Y",
+      "thumbnail": "https://img.youtube.com/vi/SC295SM-I7Y/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "J9cM2n8ruE8",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "17:00",
+      "startsAt": "2026-08-09T17:00:00+09:00",
+      "name": "ロボ子さん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=J9cM2n8ruE8",
+      "videoId": "J9cM2n8ruE8",
+      "thumbnail": "https://img.youtube.com/vi/J9cM2n8ruE8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "2GsZMyzsAO4",
       "date": "2026-08-09",
       "dateLabel": "08/09 (日)",
@@ -7751,6 +7781,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "nDMjhAzNXcc",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "18:00",
+      "startsAt": "2026-08-09T18:00:00+09:00",
+      "name": "大神ミオ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=nDMjhAzNXcc",
+      "videoId": "nDMjhAzNXcc",
+      "thumbnail": "https://img.youtube.com/vi/nDMjhAzNXcc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "kTSDH_CE-uc",

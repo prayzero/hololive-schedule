@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T10:48:30.853Z",
+  "generatedAt": "2026-08-09T11:37:40.159Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -8008,11 +8008,26 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "dosYUfxfx4A",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "19:49",
+      "startsAt": "2026-08-09T19:49:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=dosYUfxfx4A",
+      "videoId": "dosYUfxfx4A",
+      "thumbnail": "https://img.youtube.com/vi/dosYUfxfx4A/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "msm5IuITVeA",
       "date": "2026-08-09",
       "dateLabel": "08/09 (日)",
-      "time": "19:45",
-      "startsAt": "2026-08-09T19:45:00+09:00",
+      "time": "19:50",
+      "startsAt": "2026-08-09T19:50:00+09:00",
       "name": "Kiara",
       "title": null,
       "url": "https://www.youtube.com/watch?v=msm5IuITVeA",
@@ -8021,21 +8036,6 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
-    },
-    {
-      "id": "vrnsDry3DNY",
-      "date": "2026-08-09",
-      "dateLabel": "08/09 (日)",
-      "time": "20:00",
-      "startsAt": "2026-08-09T20:00:00+09:00",
-      "name": "猫又おかゆ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=vrnsDry3DNY",
-      "videoId": "vrnsDry3DNY",
-      "thumbnail": "https://img.youtube.com/vi/vrnsDry3DNY/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
     },
     {
       "id": "L3kboCesUTo",
@@ -8066,6 +8066,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "vrnsDry3DNY",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "20:01",
+      "startsAt": "2026-08-09T20:01:00+09:00",
+      "name": "猫又おかゆ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=vrnsDry3DNY",
+      "videoId": "vrnsDry3DNY",
+      "thumbnail": "https://img.youtube.com/vi/vrnsDry3DNY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "h6hqKhkgejw",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "20:25",
+      "startsAt": "2026-08-09T20:25:00+09:00",
+      "name": "音乃瀬奏",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=h6hqKhkgejw",
+      "videoId": "h6hqKhkgejw",
+      "thumbnail": "https://img.youtube.com/vi/h6hqKhkgejw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "4BuB6fcFHLw",

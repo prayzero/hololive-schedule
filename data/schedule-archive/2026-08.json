@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T22:40:50.228Z",
+  "generatedAt": "2026-08-09T23:39:41.858Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -8308,16 +8308,16 @@
       "branch": "JP"
     },
     {
-      "id": "kbd0tKchViM",
+      "id": "66L7BAR4Oq4",
       "date": "2026-08-10",
       "dateLabel": "08/10 (月)",
       "time": "08:00",
       "startsAt": "2026-08-10T08:00:00+09:00",
-      "name": "Calli",
+      "name": "FUWAMOCO",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=kbd0tKchViM",
-      "videoId": "kbd0tKchViM",
-      "thumbnail": "https://img.youtube.com/vi/kbd0tKchViM/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=66L7BAR4Oq4",
+      "videoId": "66L7BAR4Oq4",
+      "thumbnail": "https://img.youtube.com/vi/66L7BAR4Oq4/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"
@@ -8336,6 +8336,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "kbd0tKchViM",
+      "date": "2026-08-10",
+      "dateLabel": "08/10 (月)",
+      "time": "08:10",
+      "startsAt": "2026-08-10T08:10:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=kbd0tKchViM",
+      "videoId": "kbd0tKchViM",
+      "thumbnail": "https://img.youtube.com/vi/kbd0tKchViM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "1_pnOSzYEow",
@@ -8441,6 +8456,51 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "u9qiyujBW-8",
+      "date": "2026-08-11",
+      "dateLabel": "08/11 (火)",
+      "time": "05:00",
+      "startsAt": "2026-08-11T05:00:00+09:00",
+      "name": "Shiori",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=u9qiyujBW-8",
+      "videoId": "u9qiyujBW-8",
+      "thumbnail": "https://img.youtube.com/vi/u9qiyujBW-8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "Kg5ekyw68hM",
+      "date": "2026-08-11",
+      "dateLabel": "08/11 (火)",
+      "time": "08:00",
+      "startsAt": "2026-08-11T08:00:00+09:00",
+      "name": "ReGLOSS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Kg5ekyw68hM",
+      "videoId": "Kg5ekyw68hM",
+      "thumbnail": "https://img.youtube.com/vi/Kg5ekyw68hM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "InA1c0SIJDU",
+      "date": "2026-08-11",
+      "dateLabel": "08/11 (火)",
+      "time": "10:00",
+      "startsAt": "2026-08-11T10:00:00+09:00",
+      "name": "FUWAMOCO",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=InA1c0SIJDU",
+      "videoId": "InA1c0SIJDU",
+      "thumbnail": "https://img.youtube.com/vi/InA1c0SIJDU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "qp1bA1A5bTQ",

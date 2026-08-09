@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T10:06:41.917Z",
+  "generatedAt": "2026-08-09T10:48:30.853Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -7966,8 +7966,8 @@
       "id": "TGxz8EYaFfY",
       "date": "2026-08-09",
       "dateLabel": "08/09 (日)",
-      "time": "19:00",
-      "startsAt": "2026-08-09T19:00:00+09:00",
+      "time": "19:03",
+      "startsAt": "2026-08-09T19:03:00+09:00",
       "name": "星街すいせい",
       "title": null,
       "url": "https://www.youtube.com/watch?v=TGxz8EYaFfY",
@@ -7976,6 +7976,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "c2eIViNMoIs",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "19:20",
+      "startsAt": "2026-08-09T19:20:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=c2eIViNMoIs",
+      "videoId": "c2eIViNMoIs",
+      "thumbnail": "https://img.youtube.com/vi/c2eIViNMoIs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "M0KF5jxPPuY",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "19:30",
+      "startsAt": "2026-08-09T19:30:00+09:00",
+      "name": "虎金妃笑虎",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=M0KF5jxPPuY",
+      "videoId": "M0KF5jxPPuY",
+      "thumbnail": "https://img.youtube.com/vi/M0KF5jxPPuY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "msm5IuITVeA",
@@ -8171,6 +8201,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "jVY3JfQ7XcU",
+      "date": "2026-08-10",
+      "dateLabel": "08/10 (月)",
+      "time": "07:30",
+      "startsAt": "2026-08-10T07:30:00+09:00",
+      "name": "大神ミオ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jVY3JfQ7XcU",
+      "videoId": "jVY3JfQ7XcU",
+      "thumbnail": "https://img.youtube.com/vi/jVY3JfQ7XcU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "kbd0tKchViM",

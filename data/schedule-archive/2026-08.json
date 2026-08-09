@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T14:10:13.005Z",
+  "generatedAt": "2026-08-09T15:03:29.293Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -8378,6 +8378,36 @@
       "url": "https://www.youtube.com/watch?v=DgUB0-Eqero",
       "videoId": "DgUB0-Eqero",
       "thumbnail": "https://img.youtube.com/vi/DgUB0-Eqero/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "qp1bA1A5bTQ",
+      "date": "2026-08-11",
+      "dateLabel": "08/11 (火)",
+      "time": "21:00",
+      "startsAt": "2026-08-11T21:00:00+09:00",
+      "name": "宝鐘マリン",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=qp1bA1A5bTQ",
+      "videoId": "qp1bA1A5bTQ",
+      "thumbnail": "https://img.youtube.com/vi/qp1bA1A5bTQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "-H4bB6hxeEs",
+      "date": "2026-08-11",
+      "dateLabel": "08/11 (火)",
+      "time": "22:00",
+      "startsAt": "2026-08-11T22:00:00+09:00",
+      "name": "宝鐘マリン",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=-H4bB6hxeEs",
+      "videoId": "-H4bB6hxeEs",
+      "thumbnail": "https://img.youtube.com/vi/-H4bB6hxeEs/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

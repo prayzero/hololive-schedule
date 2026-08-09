@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T20:44:58.963Z",
+  "generatedAt": "2026-08-09T21:41:01.008Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -8278,6 +8278,21 @@
       "branch": "EN"
     },
     {
+      "id": "yI0M6iB1Ys4",
+      "date": "2026-08-10",
+      "dateLabel": "08/10 (月)",
+      "time": "06:00",
+      "startsAt": "2026-08-10T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=yI0M6iB1Ys4",
+      "videoId": "yI0M6iB1Ys4",
+      "thumbnail": "https://img.youtube.com/vi/yI0M6iB1Ys4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "jVY3JfQ7XcU",
       "date": "2026-08-10",
       "dateLabel": "08/10 (月)",
@@ -8378,6 +8393,21 @@
       "url": "https://www.youtube.com/watch?v=a5ODkOzB_y0",
       "videoId": "a5ODkOzB_y0",
       "thumbnail": "https://img.youtube.com/vi/a5ODkOzB_y0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "PP1jChfH-kw",
+      "date": "2026-08-10",
+      "dateLabel": "08/10 (月)",
+      "time": "20:00",
+      "startsAt": "2026-08-10T20:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=PP1jChfH-kw",
+      "videoId": "PP1jChfH-kw",
+      "thumbnail": "https://img.youtube.com/vi/PP1jChfH-kw/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

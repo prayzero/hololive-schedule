@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T06:11:09.248Z",
+  "generatedAt": "2026-08-09T07:36:40.231Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -7708,6 +7708,21 @@
       "branch": "ID"
     },
     {
+      "id": "2GsZMyzsAO4",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "17:30",
+      "startsAt": "2026-08-09T17:30:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=2GsZMyzsAO4",
+      "videoId": "2GsZMyzsAO4",
+      "thumbnail": "https://img.youtube.com/vi/2GsZMyzsAO4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "TQZ2cjb5w_g",
       "date": "2026-08-09",
       "dateLabel": "08/09 (日)",
@@ -7763,6 +7778,21 @@
       "url": "https://www.youtube.com/watch?v=3KzdBBAMg8E",
       "videoId": "3KzdBBAMg8E",
       "thumbnail": "https://img.youtube.com/vi/3KzdBBAMg8E/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "TGxz8EYaFfY",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "19:00",
+      "startsAt": "2026-08-09T19:00:00+09:00",
+      "name": "星街すいせい",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=TGxz8EYaFfY",
+      "videoId": "TGxz8EYaFfY",
+      "thumbnail": "https://img.youtube.com/vi/TGxz8EYaFfY/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -7886,6 +7916,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "s41pLR0ZKOI",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "22:00",
+      "startsAt": "2026-08-09T22:00:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=s41pLR0ZKOI",
+      "videoId": "s41pLR0ZKOI",
+      "thumbnail": "https://img.youtube.com/vi/s41pLR0ZKOI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "0WEZ2cVcyNU",

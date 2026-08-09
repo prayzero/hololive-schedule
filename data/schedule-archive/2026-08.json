@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-09T02:21:58.792Z",
+  "generatedAt": "2026-08-09T04:01:59.623Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -7531,8 +7531,8 @@
       "id": "54oaXuyyfMc",
       "date": "2026-08-09",
       "dateLabel": "08/09 (日)",
-      "time": "12:00",
-      "startsAt": "2026-08-09T12:00:00+09:00",
+      "time": "11:55",
+      "startsAt": "2026-08-09T11:55:00+09:00",
       "name": "holo EN",
       "title": null,
       "url": "https://www.youtube.com/watch?v=54oaXuyyfMc",
@@ -7541,6 +7541,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "9e1HwRVOJug",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "12:00",
+      "startsAt": "2026-08-09T12:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=9e1HwRVOJug",
+      "videoId": "9e1HwRVOJug",
+      "thumbnail": "https://img.youtube.com/vi/9e1HwRVOJug/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "2XUiNlo_Ytk",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "12:34",
+      "startsAt": "2026-08-09T12:34:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=2XUiNlo_Ytk",
+      "videoId": "2XUiNlo_Ytk",
+      "thumbnail": "https://img.youtube.com/vi/2XUiNlo_Ytk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "oMWLmp2VoBY",
@@ -7556,6 +7586,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "5c7ryPk7miM",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "13:00",
+      "startsAt": "2026-08-09T13:00:00+09:00",
+      "name": "Risu",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=5c7ryPk7miM",
+      "videoId": "5c7ryPk7miM",
+      "thumbnail": "https://img.youtube.com/vi/5c7ryPk7miM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "e8nrouHntp4",
@@ -7583,6 +7628,21 @@
       "url": "https://www.youtube.com/watch?v=Z6rEnUhwF38",
       "videoId": "Z6rEnUhwF38",
       "thumbnail": "https://img.youtube.com/vi/Z6rEnUhwF38/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "ufbZgdek7XU",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "14:00",
+      "startsAt": "2026-08-09T14:00:00+09:00",
+      "name": "風真いろは",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ufbZgdek7XU",
+      "videoId": "ufbZgdek7XU",
+      "thumbnail": "https://img.youtube.com/vi/ufbZgdek7XU/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -7678,6 +7738,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "msm5IuITVeA",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "19:00",
+      "startsAt": "2026-08-09T19:00:00+09:00",
+      "name": "Kiara",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=msm5IuITVeA",
+      "videoId": "msm5IuITVeA",
+      "thumbnail": "https://img.youtube.com/vi/msm5IuITVeA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "vrnsDry3DNY",
       "date": "2026-08-09",
       "dateLabel": "08/09 (日)",
@@ -7763,6 +7838,21 @@
       "url": "https://www.youtube.com/watch?v=HgQoVlTocj0",
       "videoId": "HgQoVlTocj0",
       "thumbnail": "https://img.youtube.com/vi/HgQoVlTocj0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "kbd0tKchViM",
+      "date": "2026-08-10",
+      "dateLabel": "08/10 (月)",
+      "time": "08:00",
+      "startsAt": "2026-08-10T08:00:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=kbd0tKchViM",
+      "videoId": "kbd0tKchViM",
+      "thumbnail": "https://img.youtube.com/vi/kbd0tKchViM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

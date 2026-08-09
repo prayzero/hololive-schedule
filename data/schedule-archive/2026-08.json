@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-08T23:37:40.736Z",
+  "generatedAt": "2026-08-09T02:21:58.792Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -7423,21 +7423,6 @@
       "branch": "DEV_IS"
     },
     {
-      "id": "ym3PVAyWLH8",
-      "date": "2026-08-09",
-      "dateLabel": "08/09 (日)",
-      "time": "09:00",
-      "startsAt": "2026-08-09T09:00:00+09:00",
-      "name": "鷹嶺ルイ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=ym3PVAyWLH8",
-      "videoId": "ym3PVAyWLH8",
-      "thumbnail": "https://img.youtube.com/vi/ym3PVAyWLH8/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "WxKT1tfrMr8",
       "date": "2026-08-09",
       "dateLabel": "08/09 (日)",
@@ -7451,6 +7436,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "ym3PVAyWLH8",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "09:02",
+      "startsAt": "2026-08-09T09:02:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ym3PVAyWLH8",
+      "videoId": "ym3PVAyWLH8",
+      "thumbnail": "https://img.youtube.com/vi/ym3PVAyWLH8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "pxD2WEoI9DI",
@@ -7468,36 +7468,6 @@
       "branch": "JP"
     },
     {
-      "id": "zejMEtTxRa0",
-      "date": "2026-08-09",
-      "dateLabel": "08/09 (日)",
-      "time": "10:00",
-      "startsAt": "2026-08-09T10:00:00+09:00",
-      "name": "Baelz",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=zejMEtTxRa0",
-      "videoId": "zejMEtTxRa0",
-      "thumbnail": "https://img.youtube.com/vi/zejMEtTxRa0/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "EN"
-    },
-    {
-      "id": "b4wHbIf1cvw",
-      "date": "2026-08-09",
-      "dateLabel": "08/09 (日)",
-      "time": "10:00",
-      "startsAt": "2026-08-09T10:00:00+09:00",
-      "name": "Ina",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=b4wHbIf1cvw",
-      "videoId": "b4wHbIf1cvw",
-      "thumbnail": "https://img.youtube.com/vi/b4wHbIf1cvw/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "EN"
-    },
-    {
       "id": "3qrQ4KcvUb4",
       "date": "2026-08-09",
       "dateLabel": "08/09 (日)",
@@ -7508,6 +7478,36 @@
       "url": "https://www.youtube.com/watch?v=3qrQ4KcvUb4",
       "videoId": "3qrQ4KcvUb4",
       "thumbnail": "https://img.youtube.com/vi/3qrQ4KcvUb4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "b4wHbIf1cvw",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "10:03",
+      "startsAt": "2026-08-09T10:03:00+09:00",
+      "name": "Ina",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=b4wHbIf1cvw",
+      "videoId": "b4wHbIf1cvw",
+      "thumbnail": "https://img.youtube.com/vi/b4wHbIf1cvw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "zejMEtTxRa0",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "10:15",
+      "startsAt": "2026-08-09T10:15:00+09:00",
+      "name": "Baelz",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=zejMEtTxRa0",
+      "videoId": "zejMEtTxRa0",
+      "thumbnail": "https://img.youtube.com/vi/zejMEtTxRa0/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"
@@ -7703,6 +7703,21 @@
       "url": "https://www.youtube.com/watch?v=L3kboCesUTo",
       "videoId": "L3kboCesUTo",
       "thumbnail": "https://img.youtube.com/vi/L3kboCesUTo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "d-ItKe6sSsM",
+      "date": "2026-08-09",
+      "dateLabel": "08/09 (日)",
+      "time": "20:00",
+      "startsAt": "2026-08-09T20:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=d-ItKe6sSsM",
+      "videoId": "d-ItKe6sSsM",
+      "thumbnail": "https://img.youtube.com/vi/d-ItKe6sSsM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

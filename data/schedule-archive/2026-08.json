@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T11:15:51.448Z",
+  "generatedAt": "2026-08-10T12:11:39.591Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -8713,6 +8713,21 @@
       "branch": "JP"
     },
     {
+      "id": "f6KQCUeYJ0E",
+      "date": "2026-08-10",
+      "dateLabel": "08/10 (月)",
+      "time": "20:29",
+      "startsAt": "2026-08-10T20:29:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=f6KQCUeYJ0E",
+      "videoId": "f6KQCUeYJ0E",
+      "thumbnail": "https://img.youtube.com/vi/f6KQCUeYJ0E/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "bL4XUgUQnMI",
       "date": "2026-08-10",
       "dateLabel": "08/10 (月)",
@@ -8726,6 +8741,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "hM5NnBU0LLs",
+      "date": "2026-08-10",
+      "dateLabel": "08/10 (月)",
+      "time": "21:00",
+      "startsAt": "2026-08-10T21:00:00+09:00",
+      "name": "宝鐘マリン",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=hM5NnBU0LLs",
+      "videoId": "hM5NnBU0LLs",
+      "thumbnail": "https://img.youtube.com/vi/hM5NnBU0LLs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "FPyzToz2AhY",
+      "date": "2026-08-10",
+      "dateLabel": "08/10 (月)",
+      "time": "21:15",
+      "startsAt": "2026-08-10T21:15:00+09:00",
+      "name": "Anya",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=FPyzToz2AhY",
+      "videoId": "FPyzToz2AhY",
+      "thumbnail": "https://img.youtube.com/vi/FPyzToz2AhY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "OkmBK0spXPw",
@@ -8833,6 +8878,21 @@
       "branch": "JP"
     },
     {
+      "id": "XrAjAuBU3RY",
+      "date": "2026-08-11",
+      "dateLabel": "08/11 (火)",
+      "time": "09:00",
+      "startsAt": "2026-08-11T09:00:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=XrAjAuBU3RY",
+      "videoId": "XrAjAuBU3RY",
+      "thumbnail": "https://img.youtube.com/vi/XrAjAuBU3RY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "InA1c0SIJDU",
       "date": "2026-08-11",
       "dateLabel": "08/11 (火)",
@@ -8863,6 +8923,21 @@
       "branch": "EN"
     },
     {
+      "id": "bFe0l_tLGuQ",
+      "date": "2026-08-11",
+      "dateLabel": "08/11 (火)",
+      "time": "11:00",
+      "startsAt": "2026-08-11T11:00:00+09:00",
+      "name": "白銀ノエル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=bFe0l_tLGuQ",
+      "videoId": "bFe0l_tLGuQ",
+      "thumbnail": "https://img.youtube.com/vi/bFe0l_tLGuQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "7lEzmDUvhWE",
       "date": "2026-08-11",
       "dateLabel": "08/11 (火)",
@@ -8876,6 +8951,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "iY_CcwePejc",
+      "date": "2026-08-11",
+      "dateLabel": "08/11 (火)",
+      "time": "12:00",
+      "startsAt": "2026-08-11T12:00:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=iY_CcwePejc",
+      "videoId": "iY_CcwePejc",
+      "thumbnail": "https://img.youtube.com/vi/iY_CcwePejc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "qp1bA1A5bTQ",

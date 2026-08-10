@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T02:26:48.783Z",
+  "generatedAt": "2026-08-10T04:15:47.424Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -8383,31 +8383,31 @@
       "branch": "EN"
     },
     {
-      "id": "1_pnOSzYEow",
-      "date": "2026-08-10",
-      "dateLabel": "08/10 (月)",
-      "time": "12:00",
-      "startsAt": "2026-08-10T12:00:00+09:00",
-      "name": "戌神ころね",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=1_pnOSzYEow",
-      "videoId": "1_pnOSzYEow",
-      "thumbnail": "https://img.youtube.com/vi/1_pnOSzYEow/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "6eX4BLtVxeg",
       "date": "2026-08-10",
       "dateLabel": "08/10 (月)",
-      "time": "12:00",
-      "startsAt": "2026-08-10T12:00:00+09:00",
+      "time": "12:08",
+      "startsAt": "2026-08-10T12:08:00+09:00",
       "name": "鷹嶺ルイ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=6eX4BLtVxeg",
       "videoId": "6eX4BLtVxeg",
       "thumbnail": "https://img.youtube.com/vi/6eX4BLtVxeg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "1_pnOSzYEow",
+      "date": "2026-08-10",
+      "dateLabel": "08/10 (月)",
+      "time": "12:15",
+      "startsAt": "2026-08-10T12:15:00+09:00",
+      "name": "戌神ころね",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=1_pnOSzYEow",
+      "videoId": "1_pnOSzYEow",
+      "thumbnail": "https://img.youtube.com/vi/1_pnOSzYEow/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -8518,6 +8518,21 @@
       "branch": "EN"
     },
     {
+      "id": "sd2WAWoxGes",
+      "date": "2026-08-11",
+      "dateLabel": "08/11 (火)",
+      "time": "07:00",
+      "startsAt": "2026-08-11T07:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=sd2WAWoxGes",
+      "videoId": "sd2WAWoxGes",
+      "thumbnail": "https://img.youtube.com/vi/sd2WAWoxGes/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "Kg5ekyw68hM",
       "date": "2026-08-11",
       "dateLabel": "08/11 (火)",
@@ -8531,6 +8546,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "p9r8MqkLLps",
+      "date": "2026-08-11",
+      "dateLabel": "08/11 (火)",
+      "time": "09:00",
+      "startsAt": "2026-08-11T09:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=p9r8MqkLLps",
+      "videoId": "p9r8MqkLLps",
+      "thumbnail": "https://img.youtube.com/vi/p9r8MqkLLps/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "InA1c0SIJDU",

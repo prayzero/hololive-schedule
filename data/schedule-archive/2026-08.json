@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T18:27:01.831Z",
+  "generatedAt": "2026-08-10T19:34:45.938Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -8878,6 +8878,21 @@
       "branch": "JP"
     },
     {
+      "id": "v7BK8cCkrEo",
+      "date": "2026-08-11",
+      "dateLabel": "08/11 (火)",
+      "time": "04:03",
+      "startsAt": "2026-08-11T04:03:00+09:00",
+      "name": "Gigi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=v7BK8cCkrEo",
+      "videoId": "v7BK8cCkrEo",
+      "thumbnail": "https://img.youtube.com/vi/v7BK8cCkrEo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "u9qiyujBW-8",
       "date": "2026-08-11",
       "dateLabel": "08/11 (火)",
@@ -9058,6 +9073,21 @@
       "branch": "EN"
     },
     {
+      "id": "x6Glnumj_vU",
+      "date": "2026-08-11",
+      "dateLabel": "08/11 (火)",
+      "time": "18:30",
+      "startsAt": "2026-08-11T18:30:00+09:00",
+      "name": "アキロゼ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=x6Glnumj_vU",
+      "videoId": "x6Glnumj_vU",
+      "thumbnail": "https://img.youtube.com/vi/x6Glnumj_vU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "MtHI1Bx2Ue0",
       "date": "2026-08-11",
       "dateLabel": "08/11 (火)",
@@ -9161,6 +9191,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "nIDKNyjrong",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "22:30",
+      "startsAt": "2026-08-12T22:30:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=nIDKNyjrong",
+      "videoId": "nIDKNyjrong",
+      "thumbnail": "https://img.youtube.com/vi/nIDKNyjrong/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     }
   ]
 }

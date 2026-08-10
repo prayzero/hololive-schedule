@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T09:42:05.779Z",
+  "generatedAt": "2026-08-10T11:15:51.448Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -8638,6 +8638,21 @@
       "branch": "JP"
     },
     {
+      "id": "S15QNAcYHSY",
+      "date": "2026-08-10",
+      "dateLabel": "08/10 (月)",
+      "time": "19:00",
+      "startsAt": "2026-08-10T19:00:00+09:00",
+      "name": "雪花ラミィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=S15QNAcYHSY",
+      "videoId": "S15QNAcYHSY",
+      "thumbnail": "https://img.youtube.com/vi/S15QNAcYHSY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "NOlGT2sW5E4",
       "date": "2026-08-10",
       "dateLabel": "08/10 (月)",
@@ -8653,11 +8668,26 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "DJv-WvI3Lzw",
+      "date": "2026-08-10",
+      "dateLabel": "08/10 (月)",
+      "time": "19:00",
+      "startsAt": "2026-08-10T19:00:00+09:00",
+      "name": "ホロライブ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=DJv-WvI3Lzw",
+      "videoId": "DJv-WvI3Lzw",
+      "thumbnail": "https://img.youtube.com/vi/DJv-WvI3Lzw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "w9qe9ynxP1A",
       "date": "2026-08-10",
       "dateLabel": "08/10 (月)",
-      "time": "20:00",
-      "startsAt": "2026-08-10T20:00:00+09:00",
+      "time": "19:57",
+      "startsAt": "2026-08-10T19:57:00+09:00",
       "name": "大空スバル",
       "title": null,
       "url": "https://www.youtube.com/watch?v=w9qe9ynxP1A",
@@ -8671,8 +8701,8 @@
       "id": "PP1jChfH-kw",
       "date": "2026-08-10",
       "dateLabel": "08/10 (月)",
-      "time": "20:00",
-      "startsAt": "2026-08-10T20:00:00+09:00",
+      "time": "20:01",
+      "startsAt": "2026-08-10T20:01:00+09:00",
       "name": "兎田ぺこら",
       "title": null,
       "url": "https://www.youtube.com/watch?v=PP1jChfH-kw",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T05:58:14.701Z",
+  "generatedAt": "2026-08-10T07:57:53.516Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -8428,6 +8428,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "aChgxf5ao_w",
+      "date": "2026-08-10",
+      "dateLabel": "08/10 (月)",
+      "time": "15:00",
+      "startsAt": "2026-08-10T15:00:00+09:00",
+      "name": "Ollie",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=aChgxf5ao_w",
+      "videoId": "aChgxf5ao_w",
+      "thumbnail": "https://img.youtube.com/vi/aChgxf5ao_w/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "rnZk50rASOg",
       "date": "2026-08-10",
       "dateLabel": "08/10 (月)",
@@ -8456,6 +8471,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "NOlGT2sW5E4",
+      "date": "2026-08-10",
+      "dateLabel": "08/10 (月)",
+      "time": "18:30",
+      "startsAt": "2026-08-10T18:30:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=NOlGT2sW5E4",
+      "videoId": "NOlGT2sW5E4",
+      "thumbnail": "https://img.youtube.com/vi/NOlGT2sW5E4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "2gP2efJQhrQ",
@@ -8516,6 +8546,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "OkmBK0spXPw",
+      "date": "2026-08-10",
+      "dateLabel": "08/10 (月)",
+      "time": "22:00",
+      "startsAt": "2026-08-10T22:00:00+09:00",
+      "name": "AZKi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=OkmBK0spXPw",
+      "videoId": "OkmBK0spXPw",
+      "thumbnail": "https://img.youtube.com/vi/OkmBK0spXPw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "1oy5DSY2je4",
+      "date": "2026-08-10",
+      "dateLabel": "08/10 (月)",
+      "time": "22:30",
+      "startsAt": "2026-08-10T22:30:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=1oy5DSY2je4",
+      "videoId": "1oy5DSY2je4",
+      "thumbnail": "https://img.youtube.com/vi/1oy5DSY2je4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "DgUB0-Eqero",

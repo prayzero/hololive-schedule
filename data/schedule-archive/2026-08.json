@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T19:34:45.938Z",
+  "generatedAt": "2026-08-10T20:17:58.204Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -8896,8 +8896,8 @@
       "id": "u9qiyujBW-8",
       "date": "2026-08-11",
       "dateLabel": "08/11 (火)",
-      "time": "05:00",
-      "startsAt": "2026-08-11T05:00:00+09:00",
+      "time": "04:56",
+      "startsAt": "2026-08-11T04:56:00+09:00",
       "name": "Shiori",
       "title": null,
       "url": "https://www.youtube.com/watch?v=u9qiyujBW-8",
@@ -9176,6 +9176,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "ywVg0UH8bjE",
+      "date": "2026-08-11",
+      "dateLabel": "08/11 (火)",
+      "time": "23:00",
+      "startsAt": "2026-08-11T23:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ywVg0UH8bjE",
+      "videoId": "ywVg0UH8bjE",
+      "thumbnail": "https://img.youtube.com/vi/ywVg0UH8bjE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "Sp1jn754slE",

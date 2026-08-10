@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T13:59:38.008Z",
+  "generatedAt": "2026-08-10T15:08:45.790Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -8833,6 +8833,21 @@
       "branch": "JP"
     },
     {
+      "id": "vuRqFYATA5s",
+      "date": "2026-08-10",
+      "dateLabel": "08/10 (月)",
+      "time": "23:00",
+      "startsAt": "2026-08-10T23:00:00+09:00",
+      "name": "Zeta",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=vuRqFYATA5s",
+      "videoId": "vuRqFYATA5s",
+      "thumbnail": "https://img.youtube.com/vi/vuRqFYATA5s/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "1oy5DSY2je4",
       "date": "2026-08-10",
       "dateLabel": "08/10 (月)",
@@ -8851,8 +8866,8 @@
       "id": "DgUB0-Eqero",
       "date": "2026-08-10",
       "dateLabel": "08/10 (月)",
-      "time": "23:40",
-      "startsAt": "2026-08-10T23:40:00+09:00",
+      "time": "23:42",
+      "startsAt": "2026-08-10T23:42:00+09:00",
       "name": "アキロゼ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=DgUB0-Eqero",
@@ -9068,6 +9083,36 @@
       "url": "https://www.youtube.com/watch?v=-H4bB6hxeEs",
       "videoId": "-H4bB6hxeEs",
       "thumbnail": "https://img.youtube.com/vi/-H4bB6hxeEs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "CY7TnKdpysI",
+      "date": "2026-08-11",
+      "dateLabel": "08/11 (火)",
+      "time": "22:15",
+      "startsAt": "2026-08-11T22:15:00+09:00",
+      "name": "宝鐘マリン",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=CY7TnKdpysI",
+      "videoId": "CY7TnKdpysI",
+      "thumbnail": "https://img.youtube.com/vi/CY7TnKdpysI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Sp1jn754slE",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "19:00",
+      "startsAt": "2026-08-12T19:00:00+09:00",
+      "name": "ロボ子さん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Sp1jn754slE",
+      "videoId": "Sp1jn754slE",
+      "thumbnail": "https://img.youtube.com/vi/Sp1jn754slE/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

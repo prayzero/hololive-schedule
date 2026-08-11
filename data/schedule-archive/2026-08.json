@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T16:14:25.817Z",
+  "generatedAt": "2026-08-11T17:23:49.665Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -9971,6 +9971,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "jED6mXsIzVU",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "23:00",
+      "startsAt": "2026-08-12T23:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jED6mXsIzVU",
+      "videoId": "jED6mXsIzVU",
+      "thumbnail": "https://img.youtube.com/vi/jED6mXsIzVU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "QQl5LuSzIvo",

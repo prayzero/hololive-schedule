@@ -4,3 +4,16 @@ dist/
 .DS_Store
 .idea/
 .vscode/
+.pnpm-store/
+coverage/
+
+# Local credentials and signing material
+.env
+.env.*
+!.env.example
+.npmrc
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore

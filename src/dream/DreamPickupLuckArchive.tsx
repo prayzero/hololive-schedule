@@ -129,6 +129,16 @@ function draftForPickup(
   };
 }
 
+function writeLuckRecords(records: Record<string, PickupLuckRecord>): boolean {
+  try {
+    const store: PickupLuckStore = { version: 1, records };
+    window.localStorage.setItem(LUCK_STORAGE_KEY, JSON.stringify(store));
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 function formatSavedAt(value: string) {
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return "저장됨";
@@ -153,15 +163,7 @@ export function DreamPickupLuckArchive({
     string | null
   >(null);
   const [statusMessage, setStatusMessage] = useState("");
-
-  useEffect(() => {
-    try {
-      const store: PickupLuckStore = { version: 1, records };
-      window.localStorage.setItem(LUCK_STORAGE_KEY, JSON.stringify(store));
-    } catch {
-      // 저장 공간이 차단돼도 현재 탭에서 계산 기능은 계속 동작합니다.
-    }
-  }, [records]);
+  const [storageError, setStorageError] = useState(false);
 
   useEffect(() => {
     const syncStorage = (event: StorageEvent) => {
@@ -170,6 +172,7 @@ export function DreamPickupLuckArchive({
       setRecords(nextRecords);
       setDrafts({});
       setSavedPickupId(null);
+      setStorageError(false);
     };
     window.addEventListener("storage", syncStorage);
     return () => window.removeEventListener("storage", syncStorage);
@@ -239,7 +242,18 @@ export function DreamPickupLuckArchive({
       rateLabelSnapshot: pickup.rateLabel ?? "픽업 대상",
       updatedAt: new Date().toISOString(),
     };
-    setRecords((current) => ({ ...current, [pickup.id]: record }));
+    const nextRecords = { ...records, [pickup.id]: record };
+    if (!writeLuckRecords(nextRecords)) {
+      setStorageError(true);
+      setSavedPickupId(null);
+      setStatusMessage(
+        `${pickup.title} 운 기록을 브라우저에 저장하지 못했습니다.`,
+      );
+      return;
+    }
+
+    setStorageError(false);
+    setRecords(nextRecords);
     setDrafts((current) => ({
       ...current,
       [pickup.id]: draftForPickup(pickup, record),
@@ -258,11 +272,19 @@ export function DreamPickupLuckArchive({
       return;
     }
 
-    setRecords((current) => {
-      const next = { ...current };
-      delete next[pickup.id];
-      return next;
-    });
+    const nextRecords = { ...records };
+    delete nextRecords[pickup.id];
+    if (!writeLuckRecords(nextRecords)) {
+      setStorageError(true);
+      setDeletePendingPickupId(null);
+      setStatusMessage(
+        `${pickup.title} 운 기록을 브라우저에서 삭제하지 못했습니다.`,
+      );
+      return;
+    }
+
+    setStorageError(false);
+    setRecords(nextRecords);
     setDrafts((current) => ({
       ...current,
       [pickup.id]: draftForPickup(pickup),
@@ -343,9 +365,14 @@ export function DreamPickupLuckArchive({
           </span>
         </div>
 
-        <div className="dream-pickup-luck__storage">
+        <div
+          className={`dream-pickup-luck__storage${storageError ? " is-error" : ""}`}
+          role={storageError ? "alert" : undefined}
+        >
           <LockKeyhole size={15} aria-hidden="true" />
-          로그인 없이 이 브라우저에만 저장됩니다.
+          {storageError
+            ? "브라우저 저장이 차단됐습니다. 저장 공간 권한을 확인해 주세요."
+            : "로그인 없이 이 브라우저에만 저장됩니다."}
         </div>
       </div>
 
@@ -427,7 +454,6 @@ export function DreamPickupLuckArchive({
                   type="button"
                   className="dream-pickup-luck-record__toggle"
                   aria-expanded={isEditing}
-                  aria-controls={editorId}
                   onClick={() => openEditor(pickup)}
                 >
                   {record ? "기록 수정" : "운 기록"}
@@ -490,7 +516,9 @@ export function DreamPickupLuckArchive({
                               (draftStarted && missingManualRate) ||
                               undefined
                             }
-                            aria-describedby={guideId}
+                            aria-describedby={
+                              !calculation.valid ? guideId : undefined
+                            }
                             onChange={(event) =>
                               updateDraft(
                                 pickup.id,

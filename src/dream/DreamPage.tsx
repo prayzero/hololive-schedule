@@ -20,6 +20,7 @@ import type {
   Talent,
   TalentBranch,
 } from "../types";
+import { includesSearch, normalizeSearch } from "../search";
 import { DreamPickupPanel } from "./DreamPickupPanel";
 import {
   calculateLuck,
@@ -121,12 +122,13 @@ function readOwnedCharacters() {
   }
 }
 
-function normalizeSearch(value: string) {
-  return value
-    .normalize("NFKC")
-    .replace(/[’']/g, "")
-    .replace(/\s+/g, "")
-    .toLocaleLowerCase();
+function writeOwnedCharacters(ownedIds: Set<string>): boolean {
+  try {
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify([...ownedIds]));
+    return true;
+  } catch {
+    return false;
+  }
 }
 
 export function DreamPage({
@@ -138,6 +140,7 @@ export function DreamPage({
   onPanelChange,
 }: DreamPageProps) {
   const [ownedIds, setOwnedIds] = useState<Set<string>>(readOwnedCharacters);
+  const [storageError, setStorageError] = useState(false);
   const [collectionFilter, setCollectionFilter] =
     useState<CollectionFilter>("ALL");
   const [ownedFilter, setOwnedFilter] = useState<OwnedFilter>("all");
@@ -149,16 +152,11 @@ export function DreamPage({
   const [guaranteedInput, setGuaranteedInput] = useState("0");
 
   useEffect(() => {
-    try {
-      window.localStorage.setItem(STORAGE_KEY, JSON.stringify([...ownedIds]));
-    } catch {
-      // 저장 공간이 차단된 환경에서도 체크 기능 자체는 계속 동작합니다.
-    }
-  }, [ownedIds]);
-
-  useEffect(() => {
     const syncStorage = (event: StorageEvent) => {
-      if (event.key === STORAGE_KEY) setOwnedIds(readOwnedCharacters());
+      if (event.key === STORAGE_KEY) {
+        setOwnedIds(readOwnedCharacters());
+        setStorageError(false);
+      }
     };
     window.addEventListener("storage", syncStorage);
     return () => window.removeEventListener("storage", syncStorage);
@@ -274,7 +272,7 @@ export function DreamPage({
           ownedFilter === "all" ||
           (ownedFilter === "owned" && isOwned) ||
           (ownedFilter === "missing" && !isOwned);
-        const searchable = normalizeSearch(
+        const matchesQuery = includesSearch(
           [
             character.name,
             character.nameKo,
@@ -285,14 +283,13 @@ export function DreamPage({
               ? `픽업${character.rarity ? ` ★${character.rarity}` : ""}`
               : "기본",
             talent?.aliases.join(" "),
-          ]
-            .filter(Boolean)
-            .join(" "),
+          ],
+          normalizedQuery,
         );
         return (
           matchesCollection &&
           matchesOwned &&
-          searchable.includes(normalizedQuery)
+          matchesQuery
         );
       }),
     [
@@ -333,12 +330,11 @@ export function DreamPage({
   );
 
   const toggleOwned = (id: string) => {
-    setOwnedIds((current) => {
-      const next = new Set(current);
-      if (next.has(id)) next.delete(id);
-      else next.add(id);
-      return next;
-    });
+    const next = new Set(ownedIds);
+    if (next.has(id)) next.delete(id);
+    else next.add(id);
+    setOwnedIds(next);
+    setStorageError(!writeOwnedCharacters(next));
   };
 
   const renderCollectionCard = (character: CollectionCharacter) => {
@@ -377,6 +373,7 @@ export function DreamPage({
             alt=""
             loading="lazy"
             decoding="async"
+            referrerPolicy="no-referrer"
           />
           {character.kind === "pickup" ? (
             <span className="dream-character-pickup-badge" aria-hidden="true">
@@ -504,11 +501,20 @@ export function DreamPage({
               })}
             </div>
 
-            <div className="dream-storage-note">
+            <div
+              className={`dream-storage-note${storageError ? " is-error" : ""}`}
+              role={storageError ? "alert" : undefined}
+            >
               <LockKeyhole size={17} aria-hidden="true" />
               <span>
-                <strong>이 브라우저에 자동 저장</strong>
-                로그인 없이 현재 기기에만 보유 목록을 저장합니다.
+                <strong>
+                  {storageError
+                    ? "브라우저에 저장하지 못했습니다"
+                    : "이 브라우저에 자동 저장"}
+                </strong>
+                {storageError
+                  ? "저장 공간 권한을 확인해 주세요. 현재 탭에서는 체크 상태가 유지됩니다."
+                  : "로그인 없이 현재 기기에만 보유 목록을 저장합니다."}
               </span>
             </div>
           </div>

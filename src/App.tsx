@@ -33,6 +33,7 @@ import {
 } from "react";
 import { DreamPage } from "./dream/DreamPage";
 import { MusicPage } from "./music/MusicPage";
+import { includesSearch, normalizeSearch } from "./search";
 import type {
   CuratedEvent,
   EventRegion,
@@ -303,25 +304,21 @@ function initialDreamPanel(): DreamPanel {
   return value === "pickup" || value === "calculator" ? value : "collection";
 }
 
-function dateKey(date: Date): string {
-  return DATE_KEY_FORMATTER.format(date);
+function initialRegion(): LocalEventFilter {
+  if (paramValue("status") === "ended") return "ENDED";
+  const value = paramValue("region");
+  return value === "JP" || value === "KR" ? value : "ALL";
 }
 
-function normalizeSearch(value: string): string {
-  return value.normalize("NFKC").toLocaleLowerCase().replace(/\s+/g, "");
+function dateKey(date: Date): string {
+  return DATE_KEY_FORMATTER.format(date);
 }
 
 function includesQuery(
   values: Array<string | null | undefined>,
   normalizedQuery: string,
 ): boolean {
-  if (!normalizedQuery) {
-    return true;
-  }
-
-  return values.some((value) =>
-    normalizeSearch(String(value ?? "")).includes(normalizedQuery),
-  );
+  return includesSearch(values, normalizedQuery);
 }
 
 function soloTalentIds(live: SoloLive): string[] {
@@ -514,6 +511,7 @@ function SmartImage({
       src={src}
       alt={alt}
       loading="lazy"
+      referrerPolicy="no-referrer"
       onError={() => setFailed(true)}
     />
   );
@@ -538,6 +536,7 @@ function TalentAvatar({
           src={talent.portraitUrl}
           alt=""
           loading="lazy"
+          referrerPolicy="no-referrer"
           onError={() => setFailed(true)}
         />
       ) : (
@@ -899,6 +898,7 @@ export default function App() {
   );
   const [musicData, setMusicData] = useState<MusicPayload | null>(null);
   const [musicError, setMusicError] = useState<string | null>(null);
+  const [dataReloadRequest, setDataReloadRequest] = useState(0);
   const searchInputRef = useRef<HTMLInputElement>(null);
   const dateInputRef = useRef<HTMLInputElement>(null);
   const activeDateButtonRef = useRef<HTMLButtonElement>(null);
@@ -921,19 +921,30 @@ export default function App() {
   const [selectedMemberId, setSelectedMemberId] = useState(
     () => paramValue("member") ?? "",
   );
-  const [region, setRegion] = useState<LocalEventFilter>(() => {
-    if (paramValue("status") === "ended") {
-      return "ENDED";
-    }
-    const value = paramValue("region");
-    return value === "JP" || value === "KR" ? value : "ALL";
-  });
+  const [region, setRegion] = useState<LocalEventFilter>(initialRegion);
+  const historyViewRef = useRef(view);
+  const restoringHistoryRef = useRef(false);
 
   useEffect(() => {
-    const controller = new AbortController();
+    let controller: AbortController | null = null;
+    let refreshTimer: number | null = null;
+    let nextRefreshAt = 0;
+    let loading = false;
+    let disposed = false;
+
+    const scheduleRefresh = (delayMs: number) => {
+      if (refreshTimer !== null) window.clearTimeout(refreshTimer);
+      nextRefreshAt = Date.now() + delayMs;
+      refreshTimer = window.setTimeout(() => void loadData(), delayMs);
+    };
 
     async function loadData() {
+      if (loading || disposed) return;
+      loading = true;
+      controller = new AbortController();
+
       try {
+        setError(null);
         const [
           scheduleResponse,
           scheduleIndexResponse,
@@ -955,9 +966,18 @@ export default function App() {
             cache: "no-store",
             signal: controller.signal,
           }),
-          fetch(DATA_URLS.talents, { signal: controller.signal }),
-          fetch(DATA_URLS.solos, { signal: controller.signal }),
-          fetch(DATA_URLS.youtubeLives, { signal: controller.signal }),
+          fetch(DATA_URLS.talents, {
+            cache: "no-store",
+            signal: controller.signal,
+          }),
+          fetch(DATA_URLS.solos, {
+            cache: "no-store",
+            signal: controller.signal,
+          }),
+          fetch(DATA_URLS.youtubeLives, {
+            cache: "no-store",
+            signal: controller.signal,
+          }),
           fetch(DATA_URLS.hololiveDreams, {
             cache: "no-store",
             signal: controller.signal,
@@ -996,6 +1016,7 @@ export default function App() {
             hololiveDreamsResponse.json() as Promise<HololiveDreamsPayload>,
           ]);
 
+        if (disposed) return;
         setData({
           schedule,
           scheduleIndex,
@@ -1005,20 +1026,45 @@ export default function App() {
           youtubeLives,
           hololiveDreams,
         });
+        const refreshMinutes = Math.min(
+          60,
+          Math.max(1, Number(schedule.sourceRefreshMinutes) || 15),
+        );
+        scheduleRefresh(refreshMinutes * 60_000);
       } catch (loadError) {
-        if (!controller.signal.aborted) {
+        if (!controller?.signal.aborted && !disposed) {
           setError(
             loadError instanceof Error
               ? loadError.message
               : "사이트 데이터를 불러오지 못했습니다.",
           );
+          scheduleRefresh(60_000);
         }
+      } finally {
+        loading = false;
       }
     }
 
+    const refreshIfStale = () => {
+      if (
+        document.visibilityState === "visible" &&
+        Date.now() >= nextRefreshAt
+      ) {
+        void loadData();
+      }
+    };
+
     void loadData();
-    return () => controller.abort();
-  }, []);
+    window.addEventListener("focus", refreshIfStale);
+    document.addEventListener("visibilitychange", refreshIfStale);
+    return () => {
+      disposed = true;
+      controller?.abort();
+      if (refreshTimer !== null) window.clearTimeout(refreshTimer);
+      window.removeEventListener("focus", refreshIfStale);
+      document.removeEventListener("visibilitychange", refreshIfStale);
+    };
+  }, [dataReloadRequest]);
 
   useEffect(() => {
     if (view !== "music" || musicData) {
@@ -1053,7 +1099,7 @@ export default function App() {
 
     void loadMusicData();
     return () => controller.abort();
-  }, [musicData, view]);
+  }, [dataReloadRequest, musicData, view]);
 
   useEffect(() => {
     const timer = window.setInterval(() => setNow(new Date()), 60_000);
@@ -1084,6 +1130,27 @@ export default function App() {
 
     window.addEventListener("keydown", focusSearch);
     return () => window.removeEventListener("keydown", focusSearch);
+  }, []);
+
+  useEffect(() => {
+    const restoreFromLocation = () => {
+      const requestedDate = paramValue("day");
+      restoringHistoryRef.current = true;
+      setView(initialView());
+      setQuery(paramValue("q") ?? "");
+      setSelectedDate(requestedDate ?? dateKey(new Date()));
+      setHideEnded(
+        !requestedDate || requestedDate >= dateKey(new Date()),
+      );
+      setConcertPeriod(initialConcertPeriod());
+      setYoutubeCategory(initialYouTubeCategory());
+      setDreamPanel(initialDreamPanel());
+      setSelectedMemberId(paramValue("member") ?? "");
+      setRegion(initialRegion());
+    };
+
+    window.addEventListener("popstate", restoreFromLocation);
+    return () => window.removeEventListener("popstate", restoreFromLocation);
   }, []);
 
   useEffect(() => {
@@ -1127,11 +1194,20 @@ export default function App() {
       params.set("dream", dreamPanel);
     }
 
-    window.history.replaceState(
-      null,
-      "",
-      `${window.location.pathname}?${params.toString()}`,
-    );
+    const nextUrl = `${window.location.pathname}?${params.toString()}`;
+    const currentUrl = `${window.location.pathname}${window.location.search}`;
+    const changedView = historyViewRef.current !== view;
+
+    if (restoringHistoryRef.current) {
+      restoringHistoryRef.current = false;
+    } else if (nextUrl !== currentUrl) {
+      window.history[changedView ? "pushState" : "replaceState"](
+        null,
+        "",
+        nextUrl,
+      );
+    }
+    historyViewRef.current = view;
     document.title = `${PAGE_META[view].title} | HOLO NOW`;
   }, [
     concertPeriod,
@@ -1364,6 +1440,7 @@ export default function App() {
   }, [
     archiveMonths,
     data,
+    dataReloadRequest,
     selectedDate,
   ]);
 
@@ -1971,15 +2048,13 @@ export default function App() {
               {view !== "dream" &&
               view !== "music" &&
               matchingTalents.length > 0 ? (
-                <div className="search-popover" role="listbox">
+                <div className="search-popover" aria-label="멤버 검색 제안">
                   <span>멤버를 누르면 YouTube 라이브가 열립니다</span>
                   {matchingTalents.map((talent) => (
                     <button
                       type="button"
                       key={talent.id}
                       onClick={() => selectTalent(talent)}
-                      role="option"
-                      aria-selected="false"
                     >
                       <TalentAvatar talent={talent} size="small" />
                       <span>
@@ -2193,10 +2268,15 @@ export default function App() {
             <div>
               <strong>사이트 데이터를 불러오지 못했습니다.</strong>
               <p>
-                {error ?? archiveError ?? musicError} 잠시 뒤 새로고침해
-                주세요.
+                {error ?? archiveError ?? musicError}
               </p>
             </div>
+            <button
+              type="button"
+              onClick={() => setDataReloadRequest((value) => value + 1)}
+            >
+              다시 시도
+            </button>
           </div>
         ) : null}
 

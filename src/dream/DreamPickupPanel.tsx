@@ -252,7 +252,6 @@ export function DreamPickupPanel({
       {visibleEntries.length > 1 ? (
         <div
           className="dream-pickup-switcher"
-          role="tablist"
           aria-label="확인할 가챠 방식 선택"
         >
           {visibleEntries.map(({ pickup, status }) => {
@@ -260,8 +259,7 @@ export function DreamPickupPanel({
             return (
               <button
                 type="button"
-                role="tab"
-                aria-selected={isSelected}
+                aria-pressed={isSelected}
                 className={isSelected ? "is-active" : ""}
                 key={pickup.id}
                 onClick={() => setSelectedPickupId(pickup.id)}
@@ -369,6 +367,7 @@ export function DreamPickupPanel({
                     alt={card.imageAlt}
                     loading="lazy"
                     decoding="async"
+                    referrerPolicy="no-referrer"
                   />
                   <figcaption>
                     <small>

@@ -27,6 +27,7 @@ import type {
   MusicTrack,
   Talent,
 } from "../types";
+import { includesSearch, normalizeSearch } from "../search";
 import "./music.css";
 
 interface MusicPageProps {
@@ -66,13 +67,6 @@ const SORT_OPTIONS: Array<{ id: MusicSort; label: string }> = [
   { id: "duration-asc", label: "짧은 곡순" },
   { id: "duration-desc", label: "긴 곡순" },
 ];
-
-function normalizeSearch(value: string) {
-  return value
-    .normalize("NFKC")
-    .replace(/\s+/g, "")
-    .toLocaleLowerCase();
-}
 
 function formatDuration(seconds: number | null) {
   if (seconds === null || !Number.isFinite(seconds) || seconds < 0) {
@@ -208,6 +202,7 @@ function TrackRow({
           alt=""
           loading="lazy"
           decoding="async"
+          referrerPolicy="no-referrer"
         />
       ) : (
         <span className="music-track-placeholder" aria-hidden="true">
@@ -300,6 +295,7 @@ function ReleaseGroups({ tracks }: { tracks: MusicTrack[] }) {
                   alt=""
                   loading="lazy"
                   decoding="async"
+                  referrerPolicy="no-referrer"
                 />
               ) : (
                 <span aria-hidden="true">
@@ -410,17 +406,16 @@ export function MusicPage({
     const ids = new Set<string>();
 
     payload.tracks.forEach((track) => {
-      const searchable = normalizeSearch(
+      const matches = includesSearch(
         [
           track.title,
           track.subtitle,
           track.artist,
           track.albumTitle,
-        ]
-          .filter(Boolean)
-          .join(" "),
+        ],
+        normalizedQuery,
       );
-      if (searchable.includes(normalizedQuery)) {
+      if (matches) {
         track.memberIds.forEach((memberId) => ids.add(memberId));
       }
     });
@@ -431,7 +426,7 @@ export function MusicPage({
     () =>
       orderedMembers.filter(({ talent }) => {
         if (!normalizedQuery) return true;
-        const searchable = normalizeSearch(
+        const matches = includesSearch(
           [
             talent.name,
             talent.nameKo,
@@ -439,10 +434,11 @@ export function MusicPage({
             talent.branch,
             talent.generation,
             talent.aliases.join(" "),
-          ].join(" "),
+          ],
+          normalizedQuery,
         );
         return (
-          searchable.includes(normalizedQuery) ||
+          matches ||
           matchingTrackMemberIds.has(talent.id)
         );
       }),
@@ -610,6 +606,7 @@ export function MusicPage({
                           alt=""
                           loading="lazy"
                           decoding="async"
+                          referrerPolicy="no-referrer"
                         />
                         <i aria-hidden="true">
                           <ListMusic size={16} />
@@ -676,7 +673,11 @@ export function MusicPage({
                   { "--music-accent": selectedTalent.accent } as CSSProperties
                 }
               >
-                <img src={selectedTalent.portraitUrl} alt="" />
+                <img
+                  src={selectedTalent.portraitUrl}
+                  alt=""
+                  referrerPolicy="no-referrer"
+                />
                 <div>
                   <span>
                     {selectedTalent.branch} · {selectedTalent.generation}

@@ -11,7 +11,8 @@
     "update:youtube-archive": "node scripts/compile-youtube-live-archive.mjs",
     "update:hololive-dreams": "node scripts/update-hololive-dreams.mjs",
     "update:music": "node scripts/update-hololive-music.mjs",
-    "build": "tsc --noEmit && vite build",
+    "validate:data": "node scripts/validate-public-data.mjs",
+    "build": "node scripts/validate-public-data.mjs && tsc --noEmit && vite build",
     "preview": "vite preview",
     "check": "npm run build"
   },
@@ -27,5 +28,8 @@
     "cheerio": "1.1.2",
     "typescript": "7.0.2",
     "vite": "8.1.5"
+  },
+  "overrides": {
+    "nanoid": "3.3.17"
   }
 }

@@ -6,13 +6,10 @@ on:
       - main
   workflow_dispatch:
   schedule:
-    - cron: "7,37 * * * *"
+    - cron: "7,22,37,52 * * * *"
     - cron: "17 0 * * *"
 
-permissions:
-  contents: write
-  pages: write
-  id-token: write
+permissions: {}
 
 concurrency:
   group: hololive-schedule-pages
@@ -21,22 +18,26 @@ concurrency:
 
 jobs:
   build:
+    permissions:
+      contents: read
+      pages: read
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: 22
           cache: npm
 
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --ignore-scripts
 
       - name: Prepare cumulative schedule archive
         shell: bash
@@ -83,21 +84,10 @@ jobs:
           npm run enrich:youtube-archive
           npm run update:youtube-archive
 
-      - name: Persist cumulative archives
+      - name: Prepare cumulative archive candidate
         shell: bash
         run: |
           node scripts/sync-youtube-live-archive.mjs persist
-          git -C "$ARCHIVE_WORKTREE" add -- data/schedule-index.json data/schedule-archive data/youtube-lives.json
-
-          if git -C "$ARCHIVE_WORKTREE" diff --cached --quiet; then
-            echo "No new or corrected broadcasts or YouTube lives to archive."
-            exit 0
-          fi
-
-          git -C "$ARCHIVE_WORKTREE" config user.name "github-actions[bot]"
-          git -C "$ARCHIVE_WORKTREE" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git -C "$ARCHIVE_WORKTREE" commit -m "Archive schedule and YouTube lives"
-          git -C "$ARCHIVE_WORKTREE" push origin schedule-data
         env:
           SCHEDULE_ARCHIVE_ROOT: ${{ runner.temp }}/hololive-schedule-data/data
 
@@ -105,21 +95,91 @@ jobs:
         run: npm run build
 
       - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
 
       - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4
         with:
           path: dist
 
+      - name: Upload validated archive candidate
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: schedule-archive-candidate
+          path: ${{ runner.temp }}/hololive-schedule-data/data
+          if-no-files-found: error
+          retention-days: 1
+
+  persist:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    needs: build
+    steps:
+      - name: Check out repository for archive write
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+
+      - name: Download validated archive candidate
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: schedule-archive-candidate
+          path: ${{ runner.temp }}/schedule-archive-candidate
+
+      - name: Commit cumulative archives
+        shell: bash
+        run: |
+          archive_worktree="$RUNNER_TEMP/hololive-schedule-data"
+
+          set +e
+          git ls-remote --exit-code --heads origin refs/heads/schedule-data >/dev/null
+          remote_status=$?
+          set -e
+
+          case "$remote_status" in
+            0)
+              git fetch origin refs/heads/schedule-data:refs/remotes/origin/schedule-data
+              git worktree add -b schedule-data "$archive_worktree" origin/schedule-data
+              ;;
+            2)
+              git worktree add -b schedule-data "$archive_worktree" origin/main
+              ;;
+            *)
+              echo "Could not inspect the schedule-data branch." >&2
+              exit "$remote_status"
+              ;;
+          esac
+
+          mkdir -p "$archive_worktree/data"
+          cp -a "$RUNNER_TEMP/schedule-archive-candidate/." "$archive_worktree/data/"
+          git -C "$archive_worktree" add -- data/schedule-index.json data/schedule-archive data/youtube-lives.json
+
+          if git -C "$archive_worktree" diff --cached --quiet; then
+            echo "No new or corrected broadcasts or YouTube lives to archive."
+            exit 0
+          fi
+
+          git -C "$archive_worktree" config user.name "github-actions[bot]"
+          git -C "$archive_worktree" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git -C "$archive_worktree" commit -m "Archive schedule and YouTube lives"
+          git -C "$archive_worktree" push origin schedule-data
+
   deploy:
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    needs: build
+    needs:
+      - build
+      - persist
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4

@@ -482,7 +482,7 @@ function coverTrackFromRow(row, matchers) {
   const subtitle = firstDistinct(title, originalArtist, videoTitle);
   const duration = positiveInteger(row.duration);
   const releaseDate = normalizeDate(row.date);
-  const coverUrl = validHttpUrl(row.link);
+  const coverUrl = validHttpsUrl(row.link);
   const links =
     coverUrl && videoId
       ? [
@@ -829,7 +829,7 @@ function firstYouTubeId(value) {
 }
 
 function youtubeIdFromUrl(value) {
-  const valid = validHttpUrl(value);
+  const valid = validHttpsUrl(value);
   if (!valid) {
     return null;
   }
@@ -869,7 +869,7 @@ function youtubeLinks(value) {
 
 function typedLinks(kind, value) {
   return urlsFromCell(value)
-    .map(validHttpUrl)
+    .map(validHttpsUrl)
     .filter(Boolean)
     .map((url) => ({
       label: LINK_LABELS[kind] ?? LINK_LABELS.other,
@@ -883,12 +883,10 @@ function urlsFromCell(value) {
   return matches.map((url) => url.replace(/[)\]}>.,;]+$/g, ""));
 }
 
-function validHttpUrl(value) {
+function validHttpsUrl(value) {
   try {
     const url = new URL(String(value ?? "").trim());
-    return url.protocol === "https:" || url.protocol === "http:"
-      ? url.toString()
-      : null;
+    return url.protocol === "https:" ? url.toString() : null;
   } catch {
     return null;
   }

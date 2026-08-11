@@ -996,6 +996,11 @@
   grid-column: span 3;
 }
 
+.dream-storage-note.is-error,
+.dream-storage-note.is-error strong {
+  color: #a53d50;
+}
+
 .dream-pickup-gallery.is-duo .dream-pickup-art {
   grid-column: span 3;
 }
@@ -1278,6 +1283,11 @@
 
 .dream-pickup-luck__storage svg {
   color: var(--dream-purple);
+}
+
+.dream-pickup-luck__storage.is-error,
+.dream-pickup-luck__storage.is-error svg {
+  color: #a53d50;
 }
 
 .dream-pickup-luck__records {

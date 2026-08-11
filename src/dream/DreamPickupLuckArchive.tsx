@@ -36,6 +36,7 @@ interface PickupLuckStore {
 }
 
 interface PickupLuckDraft {
+  ratePercent: string;
   pulls: string;
   acquired: string;
   guaranteed: string;
@@ -46,6 +47,7 @@ interface DreamPickupLuckArchiveProps {
 }
 
 const EMPTY_DRAFT: PickupLuckDraft = {
+  ratePercent: "",
   pulls: "",
   acquired: "0",
   guaranteed: "0",
@@ -110,12 +112,20 @@ function readLuckRecords(): Record<string, PickupLuckRecord> {
   }
 }
 
-function draftFromRecord(record?: PickupLuckRecord): PickupLuckDraft {
-  if (!record) return { ...EMPTY_DRAFT };
+function draftForPickup(
+  pickup: DreamPickup,
+  record?: PickupLuckRecord,
+): PickupLuckDraft {
   return {
-    pulls: String(record.pulls),
-    acquired: String(record.acquired),
-    guaranteed: String(record.guaranteed),
+    ratePercent:
+      typeof record?.ratePercentSnapshot === "number"
+        ? String(record.ratePercentSnapshot)
+        : typeof pickup.targetRatePercent === "number"
+          ? String(pickup.targetRatePercent)
+          : "",
+    pulls: record ? String(record.pulls) : "",
+    acquired: record ? String(record.acquired) : "0",
+    guaranteed: record ? String(record.guaranteed) : "0",
   };
 }
 
@@ -186,7 +196,7 @@ export function DreamPickupLuckArchive({
           ? current
           : {
               ...current,
-              [pickup.id]: draftFromRecord(records[pickup.id]),
+              [pickup.id]: draftForPickup(pickup, records[pickup.id]),
             },
       );
     }
@@ -232,7 +242,7 @@ export function DreamPickupLuckArchive({
     setRecords((current) => ({ ...current, [pickup.id]: record }));
     setDrafts((current) => ({
       ...current,
-      [pickup.id]: draftFromRecord(record),
+      [pickup.id]: draftForPickup(pickup, record),
     }));
     setSavedPickupId(pickup.id);
     setDeletePendingPickupId(null);
@@ -255,7 +265,7 @@ export function DreamPickupLuckArchive({
     });
     setDrafts((current) => ({
       ...current,
-      [pickup.id]: { ...EMPTY_DRAFT },
+      [pickup.id]: draftForPickup(pickup),
     }));
     setSavedPickupId(null);
     setDeletePendingPickupId(null);
@@ -342,12 +352,15 @@ export function DreamPickupLuckArchive({
       <div className="dream-pickup-luck__records">
         {pickups.map((pickup) => {
           const record = records[pickup.id];
-          const rate =
-            record?.ratePercentSnapshot ?? pickup.targetRatePercent ?? 0;
+          const usesManualRate =
+            typeof pickup.targetRatePercent !== "number";
+          const draft =
+            drafts[pickup.id] ?? draftForPickup(pickup, record);
+          const rate = usesManualRate
+            ? Number(draft.ratePercent)
+            : (record?.ratePercentSnapshot ?? pickup.targetRatePercent ?? 0);
           const rateLabel =
             record?.rateLabelSnapshot ?? pickup.rateLabel ?? "픽업 대상";
-          const draft =
-            drafts[pickup.id] ?? draftFromRecord(record);
           const calculation = calculateLuck(
             rate,
             draft.pulls,
@@ -364,7 +377,18 @@ export function DreamPickupLuckArchive({
             : null;
           const isEditing = editingPickupId === pickup.id;
           const draftStarted = draft.pulls.trim() !== "";
-          const invalidDraft = draftStarted && !calculation.valid;
+          const manualRateStarted = draft.ratePercent.trim() !== "";
+          const missingManualRate = usesManualRate && !manualRateStarted;
+          const invalidManualRate =
+            usesManualRate &&
+            manualRateStarted &&
+            (!Number.isFinite(rate) || rate <= 0 || rate > 100);
+          const invalidDraft =
+            (draftStarted || manualRateStarted) && !calculation.valid;
+          const guideHasError =
+            invalidManualRate ||
+            (draftStarted && missingManualRate) ||
+            (draftStarted && !calculation.valid);
           const editorId = `pickup-luck-editor-${pickup.id}`;
           const guideId = `pickup-luck-guide-${pickup.id}`;
 
@@ -405,9 +429,6 @@ export function DreamPickupLuckArchive({
                   aria-expanded={isEditing}
                   aria-controls={editorId}
                   onClick={() => openEditor(pickup)}
-                  disabled={
-                    typeof pickup.targetRatePercent !== "number" && !record
-                  }
                 >
                   {record ? "기록 수정" : "운 기록"}
                   <ChevronDown
@@ -429,17 +450,59 @@ export function DreamPickupLuckArchive({
                 >
                   <div className="dream-pickup-luck-editor__heading">
                     <div>
-                      <small>AUTO RATE</small>
-                      <strong>
-                        {rateLabel} {formatRatePercent(rate)}% 자동 적용
-                      </strong>
+                      <small>{usesManualRate ? "MANUAL RATE" : "AUTO RATE"}</small>
+                      {usesManualRate ? (
+                        <strong>
+                          공식 X에 제공 비율이 없어 게임 내 확률을 직접 입력합니다.
+                        </strong>
+                      ) : (
+                        <strong>
+                          {rateLabel} {formatRatePercent(rate)}% 자동 적용
+                        </strong>
+                      )}
                     </div>
                     {record ? (
                       <span>{formatSavedAt(record.updatedAt)} 저장</span>
                     ) : null}
                   </div>
 
-                  <div className="dream-pickup-luck-form">
+                  <div
+                    className={`dream-pickup-luck-form${
+                      usesManualRate ? " has-manual-rate" : ""
+                    }`}
+                  >
+                    {usesManualRate ? (
+                      <label className="dream-pickup-luck-form__manual-rate">
+                        <span>
+                          픽업 대상 합계 제공 비율
+                          <small>게임 내 공지 기준</small>
+                        </span>
+                        <div>
+                          <input
+                            type="number"
+                            min="0.0001"
+                            max="100"
+                            step="0.0001"
+                            inputMode="decimal"
+                            value={draft.ratePercent}
+                            aria-invalid={
+                              invalidManualRate ||
+                              (draftStarted && missingManualRate) ||
+                              undefined
+                            }
+                            aria-describedby={guideId}
+                            onChange={(event) =>
+                              updateDraft(
+                                pickup.id,
+                                "ratePercent",
+                                event.target.value,
+                              )
+                            }
+                          />
+                          <span>%</span>
+                        </div>
+                      </label>
+                    ) : null}
                     <label>
                       <span>
                         확률 적용 뽑기 수
@@ -569,13 +632,15 @@ export function DreamPickupLuckArchive({
                     <div
                       id={guideId}
                       className={`dream-pickup-luck-editor__guide${
-                        invalidDraft ? " is-error" : ""
+                        guideHasError ? " is-error" : ""
                       }`}
-                      role={invalidDraft ? "alert" : "status"}
+                      role={guideHasError ? "alert" : "status"}
                     >
-                      {invalidDraft
-                        ? "뽑기 수는 1 이상, 나머지는 0 이상 정수로 입력하고 실제 획득 수는 확정 획득 수보다 작을 수 없습니다."
-                        : "뽑기 횟수를 입력하면 상위 퍼센트가 바로 계산됩니다."}
+                      {missingManualRate
+                        ? "게임 내 가챠 상세의 픽업 대상 합계 제공 비율(%)을 먼저 입력하세요."
+                        : invalidDraft
+                          ? "제공 비율은 0보다 크고 100 이하여야 합니다. 뽑기 수는 1 이상, 나머지는 0 이상 정수로 입력하고 실제 획득 수는 확정 획득 수보다 작을 수 없습니다."
+                          : "뽑기 횟수를 입력하면 상위 퍼센트가 바로 계산됩니다."}
                     </div>
                   )}
 

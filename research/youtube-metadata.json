@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-06T02:27:35.707Z",
+  "checkedAt": "2026-08-11T07:29:01.227Z",
   "sourceUrl": "https://www.youtube.com/",
   "sourceNote": "큐레이션된 공식 채널 영상의 게시 시각·영상 길이를 YouTube player metadata로 교차 확인한 캐시입니다.",
   "videos": [
@@ -8,6 +8,12 @@
       "channelId": "UC_sFNM0z0MWm9A6WlKPuMMg",
       "publishedAt": "2025-11-21T18:38:04-08:00",
       "durationSeconds": 5390
+    },
+    {
+      "videoId": "_qqd8XuHnUA",
+      "channelId": "UC0TXe_LYZ4scaW2XMyi5_kw",
+      "publishedAt": "2021-06-13T04:45:01-07:00",
+      "durationSeconds": 6178
     },
     {
       "videoId": "_rgeHcQu0Tc",
@@ -76,6 +82,12 @@
       "durationSeconds": 3598
     },
     {
+      "videoId": "07qx3PL4b3U",
+      "channelId": "UC1uv2Oq6kNxgATlCiez59hw",
+      "publishedAt": "2026-08-08T04:43:12-07:00",
+      "durationSeconds": 2368
+    },
+    {
       "videoId": "0ih-OP2tiuE",
       "channelId": "UC-hM6YJuNYVAmUWxeIr9FeA",
       "publishedAt": "2025-12-25T03:58:33-08:00",
@@ -122,6 +134,12 @@
       "channelId": "UCdXAk5MpyLD8594lm_OvtGQ",
       "publishedAt": "2026-05-17T05:14:57-07:00",
       "durationSeconds": 4440
+    },
+    {
+      "videoId": "1lqiDPRHgWE",
+      "channelId": "UC0TXe_LYZ4scaW2XMyi5_kw",
+      "publishedAt": "2021-08-22T04:17:31-07:00",
+      "durationSeconds": 4086
     },
     {
       "videoId": "1Ts7X3vtYgQ",
@@ -256,6 +274,12 @@
       "durationSeconds": 3814
     },
     {
+      "videoId": "7lJ5kdZGFgk",
+      "channelId": "UCvInZx9h3jC2JzsIzoOebWg",
+      "publishedAt": "2023-09-22T06:12:27-07:00",
+      "durationSeconds": 4078
+    },
+    {
       "videoId": "7M4E3WGWlRM",
       "channelId": "UCt9H_RpQzhxzlyBxFqrdHqA",
       "publishedAt": "2026-01-31T20:22:28-08:00",
@@ -330,7 +354,7 @@
     {
       "videoId": "9uv6ihLUXtQ",
       "channelId": "UCDqI2jOz0weumE8s7paEk6g",
-      "publishedAt": "2026-08-02T10:55:30+00:00",
+      "publishedAt": "2026-08-02T05:06:26-07:00",
       "durationSeconds": 3755
     },
     {
@@ -608,6 +632,12 @@
       "channelId": "UCdyqAaZDKHXg4Ahi7VENThQ",
       "publishedAt": "2022-11-24T05:06:38-08:00",
       "durationSeconds": 3826
+    },
+    {
+      "videoId": "E1Qy0OttVcs",
+      "channelId": "UCvaTdHTWBGv3MKj3KVqJVCw",
+      "publishedAt": "2025-02-22T05:12:57-08:00",
+      "durationSeconds": 4172
     },
     {
       "videoId": "E2D_YFRHFG8",
@@ -954,7 +984,7 @@
     {
       "videoId": "knb_mosTUvo",
       "channelId": "UC1uv2Oq6kNxgATlCiez59hw",
-      "publishedAt": "2023-01-03T05:13:12-08:00",
+      "publishedAt": "2023-01-03T11:57:13+00:00",
       "durationSeconds": 3676
     },
     {
@@ -1098,7 +1128,7 @@
     {
       "videoId": "nlfGHej2OyA",
       "channelId": "UCs9_O1tRPMQTHQ-N_L6FU2g",
-      "publishedAt": "2023-06-11T06:01:56-07:00",
+      "publishedAt": "2023-06-11T12:00:18+00:00",
       "durationSeconds": 3465
     },
     {

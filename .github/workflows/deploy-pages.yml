@@ -7,6 +7,7 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "7,37 * * * *"
+    - cron: "17 0 * * *"
 
 permissions:
   contents: write
@@ -64,26 +65,41 @@ jobs:
 
           mkdir -p "$archive_worktree/data"
 
+      - name: Restore cumulative YouTube live archive
+        run: node scripts/sync-youtube-live-archive.mjs restore
+        env:
+          SCHEDULE_ARCHIVE_ROOT: ${{ runner.temp }}/hololive-schedule-data/data
+
       - name: Collect and merge official Holodule schedule
         shell: bash
         run: npm run update:schedule
         env:
           SCHEDULE_ARCHIVE_ROOT: ${{ runner.temp }}/hololive-schedule-data/data
 
-      - name: Persist cumulative schedule archive
+      - name: Refresh official YouTube live archive
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '17 0 * * *'
+        run: |
+          node research/fetch-youtube-jp.mjs
+          npm run enrich:youtube-archive
+          npm run update:youtube-archive
+
+      - name: Persist cumulative archives
         shell: bash
         run: |
-          git -C "$ARCHIVE_WORKTREE" add -- data/schedule-index.json data/schedule-archive
+          node scripts/sync-youtube-live-archive.mjs persist
+          git -C "$ARCHIVE_WORKTREE" add -- data/schedule-index.json data/schedule-archive data/youtube-lives.json
 
           if git -C "$ARCHIVE_WORKTREE" diff --cached --quiet; then
-            echo "No new or corrected broadcasts to archive."
+            echo "No new or corrected broadcasts or YouTube lives to archive."
             exit 0
           fi
 
           git -C "$ARCHIVE_WORKTREE" config user.name "github-actions[bot]"
           git -C "$ARCHIVE_WORKTREE" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git -C "$ARCHIVE_WORKTREE" commit -m "Archive Holodule schedule"
+          git -C "$ARCHIVE_WORKTREE" commit -m "Archive schedule and YouTube lives"
           git -C "$ARCHIVE_WORKTREE" push origin schedule-data
+        env:
+          SCHEDULE_ARCHIVE_ROOT: ${{ runner.temp }}/hololive-schedule-data/data
 
       - name: Build schedule site
         run: npm run build

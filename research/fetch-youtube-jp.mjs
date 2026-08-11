@@ -5,6 +5,12 @@ import { fileURLToPath } from "node:url";
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..");
 const TALENTS_PATH = path.join(ROOT, "public", "data", "talents.json");
+const LIVE_ARCHIVE_PATH = path.join(
+  ROOT,
+  "public",
+  "data",
+  "youtube-lives.json",
+);
 const OUTPUT_PATH = path.join(HERE, "youtube-jp.json");
 
 const SEARCH_TERMS = [
@@ -425,6 +431,39 @@ const selectedTalents = process.env.DEBUG_JP
   ? talents.filter((talent) => talent.id === process.env.DEBUG_JP)
   : talents;
 
+const [previousPayload, currentArchive] = await Promise.all([
+  fs
+    .readFile(OUTPUT_PATH, "utf8")
+    .then((contents) => JSON.parse(contents))
+    .catch(() => ({ records: [] })),
+  fs
+    .readFile(LIVE_ARCHIVE_PATH, "utf8")
+    .then((contents) => JSON.parse(contents))
+    .catch(() => ({ lives: [] })),
+]);
+const jpMemberIds = new Set(talents.map((talent) => talent.id));
+const jpTalentsById = new Map(talents.map((talent) => [talent.id, talent]));
+const preservedRecords = [
+  ...(previousPayload.records ?? []),
+  ...(currentArchive.lives ?? []).flatMap((live) =>
+    (live.memberIds ?? [])
+      .filter(
+        (memberId) =>
+          jpMemberIds.has(memberId) &&
+          jpTalentsById.get(memberId)?.channelId === live.channelId,
+      )
+      .map((memberId) => ({
+        memberId,
+        videoId: live.videoId,
+        title: live.title,
+        publishedAt: live.publishedAt,
+        category: live.category,
+        sourceUrl: live.videoUrl,
+        thumbnailUrl: live.thumbnailUrl,
+      })),
+  ),
+];
+
 const candidateGroups = await runPool(selectedTalents, 5, async (talent, index) => {
   process.stderr.write(
     `[search ${index + 1}/${selectedTalents.length}] ${talent.name}\n`,
@@ -443,7 +482,7 @@ const hydrated = await runPool(hydrationJobs, 2, async ({ talent, candidate }) =
   hydrateCandidate(talent, candidate),
 );
 
-const records = hydrated
+const discoveredRecords = hydrated
   .filter(Boolean)
   .map((record) => ({
     memberId: record.memberId,
@@ -453,7 +492,14 @@ const records = hydrated
     category: record.category,
     sourceUrl: record.sourceUrl,
     thumbnailUrl: record.thumbnailUrl,
-  }))
+  }));
+const recordsByKey = new Map();
+for (const record of [...preservedRecords, ...discoveredRecords]) {
+  if (!jpMemberIds.has(record.memberId) || !record.videoId) continue;
+  recordsByKey.set(`${record.memberId}:${record.videoId}`, record);
+}
+
+const records = Array.from(recordsByKey.values())
   .sort((left, right) => {
     if (left.memberId !== right.memberId) {
       return left.memberId.localeCompare(right.memberId);
@@ -475,7 +521,7 @@ const payload = {
   scope:
     "Official hololive JP talents marked active or affiliate in talents.json. Public official-channel birthday, anniversary, 3D music live, free solo concert, and comparable special live archives only.",
   methodology:
-    "YouTube searches were run against each official talent channel. Search renderers with a different owner channel ID or ownerless playlist-only entries were rejected, then accepted videos were hydrated through YouTube player metadata for an exact publication date and a second channel-ID check. Ordinary gameplay, chat, karaoke, aftertalks, previews, single-song clips, MVs, watchalongs, and videos shorter than 20 minutes were excluded.",
+    "YouTube searches were run against each official talent channel and merged cumulatively with previously verified records so temporary search omissions cannot delete the archive. Search renderers with a different owner channel ID or ownerless playlist-only entries were rejected, then accepted videos were hydrated through YouTube player metadata for an exact publication date and a second channel-ID check. Ordinary gameplay, chat, karaoke, aftertalks, previews, single-song clips, MVs, watchalongs, and videos shorter than 20 minutes were excluded.",
   publishedAtNote:
     "All accepted records had an exact publication timestamp in YouTube player metadata at the time checked.",
   dataCorrections: [

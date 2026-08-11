@@ -1433,6 +1433,11 @@
   gap: 12px;
 }
 
+.dream-pickup-luck-form__manual-rate {
+  grid-column: 1 / -1;
+  width: min(100%, 320px);
+}
+
 .dream-pickup-luck-form label {
   display: grid;
   gap: 7px;
@@ -2878,6 +2883,10 @@
 
   .dream-pickup-luck-form {
     grid-template-columns: 1fr;
+  }
+
+  .dream-pickup-luck-form__manual-rate {
+    width: 100%;
   }
 
   .dream-pickup-luck-preview {

@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-06T02:27:49.679Z",
+  "checkedAt": "2026-08-11T07:29:05.302Z",
   "collectorVersion": "curated-official-channel-1.0.0",
   "sourceNote": "공식 hololive 탤런트 YouTube 채널에서 공개된 생일·주년·3D 음악 라이브와 무료 콘서트 기록입니다. 일반 노래방·게임·잡담·후일담·미리보기·Shorts·단일 곡 영상은 제외했습니다.",
   "sourceUrl": "https://www.youtube.com/",
@@ -10,16 +10,31 @@
   ],
   "lives": [
     {
+      "id": "07qx3PL4b3U",
+      "videoId": "07qx3PL4b3U",
+      "memberIds": [
+        "tokoyami-towa"
+      ],
+      "channelId": "UC1uv2Oq6kNxgATlCiez59hw",
+      "title": "【 #常闇トワ生誕祭2026 】告知あり！新衣装お披露目ミニライブ🎶【 3DLIVE 】",
+      "category": "birthday",
+      "publishedLabel": null,
+      "publishedAt": "2026-08-08T04:43:12-07:00",
+      "durationSeconds": 2368,
+      "videoUrl": "https://www.youtube.com/watch?v=07qx3PL4b3U",
+      "thumbnailUrl": "https://i.ytimg.com/vi/07qx3PL4b3U/hqdefault.jpg"
+    },
+    {
       "id": "9uv6ihLUXtQ",
       "videoId": "9uv6ihLUXtQ",
       "memberIds": [
         "robocosan"
       ],
       "channelId": "UCDqI2jOz0weumE8s7paEk6g",
-      "title": "【3DLIVE】重大告知付き! 今年は深海で #ロボ子海底3Dライブ 🪸 【ホロライブ/ロボ子さん】",
+      "title": "【3DLIVE】重大告知付き！ 今年は深海で #ロボ子海底3Dライブ  🪸　【ホロライブ/ロボ子さん】",
       "category": "3d",
       "publishedLabel": null,
-      "publishedAt": "2026-08-02T10:55:30+00:00",
+      "publishedAt": "2026-08-02T05:06:26-07:00",
       "durationSeconds": 3755,
       "videoUrl": "https://www.youtube.com/watch?v=9uv6ihLUXtQ",
       "thumbnailUrl": "https://i.ytimg.com/vi/9uv6ihLUXtQ/hqdefault.jpg"
@@ -1377,6 +1392,21 @@
       "thumbnailUrl": "https://i.ytimg.com/vi/viPlIHvk724/hqdefault.jpg"
     },
     {
+      "id": "E1Qy0OttVcs",
+      "videoId": "E1Qy0OttVcs",
+      "memberIds": [
+        "nekomata-okayu"
+      ],
+      "channelId": "UCvaTdHTWBGv3MKj3KVqJVCw",
+      "title": "【 3D LIVE 】ゲスト盛りだくさん！重大告知アリアリ🎂😸【 #⁠猫又おかゆ生誕祭2025 】",
+      "category": "birthday",
+      "publishedLabel": null,
+      "publishedAt": "2025-02-22T05:12:57-08:00",
+      "durationSeconds": 4172,
+      "videoUrl": "https://www.youtube.com/watch?v=E1Qy0OttVcs",
+      "thumbnailUrl": "https://i.ytimg.com/vi/E1Qy0OttVcs/hqdefault.jpg"
+    },
+    {
       "id": "etiR9Qnqlmc",
       "videoId": "etiR9Qnqlmc",
       "memberIds": [
@@ -2562,6 +2592,21 @@
       "durationSeconds": 3744,
       "videoUrl": "https://www.youtube.com/watch?v=215Bq5oo9Bw",
       "thumbnailUrl": "https://i.ytimg.com/vi/215Bq5oo9Bw/hqdefault.jpg"
+    },
+    {
+      "id": "7lJ5kdZGFgk",
+      "videoId": "7lJ5kdZGFgk",
+      "memberIds": [
+        "shiranui-flare"
+      ],
+      "channelId": "UCvInZx9h3jC2JzsIzoOebWg",
+      "title": "【#不知火フレア4周年記念LIVE】平成初期アニソン祭り【不知火フレア/ホロライブ】",
+      "category": "anniversary",
+      "publishedLabel": null,
+      "publishedAt": "2023-09-22T06:12:27-07:00",
+      "durationSeconds": 4078,
+      "videoUrl": "https://www.youtube.com/watch?v=7lJ5kdZGFgk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7lJ5kdZGFgk/hqdefault.jpg"
     },
     {
       "id": "-GQKQ5vAskA",
@@ -3989,6 +4034,21 @@
       "thumbnailUrl": "https://i.ytimg.com/vi/_xL58zG9k5k/hqdefault.jpg"
     },
     {
+      "id": "1lqiDPRHgWE",
+      "videoId": "1lqiDPRHgWE",
+      "memberIds": [
+        "azki"
+      ],
+      "channelId": "UC0TXe_LYZ4scaW2XMyi5_kw",
+      "title": "【3D LIVE & New information！！】夏の3Dコラボライブ GUEST：水科葵【ライブ新情報もある！！】",
+      "category": "3d",
+      "publishedLabel": null,
+      "publishedAt": "2021-08-22T04:17:31-07:00",
+      "durationSeconds": 4086,
+      "videoUrl": "https://www.youtube.com/watch?v=1lqiDPRHgWE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1lqiDPRHgWE/hqdefault.jpg"
+    },
+    {
       "id": "ChMwx4yeI3g",
       "videoId": "ChMwx4yeI3g",
       "memberIds": [
@@ -4167,6 +4227,21 @@
       "durationSeconds": 2814,
       "videoUrl": "https://www.youtube.com/watch?v=XvrnWqU6MIs",
       "thumbnailUrl": "https://i.ytimg.com/vi/XvrnWqU6MIs/hqdefault.jpg"
+    },
+    {
+      "id": "_qqd8XuHnUA",
+      "videoId": "_qqd8XuHnUA",
+      "memberIds": [
+        "azki"
+      ],
+      "channelId": "UC0TXe_LYZ4scaW2XMyi5_kw",
+      "title": "【3D LIVE】AZKi対バン企画 LAST V STANDiNG vol.3 #LVS3【GUEST:MaiR】",
+      "category": "3d",
+      "publishedLabel": null,
+      "publishedAt": "2021-06-13T04:45:01-07:00",
+      "durationSeconds": 6178,
+      "videoUrl": "https://www.youtube.com/watch?v=_qqd8XuHnUA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/_qqd8XuHnUA/hqdefault.jpg"
     },
     {
       "id": "jdio7hLzy3w",

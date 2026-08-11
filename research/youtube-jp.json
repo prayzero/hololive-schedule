@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-08-06T02:23:25.070Z",
+  "checkedAt": "2026-08-11T07:28:48.513Z",
   "scope": "Official hololive JP talents marked active or affiliate in talents.json. Public official-channel birthday, anniversary, 3D music live, free solo concert, and comparable special live archives only.",
-  "methodology": "YouTube searches were run against each official talent channel. Search renderers with a different owner channel ID or ownerless playlist-only entries were rejected, then accepted videos were hydrated through YouTube player metadata for an exact publication date and a second channel-ID check. Ordinary gameplay, chat, karaoke, aftertalks, previews, single-song clips, MVs, watchalongs, and videos shorter than 20 minutes were excluded.",
+  "methodology": "YouTube searches were run against each official talent channel and merged cumulatively with previously verified records so temporary search omissions cannot delete the archive. Search renderers with a different owner channel ID or ownerless playlist-only entries were rejected, then accepted videos were hydrated through YouTube player metadata for an exact publication date and a second channel-ID check. Ordinary gameplay, chat, karaoke, aftertalks, previews, single-song clips, MVs, watchalongs, and videos shorter than 20 minutes were excluded.",
   "publishedAtNote": "All accepted records had an exact publication timestamp in YouTube player metadata at the time checked.",
   "dataCorrections": [
     {
@@ -14,7 +14,7 @@
   ],
   "sourceType": "official-youtube-channel",
   "memberCount": 31,
-  "recordCount": 194,
+  "recordCount": 199,
   "missingMembers": [],
   "records": [
     {
@@ -208,6 +208,15 @@
     },
     {
       "memberId": "azki",
+      "videoId": "1lqiDPRHgWE",
+      "title": "【3D LIVE & New information！！】夏の3Dコラボライブ GUEST：水科葵【ライブ新情報もある！！】",
+      "publishedAt": "2021-08-22T04:17:31-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=1lqiDPRHgWE",
+      "thumbnailUrl": "https://i.ytimg.com/vi/1lqiDPRHgWE/maxresdefault.jpg?v=611f9c21"
+    },
+    {
+      "memberId": "azki",
       "videoId": "NDYaVPFVtzk",
       "title": "AZKi - 【3D LIVE】SPECiAL LiVE -NON FiCTiON- 【youtube music weekend】",
       "publishedAt": "2021-07-16T10:30:14-07:00",
@@ -223,6 +232,15 @@
       "category": "birthday",
       "sourceUrl": "https://www.youtube.com/watch?v=RyrHynHHbmY",
       "thumbnailUrl": "https://i.ytimg.com/vi/RyrHynHHbmY/maxresdefault.jpg?v=60dc7bd2"
+    },
+    {
+      "memberId": "azki",
+      "videoId": "_qqd8XuHnUA",
+      "title": "【3D LIVE】AZKi対バン企画 LAST V STANDiNG vol.3 #LVS3【GUEST:MaiR】",
+      "publishedAt": "2021-06-13T04:45:01-07:00",
+      "category": "3d",
+      "sourceUrl": "https://www.youtube.com/watch?v=_qqd8XuHnUA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/_qqd8XuHnUA/hqdefault.jpg"
     },
     {
       "memberId": "azki",
@@ -330,7 +348,7 @@
       "publishedAt": "2022-11-28T04:04:55-08:00",
       "category": "anniversary",
       "sourceUrl": "https://www.youtube.com/watch?v=aLgQxWOWEnw",
-      "thumbnailUrl": "https://i.ytimg.com/vi/aLgQxWOWEnw/maxresdefault.jpg?v=638325a8"
+      "thumbnailUrl": "https://i.ytimg.com/vi/aLgQxWOWEnw/hqdefault.jpg"
     },
     {
       "memberId": "himemori-luna",
@@ -865,6 +883,15 @@
     },
     {
       "memberId": "nekomata-okayu",
+      "videoId": "E1Qy0OttVcs",
+      "title": "【 3D LIVE 】ゲスト盛りだくさん！重大告知アリアリ🎂😸【 #⁠猫又おかゆ生誕祭2025 】",
+      "publishedAt": "2025-02-22T05:12:57-08:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=E1Qy0OttVcs",
+      "thumbnailUrl": "https://i.ytimg.com/vi/E1Qy0OttVcs/maxresdefault.jpg?v=67b89bfb"
+    },
+    {
+      "memberId": "nekomata-okayu",
       "videoId": "Bb7UfPi8fhg",
       "title": "【お誕生日🍰】ゲスト盛り沢山✨日頃の感謝を込めて歌います！【 #猫又おかゆ2023生誕祭Live /ホロライブ】",
       "publishedAt": "2023-02-22T04:04:32-08:00",
@@ -1019,11 +1046,11 @@
     {
       "memberId": "robocosan",
       "videoId": "9uv6ihLUXtQ",
-      "title": "【3DLIVE】重大告知付き! 今年は深海で #ロボ子海底3Dライブ 🪸 【ホロライブ/ロボ子さん】",
-      "publishedAt": "2026-08-02T10:55:30+00:00",
+      "title": "【3DLIVE】重大告知付き！ 今年は深海で #ロボ子海底3Dライブ  🪸　【ホロライブ/ロボ子さん】",
+      "publishedAt": "2026-08-02T05:06:26-07:00",
       "category": "3d",
       "sourceUrl": "https://www.youtube.com/watch?v=9uv6ihLUXtQ",
-      "thumbnailUrl": "https://i.ytimg.com/vi/9uv6ihLUXtQ/maxresdefault.jpg"
+      "thumbnailUrl": "https://i.ytimg.com/vi/9uv6ihLUXtQ/maxresdefault.jpg?v=6a6eb3d7"
     },
     {
       "memberId": "robocosan",
@@ -1122,7 +1149,7 @@
       "publishedAt": "2023-08-01T06:12:48-07:00",
       "category": "anniversary",
       "sourceUrl": "https://www.youtube.com/watch?v=V761LnbkXYQ",
-      "thumbnailUrl": "https://i.ytimg.com/vi/V761LnbkXYQ/maxresdefault.jpg?v=65c47d6f"
+      "thumbnailUrl": "https://i.ytimg.com/vi/V761LnbkXYQ/hqdefault.jpg"
     },
     {
       "memberId": "sakura-miko",
@@ -1231,6 +1258,15 @@
       "category": "birthday",
       "sourceUrl": "https://www.youtube.com/watch?v=u8AeA1ucX2o",
       "thumbnailUrl": "https://i.ytimg.com/vi/u8AeA1ucX2o/maxresdefault.jpg?v=660b1ad2"
+    },
+    {
+      "memberId": "shiranui-flare",
+      "videoId": "7lJ5kdZGFgk",
+      "title": "【#不知火フレア4周年記念LIVE】平成初期アニソン祭り【不知火フレア/ホロライブ】",
+      "publishedAt": "2023-09-22T06:12:27-07:00",
+      "category": "anniversary",
+      "sourceUrl": "https://www.youtube.com/watch?v=7lJ5kdZGFgk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/7lJ5kdZGFgk/maxresdefault.jpg?v=650c85a7"
     },
     {
       "memberId": "shiranui-flare",
@@ -1465,6 +1501,15 @@
       "category": "birthday",
       "sourceUrl": "https://www.youtube.com/watch?v=lXdX1S1-Mxc",
       "thumbnailUrl": "https://i.ytimg.com/vi/lXdX1S1-Mxc/maxresdefault.jpg?v=609e4f1d"
+    },
+    {
+      "memberId": "tokoyami-towa",
+      "videoId": "07qx3PL4b3U",
+      "title": "【 #常闇トワ生誕祭2026 】告知あり！新衣装お披露目ミニライブ🎶【 3DLIVE 】",
+      "publishedAt": "2026-08-08T04:43:12-07:00",
+      "category": "birthday",
+      "sourceUrl": "https://www.youtube.com/watch?v=07qx3PL4b3U",
+      "thumbnailUrl": "https://i.ytimg.com/vi/07qx3PL4b3U/maxresdefault.jpg?v=6a740b65"
     },
     {
       "memberId": "tokoyami-towa",

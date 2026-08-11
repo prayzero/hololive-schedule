@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T05:17:13.615Z",
+  "generatedAt": "2026-08-11T06:30:29.315Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -9148,6 +9148,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "AoQNRPj6rxc",
+      "date": "2026-08-11",
+      "dateLabel": "08/11 (火)",
+      "time": "14:23",
+      "startsAt": "2026-08-11T14:23:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=AoQNRPj6rxc",
+      "videoId": "AoQNRPj6rxc",
+      "thumbnail": "https://img.youtube.com/vi/AoQNRPj6rxc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "NWoAORKImGg",
       "date": "2026-08-11",
       "dateLabel": "08/11 (火)",
@@ -9178,6 +9193,21 @@
       "branch": "JP"
     },
     {
+      "id": "cLaavkVmY7U",
+      "date": "2026-08-11",
+      "dateLabel": "08/11 (火)",
+      "time": "19:00",
+      "startsAt": "2026-08-11T19:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=cLaavkVmY7U",
+      "videoId": "cLaavkVmY7U",
+      "thumbnail": "https://img.youtube.com/vi/cLaavkVmY7U/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "MtHI1Bx2Ue0",
       "date": "2026-08-11",
       "dateLabel": "08/11 (火)",
@@ -9188,6 +9218,21 @@
       "url": "https://www.youtube.com/watch?v=MtHI1Bx2Ue0",
       "videoId": "MtHI1Bx2Ue0",
       "thumbnail": "https://img.youtube.com/vi/MtHI1Bx2Ue0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "NJXScv8V0ls",
+      "date": "2026-08-11",
+      "dateLabel": "08/11 (火)",
+      "time": "19:00",
+      "startsAt": "2026-08-11T19:00:00+09:00",
+      "name": "AZKi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=NJXScv8V0ls",
+      "videoId": "NJXScv8V0ls",
+      "thumbnail": "https://img.youtube.com/vi/NJXScv8V0ls/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

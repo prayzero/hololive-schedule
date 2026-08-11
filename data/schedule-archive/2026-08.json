@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-10T23:08:39.326Z",
+  "generatedAt": "2026-08-11T00:03:09.371Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -8968,21 +8968,6 @@
       "branch": "DEV_IS"
     },
     {
-      "id": "p9r8MqkLLps",
-      "date": "2026-08-11",
-      "dateLabel": "08/11 (火)",
-      "time": "09:00",
-      "startsAt": "2026-08-11T09:00:00+09:00",
-      "name": "博衣こより",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=p9r8MqkLLps",
-      "videoId": "p9r8MqkLLps",
-      "thumbnail": "https://img.youtube.com/vi/p9r8MqkLLps/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "XrAjAuBU3RY",
       "date": "2026-08-11",
       "dateLabel": "08/11 (火)",
@@ -8996,6 +8981,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "p9r8MqkLLps",
+      "date": "2026-08-11",
+      "dateLabel": "08/11 (火)",
+      "time": "09:01",
+      "startsAt": "2026-08-11T09:01:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=p9r8MqkLLps",
+      "videoId": "p9r8MqkLLps",
+      "thumbnail": "https://img.youtube.com/vi/p9r8MqkLLps/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "InA1c0SIJDU",

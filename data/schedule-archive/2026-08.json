@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T21:26:58.079Z",
+  "generatedAt": "2026-08-11T23:21:40.310Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -9826,8 +9826,8 @@
       "id": "v-wUINXT4rc",
       "date": "2026-08-12",
       "dateLabel": "08/12 (水)",
-      "time": "07:00",
-      "startsAt": "2026-08-12T07:00:00+09:00",
+      "time": "06:58",
+      "startsAt": "2026-08-12T06:58:00+09:00",
       "name": "綺々羅々ヴィヴィ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=v-wUINXT4rc",
@@ -10001,6 +10001,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "dP8UpLts7DE",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "10:00",
+      "startsAt": "2026-08-13T10:00:00+09:00",
+      "name": "Shiori",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=dP8UpLts7DE",
+      "videoId": "dP8UpLts7DE",
+      "thumbnail": "https://img.youtube.com/vi/dP8UpLts7DE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "QQl5LuSzIvo",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T04:03:21.749Z",
+  "generatedAt": "2026-08-11T05:17:13.615Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -9308,6 +9308,21 @@
       "url": "https://www.youtube.com/watch?v=Sp1jn754slE",
       "videoId": "Sp1jn754slE",
       "thumbnail": "https://img.youtube.com/vi/Sp1jn754slE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "5y7kTZoevvk",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "21:00",
+      "startsAt": "2026-08-12T21:00:00+09:00",
+      "name": "大神ミオ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=5y7kTZoevvk",
+      "videoId": "5y7kTZoevvk",
+      "thumbnail": "https://img.youtube.com/vi/5y7kTZoevvk/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

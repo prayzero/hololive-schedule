@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T10:29:48.857Z",
+  "generatedAt": "2026-08-11T11:25:55.174Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -9493,6 +9493,21 @@
       "branch": "JP"
     },
     {
+      "id": "XggYchzHzHE",
+      "date": "2026-08-11",
+      "dateLabel": "08/11 (火)",
+      "time": "19:30",
+      "startsAt": "2026-08-11T19:30:00+09:00",
+      "name": "虎金妃笑虎",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=XggYchzHzHE",
+      "videoId": "XggYchzHzHE",
+      "thumbnail": "https://img.youtube.com/vi/XggYchzHzHE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "F9gUWJmNbao",
       "date": "2026-08-11",
       "dateLabel": "08/11 (火)",
@@ -9506,6 +9521,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "eYrafNrUKnw",
+      "date": "2026-08-11",
+      "dateLabel": "08/11 (火)",
+      "time": "20:21",
+      "startsAt": "2026-08-11T20:21:00+09:00",
+      "name": "音乃瀬奏",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=eYrafNrUKnw",
+      "videoId": "eYrafNrUKnw",
+      "thumbnail": "https://img.youtube.com/vi/eYrafNrUKnw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "kEa2wHboln0",
@@ -9656,6 +9686,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "ff-wBqeRj5Q",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "19:00",
+      "startsAt": "2026-08-12T19:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ff-wBqeRj5Q",
+      "videoId": "ff-wBqeRj5Q",
+      "thumbnail": "https://img.youtube.com/vi/ff-wBqeRj5Q/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "Sp1jn754slE",

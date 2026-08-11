@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T15:14:17.118Z",
+  "generatedAt": "2026-08-11T16:14:25.817Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -9778,6 +9778,51 @@
       "branch": "EN"
     },
     {
+      "id": "3J-Hl_6ib_E",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "00:57",
+      "startsAt": "2026-08-12T00:57:00+09:00",
+      "name": "アキロゼ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=3J-Hl_6ib_E",
+      "videoId": "3J-Hl_6ib_E",
+      "thumbnail": "https://img.youtube.com/vi/3J-Hl_6ib_E/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "xc_-T6pbSOE",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "00:59",
+      "startsAt": "2026-08-12T00:59:00+09:00",
+      "name": "不知火フレア",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=xc_-T6pbSOE",
+      "videoId": "xc_-T6pbSOE",
+      "thumbnail": "https://img.youtube.com/vi/xc_-T6pbSOE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "v-wUINXT4rc",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "07:00",
+      "startsAt": "2026-08-12T07:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=v-wUINXT4rc",
+      "videoId": "v-wUINXT4rc",
+      "thumbnail": "https://img.youtube.com/vi/v-wUINXT4rc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "6qwgYwiHv6w",
       "date": "2026-08-12",
       "dateLabel": "08/12 (水)",
@@ -9851,6 +9896,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "af62XX7MjHg",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "18:00",
+      "startsAt": "2026-08-12T18:00:00+09:00",
+      "name": "姫森ルーナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=af62XX7MjHg",
+      "videoId": "af62XX7MjHg",
+      "thumbnail": "https://img.youtube.com/vi/af62XX7MjHg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "ff-wBqeRj5Q",

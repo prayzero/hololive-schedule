@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T07:48:11.828Z",
+  "generatedAt": "2026-08-11T08:17:39.766Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -9193,6 +9193,36 @@
       "branch": "JP"
     },
     {
+      "id": "1w2Eh1vHITw",
+      "date": "2026-08-11",
+      "dateLabel": "08/11 (火)",
+      "time": "17:00",
+      "startsAt": "2026-08-11T17:00:00+09:00",
+      "name": "轟はじめ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=1w2Eh1vHITw",
+      "videoId": "1w2Eh1vHITw",
+      "thumbnail": "https://img.youtube.com/vi/1w2Eh1vHITw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "uFLvDi2X7-0",
+      "date": "2026-08-11",
+      "dateLabel": "08/11 (火)",
+      "time": "17:00",
+      "startsAt": "2026-08-11T17:00:00+09:00",
+      "name": "癒月ちょこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=uFLvDi2X7-0",
+      "videoId": "uFLvDi2X7-0",
+      "thumbnail": "https://img.youtube.com/vi/uFLvDi2X7-0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "x6Glnumj_vU",
       "date": "2026-08-11",
       "dateLabel": "08/11 (火)",
@@ -9253,6 +9283,21 @@
       "branch": "JP"
     },
     {
+      "id": "F9gUWJmNbao",
+      "date": "2026-08-11",
+      "dateLabel": "08/11 (火)",
+      "time": "20:00",
+      "startsAt": "2026-08-11T20:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=F9gUWJmNbao",
+      "videoId": "F9gUWJmNbao",
+      "thumbnail": "https://img.youtube.com/vi/F9gUWJmNbao/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "kEa2wHboln0",
       "date": "2026-08-11",
       "dateLabel": "08/11 (火)",
@@ -9278,6 +9323,21 @@
       "url": "https://www.youtube.com/watch?v=qp1bA1A5bTQ",
       "videoId": "qp1bA1A5bTQ",
       "thumbnail": "https://img.youtube.com/vi/qp1bA1A5bTQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "EjqKlJcmIqY",
+      "date": "2026-08-11",
+      "dateLabel": "08/11 (火)",
+      "time": "22:00",
+      "startsAt": "2026-08-11T22:00:00+09:00",
+      "name": "白上フブキ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=EjqKlJcmIqY",
+      "videoId": "EjqKlJcmIqY",
+      "thumbnail": "https://img.youtube.com/vi/EjqKlJcmIqY/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -9356,6 +9416,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "gLvderBFq8s",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "12:00",
+      "startsAt": "2026-08-12T12:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=gLvderBFq8s",
+      "videoId": "gLvderBFq8s",
+      "thumbnail": "https://img.youtube.com/vi/gLvderBFq8s/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "Sp1jn754slE",

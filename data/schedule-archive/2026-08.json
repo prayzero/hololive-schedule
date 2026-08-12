@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T13:41:52.771Z",
+  "generatedAt": "2026-08-12T14:47:40.580Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -10486,13 +10486,28 @@
       "id": "jED6mXsIzVU",
       "date": "2026-08-12",
       "dateLabel": "08/12 (水)",
-      "time": "23:00",
-      "startsAt": "2026-08-12T23:00:00+09:00",
+      "time": "23:01",
+      "startsAt": "2026-08-12T23:01:00+09:00",
       "name": "鷹嶺ルイ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=jED6mXsIzVU",
       "videoId": "jED6mXsIzVU",
       "thumbnail": "https://img.youtube.com/vi/jED6mXsIzVU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "hnZcDxON31g",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "00:00",
+      "startsAt": "2026-08-13T00:00:00+09:00",
+      "name": "癒月ちょこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=hnZcDxON31g",
+      "videoId": "hnZcDxON31g",
+      "thumbnail": "https://img.youtube.com/vi/hnZcDxON31g/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -10526,6 +10541,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "rWVv5hizTNU",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "10:00",
+      "startsAt": "2026-08-13T10:00:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=rWVv5hizTNU",
+      "videoId": "rWVv5hizTNU",
+      "thumbnail": "https://img.youtube.com/vi/rWVv5hizTNU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "7HIOOoU_Hjs",

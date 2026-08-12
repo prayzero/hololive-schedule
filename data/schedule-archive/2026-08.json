@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T14:47:40.580Z",
+  "generatedAt": "2026-08-12T15:44:46.421Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -10498,11 +10498,26 @@
       "branch": "JP"
     },
     {
+      "id": "UGxGoeCQhKw",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "23:46",
+      "startsAt": "2026-08-12T23:46:00+09:00",
+      "name": "ときのそら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=UGxGoeCQhKw",
+      "videoId": "UGxGoeCQhKw",
+      "thumbnail": "https://img.youtube.com/vi/UGxGoeCQhKw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "hnZcDxON31g",
       "date": "2026-08-13",
       "dateLabel": "08/13 (木)",
-      "time": "00:00",
-      "startsAt": "2026-08-13T00:00:00+09:00",
+      "time": "00:06",
+      "startsAt": "2026-08-13T00:06:00+09:00",
       "name": "癒月ちょこ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=hnZcDxON31g",
@@ -10628,6 +10643,36 @@
       "url": "https://www.youtube.com/watch?v=yNYk6epsweA",
       "videoId": "yNYk6epsweA",
       "thumbnail": "https://img.youtube.com/vi/yNYk6epsweA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "9lZHdgifCFU",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "12:00",
+      "startsAt": "2026-08-13T12:00:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=9lZHdgifCFU",
+      "videoId": "9lZHdgifCFU",
+      "thumbnail": "https://img.youtube.com/vi/9lZHdgifCFU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "glvpySalt-Q",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "20:00",
+      "startsAt": "2026-08-13T20:00:00+09:00",
+      "name": "白上フブキ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=glvpySalt-Q",
+      "videoId": "glvpySalt-Q",
+      "thumbnail": "https://img.youtube.com/vi/glvpySalt-Q/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

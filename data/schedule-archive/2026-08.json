@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T18:42:04.814Z",
+  "generatedAt": "2026-08-12T19:53:32.678Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -10676,6 +10676,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "6a7fyjKrsE0",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "19:00",
+      "startsAt": "2026-08-13T19:00:00+09:00",
+      "name": "姫森ルーナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=6a7fyjKrsE0",
+      "videoId": "6a7fyjKrsE0",
+      "thumbnail": "https://img.youtube.com/vi/6a7fyjKrsE0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "glvpySalt-Q",

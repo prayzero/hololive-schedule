@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T11:14:04.492Z",
+  "generatedAt": "2026-08-12T12:04:27.114Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -10348,21 +10348,6 @@
       "branch": "JP"
     },
     {
-      "id": "5y7kTZoevvk",
-      "date": "2026-08-12",
-      "dateLabel": "08/12 (水)",
-      "time": "21:00",
-      "startsAt": "2026-08-12T21:00:00+09:00",
-      "name": "大神ミオ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=5y7kTZoevvk",
-      "videoId": "5y7kTZoevvk",
-      "thumbnail": "https://img.youtube.com/vi/5y7kTZoevvk/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "xj9Vj-8WAUM",
       "date": "2026-08-12",
       "dateLabel": "08/12 (水)",
@@ -10378,6 +10363,21 @@
       "branch": "JP"
     },
     {
+      "id": "5y7kTZoevvk",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "21:02",
+      "startsAt": "2026-08-12T21:02:00+09:00",
+      "name": "大神ミオ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=5y7kTZoevvk",
+      "videoId": "5y7kTZoevvk",
+      "thumbnail": "https://img.youtube.com/vi/5y7kTZoevvk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "NPIxxZxXIxc",
       "date": "2026-08-12",
       "dateLabel": "08/12 (水)",
@@ -10388,6 +10388,21 @@
       "url": "https://www.youtube.com/watch?v=NPIxxZxXIxc",
       "videoId": "NPIxxZxXIxc",
       "thumbnail": "https://img.youtube.com/vi/NPIxxZxXIxc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Ti2ELlQbuYc",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "22:00",
+      "startsAt": "2026-08-12T22:00:00+09:00",
+      "name": "アキロゼ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Ti2ELlQbuYc",
+      "videoId": "Ti2ELlQbuYc",
+      "thumbnail": "https://img.youtube.com/vi/Ti2ELlQbuYc/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -10436,6 +10451,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "jc7VNRCMAdU",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "08:00",
+      "startsAt": "2026-08-13T08:00:00+09:00",
+      "name": "ReGLOSS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jc7VNRCMAdU",
+      "videoId": "jc7VNRCMAdU",
+      "thumbnail": "https://img.youtube.com/vi/jc7VNRCMAdU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "7HIOOoU_Hjs",
@@ -10538,6 +10568,21 @@
       "url": "https://www.youtube.com/watch?v=4LXKr9l5_Ys",
       "videoId": "4LXKr9l5_Ys",
       "thumbnail": "https://img.youtube.com/vi/4LXKr9l5_Ys/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "hHohoT8mN3w",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "21:00",
+      "startsAt": "2026-08-13T21:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=hHohoT8mN3w",
+      "videoId": "hHohoT8mN3w",
+      "thumbnail": "https://img.youtube.com/vi/hHohoT8mN3w/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

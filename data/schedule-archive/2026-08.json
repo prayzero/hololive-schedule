@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-11T23:21:40.310Z",
+  "generatedAt": "2026-08-12T00:06:16.629Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -9851,6 +9851,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "zv7MWHVx6Go",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "09:00",
+      "startsAt": "2026-08-12T09:00:00+09:00",
+      "name": "尾丸ポルカ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=zv7MWHVx6Go",
+      "videoId": "zv7MWHVx6Go",
+      "thumbnail": "https://img.youtube.com/vi/zv7MWHVx6Go/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "OtOeqica1DM",

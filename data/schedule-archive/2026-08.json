@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T10:18:00.848Z",
+  "generatedAt": "2026-08-12T11:14:04.492Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -10288,11 +10288,26 @@
       "branch": "JP"
     },
     {
-      "id": "zMU_tFPjMKM",
+      "id": "uv2bGdG-lR0",
       "date": "2026-08-12",
       "dateLabel": "08/12 (水)",
       "time": "19:30",
       "startsAt": "2026-08-12T19:30:00+09:00",
+      "name": "虎金妃笑虎",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=uv2bGdG-lR0",
+      "videoId": "uv2bGdG-lR0",
+      "thumbnail": "https://img.youtube.com/vi/uv2bGdG-lR0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "zMU_tFPjMKM",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "19:33",
+      "startsAt": "2026-08-12T19:33:00+09:00",
       "name": "輪堂千速",
       "title": null,
       "url": "https://www.youtube.com/watch?v=zMU_tFPjMKM",
@@ -10321,8 +10336,8 @@
       "id": "5s2MTi_7DBA",
       "date": "2026-08-12",
       "dateLabel": "08/12 (水)",
-      "time": "20:00",
-      "startsAt": "2026-08-12T20:00:00+09:00",
+      "time": "19:59",
+      "startsAt": "2026-08-12T19:59:00+09:00",
       "name": "戌神ころね",
       "title": null,
       "url": "https://www.youtube.com/watch?v=5s2MTi_7DBA",
@@ -10438,6 +10453,21 @@
       "branch": "EN"
     },
     {
+      "id": "rxiP6vMwstg",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "10:00",
+      "startsAt": "2026-08-13T10:00:00+09:00",
+      "name": "Nerissa",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=rxiP6vMwstg",
+      "videoId": "rxiP6vMwstg",
+      "thumbnail": "https://img.youtube.com/vi/rxiP6vMwstg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "dP8UpLts7DE",
       "date": "2026-08-13",
       "dateLabel": "08/13 (木)",
@@ -10493,6 +10523,21 @@
       "url": "https://www.youtube.com/watch?v=QQl5LuSzIvo",
       "videoId": "QQl5LuSzIvo",
       "thumbnail": "https://img.youtube.com/vi/QQl5LuSzIvo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "4LXKr9l5_Ys",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "21:00",
+      "startsAt": "2026-08-13T21:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=4LXKr9l5_Ys",
+      "videoId": "4LXKr9l5_Ys",
+      "thumbnail": "https://img.youtube.com/vi/4LXKr9l5_Ys/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

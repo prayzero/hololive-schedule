@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T12:04:27.114Z",
+  "generatedAt": "2026-08-12T13:41:52.771Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -10348,21 +10348,6 @@
       "branch": "JP"
     },
     {
-      "id": "xj9Vj-8WAUM",
-      "date": "2026-08-12",
-      "dateLabel": "08/12 (水)",
-      "time": "21:00",
-      "startsAt": "2026-08-12T21:00:00+09:00",
-      "name": "不知火フレア",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=xj9Vj-8WAUM",
-      "videoId": "xj9Vj-8WAUM",
-      "thumbnail": "https://img.youtube.com/vi/xj9Vj-8WAUM/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "5y7kTZoevvk",
       "date": "2026-08-12",
       "dateLabel": "08/12 (水)",
@@ -10373,6 +10358,36 @@
       "url": "https://www.youtube.com/watch?v=5y7kTZoevvk",
       "videoId": "5y7kTZoevvk",
       "thumbnail": "https://img.youtube.com/vi/5y7kTZoevvk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "xj9Vj-8WAUM",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "21:02",
+      "startsAt": "2026-08-12T21:02:00+09:00",
+      "name": "不知火フレア",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=xj9Vj-8WAUM",
+      "videoId": "xj9Vj-8WAUM",
+      "thumbnail": "https://img.youtube.com/vi/xj9Vj-8WAUM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "pa0MA7KwOJo",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "21:11",
+      "startsAt": "2026-08-12T21:11:00+09:00",
+      "name": "夏色まつり",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=pa0MA7KwOJo",
+      "videoId": "pa0MA7KwOJo",
+      "thumbnail": "https://img.youtube.com/vi/pa0MA7KwOJo/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -10393,6 +10408,21 @@
       "branch": "JP"
     },
     {
+      "id": "Ki8UXH5QJKg",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "22:00",
+      "startsAt": "2026-08-12T22:00:00+09:00",
+      "name": "Zeta",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Ki8UXH5QJKg",
+      "videoId": "Ki8UXH5QJKg",
+      "thumbnail": "https://img.youtube.com/vi/Ki8UXH5QJKg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "Ti2ELlQbuYc",
       "date": "2026-08-12",
       "dateLabel": "08/12 (水)",
@@ -10411,8 +10441,8 @@
       "id": "6ipiYsirbRg",
       "date": "2026-08-12",
       "dateLabel": "08/12 (水)",
-      "time": "22:00",
-      "startsAt": "2026-08-12T22:00:00+09:00",
+      "time": "22:04",
+      "startsAt": "2026-08-12T22:04:00+09:00",
       "name": "さくらみこ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=6ipiYsirbRg",
@@ -10426,8 +10456,8 @@
       "id": "nIDKNyjrong",
       "date": "2026-08-12",
       "dateLabel": "08/12 (水)",
-      "time": "22:30",
-      "startsAt": "2026-08-12T22:30:00+09:00",
+      "time": "22:31",
+      "startsAt": "2026-08-12T22:31:00+09:00",
       "name": "水宮枢",
       "title": null,
       "url": "https://www.youtube.com/watch?v=nIDKNyjrong",
@@ -10436,6 +10466,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "hXctctIKfrA",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "23:00",
+      "startsAt": "2026-08-12T23:00:00+09:00",
+      "name": "雪花ラミィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=hXctctIKfrA",
+      "videoId": "hXctctIKfrA",
+      "thumbnail": "https://img.youtube.com/vi/hXctctIKfrA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "jED6mXsIzVU",
@@ -10451,6 +10496,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "2fA47tQlBUM",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "07:00",
+      "startsAt": "2026-08-13T07:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=2fA47tQlBUM",
+      "videoId": "2fA47tQlBUM",
+      "thumbnail": "https://img.youtube.com/vi/2fA47tQlBUM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "jc7VNRCMAdU",

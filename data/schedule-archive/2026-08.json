@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T16:42:16.429Z",
+  "generatedAt": "2026-08-12T18:42:04.814Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -10663,6 +10663,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "6EF-CWO4PW4",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "17:00",
+      "startsAt": "2026-08-13T17:00:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=6EF-CWO4PW4",
+      "videoId": "6EF-CWO4PW4",
+      "thumbnail": "https://img.youtube.com/vi/6EF-CWO4PW4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "glvpySalt-Q",
       "date": "2026-08-13",
       "dateLabel": "08/13 (木)",
@@ -10733,6 +10748,21 @@
       "url": "https://www.youtube.com/watch?v=4LXKr9l5_Ys",
       "videoId": "4LXKr9l5_Ys",
       "thumbnail": "https://img.youtube.com/vi/4LXKr9l5_Ys/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "tw0N47Z9yTE",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "22:00",
+      "startsAt": "2026-08-13T22:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=tw0N47Z9yTE",
+      "videoId": "tw0N47Z9yTE",
+      "thumbnail": "https://img.youtube.com/vi/tw0N47Z9yTE/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

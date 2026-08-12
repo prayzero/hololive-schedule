@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T02:42:39.372Z",
+  "generatedAt": "2026-08-12T04:30:00.252Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -9943,11 +9943,26 @@
       "branch": "EN"
     },
     {
-      "id": "gLvderBFq8s",
+      "id": "pP3Jwc3bfNM",
       "date": "2026-08-12",
       "dateLabel": "08/12 (水)",
       "time": "12:00",
       "startsAt": "2026-08-12T12:00:00+09:00",
+      "name": "宝鐘マリン",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=pP3Jwc3bfNM",
+      "videoId": "pP3Jwc3bfNM",
+      "thumbnail": "https://img.youtube.com/vi/pP3Jwc3bfNM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "gLvderBFq8s",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "12:03",
+      "startsAt": "2026-08-12T12:03:00+09:00",
       "name": "鷹嶺ルイ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=gLvderBFq8s",
@@ -10063,6 +10078,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "NPIxxZxXIxc",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "22:00",
+      "startsAt": "2026-08-12T22:00:00+09:00",
+      "name": "雪花ラミィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=NPIxxZxXIxc",
+      "videoId": "NPIxxZxXIxc",
+      "thumbnail": "https://img.youtube.com/vi/NPIxxZxXIxc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "nIDKNyjrong",
       "date": "2026-08-12",
       "dateLabel": "08/12 (水)",
@@ -10121,6 +10151,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "wgxqf_qK_nI",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "22:00",
+      "startsAt": "2026-08-13T22:00:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=wgxqf_qK_nI",
+      "videoId": "wgxqf_qK_nI",
+      "thumbnail": "https://img.youtube.com/vi/wgxqf_qK_nI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "Ua9qdaAZhYc",

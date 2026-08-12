@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T00:06:16.629Z",
+  "generatedAt": "2026-08-12T02:42:39.372Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -9868,6 +9868,36 @@
       "branch": "JP"
     },
     {
+      "id": "HpDT2lzfLCI",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "09:36",
+      "startsAt": "2026-08-12T09:36:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=HpDT2lzfLCI",
+      "videoId": "HpDT2lzfLCI",
+      "thumbnail": "https://img.youtube.com/vi/HpDT2lzfLCI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "i4D9CYcVIJQ",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "09:56",
+      "startsAt": "2026-08-12T09:56:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=i4D9CYcVIJQ",
+      "videoId": "i4D9CYcVIJQ",
+      "thumbnail": "https://img.youtube.com/vi/i4D9CYcVIJQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "OtOeqica1DM",
       "date": "2026-08-12",
       "dateLabel": "08/12 (水)",
@@ -9883,16 +9913,31 @@
       "branch": "EN"
     },
     {
-      "id": "i4D9CYcVIJQ",
+      "id": "zBAWGo9zJLc",
       "date": "2026-08-12",
       "dateLabel": "08/12 (水)",
       "time": "10:00",
       "startsAt": "2026-08-12T10:00:00+09:00",
-      "name": "Bijou",
+      "name": "holo EN",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=i4D9CYcVIJQ",
-      "videoId": "i4D9CYcVIJQ",
-      "thumbnail": "https://img.youtube.com/vi/i4D9CYcVIJQ/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=zBAWGo9zJLc",
+      "videoId": "zBAWGo9zJLc",
+      "thumbnail": "https://img.youtube.com/vi/zBAWGo9zJLc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "ELDexlIJKpc",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "11:00",
+      "startsAt": "2026-08-12T11:00:00+09:00",
+      "name": "holo EN",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ELDexlIJKpc",
+      "videoId": "ELDexlIJKpc",
+      "thumbnail": "https://img.youtube.com/vi/ELDexlIJKpc/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"
@@ -9958,6 +10003,21 @@
       "branch": "JP"
     },
     {
+      "id": "kezHd5aVgdk",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "19:00",
+      "startsAt": "2026-08-12T19:00:00+09:00",
+      "name": "宝鐘マリン",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=kezHd5aVgdk",
+      "videoId": "kezHd5aVgdk",
+      "thumbnail": "https://img.youtube.com/vi/kezHd5aVgdk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "Sp1jn754slE",
       "date": "2026-08-12",
       "dateLabel": "08/12 (水)",
@@ -9986,6 +10046,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "z0J4uz00bUg",
+      "date": "2026-08-12",
+      "dateLabel": "08/12 (水)",
+      "time": "21:00",
+      "startsAt": "2026-08-12T21:00:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=z0J4uz00bUg",
+      "videoId": "z0J4uz00bUg",
+      "thumbnail": "https://img.youtube.com/vi/z0J4uz00bUg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "nIDKNyjrong",

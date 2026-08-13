@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T15:12:37.368Z",
+  "generatedAt": "2026-08-13T16:14:23.439Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -11383,6 +11383,36 @@
       "branch": "ID"
     },
     {
+      "id": "THkht21IjV4",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "04:00",
+      "startsAt": "2026-08-14T04:00:00+09:00",
+      "name": "Cecilia",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=THkht21IjV4",
+      "videoId": "THkht21IjV4",
+      "thumbnail": "https://img.youtube.com/vi/THkht21IjV4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "q3ijXBhZDO8",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "07:00",
+      "startsAt": "2026-08-14T07:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=q3ijXBhZDO8",
+      "videoId": "q3ijXBhZDO8",
+      "thumbnail": "https://img.youtube.com/vi/q3ijXBhZDO8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "vPbqQiTE2to",
       "date": "2026-08-14",
       "dateLabel": "08/14 (金)",
@@ -11423,6 +11453,21 @@
       "url": "https://www.youtube.com/watch?v=mnwMod6c7IY",
       "videoId": "mnwMod6c7IY",
       "thumbnail": "https://img.youtube.com/vi/mnwMod6c7IY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "bxP_KFxnwuU",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "12:00",
+      "startsAt": "2026-08-14T12:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=bxP_KFxnwuU",
+      "videoId": "bxP_KFxnwuU",
+      "thumbnail": "https://img.youtube.com/vi/bxP_KFxnwuU/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

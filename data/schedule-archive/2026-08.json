@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T16:14:23.439Z",
+  "generatedAt": "2026-08-13T17:24:21.067Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -11443,6 +11443,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "p01AHtGCZAA",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "10:00",
+      "startsAt": "2026-08-14T10:00:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=p01AHtGCZAA",
+      "videoId": "p01AHtGCZAA",
+      "thumbnail": "https://img.youtube.com/vi/p01AHtGCZAA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "mnwMod6c7IY",
       "date": "2026-08-14",
       "dateLabel": "08/14 (金)",
@@ -11546,6 +11561,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "2dJyOdiLRHA",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "19:30",
+      "startsAt": "2026-08-14T19:30:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=2dJyOdiLRHA",
+      "videoId": "2dJyOdiLRHA",
+      "thumbnail": "https://img.youtube.com/vi/2dJyOdiLRHA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "OjCksETbxpA",

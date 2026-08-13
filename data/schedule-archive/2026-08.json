@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T10:35:08.047Z",
+  "generatedAt": "2026-08-13T11:26:10.636Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -11008,21 +11008,6 @@
       "branch": "JP"
     },
     {
-      "id": "HZxoJiCZPVs",
-      "date": "2026-08-13",
-      "dateLabel": "08/13 (木)",
-      "time": "19:30",
-      "startsAt": "2026-08-13T19:30:00+09:00",
-      "name": "常闇トワ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=HZxoJiCZPVs",
-      "videoId": "HZxoJiCZPVs",
-      "thumbnail": "https://img.youtube.com/vi/HZxoJiCZPVs/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "3_0EWOmGuj8",
       "date": "2026-08-13",
       "dateLabel": "08/13 (木)",
@@ -11038,16 +11023,16 @@
       "branch": "DEV_IS"
     },
     {
-      "id": "glvpySalt-Q",
+      "id": "HZxoJiCZPVs",
       "date": "2026-08-13",
       "dateLabel": "08/13 (木)",
-      "time": "20:00",
-      "startsAt": "2026-08-13T20:00:00+09:00",
-      "name": "白上フブキ",
+      "time": "19:32",
+      "startsAt": "2026-08-13T19:32:00+09:00",
+      "name": "常闇トワ",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=glvpySalt-Q",
-      "videoId": "glvpySalt-Q",
-      "thumbnail": "https://img.youtube.com/vi/glvpySalt-Q/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=HZxoJiCZPVs",
+      "videoId": "HZxoJiCZPVs",
+      "thumbnail": "https://img.youtube.com/vi/HZxoJiCZPVs/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -11078,6 +11063,36 @@
       "url": "https://www.youtube.com/watch?v=QQl5LuSzIvo",
       "videoId": "QQl5LuSzIvo",
       "thumbnail": "https://img.youtube.com/vi/QQl5LuSzIvo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "7faAzzBJUss",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "20:00",
+      "startsAt": "2026-08-13T20:00:00+09:00",
+      "name": "ときのそら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=7faAzzBJUss",
+      "videoId": "7faAzzBJUss",
+      "thumbnail": "https://img.youtube.com/vi/7faAzzBJUss/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "glvpySalt-Q",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "20:01",
+      "startsAt": "2026-08-13T20:01:00+09:00",
+      "name": "白上フブキ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=glvpySalt-Q",
+      "videoId": "glvpySalt-Q",
+      "thumbnail": "https://img.youtube.com/vi/glvpySalt-Q/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T11:26:10.636Z",
+  "generatedAt": "2026-08-13T12:29:32.752Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -11101,8 +11101,8 @@
       "id": "IOhP95fYPTw",
       "date": "2026-08-13",
       "dateLabel": "08/13 (木)",
-      "time": "21:00",
-      "startsAt": "2026-08-13T21:00:00+09:00",
+      "time": "20:59",
+      "startsAt": "2026-08-13T20:59:00+09:00",
       "name": "輪堂千速",
       "title": null,
       "url": "https://www.youtube.com/watch?v=IOhP95fYPTw",
@@ -11111,6 +11111,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "zVRwEclH2sQ",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "21:00",
+      "startsAt": "2026-08-13T21:00:00+09:00",
+      "name": "尾丸ポルカ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=zVRwEclH2sQ",
+      "videoId": "zVRwEclH2sQ",
+      "thumbnail": "https://img.youtube.com/vi/zVRwEclH2sQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "JpGeRUEC-RY",
@@ -11138,6 +11153,21 @@
       "url": "https://www.youtube.com/watch?v=hHohoT8mN3w",
       "videoId": "hHohoT8mN3w",
       "thumbnail": "https://img.youtube.com/vi/hHohoT8mN3w/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "PpxaAfEdhDY",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "21:00",
+      "startsAt": "2026-08-13T21:00:00+09:00",
+      "name": "宝鐘マリン",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=PpxaAfEdhDY",
+      "videoId": "PpxaAfEdhDY",
+      "thumbnail": "https://img.youtube.com/vi/PpxaAfEdhDY/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -11198,6 +11228,21 @@
       "url": "https://www.youtube.com/watch?v=stmI9QkpKuw",
       "videoId": "stmI9QkpKuw",
       "thumbnail": "https://img.youtube.com/vi/stmI9QkpKuw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "4eKNREDzt1o",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "22:00",
+      "startsAt": "2026-08-13T22:00:00+09:00",
+      "name": "百鬼あやめ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=4eKNREDzt1o",
+      "videoId": "4eKNREDzt1o",
+      "thumbnail": "https://img.youtube.com/vi/4eKNREDzt1o/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -11293,6 +11338,21 @@
       "branch": "EN"
     },
     {
+      "id": "lyAcHZIRmK0",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "00:00",
+      "startsAt": "2026-08-14T00:00:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=lyAcHZIRmK0",
+      "videoId": "lyAcHZIRmK0",
+      "thumbnail": "https://img.youtube.com/vi/lyAcHZIRmK0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "vPbqQiTE2to",
       "date": "2026-08-14",
       "dateLabel": "08/14 (金)",
@@ -11348,6 +11408,21 @@
       "url": "https://www.youtube.com/watch?v=sDTz7288GdM",
       "videoId": "sDTz7288GdM",
       "thumbnail": "https://img.youtube.com/vi/sDTz7288GdM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Ebfh3bcgH1g",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "19:00",
+      "startsAt": "2026-08-14T19:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Ebfh3bcgH1g",
+      "videoId": "Ebfh3bcgH1g",
+      "thumbnail": "https://img.youtube.com/vi/Ebfh3bcgH1g/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T04:41:48.811Z",
+  "generatedAt": "2026-08-13T06:08:03.964Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -10708,6 +10708,21 @@
       "branch": "EN"
     },
     {
+      "id": "iJlaYLIjFpE",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "14:15",
+      "startsAt": "2026-08-13T14:15:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=iJlaYLIjFpE",
+      "videoId": "iJlaYLIjFpE",
+      "thumbnail": "https://img.youtube.com/vi/iJlaYLIjFpE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "6EF-CWO4PW4",
       "date": "2026-08-13",
       "dateLabel": "08/13 (木)",
@@ -10723,6 +10738,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "VmOhWVMi0FY",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "19:00",
+      "startsAt": "2026-08-13T19:00:00+09:00",
+      "name": "尾丸ポルカ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=VmOhWVMi0FY",
+      "videoId": "VmOhWVMi0FY",
+      "thumbnail": "https://img.youtube.com/vi/VmOhWVMi0FY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "6a7fyjKrsE0",
       "date": "2026-08-13",
       "dateLabel": "08/13 (木)",
@@ -10736,6 +10766,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "3_0EWOmGuj8",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "19:30",
+      "startsAt": "2026-08-13T19:30:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=3_0EWOmGuj8",
+      "videoId": "3_0EWOmGuj8",
+      "thumbnail": "https://img.youtube.com/vi/3_0EWOmGuj8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "glvpySalt-Q",

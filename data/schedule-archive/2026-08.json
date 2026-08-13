@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T02:41:52.421Z",
+  "generatedAt": "2026-08-13T02:49:40.057Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -10676,6 +10676,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "3O54BcziT2w",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "12:00",
+      "startsAt": "2026-08-13T12:00:00+09:00",
+      "name": "IRyS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=3O54BcziT2w",
+      "videoId": "3O54BcziT2w",
+      "thumbnail": "https://img.youtube.com/vi/3O54BcziT2w/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "6EF-CWO4PW4",

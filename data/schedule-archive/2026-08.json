@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T06:08:03.964Z",
+  "generatedAt": "2026-08-13T07:58:27.669Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -10828,6 +10828,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "JpGeRUEC-RY",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "21:00",
+      "startsAt": "2026-08-13T21:00:00+09:00",
+      "name": "獅白ぼたん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=JpGeRUEC-RY",
+      "videoId": "JpGeRUEC-RY",
+      "thumbnail": "https://img.youtube.com/vi/JpGeRUEC-RY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "hHohoT8mN3w",
       "date": "2026-08-13",
       "dateLabel": "08/13 (木)",
@@ -10948,6 +10963,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "dJHeHywWvnA",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "23:00",
+      "startsAt": "2026-08-13T23:00:00+09:00",
+      "name": "Raora",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=dJHeHywWvnA",
+      "videoId": "dJHeHywWvnA",
+      "thumbnail": "https://img.youtube.com/vi/dJHeHywWvnA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "vPbqQiTE2to",
       "date": "2026-08-14",
       "dateLabel": "08/14 (金)",
@@ -10961,6 +10991,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "mnwMod6c7IY",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "12:00",
+      "startsAt": "2026-08-14T12:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=mnwMod6c7IY",
+      "videoId": "mnwMod6c7IY",
+      "thumbnail": "https://img.youtube.com/vi/mnwMod6c7IY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     }
   ]
 }

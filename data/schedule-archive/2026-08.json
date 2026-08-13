@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T02:49:40.057Z",
+  "generatedAt": "2026-08-13T04:41:48.811Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -10636,8 +10636,8 @@
       "id": "tfpq1SmNJxY",
       "date": "2026-08-13",
       "dateLabel": "08/13 (木)",
-      "time": "12:00",
-      "startsAt": "2026-08-13T12:00:00+09:00",
+      "time": "11:59",
+      "startsAt": "2026-08-13T11:59:00+09:00",
       "name": "博衣こより",
       "title": null,
       "url": "https://www.youtube.com/watch?v=tfpq1SmNJxY",
@@ -10646,6 +10646,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "VfKXEXVCGrU",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "12:00",
+      "startsAt": "2026-08-13T12:00:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=VfKXEXVCGrU",
+      "videoId": "VfKXEXVCGrU",
+      "thumbnail": "https://img.youtube.com/vi/VfKXEXVCGrU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "yNYk6epsweA",
@@ -10751,6 +10766,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "IOhP95fYPTw",
+      "date": "2026-08-13",
+      "dateLabel": "08/13 (木)",
+      "time": "21:00",
+      "startsAt": "2026-08-13T21:00:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=IOhP95fYPTw",
+      "videoId": "IOhP95fYPTw",
+      "thumbnail": "https://img.youtube.com/vi/IOhP95fYPTw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "hHohoT8mN3w",
@@ -10871,6 +10901,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "vPbqQiTE2to",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "07:00",
+      "startsAt": "2026-08-14T07:00:00+09:00",
+      "name": "Shiori",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=vPbqQiTE2to",
+      "videoId": "vPbqQiTE2to",
+      "thumbnail": "https://img.youtube.com/vi/vPbqQiTE2to/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     }
   ]
 }

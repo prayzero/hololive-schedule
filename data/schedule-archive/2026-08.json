@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T18:32:39.849Z",
+  "generatedAt": "2026-08-13T19:41:12.077Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -11386,8 +11386,8 @@
       "id": "THkht21IjV4",
       "date": "2026-08-14",
       "dateLabel": "08/14 (金)",
-      "time": "04:00",
-      "startsAt": "2026-08-14T04:00:00+09:00",
+      "time": "04:07",
+      "startsAt": "2026-08-14T04:07:00+09:00",
       "name": "Cecilia",
       "title": null,
       "url": "https://www.youtube.com/watch?v=THkht21IjV4",
@@ -11503,6 +11503,36 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "1-NyiwtlG3Q",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "18:00",
+      "startsAt": "2026-08-14T18:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=1-NyiwtlG3Q",
+      "videoId": "1-NyiwtlG3Q",
+      "thumbnail": "https://img.youtube.com/vi/1-NyiwtlG3Q/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Ng1wcY3zOhE",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "18:00",
+      "startsAt": "2026-08-14T18:00:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Ng1wcY3zOhE",
+      "videoId": "Ng1wcY3zOhE",
+      "thumbnail": "https://img.youtube.com/vi/Ng1wcY3zOhE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "TTglolfRiHU",
       "date": "2026-08-14",
       "dateLabel": "08/14 (金)",
@@ -11603,6 +11633,36 @@
       "url": "https://www.youtube.com/watch?v=yauceJCbeyc",
       "videoId": "yauceJCbeyc",
       "thumbnail": "https://img.youtube.com/vi/yauceJCbeyc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "b6qH2m7eQVM",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "22:00",
+      "startsAt": "2026-08-14T22:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=b6qH2m7eQVM",
+      "videoId": "b6qH2m7eQVM",
+      "thumbnail": "https://img.youtube.com/vi/b6qH2m7eQVM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "MpMD-n6dJhU",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "22:00",
+      "startsAt": "2026-08-14T22:00:00+09:00",
+      "name": "猫又おかゆ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=MpMD-n6dJhU",
+      "videoId": "MpMD-n6dJhU",
+      "thumbnail": "https://img.youtube.com/vi/MpMD-n6dJhU/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -11711,6 +11771,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "zGr5cfKAeTw",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "22:00",
+      "startsAt": "2026-08-15T22:00:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=zGr5cfKAeTw",
+      "videoId": "zGr5cfKAeTw",
+      "thumbnail": "https://img.youtube.com/vi/zGr5cfKAeTw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     }
   ]
 }

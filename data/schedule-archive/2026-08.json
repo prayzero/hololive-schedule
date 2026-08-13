@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-13T17:24:21.067Z",
+  "generatedAt": "2026-08-13T18:32:39.849Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -11563,6 +11563,21 @@
       "branch": "JP"
     },
     {
+      "id": "Ia2dFm-y7h8",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "19:00",
+      "startsAt": "2026-08-14T19:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Ia2dFm-y7h8",
+      "videoId": "Ia2dFm-y7h8",
+      "thumbnail": "https://img.youtube.com/vi/Ia2dFm-y7h8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "2dJyOdiLRHA",
       "date": "2026-08-14",
       "dateLabel": "08/14 (金)",
@@ -11576,6 +11591,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "yauceJCbeyc",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "20:00",
+      "startsAt": "2026-08-14T20:00:00+09:00",
+      "name": "白上フブキ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=yauceJCbeyc",
+      "videoId": "yauceJCbeyc",
+      "thumbnail": "https://img.youtube.com/vi/yauceJCbeyc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "OjCksETbxpA",

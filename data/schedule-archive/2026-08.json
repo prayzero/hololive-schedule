@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T18:32:36.691Z",
+  "generatedAt": "2026-08-14T20:51:24.665Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12611,6 +12611,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
+    },
+    {
+      "id": "xNlS-8BPLXc",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "10:00",
+      "startsAt": "2026-08-16T10:00:00+09:00",
+      "name": "Shiori",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=xNlS-8BPLXc",
+      "videoId": "xNlS-8BPLXc",
+      "thumbnail": "https://img.youtube.com/vi/xNlS-8BPLXc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "dQoSezn8UGc",

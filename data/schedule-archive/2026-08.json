@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T22:45:07.035Z",
+  "generatedAt": "2026-08-14T23:08:39.298Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12301,28 +12301,13 @@
       "id": "jcti8pZymmE",
       "date": "2026-08-15",
       "dateLabel": "08/15 (土)",
-      "time": "08:00",
-      "startsAt": "2026-08-15T08:00:00+09:00",
+      "time": "07:58",
+      "startsAt": "2026-08-15T07:58:00+09:00",
       "name": "Bijou",
       "title": null,
       "url": "https://www.youtube.com/watch?v=jcti8pZymmE",
       "videoId": "jcti8pZymmE",
       "thumbnail": "https://img.youtube.com/vi/jcti8pZymmE/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "EN"
-    },
-    {
-      "id": "OjCksETbxpA",
-      "date": "2026-08-15",
-      "dateLabel": "08/15 (土)",
-      "time": "08:00",
-      "startsAt": "2026-08-15T08:00:00+09:00",
-      "name": "Calli",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=OjCksETbxpA",
-      "videoId": "OjCksETbxpA",
-      "thumbnail": "https://img.youtube.com/vi/OjCksETbxpA/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"
@@ -12341,6 +12326,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "OjCksETbxpA",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "08:30",
+      "startsAt": "2026-08-15T08:30:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=OjCksETbxpA",
+      "videoId": "OjCksETbxpA",
+      "thumbnail": "https://img.youtube.com/vi/OjCksETbxpA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "tFr6VNfevpY",

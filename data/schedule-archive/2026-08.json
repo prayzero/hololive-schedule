@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T22:08:38.725Z",
+  "generatedAt": "2026-08-14T22:45:07.035Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12491,6 +12491,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "B_1-BaxRyJU",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "18:00",
+      "startsAt": "2026-08-15T18:00:00+09:00",
+      "name": "獅白ぼたん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=B_1-BaxRyJU",
+      "videoId": "B_1-BaxRyJU",
+      "thumbnail": "https://img.youtube.com/vi/B_1-BaxRyJU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "GODDmf2BKb8",

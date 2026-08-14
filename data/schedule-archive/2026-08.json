@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T04:31:37.823Z",
+  "generatedAt": "2026-08-14T06:03:44.409Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -11668,11 +11668,26 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "hCz4MudyiDI",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "13:52",
+      "startsAt": "2026-08-14T13:52:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=hCz4MudyiDI",
+      "videoId": "hCz4MudyiDI",
+      "thumbnail": "https://img.youtube.com/vi/hCz4MudyiDI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "zvfm_X8W8wQ",
       "date": "2026-08-14",
       "dateLabel": "08/14 (金)",
-      "time": "14:30",
-      "startsAt": "2026-08-14T14:30:00+09:00",
+      "time": "14:02",
+      "startsAt": "2026-08-14T14:02:00+09:00",
       "name": "輪堂千速",
       "title": null,
       "url": "https://www.youtube.com/watch?v=zvfm_X8W8wQ",
@@ -11681,6 +11696,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "KbHHkeK_rQk",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "16:00",
+      "startsAt": "2026-08-14T16:00:00+09:00",
+      "name": "一条莉々華",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=KbHHkeK_rQk",
+      "videoId": "KbHHkeK_rQk",
+      "thumbnail": "https://img.youtube.com/vi/KbHHkeK_rQk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "c7E72KsylSg",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "16:00",
+      "startsAt": "2026-08-14T16:00:00+09:00",
+      "name": "Kaela",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=c7E72KsylSg",
+      "videoId": "c7E72KsylSg",
+      "thumbnail": "https://img.youtube.com/vi/c7E72KsylSg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "sDTz7288GdM",

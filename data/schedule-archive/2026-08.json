@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T06:03:44.409Z",
+  "generatedAt": "2026-08-14T07:46:49.319Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -11701,8 +11701,8 @@
       "id": "KbHHkeK_rQk",
       "date": "2026-08-14",
       "dateLabel": "08/14 (金)",
-      "time": "16:00",
-      "startsAt": "2026-08-14T16:00:00+09:00",
+      "time": "16:01",
+      "startsAt": "2026-08-14T16:01:00+09:00",
       "name": "一条莉々華",
       "title": null,
       "url": "https://www.youtube.com/watch?v=KbHHkeK_rQk",
@@ -11716,8 +11716,8 @@
       "id": "c7E72KsylSg",
       "date": "2026-08-14",
       "dateLabel": "08/14 (金)",
-      "time": "16:00",
-      "startsAt": "2026-08-14T16:00:00+09:00",
+      "time": "16:14",
+      "startsAt": "2026-08-14T16:14:00+09:00",
       "name": "Kaela",
       "title": null,
       "url": "https://www.youtube.com/watch?v=c7E72KsylSg",
@@ -11771,6 +11771,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "Am8LfnyyHO0",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "18:00",
+      "startsAt": "2026-08-14T18:00:00+09:00",
+      "name": "風真いろは",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Am8LfnyyHO0",
+      "videoId": "Am8LfnyyHO0",
+      "thumbnail": "https://img.youtube.com/vi/Am8LfnyyHO0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "TTglolfRiHU",
@@ -11858,6 +11873,21 @@
       "url": "https://www.youtube.com/watch?v=yauceJCbeyc",
       "videoId": "yauceJCbeyc",
       "thumbnail": "https://img.youtube.com/vi/yauceJCbeyc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "trGJQS-eeEY",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "22:00",
+      "startsAt": "2026-08-14T22:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=trGJQS-eeEY",
+      "videoId": "trGJQS-eeEY",
+      "thumbnail": "https://img.youtube.com/vi/trGJQS-eeEY/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

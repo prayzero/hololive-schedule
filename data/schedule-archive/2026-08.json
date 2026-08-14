@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T12:02:11.553Z",
+  "generatedAt": "2026-08-14T13:35:51.552Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12121,8 +12121,8 @@
       "id": "WT80XL8oxnI",
       "date": "2026-08-14",
       "dateLabel": "08/14 (金)",
-      "time": "21:00",
-      "startsAt": "2026-08-14T21:00:00+09:00",
+      "time": "20:59",
+      "startsAt": "2026-08-14T20:59:00+09:00",
       "name": "兎田ぺこら",
       "title": null,
       "url": "https://www.youtube.com/watch?v=WT80XL8oxnI",
@@ -12136,8 +12136,8 @@
       "id": "TgXh5pU1NRA",
       "date": "2026-08-14",
       "dateLabel": "08/14 (金)",
-      "time": "21:00",
-      "startsAt": "2026-08-14T21:00:00+09:00",
+      "time": "21:01",
+      "startsAt": "2026-08-14T21:01:00+09:00",
       "name": "Ollie",
       "title": null,
       "url": "https://www.youtube.com/watch?v=TgXh5pU1NRA",
@@ -12146,36 +12146,6 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
-    },
-    {
-      "id": "trGJQS-eeEY",
-      "date": "2026-08-14",
-      "dateLabel": "08/14 (金)",
-      "time": "22:00",
-      "startsAt": "2026-08-14T22:00:00+09:00",
-      "name": "角巻わため",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=trGJQS-eeEY",
-      "videoId": "trGJQS-eeEY",
-      "thumbnail": "https://img.youtube.com/vi/trGJQS-eeEY/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
-      "id": "b6qH2m7eQVM",
-      "date": "2026-08-14",
-      "dateLabel": "08/14 (金)",
-      "time": "22:00",
-      "startsAt": "2026-08-14T22:00:00+09:00",
-      "name": "大空スバル",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=b6qH2m7eQVM",
-      "videoId": "b6qH2m7eQVM",
-      "thumbnail": "https://img.youtube.com/vi/b6qH2m7eQVM/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
     },
     {
       "id": "MpMD-n6dJhU",
@@ -12193,11 +12163,41 @@
       "branch": "JP"
     },
     {
-      "id": "qB7ffJDq2-4",
+      "id": "FbNuUcCHoCM",
       "date": "2026-08-14",
       "dateLabel": "08/14 (金)",
       "time": "22:00",
       "startsAt": "2026-08-14T22:00:00+09:00",
+      "name": "Risu",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=FbNuUcCHoCM",
+      "videoId": "FbNuUcCHoCM",
+      "thumbnail": "https://img.youtube.com/vi/FbNuUcCHoCM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "b6qH2m7eQVM",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "22:01",
+      "startsAt": "2026-08-14T22:01:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=b6qH2m7eQVM",
+      "videoId": "b6qH2m7eQVM",
+      "thumbnail": "https://img.youtube.com/vi/b6qH2m7eQVM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "qB7ffJDq2-4",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "22:03",
+      "startsAt": "2026-08-14T22:03:00+09:00",
       "name": "不知火フレア",
       "title": null,
       "url": "https://www.youtube.com/watch?v=qB7ffJDq2-4",
@@ -12208,19 +12208,34 @@
       "branch": "JP"
     },
     {
-      "id": "sJW28uTPwv8",
+      "id": "trGJQS-eeEY",
       "date": "2026-08-14",
       "dateLabel": "08/14 (金)",
-      "time": "23:00",
-      "startsAt": "2026-08-14T23:00:00+09:00",
-      "name": "Iofi",
+      "time": "22:04",
+      "startsAt": "2026-08-14T22:04:00+09:00",
+      "name": "角巻わため",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=sJW28uTPwv8",
-      "videoId": "sJW28uTPwv8",
-      "thumbnail": "https://img.youtube.com/vi/sJW28uTPwv8/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=trGJQS-eeEY",
+      "videoId": "trGJQS-eeEY",
+      "thumbnail": "https://img.youtube.com/vi/trGJQS-eeEY/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
-      "branch": "ID"
+      "branch": "JP"
+    },
+    {
+      "id": "2He1_YXzJYU",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "00:00",
+      "startsAt": "2026-08-15T00:00:00+09:00",
+      "name": "癒月ちょこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=2He1_YXzJYU",
+      "videoId": "2He1_YXzJYU",
+      "thumbnail": "https://img.youtube.com/vi/2He1_YXzJYU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "WVhijZnCHN0",
@@ -12491,6 +12506,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "sJW28uTPwv8",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "23:00",
+      "startsAt": "2026-08-15T23:00:00+09:00",
+      "name": "Iofi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=sJW28uTPwv8",
+      "videoId": "sJW28uTPwv8",
+      "thumbnail": "https://img.youtube.com/vi/sJW28uTPwv8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     }
   ]
 }

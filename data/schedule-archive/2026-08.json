@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T00:06:46.652Z",
+  "generatedAt": "2026-08-14T02:44:44.271Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -11488,16 +11488,61 @@
       "branch": "EN"
     },
     {
+      "id": "82HBW9ov1UQ",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "09:20",
+      "startsAt": "2026-08-14T09:20:00+09:00",
+      "name": "Raora",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=82HBW9ov1UQ",
+      "videoId": "82HBW9ov1UQ",
+      "thumbnail": "https://img.youtube.com/vi/82HBW9ov1UQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "p01AHtGCZAA",
       "date": "2026-08-14",
       "dateLabel": "08/14 (金)",
-      "time": "10:00",
-      "startsAt": "2026-08-14T10:00:00+09:00",
+      "time": "09:56",
+      "startsAt": "2026-08-14T09:56:00+09:00",
       "name": "Bijou",
       "title": null,
       "url": "https://www.youtube.com/watch?v=p01AHtGCZAA",
       "videoId": "p01AHtGCZAA",
       "thumbnail": "https://img.youtube.com/vi/p01AHtGCZAA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "4B70Ewic9eY",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "10:00",
+      "startsAt": "2026-08-14T10:00:00+09:00",
+      "name": "holo EN",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=4B70Ewic9eY",
+      "videoId": "4B70Ewic9eY",
+      "thumbnail": "https://img.youtube.com/vi/4B70Ewic9eY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "rMlTqivjSRk",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "11:00",
+      "startsAt": "2026-08-14T11:00:00+09:00",
+      "name": "holo EN",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=rMlTqivjSRk",
+      "videoId": "rMlTqivjSRk",
+      "thumbnail": "https://img.youtube.com/vi/rMlTqivjSRk/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"
@@ -11533,6 +11578,21 @@
       "branch": "JP"
     },
     {
+      "id": "pgABdjuUoAg",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "12:00",
+      "startsAt": "2026-08-14T12:00:00+09:00",
+      "name": "Kiara",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=pgABdjuUoAg",
+      "videoId": "pgABdjuUoAg",
+      "thumbnail": "https://img.youtube.com/vi/pgABdjuUoAg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "zvfm_X8W8wQ",
       "date": "2026-08-14",
       "dateLabel": "08/14 (金)",
@@ -11546,6 +11606,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "sDTz7288GdM",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "17:30",
+      "startsAt": "2026-08-14T17:30:00+09:00",
+      "name": "ロボ子さん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=sDTz7288GdM",
+      "videoId": "sDTz7288GdM",
+      "thumbnail": "https://img.youtube.com/vi/sDTz7288GdM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "1-NyiwtlG3Q",
@@ -11588,21 +11663,6 @@
       "url": "https://www.youtube.com/watch?v=TTglolfRiHU",
       "videoId": "TTglolfRiHU",
       "thumbnail": "https://img.youtube.com/vi/TTglolfRiHU/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
-      "id": "sDTz7288GdM",
-      "date": "2026-08-14",
-      "dateLabel": "08/14 (金)",
-      "time": "18:00",
-      "startsAt": "2026-08-14T18:00:00+09:00",
-      "name": "ロボ子さん",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=sDTz7288GdM",
-      "videoId": "sDTz7288GdM",
-      "thumbnail": "https://img.youtube.com/vi/sDTz7288GdM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -11711,6 +11771,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "WVhijZnCHN0",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "00:00",
+      "startsAt": "2026-08-15T00:00:00+09:00",
+      "name": "Raora",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=WVhijZnCHN0",
+      "videoId": "WVhijZnCHN0",
+      "thumbnail": "https://img.youtube.com/vi/WVhijZnCHN0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "OjCksETbxpA",

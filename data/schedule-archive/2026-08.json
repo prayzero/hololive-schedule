@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T10:14:19.097Z",
+  "generatedAt": "2026-08-14T11:12:35.847Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12061,28 +12061,13 @@
       "id": "2dJyOdiLRHA",
       "date": "2026-08-14",
       "dateLabel": "08/14 (金)",
-      "time": "19:30",
-      "startsAt": "2026-08-14T19:30:00+09:00",
+      "time": "19:32",
+      "startsAt": "2026-08-14T19:32:00+09:00",
       "name": "綺々羅々ヴィヴィ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=2dJyOdiLRHA",
       "videoId": "2dJyOdiLRHA",
       "thumbnail": "https://img.youtube.com/vi/2dJyOdiLRHA/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "DEV_IS"
-    },
-    {
-      "id": "v2AgNSsqnMw",
-      "date": "2026-08-14",
-      "dateLabel": "08/14 (金)",
-      "time": "20:00",
-      "startsAt": "2026-08-14T20:00:00+09:00",
-      "name": "輪堂千速",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=v2AgNSsqnMw",
-      "videoId": "v2AgNSsqnMw",
-      "thumbnail": "https://img.youtube.com/vi/v2AgNSsqnMw/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
@@ -12116,6 +12101,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "v2AgNSsqnMw",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "20:01",
+      "startsAt": "2026-08-14T20:01:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=v2AgNSsqnMw",
+      "videoId": "v2AgNSsqnMw",
+      "thumbnail": "https://img.youtube.com/vi/v2AgNSsqnMw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "WT80XL8oxnI",

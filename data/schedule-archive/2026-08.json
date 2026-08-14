@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T07:46:49.319Z",
+  "generatedAt": "2026-08-14T08:52:56.755Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -11728,6 +11728,66 @@
       "branch": "ID"
     },
     {
+      "id": "nkRlNGD-6Lw",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "17:00",
+      "startsAt": "2026-08-14T17:00:00+09:00",
+      "name": "轟はじめ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=nkRlNGD-6Lw",
+      "videoId": "nkRlNGD-6Lw",
+      "thumbnail": "https://img.youtube.com/vi/nkRlNGD-6Lw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "Bub4UZ98l60",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "17:00",
+      "startsAt": "2026-08-14T17:00:00+09:00",
+      "name": "尾丸ポルカ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Bub4UZ98l60",
+      "videoId": "Bub4UZ98l60",
+      "thumbnail": "https://img.youtube.com/vi/Bub4UZ98l60/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "pahhIbgxe_k",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "17:00",
+      "startsAt": "2026-08-14T17:00:00+09:00",
+      "name": "癒月ちょこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=pahhIbgxe_k",
+      "videoId": "pahhIbgxe_k",
+      "thumbnail": "https://img.youtube.com/vi/pahhIbgxe_k/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "wf0nLNq9Zt8",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "17:00",
+      "startsAt": "2026-08-14T17:00:00+09:00",
+      "name": "ロボ子さん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=wf0nLNq9Zt8",
+      "videoId": "wf0nLNq9Zt8",
+      "thumbnail": "https://img.youtube.com/vi/wf0nLNq9Zt8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "sDTz7288GdM",
       "date": "2026-08-14",
       "dateLabel": "08/14 (金)",
@@ -11863,6 +11923,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "v2AgNSsqnMw",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "20:00",
+      "startsAt": "2026-08-14T20:00:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=v2AgNSsqnMw",
+      "videoId": "v2AgNSsqnMw",
+      "thumbnail": "https://img.youtube.com/vi/v2AgNSsqnMw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "yauceJCbeyc",
       "date": "2026-08-14",
       "dateLabel": "08/14 (金)",
@@ -11923,6 +11998,21 @@
       "branch": "JP"
     },
     {
+      "id": "sJW28uTPwv8",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "23:00",
+      "startsAt": "2026-08-14T23:00:00+09:00",
+      "name": "Iofi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=sJW28uTPwv8",
+      "videoId": "sJW28uTPwv8",
+      "thumbnail": "https://img.youtube.com/vi/sJW28uTPwv8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "WVhijZnCHN0",
       "date": "2026-08-15",
       "dateLabel": "08/15 (土)",
@@ -11951,6 +12041,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "lPzXHx7O-5g",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "08:00",
+      "startsAt": "2026-08-15T08:00:00+09:00",
+      "name": "ReGLOSS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=lPzXHx7O-5g",
+      "videoId": "lPzXHx7O-5g",
+      "thumbnail": "https://img.youtube.com/vi/lPzXHx7O-5g/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "ES5kL2KkvRc",

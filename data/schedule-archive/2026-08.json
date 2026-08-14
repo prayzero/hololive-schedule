@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T13:35:51.552Z",
+  "generatedAt": "2026-08-14T14:38:03.031Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12221,6 +12221,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "cSTLF9s58c0",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "22:52",
+      "startsAt": "2026-08-14T22:52:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=cSTLF9s58c0",
+      "videoId": "cSTLF9s58c0",
+      "thumbnail": "https://img.youtube.com/vi/cSTLF9s58c0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "2He1_YXzJYU",

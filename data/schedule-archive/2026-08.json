@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T11:12:35.847Z",
+  "generatedAt": "2026-08-14T12:02:11.553Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12193,6 +12193,21 @@
       "branch": "JP"
     },
     {
+      "id": "qB7ffJDq2-4",
+      "date": "2026-08-14",
+      "dateLabel": "08/14 (金)",
+      "time": "22:00",
+      "startsAt": "2026-08-14T22:00:00+09:00",
+      "name": "不知火フレア",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=qB7ffJDq2-4",
+      "videoId": "qB7ffJDq2-4",
+      "thumbnail": "https://img.youtube.com/vi/qB7ffJDq2-4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "sJW28uTPwv8",
       "date": "2026-08-14",
       "dateLabel": "08/14 (金)",
@@ -12218,6 +12233,21 @@
       "url": "https://www.youtube.com/watch?v=WVhijZnCHN0",
       "videoId": "WVhijZnCHN0",
       "thumbnail": "https://img.youtube.com/vi/WVhijZnCHN0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "0TVixNrm5KM",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "07:00",
+      "startsAt": "2026-08-15T07:00:00+09:00",
+      "name": "Gigi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=0TVixNrm5KM",
+      "videoId": "0TVixNrm5KM",
+      "thumbnail": "https://img.youtube.com/vi/0TVixNrm5KM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"
@@ -12253,6 +12283,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "tFr6VNfevpY",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "10:00",
+      "startsAt": "2026-08-15T10:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=tFr6VNfevpY",
+      "videoId": "tFr6VNfevpY",
+      "thumbnail": "https://img.youtube.com/vi/tFr6VNfevpY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "ES5kL2KkvRc",
       "date": "2026-08-15",
       "dateLabel": "08/15 (土)",
@@ -12283,6 +12328,21 @@
       "branch": "EN"
     },
     {
+      "id": "SDw5DqWcteI",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "12:00",
+      "startsAt": "2026-08-15T12:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=SDw5DqWcteI",
+      "videoId": "SDw5DqWcteI",
+      "thumbnail": "https://img.youtube.com/vi/SDw5DqWcteI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "mu-xpzcbkd0",
       "date": "2026-08-15",
       "dateLabel": "08/15 (土)",
@@ -12311,6 +12371,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "kht81W2E_SI",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "13:00",
+      "startsAt": "2026-08-15T13:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=kht81W2E_SI",
+      "videoId": "kht81W2E_SI",
+      "thumbnail": "https://img.youtube.com/vi/kht81W2E_SI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "GODDmf2BKb8",
@@ -12401,6 +12476,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "mbeegoeBjx0",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "23:00",
+      "startsAt": "2026-08-15T23:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=mbeegoeBjx0",
+      "videoId": "mbeegoeBjx0",
+      "thumbnail": "https://img.youtube.com/vi/mbeegoeBjx0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     }
   ]
 }

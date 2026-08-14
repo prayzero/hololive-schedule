@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T16:36:25.866Z",
+  "generatedAt": "2026-08-14T17:37:02.617Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12283,6 +12283,21 @@
       "branch": "EN"
     },
     {
+      "id": "jcti8pZymmE",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "08:00",
+      "startsAt": "2026-08-15T08:00:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jcti8pZymmE",
+      "videoId": "jcti8pZymmE",
+      "thumbnail": "https://img.youtube.com/vi/jcti8pZymmE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "OjCksETbxpA",
       "date": "2026-08-15",
       "dateLabel": "08/15 (土)",
@@ -12431,6 +12446,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "pIufAN3Emcc",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "17:55",
+      "startsAt": "2026-08-15T17:55:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=pIufAN3Emcc",
+      "videoId": "pIufAN3Emcc",
+      "thumbnail": "https://img.youtube.com/vi/pIufAN3Emcc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "N3Ll6s2xWt8",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "18:00",
+      "startsAt": "2026-08-15T18:00:00+09:00",
+      "name": "轟はじめ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=N3Ll6s2xWt8",
+      "videoId": "N3Ll6s2xWt8",
+      "thumbnail": "https://img.youtube.com/vi/N3Ll6s2xWt8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "GODDmf2BKb8",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T05:36:20.847Z",
+  "generatedAt": "2026-08-15T05:59:54.808Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12836,6 +12836,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "9vkfsnPy6HM",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "10:00",
+      "startsAt": "2026-08-16T10:00:00+09:00",
+      "name": "Nerissa",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=9vkfsnPy6HM",
+      "videoId": "9vkfsnPy6HM",
+      "thumbnail": "https://img.youtube.com/vi/9vkfsnPy6HM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "xNlS-8BPLXc",

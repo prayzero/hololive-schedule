@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T13:38:46.923Z",
+  "generatedAt": "2026-08-15T14:08:39.927Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -13108,11 +13108,26 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "sJW28uTPwv8",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "22:59",
+      "startsAt": "2026-08-15T22:59:00+09:00",
+      "name": "Iofi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=sJW28uTPwv8",
+      "videoId": "sJW28uTPwv8",
+      "thumbnail": "https://img.youtube.com/vi/sJW28uTPwv8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "mbeegoeBjx0",
       "date": "2026-08-15",
       "dateLabel": "08/15 (土)",
-      "time": "23:00",
-      "startsAt": "2026-08-15T23:00:00+09:00",
+      "time": "23:01",
+      "startsAt": "2026-08-15T23:01:00+09:00",
       "name": "鷹嶺ルイ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=mbeegoeBjx0",
@@ -13126,8 +13141,8 @@
       "id": "1EK2MB_djgc",
       "date": "2026-08-15",
       "dateLabel": "08/15 (土)",
-      "time": "23:00",
-      "startsAt": "2026-08-15T23:00:00+09:00",
+      "time": "23:03",
+      "startsAt": "2026-08-15T23:03:00+09:00",
       "name": "AZKi",
       "title": null,
       "url": "https://www.youtube.com/watch?v=1EK2MB_djgc",
@@ -13136,21 +13151,6 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
-    },
-    {
-      "id": "sJW28uTPwv8",
-      "date": "2026-08-15",
-      "dateLabel": "08/15 (土)",
-      "time": "23:00",
-      "startsAt": "2026-08-15T23:00:00+09:00",
-      "name": "Iofi",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=sJW28uTPwv8",
-      "videoId": "sJW28uTPwv8",
-      "thumbnail": "https://img.youtube.com/vi/sJW28uTPwv8/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "ID"
     },
     {
       "id": "_flEAvR_8RQ",

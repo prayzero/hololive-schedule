@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T01:51:30.677Z",
+  "generatedAt": "2026-08-15T03:01:22.569Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12391,8 +12391,8 @@
       "id": "DHCo3rOJvzo",
       "date": "2026-08-15",
       "dateLabel": "08/15 (土)",
-      "time": "11:30",
-      "startsAt": "2026-08-15T11:30:00+09:00",
+      "time": "11:47",
+      "startsAt": "2026-08-15T11:47:00+09:00",
       "name": "常闇トワ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=DHCo3rOJvzo",
@@ -12401,6 +12401,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "mu-xpzcbkd0",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "11:56",
+      "startsAt": "2026-08-15T11:56:00+09:00",
+      "name": "FUWAMOCO",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=mu-xpzcbkd0",
+      "videoId": "mu-xpzcbkd0",
+      "thumbnail": "https://img.youtube.com/vi/mu-xpzcbkd0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "SDw5DqWcteI",
@@ -12416,21 +12431,6 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
-    },
-    {
-      "id": "mu-xpzcbkd0",
-      "date": "2026-08-15",
-      "dateLabel": "08/15 (土)",
-      "time": "12:00",
-      "startsAt": "2026-08-15T12:00:00+09:00",
-      "name": "FUWAMOCO",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=mu-xpzcbkd0",
-      "videoId": "mu-xpzcbkd0",
-      "thumbnail": "https://img.youtube.com/vi/mu-xpzcbkd0/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "EN"
     },
     {
       "id": "aCPviGMui1w",
@@ -12626,6 +12626,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "Br2Tjs4d3HA",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "22:05",
+      "startsAt": "2026-08-15T22:05:00+09:00",
+      "name": "白銀ノエル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Br2Tjs4d3HA",
+      "videoId": "Br2Tjs4d3HA",
+      "thumbnail": "https://img.youtube.com/vi/Br2Tjs4d3HA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "mbeegoeBjx0",

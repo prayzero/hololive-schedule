@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T20:01:31.707Z",
+  "generatedAt": "2026-08-15T20:35:14.373Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -13423,6 +13423,36 @@
       "branch": "JP"
     },
     {
+      "id": "KDKH8_X6ay8",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "14:00",
+      "startsAt": "2026-08-16T14:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=KDKH8_X6ay8",
+      "videoId": "KDKH8_X6ay8",
+      "thumbnail": "https://img.youtube.com/vi/KDKH8_X6ay8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "m15ViMDzlpA",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "14:00",
+      "startsAt": "2026-08-16T14:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=m15ViMDzlpA",
+      "videoId": "m15ViMDzlpA",
+      "thumbnail": "https://img.youtube.com/vi/m15ViMDzlpA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "NeAx7gIaKtk",
       "date": "2026-08-16",
       "dateLabel": "08/16 (日)",
@@ -13433,6 +13463,21 @@
       "url": "https://www.youtube.com/watch?v=NeAx7gIaKtk",
       "videoId": "NeAx7gIaKtk",
       "thumbnail": "https://img.youtube.com/vi/NeAx7gIaKtk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "GkOLw011iyM",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "18:00",
+      "startsAt": "2026-08-16T18:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=GkOLw011iyM",
+      "videoId": "GkOLw011iyM",
+      "thumbnail": "https://img.youtube.com/vi/GkOLw011iyM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

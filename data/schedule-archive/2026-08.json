@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T14:08:39.927Z",
+  "generatedAt": "2026-08-15T14:43:24.400Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -13156,13 +13156,28 @@
       "id": "_flEAvR_8RQ",
       "date": "2026-08-15",
       "dateLabel": "08/15 (土)",
-      "time": "23:30",
-      "startsAt": "2026-08-15T23:30:00+09:00",
+      "time": "23:32",
+      "startsAt": "2026-08-15T23:32:00+09:00",
       "name": "尾丸ポルカ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=_flEAvR_8RQ",
       "videoId": "_flEAvR_8RQ",
       "thumbnail": "https://img.youtube.com/vi/_flEAvR_8RQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "9T_dbQ8X8F4",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "23:33",
+      "startsAt": "2026-08-15T23:33:00+09:00",
+      "name": "アキロゼ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=9T_dbQ8X8F4",
+      "videoId": "9T_dbQ8X8F4",
+      "thumbnail": "https://img.youtube.com/vi/9T_dbQ8X8F4/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

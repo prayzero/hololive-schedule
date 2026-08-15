@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T12:55:54.355Z",
+  "generatedAt": "2026-08-15T13:38:46.923Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -13003,6 +13003,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "pFGhfBgLoSU",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "21:58",
+      "startsAt": "2026-08-15T21:58:00+09:00",
+      "name": "Kaela",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=pFGhfBgLoSU",
+      "videoId": "pFGhfBgLoSU",
+      "thumbnail": "https://img.youtube.com/vi/pFGhfBgLoSU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "RBLJSCZWi-k",
       "date": "2026-08-15",
       "dateLabel": "08/15 (土)",
@@ -13018,41 +13033,11 @@
       "branch": "JP"
     },
     {
-      "id": "SBXZ3YUMcFg",
-      "date": "2026-08-15",
-      "dateLabel": "08/15 (土)",
-      "time": "22:00",
-      "startsAt": "2026-08-15T22:00:00+09:00",
-      "name": "不知火フレア",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=SBXZ3YUMcFg",
-      "videoId": "SBXZ3YUMcFg",
-      "thumbnail": "https://img.youtube.com/vi/SBXZ3YUMcFg/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
-      "id": "zGr5cfKAeTw",
-      "date": "2026-08-15",
-      "dateLabel": "08/15 (土)",
-      "time": "22:00",
-      "startsAt": "2026-08-15T22:00:00+09:00",
-      "name": "水宮枢",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=zGr5cfKAeTw",
-      "videoId": "zGr5cfKAeTw",
-      "thumbnail": "https://img.youtube.com/vi/zGr5cfKAeTw/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "DEV_IS"
-    },
-    {
       "id": "bhuP-KY1D7Y",
       "date": "2026-08-15",
       "dateLabel": "08/15 (土)",
-      "time": "22:00",
-      "startsAt": "2026-08-15T22:00:00+09:00",
+      "time": "22:01",
+      "startsAt": "2026-08-15T22:01:00+09:00",
       "name": "兎田ぺこら",
       "title": null,
       "url": "https://www.youtube.com/watch?v=bhuP-KY1D7Y",
@@ -13063,26 +13048,11 @@
       "branch": "JP"
     },
     {
-      "id": "pFGhfBgLoSU",
-      "date": "2026-08-15",
-      "dateLabel": "08/15 (土)",
-      "time": "22:00",
-      "startsAt": "2026-08-15T22:00:00+09:00",
-      "name": "Kaela",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=pFGhfBgLoSU",
-      "videoId": "pFGhfBgLoSU",
-      "thumbnail": "https://img.youtube.com/vi/pFGhfBgLoSU/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "ID"
-    },
-    {
       "id": "ZQSvNhq03Tc",
       "date": "2026-08-15",
       "dateLabel": "08/15 (土)",
-      "time": "22:00",
-      "startsAt": "2026-08-15T22:00:00+09:00",
+      "time": "22:03",
+      "startsAt": "2026-08-15T22:03:00+09:00",
       "name": "さくらみこ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=ZQSvNhq03Tc",
@@ -13106,6 +13076,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "SBXZ3YUMcFg",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "22:08",
+      "startsAt": "2026-08-15T22:08:00+09:00",
+      "name": "不知火フレア",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=SBXZ3YUMcFg",
+      "videoId": "SBXZ3YUMcFg",
+      "thumbnail": "https://img.youtube.com/vi/SBXZ3YUMcFg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "zGr5cfKAeTw",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "22:15",
+      "startsAt": "2026-08-15T22:15:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=zGr5cfKAeTw",
+      "videoId": "zGr5cfKAeTw",
+      "thumbnail": "https://img.youtube.com/vi/zGr5cfKAeTw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "mbeegoeBjx0",

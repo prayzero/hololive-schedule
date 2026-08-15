@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T06:54:45.285Z",
+  "generatedAt": "2026-08-15T07:38:56.503Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12568,21 +12568,6 @@
       "branch": "DEV_IS"
     },
     {
-      "id": "pII5pf-EZMM",
-      "date": "2026-08-15",
-      "dateLabel": "08/15 (土)",
-      "time": "16:00",
-      "startsAt": "2026-08-15T16:00:00+09:00",
-      "name": "綺々羅々ヴィヴィ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=pII5pf-EZMM",
-      "videoId": "pII5pf-EZMM",
-      "thumbnail": "https://img.youtube.com/vi/pII5pf-EZMM/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "DEV_IS"
-    },
-    {
       "id": "lXRROlu_sL0",
       "date": "2026-08-15",
       "dateLabel": "08/15 (土)",
@@ -12593,6 +12578,36 @@
       "url": "https://www.youtube.com/watch?v=lXRROlu_sL0",
       "videoId": "lXRROlu_sL0",
       "thumbnail": "https://img.youtube.com/vi/lXRROlu_sL0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "pII5pf-EZMM",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "16:05",
+      "startsAt": "2026-08-15T16:05:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=pII5pf-EZMM",
+      "videoId": "pII5pf-EZMM",
+      "thumbnail": "https://img.youtube.com/vi/pII5pf-EZMM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "NU_51wh_1jw",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "17:30",
+      "startsAt": "2026-08-15T17:30:00+09:00",
+      "name": "ラプラス",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=NU_51wh_1jw",
+      "videoId": "NU_51wh_1jw",
+      "thumbnail": "https://img.youtube.com/vi/NU_51wh_1jw/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -12913,21 +12928,6 @@
       "branch": "EN"
     },
     {
-      "id": "O878b0w9RaI",
-      "date": "2026-08-16",
-      "dateLabel": "08/16 (日)",
-      "time": "10:00",
-      "startsAt": "2026-08-16T10:00:00+09:00",
-      "name": "Shiori",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=O878b0w9RaI",
-      "videoId": "O878b0w9RaI",
-      "thumbnail": "https://img.youtube.com/vi/O878b0w9RaI/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "EN"
-    },
-    {
       "id": "dQoSezn8UGc",
       "date": "2026-08-16",
       "dateLabel": "08/16 (日)",
@@ -12938,6 +12938,21 @@
       "url": "https://www.youtube.com/watch?v=dQoSezn8UGc",
       "videoId": "dQoSezn8UGc",
       "thumbnail": "https://img.youtube.com/vi/dQoSezn8UGc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "O878b0w9RaI",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "12:30",
+      "startsAt": "2026-08-16T12:30:00+09:00",
+      "name": "Shiori",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=O878b0w9RaI",
+      "videoId": "O878b0w9RaI",
+      "thumbnail": "https://img.youtube.com/vi/O878b0w9RaI/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

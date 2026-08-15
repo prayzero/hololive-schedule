@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T03:50:29.250Z",
+  "generatedAt": "2026-08-15T04:21:32.424Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12493,21 +12493,6 @@
       "branch": "EN"
     },
     {
-      "id": "kht81W2E_SI",
-      "date": "2026-08-15",
-      "dateLabel": "08/15 (土)",
-      "time": "13:00",
-      "startsAt": "2026-08-15T13:00:00+09:00",
-      "name": "大空スバル",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=kht81W2E_SI",
-      "videoId": "kht81W2E_SI",
-      "thumbnail": "https://img.youtube.com/vi/kht81W2E_SI/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "IlamoLuHj8c",
       "date": "2026-08-15",
       "dateLabel": "08/15 (土)",
@@ -12518,6 +12503,51 @@
       "url": "https://www.youtube.com/watch?v=IlamoLuHj8c",
       "videoId": "IlamoLuHj8c",
       "thumbnail": "https://img.youtube.com/vi/IlamoLuHj8c/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "V0esiqONIB8",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "13:00",
+      "startsAt": "2026-08-15T13:00:00+09:00",
+      "name": "さくらみこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=V0esiqONIB8",
+      "videoId": "V0esiqONIB8",
+      "thumbnail": "https://img.youtube.com/vi/V0esiqONIB8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "lk_FgI688Sk",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "13:00",
+      "startsAt": "2026-08-15T13:00:00+09:00",
+      "name": "ときのそら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=lk_FgI688Sk",
+      "videoId": "lk_FgI688Sk",
+      "thumbnail": "https://img.youtube.com/vi/lk_FgI688Sk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "kht81W2E_SI",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "13:08",
+      "startsAt": "2026-08-15T13:08:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=kht81W2E_SI",
+      "videoId": "kht81W2E_SI",
+      "thumbnail": "https://img.youtube.com/vi/kht81W2E_SI/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -12641,6 +12671,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "6WEptN7F2Qw",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "21:00",
+      "startsAt": "2026-08-15T21:00:00+09:00",
+      "name": "轟はじめ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=6WEptN7F2Qw",
+      "videoId": "6WEptN7F2Qw",
+      "thumbnail": "https://img.youtube.com/vi/6WEptN7F2Qw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "SO3x5NZnDmI",
@@ -12773,6 +12818,21 @@
       "url": "https://www.youtube.com/watch?v=xNlS-8BPLXc",
       "videoId": "xNlS-8BPLXc",
       "thumbnail": "https://img.youtube.com/vi/xNlS-8BPLXc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "O878b0w9RaI",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "10:00",
+      "startsAt": "2026-08-16T10:00:00+09:00",
+      "name": "Shiori",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=O878b0w9RaI",
+      "videoId": "O878b0w9RaI",
+      "thumbnail": "https://img.youtube.com/vi/O878b0w9RaI/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

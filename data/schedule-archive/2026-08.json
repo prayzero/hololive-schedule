@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T14:43:24.400Z",
+  "generatedAt": "2026-08-15T15:04:30.612Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -13466,6 +13466,66 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
+    },
+    {
+      "id": "dnAcI-ITkzI",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "00:30",
+      "startsAt": "2026-08-17T00:30:00+09:00",
+      "name": "風真いろは",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=dnAcI-ITkzI",
+      "videoId": "dnAcI-ITkzI",
+      "thumbnail": "https://img.youtube.com/vi/dnAcI-ITkzI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "M6EaQONBXrE",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "20:00",
+      "startsAt": "2026-08-17T20:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=M6EaQONBXrE",
+      "videoId": "M6EaQONBXrE",
+      "thumbnail": "https://img.youtube.com/vi/M6EaQONBXrE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "foYXAlJiq68",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "21:00",
+      "startsAt": "2026-08-17T21:00:00+09:00",
+      "name": "ホロライブ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=foYXAlJiq68",
+      "videoId": "foYXAlJiq68",
+      "thumbnail": "https://img.youtube.com/vi/foYXAlJiq68/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "xKhRXOqeFG4",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "23:40",
+      "startsAt": "2026-08-17T23:40:00+09:00",
+      "name": "アキロゼ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=xKhRXOqeFG4",
+      "videoId": "xKhRXOqeFG4",
+      "thumbnail": "https://img.youtube.com/vi/xKhRXOqeFG4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T10:43:52.255Z",
+  "generatedAt": "2026-08-15T11:04:09.716Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12868,21 +12868,6 @@
       "branch": "JP"
     },
     {
-      "id": "HQO7RsTy5rs",
-      "date": "2026-08-15",
-      "dateLabel": "08/15 (土)",
-      "time": "20:00",
-      "startsAt": "2026-08-15T20:00:00+09:00",
-      "name": "姫森ルーナ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=HQO7RsTy5rs",
-      "videoId": "HQO7RsTy5rs",
-      "thumbnail": "https://img.youtube.com/vi/HQO7RsTy5rs/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "xRMrrcNsyJA",
       "date": "2026-08-15",
       "dateLabel": "08/15 (土)",
@@ -12896,6 +12881,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "HQO7RsTy5rs",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "20:01",
+      "startsAt": "2026-08-15T20:01:00+09:00",
+      "name": "姫森ルーナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=HQO7RsTy5rs",
+      "videoId": "HQO7RsTy5rs",
+      "thumbnail": "https://img.youtube.com/vi/HQO7RsTy5rs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "6WEptN7F2Qw",
@@ -13088,6 +13088,21 @@
       "url": "https://www.youtube.com/watch?v=3ZdEw-ePZJ4",
       "videoId": "3ZdEw-ePZJ4",
       "thumbnail": "https://img.youtube.com/vi/3ZdEw-ePZJ4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "-9HYhyLYMrk",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "10:00",
+      "startsAt": "2026-08-16T10:00:00+09:00",
+      "name": "FUWAMOCO",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=-9HYhyLYMrk",
+      "videoId": "-9HYhyLYMrk",
+      "thumbnail": "https://img.youtube.com/vi/-9HYhyLYMrk/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

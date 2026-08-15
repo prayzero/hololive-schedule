@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T09:45:28.899Z",
+  "generatedAt": "2026-08-15T10:08:37.474Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12793,11 +12793,26 @@
       "branch": "JP"
     },
     {
-      "id": "_YVTnfX87Wk",
+      "id": "f5BhrdtVmlQ",
       "date": "2026-08-15",
       "dateLabel": "08/15 (土)",
       "time": "19:00",
       "startsAt": "2026-08-15T19:00:00+09:00",
+      "name": "雪花ラミィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=f5BhrdtVmlQ",
+      "videoId": "f5BhrdtVmlQ",
+      "thumbnail": "https://img.youtube.com/vi/f5BhrdtVmlQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "_YVTnfX87Wk",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "19:04",
+      "startsAt": "2026-08-15T19:04:00+09:00",
       "name": "風真いろは",
       "title": null,
       "url": "https://www.youtube.com/watch?v=_YVTnfX87Wk",
@@ -12851,6 +12866,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "xRMrrcNsyJA",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "20:00",
+      "startsAt": "2026-08-15T20:00:00+09:00",
+      "name": "IRyS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=xRMrrcNsyJA",
+      "videoId": "xRMrrcNsyJA",
+      "thumbnail": "https://img.youtube.com/vi/xRMrrcNsyJA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "6WEptN7F2Qw",
@@ -12941,6 +12971,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "bhuP-KY1D7Y",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "22:00",
+      "startsAt": "2026-08-15T22:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=bhuP-KY1D7Y",
+      "videoId": "bhuP-KY1D7Y",
+      "thumbnail": "https://img.youtube.com/vi/bhuP-KY1D7Y/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "Br2Tjs4d3HA",

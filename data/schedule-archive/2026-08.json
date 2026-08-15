@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T09:16:23.718Z",
+  "generatedAt": "2026-08-15T09:45:28.899Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12998,6 +12998,21 @@
       "url": "https://www.youtube.com/watch?v=yiHLmzLj5Cc",
       "videoId": "yiHLmzLj5Cc",
       "thumbnail": "https://img.youtube.com/vi/yiHLmzLj5Cc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "Ihwugvpw1aY",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "09:00",
+      "startsAt": "2026-08-16T09:00:00+09:00",
+      "name": "虎金妃笑虎",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Ihwugvpw1aY",
+      "videoId": "Ihwugvpw1aY",
+      "thumbnail": "https://img.youtube.com/vi/Ihwugvpw1aY/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"

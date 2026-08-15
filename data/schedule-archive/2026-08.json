@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T08:10:48.684Z",
+  "generatedAt": "2026-08-15T08:49:57.084Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12616,13 +12616,28 @@
       "id": "NU_51wh_1jw",
       "date": "2026-08-15",
       "dateLabel": "08/15 (土)",
-      "time": "17:30",
-      "startsAt": "2026-08-15T17:30:00+09:00",
+      "time": "17:23",
+      "startsAt": "2026-08-15T17:23:00+09:00",
       "name": "ラプラス",
       "title": null,
       "url": "https://www.youtube.com/watch?v=NU_51wh_1jw",
       "videoId": "NU_51wh_1jw",
       "thumbnail": "https://img.youtube.com/vi/NU_51wh_1jw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "jdO3aOVgX20",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "17:30",
+      "startsAt": "2026-08-15T17:30:00+09:00",
+      "name": "宝鐘マリン",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jdO3aOVgX20",
+      "videoId": "jdO3aOVgX20",
+      "thumbnail": "https://img.youtube.com/vi/jdO3aOVgX20/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -12823,6 +12838,21 @@
       "branch": "JP"
     },
     {
+      "id": "n4ExqiRPnmo",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "21:00",
+      "startsAt": "2026-08-15T21:00:00+09:00",
+      "name": "Ollie",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=n4ExqiRPnmo",
+      "videoId": "n4ExqiRPnmo",
+      "thumbnail": "https://img.youtube.com/vi/n4ExqiRPnmo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "zGr5cfKAeTw",
       "date": "2026-08-15",
       "dateLabel": "08/15 (土)",
@@ -12908,6 +12938,21 @@
       "url": "https://www.youtube.com/watch?v=3ZdEw-ePZJ4",
       "videoId": "3ZdEw-ePZJ4",
       "thumbnail": "https://img.youtube.com/vi/3ZdEw-ePZJ4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "kMKr0O8El88",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "10:00",
+      "startsAt": "2026-08-16T10:00:00+09:00",
+      "name": "Gigi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=kMKr0O8El88",
+      "videoId": "kMKr0O8El88",
+      "thumbnail": "https://img.youtube.com/vi/kMKr0O8El88/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T05:59:54.808Z",
+  "generatedAt": "2026-08-15T06:54:45.285Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12553,6 +12553,21 @@
       "branch": "JP"
     },
     {
+      "id": "zlOgEniDVFE",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "15:50",
+      "startsAt": "2026-08-15T15:50:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=zlOgEniDVFE",
+      "videoId": "zlOgEniDVFE",
+      "thumbnail": "https://img.youtube.com/vi/zlOgEniDVFE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "pII5pf-EZMM",
       "date": "2026-08-15",
       "dateLabel": "08/15 (土)",
@@ -12653,6 +12668,21 @@
       "url": "https://www.youtube.com/watch?v=GODDmf2BKb8",
       "videoId": "GODDmf2BKb8",
       "thumbnail": "https://img.youtube.com/vi/GODDmf2BKb8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "_YVTnfX87Wk",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "19:00",
+      "startsAt": "2026-08-15T19:00:00+09:00",
+      "name": "風真いろは",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=_YVTnfX87Wk",
+      "videoId": "_YVTnfX87Wk",
+      "thumbnail": "https://img.youtube.com/vi/_YVTnfX87Wk/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -12838,6 +12868,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "3ZdEw-ePZJ4",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "10:00",
+      "startsAt": "2026-08-16T10:00:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=3ZdEw-ePZJ4",
+      "videoId": "3ZdEw-ePZJ4",
+      "thumbnail": "https://img.youtube.com/vi/3ZdEw-ePZJ4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "9vkfsnPy6HM",
       "date": "2026-08-16",
       "dateLabel": "08/16 (日)",
@@ -12908,6 +12953,21 @@
       "url": "https://www.youtube.com/watch?v=3AbxUNRo5q8",
       "videoId": "3AbxUNRo5q8",
       "thumbnail": "https://img.youtube.com/vi/3AbxUNRo5q8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "NeAx7gIaKtk",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "14:00",
+      "startsAt": "2026-08-16T14:00:00+09:00",
+      "name": "風真いろは",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=NeAx7gIaKtk",
+      "videoId": "NeAx7gIaKtk",
+      "thumbnail": "https://img.youtube.com/vi/NeAx7gIaKtk/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

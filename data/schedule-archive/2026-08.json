@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T15:04:30.612Z",
+  "generatedAt": "2026-08-15T15:33:03.629Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -13213,6 +13213,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "l5zBrRiz0Nk",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "10:00",
+      "startsAt": "2026-08-16T10:00:00+09:00",
+      "name": "白銀ノエル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=l5zBrRiz0Nk",
+      "videoId": "l5zBrRiz0Nk",
+      "thumbnail": "https://img.youtube.com/vi/l5zBrRiz0Nk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "3ZdEw-ePZJ4",
       "date": "2026-08-16",
       "dateLabel": "08/16 (日)",
@@ -13403,6 +13418,21 @@
       "url": "https://www.youtube.com/watch?v=TZjCj_fc1ew",
       "videoId": "TZjCj_fc1ew",
       "thumbnail": "https://img.youtube.com/vi/TZjCj_fc1ew/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "VD3vn1CUj_8",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "20:00",
+      "startsAt": "2026-08-16T20:00:00+09:00",
+      "name": "猫又おかゆ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=VD3vn1CUj_8",
+      "videoId": "VD3vn1CUj_8",
+      "thumbnail": "https://img.youtube.com/vi/VD3vn1CUj_8/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-15T04:21:32.424Z",
+  "generatedAt": "2026-08-15T04:55:34.243Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12548,6 +12548,21 @@
       "url": "https://www.youtube.com/watch?v=kht81W2E_SI",
       "videoId": "kht81W2E_SI",
       "thumbnail": "https://img.youtube.com/vi/kht81W2E_SI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "lXRROlu_sL0",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "16:00",
+      "startsAt": "2026-08-15T16:00:00+09:00",
+      "name": "常闇トワ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=lXRROlu_sL0",
+      "videoId": "lXRROlu_sL0",
+      "thumbnail": "https://img.youtube.com/vi/lXRROlu_sL0/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

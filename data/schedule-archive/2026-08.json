@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T23:42:55.139Z",
+  "generatedAt": "2026-08-15T01:51:30.677Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12343,11 +12343,26 @@
       "branch": "EN"
     },
     {
+      "id": "6LQYX83AcDo",
+      "date": "2026-08-15",
+      "dateLabel": "08/15 (土)",
+      "time": "09:55",
+      "startsAt": "2026-08-15T09:55:00+09:00",
+      "name": "Nerissa",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=6LQYX83AcDo",
+      "videoId": "6LQYX83AcDo",
+      "thumbnail": "https://img.youtube.com/vi/6LQYX83AcDo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "tFr6VNfevpY",
       "date": "2026-08-15",
       "dateLabel": "08/15 (土)",
-      "time": "10:00",
-      "startsAt": "2026-08-15T10:00:00+09:00",
+      "time": "10:02",
+      "startsAt": "2026-08-15T10:02:00+09:00",
       "name": "大空スバル",
       "title": null,
       "url": "https://www.youtube.com/watch?v=tFr6VNfevpY",
@@ -12361,8 +12376,8 @@
       "id": "ES5kL2KkvRc",
       "date": "2026-08-15",
       "dateLabel": "08/15 (土)",
-      "time": "10:00",
-      "startsAt": "2026-08-15T10:00:00+09:00",
+      "time": "10:15",
+      "startsAt": "2026-08-15T10:15:00+09:00",
       "name": "Baelz",
       "title": null,
       "url": "https://www.youtube.com/watch?v=ES5kL2KkvRc",
@@ -12373,19 +12388,19 @@
       "branch": "EN"
     },
     {
-      "id": "6LQYX83AcDo",
+      "id": "DHCo3rOJvzo",
       "date": "2026-08-15",
       "dateLabel": "08/15 (土)",
-      "time": "10:00",
-      "startsAt": "2026-08-15T10:00:00+09:00",
-      "name": "Nerissa",
+      "time": "11:30",
+      "startsAt": "2026-08-15T11:30:00+09:00",
+      "name": "常闇トワ",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=6LQYX83AcDo",
-      "videoId": "6LQYX83AcDo",
-      "thumbnail": "https://img.youtube.com/vi/6LQYX83AcDo/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=DHCo3rOJvzo",
+      "videoId": "DHCo3rOJvzo",
+      "thumbnail": "https://img.youtube.com/vi/DHCo3rOJvzo/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
-      "branch": "EN"
+      "branch": "JP"
     },
     {
       "id": "SDw5DqWcteI",
@@ -12641,6 +12656,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
+    },
+    {
+      "id": "yiHLmzLj5Cc",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "08:00",
+      "startsAt": "2026-08-16T08:00:00+09:00",
+      "name": "ReGLOSS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=yiHLmzLj5Cc",
+      "videoId": "yiHLmzLj5Cc",
+      "thumbnail": "https://img.youtube.com/vi/yiHLmzLj5Cc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "xNlS-8BPLXc",

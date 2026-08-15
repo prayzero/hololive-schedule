@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-14T02:48:52.691Z",
+  "checkedAt": "2026-08-15T01:52:06.080Z",
   "collectorVersion": "curated-official-channel-1.0.0",
   "sourceNote": "공식 hololive 탤런트 YouTube 채널에서 공개된 생일·주년·3D 음악 라이브와 무료 콘서트 기록입니다. 일반 노래방·게임·잡담·후일담·미리보기·Shorts·단일 곡 영상은 제외했습니다.",
   "sourceUrl": "https://www.youtube.com/",
@@ -9,6 +9,36 @@
     "kikirara-vivi"
   ],
   "lives": [
+    {
+      "id": "EDWxOuVDUJk",
+      "videoId": "EDWxOuVDUJk",
+      "memberIds": [
+        "omaru-polka"
+      ],
+      "channelId": "UCK9V2B22uJYu3N7eR_BT9QA",
+      "title": "【#尾丸ポルカ3周年】POLPOLPOLKA! ~遅れてやってきたぞ💓記念3DLIVE~【尾丸ポルカ/ホロライブ】",
+      "category": "anniversary",
+      "publishedLabel": null,
+      "publishedAt": null,
+      "durationSeconds": null,
+      "videoUrl": "https://www.youtube.com/watch?v=EDWxOuVDUJk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/EDWxOuVDUJk/hqdefault.jpg"
+    },
+    {
+      "id": "as7iNw5gSi8",
+      "videoId": "as7iNw5gSi8",
+      "memberIds": [
+        "omaru-polka"
+      ],
+      "channelId": "UCK9V2B22uJYu3N7eR_BT9QA",
+      "title": "【#尾丸ポルカ一周年】エッ！？1時間でガチの即興曲を！？いい話もあるよ！【3DLIVE】",
+      "category": "anniversary",
+      "publishedLabel": null,
+      "publishedAt": null,
+      "durationSeconds": null,
+      "videoUrl": "https://www.youtube.com/watch?v=as7iNw5gSi8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/as7iNw5gSi8/hqdefault.jpg"
+    },
     {
       "id": "qp1bA1A5bTQ",
       "videoId": "qp1bA1A5bTQ",
@@ -23,6 +53,21 @@
       "durationSeconds": null,
       "videoUrl": "https://www.youtube.com/watch?v=qp1bA1A5bTQ",
       "thumbnailUrl": "https://i.ytimg.com/vi/qp1bA1A5bTQ/hqdefault.jpg"
+    },
+    {
+      "id": "uogHc9x2etA",
+      "videoId": "uogHc9x2etA",
+      "memberIds": [
+        "tokoyami-towa"
+      ],
+      "channelId": "UC1uv2Oq6kNxgATlCiez59hw",
+      "title": "【誕生日3D配信】常闇トワ生誕後夜祭🌟アコースティックライブ🎤【#常闇トワ生誕2020】",
+      "category": "birthday",
+      "publishedLabel": null,
+      "publishedAt": null,
+      "durationSeconds": null,
+      "videoUrl": "https://www.youtube.com/watch?v=uogHc9x2etA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/uogHc9x2etA/hqdefault.jpg"
     },
     {
       "id": "07qx3PL4b3U",

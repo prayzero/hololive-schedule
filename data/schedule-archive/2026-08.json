@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T16:06:47.133Z",
+  "generatedAt": "2026-08-16T16:41:25.252Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -14236,8 +14236,8 @@
       "id": "lmOt3GS0UnI",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
-      "time": "01:30",
-      "startsAt": "2026-08-17T01:30:00+09:00",
+      "time": "01:33",
+      "startsAt": "2026-08-17T01:33:00+09:00",
       "name": "Kiara",
       "title": null,
       "url": "https://www.youtube.com/watch?v=lmOt3GS0UnI",
@@ -14441,6 +14441,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "Okb7AiRs1Ug",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "22:00",
+      "startsAt": "2026-08-17T22:00:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Okb7AiRs1Ug",
+      "videoId": "Okb7AiRs1Ug",
+      "thumbnail": "https://img.youtube.com/vi/Okb7AiRs1Ug/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "eWhcYiB1wIA",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "22:00",
+      "startsAt": "2026-08-17T22:00:00+09:00",
+      "name": "一条莉々華",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=eWhcYiB1wIA",
+      "videoId": "eWhcYiB1wIA",
+      "thumbnail": "https://img.youtube.com/vi/eWhcYiB1wIA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "nBFggpbY-OA",

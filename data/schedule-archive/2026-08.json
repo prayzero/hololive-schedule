@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T13:39:59.810Z",
+  "generatedAt": "2026-08-16T14:09:32.560Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -14201,6 +14201,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
+    },
+    {
+      "id": "8ANpR5GMvg4",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "23:30",
+      "startsAt": "2026-08-16T23:30:00+09:00",
+      "name": "アキロゼ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=8ANpR5GMvg4",
+      "videoId": "8ANpR5GMvg4",
+      "thumbnail": "https://img.youtube.com/vi/8ANpR5GMvg4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "dnAcI-ITkzI",

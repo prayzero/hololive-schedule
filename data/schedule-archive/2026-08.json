@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T10:35:31.150Z",
+  "generatedAt": "2026-08-16T10:57:45.198Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -13918,6 +13918,21 @@
       "branch": "JP"
     },
     {
+      "id": "IVI6wjmXWuI",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "20:30",
+      "startsAt": "2026-08-16T20:30:00+09:00",
+      "name": "Iofi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=IVI6wjmXWuI",
+      "videoId": "IVI6wjmXWuI",
+      "thumbnail": "https://img.youtube.com/vi/IVI6wjmXWuI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "vdUto9-eHeM",
       "date": "2026-08-16",
       "dateLabel": "08/16 (日)",
@@ -14111,6 +14126,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "xJ6wQD5d1Gs",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "22:30",
+      "startsAt": "2026-08-16T22:30:00+09:00",
+      "name": "Iofi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=xJ6wQD5d1Gs",
+      "videoId": "xJ6wQD5d1Gs",
+      "thumbnail": "https://img.youtube.com/vi/xJ6wQD5d1Gs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "dnAcI-ITkzI",

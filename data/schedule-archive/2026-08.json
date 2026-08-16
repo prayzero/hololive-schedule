@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T06:20:27.270Z",
+  "generatedAt": "2026-08-16T07:12:41.251Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -13606,8 +13606,8 @@
       "id": "F7DqVKK1G7g",
       "date": "2026-08-16",
       "dateLabel": "08/16 (日)",
-      "time": "16:00",
-      "startsAt": "2026-08-16T16:00:00+09:00",
+      "time": "16:02",
+      "startsAt": "2026-08-16T16:02:00+09:00",
       "name": "ときのそら",
       "title": null,
       "url": "https://www.youtube.com/watch?v=F7DqVKK1G7g",
@@ -13798,6 +13798,21 @@
       "branch": "JP"
     },
     {
+      "id": "T99BA9aR1lw",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "22:00",
+      "startsAt": "2026-08-16T22:00:00+09:00",
+      "name": "常闇トワ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=T99BA9aR1lw",
+      "videoId": "T99BA9aR1lw",
+      "thumbnail": "https://img.youtube.com/vi/T99BA9aR1lw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "tKEh-e-xYME",
       "date": "2026-08-16",
       "dateLabel": "08/16 (日)",
@@ -13853,6 +13868,21 @@
       "url": "https://www.youtube.com/watch?v=nN7c7EgLbhg",
       "videoId": "nN7c7EgLbhg",
       "thumbnail": "https://img.youtube.com/vi/nN7c7EgLbhg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "KIf5vVa5XNQ",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "22:00",
+      "startsAt": "2026-08-16T22:00:00+09:00",
+      "name": "Zeta",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=KIf5vVa5XNQ",
+      "videoId": "KIf5vVa5XNQ",
+      "thumbnail": "https://img.youtube.com/vi/KIf5vVa5XNQ/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "ID"

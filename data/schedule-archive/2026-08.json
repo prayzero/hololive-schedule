@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T11:53:02.204Z",
+  "generatedAt": "2026-08-16T12:57:39.537Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -13966,8 +13966,8 @@
       "id": "osrKnQvbFM0",
       "date": "2026-08-16",
       "dateLabel": "08/16 (日)",
-      "time": "21:00",
-      "startsAt": "2026-08-16T21:00:00+09:00",
+      "time": "21:01",
+      "startsAt": "2026-08-16T21:01:00+09:00",
       "name": "兎田ぺこら",
       "title": null,
       "url": "https://www.youtube.com/watch?v=osrKnQvbFM0",
@@ -13981,8 +13981,8 @@
       "id": "IYsfr5u8aCo",
       "date": "2026-08-16",
       "dateLabel": "08/16 (日)",
-      "time": "21:30",
-      "startsAt": "2026-08-16T21:30:00+09:00",
+      "time": "21:33",
+      "startsAt": "2026-08-16T21:33:00+09:00",
       "name": "Risu",
       "title": null,
       "url": "https://www.youtube.com/watch?v=IYsfr5u8aCo",
@@ -14048,6 +14048,21 @@
       "url": "https://www.youtube.com/watch?v=jzUimHbdf6o",
       "videoId": "jzUimHbdf6o",
       "thumbnail": "https://img.youtube.com/vi/jzUimHbdf6o/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "aJRRBLpyO9I",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "22:00",
+      "startsAt": "2026-08-16T22:00:00+09:00",
+      "name": "不知火フレア",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=aJRRBLpyO9I",
+      "videoId": "aJRRBLpyO9I",
+      "thumbnail": "https://img.youtube.com/vi/aJRRBLpyO9I/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -14128,6 +14143,21 @@
       "branch": "ID"
     },
     {
+      "id": "9wGjfsTJeeg",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "22:00",
+      "startsAt": "2026-08-16T22:00:00+09:00",
+      "name": "Ollie",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=9wGjfsTJeeg",
+      "videoId": "9wGjfsTJeeg",
+      "thumbnail": "https://img.youtube.com/vi/9wGjfsTJeeg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "KIf5vVa5XNQ",
       "date": "2026-08-16",
       "dateLabel": "08/16 (日)",
@@ -14186,6 +14216,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "lmOt3GS0UnI",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "01:00",
+      "startsAt": "2026-08-17T01:00:00+09:00",
+      "name": "Kiara",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=lmOt3GS0UnI",
+      "videoId": "lmOt3GS0UnI",
+      "thumbnail": "https://img.youtube.com/vi/lmOt3GS0UnI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "Y36el0txwa8",
@@ -14261,6 +14306,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "lssZJbZ7bFw",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "19:00",
+      "startsAt": "2026-08-17T19:00:00+09:00",
+      "name": "AZKi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=lssZJbZ7bFw",
+      "videoId": "lssZJbZ7bFw",
+      "thumbnail": "https://img.youtube.com/vi/lssZJbZ7bFw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "M6EaQONBXrE",

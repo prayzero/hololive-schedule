@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T22:42:22.438Z",
+  "generatedAt": "2026-08-16T23:31:06.380Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -14318,6 +14318,21 @@
       "url": "https://www.youtube.com/watch?v=phcNk0lWwX4",
       "videoId": "phcNk0lWwX4",
       "thumbnail": "https://img.youtube.com/vi/phcNk0lWwX4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "j-7jbe3OMGg",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "08:20",
+      "startsAt": "2026-08-17T08:20:00+09:00",
+      "name": "ReGLOSS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=j-7jbe3OMGg",
+      "videoId": "j-7jbe3OMGg",
+      "thumbnail": "https://img.youtube.com/vi/j-7jbe3OMGg/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"

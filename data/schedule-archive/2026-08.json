@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T15:07:22.413Z",
+  "generatedAt": "2026-08-16T15:41:42.060Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -14221,8 +14221,8 @@
       "id": "dnAcI-ITkzI",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
-      "time": "00:30",
-      "startsAt": "2026-08-17T00:30:00+09:00",
+      "time": "00:31",
+      "startsAt": "2026-08-17T00:31:00+09:00",
       "name": "風真いろは",
       "title": null,
       "url": "https://www.youtube.com/watch?v=dnAcI-ITkzI",
@@ -14366,6 +14366,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "S6Lz5NbEFY8",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "20:00",
+      "startsAt": "2026-08-17T20:00:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=S6Lz5NbEFY8",
+      "videoId": "S6Lz5NbEFY8",
+      "thumbnail": "https://img.youtube.com/vi/S6Lz5NbEFY8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "z9hTYWxP8Wk",

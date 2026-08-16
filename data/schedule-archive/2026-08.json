@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T03:09:31.167Z",
+  "generatedAt": "2026-08-16T04:04:33.619Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -13471,8 +13471,8 @@
       "id": "O878b0w9RaI",
       "date": "2026-08-16",
       "dateLabel": "08/16 (日)",
-      "time": "12:30",
-      "startsAt": "2026-08-16T12:30:00+09:00",
+      "time": "12:32",
+      "startsAt": "2026-08-16T12:32:00+09:00",
       "name": "Shiori",
       "title": null,
       "url": "https://www.youtube.com/watch?v=O878b0w9RaI",
@@ -13483,11 +13483,26 @@
       "branch": "EN"
     },
     {
-      "id": "3AbxUNRo5q8",
+      "id": "PdYs__7iSvg",
       "date": "2026-08-16",
       "dateLabel": "08/16 (日)",
       "time": "13:00",
       "startsAt": "2026-08-16T13:00:00+09:00",
+      "name": "IRyS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=PdYs__7iSvg",
+      "videoId": "PdYs__7iSvg",
+      "thumbnail": "https://img.youtube.com/vi/PdYs__7iSvg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "3AbxUNRo5q8",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "13:01",
+      "startsAt": "2026-08-16T13:01:00+09:00",
       "name": "大空スバル",
       "title": null,
       "url": "https://www.youtube.com/watch?v=3AbxUNRo5q8",
@@ -13573,6 +13588,21 @@
       "branch": "JP"
     },
     {
+      "id": "TZjCj_fc1ew",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "18:00",
+      "startsAt": "2026-08-16T18:00:00+09:00",
+      "name": "ホロライブ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=TZjCj_fc1ew",
+      "videoId": "TZjCj_fc1ew",
+      "thumbnail": "https://img.youtube.com/vi/TZjCj_fc1ew/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "IX33Cz8TTmQ",
       "date": "2026-08-16",
       "dateLabel": "08/16 (日)",
@@ -13588,19 +13618,19 @@
       "branch": "JP"
     },
     {
-      "id": "TZjCj_fc1ew",
+      "id": "7oI6U_G-hdc",
       "date": "2026-08-16",
       "dateLabel": "08/16 (日)",
-      "time": "18:02",
-      "startsAt": "2026-08-16T18:02:00+09:00",
-      "name": "ホロライブ",
+      "time": "19:00",
+      "startsAt": "2026-08-16T19:00:00+09:00",
+      "name": "轟はじめ",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=TZjCj_fc1ew",
-      "videoId": "TZjCj_fc1ew",
-      "thumbnail": "https://img.youtube.com/vi/TZjCj_fc1ew/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=7oI6U_G-hdc",
+      "videoId": "7oI6U_G-hdc",
+      "thumbnail": "https://img.youtube.com/vi/7oI6U_G-hdc/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
-      "branch": "JP"
+      "branch": "DEV_IS"
     },
     {
       "id": "VD3vn1CUj_8",
@@ -13663,6 +13693,21 @@
       "branch": "JP"
     },
     {
+      "id": "NvC7SqK3UXM",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "22:00",
+      "startsAt": "2026-08-16T22:00:00+09:00",
+      "name": "尾丸ポルカ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=NvC7SqK3UXM",
+      "videoId": "NvC7SqK3UXM",
+      "thumbnail": "https://img.youtube.com/vi/NvC7SqK3UXM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "nN7c7EgLbhg",
       "date": "2026-08-16",
       "dateLabel": "08/16 (日)",
@@ -13678,6 +13723,21 @@
       "branch": "ID"
     },
     {
+      "id": "iPvbyvgv18g",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "22:00",
+      "startsAt": "2026-08-16T22:00:00+09:00",
+      "name": "さくらみこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=iPvbyvgv18g",
+      "videoId": "iPvbyvgv18g",
+      "thumbnail": "https://img.youtube.com/vi/iPvbyvgv18g/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "dnAcI-ITkzI",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
@@ -13691,6 +13751,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "Y36el0txwa8",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "04:00",
+      "startsAt": "2026-08-17T04:00:00+09:00",
+      "name": "Elizabeth",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Y36el0txwa8",
+      "videoId": "Y36el0txwa8",
+      "thumbnail": "https://img.youtube.com/vi/Y36el0txwa8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "tfXtXOODdKM",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T07:12:41.251Z",
+  "generatedAt": "2026-08-16T07:50:19.052Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -13618,6 +13618,21 @@
       "branch": "JP"
     },
     {
+      "id": "H2rqfEBphSg",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "17:00",
+      "startsAt": "2026-08-16T17:00:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=H2rqfEBphSg",
+      "videoId": "H2rqfEBphSg",
+      "thumbnail": "https://img.youtube.com/vi/H2rqfEBphSg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "GkOLw011iyM",
       "date": "2026-08-16",
       "dateLabel": "08/16 (日)",
@@ -13963,6 +13978,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "vDedN9YyxUc",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "10:00",
+      "startsAt": "2026-08-17T10:00:00+09:00",
+      "name": "Baelz",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=vDedN9YyxUc",
+      "videoId": "vDedN9YyxUc",
+      "thumbnail": "https://img.youtube.com/vi/vDedN9YyxUc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "M6EaQONBXrE",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
@@ -13991,6 +14021,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "OdureVENHEc",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "23:00",
+      "startsAt": "2026-08-17T23:00:00+09:00",
+      "name": "Baelz",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=OdureVENHEc",
+      "videoId": "OdureVENHEc",
+      "thumbnail": "https://img.youtube.com/vi/OdureVENHEc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "xKhRXOqeFG4",

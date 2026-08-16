@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T09:55:51.269Z",
+  "generatedAt": "2026-08-16T10:35:31.150Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -13843,21 +13843,6 @@
       "branch": "JP"
     },
     {
-      "id": "7oI6U_G-hdc",
-      "date": "2026-08-16",
-      "dateLabel": "08/16 (日)",
-      "time": "19:00",
-      "startsAt": "2026-08-16T19:00:00+09:00",
-      "name": "轟はじめ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=7oI6U_G-hdc",
-      "videoId": "7oI6U_G-hdc",
-      "thumbnail": "https://img.youtube.com/vi/7oI6U_G-hdc/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "DEV_IS"
-    },
-    {
       "id": "-2UUTkv9qvk",
       "date": "2026-08-16",
       "dateLabel": "08/16 (日)",
@@ -13871,6 +13856,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "7oI6U_G-hdc",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "19:07",
+      "startsAt": "2026-08-16T19:07:00+09:00",
+      "name": "轟はじめ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=7oI6U_G-hdc",
+      "videoId": "7oI6U_G-hdc",
+      "thumbnail": "https://img.youtube.com/vi/7oI6U_G-hdc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "06BfnJddcbM",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "19:30",
+      "startsAt": "2026-08-16T19:30:00+09:00",
+      "name": "虎金妃笑虎",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=06BfnJddcbM",
+      "videoId": "06BfnJddcbM",
+      "thumbnail": "https://img.youtube.com/vi/06BfnJddcbM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "VD3vn1CUj_8",
@@ -13916,6 +13931,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "osrKnQvbFM0",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "21:00",
+      "startsAt": "2026-08-16T21:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=osrKnQvbFM0",
+      "videoId": "osrKnQvbFM0",
+      "thumbnail": "https://img.youtube.com/vi/osrKnQvbFM0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "IYsfr5u8aCo",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "21:30",
+      "startsAt": "2026-08-16T21:30:00+09:00",
+      "name": "Risu",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=IYsfr5u8aCo",
+      "videoId": "IYsfr5u8aCo",
+      "thumbnail": "https://img.youtube.com/vi/IYsfr5u8aCo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "aw0plUjWTGs",

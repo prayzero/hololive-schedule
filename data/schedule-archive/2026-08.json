@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T09:22:32.197Z",
+  "generatedAt": "2026-08-16T09:55:51.269Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -14093,6 +14093,21 @@
       "url": "https://www.youtube.com/watch?v=Y36el0txwa8",
       "videoId": "Y36el0txwa8",
       "thumbnail": "https://img.youtube.com/vi/Y36el0txwa8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "_rJyvKM7NBk",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "06:00",
+      "startsAt": "2026-08-17T06:00:00+09:00",
+      "name": "Gigi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=_rJyvKM7NBk",
+      "videoId": "_rJyvKM7NBk",
+      "thumbnail": "https://img.youtube.com/vi/_rJyvKM7NBk/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T18:43:45.465Z",
+  "generatedAt": "2026-08-16T19:39:58.587Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -14533,6 +14533,21 @@
       "branch": "EN"
     },
     {
+      "id": "ArnCBXZtxVU",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "22:00",
+      "startsAt": "2026-08-17T22:00:00+09:00",
+      "name": "Kiara",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ArnCBXZtxVU",
+      "videoId": "ArnCBXZtxVU",
+      "thumbnail": "https://img.youtube.com/vi/ArnCBXZtxVU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "nBFggpbY-OA",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
@@ -14576,6 +14591,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "wXiiGpwpdx8",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "04:00",
+      "startsAt": "2026-08-18T04:00:00+09:00",
+      "name": "Kiara",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=wXiiGpwpdx8",
+      "videoId": "wXiiGpwpdx8",
+      "thumbnail": "https://img.youtube.com/vi/wXiiGpwpdx8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "Q-PiKYUiFJo",

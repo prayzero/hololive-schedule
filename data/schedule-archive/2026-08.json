@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T14:44:11.642Z",
+  "generatedAt": "2026-08-16T15:07:22.413Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -14423,6 +14423,21 @@
       "url": "https://www.youtube.com/watch?v=xKhRXOqeFG4",
       "videoId": "xKhRXOqeFG4",
       "thumbnail": "https://img.youtube.com/vi/xKhRXOqeFG4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Q-PiKYUiFJo",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "19:00",
+      "startsAt": "2026-08-18T19:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Q-PiKYUiFJo",
+      "videoId": "Q-PiKYUiFJo",
+      "thumbnail": "https://img.youtube.com/vi/Q-PiKYUiFJo/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T16:41:25.252Z",
+  "generatedAt": "2026-08-16T18:01:15.615Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -14368,6 +14368,21 @@
       "branch": "JP"
     },
     {
+      "id": "GZ5O2oEQyR0",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "19:30",
+      "startsAt": "2026-08-17T19:30:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=GZ5O2oEQyR0",
+      "videoId": "GZ5O2oEQyR0",
+      "thumbnail": "https://img.youtube.com/vi/GZ5O2oEQyR0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "M6EaQONBXrE",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
@@ -14428,6 +14443,21 @@
       "branch": "JP"
     },
     {
+      "id": "zXKP6fC8lPM",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "22:00",
+      "startsAt": "2026-08-17T22:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=zXKP6fC8lPM",
+      "videoId": "zXKP6fC8lPM",
+      "thumbnail": "https://img.youtube.com/vi/zXKP6fC8lPM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "-9FyhF5waUw",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
@@ -14471,6 +14501,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "u9CFMRSxtxs",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "22:00",
+      "startsAt": "2026-08-17T22:00:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=u9CFMRSxtxs",
+      "videoId": "u9CFMRSxtxs",
+      "thumbnail": "https://img.youtube.com/vi/u9CFMRSxtxs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "nBFggpbY-OA",

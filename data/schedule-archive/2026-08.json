@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T05:49:30.370Z",
+  "generatedAt": "2026-08-16T06:20:27.270Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -13588,6 +13588,36 @@
       "branch": "JP"
     },
     {
+      "id": "jMqFUm69EqE",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "15:00",
+      "startsAt": "2026-08-16T15:00:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jMqFUm69EqE",
+      "videoId": "jMqFUm69EqE",
+      "thumbnail": "https://img.youtube.com/vi/jMqFUm69EqE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "F7DqVKK1G7g",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "16:00",
+      "startsAt": "2026-08-16T16:00:00+09:00",
+      "name": "ときのそら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=F7DqVKK1G7g",
+      "videoId": "F7DqVKK1G7g",
+      "thumbnail": "https://img.youtube.com/vi/F7DqVKK1G7g/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "GkOLw011iyM",
       "date": "2026-08-16",
       "dateLabel": "08/16 (日)",
@@ -13748,6 +13778,36 @@
       "url": "https://www.youtube.com/watch?v=NvC7SqK3UXM",
       "videoId": "NvC7SqK3UXM",
       "thumbnail": "https://img.youtube.com/vi/NvC7SqK3UXM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "jzUimHbdf6o",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "22:00",
+      "startsAt": "2026-08-16T22:00:00+09:00",
+      "name": "白上フブキ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jzUimHbdf6o",
+      "videoId": "jzUimHbdf6o",
+      "thumbnail": "https://img.youtube.com/vi/jzUimHbdf6o/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "tKEh-e-xYME",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "22:00",
+      "startsAt": "2026-08-16T22:00:00+09:00",
+      "name": "雪花ラミィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=tKEh-e-xYME",
+      "videoId": "tKEh-e-xYME",
+      "thumbnail": "https://img.youtube.com/vi/tKEh-e-xYME/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

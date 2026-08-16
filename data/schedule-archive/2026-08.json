@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T10:57:45.198Z",
+  "generatedAt": "2026-08-16T11:31:10.480Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -13888,21 +13888,6 @@
       "branch": "DEV_IS"
     },
     {
-      "id": "VD3vn1CUj_8",
-      "date": "2026-08-16",
-      "dateLabel": "08/16 (日)",
-      "time": "20:00",
-      "startsAt": "2026-08-16T20:00:00+09:00",
-      "name": "猫又おかゆ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=VD3vn1CUj_8",
-      "videoId": "VD3vn1CUj_8",
-      "thumbnail": "https://img.youtube.com/vi/VD3vn1CUj_8/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "N5EHBv7ndeM",
       "date": "2026-08-16",
       "dateLabel": "08/16 (日)",
@@ -13913,6 +13898,21 @@
       "url": "https://www.youtube.com/watch?v=N5EHBv7ndeM",
       "videoId": "N5EHBv7ndeM",
       "thumbnail": "https://img.youtube.com/vi/N5EHBv7ndeM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "VD3vn1CUj_8",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "20:01",
+      "startsAt": "2026-08-16T20:01:00+09:00",
+      "name": "猫又おかゆ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=VD3vn1CUj_8",
+      "videoId": "VD3vn1CUj_8",
+      "thumbnail": "https://img.youtube.com/vi/VD3vn1CUj_8/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -13991,6 +13991,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "sVaYfnfH_gA",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "22:00",
+      "startsAt": "2026-08-16T22:00:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=sVaYfnfH_gA",
+      "videoId": "sVaYfnfH_gA",
+      "thumbnail": "https://img.youtube.com/vi/sVaYfnfH_gA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "NvC7SqK3UXM",

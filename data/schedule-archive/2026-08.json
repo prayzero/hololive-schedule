@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T18:01:15.615Z",
+  "generatedAt": "2026-08-16T18:43:45.465Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -14498,6 +14498,21 @@
       "url": "https://www.youtube.com/watch?v=eWhcYiB1wIA",
       "videoId": "eWhcYiB1wIA",
       "thumbnail": "https://img.youtube.com/vi/eWhcYiB1wIA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "7uSfpiJOLb0",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "22:00",
+      "startsAt": "2026-08-17T22:00:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=7uSfpiJOLb0",
+      "videoId": "7uSfpiJOLb0",
+      "thumbnail": "https://img.youtube.com/vi/7uSfpiJOLb0/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"

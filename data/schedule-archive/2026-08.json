@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T04:04:33.619Z",
+  "generatedAt": "2026-08-16T04:47:29.218Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -13513,6 +13513,21 @@
       "branch": "JP"
     },
     {
+      "id": "Y16oXs-25BA",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "13:05",
+      "startsAt": "2026-08-16T13:05:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Y16oXs-25BA",
+      "videoId": "Y16oXs-25BA",
+      "thumbnail": "https://img.youtube.com/vi/Y16oXs-25BA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "KDKH8_X6ay8",
       "date": "2026-08-16",
       "dateLabel": "08/16 (日)",
@@ -13523,6 +13538,21 @@
       "url": "https://www.youtube.com/watch?v=KDKH8_X6ay8",
       "videoId": "KDKH8_X6ay8",
       "thumbnail": "https://img.youtube.com/vi/KDKH8_X6ay8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "oNBW796tNxM",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "14:00",
+      "startsAt": "2026-08-16T14:00:00+09:00",
+      "name": "音乃瀬奏",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=oNBW796tNxM",
+      "videoId": "oNBW796tNxM",
+      "thumbnail": "https://img.youtube.com/vi/oNBW796tNxM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
@@ -13633,6 +13663,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "-2UUTkv9qvk",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "19:00",
+      "startsAt": "2026-08-16T19:00:00+09:00",
+      "name": "宝鐘マリン",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=-2UUTkv9qvk",
+      "videoId": "-2UUTkv9qvk",
+      "thumbnail": "https://img.youtube.com/vi/-2UUTkv9qvk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "VD3vn1CUj_8",
       "date": "2026-08-16",
       "dateLabel": "08/16 (日)",
@@ -13706,6 +13751,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "S0P47C9N7hg",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "22:00",
+      "startsAt": "2026-08-16T22:00:00+09:00",
+      "name": "一条莉々華",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=S0P47C9N7hg",
+      "videoId": "S0P47C9N7hg",
+      "thumbnail": "https://img.youtube.com/vi/S0P47C9N7hg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "bRuLlzYFdmE",
+      "date": "2026-08-16",
+      "dateLabel": "08/16 (日)",
+      "time": "22:00",
+      "startsAt": "2026-08-16T22:00:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=bRuLlzYFdmE",
+      "videoId": "bRuLlzYFdmE",
+      "thumbnail": "https://img.youtube.com/vi/bRuLlzYFdmE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "nN7c7EgLbhg",

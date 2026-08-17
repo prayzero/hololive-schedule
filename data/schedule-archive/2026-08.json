@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T06:24:15.107Z",
+  "generatedAt": "2026-08-17T07:37:00.526Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -14431,8 +14431,8 @@
       "id": "SJ-cEYhJKSs",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
-      "time": "16:00",
-      "startsAt": "2026-08-17T16:00:00+09:00",
+      "time": "16:05",
+      "startsAt": "2026-08-17T16:05:00+09:00",
       "name": "Moona",
       "title": null,
       "url": "https://www.youtube.com/watch?v=SJ-cEYhJKSs",
@@ -14743,6 +14743,21 @@
       "branch": "EN"
     },
     {
+      "id": "U6jjbWIR3KY",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "22:00",
+      "startsAt": "2026-08-17T22:00:00+09:00",
+      "name": "Risu",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=U6jjbWIR3KY",
+      "videoId": "U6jjbWIR3KY",
+      "thumbnail": "https://img.youtube.com/vi/U6jjbWIR3KY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "nBFggpbY-OA",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
@@ -14861,6 +14876,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "8jDkEhJaxOQ",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "20:00",
+      "startsAt": "2026-08-18T20:00:00+09:00",
+      "name": "FLOW GLOW",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=8jDkEhJaxOQ",
+      "videoId": "8jDkEhJaxOQ",
+      "thumbnail": "https://img.youtube.com/vi/8jDkEhJaxOQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "0Wh6SWKPnPU",

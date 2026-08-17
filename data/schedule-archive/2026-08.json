@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T10:46:17.119Z",
+  "generatedAt": "2026-08-17T11:12:34.506Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -14728,21 +14728,6 @@
       "branch": "JP"
     },
     {
-      "id": "xz2aErgeW1c",
-      "date": "2026-08-17",
-      "dateLabel": "08/17 (月)",
-      "time": "20:00",
-      "startsAt": "2026-08-17T20:00:00+09:00",
-      "name": "星街すいせい",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=xz2aErgeW1c",
-      "videoId": "xz2aErgeW1c",
-      "thumbnail": "https://img.youtube.com/vi/xz2aErgeW1c/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "S6Lz5NbEFY8",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
@@ -14758,21 +14743,6 @@
       "branch": "DEV_IS"
     },
     {
-      "id": "z9hTYWxP8Wk",
-      "date": "2026-08-17",
-      "dateLabel": "08/17 (月)",
-      "time": "20:00",
-      "startsAt": "2026-08-17T20:00:00+09:00",
-      "name": "音乃瀬奏",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=z9hTYWxP8Wk",
-      "videoId": "z9hTYWxP8Wk",
-      "thumbnail": "https://img.youtube.com/vi/z9hTYWxP8Wk/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "DEV_IS"
-    },
-    {
       "id": "ATStQxlLRlE",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
@@ -14783,6 +14753,51 @@
       "url": "https://www.youtube.com/watch?v=ATStQxlLRlE",
       "videoId": "ATStQxlLRlE",
       "thumbnail": "https://img.youtube.com/vi/ATStQxlLRlE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "o2Mv9tM0rZs",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "20:00",
+      "startsAt": "2026-08-17T20:00:00+09:00",
+      "name": "ときのそら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=o2Mv9tM0rZs",
+      "videoId": "o2Mv9tM0rZs",
+      "thumbnail": "https://img.youtube.com/vi/o2Mv9tM0rZs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "z9hTYWxP8Wk",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "20:02",
+      "startsAt": "2026-08-17T20:02:00+09:00",
+      "name": "音乃瀬奏",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=z9hTYWxP8Wk",
+      "videoId": "z9hTYWxP8Wk",
+      "thumbnail": "https://img.youtube.com/vi/z9hTYWxP8Wk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "xz2aErgeW1c",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "20:03",
+      "startsAt": "2026-08-17T20:03:00+09:00",
+      "name": "星街すいせい",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=xz2aErgeW1c",
+      "videoId": "xz2aErgeW1c",
+      "thumbnail": "https://img.youtube.com/vi/xz2aErgeW1c/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

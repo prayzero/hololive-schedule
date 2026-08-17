@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T04:54:37.287Z",
+  "generatedAt": "2026-08-17T05:46:19.191Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -14413,6 +14413,21 @@
       "branch": "JP"
     },
     {
+      "id": "CzEw-z-3eYE",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "14:45",
+      "startsAt": "2026-08-17T14:45:00+09:00",
+      "name": "Kaela",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=CzEw-z-3eYE",
+      "videoId": "CzEw-z-3eYE",
+      "thumbnail": "https://img.youtube.com/vi/CzEw-z-3eYE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "ZfPjjyYL6ws",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
@@ -14473,6 +14488,21 @@
       "branch": "JP"
     },
     {
+      "id": "JoevlADbS8Y",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "19:00",
+      "startsAt": "2026-08-17T19:00:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=JoevlADbS8Y",
+      "videoId": "JoevlADbS8Y",
+      "thumbnail": "https://img.youtube.com/vi/JoevlADbS8Y/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "GZ5O2oEQyR0",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
@@ -14531,6 +14561,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "ATStQxlLRlE",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "20:00",
+      "startsAt": "2026-08-17T20:00:00+09:00",
+      "name": "さくらみこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ATStQxlLRlE",
+      "videoId": "ATStQxlLRlE",
+      "thumbnail": "https://img.youtube.com/vi/ATStQxlLRlE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "foYXAlJiq68",

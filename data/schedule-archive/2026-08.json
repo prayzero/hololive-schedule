@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T10:04:21.596Z",
+  "generatedAt": "2026-08-17T10:46:17.119Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -14638,36 +14638,6 @@
       "branch": "JP"
     },
     {
-      "id": "H8YMwSzVTTw",
-      "date": "2026-08-17",
-      "dateLabel": "08/17 (月)",
-      "time": "19:00",
-      "startsAt": "2026-08-17T19:00:00+09:00",
-      "name": "兎田ぺこら",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=H8YMwSzVTTw",
-      "videoId": "H8YMwSzVTTw",
-      "thumbnail": "https://img.youtube.com/vi/H8YMwSzVTTw/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
-      "id": "lssZJbZ7bFw",
-      "date": "2026-08-17",
-      "dateLabel": "08/17 (月)",
-      "time": "19:00",
-      "startsAt": "2026-08-17T19:00:00+09:00",
-      "name": "AZKi",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=lssZJbZ7bFw",
-      "videoId": "lssZJbZ7bFw",
-      "thumbnail": "https://img.youtube.com/vi/lssZJbZ7bFw/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "JoevlADbS8Y",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
@@ -14693,6 +14663,36 @@
       "url": "https://www.youtube.com/watch?v=tvZFbAoOL74",
       "videoId": "tvZFbAoOL74",
       "thumbnail": "https://img.youtube.com/vi/tvZFbAoOL74/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "lssZJbZ7bFw",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "19:02",
+      "startsAt": "2026-08-17T19:02:00+09:00",
+      "name": "AZKi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=lssZJbZ7bFw",
+      "videoId": "lssZJbZ7bFw",
+      "thumbnail": "https://img.youtube.com/vi/lssZJbZ7bFw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "H8YMwSzVTTw",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "19:04",
+      "startsAt": "2026-08-17T19:04:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=H8YMwSzVTTw",
+      "videoId": "H8YMwSzVTTw",
+      "thumbnail": "https://img.youtube.com/vi/H8YMwSzVTTw/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -14848,6 +14848,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "O68E4JD4fgE",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "22:00",
+      "startsAt": "2026-08-17T22:00:00+09:00",
+      "name": "白銀ノエル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=O68E4JD4fgE",
+      "videoId": "O68E4JD4fgE",
+      "thumbnail": "https://img.youtube.com/vi/O68E4JD4fgE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "waihO4ruu4U",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
@@ -14981,6 +14996,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "EcUQz42XVWg",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "23:00",
+      "startsAt": "2026-08-17T23:00:00+09:00",
+      "name": "Iofi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=EcUQz42XVWg",
+      "videoId": "EcUQz42XVWg",
+      "thumbnail": "https://img.youtube.com/vi/EcUQz42XVWg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "NbTtcr_1WAs",

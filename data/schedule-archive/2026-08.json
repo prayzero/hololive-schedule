@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T17:19:54.063Z",
+  "generatedAt": "2026-08-17T18:30:51.475Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -15326,6 +15326,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "QNIcJMO2m4c",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "21:00",
+      "startsAt": "2026-08-18T21:00:00+09:00",
+      "name": "猫又おかゆ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=QNIcJMO2m4c",
+      "videoId": "QNIcJMO2m4c",
+      "thumbnail": "https://img.youtube.com/vi/QNIcJMO2m4c/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "k8lfcYUSpPc",

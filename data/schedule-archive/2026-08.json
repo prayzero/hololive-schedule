@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T09:21:49.395Z",
+  "generatedAt": "2026-08-17T10:04:21.596Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -14596,8 +14596,8 @@
       "id": "ISXL1Zlr3lI",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
-      "time": "18:15",
-      "startsAt": "2026-08-17T18:15:00+09:00",
+      "time": "18:17",
+      "startsAt": "2026-08-17T18:17:00+09:00",
       "name": "Risu",
       "title": null,
       "url": "https://www.youtube.com/watch?v=ISXL1Zlr3lI",
@@ -14681,6 +14681,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
+    },
+    {
+      "id": "tvZFbAoOL74",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "19:00",
+      "startsAt": "2026-08-17T19:00:00+09:00",
+      "name": "ホロライブ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=tvZFbAoOL74",
+      "videoId": "tvZFbAoOL74",
+      "thumbnail": "https://img.youtube.com/vi/tvZFbAoOL74/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "GZ5O2oEQyR0",
@@ -15023,6 +15038,21 @@
       "url": "https://www.youtube.com/watch?v=uGzQrJw0fJc",
       "videoId": "uGzQrJw0fJc",
       "thumbnail": "https://img.youtube.com/vi/uGzQrJw0fJc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "Ybx9uImTJpY",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "06:00",
+      "startsAt": "2026-08-18T06:00:00+09:00",
+      "name": "Gigi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Ybx9uImTJpY",
+      "videoId": "Ybx9uImTJpY",
+      "thumbnail": "https://img.youtube.com/vi/Ybx9uImTJpY/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

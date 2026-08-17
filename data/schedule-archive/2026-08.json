@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T14:39:04.731Z",
+  "generatedAt": "2026-08-17T15:12:06.452Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -15136,8 +15136,8 @@
       "id": "xKhRXOqeFG4",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
-      "time": "23:40",
-      "startsAt": "2026-08-17T23:40:00+09:00",
+      "time": "23:42",
+      "startsAt": "2026-08-17T23:42:00+09:00",
       "name": "アキロゼ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=xKhRXOqeFG4",
@@ -15296,6 +15296,66 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "k8lfcYUSpPc",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "22:00",
+      "startsAt": "2026-08-18T22:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=k8lfcYUSpPc",
+      "videoId": "k8lfcYUSpPc",
+      "thumbnail": "https://img.youtube.com/vi/k8lfcYUSpPc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "2XYlTI1zrpI",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "22:30",
+      "startsAt": "2026-08-18T22:30:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=2XYlTI1zrpI",
+      "videoId": "2XYlTI1zrpI",
+      "thumbnail": "https://img.youtube.com/vi/2XYlTI1zrpI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "l8l5i8NyNdM",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "10:00",
+      "startsAt": "2026-08-19T10:00:00+09:00",
+      "name": "Baelz",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=l8l5i8NyNdM",
+      "videoId": "l8l5i8NyNdM",
+      "thumbnail": "https://img.youtube.com/vi/l8l5i8NyNdM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "9qjb2Z9Yzz8",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "21:00",
+      "startsAt": "2026-08-19T21:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=9qjb2Z9Yzz8",
+      "videoId": "9qjb2Z9Yzz8",
+      "thumbnail": "https://img.youtube.com/vi/9qjb2Z9Yzz8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T02:55:27.739Z",
+  "generatedAt": "2026-08-17T03:58:17.690Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -14398,6 +14398,21 @@
       "branch": "ID"
     },
     {
+      "id": "EFqc7WhJma4",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "12:18",
+      "startsAt": "2026-08-17T12:18:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=EFqc7WhJma4",
+      "videoId": "EFqc7WhJma4",
+      "thumbnail": "https://img.youtube.com/vi/EFqc7WhJma4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "ZfPjjyYL6ws",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
@@ -14411,6 +14426,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "gyCc-VXW1uI",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "18:00",
+      "startsAt": "2026-08-17T18:00:00+09:00",
+      "name": "Iofi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=gyCc-VXW1uI",
+      "videoId": "gyCc-VXW1uI",
+      "thumbnail": "https://img.youtube.com/vi/gyCc-VXW1uI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "lssZJbZ7bFw",

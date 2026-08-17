@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T22:09:42.297Z",
+  "generatedAt": "2026-08-17T23:09:01.944Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -15241,8 +15241,8 @@
       "id": "Z16OMEw5FK8",
       "date": "2026-08-18",
       "dateLabel": "08/18 (火)",
-      "time": "08:00",
-      "startsAt": "2026-08-18T08:00:00+09:00",
+      "time": "07:57",
+      "startsAt": "2026-08-18T07:57:00+09:00",
       "name": "Bijou",
       "title": null,
       "url": "https://www.youtube.com/watch?v=Z16OMEw5FK8",
@@ -15431,6 +15431,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "XvB8svQ8ffg",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "05:00",
+      "startsAt": "2026-08-19T05:00:00+09:00",
+      "name": "Shiori",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=XvB8svQ8ffg",
+      "videoId": "XvB8svQ8ffg",
+      "thumbnail": "https://img.youtube.com/vi/XvB8svQ8ffg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "l8l5i8NyNdM",

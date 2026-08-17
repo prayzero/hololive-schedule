@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T11:12:34.506Z",
+  "generatedAt": "2026-08-17T11:45:46.734Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -14803,6 +14803,21 @@
       "branch": "JP"
     },
     {
+      "id": "jwNSmOteWRM",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "20:45",
+      "startsAt": "2026-08-17T20:45:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jwNSmOteWRM",
+      "videoId": "jwNSmOteWRM",
+      "thumbnail": "https://img.youtube.com/vi/jwNSmOteWRM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "foYXAlJiq68",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
@@ -14873,6 +14888,21 @@
       "url": "https://www.youtube.com/watch?v=O68E4JD4fgE",
       "videoId": "O68E4JD4fgE",
       "thumbnail": "https://img.youtube.com/vi/O68E4JD4fgE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "zbWI7KeGM8g",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "22:00",
+      "startsAt": "2026-08-17T22:00:00+09:00",
+      "name": "不知火フレア",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=zbWI7KeGM8g",
+      "videoId": "zbWI7KeGM8g",
+      "thumbnail": "https://img.youtube.com/vi/zbWI7KeGM8g/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T05:46:19.191Z",
+  "generatedAt": "2026-08-17T06:24:15.107Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -14416,13 +14416,28 @@
       "id": "CzEw-z-3eYE",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
-      "time": "14:45",
-      "startsAt": "2026-08-17T14:45:00+09:00",
+      "time": "14:46",
+      "startsAt": "2026-08-17T14:46:00+09:00",
       "name": "Kaela",
       "title": null,
       "url": "https://www.youtube.com/watch?v=CzEw-z-3eYE",
       "videoId": "CzEw-z-3eYE",
       "thumbnail": "https://img.youtube.com/vi/CzEw-z-3eYE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "SJ-cEYhJKSs",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "16:00",
+      "startsAt": "2026-08-17T16:00:00+09:00",
+      "name": "Moona",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=SJ-cEYhJKSs",
+      "videoId": "SJ-cEYhJKSs",
+      "thumbnail": "https://img.youtube.com/vi/SJ-cEYhJKSs/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "ID"
@@ -14471,6 +14486,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "5xy1_s3emDM",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "19:00",
+      "startsAt": "2026-08-17T19:00:00+09:00",
+      "name": "尾丸ポルカ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=5xy1_s3emDM",
+      "videoId": "5xy1_s3emDM",
+      "thumbnail": "https://img.youtube.com/vi/5xy1_s3emDM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "lssZJbZ7bFw",
@@ -14636,6 +14666,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "waihO4ruu4U",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "22:00",
+      "startsAt": "2026-08-17T22:00:00+09:00",
+      "name": "常闇トワ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=waihO4ruu4U",
+      "videoId": "waihO4ruu4U",
+      "thumbnail": "https://img.youtube.com/vi/waihO4ruu4U/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "eWhcYiB1wIA",
@@ -14816,6 +14861,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "0Wh6SWKPnPU",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "21:00",
+      "startsAt": "2026-08-18T21:00:00+09:00",
+      "name": "轟はじめ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=0Wh6SWKPnPU",
+      "videoId": "0Wh6SWKPnPU",
+      "thumbnail": "https://img.youtube.com/vi/0Wh6SWKPnPU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     }
   ]
 }

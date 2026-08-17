@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T15:12:06.452Z",
+  "generatedAt": "2026-08-17T15:45:35.595Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -15206,6 +15206,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "Z16OMEw5FK8",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "08:00",
+      "startsAt": "2026-08-18T08:00:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Z16OMEw5FK8",
+      "videoId": "Z16OMEw5FK8",
+      "thumbnail": "https://img.youtube.com/vi/Z16OMEw5FK8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "Sw7dcRPvm9s",

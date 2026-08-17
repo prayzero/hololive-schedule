@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T12:14:33.073Z",
+  "generatedAt": "2026-08-17T13:11:53.675Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -14833,6 +14833,51 @@
       "branch": "JP"
     },
     {
+      "id": "Ao7IhmX5luo",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "21:36",
+      "startsAt": "2026-08-17T21:36:00+09:00",
+      "name": "常闇トワ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Ao7IhmX5luo",
+      "videoId": "Ao7IhmX5luo",
+      "thumbnail": "https://img.youtube.com/vi/Ao7IhmX5luo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "u9CFMRSxtxs",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "21:59",
+      "startsAt": "2026-08-17T21:59:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=u9CFMRSxtxs",
+      "videoId": "u9CFMRSxtxs",
+      "thumbnail": "https://img.youtube.com/vi/u9CFMRSxtxs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "MUcHYEfOK7o",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "21:59",
+      "startsAt": "2026-08-17T21:59:00+09:00",
+      "name": "ホロライブ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=MUcHYEfOK7o",
+      "videoId": "MUcHYEfOK7o",
+      "thumbnail": "https://img.youtube.com/vi/MUcHYEfOK7o/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "zXKP6fC8lPM",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
@@ -14863,21 +14908,6 @@
       "branch": "JP"
     },
     {
-      "id": "Okb7AiRs1Ug",
-      "date": "2026-08-17",
-      "dateLabel": "08/17 (月)",
-      "time": "22:00",
-      "startsAt": "2026-08-17T22:00:00+09:00",
-      "name": "輪堂千速",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=Okb7AiRs1Ug",
-      "videoId": "Okb7AiRs1Ug",
-      "thumbnail": "https://img.youtube.com/vi/Okb7AiRs1Ug/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "DEV_IS"
-    },
-    {
       "id": "O68E4JD4fgE",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
@@ -14903,21 +14933,6 @@
       "url": "https://www.youtube.com/watch?v=zbWI7KeGM8g",
       "videoId": "zbWI7KeGM8g",
       "thumbnail": "https://img.youtube.com/vi/zbWI7KeGM8g/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
-      "id": "waihO4ruu4U",
-      "date": "2026-08-17",
-      "dateLabel": "08/17 (月)",
-      "time": "22:00",
-      "startsAt": "2026-08-17T22:00:00+09:00",
-      "name": "常闇トワ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=waihO4ruu4U",
-      "videoId": "waihO4ruu4U",
-      "thumbnail": "https://img.youtube.com/vi/waihO4ruu4U/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -14968,21 +14983,6 @@
       "branch": "DEV_IS"
     },
     {
-      "id": "u9CFMRSxtxs",
-      "date": "2026-08-17",
-      "dateLabel": "08/17 (月)",
-      "time": "22:00",
-      "startsAt": "2026-08-17T22:00:00+09:00",
-      "name": "Bijou",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=u9CFMRSxtxs",
-      "videoId": "u9CFMRSxtxs",
-      "thumbnail": "https://img.youtube.com/vi/u9CFMRSxtxs/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "EN"
-    },
-    {
       "id": "ArnCBXZtxVU",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
@@ -15013,11 +15013,26 @@
       "branch": "ID"
     },
     {
+      "id": "waihO4ruu4U",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "22:01",
+      "startsAt": "2026-08-17T22:01:00+09:00",
+      "name": "常闇トワ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=waihO4ruu4U",
+      "videoId": "waihO4ruu4U",
+      "thumbnail": "https://img.youtube.com/vi/waihO4ruu4U/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "nBFggpbY-OA",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
-      "time": "22:00",
-      "startsAt": "2026-08-17T22:00:00+09:00",
+      "time": "22:01",
+      "startsAt": "2026-08-17T22:01:00+09:00",
       "name": "さくらみこ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=nBFggpbY-OA",
@@ -15026,6 +15041,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "Okb7AiRs1Ug",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "22:02",
+      "startsAt": "2026-08-17T22:02:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Okb7AiRs1Ug",
+      "videoId": "Okb7AiRs1Ug",
+      "thumbnail": "https://img.youtube.com/vi/Okb7AiRs1Ug/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "OdureVENHEc",
@@ -15143,6 +15173,36 @@
       "url": "https://www.youtube.com/watch?v=yG1OqK1r9xQ",
       "videoId": "yG1OqK1r9xQ",
       "thumbnail": "https://img.youtube.com/vi/yG1OqK1r9xQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Sw7dcRPvm9s",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "08:00",
+      "startsAt": "2026-08-18T08:00:00+09:00",
+      "name": "ReGLOSS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Sw7dcRPvm9s",
+      "videoId": "Sw7dcRPvm9s",
+      "thumbnail": "https://img.youtube.com/vi/Sw7dcRPvm9s/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "XtwnRKd7944",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "09:30",
+      "startsAt": "2026-08-18T09:30:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=XtwnRKd7944",
+      "videoId": "XtwnRKd7944",
+      "thumbnail": "https://img.youtube.com/vi/XtwnRKd7944/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

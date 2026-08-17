@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T19:11:38.250Z",
+  "generatedAt": "2026-08-17T20:10:53.208Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -15163,31 +15163,31 @@
       "branch": "EN"
     },
     {
-      "id": "vI9g96BBxy0",
-      "date": "2026-08-18",
-      "dateLabel": "08/18 (火)",
-      "time": "05:00",
-      "startsAt": "2026-08-18T05:00:00+09:00",
-      "name": "Cecilia",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=vI9g96BBxy0",
-      "videoId": "vI9g96BBxy0",
-      "thumbnail": "https://img.youtube.com/vi/vI9g96BBxy0/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "EN"
-    },
-    {
       "id": "uGzQrJw0fJc",
       "date": "2026-08-18",
       "dateLabel": "08/18 (火)",
-      "time": "05:00",
-      "startsAt": "2026-08-18T05:00:00+09:00",
+      "time": "05:01",
+      "startsAt": "2026-08-18T05:01:00+09:00",
       "name": "Shiori",
       "title": null,
       "url": "https://www.youtube.com/watch?v=uGzQrJw0fJc",
       "videoId": "uGzQrJw0fJc",
       "thumbnail": "https://img.youtube.com/vi/uGzQrJw0fJc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "vI9g96BBxy0",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "05:02",
+      "startsAt": "2026-08-18T05:02:00+09:00",
+      "name": "Cecilia",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=vI9g96BBxy0",
+      "videoId": "vI9g96BBxy0",
+      "thumbnail": "https://img.youtube.com/vi/vI9g96BBxy0/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-16T23:31:06.380Z",
+  "generatedAt": "2026-08-17T01:52:07.274Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -14338,11 +14338,26 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "lddSS7oKdro",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "09:00",
+      "startsAt": "2026-08-17T09:00:00+09:00",
+      "name": "Shiori",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=lddSS7oKdro",
+      "videoId": "lddSS7oKdro",
+      "thumbnail": "https://img.youtube.com/vi/lddSS7oKdro/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "vDedN9YyxUc",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
-      "time": "10:00",
-      "startsAt": "2026-08-17T10:00:00+09:00",
+      "time": "10:02",
+      "startsAt": "2026-08-17T10:02:00+09:00",
       "name": "Baelz",
       "title": null,
       "url": "https://www.youtube.com/watch?v=vDedN9YyxUc",
@@ -14356,8 +14371,8 @@
       "id": "sjPz86IL4sk",
       "date": "2026-08-17",
       "dateLabel": "08/17 (月)",
-      "time": "10:30",
-      "startsAt": "2026-08-17T10:30:00+09:00",
+      "time": "10:25",
+      "startsAt": "2026-08-17T10:25:00+09:00",
       "name": "Nerissa",
       "title": null,
       "url": "https://www.youtube.com/watch?v=sjPz86IL4sk",
@@ -14603,6 +14618,21 @@
       "url": "https://www.youtube.com/watch?v=OdureVENHEc",
       "videoId": "OdureVENHEc",
       "thumbnail": "https://img.youtube.com/vi/OdureVENHEc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "NbTtcr_1WAs",
+      "date": "2026-08-17",
+      "dateLabel": "08/17 (月)",
+      "time": "23:00",
+      "startsAt": "2026-08-17T23:00:00+09:00",
+      "name": "Raora",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=NbTtcr_1WAs",
+      "videoId": "NbTtcr_1WAs",
+      "thumbnail": "https://img.youtube.com/vi/NbTtcr_1WAs/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

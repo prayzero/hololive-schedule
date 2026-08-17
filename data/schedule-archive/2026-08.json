@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T21:13:08.611Z",
+  "generatedAt": "2026-08-17T21:45:52.315Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -15386,6 +15386,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "yncG6v5Bu0E",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "22:00",
+      "startsAt": "2026-08-18T22:00:00+09:00",
+      "name": "夏色まつり",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=yncG6v5Bu0E",
+      "videoId": "yncG6v5Bu0E",
+      "thumbnail": "https://img.youtube.com/vi/yncG6v5Bu0E/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "qN0qOU0zFAk",

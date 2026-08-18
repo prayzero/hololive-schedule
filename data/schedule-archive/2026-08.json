@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T05:17:13.609Z",
+  "generatedAt": "2026-08-18T07:23:02.218Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -15373,6 +15373,21 @@
       "branch": "JP"
     },
     {
+      "id": "GMTTk6nzTBQ",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "20:00",
+      "startsAt": "2026-08-18T20:00:00+09:00",
+      "name": "戌神ころね",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=GMTTk6nzTBQ",
+      "videoId": "GMTTk6nzTBQ",
+      "thumbnail": "https://img.youtube.com/vi/GMTTk6nzTBQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "8jDkEhJaxOQ",
       "date": "2026-08-18",
       "dateLabel": "08/18 (火)",
@@ -15463,6 +15478,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "-WzNzRMW4Nw",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "22:00",
+      "startsAt": "2026-08-18T22:00:00+09:00",
+      "name": "白上フブキ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=-WzNzRMW4Nw",
+      "videoId": "-WzNzRMW4Nw",
+      "thumbnail": "https://img.youtube.com/vi/-WzNzRMW4Nw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "5MAiZsYUhdI",
       "date": "2026-08-18",
       "dateLabel": "08/18 (火)",
@@ -15476,6 +15506,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "f4dKnVn7ebQ",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "22:00",
+      "startsAt": "2026-08-18T22:00:00+09:00",
+      "name": "一条莉々華",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=f4dKnVn7ebQ",
+      "videoId": "f4dKnVn7ebQ",
+      "thumbnail": "https://img.youtube.com/vi/f4dKnVn7ebQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "yncG6v5Bu0E",

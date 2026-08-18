@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T03:05:55.592Z",
+  "generatedAt": "2026-08-18T03:56:03.792Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -15293,6 +15293,36 @@
       "url": "https://www.youtube.com/watch?v=A_dmiNZjthY",
       "videoId": "A_dmiNZjthY",
       "thumbnail": "https://img.youtube.com/vi/A_dmiNZjthY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "jE5ZRBYJbtc",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "18:00",
+      "startsAt": "2026-08-18T18:00:00+09:00",
+      "name": "音乃瀬奏",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jE5ZRBYJbtc",
+      "videoId": "jE5ZRBYJbtc",
+      "thumbnail": "https://img.youtube.com/vi/jE5ZRBYJbtc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "OsHqK9eUFwc",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "18:00",
+      "startsAt": "2026-08-18T18:00:00+09:00",
+      "name": "ホロライブ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=OsHqK9eUFwc",
+      "videoId": "OsHqK9eUFwc",
+      "thumbnail": "https://img.youtube.com/vi/OsHqK9eUFwc/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

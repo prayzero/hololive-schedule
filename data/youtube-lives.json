@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-17T01:57:26.748Z",
+  "checkedAt": "2026-08-18T01:53:04.965Z",
   "collectorVersion": "curated-official-channel-1.0.0",
   "sourceNote": "공식 hololive 탤런트 YouTube 채널에서 공개된 생일·주년·3D 음악 라이브와 무료 콘서트 기록입니다. 일반 노래방·게임·잡담·후일담·미리보기·Shorts·단일 곡 영상은 제외했습니다.",
   "sourceUrl": "https://www.youtube.com/",
@@ -55,6 +55,21 @@
       "thumbnailUrl": "https://i.ytimg.com/vi/TgiT1DQe_io/hqdefault.jpg"
     },
     {
+      "id": "mhvHZpK-9Ss",
+      "videoId": "mhvHZpK-9Ss",
+      "memberIds": [
+        "oozora-subaru"
+      ],
+      "channelId": "UCvzGlP9oQwU--Y0r9id_jnA",
+      "title": "【#大空スバル３周年】おまたせ！今日はたのしんでってな～！！！！：SUBARU 3rd anniversary Live【ホロライブ】",
+      "category": "anniversary",
+      "publishedLabel": null,
+      "publishedAt": null,
+      "durationSeconds": null,
+      "videoUrl": "https://www.youtube.com/watch?v=mhvHZpK-9Ss",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mhvHZpK-9Ss/hqdefault.jpg"
+    },
+    {
       "id": "EDWxOuVDUJk",
       "videoId": "EDWxOuVDUJk",
       "memberIds": [
@@ -98,6 +113,21 @@
       "durationSeconds": null,
       "videoUrl": "https://www.youtube.com/watch?v=spHKQDaz0C0",
       "thumbnailUrl": "https://i.ytimg.com/vi/spHKQDaz0C0/hqdefault.jpg"
+    },
+    {
+      "id": "QA8KoMko9u8",
+      "videoId": "QA8KoMko9u8",
+      "memberIds": [
+        "robocosan"
+      ],
+      "channelId": "UCDqI2jOz0weumE8s7paEk6g",
+      "title": "【３D全身】３周年記念🎉泣いて笑って…バラードオンリーライブ-Robot Memory-【ホロライブ/ロボ子さん】",
+      "category": "anniversary",
+      "publishedLabel": null,
+      "publishedAt": null,
+      "durationSeconds": null,
+      "videoUrl": "https://www.youtube.com/watch?v=QA8KoMko9u8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/QA8KoMko9u8/hqdefault.jpg"
     },
     {
       "id": "qp1bA1A5bTQ",

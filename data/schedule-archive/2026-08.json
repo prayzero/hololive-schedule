@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T17:48:42.643Z",
+  "generatedAt": "2026-08-18T19:36:17.984Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -16073,6 +16073,21 @@
       "url": "https://www.youtube.com/watch?v=QP8jhJ96rs0",
       "videoId": "QP8jhJ96rs0",
       "thumbnail": "https://img.youtube.com/vi/QP8jhJ96rs0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "TVxUH0RHhOA",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "22:30",
+      "startsAt": "2026-08-19T22:30:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=TVxUH0RHhOA",
+      "videoId": "TVxUH0RHhOA",
+      "thumbnail": "https://img.youtube.com/vi/TVxUH0RHhOA/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"

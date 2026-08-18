@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T16:45:35.794Z",
+  "generatedAt": "2026-08-18T17:48:42.643Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -15958,6 +15958,21 @@
       "branch": "EN"
     },
     {
+      "id": "H5l0MJ113QY",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "07:00",
+      "startsAt": "2026-08-19T07:00:00+09:00",
+      "name": "Elizabeth Sub",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=H5l0MJ113QY",
+      "videoId": "H5l0MJ113QY",
+      "thumbnail": "https://img.youtube.com/vi/H5l0MJ113QY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "tL4AbKU4Q3o",
       "date": "2026-08-19",
       "dateLabel": "08/19 (水)",
@@ -16046,6 +16061,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "QP8jhJ96rs0",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "21:15",
+      "startsAt": "2026-08-19T21:15:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=QP8jhJ96rs0",
+      "videoId": "QP8jhJ96rs0",
+      "thumbnail": "https://img.youtube.com/vi/QP8jhJ96rs0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "t8chcZWHYHs",

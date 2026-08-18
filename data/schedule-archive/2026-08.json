@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T04:47:31.239Z",
+  "generatedAt": "2026-08-18T05:17:13.609Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -15506,6 +15506,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "ErhNO4WYC1I",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "22:00",
+      "startsAt": "2026-08-18T22:00:00+09:00",
+      "name": "さくらみこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ErhNO4WYC1I",
+      "videoId": "ErhNO4WYC1I",
+      "thumbnail": "https://img.youtube.com/vi/ErhNO4WYC1I/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "2XYlTI1zrpI",

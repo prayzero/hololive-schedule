@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T15:52:35.025Z",
+  "generatedAt": "2026-08-18T16:45:35.794Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -15898,6 +15898,21 @@
       "branch": "EN"
     },
     {
+      "id": "h_Liam9GsIg",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "01:23",
+      "startsAt": "2026-08-19T01:23:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=h_Liam9GsIg",
+      "videoId": "h_Liam9GsIg",
+      "thumbnail": "https://img.youtube.com/vi/h_Liam9GsIg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "3Oxi1ZixKzA",
       "date": "2026-08-19",
       "dateLabel": "08/19 (水)",
@@ -15953,6 +15968,21 @@
       "url": "https://www.youtube.com/watch?v=tL4AbKU4Q3o",
       "videoId": "tL4AbKU4Q3o",
       "thumbnail": "https://img.youtube.com/vi/tL4AbKU4Q3o/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "SEFSWp86qII",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "10:00",
+      "startsAt": "2026-08-19T10:00:00+09:00",
+      "name": "儒烏風亭らでん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=SEFSWp86qII",
+      "videoId": "SEFSWp86qII",
+      "thumbnail": "https://img.youtube.com/vi/SEFSWp86qII/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"

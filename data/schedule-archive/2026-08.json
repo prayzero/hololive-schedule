@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T14:47:52.734Z",
+  "generatedAt": "2026-08-18T15:17:26.427Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -15883,6 +15883,21 @@
       "branch": "JP"
     },
     {
+      "id": "MLp8adwOqEQ",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "00:00",
+      "startsAt": "2026-08-19T00:00:00+09:00",
+      "name": "Baelz",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=MLp8adwOqEQ",
+      "videoId": "MLp8adwOqEQ",
+      "thumbnail": "https://img.youtube.com/vi/MLp8adwOqEQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "3Oxi1ZixKzA",
       "date": "2026-08-19",
       "dateLabel": "08/19 (水)",
@@ -15986,6 +16001,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "t8chcZWHYHs",
+      "date": "2026-08-20",
+      "dateLabel": "08/20 (木)",
+      "time": "05:00",
+      "startsAt": "2026-08-20T05:00:00+09:00",
+      "name": "Elizabeth",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=t8chcZWHYHs",
+      "videoId": "t8chcZWHYHs",
+      "thumbnail": "https://img.youtube.com/vi/t8chcZWHYHs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "CYstRa6Z6LU",
+      "date": "2026-08-20",
+      "dateLabel": "08/20 (木)",
+      "time": "11:00",
+      "startsAt": "2026-08-20T11:00:00+09:00",
+      "name": "Baelz",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=CYstRa6Z6LU",
+      "videoId": "CYstRa6Z6LU",
+      "thumbnail": "https://img.youtube.com/vi/CYstRa6Z6LU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     }
   ]
 }

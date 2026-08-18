@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T23:09:01.944Z",
+  "generatedAt": "2026-08-18T03:05:55.592Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -15283,6 +15283,21 @@
       "branch": "JP"
     },
     {
+      "id": "A_dmiNZjthY",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "12:00",
+      "startsAt": "2026-08-18T12:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=A_dmiNZjthY",
+      "videoId": "A_dmiNZjthY",
+      "thumbnail": "https://img.youtube.com/vi/A_dmiNZjthY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "Q-PiKYUiFJo",
       "date": "2026-08-18",
       "dateLabel": "08/18 (火)",
@@ -15358,6 +15373,21 @@
       "branch": "JP"
     },
     {
+      "id": "HCMyl3spSsM",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "22:00",
+      "startsAt": "2026-08-18T22:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=HCMyl3spSsM",
+      "videoId": "HCMyl3spSsM",
+      "thumbnail": "https://img.youtube.com/vi/HCMyl3spSsM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "k8lfcYUSpPc",
       "date": "2026-08-18",
       "dateLabel": "08/18 (火)",
@@ -15386,6 +15416,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "5MAiZsYUhdI",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "22:00",
+      "startsAt": "2026-08-18T22:00:00+09:00",
+      "name": "常闇トワ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=5MAiZsYUhdI",
+      "videoId": "5MAiZsYUhdI",
+      "thumbnail": "https://img.youtube.com/vi/5MAiZsYUhdI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "yncG6v5Bu0E",

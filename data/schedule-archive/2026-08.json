@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T10:14:12.204Z",
+  "generatedAt": "2026-08-18T11:19:32.574Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -15583,6 +15583,21 @@
       "branch": "JP"
     },
     {
+      "id": "8jDkEhJaxOQ",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "19:59",
+      "startsAt": "2026-08-18T19:59:00+09:00",
+      "name": "FLOW GLOW",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=8jDkEhJaxOQ",
+      "videoId": "8jDkEhJaxOQ",
+      "thumbnail": "https://img.youtube.com/vi/8jDkEhJaxOQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "GMTTk6nzTBQ",
       "date": "2026-08-18",
       "dateLabel": "08/18 (火)",
@@ -15598,19 +15613,19 @@
       "branch": "JP"
     },
     {
-      "id": "8jDkEhJaxOQ",
+      "id": "lmZ0w30CVbk",
       "date": "2026-08-18",
       "dateLabel": "08/18 (火)",
       "time": "20:00",
       "startsAt": "2026-08-18T20:00:00+09:00",
-      "name": "FLOW GLOW",
+      "name": "ときのそら",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=8jDkEhJaxOQ",
-      "videoId": "8jDkEhJaxOQ",
-      "thumbnail": "https://img.youtube.com/vi/8jDkEhJaxOQ/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=lmZ0w30CVbk",
+      "videoId": "lmZ0w30CVbk",
+      "thumbnail": "https://img.youtube.com/vi/lmZ0w30CVbk/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
-      "branch": "DEV_IS"
+      "branch": "JP"
     },
     {
       "id": "0Wh6SWKPnPU",

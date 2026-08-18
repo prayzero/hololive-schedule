@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T08:06:01.211Z",
+  "generatedAt": "2026-08-18T08:52:19.741Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -15376,8 +15376,8 @@
       "id": "OrxrCCgCdk4",
       "date": "2026-08-18",
       "dateLabel": "08/18 (火)",
-      "time": "17:00",
-      "startsAt": "2026-08-18T17:00:00+09:00",
+      "time": "17:11",
+      "startsAt": "2026-08-18T17:11:00+09:00",
       "name": "Iofi",
       "title": null,
       "url": "https://www.youtube.com/watch?v=OrxrCCgCdk4",
@@ -15388,31 +15388,46 @@
       "branch": "ID"
     },
     {
-      "id": "HEDOtn3oqZE",
-      "date": "2026-08-18",
-      "dateLabel": "08/18 (火)",
-      "time": "17:00",
-      "startsAt": "2026-08-18T17:00:00+09:00",
-      "name": "Moona",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=HEDOtn3oqZE",
-      "videoId": "HEDOtn3oqZE",
-      "thumbnail": "https://img.youtube.com/vi/HEDOtn3oqZE/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "ID"
-    },
-    {
       "id": "xb9k6XwMnKk",
       "date": "2026-08-18",
       "dateLabel": "08/18 (火)",
-      "time": "17:00",
-      "startsAt": "2026-08-18T17:00:00+09:00",
+      "time": "17:11",
+      "startsAt": "2026-08-18T17:11:00+09:00",
       "name": "Risu",
       "title": null,
       "url": "https://www.youtube.com/watch?v=xb9k6XwMnKk",
       "videoId": "xb9k6XwMnKk",
       "thumbnail": "https://img.youtube.com/vi/xb9k6XwMnKk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "g00iawC8AZQ",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "17:13",
+      "startsAt": "2026-08-18T17:13:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=g00iawC8AZQ",
+      "videoId": "g00iawC8AZQ",
+      "thumbnail": "https://img.youtube.com/vi/g00iawC8AZQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "HEDOtn3oqZE",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "17:13",
+      "startsAt": "2026-08-18T17:13:00+09:00",
+      "name": "Moona",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=HEDOtn3oqZE",
+      "videoId": "HEDOtn3oqZE",
+      "thumbnail": "https://img.youtube.com/vi/HEDOtn3oqZE/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "ID"
@@ -15628,6 +15643,21 @@
       "branch": "JP"
     },
     {
+      "id": "nMXf3tZpSUI",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "22:00",
+      "startsAt": "2026-08-18T22:00:00+09:00",
+      "name": "儒烏風亭らでん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=nMXf3tZpSUI",
+      "videoId": "nMXf3tZpSUI",
+      "thumbnail": "https://img.youtube.com/vi/nMXf3tZpSUI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "f4dKnVn7ebQ",
       "date": "2026-08-18",
       "dateLabel": "08/18 (火)",
@@ -15733,6 +15763,21 @@
       "branch": "EN"
     },
     {
+      "id": "tL4AbKU4Q3o",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "08:00",
+      "startsAt": "2026-08-19T08:00:00+09:00",
+      "name": "ReGLOSS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=tL4AbKU4Q3o",
+      "videoId": "tL4AbKU4Q3o",
+      "thumbnail": "https://img.youtube.com/vi/tL4AbKU4Q3o/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "l8l5i8NyNdM",
       "date": "2026-08-19",
       "dateLabel": "08/19 (水)",
@@ -15746,6 +15791,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "rEU515ZQS4U",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "19:00",
+      "startsAt": "2026-08-19T19:00:00+09:00",
+      "name": "儒烏風亭らでん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=rEU515ZQS4U",
+      "videoId": "rEU515ZQS4U",
+      "thumbnail": "https://img.youtube.com/vi/rEU515ZQS4U/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "9qjb2Z9Yzz8",

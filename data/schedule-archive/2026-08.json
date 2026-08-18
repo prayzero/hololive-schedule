@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T11:19:32.574Z",
+  "generatedAt": "2026-08-18T12:16:05.223Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -15658,11 +15658,26 @@
       "branch": "JP"
     },
     {
-      "id": "iVngZpV5_v0",
+      "id": "Mo5zXXNaLc4",
       "date": "2026-08-18",
       "dateLabel": "08/18 (火)",
       "time": "21:00",
       "startsAt": "2026-08-18T21:00:00+09:00",
+      "name": "FLOW GLOW",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Mo5zXXNaLc4",
+      "videoId": "Mo5zXXNaLc4",
+      "thumbnail": "https://img.youtube.com/vi/Mo5zXXNaLc4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "iVngZpV5_v0",
+      "date": "2026-08-18",
+      "dateLabel": "08/18 (火)",
+      "time": "21:03",
+      "startsAt": "2026-08-18T21:03:00+09:00",
       "name": "兎田ぺこら",
       "title": null,
       "url": "https://www.youtube.com/watch?v=iVngZpV5_v0",
@@ -15836,6 +15851,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "3Oxi1ZixKzA",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "03:00",
+      "startsAt": "2026-08-19T03:00:00+09:00",
+      "name": "Kiara",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=3Oxi1ZixKzA",
+      "videoId": "3Oxi1ZixKzA",
+      "thumbnail": "https://img.youtube.com/vi/3Oxi1ZixKzA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "XvB8svQ8ffg",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T15:52:29.557Z",
+  "generatedAt": "2026-08-19T16:43:18.629Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -16946,6 +16946,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "3t-MrIYhOTE",
+      "date": "2026-08-20",
+      "dateLabel": "08/20 (木)",
+      "time": "21:30",
+      "startsAt": "2026-08-20T21:30:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=3t-MrIYhOTE",
+      "videoId": "3t-MrIYhOTE",
+      "thumbnail": "https://img.youtube.com/vi/3t-MrIYhOTE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "XHNUgvbPTnM",
+      "date": "2026-08-20",
+      "dateLabel": "08/20 (木)",
+      "time": "22:00",
+      "startsAt": "2026-08-20T22:00:00+09:00",
+      "name": "姫森ルーナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=XHNUgvbPTnM",
+      "videoId": "XHNUgvbPTnM",
+      "thumbnail": "https://img.youtube.com/vi/XHNUgvbPTnM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "5CjlDdCeQx4",

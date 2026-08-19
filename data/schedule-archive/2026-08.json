@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T02:48:23.926Z",
+  "generatedAt": "2026-08-19T03:34:33.336Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -16106,6 +16106,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
+    },
+    {
+      "id": "UechIddyWw4",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "12:00",
+      "startsAt": "2026-08-19T12:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=UechIddyWw4",
+      "videoId": "UechIddyWw4",
+      "thumbnail": "https://img.youtube.com/vi/UechIddyWw4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "J1V_YdGzNT0",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "19:00",
+      "startsAt": "2026-08-19T19:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=J1V_YdGzNT0",
+      "videoId": "J1V_YdGzNT0",
+      "thumbnail": "https://img.youtube.com/vi/J1V_YdGzNT0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "rEU515ZQS4U",

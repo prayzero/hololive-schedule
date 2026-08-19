@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T15:18:40.768Z",
+  "generatedAt": "2026-08-19T15:52:29.557Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -16843,6 +16843,21 @@
       "branch": "EN"
     },
     {
+      "id": "Z6GdKNTnYjw",
+      "date": "2026-08-20",
+      "dateLabel": "08/20 (木)",
+      "time": "18:00",
+      "startsAt": "2026-08-20T18:00:00+09:00",
+      "name": "轟はじめ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Z6GdKNTnYjw",
+      "videoId": "Z6GdKNTnYjw",
+      "thumbnail": "https://img.youtube.com/vi/Z6GdKNTnYjw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "qnf8PYhVG80",
       "date": "2026-08-20",
       "dateLabel": "08/20 (木)",
@@ -16888,6 +16903,21 @@
       "branch": "JP"
     },
     {
+      "id": "fg1CypE95TQ",
+      "date": "2026-08-20",
+      "dateLabel": "08/20 (木)",
+      "time": "20:00",
+      "startsAt": "2026-08-20T20:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=fg1CypE95TQ",
+      "videoId": "fg1CypE95TQ",
+      "thumbnail": "https://img.youtube.com/vi/fg1CypE95TQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "Jpcriz8L8W8",
       "date": "2026-08-20",
       "dateLabel": "08/20 (木)",
@@ -16916,6 +16946,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "5CjlDdCeQx4",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "19:00",
+      "startsAt": "2026-08-21T19:00:00+09:00",
+      "name": "姫森ルーナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=5CjlDdCeQx4",
+      "videoId": "5CjlDdCeQx4",
+      "thumbnail": "https://img.youtube.com/vi/5CjlDdCeQx4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "giIyOrQO8rc",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T10:41:59.815Z",
+  "generatedAt": "2026-08-19T11:12:03.064Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -16438,6 +16438,21 @@
       "branch": "JP"
     },
     {
+      "id": "ptrfxedn0-E",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "20:00",
+      "startsAt": "2026-08-19T20:00:00+09:00",
+      "name": "ときのそら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ptrfxedn0-E",
+      "videoId": "ptrfxedn0-E",
+      "thumbnail": "https://img.youtube.com/vi/ptrfxedn0-E/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "9qjb2Z9Yzz8",
       "date": "2026-08-19",
       "dateLabel": "08/19 (水)",
@@ -16483,6 +16498,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "ymUsGrT6EaA",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "21:30",
+      "startsAt": "2026-08-19T21:30:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ymUsGrT6EaA",
+      "videoId": "ymUsGrT6EaA",
+      "thumbnail": "https://img.youtube.com/vi/ymUsGrT6EaA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "g-iox4kSwJc",
       "date": "2026-08-19",
       "dateLabel": "08/19 (水)",
@@ -16493,6 +16523,21 @@
       "url": "https://www.youtube.com/watch?v=g-iox4kSwJc",
       "videoId": "g-iox4kSwJc",
       "thumbnail": "https://img.youtube.com/vi/g-iox4kSwJc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "2xGf11KFcPo",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "22:00",
+      "startsAt": "2026-08-19T22:00:00+09:00",
+      "name": "白銀ノエル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=2xGf11KFcPo",
+      "videoId": "2xGf11KFcPo",
+      "thumbnail": "https://img.youtube.com/vi/2xGf11KFcPo/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

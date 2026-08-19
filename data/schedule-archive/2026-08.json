@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T09:26:58.284Z",
+  "generatedAt": "2026-08-19T10:02:10.178Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -16273,6 +16273,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "GRHIjx8a46k",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "18:49",
+      "startsAt": "2026-08-19T18:49:00+09:00",
+      "name": "白銀ノエル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=GRHIjx8a46k",
+      "videoId": "GRHIjx8a46k",
+      "thumbnail": "https://img.youtube.com/vi/GRHIjx8a46k/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "J1V_YdGzNT0",
       "date": "2026-08-19",
       "dateLabel": "08/19 (水)",
@@ -16556,6 +16571,51 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "UrKxF_3fVPQ",
+      "date": "2026-08-20",
+      "dateLabel": "08/20 (木)",
+      "time": "19:00",
+      "startsAt": "2026-08-20T19:00:00+09:00",
+      "name": "常闇トワ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=UrKxF_3fVPQ",
+      "videoId": "UrKxF_3fVPQ",
+      "thumbnail": "https://img.youtube.com/vi/UrKxF_3fVPQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Jpcriz8L8W8",
+      "date": "2026-08-20",
+      "dateLabel": "08/20 (木)",
+      "time": "20:00",
+      "startsAt": "2026-08-20T20:00:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Jpcriz8L8W8",
+      "videoId": "Jpcriz8L8W8",
+      "thumbnail": "https://img.youtube.com/vi/Jpcriz8L8W8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "In0VKq392O0",
+      "date": "2026-08-20",
+      "dateLabel": "08/20 (木)",
+      "time": "20:00",
+      "startsAt": "2026-08-20T20:00:00+09:00",
+      "name": "音乃瀬奏",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=In0VKq392O0",
+      "videoId": "In0VKq392O0",
+      "thumbnail": "https://img.youtube.com/vi/In0VKq392O0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     }
   ]
 }

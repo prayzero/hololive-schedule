@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T05:42:37.461Z",
+  "generatedAt": "2026-08-19T06:19:23.686Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -16178,6 +16178,21 @@
       "url": "https://www.youtube.com/watch?v=YK5lg8gCn6c",
       "videoId": "YK5lg8gCn6c",
       "thumbnail": "https://img.youtube.com/vi/YK5lg8gCn6c/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Gj7EDWunF2A",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "20:00",
+      "startsAt": "2026-08-19T20:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Gj7EDWunF2A",
+      "videoId": "Gj7EDWunF2A",
+      "thumbnail": "https://img.youtube.com/vi/Gj7EDWunF2A/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

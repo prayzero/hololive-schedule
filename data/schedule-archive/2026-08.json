@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T01:49:29.895Z",
+  "generatedAt": "2026-08-19T02:48:23.926Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -16076,6 +16076,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "o1ZkvUuyrEE",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "11:00",
+      "startsAt": "2026-08-19T11:00:00+09:00",
+      "name": "holo EN",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=o1ZkvUuyrEE",
+      "videoId": "o1ZkvUuyrEE",
+      "thumbnail": "https://img.youtube.com/vi/o1ZkvUuyrEE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "eZchfLyG0S8",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "11:32",
+      "startsAt": "2026-08-19T11:32:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=eZchfLyG0S8",
+      "videoId": "eZchfLyG0S8",
+      "thumbnail": "https://img.youtube.com/vi/eZchfLyG0S8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "rEU515ZQS4U",

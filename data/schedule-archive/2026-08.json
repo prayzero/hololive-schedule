@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T13:16:14.618Z",
+  "generatedAt": "2026-08-19T14:02:31.463Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -16633,26 +16633,11 @@
       "branch": "JP"
     },
     {
-      "id": "TVxUH0RHhOA",
-      "date": "2026-08-19",
-      "dateLabel": "08/19 (水)",
-      "time": "22:30",
-      "startsAt": "2026-08-19T22:30:00+09:00",
-      "name": "水宮枢",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=TVxUH0RHhOA",
-      "videoId": "TVxUH0RHhOA",
-      "thumbnail": "https://img.youtube.com/vi/TVxUH0RHhOA/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "DEV_IS"
-    },
-    {
       "id": "zVGJOSI3AB0",
       "date": "2026-08-19",
       "dateLabel": "08/19 (水)",
-      "time": "22:30",
-      "startsAt": "2026-08-19T22:30:00+09:00",
+      "time": "22:29",
+      "startsAt": "2026-08-19T22:29:00+09:00",
       "name": "Kaela",
       "title": null,
       "url": "https://www.youtube.com/watch?v=zVGJOSI3AB0",
@@ -16661,6 +16646,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
+    },
+    {
+      "id": "TVxUH0RHhOA",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "22:32",
+      "startsAt": "2026-08-19T22:32:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=TVxUH0RHhOA",
+      "videoId": "TVxUH0RHhOA",
+      "thumbnail": "https://img.youtube.com/vi/TVxUH0RHhOA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "XHZOFk4quKI",

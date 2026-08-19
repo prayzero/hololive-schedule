@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T06:19:23.686Z",
+  "generatedAt": "2026-08-19T07:12:53.733Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -16123,6 +16123,21 @@
       "branch": "JP"
     },
     {
+      "id": "S-O7Jbybb58",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "18:00",
+      "startsAt": "2026-08-19T18:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=S-O7Jbybb58",
+      "videoId": "S-O7Jbybb58",
+      "thumbnail": "https://img.youtube.com/vi/S-O7Jbybb58/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "J1V_YdGzNT0",
       "date": "2026-08-19",
       "dateLabel": "08/19 (水)",
@@ -16226,6 +16241,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "g-iox4kSwJc",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "22:00",
+      "startsAt": "2026-08-19T22:00:00+09:00",
+      "name": "白上フブキ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=g-iox4kSwJc",
+      "videoId": "g-iox4kSwJc",
+      "thumbnail": "https://img.youtube.com/vi/g-iox4kSwJc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "TVxUH0RHhOA",

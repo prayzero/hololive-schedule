@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T23:32:42.790Z",
+  "generatedAt": "2026-08-19T01:49:29.895Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -16018,19 +16018,19 @@
       "branch": "DEV_IS"
     },
     {
-      "id": "SEFSWp86qII",
+      "id": "BTAa8RiJ6t4",
       "date": "2026-08-19",
       "dateLabel": "08/19 (水)",
-      "time": "10:00",
-      "startsAt": "2026-08-19T10:00:00+09:00",
-      "name": "儒烏風亭らでん",
+      "time": "09:00",
+      "startsAt": "2026-08-19T09:00:00+09:00",
+      "name": "Shiori",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=SEFSWp86qII",
-      "videoId": "SEFSWp86qII",
-      "thumbnail": "https://img.youtube.com/vi/SEFSWp86qII/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=BTAa8RiJ6t4",
+      "videoId": "BTAa8RiJ6t4",
+      "thumbnail": "https://img.youtube.com/vi/BTAa8RiJ6t4/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
-      "branch": "DEV_IS"
+      "branch": "EN"
     },
     {
       "id": "l8l5i8NyNdM",
@@ -16043,6 +16043,36 @@
       "url": "https://www.youtube.com/watch?v=l8l5i8NyNdM",
       "videoId": "l8l5i8NyNdM",
       "thumbnail": "https://img.youtube.com/vi/l8l5i8NyNdM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "SEFSWp86qII",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "10:04",
+      "startsAt": "2026-08-19T10:04:00+09:00",
+      "name": "儒烏風亭らでん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=SEFSWp86qII",
+      "videoId": "SEFSWp86qII",
+      "thumbnail": "https://img.youtube.com/vi/SEFSWp86qII/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "ngJE0ynenyE",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "10:35",
+      "startsAt": "2026-08-19T10:35:00+09:00",
+      "name": "Raora",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ngJE0ynenyE",
+      "videoId": "ngJE0ynenyE",
+      "thumbnail": "https://img.youtube.com/vi/ngJE0ynenyE/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"
@@ -16148,6 +16178,21 @@
       "url": "https://www.youtube.com/watch?v=t8chcZWHYHs",
       "videoId": "t8chcZWHYHs",
       "thumbnail": "https://img.youtube.com/vi/t8chcZWHYHs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "857DmHSjduM",
+      "date": "2026-08-20",
+      "dateLabel": "08/20 (木)",
+      "time": "10:00",
+      "startsAt": "2026-08-20T10:00:00+09:00",
+      "name": "Shiori",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=857DmHSjduM",
+      "videoId": "857DmHSjduM",
+      "thumbnail": "https://img.youtube.com/vi/857DmHSjduM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

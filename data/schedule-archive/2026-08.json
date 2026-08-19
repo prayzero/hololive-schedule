@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-19T07:12:53.733Z",
+  "generatedAt": "2026-08-19T07:58:12.372Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -16228,6 +16228,21 @@
       "branch": "JP"
     },
     {
+      "id": "jTPdEzpxmIw",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "21:00",
+      "startsAt": "2026-08-19T21:00:00+09:00",
+      "name": "桃鈴ねね",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jTPdEzpxmIw",
+      "videoId": "jTPdEzpxmIw",
+      "thumbnail": "https://img.youtube.com/vi/jTPdEzpxmIw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "QP8jhJ96rs0",
       "date": "2026-08-19",
       "dateLabel": "08/19 (水)",
@@ -16271,6 +16286,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "lEbm_viuqWs",
+      "date": "2026-08-19",
+      "dateLabel": "08/19 (水)",
+      "time": "23:30",
+      "startsAt": "2026-08-19T23:30:00+09:00",
+      "name": "大神ミオ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=lEbm_viuqWs",
+      "videoId": "lEbm_viuqWs",
+      "thumbnail": "https://img.youtube.com/vi/lEbm_viuqWs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "nTBh8o32yss",
@@ -16331,6 +16361,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "qnf8PYhVG80",
+      "date": "2026-08-20",
+      "dateLabel": "08/20 (木)",
+      "time": "19:00",
+      "startsAt": "2026-08-20T19:00:00+09:00",
+      "name": "大神ミオ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=qnf8PYhVG80",
+      "videoId": "qnf8PYhVG80",
+      "thumbnail": "https://img.youtube.com/vi/qnf8PYhVG80/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     }
   ]
 }

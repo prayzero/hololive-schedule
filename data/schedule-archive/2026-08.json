@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T02:05:01.286Z",
+  "generatedAt": "2026-08-20T03:08:34.823Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -16873,11 +16873,56 @@
       "branch": "EN"
     },
     {
-      "id": "KcTBLPhF6fg",
+      "id": "n-1RBIIkj9A",
+      "date": "2026-08-20",
+      "dateLabel": "08/20 (木)",
+      "time": "11:06",
+      "startsAt": "2026-08-20T11:06:00+09:00",
+      "name": "Elizabeth",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=n-1RBIIkj9A",
+      "videoId": "n-1RBIIkj9A",
+      "thumbnail": "https://img.youtube.com/vi/n-1RBIIkj9A/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "NMJ9T8QgIKs",
       "date": "2026-08-20",
       "dateLabel": "08/20 (木)",
       "time": "12:00",
       "startsAt": "2026-08-20T12:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=NMJ9T8QgIKs",
+      "videoId": "NMJ9T8QgIKs",
+      "thumbnail": "https://img.youtube.com/vi/NMJ9T8QgIKs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "U48CBKV2fZA",
+      "date": "2026-08-20",
+      "dateLabel": "08/20 (木)",
+      "time": "12:00",
+      "startsAt": "2026-08-20T12:00:00+09:00",
+      "name": "Shiori",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=U48CBKV2fZA",
+      "videoId": "U48CBKV2fZA",
+      "thumbnail": "https://img.youtube.com/vi/U48CBKV2fZA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "KcTBLPhF6fg",
+      "date": "2026-08-20",
+      "dateLabel": "08/20 (木)",
+      "time": "12:01",
+      "startsAt": "2026-08-20T12:01:00+09:00",
       "name": "Kronii",
       "title": null,
       "url": "https://www.youtube.com/watch?v=KcTBLPhF6fg",
@@ -17051,6 +17096,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "XqxVDiHl-Mk",
+      "date": "2026-08-20",
+      "dateLabel": "08/20 (木)",
+      "time": "21:00",
+      "startsAt": "2026-08-20T21:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=XqxVDiHl-Mk",
+      "videoId": "XqxVDiHl-Mk",
+      "thumbnail": "https://img.youtube.com/vi/XqxVDiHl-Mk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "3t-MrIYhOTE",

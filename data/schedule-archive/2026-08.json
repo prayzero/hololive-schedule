@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T12:17:43.656Z",
+  "generatedAt": "2026-08-20T13:23:05.798Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -17443,6 +17443,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "XHNUgvbPTnM",
+      "date": "2026-08-20",
+      "dateLabel": "08/20 (木)",
+      "time": "21:59",
+      "startsAt": "2026-08-20T21:59:00+09:00",
+      "name": "姫森ルーナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=XHNUgvbPTnM",
+      "videoId": "XHNUgvbPTnM",
+      "thumbnail": "https://img.youtube.com/vi/XHNUgvbPTnM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "sA36jXnDXYo",
       "date": "2026-08-20",
       "dateLabel": "08/20 (木)",
@@ -17453,36 +17468,6 @@
       "url": "https://www.youtube.com/watch?v=sA36jXnDXYo",
       "videoId": "sA36jXnDXYo",
       "thumbnail": "https://img.youtube.com/vi/sA36jXnDXYo/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
-      "id": "Q9XD-WoW0mo",
-      "date": "2026-08-20",
-      "dateLabel": "08/20 (木)",
-      "time": "22:00",
-      "startsAt": "2026-08-20T22:00:00+09:00",
-      "name": "不知火フレア",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=Q9XD-WoW0mo",
-      "videoId": "Q9XD-WoW0mo",
-      "thumbnail": "https://img.youtube.com/vi/Q9XD-WoW0mo/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
-      "id": "XHNUgvbPTnM",
-      "date": "2026-08-20",
-      "dateLabel": "08/20 (木)",
-      "time": "22:00",
-      "startsAt": "2026-08-20T22:00:00+09:00",
-      "name": "姫森ルーナ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=XHNUgvbPTnM",
-      "videoId": "XHNUgvbPTnM",
-      "thumbnail": "https://img.youtube.com/vi/XHNUgvbPTnM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -17503,26 +17488,11 @@
       "branch": "ID"
     },
     {
-      "id": "APih3gtrDfI",
-      "date": "2026-08-20",
-      "dateLabel": "08/20 (木)",
-      "time": "22:00",
-      "startsAt": "2026-08-20T22:00:00+09:00",
-      "name": "さくらみこ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=APih3gtrDfI",
-      "videoId": "APih3gtrDfI",
-      "thumbnail": "https://img.youtube.com/vi/APih3gtrDfI/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "8OfmAmgSBvE",
       "date": "2026-08-20",
       "dateLabel": "08/20 (木)",
-      "time": "22:00",
-      "startsAt": "2026-08-20T22:00:00+09:00",
+      "time": "22:01",
+      "startsAt": "2026-08-20T22:01:00+09:00",
       "name": "ときのそら",
       "title": null,
       "url": "https://www.youtube.com/watch?v=8OfmAmgSBvE",
@@ -17533,19 +17503,34 @@
       "branch": "JP"
     },
     {
-      "id": "v76yZDytMsE",
+      "id": "Q9XD-WoW0mo",
       "date": "2026-08-20",
       "dateLabel": "08/20 (木)",
-      "time": "22:30",
-      "startsAt": "2026-08-20T22:30:00+09:00",
-      "name": "Kaela",
+      "time": "22:03",
+      "startsAt": "2026-08-20T22:03:00+09:00",
+      "name": "不知火フレア",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=v76yZDytMsE",
-      "videoId": "v76yZDytMsE",
-      "thumbnail": "https://img.youtube.com/vi/v76yZDytMsE/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=Q9XD-WoW0mo",
+      "videoId": "Q9XD-WoW0mo",
+      "thumbnail": "https://img.youtube.com/vi/Q9XD-WoW0mo/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
-      "branch": "ID"
+      "branch": "JP"
+    },
+    {
+      "id": "APih3gtrDfI",
+      "date": "2026-08-20",
+      "dateLabel": "08/20 (木)",
+      "time": "22:04",
+      "startsAt": "2026-08-20T22:04:00+09:00",
+      "name": "さくらみこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=APih3gtrDfI",
+      "videoId": "APih3gtrDfI",
+      "thumbnail": "https://img.youtube.com/vi/APih3gtrDfI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "Bygmt6vk6Jw",
@@ -17561,6 +17546,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "v76yZDytMsE",
+      "date": "2026-08-20",
+      "dateLabel": "08/20 (木)",
+      "time": "23:00",
+      "startsAt": "2026-08-20T23:00:00+09:00",
+      "name": "Kaela",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=v76yZDytMsE",
+      "videoId": "v76yZDytMsE",
+      "thumbnail": "https://img.youtube.com/vi/v76yZDytMsE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "BCwy8TXOXjs",

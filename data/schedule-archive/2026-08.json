@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T15:00:12.815Z",
+  "generatedAt": "2026-08-20T15:45:56.202Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -17563,6 +17563,21 @@
       "branch": "ID"
     },
     {
+      "id": "RNB-lNGCPAY",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "00:00",
+      "startsAt": "2026-08-21T00:00:00+09:00",
+      "name": "Baelz",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=RNB-lNGCPAY",
+      "videoId": "RNB-lNGCPAY",
+      "thumbnail": "https://img.youtube.com/vi/RNB-lNGCPAY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "25AI-6av6ak",
       "date": "2026-08-21",
       "dateLabel": "08/21 (金)",
@@ -17621,6 +17636,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "WKZtLyGWymU",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "18:00",
+      "startsAt": "2026-08-21T18:00:00+09:00",
+      "name": "白銀ノエル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=WKZtLyGWymU",
+      "videoId": "WKZtLyGWymU",
+      "thumbnail": "https://img.youtube.com/vi/WKZtLyGWymU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "UrKxF_3fVPQ",
@@ -17683,19 +17713,34 @@
       "branch": "JP"
     },
     {
-      "id": "ZRDi5Mo6BV8",
+      "id": "OZXUsSdDd3A",
       "date": "2026-08-21",
       "dateLabel": "08/21 (金)",
-      "time": "22:30",
-      "startsAt": "2026-08-21T22:30:00+09:00",
-      "name": "水宮枢",
+      "time": "22:00",
+      "startsAt": "2026-08-21T22:00:00+09:00",
+      "name": "大空スバル",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=ZRDi5Mo6BV8",
-      "videoId": "ZRDi5Mo6BV8",
-      "thumbnail": "https://img.youtube.com/vi/ZRDi5Mo6BV8/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=OZXUsSdDd3A",
+      "videoId": "OZXUsSdDd3A",
+      "thumbnail": "https://img.youtube.com/vi/OZXUsSdDd3A/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
-      "branch": "DEV_IS"
+      "branch": "JP"
+    },
+    {
+      "id": "u06bZurBgQc",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "10:00",
+      "startsAt": "2026-08-22T10:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=u06bZurBgQc",
+      "videoId": "u06bZurBgQc",
+      "thumbnail": "https://img.youtube.com/vi/u06bZurBgQc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "3E-9D9-bQdg",
@@ -17708,6 +17753,21 @@
       "url": "https://www.youtube.com/watch?v=3E-9D9-bQdg",
       "videoId": "3E-9D9-bQdg",
       "thumbnail": "https://img.youtube.com/vi/3E-9D9-bQdg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Bd3qbT6kXu8",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "13:00",
+      "startsAt": "2026-08-22T13:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Bd3qbT6kXu8",
+      "videoId": "Bd3qbT6kXu8",
+      "thumbnail": "https://img.youtube.com/vi/Bd3qbT6kXu8/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -17783,6 +17843,21 @@
       "url": "https://www.youtube.com/watch?v=Z6GdKNTnYjw",
       "videoId": "Z6GdKNTnYjw",
       "thumbnail": "https://img.youtube.com/vi/Z6GdKNTnYjw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "ZRDi5Mo6BV8",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "22:30",
+      "startsAt": "2026-08-22T22:30:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ZRDi5Mo6BV8",
+      "videoId": "ZRDi5Mo6BV8",
+      "thumbnail": "https://img.youtube.com/vi/ZRDi5Mo6BV8/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"

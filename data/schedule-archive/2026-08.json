@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T22:39:54.000Z",
+  "generatedAt": "2026-08-20T23:12:44.893Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -17651,6 +17651,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "eFkylhywqKU",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "10:00",
+      "startsAt": "2026-08-21T10:00:00+09:00",
+      "name": "Kronii",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=eFkylhywqKU",
+      "videoId": "eFkylhywqKU",
+      "thumbnail": "https://img.youtube.com/vi/eFkylhywqKU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "2mYhZjLX9Kc",

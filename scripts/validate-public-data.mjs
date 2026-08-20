@@ -255,6 +255,18 @@ function validateKnownShape(filePath, payload) {
       ["tracks", 3_000, 20_000],
       ["sourceUrls", 1, 100],
     ],
+    "hololive-official-card-game.json": [
+      ["releases", 1, 500],
+      ["rarities", 1, 100],
+      ["cards", 2_000, 10_000],
+      ["sourceUrls", 1, 100],
+    ],
+    "hololive-wafers.json": [
+      ["releases", 1, 100],
+      ["rarities", 1, 20],
+      ["cards", 250, 2_000],
+      ["sourceUrls", 1, 100],
+    ],
   }[name];
 
   if (!collections) {
@@ -263,6 +275,13 @@ function validateKnownShape(filePath, payload) {
 
   for (const [key, minimum, maximum] of collections) {
     requireArray(filePath, payload, key, minimum, maximum);
+  }
+
+  if (
+    name === "hololive-official-card-game.json" ||
+    name === "hololive-wafers.json"
+  ) {
+    validateCollectionCatalog(filePath, payload, name);
   }
 }
 
@@ -327,6 +346,186 @@ function validateYouTubeLives(filePath, lives) {
     if (!categories.has(live.category)) {
       fail(filePath, `YouTube live has invalid category for ${videoId}`);
     }
+  }
+}
+
+function validateCollectionCatalog(filePath, payload, name) {
+  const releases = payload.releases;
+  const rarities = payload.rarities;
+  const cards = payload.cards;
+  const expectedHost =
+    name === "hololive-official-card-game.json"
+      ? "hololive-official-cardgame.com"
+      : "www.bandai.co.jp";
+  const expectedImagePrefix =
+    name === "hololive-official-card-game.json"
+      ? "/wp-content/images/cardlist/"
+      : "/candy/published/bnc_files/product/";
+
+  if (
+    typeof payload.sourceNote !== "string" ||
+    payload.sourceNote.trim().length < 20
+  ) {
+    fail(filePath, "sourceNote must explain the catalog scope");
+  }
+
+  const releaseIds = new Set();
+  const membershipCounts = new Map();
+  for (const release of releases) {
+    if (!release || typeof release !== "object") {
+      fail(filePath, "releases must contain objects");
+    }
+    if (!isSafeCatalogId(release.id) || releaseIds.has(release.id)) {
+      fail(filePath, `invalid or duplicate release id: ${release.id ?? "<empty>"}`);
+    }
+    releaseIds.add(release.id);
+    membershipCounts.set(release.id, 0);
+
+    if (
+      typeof release.name !== "string" ||
+      !release.name.trim() ||
+      typeof release.shortName !== "string" ||
+      !release.shortName.trim() ||
+      typeof release.category !== "string" ||
+      !release.category.trim()
+    ) {
+      fail(filePath, `release ${release.id} has missing display fields`);
+    }
+    if (
+      release.releaseDate !== null &&
+      (!/^\d{4}-\d{2}-\d{2}$/.test(release.releaseDate) ||
+        !Number.isFinite(Date.parse(`${release.releaseDate}T00:00:00Z`)))
+    ) {
+      fail(filePath, `release ${release.id} has an invalid releaseDate`);
+    }
+    if (!Number.isSafeInteger(release.cardCount) || release.cardCount < 1) {
+      fail(filePath, `release ${release.id} has an invalid cardCount`);
+    }
+    validateCatalogUrlHost(filePath, release.sourceUrl, expectedHost, release.id);
+  }
+
+  const rarityIds = new Set();
+  const raritySortOrders = new Set();
+  for (const rarity of rarities) {
+    if (!rarity || typeof rarity !== "object") {
+      fail(filePath, "rarities must contain objects");
+    }
+    if (!isSafeCatalogId(rarity.id) || rarityIds.has(rarity.id)) {
+      fail(filePath, `invalid or duplicate rarity id: ${rarity.id ?? "<empty>"}`);
+    }
+    if (typeof rarity.label !== "string" || !rarity.label.trim()) {
+      fail(filePath, `rarity ${rarity.id} has an empty label`);
+    }
+    if (
+      !Number.isSafeInteger(rarity.sortOrder) ||
+      rarity.sortOrder < 0 ||
+      raritySortOrders.has(rarity.sortOrder)
+    ) {
+      fail(filePath, `rarity ${rarity.id} has an invalid sortOrder`);
+    }
+    rarityIds.add(rarity.id);
+    raritySortOrders.add(rarity.sortOrder);
+  }
+
+  const cardSortOrders = new Set();
+  for (const card of cards) {
+    if (!card || typeof card !== "object") {
+      fail(filePath, "cards must contain objects");
+    }
+    if (
+      !isSafeCatalogId(card.id) ||
+      typeof card.cardNumber !== "string" ||
+      !card.cardNumber.trim() ||
+      typeof card.title !== "string" ||
+      !card.title.trim()
+    ) {
+      fail(filePath, `card has invalid identity fields: ${card?.id ?? "<empty>"}`);
+    }
+    if (!rarityIds.has(card.rarityId)) {
+      fail(filePath, `card ${card.id} references unknown rarity ${card.rarityId}`);
+    }
+    if (
+      !Array.isArray(card.releaseIds) ||
+      card.releaseIds.length < 1 ||
+      card.releaseIds.length > 20 ||
+      new Set(card.releaseIds).size !== card.releaseIds.length
+    ) {
+      fail(filePath, `card ${card.id} has invalid releaseIds`);
+    }
+    for (const releaseId of card.releaseIds) {
+      if (!releaseIds.has(releaseId)) {
+        fail(filePath, `card ${card.id} references unknown release ${releaseId}`);
+      }
+      membershipCounts.set(releaseId, membershipCounts.get(releaseId) + 1);
+    }
+    if (
+      !Number.isSafeInteger(card.sortOrder) ||
+      card.sortOrder < 0 ||
+      cardSortOrders.has(card.sortOrder)
+    ) {
+      fail(filePath, `card ${card.id} has an invalid sortOrder`);
+    }
+    cardSortOrders.add(card.sortOrder);
+
+    validateCatalogUrlHost(filePath, card.imageUrl, expectedHost, card.id);
+    const imageUrl = new URL(card.imageUrl);
+    if (!imageUrl.pathname.startsWith(expectedImagePrefix)) {
+      fail(filePath, `card ${card.id} uses an unapproved image path`);
+    }
+    if (card.sourceUrl !== undefined) {
+      validateCatalogUrlHost(filePath, card.sourceUrl, expectedHost, card.id);
+    }
+    if (
+      card.memberNames !== undefined &&
+      (!Array.isArray(card.memberNames) ||
+        card.memberNames.length > 20 ||
+        card.memberNames.some(
+          (memberName) =>
+            typeof memberName !== "string" || !memberName.trim(),
+        ))
+    ) {
+      fail(filePath, `card ${card.id} has invalid memberNames`);
+    }
+    for (const key of ["imageSize", "imagePosition"]) {
+      if (
+        card[key] !== undefined &&
+        !/^\d+(?:\.\d+)?%\s+\d+(?:\.\d+)?%$/.test(card[key])
+      ) {
+        fail(filePath, `card ${card.id} has invalid ${key}`);
+      }
+    }
+  }
+
+  for (const release of releases) {
+    if (membershipCounts.get(release.id) !== release.cardCount) {
+      fail(
+        filePath,
+        `release ${release.id} cardCount does not reconcile: ${release.cardCount} != ${membershipCounts.get(release.id)}`,
+      );
+    }
+  }
+
+  for (const sourceUrl of payload.sourceUrls) {
+    validateCatalogUrlHost(filePath, sourceUrl, expectedHost, "sourceUrls");
+  }
+}
+
+function isSafeCatalogId(value) {
+  return (
+    typeof value === "string" &&
+    /^[A-Za-z0-9][A-Za-z0-9._:-]{0,119}$/.test(value)
+  );
+}
+
+function validateCatalogUrlHost(filePath, value, expectedHost, label) {
+  let url;
+  try {
+    url = new URL(value);
+  } catch {
+    fail(filePath, `${label} has a malformed catalog URL`);
+  }
+  if (url.protocol !== "https:" || url.hostname !== expectedHost) {
+    fail(filePath, `${label} uses an unapproved catalog URL host`);
   }
 }
 

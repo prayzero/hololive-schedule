@@ -204,6 +204,46 @@ export interface MusicPayload {
   tracks: MusicTrack[];
 }
 
+export interface CollectionRelease {
+  id: string;
+  name: string;
+  shortName: string;
+  releaseDate: string | null;
+  category: string;
+  sourceUrl: string;
+  cardCount: number;
+}
+
+export interface CollectionRarity {
+  id: string;
+  label: string;
+  sortOrder: number;
+}
+
+export interface CollectionCard {
+  id: string;
+  releaseIds: string[];
+  cardNumber: string;
+  title: string;
+  rarityId: string;
+  imageUrl: string;
+  imagePosition?: string;
+  imageSize?: string;
+  sourceUrl?: string;
+  memberNames?: string[];
+  variantLabel?: string;
+  sortOrder: number;
+}
+
+export interface CollectionCatalogPayload {
+  checkedAt: string;
+  sourceNote: string;
+  sourceUrls: string[];
+  releases: CollectionRelease[];
+  rarities: CollectionRarity[];
+  cards: CollectionCard[];
+}
+
 export interface DreamCharacter {
   id: string;
   talentId: string;

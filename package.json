@@ -10,6 +10,8 @@
     "enrich:youtube-archive": "node scripts/enrich-youtube-live-metadata.mjs",
     "update:youtube-archive": "node scripts/compile-youtube-live-archive.mjs",
     "update:hololive-dreams": "node scripts/update-hololive-dreams.mjs",
+    "update:card-game": "node scripts/update-hololive-card-game.mjs",
+    "update:wafers": "node scripts/update-hololive-wafers.mjs",
     "update:music": "node scripts/update-hololive-music.mjs",
     "validate:data": "node scripts/validate-public-data.mjs",
     "build": "node scripts/validate-public-data.mjs && tsc --noEmit && vite build",

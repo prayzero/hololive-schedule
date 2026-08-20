@@ -31,10 +31,15 @@ import {
   type CSSProperties,
   type ReactNode,
 } from "react";
+import {
+  CollectionCatalogPage,
+  type CollectionCatalogKind,
+} from "./collection/CollectionCatalogPage";
 import { DreamPage } from "./dream/DreamPage";
 import { MusicPage } from "./music/MusicPage";
 import { includesSearch, normalizeSearch } from "./search";
 import type {
+  CollectionCatalogPayload,
   CuratedEvent,
   EventRegion,
   EventsPayload,
@@ -62,11 +67,16 @@ const DATA_URLS = {
   youtubeLives: `${BASE_URL}data/youtube-lives.json`,
   hololiveDreams: `${BASE_URL}data/hololive-dreams.json`,
   music: `${BASE_URL}data/music.json`,
+  cards: `${BASE_URL}data/hololive-official-card-game.json`,
+  wafer: `${BASE_URL}data/hololive-wafers.json`,
 };
 const OFFICIAL_SCHEDULE_URL = "https://schedule.hololive.tv/lives/hololive";
 const OFFICIAL_TALENTS_URL = "https://hololive.hololivepro.com/en/talents";
 const OFFICIAL_DREAMS_URL = "https://www.hololive-dreams.com/en";
 const OFFICIAL_MUSIC_URL = "https://hololive.hololivepro.com/en/music/";
+const OFFICIAL_CARD_GAME_URL = "https://hololive-official-cardgame.com/";
+const OFFICIAL_WAFER_URL =
+  "https://www.bandai.co.jp/candy/characters/character462/index.html";
 
 const DREAM_PICKUP_MOMENT_FORMATTER = new Intl.DateTimeFormat("ko-KR", {
   timeZone: "Asia/Seoul",
@@ -83,7 +93,9 @@ type PageView =
   | "solo"
   | "local"
   | "music"
-  | "dream";
+  | "dream"
+  | "cards"
+  | "wafer";
 type ConcertPeriod = "upcoming" | "past";
 type DreamPanel = "collection" | "pickup" | "calculator";
 type YouTubeCategoryFilter = "all" | YouTubeLiveCategory;
@@ -163,6 +175,18 @@ const PAGE_META: Record<
     description:
       "기본 캐릭터와 신규 픽업 카드를 체크하고, 픽업별 결과를 저장해 역대 나의 운도 확인해 보세요.",
   },
+  cards: {
+    eyebrow: "HOLOLIVE OFFICIAL CARD GAME",
+    title: "가지고 있는 카드가, 나만의 덱이 되도록.",
+    description:
+      "공식 카드게임의 스타트 덱·부스터·프로모 카드를 팩과 등급별로 모았습니다.",
+  },
+  wafer: {
+    eyebrow: "HOLOLIVE WAFER CARDS",
+    title: "웨하스에서 만난 순간도, 하나의 컬렉션으로.",
+    description:
+      "역대 홀로라이브 웨하스 카드를 출시와 등급별로 확인하고 보유 상태를 기록하세요.",
+  },
 };
 
 const NAV_ITEMS: Array<{ id: PageView; label: string; shortLabel: string }> = [
@@ -172,6 +196,8 @@ const NAV_ITEMS: Array<{ id: PageView; label: string; shortLabel: string }> = [
   { id: "local", label: "일본·한국", shortLabel: "현지" },
   { id: "music", label: "음악", shortLabel: "음악" },
   { id: "dream", label: "홀로라이브 드림", shortLabel: "드림" },
+  { id: "cards", label: "공식 카드게임", shortLabel: "카드" },
+  { id: "wafer", label: "웨하스 카드", shortLabel: "웨하스" },
 ];
 
 const YOUTUBE_CATEGORY_OPTIONS: Array<{
@@ -279,6 +305,10 @@ const YOUTUBE_DATE_FORMATTER = new Intl.DateTimeFormat("ko-KR", {
 
 function paramValue(name: string): string | null {
   return new URLSearchParams(window.location.search).get(name);
+}
+
+function isCollectionView(view: PageView): view is CollectionCatalogKind {
+  return view === "cards" || view === "wafer";
 }
 
 function initialView(): PageView {
@@ -898,8 +928,16 @@ export default function App() {
   );
   const [musicData, setMusicData] = useState<MusicPayload | null>(null);
   const [musicError, setMusicError] = useState<string | null>(null);
+  const [collectionData, setCollectionData] = useState<
+    Partial<Record<CollectionCatalogKind, CollectionCatalogPayload>>
+  >({});
+  const [collectionErrors, setCollectionErrors] = useState<
+    Partial<Record<CollectionCatalogKind, string | null>>
+  >({});
+  const [collectionReloadRequest, setCollectionReloadRequest] = useState(0);
   const [dataReloadRequest, setDataReloadRequest] = useState(0);
   const searchInputRef = useRef<HTMLInputElement>(null);
+  const activeNavButtonRef = useRef<HTMLButtonElement>(null);
   const dateInputRef = useRef<HTMLInputElement>(null);
   const activeDateButtonRef = useRef<HTMLButtonElement>(null);
   const [now, setNow] = useState(() => new Date());
@@ -924,6 +962,13 @@ export default function App() {
   const [region, setRegion] = useState<LocalEventFilter>(initialRegion);
   const historyViewRef = useRef(view);
   const restoringHistoryRef = useRef(false);
+  const activeCollectionView = isCollectionView(view) ? view : null;
+  const activeCollectionData = activeCollectionView
+    ? collectionData[activeCollectionView] ?? null
+    : null;
+  const activeCollectionError = activeCollectionView
+    ? collectionErrors[activeCollectionView] ?? null
+    : null;
 
   useEffect(() => {
     let controller: AbortController | null = null;
@@ -1102,9 +1147,82 @@ export default function App() {
   }, [dataReloadRequest, musicData, view]);
 
   useEffect(() => {
+    if (!activeCollectionView || activeCollectionData) {
+      return;
+    }
+
+    const requestedView = activeCollectionView;
+    const controller = new AbortController();
+
+    async function loadCollectionData() {
+      try {
+        setCollectionErrors((current) => ({
+          ...current,
+          [requestedView]: null,
+        }));
+        const response = await fetch(DATA_URLS[requestedView], {
+          cache: "no-store",
+          signal: controller.signal,
+        });
+
+        if (!response.ok) {
+          throw new Error(
+            requestedView === "cards"
+              ? "공식 카드게임 데이터를 불러오지 못했습니다."
+              : "웨하스 카드 데이터를 불러오지 못했습니다.",
+          );
+        }
+
+        const payload = (await response.json()) as CollectionCatalogPayload;
+        setCollectionData((current) => ({
+          ...current,
+          [requestedView]: payload,
+        }));
+      } catch (loadError) {
+        if (!controller.signal.aborted) {
+          setCollectionErrors((current) => ({
+            ...current,
+            [requestedView]:
+              loadError instanceof Error
+                ? loadError.message
+                : "카드 컬렉션 데이터를 불러오지 못했습니다.",
+          }));
+        }
+      }
+    }
+
+    void loadCollectionData();
+    return () => controller.abort();
+  }, [
+    activeCollectionData,
+    activeCollectionView,
+    collectionReloadRequest,
+  ]);
+
+  useEffect(() => {
     const timer = window.setInterval(() => setNow(new Date()), 60_000);
     return () => window.clearInterval(timer);
   }, []);
+
+  useEffect(() => {
+    const activeButton = activeNavButtonRef.current;
+    const nav = activeButton?.parentElement;
+    if (!activeButton || !nav) return;
+
+    const navBounds = nav.getBoundingClientRect();
+    const buttonBounds = activeButton.getBoundingClientRect();
+    if (buttonBounds.left < navBounds.left) {
+      nav.scrollBy({
+        left: buttonBounds.left - navBounds.left - 12,
+        behavior: "smooth",
+      });
+    } else if (buttonBounds.right > navBounds.right) {
+      nav.scrollBy({
+        left: buttonBounds.right - navBounds.right + 12,
+        behavior: "smooth",
+      });
+    }
+  }, [view]);
 
   useEffect(() => {
     const focusSearch = (event: KeyboardEvent) => {
@@ -1851,6 +1969,14 @@ export default function App() {
       ?.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
+  function openCollectionArchive(kind: CollectionCatalogKind) {
+    document
+      .getElementById(
+        kind === "cards" ? "hololive-card-game" : "hololive-wafer",
+      )
+      ?.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
   const dreamPickupHighlight = useMemo(() => {
     const entries = (data?.hololiveDreams.pickups ?? [])
       .map((pickup) => {
@@ -1882,6 +2008,26 @@ export default function App() {
   }, [data?.hololiveDreams.pickups, now]);
 
   const currentMeta = PAGE_META[view];
+  const headerOfficialUrl =
+    view === "dream"
+      ? OFFICIAL_DREAMS_URL
+      : view === "music"
+        ? OFFICIAL_MUSIC_URL
+          : view === "cards"
+          ? activeCollectionData?.sourceUrls[0] ?? OFFICIAL_CARD_GAME_URL
+          : view === "wafer"
+            ? OFFICIAL_WAFER_URL
+            : OFFICIAL_SCHEDULE_URL;
+  const headerOfficialLabel =
+    view === "dream"
+      ? "공식 게임"
+      : view === "music"
+        ? "공식 음악"
+        : view === "cards"
+          ? "공식 카드"
+          : view === "wafer"
+            ? "공식 웨하스"
+            : "공식 일정";
 
   return (
     <div className="app-shell">
@@ -1959,6 +2105,7 @@ export default function App() {
             <button
               type="button"
               key={item.id}
+              ref={view === item.id ? activeNavButtonRef : undefined}
               className={view === item.id ? "is-active" : ""}
               onClick={() =>
                 item.id === "schedule" ? openSchedule() : setView(item.id)
@@ -1973,21 +2120,11 @@ export default function App() {
 
         <a
           className="header-official-link"
-          href={
-            view === "dream"
-              ? OFFICIAL_DREAMS_URL
-              : view === "music"
-                ? OFFICIAL_MUSIC_URL
-                : OFFICIAL_SCHEDULE_URL
-          }
+          href={headerOfficialUrl}
           target="_blank"
           rel="noreferrer"
         >
-          {view === "dream"
-            ? "공식 게임"
-            : view === "music"
-              ? "공식 음악"
-              : "공식 일정"}
+          {headerOfficialLabel}
           <ArrowUpRight size={15} aria-hidden="true" />
         </a>
       </header>
@@ -2011,7 +2148,9 @@ export default function App() {
                   ? "홀로라이브 드림 수집 카드 검색"
                   : view === "music"
                     ? "멤버, 곡, 앨범 검색"
-                    : "멤버, 방송, 영상, 공연 검색"}
+                    : isCollectionView(view)
+                      ? "카드 번호, 멤버, 팩, 등급 검색"
+                      : "멤버, 방송, 영상, 공연 검색"}
               </label>
               <input
                 id="global-search"
@@ -2028,7 +2167,9 @@ export default function App() {
                     ? "캐릭터 · 픽업 카드 검색"
                     : view === "music"
                       ? "멤버 · 곡 · 앨범 검색"
-                      : "멤버 · 방송 · 영상 · 공연 검색"
+                      : isCollectionView(view)
+                        ? "카드 번호 · 멤버 · 팩 · 등급 검색"
+                        : "멤버 · 방송 · 영상 · 공연 검색"
                 }
                 autoComplete="off"
               />
@@ -2047,6 +2188,7 @@ export default function App() {
 
               {view !== "dream" &&
               view !== "music" &&
+              !isCollectionView(view) &&
               matchingTalents.length > 0 ? (
                 <div className="search-popover" aria-label="멤버 검색 제안">
                   <span>멤버를 누르면 YouTube 라이브가 열립니다</span>
@@ -2096,6 +2238,22 @@ export default function App() {
                   <Check size={15} aria-hidden="true" /> 공식 감상 링크
                 </span>
               </div>
+            ) : isCollectionView(view) ? (
+              <div className="hero-trust-row">
+                <span>
+                  <Sparkles size={15} aria-hidden="true" />{" "}
+                  {(activeCollectionData?.cards.length ?? 0).toLocaleString(
+                    "ko-KR",
+                  )}
+                  장 카드 목록
+                </span>
+                <span>
+                  <Check size={15} aria-hidden="true" /> 이 브라우저에 자동 저장
+                </span>
+                <span>
+                  <History size={15} aria-hidden="true" /> 팩 · 등급별 정리
+                </span>
+              </div>
             ) : null}
           </div>
 
@@ -2106,7 +2264,11 @@ export default function App() {
                 ? "홀로라이브 드림 요약"
                 : view === "music"
                   ? "홀로라이브 음악 아카이브 요약"
-                  : "오늘의 일정 요약"
+                  : isCollectionView(view)
+                    ? view === "cards"
+                      ? "홀로라이브 공식 카드게임 컬렉션 요약"
+                      : "홀로라이브 웨하스 카드 컬렉션 요약"
+                    : "오늘의 일정 요약"
             }
           >
             {view === "dream" ? (
@@ -2207,6 +2369,65 @@ export default function App() {
                   <ArrowRight size={19} aria-hidden="true" />
                 </button>
               </>
+            ) : isCollectionView(view) ? (
+              <>
+                <div className="dashboard-heading">
+                  <span>
+                    {view === "cards"
+                      ? "OFFICIAL CARD COLLECTION"
+                      : "WAFER CARD COLLECTION"}
+                  </span>
+                  <time>
+                    {activeCollectionData?.checkedAt
+                      ? `${UPDATE_FORMATTER.format(
+                          new Date(activeCollectionData.checkedAt),
+                        )} 확인`
+                      : "데이터 준비 중"}
+                  </time>
+                </div>
+                <div className="dashboard-stats">
+                  <div>
+                    <History size={18} aria-hidden="true" />
+                    <strong>{activeCollectionData?.releases.length ?? 0}</strong>
+                    <span>팩 · 출시</span>
+                  </div>
+                  <div>
+                    <Sparkles size={18} aria-hidden="true" />
+                    <strong>
+                      {(activeCollectionData?.cards.length ?? 0).toLocaleString(
+                        "ko-KR",
+                      )}
+                    </strong>
+                    <span>전체 카드</span>
+                  </div>
+                  <div>
+                    <Check size={18} aria-hidden="true" />
+                    <strong>{activeCollectionData?.rarities.length ?? 0}</strong>
+                    <span>등급</span>
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  className="featured-solo collection-library-cta"
+                  onClick={() => {
+                    if (activeCollectionView) {
+                      openCollectionArchive(activeCollectionView);
+                    }
+                  }}
+                >
+                  <Sparkles size={30} aria-hidden="true" />
+                  <span>
+                    <small>MY CARD ARCHIVE</small>
+                    <strong>
+                      {view === "cards"
+                        ? "공식 카드게임 컬렉션 열기"
+                        : "웨하스 카드 컬렉션 열기"}
+                    </strong>
+                    <em>누르면 회색 카드가 컬러로 돌아옵니다.</em>
+                  </span>
+                  <ArrowRight size={19} aria-hidden="true" />
+                </button>
+              </>
             ) : (
               <>
                 <div className="dashboard-heading">
@@ -2262,18 +2483,27 @@ export default function App() {
           </aside>
         </section>
 
-        {error || archiveError || (view === "music" && musicError) ? (
+        {error ||
+        archiveError ||
+        (view === "music" && musicError) ||
+        activeCollectionError ? (
           <div className="data-alert" role="alert">
             <Info size={20} aria-hidden="true" />
             <div>
               <strong>사이트 데이터를 불러오지 못했습니다.</strong>
               <p>
-                {error ?? archiveError ?? musicError}
+                {error ??
+                  archiveError ??
+                  (view === "music" ? musicError : null) ??
+                  activeCollectionError}
               </p>
             </div>
             <button
               type="button"
-              onClick={() => setDataReloadRequest((value) => value + 1)}
+              onClick={() => {
+                setDataReloadRequest((value) => value + 1);
+                setCollectionReloadRequest((value) => value + 1);
+              }}
             >
               다시 시도
             </button>
@@ -2753,6 +2983,27 @@ export default function App() {
             />
           ) : (
             <section className="page-section" id="hololive-music">
+              <LoadingGrid />
+            </section>
+          )
+        ) : null}
+
+        {isCollectionView(view) ? (
+          activeCollectionData ? (
+            <CollectionCatalogPage
+              key={view}
+              kind={view}
+              payload={activeCollectionData}
+              query={query}
+              talents={talents}
+            />
+          ) : (
+            <section
+              className="page-section"
+              id={
+                view === "cards" ? "hololive-card-game" : "hololive-wafer"
+              }
+            >
               <LoadingGrid />
             </section>
           )

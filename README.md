@@ -1,7 +1,8 @@
 # HOLO NOW — GitHub Pages 일정 사이트
 
 홀로라이브 탤런트의 공개 방송 일정, 공식 콘서트 기록, 무료 YouTube
-라이브 아카이브, 음악과 일본·한국 현지 행사를 한눈에 보는 비공식 정적 페이지입니다.
+라이브 아카이브, 음악, 카드 컬렉션과 일본·한국 현지 행사를 한눈에 보는
+비공식 정적 페이지입니다.
 
 ## 주요 기능
 
@@ -14,6 +15,8 @@
 - 곡 길이 정렬과 YouTube·음원·앨범 감상 링크
 - `hololive Dreams` 공식 참여 멤버 54명의 브라우저 저장형 보유 체크리스트
 - 확인된 게임 내 제공 비율을 자동 적용하는 뽑기 확률·운 백분위 계산기
+- 일본판 `hololive OFFICIAL CARD GAME`의 부스터·덱·프로모 전체 카드 체크리스트
+- 반다이 홀로라이브 웨하스의 출시·카드 종류별 보유 체크리스트
 - 모바일과 데스크톱에 맞춘 반응형 카드 UI
 
 ## 비용
@@ -87,6 +90,16 @@ npm run build
     비율을 확인한 공개 자료와 공식 게임 공지를 구분해 표시합니다.
   - 보유 체크 정보는 로그인이나 서버 없이 현재 브라우저의 로컬 저장소에만
     저장됩니다.
+- `public/data/hololive-official-card-game.json`
+  - 일본판 hOCG 공식 카드리스트의 공개 레코드, 레어도, 수록 제품과 공식
+    카드 이미지를 담습니다.
+  - 같은 카드가 여러 제품에 재수록되면 하나의 보유 상태를 공유하며, 공식
+    사이트에 선공개된 출시 예정 제품은 화면에서 별도로 표시합니다.
+- `public/data/hololive-wafers.json`
+  - 반다이 캔디 공식 제품 페이지에서 확인한 발매 완료 홀로라이브 웨하스의
+    멤버·그룹 카드와 공식 라인업 이미지를 담습니다.
+  - 카드게임용 트윈 웨하스와 아직 발매되지 않은 시리즈는 각각 hOCG 탭과
+    향후 갱신 대상으로 분리합니다.
 
 YouTube 아카이브 수집·정리 스크립트는 별도 API 키나 유료 서비스 없이
 실행됩니다.
@@ -96,8 +109,15 @@ npm run collect:youtube-archive
 npm run enrich:youtube-archive
 npm run update:youtube-archive
 npm run update:hololive-dreams
+npm run update:card-game
+npm run update:wafers
 npm run update:music
 ```
+
+카드 데이터는 고빈도 방송 일정 수집과 분리해 관리합니다. `update:card-game`은
+실행 시 공식 카드 DB를 다시 수집하고, `update:wafers`는 스크립트에 검증해 둔
+반다이 공식 제품 정의로 스냅샷을 재생성합니다. 신규 웨하스가 발매되면 공식
+제품 페이지와 라인업 시트 정의를 추가한 뒤 두 데이터 파일을 검증·배포해야 합니다.
 
 ## 새 GitHub Pages로 배포
 
@@ -110,7 +130,7 @@ npm run update:music
 `.github/workflows/deploy-pages.yml`이 다음 작업을 수행합니다.
 
 ```text
-매시 07분·37분
+매시 07분·22분·37분·52분
   → 공식 Holodule 일정 수집
   → React 정적 페이지 빌드
   → GitHub Pages artifact 배포

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T04:49:46.340Z",
+  "generatedAt": "2026-08-20T07:02:30.485Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -17171,6 +17171,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "hLnLsTylcRk",
+      "date": "2026-08-20",
+      "dateLabel": "08/20 (木)",
+      "time": "22:00",
+      "startsAt": "2026-08-20T22:00:00+09:00",
+      "name": "Iofi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=hLnLsTylcRk",
+      "videoId": "hLnLsTylcRk",
+      "thumbnail": "https://img.youtube.com/vi/hLnLsTylcRk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "BCwy8TXOXjs",

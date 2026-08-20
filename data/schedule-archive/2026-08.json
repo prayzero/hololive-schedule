@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T03:08:34.823Z",
+  "generatedAt": "2026-08-20T04:03:26.224Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -16933,6 +16933,21 @@
       "branch": "EN"
     },
     {
+      "id": "uLqOrYeZUus",
+      "date": "2026-08-20",
+      "dateLabel": "08/20 (木)",
+      "time": "12:25",
+      "startsAt": "2026-08-20T12:25:00+09:00",
+      "name": "Iofi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=uLqOrYeZUus",
+      "videoId": "uLqOrYeZUus",
+      "thumbnail": "https://img.youtube.com/vi/uLqOrYeZUus/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "Z6GdKNTnYjw",
       "date": "2026-08-20",
       "dateLabel": "08/20 (木)",
@@ -17068,6 +17083,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "eJNfAUVfsJQ",
+      "date": "2026-08-20",
+      "dateLabel": "08/20 (木)",
+      "time": "20:00",
+      "startsAt": "2026-08-20T20:00:00+09:00",
+      "name": "尾丸ポルカ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=eJNfAUVfsJQ",
+      "videoId": "eJNfAUVfsJQ",
+      "thumbnail": "https://img.youtube.com/vi/eJNfAUVfsJQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "6PD0uUy_LRQ",
       "date": "2026-08-20",
       "dateLabel": "08/20 (木)",
@@ -17141,6 +17171,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "BCwy8TXOXjs",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "05:00",
+      "startsAt": "2026-08-21T05:00:00+09:00",
+      "name": "Shiori",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=BCwy8TXOXjs",
+      "videoId": "BCwy8TXOXjs",
+      "thumbnail": "https://img.youtube.com/vi/BCwy8TXOXjs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "8YdSUYVOQ18",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "06:00",
+      "startsAt": "2026-08-21T06:00:00+09:00",
+      "name": "Gigi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=8YdSUYVOQ18",
+      "videoId": "8YdSUYVOQ18",
+      "thumbnail": "https://img.youtube.com/vi/8YdSUYVOQ18/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "5CjlDdCeQx4",

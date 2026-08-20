@@ -387,7 +387,7 @@ export function DreamPickupPanel({
             <div>
               <Sparkles size={15} aria-hidden="true" />
               <span>
-                이미지: 공식 방송 공개 화면 · © COVER / © QualiArts, Inc.
+                이미지: 공식 공개 이미지 · © COVER / © QualiArts, Inc.
               </span>
             </div>
             <a

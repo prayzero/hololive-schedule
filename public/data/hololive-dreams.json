@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-08-07T11:11:40+09:00",
+  "checkedAt": "2026-08-20T11:40:36+09:00",
   "sourceUrl": "https://www.hololive-dreams.com/en",
   "officialNewsUrl": "https://hololive.hololivepro.com/en/news/20260723-01-401/",
-  "sourceNote": "hololive Dreams 공식 사이트에 공개된 출시 캐릭터 54명과 공식 썸네일을 사용합니다. 로스터·다운로드 링크와 현재 픽업은 공식 웹·X에서 2026-08-07 재확인했고, 개별 제공 비율은 게임 내 제공 비율 화면을 기준으로 2026-07-29 확인했습니다. 8월 7일 신규 미코·스이세이 픽업의 종료 시각과 제공 비율은 외부 공식 채널에 공개되지 않아 확인 중으로 표시합니다.",
+  "sourceNote": "hololive Dreams 공식 사이트에 공개된 출시 캐릭터 54명과 공식 썸네일을 사용합니다. 로스터·다운로드 링크와 현재 픽업은 공식 웹·X에서 2026-08-20 재확인했고, 개별 제공 비율은 게임 내 제공 비율 화면을 기준으로 2026-07-29 확인했습니다. 8월 7일 미코·스이세이 픽업 종료는 게임 내 화면 기반 공략 자료와 다음 픽업 전환을 교차 확인했습니다. 8월 17일 신규 칼리오페·아야메·올리·루나·이나 픽업의 종료 시각과 숫자 제공 비율은 외부 공식 채널에 공개되지 않아 확인 필요로 표시합니다.",
   "launchDate": "2026-07-23",
   "game": {
     "title": "hololive Dreams",
@@ -99,11 +99,147 @@
       }
     ],
     "rateReferenceUrl": "https://game8.jp/hololive-dreams/801993",
-    "pickupReferenceUrl": "https://x.com/hololive_dreams/status/2085547563827302723",
+    "pickupReferenceUrl": "https://x.com/hololive_dreams/status/2089171498506621279",
     "screenshotReferenceUrl": "https://appmedia.jp/wp-content/uploads/2026/07/135040_8l2nf.webp",
     "officialNoticeUrl": "https://www.hololive-dreams.com/news/detail/aku8rsuo9"
   },
   "pickups": [
+    {
+      "id": "heated-summer-day-selectable-2026",
+      "title": "선택 가능! 「열기를 띤 여름의 하루」 가챠",
+      "subtitle": "신규 수영복 ★5 5명 중 1명을 선택 · 선택 대상 출현율 상승 · 파크·라이브 의상 포함",
+      "targetRatePercent": null,
+      "rateLabel": "선택한 신규 수영복 ★5 한 명",
+      "rateBreakdown": [],
+      "startsOn": "2026-08-17",
+      "endsOn": null,
+      "startsAt": "2026-08-17T11:00:00+09:00",
+      "endsAt": null,
+      "announcedOn": "2026-08-16",
+      "sourceLabel": "hololive Dreams 공식 X 신규 픽업 공지",
+      "sourceUrl": "https://x.com/hololive_dreams/status/2089171498506621279",
+      "scheduleNote": "2026년 8월 17일 11시부터 일반형과 동시에 개최됩니다. 칼리오페·아야메·올리·루나·이나 중 한 명을 선택하면 해당 멤버의 출현율이 더 올라갑니다. 종료 시각과 숫자 제공 비율은 외부 공식 채널에 공개되지 않아 게임 내 공지에서 확인해야 합니다.",
+      "cards": [
+        {
+          "id": "heated-summer-day-2026-mori-calliope",
+          "talentId": "mori-calliope",
+          "cardTitle": "ビーチに刺さるReaper's Spike",
+          "rarity": 5,
+          "imageUrl": "images/dream-pickups/heated-summer-day-2026/mori-calliope.jpg",
+          "imageAlt": "★5 해변에 꽂히는 Reaper's Spike 모리 칼리오페 카드 일러스트",
+          "imagePosition": "40% 35%",
+          "imageScale": 1.22
+        },
+        {
+          "id": "heated-summer-day-2026-nakiri-ayame",
+          "talentId": "nakiri-ayame",
+          "cardTitle": "鬼神流・ぷかぷかリゾート",
+          "rarity": 5,
+          "imageUrl": "images/dream-pickups/heated-summer-day-2026/nakiri-ayame.jpg",
+          "imageAlt": "★5 귀신류 둥실둥실 리조트 나키리 아야메 카드 일러스트",
+          "imagePosition": "42% 35%",
+          "imageScale": 1.22
+        },
+        {
+          "id": "heated-summer-day-2026-kureiji-ollie",
+          "talentId": "kureiji-ollie",
+          "cardTitle": "常夏のCrazy Dive",
+          "rarity": 5,
+          "imageUrl": "images/dream-pickups/heated-summer-day-2026/kureiji-ollie.jpg",
+          "imageAlt": "★5 한여름의 Crazy Dive 쿠레이지 올리 카드 일러스트",
+          "imagePosition": "60% 35%",
+          "imageScale": 1.22
+        },
+        {
+          "id": "heated-summer-day-2026-himemori-luna",
+          "talentId": "himemori-luna",
+          "cardTitle": "のんびり姫のおねだりビーチ",
+          "rarity": 5,
+          "imageUrl": "images/dream-pickups/heated-summer-day-2026/himemori-luna.jpg",
+          "imageAlt": "★5 느긋한 공주의 조르는 비치 히메모리 루나 카드 일러스트",
+          "imagePosition": "62% 35%",
+          "imageScale": 1.22
+        },
+        {
+          "id": "heated-summer-day-2026-ninomae-inanis",
+          "talentId": "ninomae-inanis",
+          "cardTitle": "潮騒の記憶をたどって",
+          "rarity": 5,
+          "imageUrl": "images/dream-pickups/heated-summer-day-2026/ninomae-inanis.jpg",
+          "imageAlt": "★5 파도 소리의 기억을 더듬어 니노마에 이나니스 카드 일러스트",
+          "imagePosition": "58% 34%",
+          "imageScale": 1.22
+        }
+      ]
+    },
+    {
+      "id": "heated-summer-day-standard-2026",
+      "title": "「열기를 띤 여름의 하루」 가챠",
+      "subtitle": "신규 수영복 ★5 칼리오페·아야메·올리·루나·이나 · 파크·라이브 의상 포함",
+      "targetRatePercent": null,
+      "rateLabel": "신규 수영복 ★5 다섯 명 전체",
+      "rateBreakdown": [],
+      "startsOn": "2026-08-17",
+      "endsOn": null,
+      "startsAt": "2026-08-17T11:00:00+09:00",
+      "endsAt": null,
+      "announcedOn": "2026-08-16",
+      "sourceLabel": "hololive Dreams 공식 X 신규 픽업 공지",
+      "sourceUrl": "https://x.com/hololive_dreams/status/2089171498506621279",
+      "scheduleNote": "2026년 8월 17일 11시부터 선택형과 동시에 개최됩니다. 신규 카드를 획득하면 각 멤버의 파크 의상과 라이브 의상도 함께 획득합니다. 종료 시각과 숫자 제공 비율은 외부 공식 채널에 공개되지 않아 게임 내 공지에서 확인해야 합니다. 신규 멤버는 이후 개최 가챠에도 등장하지만 상시 홀로도리 가챠에서는 배출되지 않습니다.",
+      "cards": [
+        {
+          "id": "heated-summer-day-2026-mori-calliope",
+          "talentId": "mori-calliope",
+          "cardTitle": "ビーチに刺さるReaper's Spike",
+          "rarity": 5,
+          "imageUrl": "images/dream-pickups/heated-summer-day-2026/mori-calliope.jpg",
+          "imageAlt": "★5 해변에 꽂히는 Reaper's Spike 모리 칼리오페 카드 일러스트",
+          "imagePosition": "40% 35%",
+          "imageScale": 1.22
+        },
+        {
+          "id": "heated-summer-day-2026-nakiri-ayame",
+          "talentId": "nakiri-ayame",
+          "cardTitle": "鬼神流・ぷかぷかリゾート",
+          "rarity": 5,
+          "imageUrl": "images/dream-pickups/heated-summer-day-2026/nakiri-ayame.jpg",
+          "imageAlt": "★5 귀신류 둥실둥실 리조트 나키리 아야메 카드 일러스트",
+          "imagePosition": "42% 35%",
+          "imageScale": 1.22
+        },
+        {
+          "id": "heated-summer-day-2026-kureiji-ollie",
+          "talentId": "kureiji-ollie",
+          "cardTitle": "常夏のCrazy Dive",
+          "rarity": 5,
+          "imageUrl": "images/dream-pickups/heated-summer-day-2026/kureiji-ollie.jpg",
+          "imageAlt": "★5 한여름의 Crazy Dive 쿠레이지 올리 카드 일러스트",
+          "imagePosition": "60% 35%",
+          "imageScale": 1.22
+        },
+        {
+          "id": "heated-summer-day-2026-himemori-luna",
+          "talentId": "himemori-luna",
+          "cardTitle": "のんびり姫のおねだりビーチ",
+          "rarity": 5,
+          "imageUrl": "images/dream-pickups/heated-summer-day-2026/himemori-luna.jpg",
+          "imageAlt": "★5 느긋한 공주의 조르는 비치 히메모리 루나 카드 일러스트",
+          "imagePosition": "62% 35%",
+          "imageScale": 1.22
+        },
+        {
+          "id": "heated-summer-day-2026-ninomae-inanis",
+          "talentId": "ninomae-inanis",
+          "cardTitle": "潮騒の記憶をたどって",
+          "rarity": 5,
+          "imageUrl": "images/dream-pickups/heated-summer-day-2026/ninomae-inanis.jpg",
+          "imageAlt": "★5 파도 소리의 기억을 더듬어 니노마에 이나니스 카드 일러스트",
+          "imagePosition": "58% 34%",
+          "imageScale": 1.22
+        }
+      ]
+    },
     {
       "id": "summer-sniper-2026",
       "title": "「두 사람이 여름을 저격!」 가챠",
@@ -112,13 +248,13 @@
       "rateLabel": "신규 수영복 ★5 미코·스이세이",
       "rateBreakdown": [],
       "startsOn": "2026-08-07",
-      "endsOn": null,
+      "endsOn": "2026-08-17",
       "startsAt": "2026-08-07T11:00:00+09:00",
-      "endsAt": null,
+      "endsAt": "2026-08-17T10:59:59+09:00",
       "announcedOn": "2026-08-07",
       "sourceLabel": "hololive Dreams 공식 X 신규 픽업 공지",
       "sourceUrl": "https://x.com/hololive_dreams/status/2085547563827302723",
-      "scheduleNote": "2026년 8월 7일 11시부터 등장합니다. 두 카드를 획득하면 각각 파크 의상과 라이브 의상도 함께 획득합니다. 종료 시각과 제공 비율은 공식 X에 공개되지 않아 게임 내 공지에서 확인해야 합니다. 신규 멤버는 다음 개최 예정 가챠부터도 등장하며 상시 홀로드리 가챠에서는 배출되지 않습니다.",
+      "scheduleNote": "2026년 8월 7일 11시부터 8월 17일 10시 59분까지 개최됐습니다. 공식 X에는 종료 시각이 없어 게임 내 화면을 기록한 공략 자료와 다음 픽업 전환을 교차 확인했습니다. 두 카드를 획득하면 각각 파크 의상과 라이브 의상도 함께 획득합니다. 제공 비율은 외부 공식 채널에 공개되지 않았습니다.",
       "cards": [
         {
           "id": "summer-sniper-2026-sakura-miko",

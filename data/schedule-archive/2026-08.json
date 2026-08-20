@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T15:45:56.202Z",
+  "generatedAt": "2026-08-20T17:41:00.036Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -17638,6 +17638,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "2mYhZjLX9Kc",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "18:00",
+      "startsAt": "2026-08-21T18:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=2mYhZjLX9Kc",
+      "videoId": "2mYhZjLX9Kc",
+      "thumbnail": "https://img.youtube.com/vi/2mYhZjLX9Kc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "WKZtLyGWymU",
       "date": "2026-08-21",
       "dateLabel": "08/21 (金)",
@@ -17693,6 +17708,21 @@
       "url": "https://www.youtube.com/watch?v=_I7rCnEDJfo",
       "videoId": "_I7rCnEDJfo",
       "thumbnail": "https://img.youtube.com/vi/_I7rCnEDJfo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "unaoc07LQi4",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "20:00",
+      "startsAt": "2026-08-21T20:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=unaoc07LQi4",
+      "videoId": "unaoc07LQi4",
+      "thumbnail": "https://img.youtube.com/vi/unaoc07LQi4/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"

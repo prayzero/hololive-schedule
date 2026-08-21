@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T15:22:30.385Z",
+  "generatedAt": "2026-08-21T16:48:26.112Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -18328,6 +18328,21 @@
       "branch": "EN"
     },
     {
+      "id": "OMB0OHUr5rE",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "01:01",
+      "startsAt": "2026-08-22T01:01:00+09:00",
+      "name": "Iofi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=OMB0OHUr5rE",
+      "videoId": "OMB0OHUr5rE",
+      "thumbnail": "https://img.youtube.com/vi/OMB0OHUr5rE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "EkD5iZWpdXs",
       "date": "2026-08-22",
       "dateLabel": "08/22 (土)",
@@ -18491,6 +18506,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "rX8MZYk5670",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "20:00",
+      "startsAt": "2026-08-22T20:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=rX8MZYk5670",
+      "videoId": "rX8MZYk5670",
+      "thumbnail": "https://img.youtube.com/vi/rX8MZYk5670/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "KufKV-1plg4",

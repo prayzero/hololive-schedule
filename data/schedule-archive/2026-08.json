@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T23:12:44.893Z",
+  "generatedAt": "2026-08-21T01:59:54.359Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -17656,8 +17656,8 @@
       "id": "eFkylhywqKU",
       "date": "2026-08-21",
       "dateLabel": "08/21 (金)",
-      "time": "10:00",
-      "startsAt": "2026-08-21T10:00:00+09:00",
+      "time": "10:06",
+      "startsAt": "2026-08-21T10:06:00+09:00",
       "name": "Kronii",
       "title": null,
       "url": "https://www.youtube.com/watch?v=eFkylhywqKU",
@@ -17768,6 +17768,21 @@
       "url": "https://www.youtube.com/watch?v=giIyOrQO8rc",
       "videoId": "giIyOrQO8rc",
       "thumbnail": "https://img.youtube.com/vi/giIyOrQO8rc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "0Uw2u8eCNX4",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "21:00",
+      "startsAt": "2026-08-21T21:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=0Uw2u8eCNX4",
+      "videoId": "0Uw2u8eCNX4",
+      "thumbnail": "https://img.youtube.com/vi/0Uw2u8eCNX4/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

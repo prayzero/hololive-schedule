@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-20T01:54:17.075Z",
+  "checkedAt": "2026-08-21T02:00:33.209Z",
   "collectorVersion": "curated-official-channel-1.0.0",
   "sourceNote": "공식 hololive 탤런트 YouTube 채널에서 공개된 생일·주년·3D 음악 라이브와 무료 콘서트 기록입니다. 일반 노래방·게임·잡담·후일담·미리보기·Shorts·단일 곡 영상은 제외했습니다.",
   "sourceUrl": "https://www.youtube.com/",
@@ -53,6 +53,21 @@
       "durationSeconds": null,
       "videoUrl": "https://www.youtube.com/watch?v=_Pr8U9kG2vY",
       "thumbnailUrl": "https://i.ytimg.com/vi/_Pr8U9kG2vY/hqdefault.jpg"
+    },
+    {
+      "id": "cEJGu0wlFt8",
+      "videoId": "cEJGu0wlFt8",
+      "memberIds": [
+        "himemori-luna"
+      ],
+      "channelId": "UCa9Y57gfeY0Zro_noHRVrnw",
+      "title": "【 #姫森ルーナ誕生祭 】たくさんお祝いして欲しいのら！💗Luna's Birthday Live【ホロライブ】",
+      "category": "birthday",
+      "publishedLabel": null,
+      "publishedAt": null,
+      "durationSeconds": null,
+      "videoUrl": "https://www.youtube.com/watch?v=cEJGu0wlFt8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/cEJGu0wlFt8/hqdefault.jpg"
     },
     {
       "id": "TgiT1DQe_io",
@@ -158,6 +173,36 @@
       "durationSeconds": null,
       "videoUrl": "https://www.youtube.com/watch?v=TjhOZn1vNW4",
       "thumbnailUrl": "https://i.ytimg.com/vi/TjhOZn1vNW4/hqdefault.jpg"
+    },
+    {
+      "id": "YsvEWEEUWa8",
+      "videoId": "YsvEWEEUWa8",
+      "memberIds": [
+        "tokoyami-towa"
+      ],
+      "channelId": "UC1uv2Oq6kNxgATlCiez59hw",
+      "title": "【3DLIVE】この叫びを届けるためにｰScreamｰ【#常闇トワ2周年記念】",
+      "category": "anniversary",
+      "publishedLabel": null,
+      "publishedAt": null,
+      "durationSeconds": null,
+      "videoUrl": "https://www.youtube.com/watch?v=YsvEWEEUWa8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/YsvEWEEUWa8/hqdefault.jpg"
+    },
+    {
+      "id": "-a68MSMFuuM",
+      "videoId": "-a68MSMFuuM",
+      "memberIds": [
+        "shirakami-fubuki"
+      ],
+      "channelId": "UCdn5BQ06XqgXoAxIhbqw5Rg",
+      "title": "【3DLIVE】白上フブキ生誕祭2024　#FBKINGDOMPROLOGUE【ホロライブ/白上フブキ 】",
+      "category": "birthday",
+      "publishedLabel": null,
+      "publishedAt": null,
+      "durationSeconds": null,
+      "videoUrl": "https://www.youtube.com/watch?v=-a68MSMFuuM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-a68MSMFuuM/hqdefault.jpg"
     },
     {
       "id": "QA8KoMko9u8",

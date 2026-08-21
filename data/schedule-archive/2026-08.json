@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T13:57:38.674Z",
+  "generatedAt": "2026-08-21T14:49:44.047Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -18253,16 +18253,16 @@
       "branch": "JP"
     },
     {
-      "id": "BLFXVI1HU1U",
+      "id": "y0A2CjaI-4k",
       "date": "2026-08-21",
       "dateLabel": "08/21 (金)",
-      "time": "23:00",
-      "startsAt": "2026-08-21T23:00:00+09:00",
-      "name": "角巻わため",
+      "time": "22:53",
+      "startsAt": "2026-08-21T22:53:00+09:00",
+      "name": "ときのそら",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=BLFXVI1HU1U",
-      "videoId": "BLFXVI1HU1U",
-      "thumbnail": "https://img.youtube.com/vi/BLFXVI1HU1U/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=y0A2CjaI-4k",
+      "videoId": "y0A2CjaI-4k",
+      "thumbnail": "https://img.youtube.com/vi/y0A2CjaI-4k/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -18281,6 +18281,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
+    },
+    {
+      "id": "BLFXVI1HU1U",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "23:03",
+      "startsAt": "2026-08-21T23:03:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=BLFXVI1HU1U",
+      "videoId": "BLFXVI1HU1U",
+      "thumbnail": "https://img.youtube.com/vi/BLFXVI1HU1U/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "SlmRqzoXk9s",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "23:12",
+      "startsAt": "2026-08-21T23:12:00+09:00",
+      "name": "ときのそら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=SlmRqzoXk9s",
+      "videoId": "SlmRqzoXk9s",
+      "thumbnail": "https://img.youtube.com/vi/SlmRqzoXk9s/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "EkD5iZWpdXs",

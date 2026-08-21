@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T05:02:37.611Z",
+  "generatedAt": "2026-08-21T05:45:09.148Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -17683,6 +17683,21 @@
       "branch": "JP"
     },
     {
+      "id": "nvHjtuCXSnc",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "14:37",
+      "startsAt": "2026-08-21T14:37:00+09:00",
+      "name": "癒月ちょこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=nvHjtuCXSnc",
+      "videoId": "nvHjtuCXSnc",
+      "thumbnail": "https://img.youtube.com/vi/nvHjtuCXSnc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "2mYhZjLX9Kc",
       "date": "2026-08-21",
       "dateLabel": "08/21 (金)",
@@ -17903,6 +17918,21 @@
       "url": "https://www.youtube.com/watch?v=6CkqiXJsybU",
       "videoId": "6CkqiXJsybU",
       "thumbnail": "https://img.youtube.com/vi/6CkqiXJsybU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "PH2sPxe1rnQ",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "22:00",
+      "startsAt": "2026-08-21T22:00:00+09:00",
+      "name": "さくらみこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=PH2sPxe1rnQ",
+      "videoId": "PH2sPxe1rnQ",
+      "thumbnail": "https://img.youtube.com/vi/PH2sPxe1rnQ/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

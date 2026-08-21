@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T05:45:09.148Z",
+  "generatedAt": "2026-08-21T07:22:13.768Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -17698,6 +17698,21 @@
       "branch": "JP"
     },
     {
+      "id": "L0IQbmqDQGU",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "16:30",
+      "startsAt": "2026-08-21T16:30:00+09:00",
+      "name": "虎金妃笑虎",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=L0IQbmqDQGU",
+      "videoId": "L0IQbmqDQGU",
+      "thumbnail": "https://img.youtube.com/vi/L0IQbmqDQGU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "2mYhZjLX9Kc",
       "date": "2026-08-21",
       "dateLabel": "08/21 (金)",
@@ -17723,6 +17738,21 @@
       "url": "https://www.youtube.com/watch?v=WKZtLyGWymU",
       "videoId": "WKZtLyGWymU",
       "thumbnail": "https://img.youtube.com/vi/WKZtLyGWymU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "cgWVWJ2KQ3A",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "18:00",
+      "startsAt": "2026-08-21T18:00:00+09:00",
+      "name": "常闇トワ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=cgWVWJ2KQ3A",
+      "videoId": "cgWVWJ2KQ3A",
+      "thumbnail": "https://img.youtube.com/vi/cgWVWJ2KQ3A/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -17936,6 +17966,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "EkD5iZWpdXs",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "06:00",
+      "startsAt": "2026-08-22T06:00:00+09:00",
+      "name": "Gigi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=EkD5iZWpdXs",
+      "videoId": "EkD5iZWpdXs",
+      "thumbnail": "https://img.youtube.com/vi/EkD5iZWpdXs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "u06bZurBgQc",

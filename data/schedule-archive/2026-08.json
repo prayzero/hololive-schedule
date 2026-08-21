@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T17:51:08.901Z",
+  "generatedAt": "2026-08-21T18:26:21.377Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -18568,6 +18568,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "WQHfsbHAEks",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "21:00",
+      "startsAt": "2026-08-22T21:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=WQHfsbHAEks",
+      "videoId": "WQHfsbHAEks",
+      "thumbnail": "https://img.youtube.com/vi/WQHfsbHAEks/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "W98R4zLVz6A",
       "date": "2026-08-22",
       "dateLabel": "08/22 (土)",
@@ -18698,6 +18713,36 @@
       "url": "https://www.youtube.com/watch?v=Ea6CAndmZzI",
       "videoId": "Ea6CAndmZzI",
       "thumbnail": "https://img.youtube.com/vi/Ea6CAndmZzI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "vBwNbx3l5R0",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "20:00",
+      "startsAt": "2026-08-23T20:00:00+09:00",
+      "name": "Zeta",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=vBwNbx3l5R0",
+      "videoId": "vBwNbx3l5R0",
+      "thumbnail": "https://img.youtube.com/vi/vBwNbx3l5R0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "hL3IdB2hiQ4",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "22:30",
+      "startsAt": "2026-08-23T22:30:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=hL3IdB2hiQ4",
+      "videoId": "hL3IdB2hiQ4",
+      "thumbnail": "https://img.youtube.com/vi/hL3IdB2hiQ4/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"

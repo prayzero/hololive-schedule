@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T07:22:13.768Z",
+  "generatedAt": "2026-08-21T08:04:16.042Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -17711,6 +17711,51 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "dejepxyeTOc",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "17:00",
+      "startsAt": "2026-08-21T17:00:00+09:00",
+      "name": "轟はじめ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=dejepxyeTOc",
+      "videoId": "dejepxyeTOc",
+      "thumbnail": "https://img.youtube.com/vi/dejepxyeTOc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "zSw0uaX-UhI",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "17:00",
+      "startsAt": "2026-08-21T17:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=zSw0uaX-UhI",
+      "videoId": "zSw0uaX-UhI",
+      "thumbnail": "https://img.youtube.com/vi/zSw0uaX-UhI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "93ckyv-iXC8",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "17:00",
+      "startsAt": "2026-08-21T17:00:00+09:00",
+      "name": "さくらみこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=93ckyv-iXC8",
+      "videoId": "93ckyv-iXC8",
+      "thumbnail": "https://img.youtube.com/vi/93ckyv-iXC8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "2mYhZjLX9Kc",

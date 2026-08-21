@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T04:21:05.992Z",
+  "generatedAt": "2026-08-21T05:02:37.611Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -17878,6 +17878,21 @@
       "branch": "JP"
     },
     {
+      "id": "u6rNDNjOnDI",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "22:00",
+      "startsAt": "2026-08-21T22:00:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=u6rNDNjOnDI",
+      "videoId": "u6rNDNjOnDI",
+      "thumbnail": "https://img.youtube.com/vi/u6rNDNjOnDI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "6CkqiXJsybU",
       "date": "2026-08-21",
       "dateLabel": "08/21 (金)",
@@ -17906,6 +17921,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "eesPw-ebFtc",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "10:00",
+      "startsAt": "2026-08-22T10:00:00+09:00",
+      "name": "Baelz",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=eesPw-ebFtc",
+      "videoId": "eesPw-ebFtc",
+      "thumbnail": "https://img.youtube.com/vi/eesPw-ebFtc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "lNpOfFG4HlQ",

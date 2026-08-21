@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T01:59:54.359Z",
+  "generatedAt": "2026-08-21T02:11:06.969Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -17668,6 +17668,21 @@
       "branch": "EN"
     },
     {
+      "id": "Xu-MIRRxjp0",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "11:00",
+      "startsAt": "2026-08-21T11:00:00+09:00",
+      "name": "holo EN",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Xu-MIRRxjp0",
+      "videoId": "Xu-MIRRxjp0",
+      "thumbnail": "https://img.youtube.com/vi/Xu-MIRRxjp0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "2mYhZjLX9Kc",
       "date": "2026-08-21",
       "dateLabel": "08/21 (金)",
@@ -17828,6 +17843,21 @@
       "url": "https://www.youtube.com/watch?v=pr-9JOXk3Rs",
       "videoId": "pr-9JOXk3Rs",
       "thumbnail": "https://img.youtube.com/vi/pr-9JOXk3Rs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "neRO87bFvu8",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "22:00",
+      "startsAt": "2026-08-21T22:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=neRO87bFvu8",
+      "videoId": "neRO87bFvu8",
+      "thumbnail": "https://img.youtube.com/vi/neRO87bFvu8/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T13:06:52.958Z",
+  "generatedAt": "2026-08-21T13:57:38.674Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -18163,21 +18163,6 @@
       "branch": "JP"
     },
     {
-      "id": "yaerrEkhEfE",
-      "date": "2026-08-21",
-      "dateLabel": "08/21 (金)",
-      "time": "22:00",
-      "startsAt": "2026-08-21T22:00:00+09:00",
-      "name": "不知火フレア",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=yaerrEkhEfE",
-      "videoId": "yaerrEkhEfE",
-      "thumbnail": "https://img.youtube.com/vi/yaerrEkhEfE/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "u6rNDNjOnDI",
       "date": "2026-08-21",
       "dateLabel": "08/21 (金)",
@@ -18248,6 +18233,21 @@
       "url": "https://www.youtube.com/watch?v=PH2sPxe1rnQ",
       "videoId": "PH2sPxe1rnQ",
       "thumbnail": "https://img.youtube.com/vi/PH2sPxe1rnQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "yaerrEkhEfE",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "22:03",
+      "startsAt": "2026-08-21T22:03:00+09:00",
+      "name": "不知火フレア",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=yaerrEkhEfE",
+      "videoId": "yaerrEkhEfE",
+      "thumbnail": "https://img.youtube.com/vi/yaerrEkhEfE/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -18431,6 +18431,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "iIW0EkIlrT4",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "19:00",
+      "startsAt": "2026-08-22T19:00:00+09:00",
+      "name": "一条莉々華",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=iIW0EkIlrT4",
+      "videoId": "iIW0EkIlrT4",
+      "thumbnail": "https://img.youtube.com/vi/iIW0EkIlrT4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "KufKV-1plg4",

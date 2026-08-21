@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T11:36:39.943Z",
+  "generatedAt": "2026-08-21T12:01:26.735Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -18086,6 +18086,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "eoX7NpVwrQQ",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "22:00",
+      "startsAt": "2026-08-21T22:00:00+09:00",
+      "name": "轟はじめ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=eoX7NpVwrQQ",
+      "videoId": "eoX7NpVwrQQ",
+      "thumbnail": "https://img.youtube.com/vi/eoX7NpVwrQQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "OZXUsSdDd3A",

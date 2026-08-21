@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T08:54:51.967Z",
+  "generatedAt": "2026-08-21T09:49:09.629Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -17818,11 +17818,71 @@
       "branch": "JP"
     },
     {
-      "id": "cgWVWJ2KQ3A",
+      "id": "N7j9AAAcFeI",
       "date": "2026-08-21",
       "dateLabel": "08/21 (金)",
       "time": "18:00",
       "startsAt": "2026-08-21T18:00:00+09:00",
+      "name": "FLOW GLOW",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=N7j9AAAcFeI",
+      "videoId": "N7j9AAAcFeI",
+      "thumbnail": "https://img.youtube.com/vi/N7j9AAAcFeI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "eVDm18ZDjIc",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "18:00",
+      "startsAt": "2026-08-21T18:00:00+09:00",
+      "name": "FLOW GLOW",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=eVDm18ZDjIc",
+      "videoId": "eVDm18ZDjIc",
+      "thumbnail": "https://img.youtube.com/vi/eVDm18ZDjIc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "2LZtZeRYKa0",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "18:00",
+      "startsAt": "2026-08-21T18:00:00+09:00",
+      "name": "ReGLOSS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=2LZtZeRYKa0",
+      "videoId": "2LZtZeRYKa0",
+      "thumbnail": "https://img.youtube.com/vi/2LZtZeRYKa0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "5ib96llGw6I",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "18:00",
+      "startsAt": "2026-08-21T18:00:00+09:00",
+      "name": "Reine",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=5ib96llGw6I",
+      "videoId": "5ib96llGw6I",
+      "thumbnail": "https://img.youtube.com/vi/5ib96llGw6I/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "cgWVWJ2KQ3A",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "18:01",
+      "startsAt": "2026-08-21T18:01:00+09:00",
       "name": "常闇トワ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=cgWVWJ2KQ3A",
@@ -17908,6 +17968,21 @@
       "branch": "JP"
     },
     {
+      "id": "dn-jJ85xMZo",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "20:00",
+      "startsAt": "2026-08-21T20:00:00+09:00",
+      "name": "宝鐘マリン",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=dn-jJ85xMZo",
+      "videoId": "dn-jJ85xMZo",
+      "thumbnail": "https://img.youtube.com/vi/dn-jJ85xMZo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "giIyOrQO8rc",
       "date": "2026-08-21",
       "dateLabel": "08/21 (金)",
@@ -17936,6 +18011,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "L_sBMZz_hG8",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "21:00",
+      "startsAt": "2026-08-21T21:00:00+09:00",
+      "name": "Ollie",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=L_sBMZz_hG8",
+      "videoId": "L_sBMZz_hG8",
+      "thumbnail": "https://img.youtube.com/vi/L_sBMZz_hG8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "BLFXVI1HU1U",

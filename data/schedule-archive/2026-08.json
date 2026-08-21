@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T16:48:26.112Z",
+  "generatedAt": "2026-08-21T17:51:08.901Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -18418,6 +18418,21 @@
       "branch": "EN"
     },
     {
+      "id": "XfZXadrIZKs",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "10:00",
+      "startsAt": "2026-08-22T10:00:00+09:00",
+      "name": "Zeta",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=XfZXadrIZKs",
+      "videoId": "XfZXadrIZKs",
+      "thumbnail": "https://img.youtube.com/vi/XfZXadrIZKs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "mfSoM1ldI6E",
       "date": "2026-08-22",
       "dateLabel": "08/22 (土)",
@@ -18523,6 +18538,21 @@
       "branch": "JP"
     },
     {
+      "id": "OtG2ifBqCZQ",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "20:00",
+      "startsAt": "2026-08-22T20:00:00+09:00",
+      "name": "猫又おかゆ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=OtG2ifBqCZQ",
+      "videoId": "OtG2ifBqCZQ",
+      "thumbnail": "https://img.youtube.com/vi/OtG2ifBqCZQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "KufKV-1plg4",
       "date": "2026-08-22",
       "dateLabel": "08/22 (土)",
@@ -18571,8 +18601,8 @@
       "id": "ZRDi5Mo6BV8",
       "date": "2026-08-22",
       "dateLabel": "08/22 (土)",
-      "time": "22:30",
-      "startsAt": "2026-08-22T22:30:00+09:00",
+      "time": "22:45",
+      "startsAt": "2026-08-22T22:45:00+09:00",
       "name": "水宮枢",
       "title": null,
       "url": "https://www.youtube.com/watch?v=ZRDi5Mo6BV8",

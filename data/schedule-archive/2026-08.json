@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T09:49:09.629Z",
+  "generatedAt": "2026-08-21T10:17:35.964Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -17893,6 +17893,21 @@
       "branch": "JP"
     },
     {
+      "id": "_I7rCnEDJfo",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "18:57",
+      "startsAt": "2026-08-21T18:57:00+09:00",
+      "name": "ReGLOSS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=_I7rCnEDJfo",
+      "videoId": "_I7rCnEDJfo",
+      "thumbnail": "https://img.youtube.com/vi/_I7rCnEDJfo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "UrKxF_3fVPQ",
       "date": "2026-08-21",
       "dateLabel": "08/21 (金)",
@@ -17908,11 +17923,26 @@
       "branch": "JP"
     },
     {
-      "id": "5CjlDdCeQx4",
+      "id": "U6t9UI76SaY",
       "date": "2026-08-21",
       "dateLabel": "08/21 (金)",
       "time": "19:00",
       "startsAt": "2026-08-21T19:00:00+09:00",
+      "name": "ホロライブ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=U6t9UI76SaY",
+      "videoId": "U6t9UI76SaY",
+      "thumbnail": "https://img.youtube.com/vi/U6t9UI76SaY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "5CjlDdCeQx4",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "19:01",
+      "startsAt": "2026-08-21T19:01:00+09:00",
       "name": "姫森ルーナ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=5CjlDdCeQx4",
@@ -17921,21 +17951,6 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
-    },
-    {
-      "id": "_I7rCnEDJfo",
-      "date": "2026-08-21",
-      "dateLabel": "08/21 (金)",
-      "time": "19:00",
-      "startsAt": "2026-08-21T19:00:00+09:00",
-      "name": "ReGLOSS",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=_I7rCnEDJfo",
-      "videoId": "_I7rCnEDJfo",
-      "thumbnail": "https://img.youtube.com/vi/_I7rCnEDJfo/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "DEV_IS"
     },
     {
       "id": "unaoc07LQi4",

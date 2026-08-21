@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T10:53:24.802Z",
+  "generatedAt": "2026-08-21T11:36:39.943Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -17953,21 +17953,6 @@
       "branch": "JP"
     },
     {
-      "id": "unaoc07LQi4",
-      "date": "2026-08-21",
-      "dateLabel": "08/21 (金)",
-      "time": "20:00",
-      "startsAt": "2026-08-21T20:00:00+09:00",
-      "name": "綺々羅々ヴィヴィ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=unaoc07LQi4",
-      "videoId": "unaoc07LQi4",
-      "thumbnail": "https://img.youtube.com/vi/unaoc07LQi4/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "DEV_IS"
-    },
-    {
       "id": "TOmBe-7QFJs",
       "date": "2026-08-21",
       "dateLabel": "08/21 (金)",
@@ -17983,21 +17968,6 @@
       "branch": "JP"
     },
     {
-      "id": "dn-jJ85xMZo",
-      "date": "2026-08-21",
-      "dateLabel": "08/21 (金)",
-      "time": "20:00",
-      "startsAt": "2026-08-21T20:00:00+09:00",
-      "name": "宝鐘マリン",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=dn-jJ85xMZo",
-      "videoId": "dn-jJ85xMZo",
-      "thumbnail": "https://img.youtube.com/vi/dn-jJ85xMZo/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "-MTbZBYmn7o",
       "date": "2026-08-21",
       "dateLabel": "08/21 (金)",
@@ -18008,6 +17978,51 @@
       "url": "https://www.youtube.com/watch?v=-MTbZBYmn7o",
       "videoId": "-MTbZBYmn7o",
       "thumbnail": "https://img.youtube.com/vi/-MTbZBYmn7o/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "unaoc07LQi4",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "20:04",
+      "startsAt": "2026-08-21T20:04:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=unaoc07LQi4",
+      "videoId": "unaoc07LQi4",
+      "thumbnail": "https://img.youtube.com/vi/unaoc07LQi4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "dn-jJ85xMZo",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "20:05",
+      "startsAt": "2026-08-21T20:05:00+09:00",
+      "name": "宝鐘マリン",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=dn-jJ85xMZo",
+      "videoId": "dn-jJ85xMZo",
+      "thumbnail": "https://img.youtube.com/vi/dn-jJ85xMZo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "OAvS0yfvQLw",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "20:30",
+      "startsAt": "2026-08-21T20:30:00+09:00",
+      "name": "虎金妃笑虎",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=OAvS0yfvQLw",
+      "videoId": "OAvS0yfvQLw",
+      "thumbnail": "https://img.youtube.com/vi/OAvS0yfvQLw/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
@@ -18128,6 +18143,21 @@
       "url": "https://www.youtube.com/watch?v=neRO87bFvu8",
       "videoId": "neRO87bFvu8",
       "thumbnail": "https://img.youtube.com/vi/neRO87bFvu8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "fNxJeAKqRDk",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "22:00",
+      "startsAt": "2026-08-21T22:00:00+09:00",
+      "name": "白上フブキ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=fNxJeAKqRDk",
+      "videoId": "fNxJeAKqRDk",
+      "thumbnail": "https://img.youtube.com/vi/fNxJeAKqRDk/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

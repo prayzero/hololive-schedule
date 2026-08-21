@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T03:26:11.386Z",
+  "generatedAt": "2026-08-21T04:21:05.992Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -17668,6 +17668,21 @@
       "branch": "EN"
     },
     {
+      "id": "dbary4r2nQs",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "13:16",
+      "startsAt": "2026-08-21T13:16:00+09:00",
+      "name": "ロボ子さん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=dbary4r2nQs",
+      "videoId": "dbary4r2nQs",
+      "thumbnail": "https://img.youtube.com/vi/dbary4r2nQs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "2mYhZjLX9Kc",
       "date": "2026-08-21",
       "dateLabel": "08/21 (金)",
@@ -17858,6 +17873,21 @@
       "url": "https://www.youtube.com/watch?v=neRO87bFvu8",
       "videoId": "neRO87bFvu8",
       "thumbnail": "https://img.youtube.com/vi/neRO87bFvu8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "6CkqiXJsybU",
+      "date": "2026-08-21",
+      "dateLabel": "08/21 (金)",
+      "time": "22:00",
+      "startsAt": "2026-08-21T22:00:00+09:00",
+      "name": "AZKi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=6CkqiXJsybU",
+      "videoId": "6CkqiXJsybU",
+      "thumbnail": "https://img.youtube.com/vi/6CkqiXJsybU/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

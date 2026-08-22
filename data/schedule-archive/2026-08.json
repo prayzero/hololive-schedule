@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T03:54:01.337Z",
+  "generatedAt": "2026-08-22T04:45:04.902Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -18571,13 +18571,28 @@
       "id": "Bd3qbT6kXu8",
       "date": "2026-08-22",
       "dateLabel": "08/22 (土)",
-      "time": "13:00",
-      "startsAt": "2026-08-22T13:00:00+09:00",
+      "time": "13:02",
+      "startsAt": "2026-08-22T13:02:00+09:00",
       "name": "大空スバル",
       "title": null,
       "url": "https://www.youtube.com/watch?v=Bd3qbT6kXu8",
       "videoId": "Bd3qbT6kXu8",
       "thumbnail": "https://img.youtube.com/vi/Bd3qbT6kXu8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "OeBc0dlqDn8",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "13:10",
+      "startsAt": "2026-08-22T13:10:00+09:00",
+      "name": "さくらみこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=OeBc0dlqDn8",
+      "videoId": "OeBc0dlqDn8",
+      "thumbnail": "https://img.youtube.com/vi/OeBc0dlqDn8/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -18596,6 +18611,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "CKTXdcvy0Qg",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "14:00",
+      "startsAt": "2026-08-22T14:00:00+09:00",
+      "name": "音乃瀬奏",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=CKTXdcvy0Qg",
+      "videoId": "CKTXdcvy0Qg",
+      "thumbnail": "https://img.youtube.com/vi/CKTXdcvy0Qg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "ARAJ18o1dVs",

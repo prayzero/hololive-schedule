@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T10:09:22.232Z",
+  "generatedAt": "2026-08-22T11:08:23.112Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -18946,8 +18946,8 @@
       "id": "WcM8MurfM9Y",
       "date": "2026-08-22",
       "dateLabel": "08/22 (土)",
-      "time": "20:00",
-      "startsAt": "2026-08-22T20:00:00+09:00",
+      "time": "20:02",
+      "startsAt": "2026-08-22T20:02:00+09:00",
       "name": "兎田ぺこら",
       "title": null,
       "url": "https://www.youtube.com/watch?v=WcM8MurfM9Y",
@@ -19058,6 +19058,21 @@
       "url": "https://www.youtube.com/watch?v=xKvAt5YkBw4",
       "videoId": "xKvAt5YkBw4",
       "thumbnail": "https://img.youtube.com/vi/xKvAt5YkBw4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "pWKlB1bQzqY",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "22:00",
+      "startsAt": "2026-08-22T22:00:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=pWKlB1bQzqY",
+      "videoId": "pWKlB1bQzqY",
+      "thumbnail": "https://img.youtube.com/vi/pWKlB1bQzqY/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
@@ -19316,6 +19331,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "eJYTOOhFRoc",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "20:00",
+      "startsAt": "2026-08-23T20:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=eJYTOOhFRoc",
+      "videoId": "eJYTOOhFRoc",
+      "thumbnail": "https://img.youtube.com/vi/eJYTOOhFRoc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "vBwNbx3l5R0",

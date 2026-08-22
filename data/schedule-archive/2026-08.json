@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T03:04:55.138Z",
+  "generatedAt": "2026-08-22T03:54:01.337Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -18761,6 +18761,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "NONYWLBhDB8",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "22:00",
+      "startsAt": "2026-08-22T22:00:00+09:00",
+      "name": "Baelz",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=NONYWLBhDB8",
+      "videoId": "NONYWLBhDB8",
+      "thumbnail": "https://img.youtube.com/vi/NONYWLBhDB8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "ZRDi5Mo6BV8",

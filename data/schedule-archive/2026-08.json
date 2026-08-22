@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T14:07:28.755Z",
+  "generatedAt": "2026-08-22T15:05:23.101Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -19481,6 +19481,51 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "2MMBGfSm5e8",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "09:00",
+      "startsAt": "2026-08-24T09:00:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=2MMBGfSm5e8",
+      "videoId": "2MMBGfSm5e8",
+      "thumbnail": "https://img.youtube.com/vi/2MMBGfSm5e8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "ey3d05sFcOU",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "18:00",
+      "startsAt": "2026-08-24T18:00:00+09:00",
+      "name": "Zeta",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ey3d05sFcOU",
+      "videoId": "ey3d05sFcOU",
+      "thumbnail": "https://img.youtube.com/vi/ey3d05sFcOU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "sYtKzxBXxIY",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "23:40",
+      "startsAt": "2026-08-24T23:40:00+09:00",
+      "name": "アキロゼ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=sYtKzxBXxIY",
+      "videoId": "sYtKzxBXxIY",
+      "thumbnail": "https://img.youtube.com/vi/sYtKzxBXxIY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     }
   ]
 }

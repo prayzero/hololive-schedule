@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T00:24:34.528Z",
+  "generatedAt": "2026-08-22T01:52:21.389Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -18418,36 +18418,6 @@
       "branch": "EN"
     },
     {
-      "id": "u06bZurBgQc",
-      "date": "2026-08-22",
-      "dateLabel": "08/22 (土)",
-      "time": "10:00",
-      "startsAt": "2026-08-22T10:00:00+09:00",
-      "name": "大空スバル",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=u06bZurBgQc",
-      "videoId": "u06bZurBgQc",
-      "thumbnail": "https://img.youtube.com/vi/u06bZurBgQc/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
-      "id": "eesPw-ebFtc",
-      "date": "2026-08-22",
-      "dateLabel": "08/22 (土)",
-      "time": "10:00",
-      "startsAt": "2026-08-22T10:00:00+09:00",
-      "name": "Baelz",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=eesPw-ebFtc",
-      "videoId": "eesPw-ebFtc",
-      "thumbnail": "https://img.youtube.com/vi/eesPw-ebFtc/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "EN"
-    },
-    {
       "id": "lNpOfFG4HlQ",
       "date": "2026-08-22",
       "dateLabel": "08/22 (土)",
@@ -18463,11 +18433,41 @@
       "branch": "EN"
     },
     {
+      "id": "u06bZurBgQc",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "10:01",
+      "startsAt": "2026-08-22T10:01:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=u06bZurBgQc",
+      "videoId": "u06bZurBgQc",
+      "thumbnail": "https://img.youtube.com/vi/u06bZurBgQc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "eesPw-ebFtc",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "10:01",
+      "startsAt": "2026-08-22T10:01:00+09:00",
+      "name": "Baelz",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=eesPw-ebFtc",
+      "videoId": "eesPw-ebFtc",
+      "thumbnail": "https://img.youtube.com/vi/eesPw-ebFtc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "XfZXadrIZKs",
       "date": "2026-08-22",
       "dateLabel": "08/22 (土)",
-      "time": "10:00",
-      "startsAt": "2026-08-22T10:00:00+09:00",
+      "time": "10:01",
+      "startsAt": "2026-08-22T10:01:00+09:00",
       "name": "Zeta",
       "title": null,
       "url": "https://www.youtube.com/watch?v=XfZXadrIZKs",

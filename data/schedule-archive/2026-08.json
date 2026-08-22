@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T13:43:30.394Z",
+  "generatedAt": "2026-08-22T14:07:28.755Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -19186,8 +19186,8 @@
       "id": "ZRDi5Mo6BV8",
       "date": "2026-08-22",
       "dateLabel": "08/22 (土)",
-      "time": "22:45",
-      "startsAt": "2026-08-22T22:45:00+09:00",
+      "time": "22:47",
+      "startsAt": "2026-08-22T22:47:00+09:00",
       "name": "水宮枢",
       "title": null,
       "url": "https://www.youtube.com/watch?v=ZRDi5Mo6BV8",
@@ -19256,6 +19256,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "6RJjtRmaNz8",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "10:00",
+      "startsAt": "2026-08-23T10:00:00+09:00",
+      "name": "白銀ノエル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=6RJjtRmaNz8",
+      "videoId": "6RJjtRmaNz8",
+      "thumbnail": "https://img.youtube.com/vi/6RJjtRmaNz8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "2dWaPS246gQ",

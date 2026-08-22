@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T11:40:40.690Z",
+  "generatedAt": "2026-08-22T12:10:54.048Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -18988,26 +18988,11 @@
       "branch": "DEV_IS"
     },
     {
-      "id": "WQHfsbHAEks",
-      "date": "2026-08-22",
-      "dateLabel": "08/22 (土)",
-      "time": "21:00",
-      "startsAt": "2026-08-22T21:00:00+09:00",
-      "name": "博衣こより",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=WQHfsbHAEks",
-      "videoId": "WQHfsbHAEks",
-      "thumbnail": "https://img.youtube.com/vi/WQHfsbHAEks/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "W98R4zLVz6A",
       "date": "2026-08-22",
       "dateLabel": "08/22 (土)",
-      "time": "21:00",
-      "startsAt": "2026-08-22T21:00:00+09:00",
+      "time": "20:58",
+      "startsAt": "2026-08-22T20:58:00+09:00",
       "name": "FUWAMOCO",
       "title": null,
       "url": "https://www.youtube.com/watch?v=W98R4zLVz6A",
@@ -19018,11 +19003,26 @@
       "branch": "EN"
     },
     {
+      "id": "WQHfsbHAEks",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "21:05",
+      "startsAt": "2026-08-22T21:05:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=WQHfsbHAEks",
+      "videoId": "WQHfsbHAEks",
+      "thumbnail": "https://img.youtube.com/vi/WQHfsbHAEks/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "DM2AuzC_RYA",
       "date": "2026-08-22",
       "dateLabel": "08/22 (土)",
-      "time": "21:00",
-      "startsAt": "2026-08-22T21:00:00+09:00",
+      "time": "21:05",
+      "startsAt": "2026-08-22T21:05:00+09:00",
       "name": "さくらみこ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=DM2AuzC_RYA",

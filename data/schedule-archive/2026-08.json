@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T21:54:01.917Z",
+  "generatedAt": "2026-08-22T23:32:03.644Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -19243,6 +19243,21 @@
       "branch": "EN"
     },
     {
+      "id": "T_b77R925N4",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "07:56",
+      "startsAt": "2026-08-23T07:56:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=T_b77R925N4",
+      "videoId": "T_b77R925N4",
+      "thumbnail": "https://img.youtube.com/vi/T_b77R925N4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "Ru9b03IMNx8",
       "date": "2026-08-23",
       "dateLabel": "08/23 (日)",
@@ -19256,21 +19271,6 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
-    },
-    {
-      "id": "T_b77R925N4",
-      "date": "2026-08-23",
-      "dateLabel": "08/23 (日)",
-      "time": "08:00",
-      "startsAt": "2026-08-23T08:00:00+09:00",
-      "name": "Bijou",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=T_b77R925N4",
-      "videoId": "T_b77R925N4",
-      "thumbnail": "https://img.youtube.com/vi/T_b77R925N4/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "EN"
     },
     {
       "id": "1NZmJjzHpCc",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T15:54:25.942Z",
+  "generatedAt": "2026-08-22T16:36:39.265Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -19243,6 +19243,21 @@
       "branch": "JP"
     },
     {
+      "id": "T_b77R925N4",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "08:00",
+      "startsAt": "2026-08-23T08:00:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=T_b77R925N4",
+      "videoId": "T_b77R925N4",
+      "thumbnail": "https://img.youtube.com/vi/T_b77R925N4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "1NZmJjzHpCc",
       "date": "2026-08-23",
       "dateLabel": "08/23 (日)",
@@ -19451,6 +19466,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "JSw6si-bQ94",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "20:00",
+      "startsAt": "2026-08-23T20:00:00+09:00",
+      "name": "猫又おかゆ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=JSw6si-bQ94",
+      "videoId": "JSw6si-bQ94",
+      "thumbnail": "https://img.youtube.com/vi/JSw6si-bQ94/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "eJYTOOhFRoc",

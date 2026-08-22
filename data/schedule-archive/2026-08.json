@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T09:37:42.171Z",
+  "generatedAt": "2026-08-22T10:09:22.232Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -18868,11 +18868,41 @@
       "branch": "JP"
     },
     {
-      "id": "iIW0EkIlrT4",
+      "id": "v8yPEhsQD2w",
       "date": "2026-08-22",
       "dateLabel": "08/22 (土)",
       "time": "19:00",
       "startsAt": "2026-08-22T19:00:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=v8yPEhsQD2w",
+      "videoId": "v8yPEhsQD2w",
+      "thumbnail": "https://img.youtube.com/vi/v8yPEhsQD2w/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "mIFWGZuA_RI",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "19:00",
+      "startsAt": "2026-08-22T19:00:00+09:00",
+      "name": "ReGLOSS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=mIFWGZuA_RI",
+      "videoId": "mIFWGZuA_RI",
+      "thumbnail": "https://img.youtube.com/vi/mIFWGZuA_RI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "iIW0EkIlrT4",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "19:04",
+      "startsAt": "2026-08-22T19:04:00+09:00",
       "name": "一条莉々華",
       "title": null,
       "url": "https://www.youtube.com/watch?v=iIW0EkIlrT4",
@@ -19048,6 +19078,21 @@
       "branch": "EN"
     },
     {
+      "id": "Xyl4AIAMagk",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "22:00",
+      "startsAt": "2026-08-22T22:00:00+09:00",
+      "name": "Moona",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Xyl4AIAMagk",
+      "videoId": "Xyl4AIAMagk",
+      "thumbnail": "https://img.youtube.com/vi/Xyl4AIAMagk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "sp8oOBs7CK0",
       "date": "2026-08-22",
       "dateLabel": "08/22 (土)",
@@ -19166,6 +19211,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "oImRLYfOKvs",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "13:00",
+      "startsAt": "2026-08-23T13:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=oImRLYfOKvs",
+      "videoId": "oImRLYfOKvs",
+      "thumbnail": "https://img.youtube.com/vi/oImRLYfOKvs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "t0UVphD6Eho",

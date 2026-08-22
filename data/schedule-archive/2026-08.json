@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T06:16:03.149Z",
+  "generatedAt": "2026-08-22T07:44:14.723Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -18628,6 +18628,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "YmY2ux0kvH0",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "17:00",
+      "startsAt": "2026-08-22T17:00:00+09:00",
+      "name": "大神ミオ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=YmY2ux0kvH0",
+      "videoId": "YmY2ux0kvH0",
+      "thumbnail": "https://img.youtube.com/vi/YmY2ux0kvH0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "ARAJ18o1dVs",
       "date": "2026-08-22",
       "dateLabel": "08/22 (土)",
@@ -18641,6 +18656,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "2IImS3McGq0",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "18:00",
+      "startsAt": "2026-08-22T18:00:00+09:00",
+      "name": "雪花ラミィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=2IImS3McGq0",
+      "videoId": "2IImS3McGq0",
+      "thumbnail": "https://img.youtube.com/vi/2IImS3McGq0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "gdZO7XaonnM",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "18:00",
+      "startsAt": "2026-08-22T18:00:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=gdZO7XaonnM",
+      "videoId": "gdZO7XaonnM",
+      "thumbnail": "https://img.youtube.com/vi/gdZO7XaonnM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "dzO2LaVBmMY",

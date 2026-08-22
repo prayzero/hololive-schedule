@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T13:05:55.940Z",
+  "generatedAt": "2026-08-22T13:43:30.394Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -19048,21 +19048,6 @@
       "branch": "JP"
     },
     {
-      "id": "78HPRfhlhHk",
-      "date": "2026-08-22",
-      "dateLabel": "08/22 (土)",
-      "time": "22:00",
-      "startsAt": "2026-08-22T22:00:00+09:00",
-      "name": "角巻わため",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=78HPRfhlhHk",
-      "videoId": "78HPRfhlhHk",
-      "thumbnail": "https://img.youtube.com/vi/78HPRfhlhHk/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "Z6GdKNTnYjw",
       "date": "2026-08-22",
       "dateLabel": "08/22 (土)",
@@ -19138,6 +19123,21 @@
       "branch": "ID"
     },
     {
+      "id": "78HPRfhlhHk",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "22:06",
+      "startsAt": "2026-08-22T22:06:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=78HPRfhlhHk",
+      "videoId": "78HPRfhlhHk",
+      "thumbnail": "https://img.youtube.com/vi/78HPRfhlhHk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "oIiPKdvggRI",
       "date": "2026-08-22",
       "dateLabel": "08/22 (土)",
@@ -19166,6 +19166,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
+    },
+    {
+      "id": "_NS688sEr8Q",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "22:32",
+      "startsAt": "2026-08-22T22:32:00+09:00",
+      "name": "ときのそら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=_NS688sEr8Q",
+      "videoId": "_NS688sEr8Q",
+      "thumbnail": "https://img.youtube.com/vi/_NS688sEr8Q/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "ZRDi5Mo6BV8",

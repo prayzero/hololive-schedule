@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T05:14:30.550Z",
+  "generatedAt": "2026-08-22T06:16:03.149Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -18643,6 +18643,21 @@
       "branch": "JP"
     },
     {
+      "id": "dzO2LaVBmMY",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "19:00",
+      "startsAt": "2026-08-22T19:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=dzO2LaVBmMY",
+      "videoId": "dzO2LaVBmMY",
+      "thumbnail": "https://img.youtube.com/vi/dzO2LaVBmMY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "ROvRe0I75Bs",
       "date": "2026-08-22",
       "dateLabel": "08/22 (土)",
@@ -18851,6 +18866,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "pNnls_HDeTc",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "06:00",
+      "startsAt": "2026-08-23T06:00:00+09:00",
+      "name": "Gigi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=pNnls_HDeTc",
+      "videoId": "pNnls_HDeTc",
+      "thumbnail": "https://img.youtube.com/vi/pNnls_HDeTc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "78e416BLGo4",

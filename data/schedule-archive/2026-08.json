@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T21:32:21.699Z",
+  "generatedAt": "2026-08-22T21:54:01.917Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -19598,6 +19598,21 @@
       "url": "https://www.youtube.com/watch?v=gsALMzXbESA",
       "videoId": "gsALMzXbESA",
       "thumbnail": "https://img.youtube.com/vi/gsALMzXbESA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "cXht5wte_1s",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "22:00",
+      "startsAt": "2026-08-23T22:00:00+09:00",
+      "name": "不知火フレア",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=cXht5wte_1s",
+      "videoId": "cXht5wte_1s",
+      "thumbnail": "https://img.youtube.com/vi/cXht5wte_1s/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

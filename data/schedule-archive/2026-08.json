@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T17:32:14.237Z",
+  "generatedAt": "2026-08-22T18:45:47.507Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -19453,6 +19453,21 @@
       "branch": "JP"
     },
     {
+      "id": "CkNfG-PxpZ0",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "18:00",
+      "startsAt": "2026-08-23T18:00:00+09:00",
+      "name": "轟はじめ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=CkNfG-PxpZ0",
+      "videoId": "CkNfG-PxpZ0",
+      "thumbnail": "https://img.youtube.com/vi/CkNfG-PxpZ0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "PF_Tq_Cd73s",
       "date": "2026-08-23",
       "dateLabel": "08/23 (日)",
@@ -19478,6 +19493,21 @@
       "url": "https://www.youtube.com/watch?v=Ea6CAndmZzI",
       "videoId": "Ea6CAndmZzI",
       "thumbnail": "https://img.youtube.com/vi/Ea6CAndmZzI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "mKerNNC4kME",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "19:30",
+      "startsAt": "2026-08-23T19:30:00+09:00",
+      "name": "轟はじめ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=mKerNNC4kME",
+      "videoId": "mKerNNC4kME",
+      "thumbnail": "https://img.youtube.com/vi/mKerNNC4kME/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"

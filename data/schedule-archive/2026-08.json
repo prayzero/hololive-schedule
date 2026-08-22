@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T04:45:04.902Z",
+  "generatedAt": "2026-08-22T05:14:30.550Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -7211,21 +7211,6 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
-    },
-    {
-      "id": "xKvAt5YkBw4",
-      "date": "2026-08-08",
-      "dateLabel": "08/08 (土)",
-      "time": "22:00",
-      "startsAt": "2026-08-08T22:00:00+09:00",
-      "name": "儒烏風亭らでん",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=xKvAt5YkBw4",
-      "videoId": "xKvAt5YkBw4",
-      "thumbnail": "https://img.youtube.com/vi/xKvAt5YkBw4/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "DEV_IS"
     },
     {
       "id": "V_09zQsoH1o",
@@ -18613,11 +18598,26 @@
       "branch": "JP"
     },
     {
-      "id": "CKTXdcvy0Qg",
+      "id": "r3-zMUyLGZw",
       "date": "2026-08-22",
       "dateLabel": "08/22 (土)",
       "time": "14:00",
       "startsAt": "2026-08-22T14:00:00+09:00",
+      "name": "IRyS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=r3-zMUyLGZw",
+      "videoId": "r3-zMUyLGZw",
+      "thumbnail": "https://img.youtube.com/vi/r3-zMUyLGZw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "CKTXdcvy0Qg",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "14:07",
+      "startsAt": "2026-08-22T14:07:00+09:00",
       "name": "音乃瀬奏",
       "title": null,
       "url": "https://www.youtube.com/watch?v=CKTXdcvy0Qg",
@@ -18793,6 +18793,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "xKvAt5YkBw4",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "22:00",
+      "startsAt": "2026-08-22T22:00:00+09:00",
+      "name": "儒烏風亭らでん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=xKvAt5YkBw4",
+      "videoId": "xKvAt5YkBw4",
+      "thumbnail": "https://img.youtube.com/vi/xKvAt5YkBw4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "NONYWLBhDB8",
       "date": "2026-08-22",
       "dateLabel": "08/22 (土)",
@@ -18818,6 +18833,21 @@
       "url": "https://www.youtube.com/watch?v=ZRDi5Mo6BV8",
       "videoId": "ZRDi5Mo6BV8",
       "thumbnail": "https://img.youtube.com/vi/ZRDi5Mo6BV8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "oIiPKdvggRI",
+      "date": "2026-08-22",
+      "dateLabel": "08/22 (土)",
+      "time": "23:00",
+      "startsAt": "2026-08-22T23:00:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=oIiPKdvggRI",
+      "videoId": "oIiPKdvggRI",
+      "thumbnail": "https://img.youtube.com/vi/oIiPKdvggRI/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T11:08:57.118Z",
+  "generatedAt": "2026-08-23T11:39:31.619Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -19783,21 +19783,6 @@
       "branch": "ID"
     },
     {
-      "id": "mJvZwCP3sU4",
-      "date": "2026-08-23",
-      "dateLabel": "08/23 (日)",
-      "time": "20:00",
-      "startsAt": "2026-08-23T20:00:00+09:00",
-      "name": "輪堂千速",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=mJvZwCP3sU4",
-      "videoId": "mJvZwCP3sU4",
-      "thumbnail": "https://img.youtube.com/vi/mJvZwCP3sU4/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "DEV_IS"
-    },
-    {
       "id": "OoJkGWCcyog",
       "date": "2026-08-23",
       "dateLabel": "08/23 (日)",
@@ -19868,6 +19853,21 @@
       "url": "https://www.youtube.com/watch?v=KPOqtLmYKZU",
       "videoId": "KPOqtLmYKZU",
       "thumbnail": "https://img.youtube.com/vi/KPOqtLmYKZU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "mJvZwCP3sU4",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "20:30",
+      "startsAt": "2026-08-23T20:30:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=mJvZwCP3sU4",
+      "videoId": "mJvZwCP3sU4",
+      "thumbnail": "https://img.youtube.com/vi/mJvZwCP3sU4/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"

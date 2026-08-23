@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T03:12:41.979Z",
+  "generatedAt": "2026-08-23T04:06:21.368Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -19393,19 +19393,19 @@
       "branch": "EN"
     },
     {
-      "id": "oImRLYfOKvs",
+      "id": "WkGp0gv4RVw",
       "date": "2026-08-23",
       "dateLabel": "08/23 (日)",
-      "time": "13:00",
-      "startsAt": "2026-08-23T13:00:00+09:00",
-      "name": "大空スバル",
+      "time": "12:46",
+      "startsAt": "2026-08-23T12:46:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=oImRLYfOKvs",
-      "videoId": "oImRLYfOKvs",
-      "thumbnail": "https://img.youtube.com/vi/oImRLYfOKvs/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=WkGp0gv4RVw",
+      "videoId": "WkGp0gv4RVw",
+      "thumbnail": "https://img.youtube.com/vi/WkGp0gv4RVw/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
-      "branch": "JP"
+      "branch": "DEV_IS"
     },
     {
       "id": "t0UVphD6Eho",
@@ -19418,6 +19418,21 @@
       "url": "https://www.youtube.com/watch?v=t0UVphD6Eho",
       "videoId": "t0UVphD6Eho",
       "thumbnail": "https://img.youtube.com/vi/t0UVphD6Eho/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "oImRLYfOKvs",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "13:02",
+      "startsAt": "2026-08-23T13:02:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=oImRLYfOKvs",
+      "videoId": "oImRLYfOKvs",
+      "thumbnail": "https://img.youtube.com/vi/oImRLYfOKvs/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -19678,6 +19693,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "42vWtvlk8aw",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "00:30",
+      "startsAt": "2026-08-24T00:30:00+09:00",
+      "name": "風真いろは",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=42vWtvlk8aw",
+      "videoId": "42vWtvlk8aw",
+      "thumbnail": "https://img.youtube.com/vi/42vWtvlk8aw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "3aL5prb1erI",
       "date": "2026-08-24",
       "dateLabel": "08/24 (月)",
@@ -19688,6 +19718,21 @@
       "url": "https://www.youtube.com/watch?v=3aL5prb1erI",
       "videoId": "3aL5prb1erI",
       "thumbnail": "https://img.youtube.com/vi/3aL5prb1erI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "ybG-ah1fevQ",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "07:00",
+      "startsAt": "2026-08-24T07:00:00+09:00",
+      "name": "Kronii",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ybG-ah1fevQ",
+      "videoId": "ybG-ah1fevQ",
+      "thumbnail": "https://img.youtube.com/vi/ybG-ah1fevQ/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

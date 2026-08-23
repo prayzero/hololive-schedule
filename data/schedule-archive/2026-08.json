@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T10:45:30.279Z",
+  "generatedAt": "2026-08-23T11:08:57.118Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -19768,6 +19768,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "vBwNbx3l5R0",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "19:59",
+      "startsAt": "2026-08-23T19:59:00+09:00",
+      "name": "Zeta",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=vBwNbx3l5R0",
+      "videoId": "vBwNbx3l5R0",
+      "thumbnail": "https://img.youtube.com/vi/vBwNbx3l5R0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "mJvZwCP3sU4",
       "date": "2026-08-23",
       "dateLabel": "08/23 (日)",
@@ -19783,16 +19798,16 @@
       "branch": "DEV_IS"
     },
     {
-      "id": "JSw6si-bQ94",
+      "id": "OoJkGWCcyog",
       "date": "2026-08-23",
       "dateLabel": "08/23 (日)",
       "time": "20:00",
       "startsAt": "2026-08-23T20:00:00+09:00",
-      "name": "猫又おかゆ",
+      "name": "ときのそら",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=JSw6si-bQ94",
-      "videoId": "JSw6si-bQ94",
-      "thumbnail": "https://img.youtube.com/vi/JSw6si-bQ94/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=OoJkGWCcyog",
+      "videoId": "OoJkGWCcyog",
+      "thumbnail": "https://img.youtube.com/vi/OoJkGWCcyog/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -19801,8 +19816,8 @@
       "id": "eJYTOOhFRoc",
       "date": "2026-08-23",
       "dateLabel": "08/23 (日)",
-      "time": "20:00",
-      "startsAt": "2026-08-23T20:00:00+09:00",
+      "time": "20:01",
+      "startsAt": "2026-08-23T20:01:00+09:00",
       "name": "博衣こより",
       "title": null,
       "url": "https://www.youtube.com/watch?v=eJYTOOhFRoc",
@@ -19816,8 +19831,8 @@
       "id": "OK54eoe04wo",
       "date": "2026-08-23",
       "dateLabel": "08/23 (日)",
-      "time": "20:00",
-      "startsAt": "2026-08-23T20:00:00+09:00",
+      "time": "20:01",
+      "startsAt": "2026-08-23T20:01:00+09:00",
       "name": "白上フブキ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=OK54eoe04wo",
@@ -19828,11 +19843,26 @@
       "branch": "JP"
     },
     {
+      "id": "JSw6si-bQ94",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "20:02",
+      "startsAt": "2026-08-23T20:02:00+09:00",
+      "name": "猫又おかゆ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=JSw6si-bQ94",
+      "videoId": "JSw6si-bQ94",
+      "thumbnail": "https://img.youtube.com/vi/JSw6si-bQ94/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "KPOqtLmYKZU",
       "date": "2026-08-23",
       "dateLabel": "08/23 (日)",
-      "time": "20:00",
-      "startsAt": "2026-08-23T20:00:00+09:00",
+      "time": "20:03",
+      "startsAt": "2026-08-23T20:03:00+09:00",
       "name": "一条莉々華",
       "title": null,
       "url": "https://www.youtube.com/watch?v=KPOqtLmYKZU",
@@ -19841,21 +19871,6 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
-    },
-    {
-      "id": "vBwNbx3l5R0",
-      "date": "2026-08-23",
-      "dateLabel": "08/23 (日)",
-      "time": "20:00",
-      "startsAt": "2026-08-23T20:00:00+09:00",
-      "name": "Zeta",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=vBwNbx3l5R0",
-      "videoId": "vBwNbx3l5R0",
-      "thumbnail": "https://img.youtube.com/vi/vBwNbx3l5R0/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "ID"
     },
     {
       "id": "i6_T0tiQIkE",

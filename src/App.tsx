@@ -38,6 +38,7 @@ import {
 import { DreamPage } from "./dream/DreamPage";
 import { MusicPage } from "./music/MusicPage";
 import { includesSearch, normalizeSearch } from "./search";
+import { safeYouTubeWatchUrl } from "./securityUrls";
 import type {
   CollectionCatalogPayload,
   CuratedEvent,
@@ -92,15 +93,28 @@ const DREAM_PICKUP_MOMENT_FORMATTER = new Intl.DateTimeFormat("ko-KR", {
 const DISMISSED_TOP_NOTICES_STORAGE_KEY =
   "holo-now:dismissed-top-notices:v1";
 const DEFAULT_BROADCAST_VISIBILITY_MS = 6 * 60 * 60 * 1000;
+const MAX_DISMISSED_TOP_NOTICE_IDS = 100;
+const MAX_STORAGE_ID_LENGTH = 512;
+const MAX_DISMISSED_NOTICE_STORAGE_LENGTH = 64 * 1024;
 
 function readDismissedTopNoticeIds() {
   try {
-    const parsed = JSON.parse(
-      window.localStorage.getItem(DISMISSED_TOP_NOTICES_STORAGE_KEY) ?? "[]",
-    );
+    const stored =
+      window.localStorage.getItem(DISMISSED_TOP_NOTICES_STORAGE_KEY) ?? "[]";
+    if (stored.length > MAX_DISMISSED_NOTICE_STORAGE_LENGTH) {
+      return new Set<string>();
+    }
+    const parsed = JSON.parse(stored);
     if (!Array.isArray(parsed)) return new Set<string>();
     return new Set(
-      parsed.filter((value): value is string => typeof value === "string"),
+      parsed
+        .filter(
+          (value): value is string =>
+            typeof value === "string" &&
+            value.length > 0 &&
+            value.length <= MAX_STORAGE_ID_LENGTH,
+        )
+        .slice(-MAX_DISMISSED_TOP_NOTICE_IDS),
     );
   } catch {
     return new Set<string>();
@@ -1021,9 +1035,9 @@ export default function App() {
   const [data, setData] = useState<LoadedData | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [archiveError, setArchiveError] = useState<string | null>(null);
-  const [archiveMonths, setArchiveMonths] = useState<
-    Record<string, ScheduleEntry[]>
-  >({});
+  const [archiveMonths, setArchiveMonths] = useState(
+    () => new Map<string, ScheduleEntry[]>(),
+  );
   const [archiveLoadingMonth, setArchiveLoadingMonth] = useState<string | null>(
     null,
   );
@@ -1067,12 +1081,18 @@ export default function App() {
   const historyViewRef = useRef(view);
   const restoringHistoryRef = useRef(false);
   const activeCollectionView = isCollectionView(view) ? view : null;
-  const activeCollectionData = activeCollectionView
-    ? collectionData[activeCollectionView] ?? null
-    : null;
-  const activeCollectionError = activeCollectionView
-    ? collectionErrors[activeCollectionView] ?? null
-    : null;
+  const activeCollectionData =
+    activeCollectionView === "cards"
+      ? collectionData.cards ?? null
+      : activeCollectionView === "wafer"
+        ? collectionData.wafer ?? null
+        : null;
+  const activeCollectionError =
+    activeCollectionView === "cards"
+      ? collectionErrors.cards ?? null
+      : activeCollectionView === "wafer"
+        ? collectionErrors.wafer ?? null
+        : null;
 
   useEffect(() => {
     let controller: AbortController | null = null;
@@ -1260,11 +1280,14 @@ export default function App() {
 
     async function loadCollectionData() {
       try {
-        setCollectionErrors((current) => ({
-          ...current,
-          [requestedView]: null,
-        }));
-        const response = await fetch(DATA_URLS[requestedView], {
+        setCollectionErrors((current) =>
+          requestedView === "cards"
+            ? { ...current, cards: null }
+            : { ...current, wafer: null },
+        );
+        const requestUrl =
+          requestedView === "cards" ? DATA_URLS.cards : DATA_URLS.wafer;
+        const response = await fetch(requestUrl, {
           cache: "no-store",
           signal: controller.signal,
         });
@@ -1278,19 +1301,22 @@ export default function App() {
         }
 
         const payload = (await response.json()) as CollectionCatalogPayload;
-        setCollectionData((current) => ({
-          ...current,
-          [requestedView]: payload,
-        }));
+        setCollectionData((current) =>
+          requestedView === "cards"
+            ? { ...current, cards: payload }
+            : { ...current, wafer: payload },
+        );
       } catch (loadError) {
         if (!controller.signal.aborted) {
-          setCollectionErrors((current) => ({
-            ...current,
-            [requestedView]:
-              loadError instanceof Error
-                ? loadError.message
-                : "카드 컬렉션 데이터를 불러오지 못했습니다.",
-          }));
+          const message =
+            loadError instanceof Error
+              ? loadError.message
+              : "카드 컬렉션 데이터를 불러오지 못했습니다.";
+          setCollectionErrors((current) =>
+            requestedView === "cards"
+              ? { ...current, cards: message }
+              : { ...current, wafer: message },
+          );
         }
       }
     }
@@ -1517,7 +1543,7 @@ export default function App() {
   const hololiveSchedule = useMemo(() => {
     const entriesByVideoId = new Map<string, ScheduleEntry>();
 
-    Object.values(archiveMonths)
+    [...archiveMonths.values()]
       .flat()
       .filter(isHololiveScheduleEntry)
       .forEach((entry) => entriesByVideoId.set(entry.videoId, entry));
@@ -1602,7 +1628,7 @@ export default function App() {
 
   useEffect(() => {
     const month = selectedDate.slice(0, 7);
-    const hasArchivedMonth = Object.hasOwn(archiveMonths, month);
+    const hasArchivedMonth = archiveMonths.has(month);
     const monthExists = data?.scheduleIndex.months.some(
       (item) => item.month === month,
     );
@@ -1636,10 +1662,11 @@ export default function App() {
         if (!Array.isArray(payload.entries)) {
           throw new Error("방송 기록 파일의 형식이 올바르지 않습니다.");
         }
-        setArchiveMonths((previous) => ({
-          ...previous,
-          [month]: payload.entries,
-        }));
+        setArchiveMonths((previous) => {
+          const next = new Map(previous);
+          next.set(month, payload.entries);
+          return next;
+        });
       })
       .catch((loadError: unknown) => {
         if (!controller.signal.aborted) {
@@ -2080,7 +2107,15 @@ export default function App() {
 
   function dismissTopNotice(noticeId: string) {
     setDismissedTopNoticeIds((current) => {
-      const next = new Set(current);
+      if (
+        noticeId.length === 0 ||
+        noticeId.length > MAX_STORAGE_ID_LENGTH
+      ) {
+        return current;
+      }
+      const next = new Set(
+        [...current].slice(-(MAX_DISMISSED_TOP_NOTICE_IDS - 1)),
+      );
       next.add(noticeId);
       try {
         window.localStorage.setItem(
@@ -2214,12 +2249,18 @@ export default function App() {
     !dismissedTopNoticeIds.has(dreamEventNoticeId)
       ? dreamEventHighlight.banner
       : null;
-  const visibleDreamBroadcastNotice =
+  const visibleDreamBroadcastCandidate =
     dreamBroadcastHighlight.banner &&
     dreamBroadcastNoticeId &&
     !dismissedTopNoticeIds.has(dreamBroadcastNoticeId)
       ? dreamBroadcastHighlight.banner
       : null;
+  const visibleDreamBroadcastWatchUrl = safeYouTubeWatchUrl(
+    visibleDreamBroadcastCandidate?.broadcast.watchUrl,
+  );
+  const visibleDreamBroadcastNotice = visibleDreamBroadcastWatchUrl
+    ? visibleDreamBroadcastCandidate
+    : null;
 
   const currentMeta = PAGE_META[view];
   const headerOfficialUrl =
@@ -2228,7 +2269,7 @@ export default function App() {
       : view === "music"
         ? OFFICIAL_MUSIC_URL
           : view === "cards"
-          ? activeCollectionData?.sourceUrls[0] ?? OFFICIAL_CARD_GAME_URL
+          ? OFFICIAL_CARD_GAME_URL
           : view === "wafer"
             ? OFFICIAL_WAFER_URL
             : OFFICIAL_SCHEDULE_URL;
@@ -2284,7 +2325,9 @@ export default function App() {
             />
           ) : null}
 
-          {visibleDreamBroadcastNotice && dreamBroadcastNoticeId ? (
+          {visibleDreamBroadcastNotice &&
+          visibleDreamBroadcastWatchUrl &&
+          dreamBroadcastNoticeId ? (
             <DreamTopNotice
               tone="broadcast"
               eyebrow={`${
@@ -2301,7 +2344,7 @@ export default function App() {
               timeValue={DREAM_PICKUP_MOMENT_FORMATTER.format(
                 new Date(visibleDreamBroadcastNotice.startsAt),
               )}
-              href={visibleDreamBroadcastNotice.broadcast.watchUrl}
+              href={visibleDreamBroadcastWatchUrl}
               cta={dreamBroadcastHighlight.isLive ? "방송 보기" : "대기방 열기"}
               icon={<Radio size={19} strokeWidth={2.2} />}
               dismissLabel={`${visibleDreamBroadcastNotice.broadcast.title} 공식 방송 배너 닫기`}

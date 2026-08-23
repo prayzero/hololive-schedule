@@ -13,8 +13,9 @@
     "update:card-game": "node scripts/update-hololive-card-game.mjs",
     "update:wafers": "node scripts/update-hololive-wafers.mjs",
     "update:music": "node scripts/update-hololive-music.mjs",
+    "test:security": "node --test scripts/security-policies.test.mjs",
     "validate:data": "node scripts/validate-public-data.mjs",
-    "build": "node scripts/validate-public-data.mjs && tsc --noEmit && vite build",
+    "build": "npm run test:security && node scripts/validate-public-data.mjs && tsc --noEmit && vite build",
     "preview": "vite preview",
     "check": "npm run build"
   },
@@ -30,8 +31,5 @@
     "cheerio": "1.1.2",
     "typescript": "7.0.2",
     "vite": "8.1.5"
-  },
-  "overrides": {
-    "nanoid": "3.3.18"
   }
 }

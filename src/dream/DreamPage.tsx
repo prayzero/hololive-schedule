@@ -31,6 +31,9 @@ import {
 import "./dream.css";
 
 const STORAGE_KEY = "holo-now:dream-owned:v1";
+const MAX_STORED_CHARACTER_IDS = 1_000;
+const MAX_OWNED_CHARACTER_STORAGE_LENGTH = 256 * 1024;
+const SAFE_STORAGE_ID_PATTERN = /^[A-Za-z0-9][A-Za-z0-9._:-]{0,119}$/;
 
 type DreamPanel = "collection" | "event" | "pickup" | "calculator";
 type CollectionFilter = "ALL" | "PICKUP" | TalentBranch;
@@ -120,10 +123,19 @@ function readOwnedCharacters() {
 
   try {
     const stored = window.localStorage.getItem(STORAGE_KEY);
+    if (stored && stored.length > MAX_OWNED_CHARACTER_STORAGE_LENGTH) {
+      return new Set<string>();
+    }
     const parsed: unknown = stored ? JSON.parse(stored) : [];
     return new Set(
       Array.isArray(parsed)
-        ? parsed.filter((value): value is string => typeof value === "string")
+        ? parsed
+            .filter(
+              (value): value is string =>
+                typeof value === "string" &&
+                SAFE_STORAGE_ID_PATTERN.test(value),
+            )
+            .slice(0, MAX_STORED_CHARACTER_IDS)
         : [],
     );
   } catch {
@@ -133,7 +145,10 @@ function readOwnedCharacters() {
 
 function writeOwnedCharacters(ownedIds: Set<string>): boolean {
   try {
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify([...ownedIds]));
+    const safeIds = [...ownedIds]
+      .filter((id) => SAFE_STORAGE_ID_PATTERN.test(id))
+      .slice(0, MAX_STORED_CHARACTER_IDS);
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(safeIds));
     return true;
   } catch {
     return false;
@@ -367,9 +382,13 @@ export function DreamPage({
   );
 
   const toggleOwned = (id: string) => {
+    if (!SAFE_STORAGE_ID_PATTERN.test(id)) return;
     const next = new Set(ownedIds);
     if (next.has(id)) next.delete(id);
-    else next.add(id);
+    else {
+      if (next.size >= MAX_STORED_CHARACTER_IDS) return;
+      next.add(id);
+    }
     setOwnedIds(next);
     setStorageError(!writeOwnedCharacters(next));
   };
@@ -733,6 +752,7 @@ export function DreamPage({
                               alt=""
                               loading="lazy"
                               decoding="async"
+                              referrerPolicy="no-referrer"
                             />
                             <b>
                               {chapterStatus === "live"

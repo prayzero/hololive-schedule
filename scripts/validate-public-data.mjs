@@ -1,4 +1,4 @@
-import { access, readFile, readdir, stat } from "node:fs/promises";
+import { access, open, readdir } from "node:fs/promises";
 import { dirname, relative, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -11,25 +11,80 @@ const maximumTotalBytes = 25 * 1024 * 1024;
 const maximumArrayItems = 20_000;
 const maximumObjectKeys = 200;
 const maximumStringLength = 20_000;
+const maximumUrlLength = 2_048;
 const maximumDepth = 50;
 const dangerousKeys = new Set(["__proto__", "prototype", "constructor"]);
 const identityKeys = ["id", "videoId"];
 const urlKeyPattern = /(?:urls?|uris?|links?|thumbnails?|avatars?|sources?)$/i;
+const imageUrlKeyPattern = /^(?:imageUrl|thumbnailUrl|portraitUrl|thumbnail|avatar)$/i;
 const absoluteSchemePattern = /^[a-z][a-z\d+.-]*:/i;
 const dangerousSchemePattern = /^(?:javascript|vbscript|data|file|blob):/i;
+const approvedImageHosts = new Set([
+  "contents-abema.com",
+  "d3uxczo091rgdx.cloudfront.net",
+  "genjiten.jp",
+  "holoatsu.hololivepro.com",
+  "hololive-official-cardgame.com",
+  "hololive.hololivepro.com",
+  "hope-beyond-the-stars.hololivepro.com",
+  "hoshimachi-suisei-fc.jp",
+  "hoverdrive.sakura.ne.jp",
+  "i.ytimg.com",
+  "images.microcms-assets.io",
+  "img.hmv.co.jp",
+  "img.youtube.com",
+  "lottecityhotel.jp",
+  "midnight-grand-orchestra.com",
+  "midnight-grand-orchestra.jp",
+  "mirokunosato.com",
+  "pbs.twimg.com",
+  "prcdn.freetls.fastly.net",
+  "rakuspa.com",
+  "recommend.jr-central.co.jp",
+  "rijfes.s3.amazonaws.com",
+  "storage.googleapis.com",
+  "www.bandai.co.jp",
+  "www.hakone-garasunomori.jp",
+  "www.pr-today.net",
+]);
+const approvedDreamHosts = new Set([
+  "appmedia.jp",
+  "game8.jp",
+  "hololive.hololivepro.com",
+  "images.microcms-assets.io",
+  "itunes.apple.com",
+  "play.google.com",
+  "store.steampowered.com",
+  "www.hololive-dreams.com",
+  "www.youtube.com",
+  "x.com",
+]);
 
 const jsonPaths = await listJsonFiles(dataRoot);
 if (jsonPaths.length === 0) {
   throw new Error("public/data contains no JSON files.");
 }
 
+await validateIndexSecurityPolicy();
+
 let totalBytes = 0;
 let checkedValues = 0;
 
 for (const path of jsonPaths) {
-  const fileStat = await stat(path);
-  totalBytes += fileStat.size;
-  if (fileStat.size > maximumFileBytes) {
+  let contents;
+  const file = await open(path, "r");
+  try {
+    const fileStat = await file.stat();
+    if (fileStat.size > maximumFileBytes) {
+      fail(path, `file exceeds ${maximumFileBytes} bytes`);
+    }
+    contents = await file.readFile();
+  } finally {
+    await file.close();
+  }
+
+  totalBytes += contents.byteLength;
+  if (contents.byteLength > maximumFileBytes) {
     fail(path, `file exceeds ${maximumFileBytes} bytes`);
   }
   if (totalBytes > maximumTotalBytes) {
@@ -38,7 +93,7 @@ for (const path of jsonPaths) {
 
   let payload;
   try {
-    payload = JSON.parse(await readFile(path, "utf8"));
+    payload = JSON.parse(contents.toString("utf8"));
   } catch (error) {
     fail(path, `invalid JSON: ${messageOf(error)}`);
   }
@@ -65,6 +120,93 @@ async function listJsonFiles(directory) {
   }
 
   return paths.sort();
+}
+
+async function validateIndexSecurityPolicy() {
+  const indexPath = resolve(projectRoot, "index.html");
+  const file = await open(indexPath, "r");
+  let html;
+  try {
+    const contents = await file.readFile();
+    if (contents.byteLength > 100_000) {
+      fail(indexPath, "index.html is unexpectedly large");
+    }
+    html = contents.toString("utf8");
+  } finally {
+    await file.close();
+  }
+
+  const metaMatch = html.match(
+    /<meta\s+http-equiv="Content-Security-Policy"\s+content="([^"]+)"/u,
+  );
+  if (!metaMatch) {
+    fail(indexPath, "Content Security Policy meta tag is missing or malformed");
+  }
+
+  const directiveEntries = metaMatch[1]
+    .split(";")
+    .map((directive) => directive.trim().split(/\s+/u))
+    .filter((parts) => parts[0])
+    .map(([name, ...sources]) => [name.toLowerCase(), sources]);
+  const directiveNames = directiveEntries.map(([name]) => name);
+  if (new Set(directiveNames).size !== directiveNames.length) {
+    fail(indexPath, "Content Security Policy contains duplicate directives");
+  }
+  const directives = new Map(directiveEntries);
+  const expectedDirectives = new Map([
+    ["default-src", ["'self'"]],
+    ["base-uri", ["'none'"]],
+    ["object-src", ["'none'"]],
+    ["script-src", ["'self'"]],
+    ["script-src-attr", ["'none'"]],
+    ["style-src", ["'self'"]],
+    ["style-src-elem", ["'self'"]],
+    ["style-src-attr", ["'unsafe-inline'"]],
+    ["connect-src", ["'self'"]],
+    ["font-src", ["'self'"]],
+    ["media-src", ["'none'"]],
+    ["frame-src", ["'none'"]],
+    ["form-action", ["'none'"]],
+    ["worker-src", ["'none'"]],
+    ["manifest-src", ["'none'"]],
+  ]);
+  const expectedDirectiveNames = new Set([
+    ...expectedDirectives.keys(),
+    "img-src",
+  ]);
+  if (
+    directives.size !== expectedDirectiveNames.size ||
+    [...directives.keys()].some((name) => !expectedDirectiveNames.has(name))
+  ) {
+    fail(indexPath, "Content Security Policy contains unexpected directives");
+  }
+
+  for (const [name, expectedSources] of expectedDirectives) {
+    const actualSources = directives.get(name);
+    if (
+      !actualSources ||
+      actualSources.length !== expectedSources.length ||
+      actualSources.some((source, index) => source !== expectedSources[index])
+    ) {
+      fail(indexPath, `${name} does not match the required security policy`);
+    }
+  }
+
+  const imageSources = new Set(directives.get("img-src") ?? []);
+  const expectedImageSources = new Set([
+    "'self'",
+    ...[...approvedImageHosts].map((host) => `https://${host}`),
+  ]);
+  if (
+    imageSources.size !== expectedImageSources.size ||
+    [...imageSources].some((source) => !expectedImageSources.has(source))
+  ) {
+    fail(indexPath, "img-src and approvedImageHosts must match exactly");
+  }
+
+  if (!/<meta\s+name="referrer"\s+content="no-referrer"\s*\/?>/u.test(html)) {
+    fail(indexPath, "no-referrer policy meta tag is missing");
+  }
 }
 
 async function validatePayload(filePath, payload) {
@@ -127,6 +269,12 @@ async function validateString(filePath, path, rawValue) {
       `string exceeds ${maximumStringLength} characters at ${displayPath(path)}`,
     );
   }
+  if (isUrlField && rawValue.length > maximumUrlLength) {
+    fail(
+      filePath,
+      `URL exceeds ${maximumUrlLength} characters at ${displayPath(path)}`,
+    );
+  }
 
   if (
     /^(?:checkedAt|generatedAt|updatedAt|verifiedAt|publishedAt|startsAt|endsAt)$/i.test(
@@ -144,6 +292,10 @@ async function validateString(filePath, path, rawValue) {
     Date.parse(value) > Date.now() + 24 * 60 * 60 * 1_000
   ) {
     fail(filePath, `metadata timestamp is in the future at ${displayPath(path)}`);
+  }
+
+  if (isUrlField && rawValue !== value) {
+    fail(filePath, `URL contains surrounding whitespace at ${displayPath(path)}`);
   }
 
   if (isUrlField && /^[\\/]{2}/.test(value)) {
@@ -167,6 +319,12 @@ async function validateString(filePath, path, rawValue) {
     }
     if (url.username || url.password) {
       fail(filePath, `URL credentials at ${displayPath(path)}`);
+    }
+    if (url.port) {
+      fail(filePath, `non-standard URL port at ${displayPath(path)}`);
+    }
+    if (imageUrlKeyPattern.test(key) && !approvedImageHosts.has(url.hostname)) {
+      fail(filePath, `unapproved image host at ${displayPath(path)}: ${url.hostname}`);
     }
     return;
   }
@@ -248,6 +406,8 @@ function validateKnownShape(filePath, payload) {
     "hololive-dreams.json": [
       ["characters", 50, 500],
       ["pickups", 0, 200],
+      ["events", 0, 100],
+      ["officialBroadcasts", 0, 100],
       ["rarities", 1, 20],
     ],
     "music.json": [
@@ -282,6 +442,9 @@ function validateKnownShape(filePath, payload) {
     name === "hololive-wafers.json"
   ) {
     validateCollectionCatalog(filePath, payload, name);
+  }
+  if (name === "hololive-dreams.json") {
+    validateHololiveDreams(filePath, payload);
   }
 }
 
@@ -339,13 +502,183 @@ function validateYouTubeLives(filePath, lives) {
       !Array.isArray(live.memberIds) ||
       live.memberIds.length === 0 ||
       live.memberIds.length > 20 ||
-      live.memberIds.some((memberId) => typeof memberId !== "string" || !memberId)
+      new Set(live.memberIds).size !== live.memberIds.length ||
+      live.memberIds.some((memberId) => !isSafeCatalogId(memberId))
     ) {
       fail(filePath, `YouTube live has invalid memberIds for ${videoId}`);
+    }
+    if (!/^UC[A-Za-z0-9_-]{22}$/.test(String(live.channelId ?? ""))) {
+      fail(filePath, `YouTube live has invalid channelId for ${videoId}`);
+    }
+    if (
+      typeof live.title !== "string" ||
+      !live.title.trim() ||
+      live.title.length > 500
+    ) {
+      fail(filePath, `YouTube live has invalid title for ${videoId}`);
+    }
+    if (
+      typeof live.publishedAt !== "string" ||
+      !Number.isFinite(Date.parse(live.publishedAt)) ||
+      Date.parse(live.publishedAt) > Date.now() + 24 * 60 * 60 * 1_000
+    ) {
+      fail(filePath, `YouTube live has invalid publication time for ${videoId}`);
+    }
+    if (
+      !Number.isSafeInteger(live.durationSeconds) ||
+      live.durationSeconds < 20 * 60 ||
+      live.durationSeconds > 7 * 24 * 60 * 60
+    ) {
+      fail(filePath, `YouTube live has invalid duration for ${videoId}`);
     }
     if (!categories.has(live.category)) {
       fail(filePath, `YouTube live has invalid category for ${videoId}`);
     }
+  }
+}
+
+function validateHololiveDreams(filePath, payload) {
+  validateDatasetUrlHosts(filePath, payload, approvedDreamHosts, "hololive Dreams");
+
+  const talentIds = new Set();
+  for (const character of payload.characters) {
+    if (
+      !character ||
+      typeof character !== "object" ||
+      !isSafeCatalogId(character.id) ||
+      !isSafeCatalogId(character.talentId)
+    ) {
+      fail(filePath, "hololive Dreams character has invalid identity fields");
+    }
+    talentIds.add(character.talentId);
+  }
+
+  for (const pickup of payload.pickups) {
+    if (!pickup || typeof pickup !== "object" || !isSafeCatalogId(pickup.id)) {
+      fail(filePath, "hololive Dreams pickup has an invalid id");
+    }
+    if (!Array.isArray(pickup.cards) || pickup.cards.length > 100) {
+      fail(filePath, `pickup ${pickup.id} has invalid cards`);
+    }
+    for (const card of pickup.cards) {
+      if (
+        !card ||
+        typeof card !== "object" ||
+        !isSafeCatalogId(card.id) ||
+        !talentIds.has(card.talentId)
+      ) {
+        fail(filePath, `pickup ${pickup.id} has an invalid card reference`);
+      }
+    }
+  }
+
+  for (const event of payload.events) {
+    if (
+      !event ||
+      typeof event !== "object" ||
+      !isSafeCatalogId(event.id) ||
+      !Array.isArray(event.chapters) ||
+      event.chapters.length < 1 ||
+      event.chapters.length > 100
+    ) {
+      fail(filePath, "hololive Dreams event has an invalid shape");
+    }
+    validateTimeRange(filePath, event.startsAt, event.endsAt, `event ${event.id}`);
+    for (const chapter of event.chapters) {
+      if (!chapter || typeof chapter !== "object" || !talentIds.has(chapter.talentId)) {
+        fail(filePath, `event ${event.id} references an unknown talent`);
+      }
+      validateTimeRange(
+        filePath,
+        chapter.startsAt,
+        chapter.endsAt,
+        `event ${event.id} chapter`,
+      );
+    }
+  }
+
+  for (const broadcast of payload.officialBroadcasts) {
+    if (
+      !broadcast ||
+      typeof broadcast !== "object" ||
+      !isSafeCatalogId(broadcast.id) ||
+      !Array.isArray(broadcast.participantTalentIds) ||
+      broadcast.participantTalentIds.length < 1 ||
+      broadcast.participantTalentIds.length > 30 ||
+      new Set(broadcast.participantTalentIds).size !==
+        broadcast.participantTalentIds.length ||
+      broadcast.participantTalentIds.some((talentId) => !talentIds.has(talentId))
+    ) {
+      fail(filePath, "hololive Dreams broadcast has invalid participants");
+    }
+    validateTimeRange(
+      filePath,
+      broadcast.startsAt,
+      broadcast.endsAt,
+      `broadcast ${broadcast.id}`,
+    );
+    validateCanonicalYouTubeWatchUrl(filePath, broadcast.watchUrl, broadcast.id);
+  }
+}
+
+function validateDatasetUrlHosts(filePath, payload, allowedHosts, label) {
+  const stack = [payload];
+  while (stack.length > 0) {
+    const value = stack.pop();
+    if (Array.isArray(value)) {
+      stack.push(...value);
+      continue;
+    }
+    if (!value || typeof value !== "object") continue;
+
+    for (const [key, child] of Object.entries(value)) {
+      if (
+        typeof child === "string" &&
+        urlKeyPattern.test(key) &&
+        absoluteSchemePattern.test(child)
+      ) {
+        let url;
+        try {
+          url = new URL(child);
+        } catch {
+          fail(filePath, `${label} has a malformed URL`);
+        }
+        if (
+          url.protocol !== "https:" ||
+          url.username ||
+          url.password ||
+          !allowedHosts.has(url.hostname)
+        ) {
+          fail(filePath, `${label} uses an unapproved URL host: ${url.hostname}`);
+        }
+      } else if (child && typeof child === "object") {
+        stack.push(child);
+      }
+    }
+  }
+}
+
+function validateTimeRange(filePath, startsAt, endsAt, label) {
+  const start = Date.parse(startsAt);
+  const end = endsAt === null ? null : Date.parse(endsAt);
+  if (!Number.isFinite(start) || (end !== null && (!Number.isFinite(end) || end < start))) {
+    fail(filePath, `${label} has an invalid time range`);
+  }
+}
+
+function validateCanonicalYouTubeWatchUrl(filePath, value, label) {
+  let url;
+  try {
+    url = new URL(value);
+  } catch {
+    fail(filePath, `${label} has a malformed YouTube URL`);
+  }
+  const videoId = url.searchParams.get("v") ?? "";
+  if (
+    !/^[A-Za-z0-9_-]{6,20}$/.test(videoId) ||
+    value !== `https://www.youtube.com/watch?v=${videoId}`
+  ) {
+    fail(filePath, `${label} must use a canonical YouTube watch URL`);
   }
 }
 
@@ -513,6 +846,7 @@ function validateCollectionCatalog(filePath, payload, name) {
 function isSafeCatalogId(value) {
   return (
     typeof value === "string" &&
+    !dangerousKeys.has(value) &&
     /^[A-Za-z0-9][A-Za-z0-9._:-]{0,119}$/.test(value)
   );
 }

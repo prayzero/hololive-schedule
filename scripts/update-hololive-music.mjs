@@ -1,8 +1,17 @@
 import { createHash } from "node:crypto";
-import { readFile, writeFile } from "node:fs/promises";
+import { readFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import * as cheerio from "cheerio";
+import {
+  fetchJsonWithPolicy,
+  fetchTextWithPolicy,
+} from "./lib/safe-fetch.mjs";
+import {
+  readJsonFileStrict,
+  writeFileAtomically,
+} from "./lib/secure-io.mjs";
+import { approvedMusicHttpsUrl } from "./lib/music-url-policy.mjs";
 
 const ORIGINAL_SONGS_URL =
   "https://docs.google.com/spreadsheets/d/1NYZza5QTN4ZIyot6XWvD8VwROL1R0EptlkJttySZ4Ew/export?format=csv&gid=387240143";
@@ -14,6 +23,7 @@ const COVER_SONGS_SOURCE_URL =
   "https://docs.google.com/spreadsheets/d/1aivH92zPSn1sdjmYdw1gq7K7_f8pglZSVXuG-JpLTeo/edit#gid=1378277195";
 const OFFICIAL_MUSIC_URL =
   "https://hololive.hololivepro.com/en/music/";
+const OFFICIAL_PROFILE_ORIGIN = "https://hololive.hololivepro.com";
 const YOUTUBE_ROOT = "https://www.youtube.com";
 const REQUEST_TIMEOUT_MS = 30_000;
 const PROFILE_CONCURRENCY = 8;
@@ -70,11 +80,24 @@ const KNOWN_COVER_EQUIVALENT_VIDEO_GROUPS = [
   // on the collaborators' channels and again as an official audio upload.
   ["rS8dhda9kIE", "OUwc0JnEJvM", "LzzktEXaspI"],
 ];
+const OFFICIAL_PROFILE_SLUG_OVERRIDES = new Map([
+  ["robocosan", "roboco-san"],
+  ["sakura-miko", "sakuramiko"],
+]);
 
 const talentPayload = JSON.parse(await readFile(talentsPath, "utf8"));
-const previousMusicPayload = await readFile(outputPath, "utf8")
-  .then(JSON.parse)
-  .catch(() => ({ tracks: [] }));
+const previousMusicPayload = await readJsonFileStrict(outputPath, {
+  allowMissing: true,
+  missingValue: { tracks: [] },
+  label: "existing public music data",
+});
+if (
+  !previousMusicPayload ||
+  typeof previousMusicPayload !== "object" ||
+  !Array.isArray(previousMusicPayload.tracks)
+) {
+  throw new Error("Existing public music data must contain a tracks array.");
+}
 const previousDebutDates = new Map(
   (previousMusicPayload.members ?? [])
     .filter((member) => member.talentId && member.debutDate)
@@ -82,6 +105,12 @@ const previousDebutDates = new Map(
 );
 const talents = talentPayload.talents.filter(
   (talent) => talent.status === "active" || talent.status === "affiliate",
+);
+const officialProfileRequestUrls = new Map(
+  talents.map((talent) => [
+    requiredTalentId(talent.id),
+    officialTalentProfileRequestUrl(talent),
+  ]),
 );
 
 if (talents.length !== 65) {
@@ -108,7 +137,7 @@ const debutDates = await mapWithConcurrency(
   async (talent) => {
     try {
       const html = await retry(
-        () => fetchText(talent.officialProfileUrl),
+        () => fetchText(officialProfileRequestUrls.get(talent.id)),
         2,
       );
       return (
@@ -257,7 +286,10 @@ const payload = {
   tracks,
 };
 
-await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
+await writeFileAtomically(
+  outputPath,
+  `${JSON.stringify(payload, null, 2)}\n`,
+);
 
 const durationCount = tracks.filter(
   (track) => Number.isFinite(track.durationSeconds) && track.durationSeconds > 0,
@@ -779,15 +811,21 @@ function englishDateToIso(value) {
 
 async function loadYouTubeClientConfig(seedTalent) {
   try {
-    const html = await fetchText(
-      `${YOUTUBE_ROOT}/channel/${seedTalent.channelId}/search?query=music`,
+    const channelId = requiredYouTubeChannelId(seedTalent.channelId);
+    const searchUrl = new URL(
+      `/channel/${encodeURIComponent(channelId)}/search`,
+      YOUTUBE_ROOT,
     );
+    searchUrl.searchParams.set("query", "music");
+    const html = await fetchText(searchUrl.toString());
     const apiKey = html.match(/"INNERTUBE_API_KEY":"([^"]+)"/)?.[1];
     const clientVersion = html.match(
       /"INNERTUBE_CLIENT_VERSION":"([^"]+)"/,
     )?.[1];
 
-    return apiKey && clientVersion ? { apiKey, clientVersion } : null;
+    return validYouTubeApiKey(apiKey) && validYouTubeClientVersion(clientVersion)
+      ? { apiKey, clientVersion }
+      : null;
   } catch (error) {
     console.warn(`YouTube configuration failed: ${errorMessage(error)}`);
     return null;
@@ -795,8 +833,11 @@ async function loadYouTubeClientConfig(seedTalent) {
 }
 
 async function fetchYouTubeDuration(videoId, config) {
+  const verifiedVideoId = requiredYouTubeVideoId(videoId);
+  const playerUrl = new URL("/youtubei/v1/player", YOUTUBE_ROOT);
+  playerUrl.searchParams.set("key", requiredYouTubeApiKey(config.apiKey));
   const player = await fetchJson(
-    `${YOUTUBE_ROOT}/youtubei/v1/player?key=${encodeURIComponent(config.apiKey)}`,
+    playerUrl.toString(),
     {
       method: "POST",
       body: JSON.stringify({
@@ -808,7 +849,7 @@ async function fetchYouTubeDuration(videoId, config) {
             gl: "US",
           },
         },
-        videoId,
+        videoId: verifiedVideoId,
         contentCheckOk: true,
         racyCheckOk: true,
       }),
@@ -851,7 +892,7 @@ function youtubeIdFromUrl(value) {
       null;
   }
 
-  return candidate && /^[A-Za-z0-9_-]{11}$/.test(candidate)
+  return candidate && isYouTubeVideoId(candidate)
     ? candidate
     : null;
 }
@@ -884,12 +925,83 @@ function urlsFromCell(value) {
 }
 
 function validHttpsUrl(value) {
+  return approvedMusicHttpsUrl(value);
+}
+
+function officialTalentProfileRequestUrl(talent) {
+  const talentId = requiredTalentId(talent.id);
+  const slug = OFFICIAL_PROFILE_SLUG_OVERRIDES.get(talentId) ?? talentId;
+  const canonicalUrl = new URL(
+    `/en/talents/${encodeURIComponent(slug)}/`,
+    OFFICIAL_PROFILE_ORIGIN,
+  );
+  let declaredUrl;
+
   try {
-    const url = new URL(String(value ?? "").trim());
-    return url.protocol === "https:" ? url.toString() : null;
-  } catch {
-    return null;
+    declaredUrl = new URL(String(talent.officialProfileUrl ?? ""));
+  } catch (error) {
+    throw new Error(`Invalid official profile URL for ${talentId}.`, {
+      cause: error,
+    });
   }
+
+  if (
+    declaredUrl.username ||
+    declaredUrl.password ||
+    declaredUrl.toString() !== canonicalUrl.toString()
+  ) {
+    throw new Error(
+      `Official profile URL for ${talentId} does not match its canonical hololive profile.`,
+    );
+  }
+  return canonicalUrl.toString();
+}
+
+function requiredTalentId(value) {
+  const talentId = String(value ?? "");
+  if (
+    talentId.length > 80 ||
+    !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(talentId)
+  ) {
+    throw new Error(`Invalid talent id: ${talentId}`);
+  }
+  return talentId;
+}
+
+function requiredYouTubeChannelId(value) {
+  const channelId = String(value ?? "");
+  if (!/^UC[A-Za-z0-9_-]{22}$/.test(channelId)) {
+    throw new Error(`Invalid official YouTube channel id: ${channelId}`);
+  }
+  return channelId;
+}
+
+function isYouTubeVideoId(value) {
+  return /^[A-Za-z0-9_-]{11}$/.test(String(value ?? ""));
+}
+
+function requiredYouTubeVideoId(value) {
+  const videoId = String(value ?? "");
+  if (!isYouTubeVideoId(videoId)) {
+    throw new Error(`Invalid YouTube video id: ${videoId}`);
+  }
+  return videoId;
+}
+
+function validYouTubeApiKey(value) {
+  return /^[A-Za-z0-9_-]{20,128}$/.test(String(value ?? ""));
+}
+
+function requiredYouTubeApiKey(value) {
+  const apiKey = String(value ?? "");
+  if (!validYouTubeApiKey(apiKey)) {
+    throw new Error("Invalid YouTube API key format.");
+  }
+  return apiKey;
+}
+
+function validYouTubeClientVersion(value) {
+  return /^\d+(?:\.\d+){2,5}$/.test(String(value ?? ""));
 }
 
 function canonicalYouTubeUrl(videoId) {
@@ -1279,40 +1391,70 @@ function compareTracks(left, right) {
 }
 
 async function fetchText(url, options = {}) {
-  const response = await request(url, options);
-  return response.text();
+  const result = await fetchTextWithPolicy(
+    url,
+    {
+      ...options,
+      headers: requestHeaders(options.headers),
+    },
+    requestPolicy(url),
+  );
+  return result.text;
 }
 
 async function fetchJson(url, options = {}) {
-  const response = await request(url, options);
-  return response.json();
+  const result = await fetchJsonWithPolicy(
+    url,
+    {
+      ...options,
+      headers: requestHeaders(options.headers, true),
+    },
+    requestPolicy(url),
+  );
+  return result.json;
 }
 
-async function request(url, options = {}) {
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+function requestHeaders(headers, json = false) {
+  return {
+    "Accept-Language": "en-US,en;q=0.9,ja;q=0.8",
+    ...(json ? { "Content-Type": "application/json" } : {}),
+    "User-Agent":
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/138 Safari/537.36",
+    ...(headers ?? {}),
+  };
+}
 
-  try {
-    const response = await fetch(url, {
-      ...options,
-      headers: {
-        "Accept-Language": "en-US,en;q=0.9,ja;q=0.8",
-        "Content-Type": "application/json",
-        "User-Agent":
-          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/138 Safari/537.36",
-        ...(options.headers ?? {}),
-      },
-      redirect: "follow",
-      signal: controller.signal,
-    });
+function requestPolicy(value) {
+  const url = new URL(value);
+  const hostname = url.hostname.toLowerCase();
 
-    if (!response.ok) {
-      throw new Error(`${response.status} ${response.statusText}`);
-    }
-    return response;
-  } finally {
-    clearTimeout(timeout);
+  if (hostname === "docs.google.com") {
+    return {
+      allowedHostnames: ["docs.google.com"],
+      allowedHostnameSuffixes: ["googleusercontent.com"],
+      timeoutMs: REQUEST_TIMEOUT_MS,
+      maxBytes: 16 * 1024 * 1024,
+      maxRedirects: 3,
+    };
   }
+  if (hostname === "hololive.hololivepro.com") {
+    return {
+      allowedOrigins: ["https://hololive.hololivepro.com"],
+      timeoutMs: REQUEST_TIMEOUT_MS,
+      maxBytes: 3 * 1024 * 1024,
+      maxRedirects: 2,
+    };
+  }
+  if (hostname === "www.youtube.com" || hostname === "youtube.com") {
+    return {
+      allowedHostnames: ["www.youtube.com", "youtube.com"],
+      timeoutMs: REQUEST_TIMEOUT_MS,
+      maxBytes: 8 * 1024 * 1024,
+      maxRedirects: 2,
+    };
+  }
+
+  throw new Error(`Music updater request host is not allowlisted: ${url.origin}`);
 }
 
 async function mapWithConcurrency(items, concurrency, worker) {

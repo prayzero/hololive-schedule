@@ -1,14 +1,29 @@
-import { readFile, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  fetchJsonWithPolicy,
+  fetchTextWithPolicy,
+} from "./lib/safe-fetch.mjs";
+import {
+  readJsonFileStrict,
+  writeFileAtomically,
+} from "./lib/secure-io.mjs";
 
 const scriptDirectory = dirname(fileURLToPath(import.meta.url));
 const projectRoot = resolve(scriptDirectory, "..");
 const researchDirectory = resolve(projectRoot, "research");
 const publicDataDirectory = resolve(projectRoot, "public", "data");
 const outputPath = resolve(researchDirectory, "youtube-metadata.json");
+const YOUTUBE_ORIGIN = "https://www.youtube.com";
 const REQUEST_TIMEOUT_MS = 20_000;
 const CONCURRENCY = 6;
+const MAXIMUM_RECORDS = 20_000;
+const YOUTUBE_REQUEST_POLICY = {
+  allowedOrigins: [YOUTUBE_ORIGIN],
+  timeoutMs: REQUEST_TIMEOUT_MS,
+  maxBytes: 8 * 1024 * 1024,
+  maxRedirects: 2,
+};
 
 const [
   talentPayload,
@@ -17,17 +32,39 @@ const [
   globalPayload,
   alumniPayload,
 ] = await Promise.all([
-    readJson(resolve(publicDataDirectory, "talents.json")),
-    readJson(resolve(publicDataDirectory, "youtube-lives.json")).catch(() => ({
-      lives: [],
-    })),
-    readJson(resolve(researchDirectory, "youtube-jp.json")),
-    readJson(resolve(researchDirectory, "youtube-global.json")),
-    readJson(resolve(researchDirectory, "youtube-alumni.json")),
+    readJsonFileStrict(resolve(publicDataDirectory, "talents.json")),
+    readJsonFileStrict(resolve(publicDataDirectory, "youtube-lives.json"), {
+      allowMissing: true,
+      missingValue: { lives: [] },
+      label: "existing public YouTube live archive",
+    }),
+    readJsonFileStrict(resolve(researchDirectory, "youtube-jp.json")),
+    readJsonFileStrict(resolve(researchDirectory, "youtube-global.json")),
+    readJsonFileStrict(resolve(researchDirectory, "youtube-alumni.json")),
   ]);
 
+if (!Array.isArray(talentPayload.talents)) {
+  throw new Error("Talent data must contain a talents array.");
+}
+if (talentPayload.talents.length > 500) {
+  throw new Error("Talent data exceeds the 500-item safety limit.");
+}
+for (const [label, payload] of [
+  ["JP", jpPayload],
+  ["global", globalPayload],
+  ["alumni", alumniPayload],
+]) {
+  if (!Array.isArray(payload.records) || payload.records.length > MAXIMUM_RECORDS) {
+    throw new Error(`${label} research data has an invalid records array.`);
+  }
+}
+const validatedTalents = talentPayload.talents.map((talent) => ({
+  ...talent,
+  id: requiredTalentId(talent.id),
+  channelId: requiredYouTubeChannelId(talent.channelId),
+}));
 const talentsById = new Map(
-  talentPayload.talents.map((talent) => [talent.id, talent]),
+  validatedTalents.map((talent) => [talent.id, talent]),
 );
 const recordsByVideoId = new Map();
 
@@ -36,24 +73,31 @@ for (const record of [
   ...globalPayload.records,
   ...alumniPayload.records,
 ]) {
-  const talent = talentsById.get(record.memberId);
+  const memberId = requiredTalentId(record.memberId);
+  const videoId = requiredYouTubeVideoId(record.videoId);
+  const talent = talentsById.get(memberId);
 
   if (!talent) {
-    throw new Error(`Unknown talent id: ${record.memberId}`);
+    throw new Error(`Unknown talent id: ${memberId}`);
   }
 
-  const existing = recordsByVideoId.get(record.videoId) ?? {
-    videoId: record.videoId,
+  const existing = recordsByVideoId.get(videoId) ?? {
+    videoId,
     expectedChannelIds: new Set(),
   };
   existing.expectedChannelIds.add(talent.channelId);
-  recordsByVideoId.set(record.videoId, existing);
+  recordsByVideoId.set(videoId, existing);
+  if (recordsByVideoId.size > MAXIMUM_RECORDS) {
+    throw new Error(
+      `Metadata workload exceeds the ${MAXIMUM_RECORDS}-video safety limit.`,
+    );
+  }
 }
 
 const previousByVideoId = new Map(
   (previousPayload.lives ?? []).map((live) => [live.videoId, live]),
 );
-const seedTalent = talentPayload.talents.find(
+const seedTalent = validatedTalents.find(
   (talent) => talent.channelId && talent.status !== "alumni",
 );
 
@@ -61,17 +105,20 @@ if (!seedTalent) {
   throw new Error("No official YouTube channel is available for configuration.");
 }
 
-const searchHtml = await fetchText(
-  `https://www.youtube.com/channel/${seedTalent.channelId}/search?query=3D%20LIVE`,
+const searchUrl = new URL(
+  `/channel/${encodeURIComponent(seedTalent.channelId)}/search`,
+  YOUTUBE_ORIGIN,
 );
-const apiKey = searchHtml.match(/"INNERTUBE_API_KEY":"([^"]+)"/)?.[1];
-const clientVersion = searchHtml.match(
-  /"INNERTUBE_CLIENT_VERSION":"([^"]+)"/,
-)?.[1];
-
-if (!apiKey || !clientVersion) {
-  throw new Error("YouTube client configuration was not found.");
-}
+searchUrl.searchParams.set("query", "3D LIVE");
+const searchHtml = await fetchText(searchUrl.toString());
+const apiKey = requiredYouTubeApiKey(
+  searchHtml.match(/"INNERTUBE_API_KEY":"([^"]+)"/)?.[1],
+);
+const clientVersion = requiredYouTubeClientVersion(
+  searchHtml.match(/"INNERTUBE_CLIENT_VERSION":"([^"]+)"/)?.[1],
+);
+const playerUrl = new URL("/youtubei/v1/player", YOUTUBE_ORIGIN);
+playerUrl.searchParams.set("key", apiKey);
 
 const videos = await mapWithConcurrency(
   Array.from(recordsByVideoId.values()),
@@ -90,7 +137,7 @@ const videos = await mapWithConcurrency(
 
     try {
       const player = await fetchJson(
-        `https://www.youtube.com/youtubei/v1/player?key=${encodeURIComponent(apiKey)}`,
+        playerUrl.toString(),
         {
           method: "POST",
           body: JSON.stringify({
@@ -120,8 +167,12 @@ const videos = await mapWithConcurrency(
       if (
         !details?.channelId ||
         !expectedChannelIds.has(details.channelId) ||
-        !publishedAt ||
-        !Number.isFinite(durationSeconds)
+        typeof publishedAt !== "string" ||
+        !Number.isFinite(Date.parse(publishedAt)) ||
+        Date.parse(publishedAt) > Date.now() + 24 * 60 * 60 * 1_000 ||
+        !Number.isSafeInteger(durationSeconds) ||
+        durationSeconds < 20 * 60 ||
+        durationSeconds > 7 * 24 * 60 * 60
       ) {
         console.warn(`Metadata validation failed for ${videoId}.`);
         return {
@@ -167,52 +218,88 @@ const payload = {
   ),
 };
 
-await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
+await writeFileAtomically(
+  outputPath,
+  `${JSON.stringify(payload, null, 2)}\n`,
+);
 
 const complete = videos.filter(
   (video) => video.publishedAt && video.durationSeconds,
 ).length;
 console.log(`Verified YouTube metadata for ${complete}/${videos.length} videos.`);
 
-async function readJson(path) {
-  return JSON.parse(await readFile(path, "utf8"));
-}
-
 async function fetchText(url) {
-  const response = await request(url);
-  return response.text();
+  const response = await fetchTextWithPolicy(
+    url,
+    { headers: requestHeaders() },
+    YOUTUBE_REQUEST_POLICY,
+  );
+  return response.text;
 }
 
 async function fetchJson(url, options) {
-  const response = await request(url, options);
-  return response.json();
+  const response = await fetchJsonWithPolicy(
+    url,
+    {
+      ...options,
+      headers: requestHeaders(options?.headers),
+    },
+    YOUTUBE_REQUEST_POLICY,
+  );
+  return response.json;
 }
 
-async function request(url, options = {}) {
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+function requestHeaders(headers = {}) {
+  return {
+    "Content-Type": "application/json",
+    "Accept-Language": "en-US,en;q=0.9,ja;q=0.8",
+    "User-Agent":
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/138 Safari/537.36",
+    ...headers,
+  };
+}
 
-  try {
-    const response = await fetch(url, {
-      ...options,
-      headers: {
-        "Content-Type": "application/json",
-        "Accept-Language": "en-US,en;q=0.9,ja;q=0.8",
-        "User-Agent":
-          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/138 Safari/537.36",
-        ...(options.headers ?? {}),
-      },
-      signal: controller.signal,
-    });
-
-    if (!response.ok) {
-      throw new Error(`${response.status} ${response.statusText}`);
-    }
-
-    return response;
-  } finally {
-    clearTimeout(timeout);
+function requiredTalentId(value) {
+  const talentId = String(value ?? "");
+  if (
+    talentId.length > 80 ||
+    !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(talentId)
+  ) {
+    throw new Error(`Invalid talent id: ${talentId}`);
   }
+  return talentId;
+}
+
+function requiredYouTubeChannelId(value) {
+  const channelId = String(value ?? "");
+  if (!/^UC[A-Za-z0-9_-]{22}$/.test(channelId)) {
+    throw new Error(`Invalid official YouTube channel id: ${channelId}`);
+  }
+  return channelId;
+}
+
+function requiredYouTubeVideoId(value) {
+  const videoId = String(value ?? "");
+  if (!/^[A-Za-z0-9_-]{11}$/.test(videoId)) {
+    throw new Error(`Invalid YouTube video id: ${videoId}`);
+  }
+  return videoId;
+}
+
+function requiredYouTubeApiKey(value) {
+  const apiKey = String(value ?? "");
+  if (!/^[A-Za-z0-9_-]{20,128}$/.test(apiKey)) {
+    throw new Error("YouTube client API key was missing or malformed.");
+  }
+  return apiKey;
+}
+
+function requiredYouTubeClientVersion(value) {
+  const clientVersion = String(value ?? "");
+  if (!/^\d+(?:\.\d+){2,5}$/.test(clientVersion)) {
+    throw new Error("YouTube client version was missing or malformed.");
+  }
+  return clientVersion;
 }
 
 async function mapWithConcurrency(items, concurrency, worker) {

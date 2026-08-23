@@ -1,6 +1,11 @@
-import { mkdir, readFile, rename, rm, writeFile } from "node:fs/promises";
+import { readFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  fetchJsonWithPolicy,
+  fetchTextWithPolicy,
+} from "./lib/safe-fetch.mjs";
+import { writeFileAtomically } from "./lib/secure-io.mjs";
 
 const YOUTUBE_ROOT = "https://www.youtube.com";
 const REQUEST_TIMEOUT_MS = 20_000;
@@ -8,6 +13,17 @@ const SEARCH_CONCURRENCY = 4;
 const VIDEO_CONCURRENCY = 6;
 const MINIMUM_DURATION_SECONDS = 20 * 60;
 const COLLECTOR_VERSION = "1.0.0";
+const MAX_SELECTED_TALENTS = 120;
+const MAX_SEARCH_TASKS = 500;
+const MAX_RENDERER_NODES = 200_000;
+const MAX_VIDEO_CANDIDATES = 5_000;
+const MAX_VIDEO_TITLE_LENGTH = 500;
+const YOUTUBE_REQUEST_POLICY = {
+  allowedOrigins: [YOUTUBE_ROOT],
+  timeoutMs: REQUEST_TIMEOUT_MS,
+  maxBytes: 8 * 1024 * 1024,
+  maxRedirects: 2,
+};
 
 const scriptDirectory = dirname(fileURLToPath(import.meta.url));
 const projectRoot = resolve(scriptDirectory, "..");
@@ -165,36 +181,58 @@ function extractClientConfig(html) {
     /"INNERTUBE_CLIENT_VERSION":"([^"]+)"/,
   )?.[1];
 
-  if (!apiKey || !clientVersion) {
+  if (
+    !/^[A-Za-z0-9_-]{20,128}$/.test(String(apiKey ?? "")) ||
+    !/^\d+(?:\.\d+){2,5}$/.test(String(clientVersion ?? ""))
+  ) {
     throw new Error("YouTube client configuration was not found.");
   }
 
   return { apiKey, clientVersion };
 }
 
-function collectVideoRenderers(value, results = []) {
-  if (!value || typeof value !== "object") {
-    return results;
+function collectVideoRenderers(value) {
+  const results = [];
+  const stack = [value];
+  let visitedNodes = 0;
+
+  while (stack.length > 0) {
+    const current = stack.pop();
+    if (!current || typeof current !== "object") continue;
+    visitedNodes += 1;
+    if (visitedNodes > MAX_RENDERER_NODES) {
+      throw new Error("YouTube search response is too structurally complex.");
+    }
+    if (current.videoRenderer) {
+      if (results.length >= MAX_VIDEO_CANDIDATES) {
+        throw new Error("YouTube search response contains too many videos.");
+      }
+      results.push(current.videoRenderer);
+    }
+    const children = Object.values(current);
+    if (visitedNodes + stack.length + children.length > MAX_RENDERER_NODES) {
+      throw new Error("YouTube search response is too structurally complex.");
+    }
+    for (const child of children) {
+      stack.push(child);
+    }
   }
 
-  if (value.videoRenderer) {
-    results.push(value.videoRenderer);
-  }
-
-  Object.values(value).forEach((child) =>
-    collectVideoRenderers(child, results),
-  );
   return results;
 }
 
 function candidateFromRenderer(renderer, memberIds, channelId) {
+  if (!isYouTubeVideoId(renderer.videoId)) {
+    return null;
+  }
+  const videoId = String(renderer.videoId);
   const title = textFromRuns(renderer.title);
   const durationText = textFromRuns(renderer.lengthText);
   const durationSeconds = parseDuration(durationText);
 
   if (
-    !renderer.videoId ||
     !title ||
+    title.length > MAX_VIDEO_TITLE_LENGTH ||
     !durationSeconds ||
     !titleQualifies(title, durationSeconds)
   ) {
@@ -202,8 +240,8 @@ function candidateFromRenderer(renderer, memberIds, channelId) {
   }
 
   return {
-    id: renderer.videoId,
-    videoId: renderer.videoId,
+    id: videoId,
+    videoId,
     memberIds,
     channelId,
     title,
@@ -211,17 +249,46 @@ function candidateFromRenderer(renderer, memberIds, channelId) {
     publishedLabel: textFromRuns(renderer.publishedTimeText) || null,
     publishedAt: null,
     durationSeconds,
-    videoUrl: `${YOUTUBE_ROOT}/watch?v=${renderer.videoId}`,
-    thumbnailUrl: `https://i.ytimg.com/vi/${renderer.videoId}/hqdefault.jpg`,
+    videoUrl: `${YOUTUBE_ROOT}/watch?v=${videoId}`,
+    thumbnailUrl: `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`,
   };
 }
 
-async function fetchText(url, options = {}) {
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
+function requiredTalentId(value) {
+  const talentId = String(value ?? "");
+  if (
+    talentId.length > 80 ||
+    !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(talentId)
+  ) {
+    throw new Error(`Invalid talent id: ${talentId}`);
+  }
+  return talentId;
+}
 
-  try {
-    const response = await fetch(url, {
+function requiredYouTubeChannelId(value) {
+  const channelId = String(value ?? "");
+  if (!/^UC[A-Za-z0-9_-]{22}$/.test(channelId)) {
+    throw new Error(`Invalid official YouTube channel id: ${channelId}`);
+  }
+  return channelId;
+}
+
+function isYouTubeVideoId(value) {
+  return /^[A-Za-z0-9_-]{11}$/.test(String(value ?? ""));
+}
+
+function requiredYouTubeVideoId(value) {
+  const videoId = String(value ?? "");
+  if (!isYouTubeVideoId(videoId)) {
+    throw new Error(`Invalid YouTube video id: ${videoId}`);
+  }
+  return videoId;
+}
+
+async function fetchText(url, options = {}) {
+  const response = await fetchTextWithPolicy(
+    url,
+    {
       ...options,
       headers: {
         "Accept-Language": "en-US,en;q=0.9,ja;q=0.8",
@@ -229,26 +296,16 @@ async function fetchText(url, options = {}) {
           "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/138 Safari/537.36",
         ...(options.headers ?? {}),
       },
-      redirect: "follow",
-      signal: controller.signal,
-    });
-
-    if (!response.ok) {
-      throw new Error(`${response.status} ${response.statusText}`);
-    }
-
-    return await response.text();
-  } finally {
-    clearTimeout(timeout);
-  }
+    },
+    YOUTUBE_REQUEST_POLICY,
+  );
+  return response.text;
 }
 
 async function fetchJson(url, options = {}) {
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
-
-  try {
-    const response = await fetch(url, {
+  const response = await fetchJsonWithPolicy(
+    url,
+    {
       ...options,
       headers: {
         "Content-Type": "application/json",
@@ -257,18 +314,10 @@ async function fetchJson(url, options = {}) {
           "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/138 Safari/537.36",
         ...(options.headers ?? {}),
       },
-      redirect: "follow",
-      signal: controller.signal,
-    });
-
-    if (!response.ok) {
-      throw new Error(`${response.status} ${response.statusText}`);
-    }
-
-    return await response.json();
-  } finally {
-    clearTimeout(timeout);
-  }
+    },
+    YOUTUBE_REQUEST_POLICY,
+  );
+  return response.json;
 }
 
 async function mapWithConcurrency(items, concurrency, worker) {
@@ -294,8 +343,13 @@ async function mapWithConcurrency(items, concurrency, worker) {
 }
 
 async function collectSearchPage(task) {
-  const url = `${YOUTUBE_ROOT}/channel/${task.channelId}/search?query=${encodeURIComponent(task.query)}`;
-  const html = await fetchText(url);
+  const channelId = requiredYouTubeChannelId(task.channelId);
+  const searchUrl = new URL(
+    `/channel/${encodeURIComponent(channelId)}/search`,
+    YOUTUBE_ROOT,
+  );
+  searchUrl.searchParams.set("query", task.query);
+  const html = await fetchText(searchUrl.toString());
   const initialData = extractInitialData(html);
   const candidates = collectVideoRenderers(initialData)
     .map((renderer) =>
@@ -311,8 +365,11 @@ async function collectSearchPage(task) {
 
 async function enrichCandidate(candidate, clientConfig) {
   try {
+    const videoId = requiredYouTubeVideoId(candidate.videoId);
+    const playerUrl = new URL("/youtubei/v1/player", YOUTUBE_ROOT);
+    playerUrl.searchParams.set("key", clientConfig.apiKey);
     const player = await fetchJson(
-      `${YOUTUBE_ROOT}/youtubei/v1/player?key=${encodeURIComponent(clientConfig.apiKey)}`,
+      playerUrl.toString(),
       {
         method: "POST",
         body: JSON.stringify({
@@ -324,7 +381,7 @@ async function enrichCandidate(candidate, clientConfig) {
               gl: "US",
             },
           },
-          videoId: candidate.videoId,
+          videoId,
           contentCheckOk: true,
           racyCheckOk: true,
         }),
@@ -384,19 +441,6 @@ async function enrichCandidate(candidate, clientConfig) {
   }
 }
 
-async function writeAtomically(path, contents) {
-  await mkdir(dirname(path), { recursive: true });
-  const temporaryPath = `${path}.${process.pid}.${Date.now()}.tmp`;
-
-  try {
-    await writeFile(temporaryPath, contents, "utf8");
-    await rename(temporaryPath, path);
-  } catch (error) {
-    await rm(temporaryPath, { force: true }).catch(() => {});
-    throw error;
-  }
-}
-
 async function main() {
   const talentPayload = JSON.parse(await readFile(talentsPath, "utf8"));
   const selectedTalents = talentPayload.talents.filter(
@@ -406,17 +450,24 @@ async function main() {
   if (selectedTalents.length === 0) {
     throw new Error("No matching talents were selected.");
   }
+  if (selectedTalents.length > MAX_SELECTED_TALENTS) {
+    throw new Error(
+      `Selected talent count exceeds the ${MAX_SELECTED_TALENTS}-talent safety limit.`,
+    );
+  }
 
   const channelGroups = new Map();
   selectedTalents.forEach((talent) => {
-    const existing = channelGroups.get(talent.channelId) ?? {
-      channelId: talent.channelId,
+    const channelId = requiredYouTubeChannelId(talent.channelId);
+    const memberId = requiredTalentId(talent.id);
+    const existing = channelGroups.get(channelId) ?? {
+      channelId,
       memberIds: [],
       branches: new Set(),
     };
-    existing.memberIds.push(talent.id);
+    existing.memberIds.push(memberId);
     existing.branches.add(talent.branch);
-    channelGroups.set(talent.channelId, existing);
+    channelGroups.set(channelId, existing);
   });
 
   const searchTasks = [];
@@ -431,6 +482,11 @@ async function main() {
       }),
     );
   });
+  if (searchTasks.length > MAX_SEARCH_TASKS) {
+    throw new Error(
+      `Search task count exceeds the ${MAX_SEARCH_TASKS}-request safety limit.`,
+    );
+  }
 
   console.log(
     `Searching ${searchTasks.length} official-channel queries for ${selectedTalents.length} talents...`,
@@ -467,6 +523,11 @@ async function main() {
       const existing = candidatesById.get(candidate.videoId);
 
       if (!existing) {
+        if (candidatesById.size >= MAX_VIDEO_CANDIDATES) {
+          throw new Error(
+            `Candidate count exceeds the ${MAX_VIDEO_CANDIDATES}-video safety limit.`,
+          );
+        }
         candidatesById.set(candidate.videoId, candidate);
         return;
       }
@@ -512,7 +573,10 @@ async function main() {
     return;
   }
 
-  await writeAtomically(outputPath, `${JSON.stringify(payload, null, 2)}\n`);
+  await writeFileAtomically(
+    outputPath,
+    `${JSON.stringify(payload, null, 2)}\n`,
+  );
   console.log(
     `Collected ${lives.length} YouTube live archives for ${memberIdsWithLives.size}/${selectedTalents.length} talents into ${outputPath}`,
   );

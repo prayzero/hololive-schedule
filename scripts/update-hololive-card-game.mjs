@@ -1,13 +1,26 @@
-import { writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import * as cheerio from "cheerio";
+import { fetchTextWithPolicy } from "./lib/safe-fetch.mjs";
+import { writeFileAtomically } from "./lib/secure-io.mjs";
 
 const officialOrigin = "https://hololive-official-cardgame.com";
 const cardListUrl = `${officialOrigin}/cardlist/`;
 const pageSize = 15;
 const requestConcurrency = 6;
 const maximumAttempts = 4;
+const maximumProducts = 100;
+const maximumCardsPerProduct = 1_000;
+const maximumPagesPerProduct = 75;
+const maximumPageJobs = 2_000;
+const maximumTotalOccurrences = 25_000;
+const maximumTotalCards = 25_000;
+const CARD_REQUEST_POLICY = {
+  allowedOrigins: [officialOrigin],
+  timeoutMs: 45_000,
+  maxBytes: 4 * 1024 * 1024,
+  maxRedirects: 2,
+};
 const rarityOrder = [
   "SEC",
   "OUR",
@@ -62,16 +75,39 @@ const initialResults = await mapLimit(
   async (product) => {
     const url = productCardListUrl(product.id);
     const html = await fetchHtml(url, `${product.id} page 1`);
-    const expectedCount = parseResultCount(html, product.id);
+    const expectedCount = parseResultCount(
+      html,
+      product.id,
+      maximumCardsPerProduct,
+    );
     const occurrences = parseCardOccurrences(html, product);
     return { product, expectedCount, occurrences };
   },
 );
+const expectedOccurrenceCount = initialResults.reduce(
+  (total, result) => total + result.expectedCount,
+  0,
+);
+if (expectedOccurrenceCount > maximumTotalOccurrences) {
+  throw new Error(
+    `card occurrences exceed the ${maximumTotalOccurrences}-item safety limit`,
+  );
+}
 
 const pageJobs = [];
 for (const result of initialResults) {
   const pageCount = Math.ceil(result.expectedCount / pageSize);
+  if (pageCount > maximumPagesPerProduct) {
+    throw new Error(
+      `${result.product.id}: ${pageCount} pages exceeds the ${maximumPagesPerProduct}-page safety limit`,
+    );
+  }
   for (let page = 2; page <= pageCount; page += 1) {
+    if (pageJobs.length >= maximumPageJobs) {
+      throw new Error(
+        `card page jobs exceed the ${maximumPageJobs}-request safety limit`,
+      );
+    }
     pageJobs.push({
       product: result.product,
       expectedCount: result.expectedCount,
@@ -122,7 +158,11 @@ const globalSearchHtml = await fetchHtml(
   `${officialOrigin}/cardlist/cardsearch/?view=text&sort=no`,
   "global card count",
 );
-const officialGlobalCount = parseResultCount(globalSearchHtml, "all cards");
+const officialGlobalCount = parseResultCount(
+  globalSearchHtml,
+  "all cards",
+  maximumTotalCards,
+);
 
 if (cardsById.size !== officialGlobalCount) {
   throw new Error(
@@ -201,7 +241,10 @@ const payload = {
 };
 
 validatePayload(payload, officialGlobalCount);
-await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
+await writeFileAtomically(
+  outputPath,
+  `${JSON.stringify(payload, null, 2)}\n`,
+);
 
 console.log(
   [
@@ -227,6 +270,14 @@ function parseProducts(html) {
     const url = new URL(href, officialOrigin);
     const id = url.searchParams.get("expansion")?.trim();
     if (!id) return;
+    if (!/^[A-Za-z0-9_-]{1,64}$/.test(id)) {
+      throw new Error(`invalid official product id: ${JSON.stringify(id)}`);
+    }
+    if (parsed.length >= maximumProducts) {
+      throw new Error(
+        `official product index exceeds the ${maximumProducts}-product safety limit`,
+      );
+    }
 
     const name = cleanText(item.find(".name").first().text());
     const releaseText = cleanText(item.find(".detail").first().text());
@@ -278,12 +329,17 @@ function parseJapaneseDate(value) {
   return `${match[1]}-${match[2].padStart(2, "0")}-${match[3].padStart(2, "0")}`;
 }
 
-function parseResultCount(html, label) {
+function parseResultCount(html, label, maximumCount) {
   const $ = cheerio.load(html);
   const rawCount = cleanText($(".cardlist-Result_Target_Num .num").first().text());
   const count = Number.parseInt(rawCount, 10);
   if (!Number.isSafeInteger(count) || count < 1) {
     throw new Error(`${label}: invalid result count ${JSON.stringify(rawCount)}`);
+  }
+  if (count > maximumCount) {
+    throw new Error(
+      `${label}: result count ${count} exceeds the ${maximumCount}-card safety limit`,
+    );
   }
   return count;
 }
@@ -340,6 +396,11 @@ function parseDefinitionList(list, $) {
 
 function validateProducts(products) {
   if (products.length === 0) throw new Error("official product index is empty");
+  if (products.length > maximumProducts) {
+    throw new Error(
+      `official product index exceeds the ${maximumProducts}-product safety limit`,
+    );
+  }
   const ids = new Set();
   for (const product of products) {
     if (ids.has(product.id)) throw new Error(`duplicate product id: ${product.id}`);
@@ -348,7 +409,7 @@ function validateProducts(products) {
     if (!categoryRank.has(product.category)) {
       throw new Error(`${product.id}: invalid category ${product.category}`);
     }
-    assertHttps(product.sourceUrl, `${product.id} sourceUrl`);
+    assertOfficialUrl(product.sourceUrl, `${product.id} sourceUrl`);
   }
 }
 
@@ -379,8 +440,8 @@ function validateCardOccurrence(card, productId) {
   if (!rarityRank.has(card.rarity)) {
     throw new Error(`${productId}: unknown rarity ${card.rarity} on ${card.id}`);
   }
-  assertHttps(card.imageUrl, `${productId} card ${card.id} imageUrl`);
-  assertHttps(card.sourceUrl, `${productId} card ${card.id} sourceUrl`);
+  assertOfficialUrl(card.imageUrl, `${productId} card ${card.id} imageUrl`);
+  assertOfficialUrl(card.sourceUrl, `${productId} card ${card.id} sourceUrl`);
 }
 
 function mergeOccurrences(products, occurrencesByProduct) {
@@ -497,7 +558,7 @@ function validatePayload(payload, expectedCardCount) {
     throw new Error("payload metadata is incomplete");
   }
   for (const sourceUrl of payload.sourceUrls) {
-    assertHttps(sourceUrl, "payload source URL");
+    assertOfficialUrl(sourceUrl, "payload source URL");
   }
 
   const releaseIds = new Set(payload.releases.map((release) => release.id));
@@ -562,9 +623,9 @@ function validatePayload(payload, expectedCardCount) {
       occurrenceImageKeys.add(imageKey);
       membershipCounts.set(releaseId, membershipCounts.get(releaseId) + 1);
     }
-    assertHttps(card.imageUrl, `payload card ${card.id} imageUrl`);
+    assertOfficialUrl(card.imageUrl, `payload card ${card.id} imageUrl`);
     if (card.sourceUrl) {
-      assertHttps(card.sourceUrl, `payload card ${card.id} sourceUrl`);
+      assertOfficialUrl(card.sourceUrl, `payload card ${card.id} sourceUrl`);
     }
   }
 
@@ -578,7 +639,7 @@ function validatePayload(payload, expectedCardCount) {
   }
 
   for (const release of payload.releases) {
-    assertHttps(release.sourceUrl, `${release.id} sourceUrl`);
+    assertOfficialUrl(release.sourceUrl, `${release.id} sourceUrl`);
     if (!release.name || !release.shortName || !release.category) {
       throw new Error(`${release.id}: incomplete release metadata`);
     }
@@ -605,27 +666,24 @@ function productCardPageUrl(productId, page) {
 }
 
 async function fetchHtml(url, label) {
-  assertHttps(url, label);
+  assertOfficialUrl(url, label);
   let lastError;
 
   for (let attempt = 1; attempt <= maximumAttempts; attempt += 1) {
     try {
-      const response = await fetch(url, {
-        headers: {
-          Accept: "text/html,application/xhtml+xml",
-          "Accept-Language": "ja,en;q=0.7",
-          "User-Agent":
-            "hololive-schedule-card-catalog/1.0 (+https://github.com/prayzero/hololive-schedule)",
+      const response = await fetchTextWithPolicy(
+        url,
+        {
+          headers: {
+            Accept: "text/html,application/xhtml+xml",
+            "Accept-Language": "ja,en;q=0.7",
+            "User-Agent":
+              "hololive-schedule-card-catalog/1.0 (+https://github.com/prayzero/hololive-schedule)",
+          },
         },
-        redirect: "follow",
-        signal: AbortSignal.timeout(45_000),
-      });
-
-      if (!response.ok) {
-        throw new Error(`HTTP ${response.status} ${response.statusText}`);
-      }
-
-      const html = await response.text();
+        CARD_REQUEST_POLICY,
+      );
+      const html = response.text;
       if (!html.trim()) throw new Error("empty response");
       return html;
     } catch (error) {
@@ -657,10 +715,15 @@ async function mapLimit(items, limit, mapper) {
   return results;
 }
 
-function assertHttps(value, label) {
+function assertOfficialUrl(value, label) {
   const url = new URL(value);
-  if (url.protocol !== "https:") {
-    throw new Error(`${label}: non-HTTPS URL ${value}`);
+  if (
+    url.origin !== officialOrigin ||
+    url.username ||
+    url.password ||
+    url.port
+  ) {
+    throw new Error(`${label}: unapproved official URL ${value}`);
   }
 }
 

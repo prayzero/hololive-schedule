@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T09:38:21.083Z",
+  "generatedAt": "2026-08-23T10:08:58.435Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -19693,11 +19693,26 @@
       "branch": "JP"
     },
     {
+      "id": "z_-p9cn-seU",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "18:48",
+      "startsAt": "2026-08-23T18:48:00+09:00",
+      "name": "常闇トワ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=z_-p9cn-seU",
+      "videoId": "z_-p9cn-seU",
+      "thumbnail": "https://img.youtube.com/vi/z_-p9cn-seU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "PF_Tq_Cd73s",
       "date": "2026-08-23",
       "dateLabel": "08/23 (日)",
-      "time": "19:00",
-      "startsAt": "2026-08-23T19:00:00+09:00",
+      "time": "18:59",
+      "startsAt": "2026-08-23T18:59:00+09:00",
       "name": "綺々羅々ヴィヴィ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=PF_Tq_Cd73s",
@@ -19726,8 +19741,8 @@
       "id": "lt90QFjVK2U",
       "date": "2026-08-23",
       "dateLabel": "08/23 (日)",
-      "time": "19:00",
-      "startsAt": "2026-08-23T19:00:00+09:00",
+      "time": "19:10",
+      "startsAt": "2026-08-23T19:10:00+09:00",
       "name": "さくらみこ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=lt90QFjVK2U",

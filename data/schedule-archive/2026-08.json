@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T01:57:11.426Z",
+  "generatedAt": "2026-08-23T03:12:41.979Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -19366,13 +19366,28 @@
       "id": "Pd70RRzTioc",
       "date": "2026-08-23",
       "dateLabel": "08/23 (日)",
-      "time": "12:00",
-      "startsAt": "2026-08-23T12:00:00+09:00",
+      "time": "11:57",
+      "startsAt": "2026-08-23T11:57:00+09:00",
       "name": "Baelz",
       "title": null,
       "url": "https://www.youtube.com/watch?v=Pd70RRzTioc",
       "videoId": "Pd70RRzTioc",
       "thumbnail": "https://img.youtube.com/vi/Pd70RRzTioc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "gk_JzP412BU",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "12:00",
+      "startsAt": "2026-08-23T12:00:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=gk_JzP412BU",
+      "videoId": "gk_JzP412BU",
+      "thumbnail": "https://img.youtube.com/vi/gk_JzP412BU/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"
@@ -19586,6 +19601,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "KPOqtLmYKZU",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "20:00",
+      "startsAt": "2026-08-23T20:00:00+09:00",
+      "name": "一条莉々華",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=KPOqtLmYKZU",
+      "videoId": "KPOqtLmYKZU",
+      "thumbnail": "https://img.youtube.com/vi/KPOqtLmYKZU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "vBwNbx3l5R0",

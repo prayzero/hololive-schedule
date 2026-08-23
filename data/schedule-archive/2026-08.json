@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T13:51:04.087Z",
+  "generatedAt": "2026-08-23T14:10:27.318Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20011,8 +20011,8 @@
       "id": "3ZNwDIPHAY8",
       "date": "2026-08-23",
       "dateLabel": "08/23 (日)",
-      "time": "23:00",
-      "startsAt": "2026-08-23T23:00:00+09:00",
+      "time": "23:03",
+      "startsAt": "2026-08-23T23:03:00+09:00",
       "name": "儒烏風亭らでん",
       "title": null,
       "url": "https://www.youtube.com/watch?v=3ZNwDIPHAY8",
@@ -20113,6 +20113,21 @@
       "branch": "EN"
     },
     {
+      "id": "Jhq5b1obtfo",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "10:00",
+      "startsAt": "2026-08-24T10:00:00+09:00",
+      "name": "Baelz",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Jhq5b1obtfo",
+      "videoId": "Jhq5b1obtfo",
+      "thumbnail": "https://img.youtube.com/vi/Jhq5b1obtfo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "GiPVZJvaZ3A",
       "date": "2026-08-24",
       "dateLabel": "08/24 (月)",
@@ -20171,6 +20186,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "O9LTxpLQ6bo",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "20:00",
+      "startsAt": "2026-08-24T20:00:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=O9LTxpLQ6bo",
+      "videoId": "O9LTxpLQ6bo",
+      "thumbnail": "https://img.youtube.com/vi/O9LTxpLQ6bo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "DGoK0dLXnD8",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T16:08:22.873Z",
+  "generatedAt": "2026-08-23T16:47:17.941Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20273,6 +20273,21 @@
       "url": "https://www.youtube.com/watch?v=sYtKzxBXxIY",
       "videoId": "sYtKzxBXxIY",
       "thumbnail": "https://img.youtube.com/vi/sYtKzxBXxIY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "q7I1pjvZ0nw",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "07:00",
+      "startsAt": "2026-08-25T07:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=q7I1pjvZ0nw",
+      "videoId": "q7I1pjvZ0nw",
+      "thumbnail": "https://img.youtube.com/vi/q7I1pjvZ0nw/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

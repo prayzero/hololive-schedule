@@ -118,12 +118,12 @@ const lives = Array.from(groupedRecords.values())
   .map((record) => {
     const previous = previousByVideoId.get(record.videoId);
     const metadata = metadataByVideoId.get(record.videoId);
-    const publishedAt = requiredPublishedAt(
+    const publishedAt = validatedPublishedAt(
       record.publishedAt,
       metadata?.publishedAt,
       previous?.publishedAt,
     );
-    const durationSeconds = requiredDurationSeconds(
+    const durationSeconds = validatedDurationSeconds(
       metadata?.durationSeconds,
       previous?.durationSeconds,
     );
@@ -211,28 +211,22 @@ function requiredCategory(value) {
   return category;
 }
 
-function requiredPublishedAt(...values) {
+function validatedPublishedAt(...values) {
   const publishedAt = values.find(
     (value) =>
       typeof value === "string" &&
       Number.isFinite(Date.parse(value)) &&
       Date.parse(value) <= Date.now() + 24 * 60 * 60 * 1_000,
   );
-  if (!publishedAt) {
-    throw new Error("YouTube live is missing a valid publication time.");
-  }
-  return publishedAt;
+  return publishedAt ?? null;
 }
 
-function requiredDurationSeconds(...values) {
+function validatedDurationSeconds(...values) {
   const durationSeconds = values.find(
     (value) =>
       Number.isSafeInteger(value) &&
       value >= 20 * 60 &&
       value <= 7 * 24 * 60 * 60,
   );
-  if (durationSeconds === undefined) {
-    throw new Error("YouTube live is missing a valid duration.");
-  }
-  return durationSeconds;
+  return durationSeconds ?? null;
 }

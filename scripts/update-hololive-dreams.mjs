@@ -1,6 +1,7 @@
-import { access, readFile, writeFile } from "node:fs/promises";
+import { access, readFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { writeFileAtomically } from "./lib/secure-io.mjs";
 
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDirectory, "..");
@@ -775,7 +776,10 @@ for (const pickup of pickups) {
   }
 }
 
-await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
+await writeFileAtomically(
+  outputPath,
+  `${JSON.stringify(payload, null, 2)}\n`,
+);
 console.log(
   `hololive Dreams 데이터 생성 완료: ${characters.length}명 · 이벤트 ${events.length}건 · 픽업 ${pickups.length}건`,
 );

@@ -18,6 +18,15 @@ import {
 } from "./luck";
 
 const LUCK_STORAGE_KEY = "holo-now:dream-pickup-luck:v1";
+const MAX_STORED_LUCK_RECORDS = 200;
+const MAX_SNAPSHOT_LENGTH = 240;
+const MAX_LUCK_STORAGE_LENGTH = 256 * 1024;
+const SAFE_PICKUP_ID_PATTERN = /^[A-Za-z0-9][A-Za-z0-9._:-]{0,119}$/;
+const FORBIDDEN_STORAGE_IDS = new Set([
+  "__proto__",
+  "prototype",
+  "constructor",
+]);
 
 interface PickupLuckRecord {
   pickupId: string;
@@ -31,8 +40,8 @@ interface PickupLuckRecord {
 }
 
 interface PickupLuckStore {
-  version: 1;
-  records: Record<string, PickupLuckRecord>;
+  version: 2;
+  records: PickupLuckRecord[];
 }
 
 interface PickupLuckDraft {
@@ -58,6 +67,8 @@ function validStoredRecord(value: unknown): value is PickupLuckRecord {
   const record = value as Partial<PickupLuckRecord>;
   return (
     typeof record.pickupId === "string" &&
+    SAFE_PICKUP_ID_PATTERN.test(record.pickupId) &&
+    !FORBIDDEN_STORAGE_IDS.has(record.pickupId) &&
     typeof record.pulls === "number" &&
     Number.isInteger(record.pulls) &&
     typeof record.acquired === "number" &&
@@ -69,8 +80,13 @@ function validStoredRecord(value: unknown): value is PickupLuckRecord {
     record.ratePercentSnapshot > 0 &&
     record.ratePercentSnapshot <= 100 &&
     typeof record.pickupTitleSnapshot === "string" &&
+    record.pickupTitleSnapshot.length <= MAX_SNAPSHOT_LENGTH &&
     typeof record.rateLabelSnapshot === "string" &&
+    record.rateLabelSnapshot.length <= MAX_SNAPSHOT_LENGTH &&
     typeof record.updatedAt === "string" &&
+    record.updatedAt.length <= 64 &&
+    Number.isFinite(Date.parse(record.updatedAt)) &&
+    Date.parse(record.updatedAt) <= Date.now() + 24 * 60 * 60 * 1_000 &&
     record.pulls > 0 &&
     record.pulls <= 10_000 &&
     record.acquired >= 0 &&
@@ -82,33 +98,49 @@ function validStoredRecord(value: unknown): value is PickupLuckRecord {
   );
 }
 
-function readLuckRecords(): Record<string, PickupLuckRecord> {
+function readLuckRecords(): Map<string, PickupLuckRecord> {
   if (typeof window === "undefined") {
-    return {} as Record<string, PickupLuckRecord>;
+    return new Map();
   }
 
   try {
     const stored = window.localStorage.getItem(LUCK_STORAGE_KEY);
-    if (!stored) return {};
+    if (!stored) return new Map();
+    if (stored.length > MAX_LUCK_STORAGE_LENGTH) return new Map();
     const parsed: unknown = JSON.parse(stored);
-    if (!parsed || typeof parsed !== "object") return {};
-    const store = parsed as Partial<PickupLuckStore>;
-    if (
-      store.version !== 1 ||
-      !store.records ||
-      typeof store.records !== "object" ||
-      Array.isArray(store.records)
+    if (!parsed || typeof parsed !== "object") return new Map();
+    const store = parsed as { version?: unknown; records?: unknown };
+    let candidates: unknown[];
+
+    if (store.version === 2 && Array.isArray(store.records)) {
+      candidates = store.records;
+    } else if (
+      store.version === 1 &&
+      store.records &&
+      typeof store.records === "object" &&
+      !Array.isArray(store.records)
     ) {
-      return {};
+      candidates = Object.entries(store.records)
+        .filter(
+          ([pickupId, value]) =>
+            validStoredRecord(value) && pickupId === value.pickupId,
+        )
+        .map(([, value]) => value);
+    } else {
+      return new Map();
     }
-    return Object.fromEntries(
-      Object.entries(store.records).filter(
-        ([pickupId, value]) =>
-          validStoredRecord(value) && pickupId === value.pickupId,
-      ),
-    );
+
+    const records = new Map<string, PickupLuckRecord>();
+    for (const candidate of candidates) {
+      if (!validStoredRecord(candidate) || records.has(candidate.pickupId)) {
+        continue;
+      }
+      records.set(candidate.pickupId, candidate);
+      if (records.size >= MAX_STORED_LUCK_RECORDS) break;
+    }
+    return records;
   } catch {
-    return {};
+    return new Map();
   }
 }
 
@@ -129,9 +161,22 @@ function draftForPickup(
   };
 }
 
-function writeLuckRecords(records: Record<string, PickupLuckRecord>): boolean {
+function writeLuckRecords(records: Map<string, PickupLuckRecord>): boolean {
   try {
-    const store: PickupLuckStore = { version: 1, records };
+    const entries = [...records.entries()];
+    const safeRecords = entries
+      .filter(
+        ([pickupId, record]) =>
+          validStoredRecord(record) && pickupId === record.pickupId,
+      )
+      .map(([, record]) => record);
+    if (
+      safeRecords.length !== entries.length ||
+      safeRecords.length > MAX_STORED_LUCK_RECORDS
+    ) {
+      return false;
+    }
+    const store: PickupLuckStore = { version: 2, records: safeRecords };
     window.localStorage.setItem(LUCK_STORAGE_KEY, JSON.stringify(store));
     return true;
   } catch {
@@ -154,9 +199,10 @@ function formatSavedAt(value: string) {
 export function DreamPickupLuckArchive({
   pickups,
 }: DreamPickupLuckArchiveProps) {
-  const [records, setRecords] =
-    useState<Record<string, PickupLuckRecord>>(readLuckRecords);
-  const [drafts, setDrafts] = useState<Record<string, PickupLuckDraft>>({});
+  const [records, setRecords] = useState(readLuckRecords);
+  const [drafts, setDrafts] = useState(
+    () => new Map<string, PickupLuckDraft>(),
+  );
   const [editingPickupId, setEditingPickupId] = useState<string | null>(null);
   const [savedPickupId, setSavedPickupId] = useState<string | null>(null);
   const [deletePendingPickupId, setDeletePendingPickupId] = useState<
@@ -170,7 +216,7 @@ export function DreamPickupLuckArchive({
       if (event.key !== LUCK_STORAGE_KEY) return;
       const nextRecords = readLuckRecords();
       setRecords(nextRecords);
-      setDrafts({});
+      setDrafts(new Map());
       setSavedPickupId(null);
       setStorageError(false);
     };
@@ -181,7 +227,7 @@ export function DreamPickupLuckArchive({
   const summary = useMemo(
     () =>
       summarizeLuckRecords(
-        Object.values(records).map((record) => ({
+        [...records.values()].map((record) => ({
           trials: record.pulls,
           acquired: record.acquired,
           guaranteed: record.guaranteed,
@@ -195,12 +241,12 @@ export function DreamPickupLuckArchive({
     const nextId = editingPickupId === pickup.id ? null : pickup.id;
     if (nextId) {
       setDrafts((current) =>
-        current[pickup.id]
+        current.has(pickup.id)
           ? current
-          : {
-              ...current,
-              [pickup.id]: draftForPickup(pickup, records[pickup.id]),
-            },
+          : new Map(current).set(
+              pickup.id,
+              draftForPickup(pickup, records.get(pickup.id)),
+            ),
       );
     }
     setSavedPickupId(null);
@@ -213,13 +259,18 @@ export function DreamPickupLuckArchive({
     field: keyof PickupLuckDraft,
     value: string,
   ) => {
-    setDrafts((current) => ({
-      ...current,
-      [pickupId]: {
-        ...(current[pickupId] ?? EMPTY_DRAFT),
-        [field]: value,
-      },
-    }));
+    setDrafts((current) => {
+      const draft = current.get(pickupId) ?? EMPTY_DRAFT;
+      const nextDraft =
+        field === "ratePercent"
+          ? { ...draft, ratePercent: value }
+          : field === "pulls"
+            ? { ...draft, pulls: value }
+            : field === "acquired"
+              ? { ...draft, acquired: value }
+              : { ...draft, guaranteed: value };
+      return new Map(current).set(pickupId, nextDraft);
+    });
     setSavedPickupId(null);
     setDeletePendingPickupId(null);
   };
@@ -231,6 +282,21 @@ export function DreamPickupLuckArchive({
     if (!calculation.valid || calculation.trials <= 0) {
       return;
     }
+    if (
+      !SAFE_PICKUP_ID_PATTERN.test(pickup.id) ||
+      FORBIDDEN_STORAGE_IDS.has(pickup.id)
+    ) {
+      setStorageError(true);
+      setStatusMessage("안전하지 않은 픽업 식별자는 저장할 수 없습니다.");
+      return;
+    }
+    if (!records.has(pickup.id) && records.size >= MAX_STORED_LUCK_RECORDS) {
+      setStorageError(false);
+      setStatusMessage(
+        `운 기록은 최대 ${MAX_STORED_LUCK_RECORDS}개까지 저장할 수 있습니다.`,
+      );
+      return;
+    }
 
     const record: PickupLuckRecord = {
       pickupId: pickup.id,
@@ -238,11 +304,14 @@ export function DreamPickupLuckArchive({
       acquired: calculation.acquired,
       guaranteed: calculation.guaranteed,
       ratePercentSnapshot: calculation.ratePercent,
-      pickupTitleSnapshot: pickup.title,
-      rateLabelSnapshot: pickup.rateLabel ?? "픽업 대상",
+      pickupTitleSnapshot: pickup.title.slice(0, MAX_SNAPSHOT_LENGTH),
+      rateLabelSnapshot: (pickup.rateLabel ?? "픽업 대상").slice(
+        0,
+        MAX_SNAPSHOT_LENGTH,
+      ),
       updatedAt: new Date().toISOString(),
     };
-    const nextRecords = { ...records, [pickup.id]: record };
+    const nextRecords = new Map(records).set(pickup.id, record);
     if (!writeLuckRecords(nextRecords)) {
       setStorageError(true);
       setSavedPickupId(null);
@@ -254,10 +323,9 @@ export function DreamPickupLuckArchive({
 
     setStorageError(false);
     setRecords(nextRecords);
-    setDrafts((current) => ({
-      ...current,
-      [pickup.id]: draftForPickup(pickup, record),
-    }));
+    setDrafts((current) =>
+      new Map(current).set(pickup.id, draftForPickup(pickup, record)),
+    );
     setSavedPickupId(pickup.id);
     setDeletePendingPickupId(null);
     setStatusMessage(`${pickup.title} 운 기록을 저장했습니다.`);
@@ -272,8 +340,8 @@ export function DreamPickupLuckArchive({
       return;
     }
 
-    const nextRecords = { ...records };
-    delete nextRecords[pickup.id];
+    const nextRecords = new Map(records);
+    nextRecords.delete(pickup.id);
     if (!writeLuckRecords(nextRecords)) {
       setStorageError(true);
       setDeletePendingPickupId(null);
@@ -285,10 +353,9 @@ export function DreamPickupLuckArchive({
 
     setStorageError(false);
     setRecords(nextRecords);
-    setDrafts((current) => ({
-      ...current,
-      [pickup.id]: draftForPickup(pickup),
-    }));
+    setDrafts((current) =>
+      new Map(current).set(pickup.id, draftForPickup(pickup)),
+    );
     setSavedPickupId(null);
     setDeletePendingPickupId(null);
     setStatusMessage(`${pickup.title} 운 기록을 삭제했습니다.`);
@@ -378,11 +445,11 @@ export function DreamPickupLuckArchive({
 
       <div className="dream-pickup-luck__records">
         {pickups.map((pickup) => {
-          const record = records[pickup.id];
+          const record = records.get(pickup.id);
           const usesManualRate =
             typeof pickup.targetRatePercent !== "number";
           const draft =
-            drafts[pickup.id] ?? draftForPickup(pickup, record);
+            drafts.get(pickup.id) ?? draftForPickup(pickup, record);
           const rate = usesManualRate
             ? Number(draft.ratePercent)
             : (record?.ratePercentSnapshot ?? pickup.targetRatePercent ?? 0);

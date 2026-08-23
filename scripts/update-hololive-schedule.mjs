@@ -1,14 +1,14 @@
-import {
-  mkdir,
-  readFile,
-  readdir,
-  rename,
-  rm,
-  writeFile,
-} from "node:fs/promises";
+import { readdir } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import * as cheerio from "cheerio";
+import { fetchTextWithPolicy } from "./lib/safe-fetch.mjs";
+import {
+  readJsonFileStrict,
+  resolveContainedPath,
+  validateExternalArchiveRoot,
+  writeFileAtomically,
+} from "./lib/secure-io.mjs";
 
 const SOURCE_ROOT = "https://schedule.hololive.tv";
 const SOURCE_FEEDS = [
@@ -23,6 +23,8 @@ const COLLECTOR_VERSION = "3.0.0";
 const REQUEST_TIMEOUT_MS = 20_000;
 const ARCHIVE_FILE_PATTERN = /^\d{4}-\d{2}\.json$/;
 const ISO_DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
+const MAXIMUM_ARCHIVE_MONTHS = 120;
+const MAXIMUM_ARCHIVE_FILE_BYTES = 2 * 1024 * 1024;
 
 const scriptDirectory = dirname(fileURLToPath(import.meta.url));
 const projectRoot = resolve(scriptDirectory, "..");
@@ -34,13 +36,16 @@ const publicArchiveDirectory = resolve(
   "schedule-archive",
 );
 const durableDataDirectory = process.env.SCHEDULE_ARCHIVE_ROOT
-  ? resolve(process.env.SCHEDULE_ARCHIVE_ROOT)
+  ? validateExternalArchiveRoot(process.env.SCHEDULE_ARCHIVE_ROOT, {
+      workspaceRoot: projectRoot,
+      label: "SCHEDULE_ARCHIVE_ROOT",
+    })
   : publicDataDirectory;
-const durableIndexPath = resolve(
+const durableIndexPath = resolveContainedPath(
   durableDataDirectory,
   "schedule-index.json",
 );
-const durableArchiveDirectory = resolve(
+const durableArchiveDirectory = resolveContainedPath(
   durableDataDirectory,
   "schedule-archive",
 );
@@ -392,53 +397,49 @@ function validateEntries(entries, label) {
 }
 
 async function fetchSource(feed) {
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), REQUEST_TIMEOUT_MS);
-
-  try {
-    const response = await fetch(feed.url, {
+  const response = await fetchTextWithPolicy(
+    feed.url,
+    {
       headers: {
         Accept: "text/html,application/xhtml+xml",
         "Accept-Language": "ja,en;q=0.8",
         "User-Agent":
           "hololive-schedule-pages/1.0 (+https://github.com/prayzero/hololive-schedule)",
       },
-      redirect: "follow",
-      signal: controller.signal,
-    });
-
-    if (!response.ok) {
-      throw new Error(
-        `Holodule ${feed.branch} responded with ${response.status} ${response.statusText}`,
-      );
-    }
-
-    return await response.text();
-  } finally {
-    clearTimeout(timeout);
-  }
+    },
+    {
+      allowedOrigins: [SOURCE_ROOT],
+      timeoutMs: REQUEST_TIMEOUT_MS,
+      maxBytes: 5 * 1024 * 1024,
+      maxRedirects: 2,
+    },
+  );
+  return response.text;
 }
 
 async function readJson(path) {
-  try {
-    return JSON.parse(await readFile(path, "utf8"));
-  } catch (error) {
-    if (error?.code === "ENOENT") {
-      return null;
-    }
-
-    throw new Error(`Could not read ${path}: ${error.message}`);
-  }
+  return readJsonFileStrict(path, {
+    allowMissing: true,
+    missingValue: null,
+    label: `schedule archive ${path}`,
+    maxBytes: MAXIMUM_ARCHIVE_FILE_BYTES,
+  });
 }
 
 async function listArchiveFiles(directory) {
   try {
-    return (await readdir(directory, { withFileTypes: true }))
+    const paths = (await readdir(directory, { withFileTypes: true }))
       .filter(
         (entry) => entry.isFile() && ARCHIVE_FILE_PATTERN.test(entry.name),
       )
       .map((entry) => resolve(directory, entry.name))
       .sort();
+    if (paths.length > MAXIMUM_ARCHIVE_MONTHS) {
+      throw new Error(
+        `Schedule archive exceeds the ${MAXIMUM_ARCHIVE_MONTHS}-month safety limit.`,
+      );
+    }
+    return paths;
   } catch (error) {
     if (error?.code === "ENOENT") {
       return [];
@@ -524,25 +525,12 @@ async function loadArchive() {
   };
 }
 
-async function writeAtomically(path, contents) {
-  await mkdir(dirname(path), { recursive: true });
-  const temporaryPath = `${path}.${process.pid}.${Date.now()}.tmp`;
-
-  try {
-    await writeFile(temporaryPath, contents, "utf8");
-    await rename(temporaryPath, path);
-  } catch (error) {
-    await rm(temporaryPath, { force: true }).catch(() => {});
-    throw error;
-  }
-}
-
 async function writeJsonCopies(paths, payload) {
   const uniquePaths = [...new Set(paths)];
   const contents = `${JSON.stringify(payload, null, 2)}\n`;
 
   for (const path of uniquePaths) {
-    await writeAtomically(path, contents);
+    await writeFileAtomically(path, contents);
   }
 }
 
@@ -714,7 +702,7 @@ async function main() {
     entries: sortEntries(currentEntries),
   };
 
-  await writeAtomically(
+  await writeFileAtomically(
     outputPath,
     `${JSON.stringify(currentPayload, null, 2)}\n`,
   );

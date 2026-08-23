@@ -15,6 +15,7 @@ import {
   type CSSProperties,
 } from "react";
 import { includesSearch, normalizeSearch } from "../search";
+import { safeCollectionOfficialUrl } from "../securityUrls";
 import type {
   CollectionCard,
   CollectionCatalogPayload,
@@ -332,6 +333,10 @@ export function CollectionCatalogPage({
   talents,
 }: CollectionCatalogPageProps) {
   const meta = CATALOG_META[kind];
+  const catalogSourceUrl = safeCollectionOfficialUrl(
+    kind,
+    payload.sourceUrls[0],
+  );
   const { ownedIds, storageError, toggleOwned } = useOwnedCollection(
     meta.storageKey,
   );
@@ -602,10 +607,10 @@ export function CollectionCatalogPage({
           </h2>
           <p>{meta.description}</p>
         </div>
-        {payload.sourceUrls[0] ? (
+        {catalogSourceUrl ? (
           <a
             className="collection-catalog-source"
-            href={payload.sourceUrls[0]}
+            href={catalogSourceUrl}
             target="_blank"
             rel="noreferrer"
           >
@@ -752,6 +757,10 @@ export function CollectionCatalogPage({
             const percent = total ? Math.round((owned / total) * 100) : 0;
             const headingId = `${kind}-release-${release.id}`;
             const status = releaseStatus(release);
+            const releaseSourceUrl = safeCollectionOfficialUrl(
+              kind,
+              release.sourceUrl,
+            );
             return (
               <section
                 className="collection-catalog-release"
@@ -779,10 +788,16 @@ export function CollectionCatalogPage({
                       <b style={{ width: `${percent}%` }} />
                     </i>
                   </div>
-                  <a href={release.sourceUrl} target="_blank" rel="noreferrer">
-                    공식 정보
-                    <ExternalLink size={14} aria-hidden="true" />
-                  </a>
+                  {releaseSourceUrl ? (
+                    <a
+                      href={releaseSourceUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      공식 정보
+                      <ExternalLink size={14} aria-hidden="true" />
+                    </a>
+                  ) : null}
                 </header>
 
                 <div className="collection-catalog-rarities">

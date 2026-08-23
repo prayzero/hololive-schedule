@@ -1,6 +1,13 @@
-import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  fetchJsonWithPolicy,
+  fetchTextWithPolicy,
+} from "../scripts/lib/safe-fetch.mjs";
+import {
+  readJsonFileStrict,
+  writeFileAtomically,
+} from "../scripts/lib/secure-io.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..");
@@ -12,6 +19,22 @@ const LIVE_ARCHIVE_PATH = path.join(
   "youtube-lives.json",
 );
 const OUTPUT_PATH = path.join(HERE, "youtube-jp.json");
+const YOUTUBE_ORIGIN = "https://www.youtube.com";
+const REQUEST_TIMEOUT_MS = 20_000;
+const MAX_YOUTUBE_RESPONSE_BYTES = 8 * 1024 * 1024;
+const MAX_SELECTED_TALENTS = 100;
+const MAX_RENDERER_NODES = 200_000;
+const MAX_RENDERERS_PER_RESPONSE = 5_000;
+const MAX_CANDIDATES_PER_TALENT = 500;
+const MAX_HYDRATION_JOBS = 5_000;
+const MAX_ARCHIVE_RECORDS = 20_000;
+const MAX_VIDEO_TITLE_LENGTH = 500;
+const YOUTUBE_REQUEST_POLICY = {
+  allowedOrigins: [YOUTUBE_ORIGIN],
+  timeoutMs: REQUEST_TIMEOUT_MS,
+  maxBytes: MAX_YOUTUBE_RESPONSE_BYTES,
+  maxRedirects: 2,
+};
 
 const SEARCH_TERMS = [
   "3D LIVE",
@@ -137,44 +160,64 @@ function ownerChannelIdOf(renderer) {
   return null;
 }
 
-function collectVideoRenderers(node, results, seen = new WeakSet()) {
-  if (!node || typeof node !== "object") return;
-  if (seen.has(node)) return;
-  seen.add(node);
+function collectVideoRenderers(node) {
+  const results = [];
+  const stack = [node];
+  let visitedNodes = 0;
 
-  if (
-    typeof node.videoId === "string" &&
-    node.title &&
-    (node.thumbnail || node.navigationEndpoint)
-  ) {
-    results.push(node);
-  }
+  while (stack.length > 0) {
+    const current = stack.pop();
+    if (!current || typeof current !== "object") continue;
+    visitedNodes += 1;
+    if (visitedNodes > MAX_RENDERER_NODES) {
+      throw new Error("YouTube search response is too structurally complex.");
+    }
+    if (
+      typeof current.videoId === "string" &&
+      current.title &&
+      (current.thumbnail || current.navigationEndpoint)
+    ) {
+      if (results.length >= MAX_RENDERERS_PER_RESPONSE) {
+        throw new Error("YouTube search response contains too many videos.");
+      }
+      results.push(current);
+    }
 
-  for (const value of Object.values(node)) {
-    if (value && typeof value === "object") {
-      collectVideoRenderers(value, results, seen);
+    const children = Object.values(current);
+    if (visitedNodes + stack.length + children.length > MAX_RENDERER_NODES) {
+      throw new Error("YouTube search response is too structurally complex.");
+    }
+    for (const child of children) {
+      stack.push(child);
     }
   }
+
+  return results;
 }
 
 async function fetchText(url, retries = 3) {
   let lastError;
   for (let attempt = 0; attempt < retries; attempt += 1) {
     try {
-      const response = await fetch(url, {
-        headers: {
-          "Accept-Language": "ja-JP,ja;q=0.9,en;q=0.7",
-          "User-Agent":
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/138 Safari/537.36",
+      const response = await fetchTextWithPolicy(
+        url,
+        {
+          headers: {
+            "Accept-Language": "ja-JP,ja;q=0.9,en;q=0.7",
+            "User-Agent":
+              "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/138 Safari/537.36",
+          },
         },
-      });
-      if (!response.ok) {
-        throw new Error(`${response.status} ${response.statusText}`);
-      }
-      return await response.text();
+        YOUTUBE_REQUEST_POLICY,
+      );
+      return response.text;
     } catch (error) {
       lastError = error;
-      await new Promise((resolve) => setTimeout(resolve, 500 * (attempt + 1)));
+      if (attempt + 1 < retries) {
+        await new Promise((resolve) =>
+          setTimeout(resolve, 500 * (attempt + 1)),
+        );
+      }
     }
   }
   throw lastError;
@@ -184,16 +227,19 @@ async function fetchJson(url, init, retries = 4) {
   let lastError;
   for (let attempt = 0; attempt < retries; attempt += 1) {
     try {
-      const response = await fetch(url, init);
-      if (!response.ok) {
-        throw new Error(`${response.status} ${response.statusText}`);
-      }
-      return await response.json();
+      const response = await fetchJsonWithPolicy(
+        url,
+        init,
+        YOUTUBE_REQUEST_POLICY,
+      );
+      return response.json;
     } catch (error) {
       lastError = error;
-      await new Promise((resolve) =>
-        setTimeout(resolve, 800 * 2 ** attempt + Math.random() * 400),
-      );
+      if (attempt + 1 < retries) {
+        await new Promise((resolve) =>
+          setTimeout(resolve, 800 * 2 ** attempt + Math.random() * 400),
+        );
+      }
     }
   }
   throw lastError;
@@ -222,10 +268,44 @@ function categoryFor(title) {
   return "special";
 }
 
+function requiredTalentId(value) {
+  const talentId = String(value ?? "");
+  if (
+    talentId.length > 80 ||
+    !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(talentId)
+  ) {
+    throw new Error(`Invalid talent id: ${talentId}`);
+  }
+  return talentId;
+}
+
+function requiredYouTubeChannelId(value) {
+  const channelId = String(value ?? "");
+  if (!/^UC[A-Za-z0-9_-]{22}$/.test(channelId)) {
+    throw new Error(`Invalid official YouTube channel id: ${channelId}`);
+  }
+  return channelId;
+}
+
+function isYouTubeVideoId(value) {
+  return /^[A-Za-z0-9_-]{11}$/.test(String(value ?? ""));
+}
+
+function requiredYouTubeVideoId(value) {
+  const videoId = String(value ?? "");
+  if (!isYouTubeVideoId(videoId)) {
+    throw new Error(`Invalid YouTube video id: ${videoId}`);
+  }
+  return videoId;
+}
+
 function parseDurationSeconds(playerResponse) {
   const raw = playerResponse?.videoDetails?.lengthSeconds;
-  const value = Number.parseInt(raw ?? "", 10);
-  return Number.isFinite(value) ? value : null;
+  if (!/^\d{1,7}$/.test(String(raw ?? ""))) return null;
+  const value = Number(raw);
+  return Number.isSafeInteger(value) && value <= 7 * 24 * 60 * 60
+    ? value
+    : null;
 }
 
 function getPublishedAt(playerResponse) {
@@ -252,15 +332,19 @@ function isLiveArchive(playerResponse) {
 
 async function collectSearchCandidates(talent) {
   const candidates = new Map();
+  const channelId = requiredYouTubeChannelId(talent.channelId);
 
   for (const term of SEARCH_TERMS) {
-    const url = `https://www.youtube.com/channel/${talent.channelId}/search?query=${encodeURIComponent(term)}`;
-    const html = await fetchText(url);
+    const searchUrl = new URL(
+      `/channel/${encodeURIComponent(channelId)}/search`,
+      YOUTUBE_ORIGIN,
+    );
+    searchUrl.searchParams.set("query", term);
+    const html = await fetchText(searchUrl.toString());
     const initialData = findInitialData(html);
     if (!initialData) continue;
 
-    const renderers = [];
-    collectVideoRenderers(initialData, renderers);
+    const renderers = collectVideoRenderers(initialData);
     if (process.env.DEBUG_VIDEO) {
       const debugRenderer = renderers.find(
         (renderer) => renderer.videoId === process.env.DEBUG_VIDEO,
@@ -280,8 +364,13 @@ async function collectSearchCandidates(talent) {
       );
     }
     for (const renderer of renderers) {
+      if (!isYouTubeVideoId(renderer.videoId)) continue;
       const title = textOf(renderer.title);
-      if (!title || !STRONG_EVENT_PATTERN.test(title)) continue;
+      if (
+        !title ||
+        title.length > MAX_VIDEO_TITLE_LENGTH ||
+        !STRONG_EVENT_PATTERN.test(title)
+      ) continue;
       if (EXCLUDE_PATTERN.test(title)) continue;
       if (renderer.upcomingEventData) continue;
       const ownerChannelId = ownerChannelIdOf(renderer);
@@ -297,6 +386,14 @@ async function collectSearchCandidates(talent) {
       );
       if (durationSeconds !== null && durationSeconds < 20 * 60) continue;
       const thumbnails = renderer.thumbnail?.thumbnails ?? [];
+      if (
+        !candidates.has(renderer.videoId) &&
+        candidates.size >= MAX_CANDIDATES_PER_TALENT
+      ) {
+        throw new Error(
+          `${talent.id} exceeds the ${MAX_CANDIDATES_PER_TALENT}-candidate safety limit.`,
+        );
+      }
       candidates.set(renderer.videoId, {
         videoId: renderer.videoId,
         searchTitle: title,
@@ -319,76 +416,74 @@ async function collectSearchCandidates(talent) {
 
 async function hydrateCandidate(talent, candidate) {
   try {
-    const sourceUrl = `https://www.youtube.com/watch?v=${candidate.videoId}`;
-    const playerResponse = process.env.NO_HYDRATE
-      ? null
-      : await fetchJson(
-          "https://www.youtube.com/youtubei/v1/player?prettyPrint=false",
-          {
-            method: "POST",
-            headers: {
-              "Accept-Language": "ja-JP,ja;q=0.9,en;q=0.7",
-              "Content-Type": "application/json",
-              "User-Agent":
-                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/138 Safari/537.36",
-            },
-            body: JSON.stringify({
-              context: {
-                client: {
-                  clientName: "WEB",
-                  clientVersion: "2.20260723.01.00",
-                  hl: "ja",
-                  gl: "JP",
-                },
-              },
-              videoId: candidate.videoId,
-            }),
-          },
-        );
-    if (!playerResponse) {
-      return {
-        memberId: talent.id,
-        videoId: candidate.videoId,
-        title: candidate.searchTitle,
-        publishedAt: null,
-        category: categoryFor(candidate.searchTitle),
-        sourceUrl,
-        thumbnailUrl: candidate.thumbnailUrl,
-        durationSeconds: candidate.durationSeconds,
-        isLiveArchive: null,
-        publishedTimeText: candidate.publishedTimeText,
-      };
+    const videoId = requiredYouTubeVideoId(candidate.videoId);
+    const sourceUrlObject = new URL("/watch", YOUTUBE_ORIGIN);
+    sourceUrlObject.searchParams.set("v", videoId);
+    const sourceUrl = sourceUrlObject.toString();
+    if (process.env.NO_HYDRATE) {
+      return null;
     }
+    const playerResponse = await fetchJson(
+      "https://www.youtube.com/youtubei/v1/player?prettyPrint=false",
+      {
+        method: "POST",
+        headers: {
+          "Accept-Language": "ja-JP,ja;q=0.9,en;q=0.7",
+          "Content-Type": "application/json",
+          "User-Agent":
+            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/138 Safari/537.36",
+        },
+        body: JSON.stringify({
+          context: {
+            client: {
+              clientName: "WEB",
+              clientVersion: "2.20260723.01.00",
+              hl: "ja",
+              gl: "JP",
+            },
+          },
+          videoId,
+        }),
+      },
+    );
 
     const details = playerResponse.videoDetails ?? {};
     const title = details.title ?? candidate.searchTitle;
     const durationSeconds = parseDurationSeconds(playerResponse);
-    const microformat =
-      playerResponse?.microformat?.playerMicroformatRenderer ?? {};
+    const publishedAt = getPublishedAt(playerResponse);
 
     if (process.env.DEBUG_JP === talent.id) {
       process.stderr.write(
         `[debug hydrate] ${candidate.videoId}: channel=${details.channelId}; duration=${durationSeconds}; live=${details.isLiveContent}; unplugged=${details.isUnpluggedCorpus}; title=${title}\n`,
       );
     }
-    if (details.channelId && details.channelId !== talent.channelId) return null;
+    if (details.channelId !== talent.channelId) return null;
     if (details.isPrivate) return null;
-    if (!STRONG_EVENT_PATTERN.test(title) || EXCLUDE_PATTERN.test(title)) {
+    if (
+      typeof title !== "string" ||
+      title.length === 0 ||
+      title.length > MAX_VIDEO_TITLE_LENGTH ||
+      !STRONG_EVENT_PATTERN.test(title) ||
+      EXCLUDE_PATTERN.test(title)
+    ) {
       return null;
     }
-    if (durationSeconds !== null && durationSeconds < 20 * 60) return null;
+    if (!Number.isFinite(durationSeconds) || durationSeconds < 20 * 60) {
+      return null;
+    }
+    if (
+      typeof publishedAt !== "string" ||
+      !Number.isFinite(Date.parse(publishedAt)) ||
+      Date.parse(publishedAt) > Date.now() + 24 * 60 * 60 * 1_000
+    ) return null;
 
-    const thumbnails =
-      details.thumbnail?.thumbnails ?? microformat.thumbnail?.thumbnails ?? [];
-    const thumbnailUrl =
-      thumbnails.at(-1)?.url ??
-      `https://i.ytimg.com/vi/${candidate.videoId}/maxresdefault.jpg`;
+    const thumbnailUrl = `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
 
     return {
       memberId: talent.id,
-      videoId: candidate.videoId,
+      videoId,
       title,
-      publishedAt: getPublishedAt(playerResponse),
+      publishedAt,
       category: categoryFor(title),
       sourceUrl,
       thumbnailUrl,
@@ -401,22 +496,13 @@ async function hydrateCandidate(talent, candidate) {
         `[debug hydrate] ${candidate.videoId}: ${error?.stack ?? error}\n`,
       );
     }
-    return {
-      memberId: talent.id,
-      videoId: candidate.videoId,
-      title: candidate.searchTitle,
-      publishedAt: null,
-      category: categoryFor(candidate.searchTitle),
-      sourceUrl: `https://www.youtube.com/watch?v=${candidate.videoId}`,
-      thumbnailUrl: candidate.thumbnailUrl,
-      durationSeconds: candidate.durationSeconds,
-      isLiveArchive: null,
-      publishedTimeText: candidate.publishedTimeText,
-    };
+    return null;
   }
 }
 
-const talentPayload = JSON.parse(await fs.readFile(TALENTS_PATH, "utf8"));
+const talentPayload = await readJsonFileStrict(TALENTS_PATH, {
+  label: "talent catalog",
+});
 const talents = talentPayload.talents
   .filter(
     (talent) =>
@@ -425,22 +511,46 @@ const talents = talentPayload.talents
   )
   .map((talent) => ({
     ...talent,
-    channelId: CHANNEL_OVERRIDES[talent.id] ?? talent.channelId,
+    id: requiredTalentId(talent.id),
+    channelId: requiredYouTubeChannelId(
+      CHANNEL_OVERRIDES[talent.id] ?? talent.channelId,
+    ),
   }));
 const selectedTalents = process.env.DEBUG_JP
   ? talents.filter((talent) => talent.id === process.env.DEBUG_JP)
   : talents;
+if (selectedTalents.length > MAX_SELECTED_TALENTS) {
+  throw new Error(
+    `Selected talent count exceeds the ${MAX_SELECTED_TALENTS}-talent safety limit.`,
+  );
+}
 
 const [previousPayload, currentArchive] = await Promise.all([
-  fs
-    .readFile(OUTPUT_PATH, "utf8")
-    .then((contents) => JSON.parse(contents))
-    .catch(() => ({ records: [] })),
-  fs
-    .readFile(LIVE_ARCHIVE_PATH, "utf8")
-    .then((contents) => JSON.parse(contents))
-    .catch(() => ({ lives: [] })),
+  readJsonFileStrict(OUTPUT_PATH, {
+    allowMissing: true,
+    missingValue: { records: [] },
+    label: "existing JP research archive",
+  }),
+  readJsonFileStrict(LIVE_ARCHIVE_PATH, {
+    allowMissing: true,
+    missingValue: { lives: [] },
+    label: "existing public YouTube live archive",
+  }),
 ]);
+if (!Array.isArray(previousPayload.records)) {
+  throw new Error("Existing JP research archive must contain a records array.");
+}
+if (!Array.isArray(currentArchive.lives)) {
+  throw new Error("Existing public YouTube archive must contain a lives array.");
+}
+if (
+  previousPayload.records.length > MAX_ARCHIVE_RECORDS ||
+  currentArchive.lives.length > MAX_ARCHIVE_RECORDS
+) {
+  throw new Error(
+    `Existing YouTube archives exceed the ${MAX_ARCHIVE_RECORDS}-record safety limit.`,
+  );
+}
 const jpMemberIds = new Set(talents.map((talent) => talent.id));
 const jpTalentsById = new Map(talents.map((talent) => [talent.id, talent]));
 const preservedRecords = [
@@ -477,6 +587,11 @@ const candidateGroups = await runPool(selectedTalents, 5, async (talent, index) 
 const hydrationJobs = candidateGroups.flatMap(({ talent, candidates }) =>
   candidates.map((candidate) => ({ talent, candidate })),
 );
+if (hydrationJobs.length > MAX_HYDRATION_JOBS) {
+  throw new Error(
+    `Hydration jobs exceed the ${MAX_HYDRATION_JOBS}-request safety limit.`,
+  );
+}
 
 const hydrated = await runPool(hydrationJobs, 2, async ({ talent, candidate }) =>
   hydrateCandidate(talent, candidate),
@@ -496,6 +611,14 @@ const discoveredRecords = hydrated
 const recordsByKey = new Map();
 for (const record of [...preservedRecords, ...discoveredRecords]) {
   if (!jpMemberIds.has(record.memberId) || !record.videoId) continue;
+  if (
+    !recordsByKey.has(`${record.memberId}:${record.videoId}`) &&
+    recordsByKey.size >= MAX_ARCHIVE_RECORDS
+  ) {
+    throw new Error(
+      `JP research archive exceeds the ${MAX_ARCHIVE_RECORDS}-record safety limit.`,
+    );
+  }
   recordsByKey.set(`${record.memberId}:${record.videoId}`, record);
 }
 
@@ -542,8 +665,10 @@ const payload = {
   records,
 };
 
-await fs.mkdir(HERE, { recursive: true });
-await fs.writeFile(OUTPUT_PATH, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
+await writeFileAtomically(
+  OUTPUT_PATH,
+  `${JSON.stringify(payload, null, 2)}\n`,
+);
 process.stderr.write(
   `Wrote ${records.length} records for ${membersWithRecords.size}/${talents.length} members to ${OUTPUT_PATH}\n`,
 );

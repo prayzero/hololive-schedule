@@ -1,6 +1,11 @@
-import { mkdir, readFile, rename, rm, writeFile } from "node:fs/promises";
-import { dirname, resolve } from "node:path";
+import { open } from "node:fs/promises";
+import { basename, dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import {
+  resolveContainedPath,
+  validateExternalArchiveRoot,
+  writeFileAtomically,
+} from "./lib/secure-io.mjs";
 
 const scriptDirectory = dirname(fileURLToPath(import.meta.url));
 const projectRoot = resolve(scriptDirectory, "..");
@@ -10,15 +15,34 @@ const publicArchivePath = resolve(
   "data",
   "youtube-lives.json",
 );
-const durableRoot = process.env.SCHEDULE_ARCHIVE_ROOT;
-const durableArchivePath =
-  process.env.YOUTUBE_ARCHIVE_PATH ??
-  (durableRoot ? resolve(durableRoot, "youtube-lives.json") : null);
+const configuredArchivePath = process.env.YOUTUBE_ARCHIVE_PATH?.trim();
+const configuredDurableRoot = process.env.SCHEDULE_ARCHIVE_ROOT?.trim();
+const durableRootValue = configuredDurableRoot ??
+  (configuredArchivePath ? dirname(resolve(configuredArchivePath)) : null);
+const durableRoot = durableRootValue
+  ? validateExternalArchiveRoot(durableRootValue, {
+      workspaceRoot: projectRoot,
+      label: configuredDurableRoot
+        ? "SCHEDULE_ARCHIVE_ROOT"
+        : "YOUTUBE_ARCHIVE_PATH parent",
+    })
+  : null;
+const durableArchivePath = durableRoot
+  ? resolveContainedPath(
+      durableRoot,
+      configuredArchivePath ?? "youtube-lives.json",
+    )
+  : null;
 const mode = process.argv[2];
 
 if (!durableArchivePath) {
   throw new Error(
     "YOUTUBE_ARCHIVE_PATH or SCHEDULE_ARCHIVE_ROOT is required.",
+  );
+}
+if (basename(durableArchivePath) !== "youtube-lives.json") {
+  throw new Error(
+    "YOUTUBE_ARCHIVE_PATH must end with youtube-lives.json.",
   );
 }
 
@@ -31,7 +55,7 @@ if (mode === "restore") {
   if (!durable) {
     console.log("No durable YouTube live archive exists yet.");
   } else if (checkedAtTime(durable.payload) > checkedAtTime(current.payload)) {
-    await writeAtomically(publicArchivePath, durable.contents);
+    await writeFileAtomically(publicArchivePath, durable.contents);
     console.log(
       `Restored newer YouTube live archive checked at ${durable.payload.checkedAt}.`,
     );
@@ -42,7 +66,7 @@ if (mode === "restore") {
   }
 } else if (mode === "persist") {
   const current = await readArchive(publicArchivePath);
-  await writeAtomically(durableArchivePath, current.contents);
+  await writeFileAtomically(durableArchivePath, current.contents);
   console.log(
     `Persisted YouTube live archive checked at ${current.payload.checkedAt}.`,
   );
@@ -51,12 +75,18 @@ if (mode === "restore") {
 }
 
 async function readArchive(path, optional = false) {
+  let handle;
   try {
-    const contents = await readFile(path, "utf8");
+    handle = await open(path, "r");
+    const fileStat = await handle.stat();
+    if (!fileStat.isFile() || fileStat.size > 10 * 1024 * 1024) {
+      throw new Error("archive must be a regular file no larger than 10 MiB");
+    }
+    const contents = await handle.readFile("utf8");
     const payload = JSON.parse(contents);
     checkedAtTime(payload);
-    if (!Array.isArray(payload.lives)) {
-      throw new Error("lives must be an array");
+    if (!Array.isArray(payload.lives) || payload.lives.length > 20_000) {
+      throw new Error("lives must be an array with at most 20,000 entries");
     }
     return { contents, payload };
   } catch (error) {
@@ -66,6 +96,8 @@ async function readArchive(path, optional = false) {
         error instanceof Error ? error.message : String(error)
       }`,
     );
+  } finally {
+    await handle?.close().catch(() => {});
   }
 }
 
@@ -75,16 +107,4 @@ function checkedAtTime(payload) {
     throw new Error("checkedAt must be a valid ISO timestamp");
   }
   return time;
-}
-
-async function writeAtomically(path, contents) {
-  await mkdir(dirname(path), { recursive: true });
-  const temporaryPath = `${path}.${process.pid}.${Date.now()}.tmp`;
-  try {
-    await writeFile(temporaryPath, contents, "utf8");
-    await rename(temporaryPath, path);
-  } catch (error) {
-    await rm(temporaryPath, { force: true }).catch(() => {});
-    throw error;
-  }
 }

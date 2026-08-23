@@ -1,6 +1,6 @@
-import { writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
+import { writeFileAtomically } from "./lib/secure-io.mjs";
 
 const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDirectory, "..");
@@ -692,7 +692,10 @@ for (const card of cards) {
   }
 }
 
-await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
+await writeFileAtomically(
+  outputPath,
+  `${JSON.stringify(payload, null, 2)}\n`,
+);
 console.log(
   `홀로라이브 웨하스 데이터 생성 완료: ${releases.length}종 · ${cards.length}장`,
 );

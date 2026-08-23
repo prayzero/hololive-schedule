@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T17:09:23.740Z",
+  "generatedAt": "2026-08-23T18:08:59.493Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20156,6 +20156,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
+    },
+    {
+      "id": "UCr71tJmvTc",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "19:00",
+      "startsAt": "2026-08-24T19:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=UCr71tJmvTc",
+      "videoId": "UCr71tJmvTc",
+      "thumbnail": "https://img.youtube.com/vi/UCr71tJmvTc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "JJcnj5Uvcr8",

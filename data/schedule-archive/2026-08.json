@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T07:43:52.192Z",
+  "generatedAt": "2026-08-23T08:13:24.159Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -19498,6 +19498,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "RDarUB5QvMA",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "17:00",
+      "startsAt": "2026-08-23T17:00:00+09:00",
+      "name": "癒月ちょこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=RDarUB5QvMA",
+      "videoId": "RDarUB5QvMA",
+      "thumbnail": "https://img.youtube.com/vi/RDarUB5QvMA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "KFL7ivERy2c",
       "date": "2026-08-23",
       "dateLabel": "08/23 (日)",
@@ -19508,21 +19523,6 @@
       "url": "https://www.youtube.com/watch?v=KFL7ivERy2c",
       "videoId": "KFL7ivERy2c",
       "thumbnail": "https://img.youtube.com/vi/KFL7ivERy2c/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
-      "id": "-ldHQRLxaAY",
-      "date": "2026-08-23",
-      "dateLabel": "08/23 (日)",
-      "time": "17:00",
-      "startsAt": "2026-08-23T17:00:00+09:00",
-      "name": "風真いろは",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=-ldHQRLxaAY",
-      "videoId": "-ldHQRLxaAY",
-      "thumbnail": "https://img.youtube.com/vi/-ldHQRLxaAY/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -19543,6 +19543,36 @@
       "branch": "JP"
     },
     {
+      "id": "ksGdKQdrO7o",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "17:02",
+      "startsAt": "2026-08-23T17:02:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ksGdKQdrO7o",
+      "videoId": "ksGdKQdrO7o",
+      "thumbnail": "https://img.youtube.com/vi/ksGdKQdrO7o/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "-ldHQRLxaAY",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "17:04",
+      "startsAt": "2026-08-23T17:04:00+09:00",
+      "name": "風真いろは",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=-ldHQRLxaAY",
+      "videoId": "-ldHQRLxaAY",
+      "thumbnail": "https://img.youtube.com/vi/-ldHQRLxaAY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "CkNfG-PxpZ0",
       "date": "2026-08-23",
       "dateLabel": "08/23 (日)",
@@ -19556,6 +19586,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "jDs-TIcJvKg",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "18:05",
+      "startsAt": "2026-08-23T18:05:00+09:00",
+      "name": "ホロライブ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jDs-TIcJvKg",
+      "videoId": "jDs-TIcJvKg",
+      "thumbnail": "https://img.youtube.com/vi/jDs-TIcJvKg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "PF_Tq_Cd73s",

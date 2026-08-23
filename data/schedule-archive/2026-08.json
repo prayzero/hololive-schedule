@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T23:32:03.644Z",
+  "generatedAt": "2026-08-23T01:57:11.426Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -19303,6 +19303,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "2dWaPS246gQ",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "09:55",
+      "startsAt": "2026-08-23T09:55:00+09:00",
+      "name": "Nerissa",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=2dWaPS246gQ",
+      "videoId": "2dWaPS246gQ",
+      "thumbnail": "https://img.youtube.com/vi/2dWaPS246gQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "6RJjtRmaNz8",
       "date": "2026-08-23",
       "dateLabel": "08/23 (日)",
@@ -19318,21 +19333,6 @@
       "branch": "JP"
     },
     {
-      "id": "2dWaPS246gQ",
-      "date": "2026-08-23",
-      "dateLabel": "08/23 (日)",
-      "time": "10:00",
-      "startsAt": "2026-08-23T10:00:00+09:00",
-      "name": "Nerissa",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=2dWaPS246gQ",
-      "videoId": "2dWaPS246gQ",
-      "thumbnail": "https://img.youtube.com/vi/2dWaPS246gQ/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "EN"
-    },
-    {
       "id": "78e416BLGo4",
       "date": "2026-08-23",
       "dateLabel": "08/23 (日)",
@@ -19346,6 +19346,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "K3c4uZusY-k",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "10:01",
+      "startsAt": "2026-08-23T10:01:00+09:00",
+      "name": "儒烏風亭らでん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=K3c4uZusY-k",
+      "videoId": "K3c4uZusY-k",
+      "thumbnail": "https://img.youtube.com/vi/K3c4uZusY-k/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "Pd70RRzTioc",
@@ -19631,6 +19646,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "3aL5prb1erI",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "04:00",
+      "startsAt": "2026-08-24T04:00:00+09:00",
+      "name": "Elizabeth",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=3aL5prb1erI",
+      "videoId": "3aL5prb1erI",
+      "thumbnail": "https://img.youtube.com/vi/3aL5prb1erI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "2MMBGfSm5e8",

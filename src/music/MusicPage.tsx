@@ -543,11 +543,7 @@ export function MusicPage({
             <Music2 size={15} aria-hidden="true" />
             MEMBER DISCOGRAPHY
           </span>
-          <h2>기수와 데뷔 순서로 찾는 홀로라이브 음악</h2>
-          <p>
-            멤버를 누르면 솔로곡은 앨범별로, 콜라보와 커버는 각각 나누어
-            볼 수 있습니다.
-          </p>
+          <h2>멤버별 음악</h2>
         </div>
         <div className="music-page-stats">
           <span>
@@ -640,9 +636,7 @@ export function MusicPage({
       <div className="music-source-note">
         <Clock3 size={16} aria-hidden="true" />
         <p>
-          공개된 영상·음원 링크를 기준으로 정리했습니다. 재생시간은 공개
-          음원·영상 메타데이터 기준이며 판본에 따라 조금 다를 수 있습니다.
-          삭제·비공개 영상과 최근 발매곡은 반영 시점에 따라 빠질 수 있습니다.
+          공개 음원·영상 기준이며 재생시간과 최신 발매 반영은 달라질 수 있습니다.
         </p>
         <div>
           {payload.sourceUrls.map((url, index) => (
@@ -742,13 +736,6 @@ export function MusicPage({
                     ?.shortLabel ?? "곡"}{" "}
                   {categoryTracks.length}곡
                 </span>
-                <p>
-                  {sort === "release"
-                    ? category === "cover"
-                      ? "최근 공개된 커버부터 표시합니다."
-                      : "앨범·EP는 작품별로 묶고 싱글은 따로 표시합니다."
-                    : `${SORT_OPTIONS.find((option) => option.id === sort)?.label}으로 전체 곡을 정렬했습니다.`}
-                </p>
               </div>
 
               {categoryTracks.length ? (

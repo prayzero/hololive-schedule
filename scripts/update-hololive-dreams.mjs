@@ -327,12 +327,71 @@ const pickups = [
   },
 ];
 
+const events = [
+  {
+    id: "ultimate-summer-for-me-2026",
+    title: "알티메트 서머! for Me?",
+    nativeTitle: "アルティメットサマー！ for Me？",
+    subtitle: "5명의 솔로 챕터가 이틀마다 교체되는 스코어 이벤트",
+    startsAt: "2026-08-17T20:00:00+09:00",
+    endsAt: null,
+    sourceLabel: "hololive Dreams 공식 X 이벤트 공지",
+    sourceUrl: "https://x.com/hololive_dreams/status/2088838162592243714",
+    scheduleSourceUrl:
+      "https://x.com/hololive_dreams/status/2088943854665798079",
+    songsSourceUrl:
+      "https://x.com/hololive_dreams/status/2088853257196286361",
+    chapters: [
+      {
+        talentId: "mori-calliope",
+        songTitle: "NIGHTBREAK",
+        startsAt: "2026-08-17T20:00:00+09:00",
+        endsAt: null,
+        imageUrl:
+          "images/dream-pickups/heated-summer-day-2026/mori-calliope.jpg",
+      },
+      {
+        talentId: "nakiri-ayame",
+        songTitle: "万歳☆満開",
+        startsAt: "2026-08-19T20:00:00+09:00",
+        endsAt: null,
+        imageUrl:
+          "images/dream-pickups/heated-summer-day-2026/nakiri-ayame.jpg",
+      },
+      {
+        talentId: "kureiji-ollie",
+        songTitle: "Oshi Mode ON",
+        startsAt: "2026-08-21T20:00:00+09:00",
+        endsAt: null,
+        imageUrl:
+          "images/dream-pickups/heated-summer-day-2026/kureiji-ollie.jpg",
+      },
+      {
+        talentId: "himemori-luna",
+        songTitle: "天たこ観測",
+        startsAt: "2026-08-23T20:00:00+09:00",
+        endsAt: null,
+        imageUrl:
+          "images/dream-pickups/heated-summer-day-2026/himemori-luna.jpg",
+      },
+      {
+        talentId: "ninomae-inanis",
+        songTitle: "星屑カプセル",
+        startsAt: "2026-08-25T20:00:00+09:00",
+        endsAt: null,
+        imageUrl:
+          "images/dream-pickups/heated-summer-day-2026/ninomae-inanis.jpg",
+      },
+    ],
+  },
+];
+
 const payload = {
-  checkedAt: "2026-08-20T11:40:36+09:00",
+  checkedAt: "2026-08-23T12:00:00+09:00",
   sourceUrl: "https://www.hololive-dreams.com/en",
   officialNewsUrl: "https://hololive.hololivepro.com/en/news/20260723-01-401/",
   sourceNote:
-    "hololive Dreams 공식 사이트에 공개된 출시 캐릭터 54명과 공식 썸네일을 사용합니다. 로스터·다운로드 링크와 현재 픽업은 공식 웹·X에서 2026-08-20 재확인했고, 개별 제공 비율은 게임 내 제공 비율 화면을 기준으로 2026-07-29 확인했습니다. 8월 7일 미코·스이세이 픽업 종료는 게임 내 화면 기반 공략 자료와 다음 픽업 전환을 교차 확인했습니다. 8월 17일 신규 칼리오페·아야메·올리·루나·이나 픽업의 종료 시각과 숫자 제공 비율은 외부 공식 채널에 공개되지 않아 확인 필요로 표시합니다.",
+    "공식 웹·X에 공개된 캐릭터, 픽업과 이벤트 일정을 정리했습니다. 제공 비율은 게임 내 화면 기준이며 외부 공식 채널에 없는 종료 시각과 비율은 확인 필요로 표시합니다.",
   launchDate: "2026-07-23",
   game: {
     title: "hololive Dreams",
@@ -431,6 +490,7 @@ const payload = {
     officialNoticeUrl:
       "https://www.hololive-dreams.com/news/detail/aku8rsuo9",
   },
+  events,
   pickups,
   characters,
 };
@@ -471,6 +531,64 @@ const pickupCardsById = new Map();
 const baseCharacterIds = new Set(characters.map(({ id }) => id));
 const pickupIds = new Set();
 const publicRoot = path.join(projectRoot, "public");
+const dreamTalentIds = new Set(characters.map(({ talentId }) => talentId));
+const eventIds = new Set();
+for (const event of events) {
+  if (
+    !event.id ||
+    !event.title ||
+    !event.nativeTitle ||
+    !event.startsAt ||
+    !event.sourceUrl ||
+    !event.scheduleSourceUrl ||
+    !event.songsSourceUrl ||
+    !event.chapters.length
+  ) {
+    throw new Error(`이벤트 필수 정보가 비어 있습니다: ${event.id}`);
+  }
+  if (eventIds.has(event.id)) {
+    throw new Error(`이벤트 ID가 중복되었습니다: ${event.id}`);
+  }
+  eventIds.add(event.id);
+  const eventStartsAt = Date.parse(event.startsAt);
+  const eventEndsAt = event.endsAt ? Date.parse(event.endsAt) : null;
+  if (
+    !Number.isFinite(eventStartsAt) ||
+    (eventEndsAt !== null &&
+      (!Number.isFinite(eventEndsAt) || eventStartsAt > eventEndsAt))
+  ) {
+    throw new Error(`이벤트 시작·종료 시각이 올바르지 않습니다: ${event.id}`);
+  }
+  const chapterTalentIds = new Set();
+  let previousChapterStartsAt = 0;
+  for (const chapter of event.chapters) {
+    const chapterStartsAt = Date.parse(chapter.startsAt);
+    const chapterEndsAt = chapter.endsAt ? Date.parse(chapter.endsAt) : null;
+    if (
+      !dreamTalentIds.has(chapter.talentId) ||
+      !chapter.songTitle ||
+      !chapter.imageUrl ||
+      !Number.isFinite(chapterStartsAt) ||
+      chapterStartsAt < eventStartsAt ||
+      chapterStartsAt <= previousChapterStartsAt ||
+      (chapterEndsAt !== null &&
+        (!Number.isFinite(chapterEndsAt) || chapterStartsAt > chapterEndsAt))
+    ) {
+      throw new Error(`${event.id}: 챕터 정보가 올바르지 않습니다.`);
+    }
+    if (chapterTalentIds.has(chapter.talentId)) {
+      throw new Error(`${event.id}: 챕터 멤버가 중복되었습니다.`);
+    }
+    chapterTalentIds.add(chapter.talentId);
+    previousChapterStartsAt = chapterStartsAt;
+    const chapterImagePath = path.resolve(publicRoot, chapter.imageUrl);
+    if (!chapterImagePath.startsWith(`${publicRoot}${path.sep}`)) {
+      throw new Error(`${event.id}: 이미지 경로가 public 밖을 가리킵니다.`);
+    }
+    await access(chapterImagePath);
+  }
+}
+
 for (const pickup of pickups) {
   if (
     !pickup.id ||
@@ -596,5 +714,5 @@ for (const pickup of pickups) {
 
 await writeFile(outputPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
 console.log(
-  `hololive Dreams 데이터 생성 완료: ${characters.length}명 · 픽업 ${pickups.length}건`,
+  `hololive Dreams 데이터 생성 완료: ${characters.length}명 · 이벤트 ${events.length}건 · 픽업 ${pickups.length}건`,
 );

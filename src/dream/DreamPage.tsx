@@ -32,7 +32,7 @@ import "./dream.css";
 
 const STORAGE_KEY = "holo-now:dream-owned:v1";
 
-type DreamPanel = "collection" | "pickup" | "calculator";
+type DreamPanel = "collection" | "event" | "pickup" | "calculator";
 type CollectionFilter = "ALL" | "PICKUP" | TalentBranch;
 type OwnedFilter = "all" | "owned" | "missing";
 
@@ -104,6 +104,15 @@ const DREAM_GENERATION_ORDER: Record<string, number> = {
   "ID:ID 3기생": 2,
 };
 
+const DREAM_EVENT_TIME_FORMATTER = new Intl.DateTimeFormat("ko-KR", {
+  timeZone: "Asia/Seoul",
+  month: "long",
+  day: "numeric",
+  hour: "2-digit",
+  minute: "2-digit",
+  hourCycle: "h23",
+});
+
 function readOwnedCharacters() {
   if (typeof window === "undefined") {
     return new Set<string>();
@@ -167,6 +176,34 @@ export function DreamPage({
     [talents],
   );
   const normalizedQuery = normalizeSearch(query);
+  const visibleEvents = useMemo(
+    () =>
+      (payload.events ?? [])
+        .map((event) => {
+          const matchesEvent = includesSearch(
+            [event.title, event.nativeTitle, event.subtitle],
+            normalizedQuery,
+          );
+          const chapters = matchesEvent
+            ? event.chapters
+            : event.chapters.filter((chapter) => {
+                const talent = talentById.get(chapter.talentId);
+                return includesSearch(
+                  [
+                    chapter.songTitle,
+                    talent?.name,
+                    talent?.nameKo,
+                    talent?.nativeName,
+                    talent?.aliases.join(" "),
+                  ],
+                  normalizedQuery,
+                );
+              });
+          return { event, chapters };
+        })
+        .filter(({ chapters }) => chapters.length > 0),
+    [normalizedQuery, payload.events, talentById],
+  );
   const baseCharacters = useMemo<CollectionCharacter[]>(
     () =>
       [...payload.characters]
@@ -416,16 +453,8 @@ export function DreamPage({
             <Sparkles size={14} aria-hidden="true" />
             HOLOLIVE DREAMS
           </span>
-          <h2 id="dream-section-title">
-            캐릭터부터 픽업까지
-            <br />
-            홀로도리를 한곳에서
-          </h2>
-          <p>
-            기본 캐릭터 {baseCharacters.length}명과 픽업 카드{" "}
-            {pickupCharacters.length}장을 체크하고, 픽업별 나의 운 기록도
-            계속 모아 보세요.
-          </p>
+          <h2 id="dream-section-title">홀로도리 컬렉션</h2>
+          <p>캐릭터·이벤트·픽업·비공식 확률 계산을 확인하세요.</p>
         </div>
 
         <nav className="dream-panel-tabs" aria-label="홀로라이브 드림 메뉴">
@@ -437,6 +466,15 @@ export function DreamPage({
           >
             <Users size={17} aria-hidden="true" />
             내 캐릭터
+          </button>
+          <button
+            type="button"
+            className={panel === "event" ? "is-active" : ""}
+            aria-current={panel === "event" ? "page" : undefined}
+            onClick={() => onPanelChange("event")}
+          >
+            <Trophy size={17} aria-hidden="true" />
+            이벤트
           </button>
           <button
             type="button"
@@ -454,7 +492,7 @@ export function DreamPage({
             onClick={() => onPanelChange("calculator")}
           >
             <Calculator size={17} aria-hidden="true" />
-            확률 계산기
+            비공식 확률
           </button>
         </nav>
       </div>
@@ -603,6 +641,131 @@ export function DreamPage({
             </div>
           )}
         </>
+      ) : panel === "event" ? (
+        visibleEvents.length ? (
+          <div className="dream-event-list">
+            {visibleEvents.map(({ event, chapters }) => {
+              const nowTime = now.getTime();
+              const eventStartsAt = new Date(event.startsAt).getTime();
+              const eventEndsAt = event.endsAt
+                ? new Date(event.endsAt).getTime()
+                : null;
+              const eventStatus =
+                nowTime < eventStartsAt
+                  ? "upcoming"
+                  : eventEndsAt !== null && nowTime > eventEndsAt
+                    ? "ended"
+                    : "live";
+
+              return (
+                <article className="dream-event-card" key={event.id}>
+                  <header className="dream-event-heading">
+                    <span
+                      className={`dream-event-status is-${eventStatus}`}
+                    >
+                      <Trophy size={15} aria-hidden="true" />
+                      {eventStatus === "live"
+                        ? "진행 중"
+                        : eventStatus === "upcoming"
+                          ? "예정"
+                          : "종료"}
+                    </span>
+                    <div>
+                      <small>GAME EVENT</small>
+                      <h3>{event.title}</h3>
+                      <p>{event.nativeTitle}</p>
+                    </div>
+                    <a
+                      href={event.scheduleSourceUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      공식 일정
+                      <ExternalLink size={13} aria-hidden="true" />
+                    </a>
+                  </header>
+
+                  <div className="dream-event-meta">
+                    <span>
+                      <CalendarDays size={15} aria-hidden="true" />
+                      <time dateTime={event.startsAt}>
+                        {DREAM_EVENT_TIME_FORMATTER.format(
+                          new Date(event.startsAt),
+                        )} 시작
+                      </time>
+                    </span>
+                    <span>
+                      <Info size={15} aria-hidden="true" />
+                      {event.subtitle} · 종료 시각은 게임 내 공지 확인
+                    </span>
+                  </div>
+
+                  <div className="dream-event-chapter-grid">
+                    {chapters.map((chapter) => {
+                      const chapterIndex = event.chapters.findIndex(
+                        (item) => item.talentId === chapter.talentId,
+                      );
+                      const nextChapter = event.chapters[chapterIndex + 1];
+                      const chapterStartsAt = new Date(
+                        chapter.startsAt,
+                      ).getTime();
+                      const chapterEndsAt = chapter.endsAt
+                        ? new Date(chapter.endsAt).getTime()
+                        : nextChapter
+                          ? new Date(nextChapter.startsAt).getTime()
+                          : null;
+                      const chapterStatus =
+                        nowTime < chapterStartsAt
+                          ? "upcoming"
+                          : chapterEndsAt !== null && nowTime >= chapterEndsAt
+                            ? "ended"
+                            : "live";
+                      const talent = talentById.get(chapter.talentId);
+
+                      return (
+                        <div
+                          className={`dream-event-chapter is-${chapterStatus}`}
+                          key={`${event.id}-${chapter.talentId}`}
+                        >
+                          <span className="dream-event-chapter__image">
+                            <img
+                              src={chapter.imageUrl}
+                              alt=""
+                              loading="lazy"
+                              decoding="async"
+                            />
+                            <b>
+                              {chapterStatus === "live"
+                                ? "NOW"
+                                : chapterStatus === "upcoming"
+                                  ? "NEXT"
+                                  : "END"}
+                            </b>
+                          </span>
+                          <span className="dream-event-chapter__copy">
+                            <time dateTime={chapter.startsAt}>
+                              {DREAM_EVENT_TIME_FORMATTER.format(
+                                new Date(chapter.startsAt),
+                              )}
+                            </time>
+                            <strong>{talent?.nameKo ?? chapter.talentId}</strong>
+                            <span>{chapter.songTitle}</span>
+                          </span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        ) : (
+          <div className="dream-empty">
+            <SearchX size={30} aria-hidden="true" />
+            <strong>검색과 일치하는 이벤트가 없습니다</strong>
+            <p>이벤트명·멤버·곡명으로 다시 검색해 주세요.</p>
+          </div>
+        )
       ) : panel === "pickup" ? (
         <DreamPickupPanel
           pickups={payload.pickups ?? []}
@@ -618,8 +781,8 @@ export function DreamPage({
                 <Calculator size={18} aria-hidden="true" />
               </span>
               <div>
-                <small>LUCK CALCULATOR</small>
-                <h3>내 뽑기 결과는 얼마나 운이 좋았을까요?</h3>
+                <small>UNOFFICIAL CALCULATOR</small>
+                <h3>비공식 확률 계산</h3>
               </div>
             </div>
 
@@ -871,15 +1034,11 @@ export function DreamPage({
             <div className="dream-caution-card">
               <Info size={19} aria-hidden="true" />
               <div>
-                <strong>계산 전에 확인해 주세요</strong>
+                <strong>계산 기준</strong>
                 <p>
                   수치는 게임 내 제공 비율 화면을 기준으로 {gachaVerifiedDate}
-                  확인했습니다. 공식 웹 공지는 상세 확률을 게임 안에서 확인하도록
-                  안내하며, 배너가 바뀌면 수치도 달라질 수 있습니다.
-                </p>
-                <p>
-                  10연 확정칸의 ★5 전체 확률도 5%입니다. 천장·교환·최초 재뽑기
-                  등 확률 외 획득은 ‘확정 획득 수’에 따로 입력해 주세요.
+                  확인했습니다. 배너별 비율은 달라질 수 있으며 천장·교환 등은
+                  ‘확정 획득 수’에 입력하세요.
                 </p>
                 <a
                   href={payload.gachaRates.officialNoticeUrl}

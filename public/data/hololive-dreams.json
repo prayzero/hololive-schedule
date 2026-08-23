@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-08-20T11:40:36+09:00",
+  "checkedAt": "2026-08-23T12:00:00+09:00",
   "sourceUrl": "https://www.hololive-dreams.com/en",
   "officialNewsUrl": "https://hololive.hololivepro.com/en/news/20260723-01-401/",
-  "sourceNote": "hololive Dreams 공식 사이트에 공개된 출시 캐릭터 54명과 공식 썸네일을 사용합니다. 로스터·다운로드 링크와 현재 픽업은 공식 웹·X에서 2026-08-20 재확인했고, 개별 제공 비율은 게임 내 제공 비율 화면을 기준으로 2026-07-29 확인했습니다. 8월 7일 미코·스이세이 픽업 종료는 게임 내 화면 기반 공략 자료와 다음 픽업 전환을 교차 확인했습니다. 8월 17일 신규 칼리오페·아야메·올리·루나·이나 픽업의 종료 시각과 숫자 제공 비율은 외부 공식 채널에 공개되지 않아 확인 필요로 표시합니다.",
+  "sourceNote": "공식 웹·X에 공개된 캐릭터, 픽업과 이벤트 일정을 정리했습니다. 제공 비율은 게임 내 화면 기준이며 외부 공식 채널에 없는 종료 시각과 비율은 확인 필요로 표시합니다.",
   "launchDate": "2026-07-23",
   "game": {
     "title": "hololive Dreams",
@@ -103,6 +103,57 @@
     "screenshotReferenceUrl": "https://appmedia.jp/wp-content/uploads/2026/07/135040_8l2nf.webp",
     "officialNoticeUrl": "https://www.hololive-dreams.com/news/detail/aku8rsuo9"
   },
+  "events": [
+    {
+      "id": "ultimate-summer-for-me-2026",
+      "title": "알티메트 서머! for Me?",
+      "nativeTitle": "アルティメットサマー！ for Me？",
+      "subtitle": "5명의 솔로 챕터가 이틀마다 교체되는 스코어 이벤트",
+      "startsAt": "2026-08-17T20:00:00+09:00",
+      "endsAt": null,
+      "sourceLabel": "hololive Dreams 공식 X 이벤트 공지",
+      "sourceUrl": "https://x.com/hololive_dreams/status/2088838162592243714",
+      "scheduleSourceUrl": "https://x.com/hololive_dreams/status/2088943854665798079",
+      "songsSourceUrl": "https://x.com/hololive_dreams/status/2088853257196286361",
+      "chapters": [
+        {
+          "talentId": "mori-calliope",
+          "songTitle": "NIGHTBREAK",
+          "startsAt": "2026-08-17T20:00:00+09:00",
+          "endsAt": null,
+          "imageUrl": "images/dream-pickups/heated-summer-day-2026/mori-calliope.jpg"
+        },
+        {
+          "talentId": "nakiri-ayame",
+          "songTitle": "万歳☆満開",
+          "startsAt": "2026-08-19T20:00:00+09:00",
+          "endsAt": null,
+          "imageUrl": "images/dream-pickups/heated-summer-day-2026/nakiri-ayame.jpg"
+        },
+        {
+          "talentId": "kureiji-ollie",
+          "songTitle": "Oshi Mode ON",
+          "startsAt": "2026-08-21T20:00:00+09:00",
+          "endsAt": null,
+          "imageUrl": "images/dream-pickups/heated-summer-day-2026/kureiji-ollie.jpg"
+        },
+        {
+          "talentId": "himemori-luna",
+          "songTitle": "天たこ観測",
+          "startsAt": "2026-08-23T20:00:00+09:00",
+          "endsAt": null,
+          "imageUrl": "images/dream-pickups/heated-summer-day-2026/himemori-luna.jpg"
+        },
+        {
+          "talentId": "ninomae-inanis",
+          "songTitle": "星屑カプセル",
+          "startsAt": "2026-08-25T20:00:00+09:00",
+          "endsAt": null,
+          "imageUrl": "images/dream-pickups/heated-summer-day-2026/ninomae-inanis.jpg"
+        }
+      ]
+    }
+  ],
   "pickups": [
     {
       "id": "heated-summer-day-selectable-2026",

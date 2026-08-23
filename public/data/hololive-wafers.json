@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-08-20T03:45:36.738Z",
-  "sourceNote": "2026-08-20까지 일본에서 발매 완료된 반다이 일반 수집형 홀로라이브 웨하스 7종, 총 271장을 공식 제품 페이지와 공식 갤러리 순서로 정리했습니다. hololive OFFICIAL CARD GAME 트윈 웨하스와 2026-08-31 발매 예정 vol.6, 2026-11 발매 예정 vol.7은 제외했습니다. 공식 갤러리는 여러 카드를 한 장의 1200×1200 시트로 제공하므로 멤버 카드와 가로형 금박 그룹 카드 모두 imageSize/imagePosition으로 해당 공식 카드 영역을 잘라 표시합니다.",
+  "checkedAt": "2026-08-23T13:18:43.713Z",
+  "sourceNote": "반다이 공식 제품 페이지에 공개된 일반 수집형 홀로라이브 웨하스 8종, 301장을 정리했습니다. 2026년 8월 31일 출시 예정 vol.6을 포함하며, 카드게임용 트윈 웨하스와 전체 카드 이미지가 공개되지 않은 vol.7은 제외했습니다.",
   "sourceUrls": [
     "https://www.bandai.co.jp/candy/characters/character462/index.html",
     "https://www.bandai.co.jp/candy/products/2022/4549660699910000.html",
@@ -9,7 +9,8 @@
     "https://www.bandai.co.jp/candy/products/2024/4570117910968000.html",
     "https://www.bandai.co.jp/candy/products/2025/4570117917110000.html",
     "https://www.bandai.co.jp/candy/products/2025/4570117922718000.html",
-    "https://www.bandai.co.jp/candy/products/2026/4570117923463000.html"
+    "https://www.bandai.co.jp/candy/products/2026/4570117923463000.html",
+    "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html"
   ],
   "releases": [
     {
@@ -95,6 +96,18 @@
       "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/t16/000000466431LHMHRQxJmRHUqdqrqcNvrzrWFvY1ZkF0Et16.jpg",
       "cardCount": 33,
       "sortOrder": 7
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026",
+      "name": "ホロライブプロダクション ウエハースvol.6",
+      "shortName": "웨하스 vol.6",
+      "releaseDate": "2026-08-31",
+      "category": "반다이 수집형 메탈릭 웨하스 카드",
+      "series": "bandai-hololive-wafer",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/Ivg/000000485690N1h3QWjX806sgiNrnjVaeFxWmCozH0SyAIvg.jpg",
+      "cardCount": 30,
+      "sortOrder": 8
     }
   ],
   "rarities": [
@@ -5630,6 +5643,606 @@
       ],
       "variantLabel": "메탈릭 멤버 카드",
       "sortOrder": 271
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-tokino-sora",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "01",
+      "title": "ときのそら",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/EcO/000000485694QwW07Tu0zbtjzA82AO28i05bElPFabLN2EcO.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "2.5% 3.4%",
+      "memberNames": [
+        "ときのそら"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 272
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-robocosan",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "02",
+      "title": "ロボ子さん",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/EcO/000000485694QwW07Tu0zbtjzA82AO28i05bElPFabLN2EcO.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "50% 3.4%",
+      "memberNames": [
+        "ロボ子さん"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 273
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-aki-rosenthal",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "03",
+      "title": "アキ・ローゼンタール",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/EcO/000000485694QwW07Tu0zbtjzA82AO28i05bElPFabLN2EcO.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "97.3% 3.4%",
+      "memberNames": [
+        "アキ・ローゼンタール"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 274
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-shirakami-fubuki",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "04",
+      "title": "白上フブキ",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/EcO/000000485694QwW07Tu0zbtjzA82AO28i05bElPFabLN2EcO.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "2.5% 91.6%",
+      "memberNames": [
+        "白上フブキ"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 275
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-natsuiro-matsuri",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "05",
+      "title": "夏色まつり",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/EcO/000000485694QwW07Tu0zbtjzA82AO28i05bElPFabLN2EcO.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "50% 91.6%",
+      "memberNames": [
+        "夏色まつり"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 276
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-nakiri-ayame",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "06",
+      "title": "百鬼あやめ",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/EcO/000000485694QwW07Tu0zbtjzA82AO28i05bElPFabLN2EcO.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "97.3% 91.6%",
+      "memberNames": [
+        "百鬼あやめ"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 277
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-yuzuki-choco",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "07",
+      "title": "癒月ちょこ",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/V2y/000000485698VHj3vnuW3qkNZxkYDlWegfO0QJIavy4j8V2y.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "2.5% 3.4%",
+      "memberNames": [
+        "癒月ちょこ"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 278
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-oozora-subaru",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "08",
+      "title": "大空スバル",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/V2y/000000485698VHj3vnuW3qkNZxkYDlWegfO0QJIavy4j8V2y.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "50% 3.4%",
+      "memberNames": [
+        "大空スバル"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 279
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-azki",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "09",
+      "title": "AZKi",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/V2y/000000485698VHj3vnuW3qkNZxkYDlWegfO0QJIavy4j8V2y.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "97.3% 3.4%",
+      "memberNames": [
+        "AZKi"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 280
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-ookami-mio",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "10",
+      "title": "大神ミオ",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/V2y/000000485698VHj3vnuW3qkNZxkYDlWegfO0QJIavy4j8V2y.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "2.5% 91.6%",
+      "memberNames": [
+        "大神ミオ"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 281
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-sakura-miko",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "11",
+      "title": "さくらみこ",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/V2y/000000485698VHj3vnuW3qkNZxkYDlWegfO0QJIavy4j8V2y.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "50% 91.6%",
+      "memberNames": [
+        "さくらみこ"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 282
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-nekomata-okayu",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "12",
+      "title": "猫又おかゆ",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/V2y/000000485698VHj3vnuW3qkNZxkYDlWegfO0QJIavy4j8V2y.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "97.3% 91.6%",
+      "memberNames": [
+        "猫又おかゆ"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 283
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-inugami-korone",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "13",
+      "title": "戌神ころね",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/wzH/000000485702MKXHjsBMMcVAnVC5UV3Ilq3DmPxPWmvwZwzH.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "2.5% 3.4%",
+      "memberNames": [
+        "戌神ころね"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 284
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-hoshimachi-suisei",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "14",
+      "title": "星街すいせい",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/wzH/000000485702MKXHjsBMMcVAnVC5UV3Ilq3DmPxPWmvwZwzH.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "50% 3.4%",
+      "memberNames": [
+        "星街すいせい"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 285
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-ayunda-risu",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "15",
+      "title": "アユンダ・リス",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/wzH/000000485702MKXHjsBMMcVAnVC5UV3Ilq3DmPxPWmvwZwzH.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "97.3% 3.4%",
+      "memberNames": [
+        "アユンダ・リス"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 286
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-moona-hoshinova",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "16",
+      "title": "ムーナ・ホシノヴァ",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/wzH/000000485702MKXHjsBMMcVAnVC5UV3Ilq3DmPxPWmvwZwzH.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "2.5% 91.6%",
+      "memberNames": [
+        "ムーナ・ホシノヴァ"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 287
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-airani-iofifteen",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "17",
+      "title": "アイラニ・イオフィフティーン",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/wzH/000000485702MKXHjsBMMcVAnVC5UV3Ilq3DmPxPWmvwZwzH.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "50% 91.6%",
+      "memberNames": [
+        "アイラニ・イオフィフティーン"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 288
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-kureiji-ollie",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "18",
+      "title": "クレイジー・オリー",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/wzH/000000485702MKXHjsBMMcVAnVC5UV3Ilq3DmPxPWmvwZwzH.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "97.3% 91.6%",
+      "memberNames": [
+        "クレイジー・オリー"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 289
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-anya-melfissa",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "19",
+      "title": "アーニャ・メルフィッサ",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/3QJ/000000485706EImeb69ZHBa9vKPwYA3Ky8IB3b6foowj03QJ.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "2.5% 3.4%",
+      "memberNames": [
+        "アーニャ・メルフィッサ"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 290
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-pavolia-reine",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "20",
+      "title": "パヴォリア・レイネ",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/3QJ/000000485706EImeb69ZHBa9vKPwYA3Ky8IB3b6foowj03QJ.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "50% 3.4%",
+      "memberNames": [
+        "パヴォリア・レイネ"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 291
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-mori-calliope",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "21",
+      "title": "森カリオペ",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/3QJ/000000485706EImeb69ZHBa9vKPwYA3Ky8IB3b6foowj03QJ.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "97.3% 3.4%",
+      "memberNames": [
+        "森カリオペ"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 292
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-takanashi-kiara",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "22",
+      "title": "小鳥遊キアラ",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/3QJ/000000485706EImeb69ZHBa9vKPwYA3Ky8IB3b6foowj03QJ.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "2.5% 91.6%",
+      "memberNames": [
+        "小鳥遊キアラ"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 293
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-ninomae-inanis",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "23",
+      "title": "一伊那尓栖",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/3QJ/000000485706EImeb69ZHBa9vKPwYA3Ky8IB3b6foowj03QJ.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "50% 91.6%",
+      "memberNames": [
+        "一伊那尓栖"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 294
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-irys",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "24",
+      "title": "IRyS",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/3QJ/000000485706EImeb69ZHBa9vKPwYA3Ky8IB3b6foowj03QJ.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "97.3% 91.6%",
+      "memberNames": [
+        "IRyS"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 295
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-ouro-kronii",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "25",
+      "title": "オーロ・クロニー",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/xcv/000000485710DKIxMpb7UvvMTtUk5fG0022A8Cuhwheuexcv.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "2.5% 3.4%",
+      "memberNames": [
+        "オーロ・クロニー"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 296
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-hakos-baelz",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "26",
+      "title": "ハコス・ベールズ",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/xcv/000000485710DKIxMpb7UvvMTtUk5fG0022A8Cuhwheuexcv.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "50% 3.4%",
+      "memberNames": [
+        "ハコス・ベールズ"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 297
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-otonose-kanade",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "27",
+      "title": "音乃瀬奏",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/xcv/000000485710DKIxMpb7UvvMTtUk5fG0022A8Cuhwheuexcv.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "97.3% 3.4%",
+      "memberNames": [
+        "音乃瀬奏"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 298
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-ichijou-ririka",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "28",
+      "title": "一条莉々華",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/xcv/000000485710DKIxMpb7UvvMTtUk5fG0022A8Cuhwheuexcv.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "2.5% 91.6%",
+      "memberNames": [
+        "一条莉々華"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 299
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-juufuutei-raden",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "29",
+      "title": "儒烏風亭らでん",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/xcv/000000485710DKIxMpb7UvvMTtUk5fG0022A8Cuhwheuexcv.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "50% 91.6%",
+      "memberNames": [
+        "儒烏風亭らでん"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 300
+    },
+    {
+      "id": "hololive-production-wafer-vol6-2026-member-todoroki-hajime",
+      "releaseIds": [
+        "hololive-production-wafer-vol6-2026"
+      ],
+      "cardNumber": "30",
+      "title": "轟はじめ",
+      "rarityId": "wafer-member-card",
+      "series": "bandai-hololive-wafer",
+      "releaseDate": "2026-08-31",
+      "sourceUrl": "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+      "imageUrl": "https://www.bandai.co.jp/candy/published/bnc_files/product/xcv/000000485710DKIxMpb7UvvMTtUk5fG0022A8Cuhwheuexcv.jpg",
+      "imageSize": "322.6% 218.6%",
+      "imagePosition": "97.3% 91.6%",
+      "memberNames": [
+        "轟はじめ"
+      ],
+      "variantLabel": "메탈릭 멤버 카드",
+      "sortOrder": 301
     }
   ]
 }

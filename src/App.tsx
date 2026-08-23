@@ -97,7 +97,7 @@ type PageView =
   | "cards"
   | "wafer";
 type ConcertPeriod = "upcoming" | "past";
-type DreamPanel = "collection" | "pickup" | "calculator";
+type DreamPanel = "collection" | "event" | "pickup" | "calculator";
 type YouTubeCategoryFilter = "all" | YouTubeLiveCategory;
 type LocalEventFilter = "ALL" | "JP" | "KR" | "ENDED";
 type BroadcastStatus = "live" | "upcoming" | "ended";
@@ -141,51 +141,45 @@ const PAGE_META: Record<
 > = {
   schedule: {
     eyebrow: "LIVE SCHEDULE",
-    title: "오늘, 누구를 만나러 갈까요?",
+    title: "홀로라이브 방송 일정",
     description:
       "hololive JP·EN·ID·DEV_IS 탤런트의 방송을 한국 시간으로 모았습니다.",
   },
   concerts: {
     eyebrow: "CONCERT CALENDAR",
-    title: "무대 위의 순간을 놓치지 않게.",
-    description:
-      "예정 공연부터 지난 솔로 무대까지, 공식 콘서트 기록을 한곳에서 확인하세요.",
+    title: "콘서트 일정과 기록",
+    description: "예정 공연과 지난 솔로 무대를 날짜별로 확인하세요.",
   },
   solo: {
     eyebrow: "YOUTUBE LIVE ARCHIVE",
-    title: "다시 보고 싶은 무료 라이브를 한곳에.",
+    title: "무료 YouTube 라이브",
     description:
       "생일·주년·3D·무료 콘서트 영상을 멤버와 카테고리별로 찾아보세요.",
   },
   local: {
     eyebrow: "JP · KR LOCAL",
-    title: "일본과 한국에서 만나는 홀로라이브.",
-    description:
-      "팝업, 전시, 카페, 카드게임 등 공식 현지 콜라보를 지역별로 정리했습니다.",
+    title: "일본·한국 현지 행사",
+    description: "팝업·전시·카페·카드게임 행사를 지역별로 확인하세요.",
   },
   music: {
     eyebrow: "HOLOLIVE MUSIC",
-    title: "한 사람의 목소리를, 한곳에서.",
-    description:
-      "기수와 데뷔 순으로 멤버를 찾고 솔로곡·앨범·콜라보·커버를 한 번에 확인하세요.",
+    title: "멤버별 음악",
+    description: "솔로곡·앨범·콜라보·커버를 멤버별로 확인하세요.",
   },
   dream: {
     eyebrow: "HOLOLIVE DREAMS",
-    title: "뽑은 순간부터, 나만의 컬렉션.",
-    description:
-      "기본 캐릭터와 신규 픽업 카드를 체크하고, 픽업별 결과를 저장해 역대 나의 운도 확인해 보세요.",
+    title: "hololive Dreams 컬렉션",
+    description: "캐릭터·이벤트·픽업 일정과 비공식 확률 계산을 확인하세요.",
   },
   cards: {
     eyebrow: "HOLOLIVE OFFICIAL CARD GAME",
-    title: "가지고 있는 카드가, 나만의 덱이 되도록.",
-    description:
-      "공식 카드게임의 스타트 덱·부스터·프로모 카드를 팩과 등급별로 모았습니다.",
+    title: "공식 카드게임 컬렉션",
+    description: "스타트 덱·부스터·프로모 카드를 팩과 등급별로 확인하세요.",
   },
   wafer: {
     eyebrow: "HOLOLIVE WAFER CARDS",
-    title: "웨하스에서 만난 순간도, 하나의 컬렉션으로.",
-    description:
-      "역대 홀로라이브 웨하스 카드를 출시와 등급별로 확인하고 보유 상태를 기록하세요.",
+    title: "웨하스 카드 컬렉션",
+    description: "역대 홀로라이브 웨하스 카드와 출시 예정 상품을 확인하세요.",
   },
 };
 
@@ -195,7 +189,7 @@ const NAV_ITEMS: Array<{ id: PageView; label: string; shortLabel: string }> = [
   { id: "solo", label: "YouTube 라이브", shortLabel: "영상" },
   { id: "local", label: "일본·한국", shortLabel: "현지" },
   { id: "music", label: "음악", shortLabel: "음악" },
-  { id: "dream", label: "홀로라이브 드림", shortLabel: "드림" },
+  { id: "dream", label: "홀로도리", shortLabel: "홀로도리" },
   { id: "cards", label: "공식 카드게임", shortLabel: "카드" },
   { id: "wafer", label: "웨하스 카드", shortLabel: "웨하스" },
 ];
@@ -331,7 +325,9 @@ function initialYouTubeCategory(): YouTubeCategoryFilter {
 
 function initialDreamPanel(): DreamPanel {
   const value = paramValue("dream");
-  return value === "pickup" || value === "calculator" ? value : "collection";
+  return value === "event" || value === "pickup" || value === "calculator"
+    ? value
+    : "collection";
 }
 
 function initialRegion(): LocalEventFilter {
@@ -1326,7 +1322,7 @@ export default function App() {
       );
     }
     historyViewRef.current = view;
-    document.title = `${PAGE_META[view].title} | HOLO NOW`;
+    document.title = `${PAGE_META[view].title} | HOLO NOW 비공식 팬 사이트`;
   }, [
     concertPeriod,
     dreamPanel,
@@ -2095,8 +2091,11 @@ export default function App() {
             H
           </span>
           <span>
-            <strong>HOLO NOW</strong>
-            <small>hololive schedule archive</small>
+            <span className="brand-name-row">
+              <strong>HOLO NOW</strong>
+              <em>비공식 팬 사이트</em>
+            </span>
+            <small>hololive fan archive</small>
           </span>
         </button>
 
@@ -2145,7 +2144,7 @@ export default function App() {
               <Search size={21} aria-hidden="true" />
               <label className="sr-only" htmlFor="global-search">
                 {view === "dream"
-                  ? "홀로라이브 드림 수집 카드 검색"
+                  ? "홀로도리 캐릭터·이벤트·픽업 검색"
                   : view === "music"
                     ? "멤버, 곡, 앨범 검색"
                     : isCollectionView(view)
@@ -2164,7 +2163,7 @@ export default function App() {
                 }}
                 placeholder={
                   view === "dream"
-                    ? "캐릭터 · 픽업 카드 검색"
+                    ? "캐릭터 · 이벤트 · 픽업 검색"
                     : view === "music"
                       ? "멤버 · 곡 · 앨범 검색"
                       : isCollectionView(view)
@@ -2191,7 +2190,6 @@ export default function App() {
               !isCollectionView(view) &&
               matchingTalents.length > 0 ? (
                 <div className="search-popover" aria-label="멤버 검색 제안">
-                  <span>멤버를 누르면 YouTube 라이브가 열립니다</span>
                   {matchingTalents.map((talent) => (
                     <button
                       type="button"
@@ -2213,48 +2211,6 @@ export default function App() {
               ) : null}
             </div>
 
-            {view === "dream" ? (
-              <div className="hero-trust-row">
-                <span>
-                  <UsersRound size={15} aria-hidden="true" /> 공식 참여 멤버 54명
-                </span>
-                <span>
-                  <Check size={15} aria-hidden="true" /> 이 브라우저에 자동 저장
-                </span>
-                <span>
-                  <CalendarDays size={15} aria-hidden="true" /> 픽업 일정 · 기록
-                </span>
-              </div>
-            ) : view === "music" ? (
-              <div className="hero-trust-row">
-                <span>
-                  <UsersRound size={15} aria-hidden="true" />{" "}
-                  {musicData?.members.length ?? 65}명 음악 기록
-                </span>
-                <span>
-                  <Disc3 size={15} aria-hidden="true" /> 앨범 · 콜라보 · 커버
-                </span>
-                <span>
-                  <Check size={15} aria-hidden="true" /> 공식 감상 링크
-                </span>
-              </div>
-            ) : isCollectionView(view) ? (
-              <div className="hero-trust-row">
-                <span>
-                  <Sparkles size={15} aria-hidden="true" />{" "}
-                  {(activeCollectionData?.cards.length ?? 0).toLocaleString(
-                    "ko-KR",
-                  )}
-                  장 카드 목록
-                </span>
-                <span>
-                  <Check size={15} aria-hidden="true" /> 이 브라우저에 자동 저장
-                </span>
-                <span>
-                  <History size={15} aria-hidden="true" /> 팩 · 등급별 정리
-                </span>
-              </div>
-            ) : null}
           </div>
 
           <aside
@@ -2290,8 +2246,11 @@ export default function App() {
                   </div>
                   <div>
                     <CalendarDays size={18} aria-hidden="true" />
-                    <strong>{data?.hololiveDreams.pickups?.length ?? 1}</strong>
-                    <span>픽업 기록</span>
+                    <strong>
+                      {(data?.hololiveDreams.events?.length ?? 0) +
+                        (data?.hololiveDreams.pickups?.length ?? 0)}
+                    </strong>
+                    <span>이벤트 · 픽업</span>
                   </div>
                 </div>
                 <button
@@ -2318,10 +2277,6 @@ export default function App() {
                       {dreamPickupHighlight.primary?.pickup.title ??
                         "픽업 일정 기록"}
                     </strong>
-                    <em>
-                      {dreamPickupHighlight.primary?.pickup.subtitle ??
-                        "진행 중인 픽업과 지난 제공 비율을 확인해 보세요."}
-                    </em>
                   </span>
                   <ArrowRight size={19} aria-hidden="true" />
                 </button>
@@ -2364,7 +2319,6 @@ export default function App() {
                   <span>
                     <small>{musicAlbumCount} ALBUM GROUPS</small>
                     <strong>멤버별 디스코그래피 열기</strong>
-                    <em>곡 길이와 공식 감상 링크까지 확인하세요.</em>
                   </span>
                   <ArrowRight size={19} aria-hidden="true" />
                 </button>
@@ -2423,7 +2377,6 @@ export default function App() {
                         ? "공식 카드게임 컬렉션 열기"
                         : "웨하스 카드 컬렉션 열기"}
                     </strong>
-                    <em>누르면 회색 카드가 컬러로 돌아옵니다.</em>
                   </span>
                   <ArrowRight size={19} aria-hidden="true" />
                 </button>
@@ -2718,11 +2671,7 @@ export default function App() {
 
             <div className="source-banner">
               <Ticket size={18} aria-hidden="true" />
-              <p>
-                공식 이벤트와 정식·유료 솔로 공연 기록을 함께 표시합니다. 같은
-                공연이 두 데이터에 있을 때는 공식 URL과 날짜·제목을 기준으로 한
-                번만 보여드려요.
-              </p>
+              <p>공식 이벤트와 정식·유료 솔로 공연 기준</p>
             </div>
           </section>
         ) : null}
@@ -2877,22 +2826,20 @@ export default function App() {
             <div className="source-banner source-banner-solo">
               <Video size={18} aria-hidden="true" />
               <p>
-                공식 공개 YouTube 채널에서 무료로 볼 수 있는 라이브 영상을
-                정리했습니다. 정식·유료 솔로 공연은 콘서트 탭에서 확인할 수
-                있으며, 전체 로스터는{" "}
-                <a
-                  href={OFFICIAL_TALENTS_URL}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  hololive 공식 탤런트 페이지
-                </a>
-                를 기준으로 합니다.
+                공식 공개 YouTube 채널 기준
                 {data?.youtubeLives.checkedAt
                   ? ` · ${UPDATE_FORMATTER.format(
                       new Date(data.youtubeLives.checkedAt),
                     )} 확인`
                   : ""}
+                {" · "}
+                <a
+                  href={OFFICIAL_TALENTS_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  공식 탤런트 목록
+                </a>
               </p>
             </div>
           </section>
@@ -2962,11 +2909,9 @@ export default function App() {
             <div className="local-tip">
               <Globe2 size={21} aria-hidden="true" />
               <div>
-                <strong>현지 방문 전 공식 페이지를 확인해 주세요.</strong>
-                <p>
-                  운영 시간, 입장 방법, 재고와 출연 정보는 예고 없이 바뀔 수
-                  있습니다.
-                </p>
+                <strong>
+                  방문 전 공식 페이지에서 운영 시간·입장 방법·재고를 확인하세요.
+                </strong>
               </div>
             </div>
           </section>
@@ -3034,7 +2979,7 @@ export default function App() {
           </span>
           <div>
             <strong>HOLO NOW</strong>
-            <p>팬이 만든 비공식 무료 일정 아카이브</p>
+            <p>홀로라이브 비공식 팬 아카이브</p>
           </div>
         </div>
         <div className="footer-links">
@@ -3052,8 +2997,8 @@ export default function App() {
           </a>
         </div>
         <p className="disclaimer">
-          hololive 및 각 탤런트의 권리는 COVER Corp.에 있습니다. 이 사이트는
-          공식 서비스가 아니며, 공개된 공식 링크를 정리해 제공합니다.
+          HOLO NOW는 팬이 만든 비공식 사이트입니다. hololive 및 각 탤런트 관련
+          권리는 COVER Corp.에 있습니다.
         </p>
       </footer>
     </div>

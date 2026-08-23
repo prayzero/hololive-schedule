@@ -52,9 +52,8 @@ interface ReleaseGroup {
 const CATALOG_META = {
   cards: {
     kicker: "HOLOLIVE OFFICIAL CARD GAME",
-    title: "팩과 등급별로 모으는\n공식 카드게임",
-    description:
-      "스타트 덱·부스터·프로모 카드를 출시 순서와 등급별로 확인하고, 가진 카드를 눌러 나만의 컬렉션을 완성해 보세요.",
+    title: "공식 카드게임 컬렉션",
+    description: "스타트 덱·부스터·프로모 카드를 팩과 등급별로 확인하세요.",
     collectionLabel: "공식 카드게임",
     itemLabel: "카드",
     releaseLabel: "팩·출시",
@@ -63,13 +62,12 @@ const CATALOG_META = {
   },
   wafer: {
     kicker: "HOLOLIVE WAFER CARD COLLECTION",
-    title: "출시별로 차곡차곡\n홀로라이브 웨하스 카드",
-    description:
-      "역대 웨하스 카드 라인업을 출시와 등급별로 모았습니다. 실제로 가진 카드만 눌러 컬러로 되돌려 보세요.",
+    title: "웨하스 카드 컬렉션",
+    description: "역대 카드와 출시 예정 라인업을 출시별로 확인하세요.",
     collectionLabel: "웨하스 카드",
     itemLabel: "카드",
     releaseLabel: "웨하스 출시",
-    sourceLabel: "공식 상품 목록",
+    sourceLabel: "반다이 공식 제품 페이지",
     storageKey: "holo-now:wafer-owned:v1",
   },
 } as const;
@@ -634,7 +632,7 @@ export function CollectionCatalogPage({
               {ownedCount.toLocaleString("ko-KR")}
               <small> / {payload.cards.length.toLocaleString("ko-KR")}장</small>
             </strong>
-            <p>카드를 누르면 미보유 회색 이미지가 컬러로 바뀝니다.</p>
+            <p>카드를 눌러 보유 상태를 기록하세요.</p>
           </div>
         </div>
 
@@ -665,7 +663,11 @@ export function CollectionCatalogPage({
                 : `${meta.collectionLabel} 보유 기록은 이 브라우저에 자동 저장됩니다`}
             </strong>
             <small>
-              {CHECKED_AT_FORMATTER.format(new Date(payload.checkedAt))} 기준 · {payload.sourceNote}
+              {storageError
+                ? "브라우저 저장 공간 권한을 확인해 주세요."
+                : `${meta.sourceLabel} 기준 · ${CHECKED_AT_FORMATTER.format(
+                    new Date(payload.checkedAt),
+                  )} 확인`}
             </small>
           </span>
         </div>

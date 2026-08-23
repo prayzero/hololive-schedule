@@ -319,6 +319,25 @@ img {
   gap: 1px;
 }
 
+.brand-name-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.brand-name-row em {
+  padding: 3px 6px;
+  border: 1px solid #f0b9c6;
+  border-radius: 999px;
+  color: #a7415b;
+  background: #fff1f4;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
 .brand strong {
   letter-spacing: -0.035em;
   font-size: 16px;
@@ -674,26 +693,6 @@ img {
   font-size: 11px;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.hero-trust-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-top: 21px;
-  color: #76859b;
-  font-size: 11px;
-  font-weight: 700;
-}
-
-.hero-trust-row span {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.hero-trust-row svg {
-  color: var(--hero-primary);
 }
 
 .hero-dashboard {
@@ -2452,7 +2451,7 @@ footer {
   grid-column: 1 / -1;
   margin: 0;
   color: #98a3b3;
-  font-size: 9px;
+  font-size: 11px;
   line-height: 1.6;
 }
 
@@ -2684,10 +2683,6 @@ select:focus-visible {
 
   .search-wrap kbd {
     display: none;
-  }
-
-  .hero-trust-row {
-    gap: 9px 13px;
   }
 
   .hero-dashboard {

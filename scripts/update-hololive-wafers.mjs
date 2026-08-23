@@ -12,7 +12,6 @@ const outputPath = path.join(
 );
 
 const checkedAt = new Date().toISOString();
-const cutoffDate = "2026-08-20";
 const series = "bandai-hololive-wafer";
 const officialProductIndexUrl =
   "https://www.bandai.co.jp/candy/characters/character462/index.html";
@@ -439,6 +438,31 @@ const releaseDefinitions = [
       memberSheet("https://www.bandai.co.jp/candy/published/bnc_files/product/BwE/000000466455yBGDgZDea4Y9l6EwdiUyGrClnNR9U4FtABwE.jpg", ["koganei-niko", "mizumiya-suu", "rindo-chihaya", "kikirara-vivi"], "four"),
     ],
   },
+  {
+    id: "hololive-production-wafer-vol6-2026",
+    name: "ホロライブプロダクション ウエハースvol.6",
+    shortName: "웨하스 vol.6",
+    releaseDate: "2026-08-31",
+    sourceUrl:
+      "https://www.bandai.co.jp/candy/products/2026/4570117930829000.html",
+    productImageUrl:
+      "https://www.bandai.co.jp/candy/published/bnc_files/product/Ivg/000000485690N1h3QWjX806sgiNrnjVaeFxWmCozH0SyAIvg.jpg",
+    memberIds: [
+      "tokino-sora", "robocosan", "aki-rosenthal", "shirakami-fubuki", "natsuiro-matsuri", "nakiri-ayame",
+      "yuzuki-choco", "oozora-subaru", "azki", "ookami-mio", "sakura-miko", "nekomata-okayu",
+      "inugami-korone", "hoshimachi-suisei", "ayunda-risu", "moona-hoshinova", "airani-iofifteen", "kureiji-ollie",
+      "anya-melfissa", "pavolia-reine", "mori-calliope", "takanashi-kiara", "ninomae-inanis", "irys",
+      "ouro-kronii", "hakos-baelz", "otonose-kanade", "ichijou-ririka", "juufuutei-raden", "todoroki-hajime",
+    ],
+    groupIds: [],
+    sheets: [
+      memberSheet("https://www.bandai.co.jp/candy/published/bnc_files/product/EcO/000000485694QwW07Tu0zbtjzA82AO28i05bElPFabLN2EcO.jpg", ["tokino-sora", "robocosan", "aki-rosenthal", "shirakami-fubuki", "natsuiro-matsuri", "nakiri-ayame"], "six"),
+      memberSheet("https://www.bandai.co.jp/candy/published/bnc_files/product/V2y/000000485698VHj3vnuW3qkNZxkYDlWegfO0QJIavy4j8V2y.jpg", ["yuzuki-choco", "oozora-subaru", "azki", "ookami-mio", "sakura-miko", "nekomata-okayu"], "six"),
+      memberSheet("https://www.bandai.co.jp/candy/published/bnc_files/product/wzH/000000485702MKXHjsBMMcVAnVC5UV3Ilq3DmPxPWmvwZwzH.jpg", ["inugami-korone", "hoshimachi-suisei", "ayunda-risu", "moona-hoshinova", "airani-iofifteen", "kureiji-ollie"], "six"),
+      memberSheet("https://www.bandai.co.jp/candy/published/bnc_files/product/3QJ/000000485706EImeb69ZHBa9vKPwYA3Ky8IB3b6foowj03QJ.jpg", ["anya-melfissa", "pavolia-reine", "mori-calliope", "takanashi-kiara", "ninomae-inanis", "irys"], "six"),
+      memberSheet("https://www.bandai.co.jp/candy/published/bnc_files/product/xcv/000000485710DKIxMpb7UvvMTtUk5fG0022A8Cuhwheuexcv.jpg", ["ouro-kronii", "hakos-baelz", "otonose-kanade", "ichijou-ririka", "juufuutei-raden", "todoroki-hajime"], "six"),
+    ],
+  },
 ];
 
 const expectedCounts = new Map([
@@ -449,6 +473,7 @@ const expectedCounts = new Map([
   ["hololive-production-wafer-vol3-2025", 49],
   ["hololive-production-wafer-vol4-2025", 31],
   ["hololive-production-wafer-vol5-2026", 33],
+  ["hololive-production-wafer-vol6-2026", 30],
 ]);
 
 function getMember(id) {
@@ -586,7 +611,7 @@ const rarities = [
 const payload = {
   checkedAt,
   sourceNote:
-    "2026-08-20까지 일본에서 발매 완료된 반다이 일반 수집형 홀로라이브 웨하스 7종, 총 271장을 공식 제품 페이지와 공식 갤러리 순서로 정리했습니다. hololive OFFICIAL CARD GAME 트윈 웨하스와 2026-08-31 발매 예정 vol.6, 2026-11 발매 예정 vol.7은 제외했습니다. 공식 갤러리는 여러 카드를 한 장의 1200×1200 시트로 제공하므로 멤버 카드와 가로형 금박 그룹 카드 모두 imageSize/imagePosition으로 해당 공식 카드 영역을 잘라 표시합니다.",
+    "반다이 공식 제품 페이지에 공개된 일반 수집형 홀로라이브 웨하스 8종, 301장을 정리했습니다. 2026년 8월 31일 출시 예정 vol.6을 포함하며, 카드게임용 트윈 웨하스와 전체 카드 이미지가 공개되지 않은 vol.7은 제외했습니다.",
   sourceUrls: [
     officialProductIndexUrl,
     ...releases.map(({ sourceUrl }) => sourceUrl),
@@ -596,7 +621,7 @@ const payload = {
   cards,
 };
 
-if (releases.length !== 7 || cards.length !== 271) {
+if (releases.length !== 8 || cards.length !== 301) {
   throw new Error(
     `웨하스 카탈로그 수가 올바르지 않습니다: ${releases.length}종 · ${cards.length}장`,
   );
@@ -611,11 +636,8 @@ for (const release of releases) {
     throw new Error(`웨하스 출시 ID가 중복되었습니다: ${release.id}`);
   }
   releaseIds.add(release.id);
-  if (
-    !/^\d{4}-\d{2}-\d{2}$/.test(release.releaseDate) ||
-    release.releaseDate > cutoffDate
-  ) {
-    throw new Error(`미출시 또는 잘못된 날짜가 포함되었습니다: ${release.id}`);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(release.releaseDate)) {
+    throw new Error(`잘못된 날짜가 포함되었습니다: ${release.id}`);
   }
   const releaseCards = cards.filter(({ releaseIds: ids }) =>
     ids.includes(release.id),

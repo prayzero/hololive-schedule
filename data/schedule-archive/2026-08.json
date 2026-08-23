@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T08:13:24.159Z",
+  "generatedAt": "2026-08-23T08:53:16.782Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -19588,6 +19588,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "6sas-lcpc6Q",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "18:00",
+      "startsAt": "2026-08-23T18:00:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=6sas-lcpc6Q",
+      "videoId": "6sas-lcpc6Q",
+      "thumbnail": "https://img.youtube.com/vi/6sas-lcpc6Q/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "jDs-TIcJvKg",
       "date": "2026-08-23",
       "dateLabel": "08/23 (日)",
@@ -19783,6 +19798,21 @@
       "branch": "JP"
     },
     {
+      "id": "Aw7pk_JCIYQ",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "22:00",
+      "startsAt": "2026-08-23T22:00:00+09:00",
+      "name": "常闇トワ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Aw7pk_JCIYQ",
+      "videoId": "Aw7pk_JCIYQ",
+      "thumbnail": "https://img.youtube.com/vi/Aw7pk_JCIYQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "PtOC2m4AAQg",
       "date": "2026-08-23",
       "dateLabel": "08/23 (日)",
@@ -19873,6 +19903,21 @@
       "branch": "EN"
     },
     {
+      "id": "7Ah1SEEO_Sg",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "07:30",
+      "startsAt": "2026-08-24T07:30:00+09:00",
+      "name": "大神ミオ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=7Ah1SEEO_Sg",
+      "videoId": "7Ah1SEEO_Sg",
+      "thumbnail": "https://img.youtube.com/vi/7Ah1SEEO_Sg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "2MMBGfSm5e8",
       "date": "2026-08-24",
       "dateLabel": "08/24 (月)",
@@ -19901,6 +19946,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
+    },
+    {
+      "id": "az3yZaivVVw",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "19:00",
+      "startsAt": "2026-08-24T19:00:00+09:00",
+      "name": "音乃瀬奏",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=az3yZaivVVw",
+      "videoId": "az3yZaivVVw",
+      "thumbnail": "https://img.youtube.com/vi/az3yZaivVVw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "RJ7p1SLMq0U",

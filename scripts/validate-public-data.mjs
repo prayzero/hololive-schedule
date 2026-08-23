@@ -518,16 +518,18 @@ function validateYouTubeLives(filePath, lives) {
       fail(filePath, `YouTube live has invalid title for ${videoId}`);
     }
     if (
-      typeof live.publishedAt !== "string" ||
-      !Number.isFinite(Date.parse(live.publishedAt)) ||
-      Date.parse(live.publishedAt) > Date.now() + 24 * 60 * 60 * 1_000
+      live.publishedAt !== null &&
+      (typeof live.publishedAt !== "string" ||
+        !Number.isFinite(Date.parse(live.publishedAt)) ||
+        Date.parse(live.publishedAt) > Date.now() + 24 * 60 * 60 * 1_000)
     ) {
       fail(filePath, `YouTube live has invalid publication time for ${videoId}`);
     }
     if (
-      !Number.isSafeInteger(live.durationSeconds) ||
-      live.durationSeconds < 20 * 60 ||
-      live.durationSeconds > 7 * 24 * 60 * 60
+      live.durationSeconds !== null &&
+      (!Number.isSafeInteger(live.durationSeconds) ||
+        live.durationSeconds < 20 * 60 ||
+        live.durationSeconds > 7 * 24 * 60 * 60)
     ) {
       fail(filePath, `YouTube live has invalid duration for ${videoId}`);
     }

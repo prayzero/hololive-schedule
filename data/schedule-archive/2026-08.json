@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T16:47:17.941Z",
+  "generatedAt": "2026-08-23T17:09:23.740Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20243,6 +20243,21 @@
       "url": "https://www.youtube.com/watch?v=JJ95MX59oUE",
       "videoId": "JJ95MX59oUE",
       "thumbnail": "https://img.youtube.com/vi/JJ95MX59oUE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "4jZc5Ult-o8",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "22:00",
+      "startsAt": "2026-08-24T22:00:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=4jZc5Ult-o8",
+      "videoId": "4jZc5Ult-o8",
+      "thumbnail": "https://img.youtube.com/vi/4jZc5Ult-o8/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T10:08:58.435Z",
+  "generatedAt": "2026-08-23T10:45:30.279Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -19931,6 +19931,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "X0dysEuXKdQ",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "22:00",
+      "startsAt": "2026-08-23T22:00:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=X0dysEuXKdQ",
+      "videoId": "X0dysEuXKdQ",
+      "thumbnail": "https://img.youtube.com/vi/X0dysEuXKdQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "PtOC2m4AAQg",

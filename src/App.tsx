@@ -58,6 +58,9 @@ import type {
 } from "./types";
 
 const BASE_URL = import.meta.env.BASE_URL;
+const SITE_NAME = "HOLO NOW";
+const SITE_TAGLINE = "홀로라이브 비공식 팬 아카이브";
+const SITE_TITLE = `${SITE_NAME} — ${SITE_TAGLINE}`;
 const DATA_URLS = {
   schedule: `${BASE_URL}data/schedule.json`,
   scheduleIndex: `${BASE_URL}data/schedule-index.json`,
@@ -1322,7 +1325,7 @@ export default function App() {
       );
     }
     historyViewRef.current = view;
-    document.title = `${PAGE_META[view].title} | HOLO NOW 비공식 팬 사이트`;
+    document.title = SITE_TITLE;
   }, [
     concertPeriod,
     dreamPanel,
@@ -2084,7 +2087,7 @@ export default function App() {
           type="button"
           className="brand"
           onClick={openSchedule}
-          aria-label="HOLO NOW 방송 일정 홈"
+          aria-label={`${SITE_NAME} 방송 일정 홈`}
         >
           <span className="brand-mark" aria-hidden="true">
             <span />
@@ -2092,10 +2095,10 @@ export default function App() {
           </span>
           <span>
             <span className="brand-name-row">
-              <strong>HOLO NOW</strong>
-              <em>비공식 팬 사이트</em>
+              <strong>{SITE_NAME}</strong>
+              <em>비공식</em>
             </span>
-            <small>hololive fan archive</small>
+            <small>{SITE_TAGLINE}</small>
           </span>
         </button>
 
@@ -2978,8 +2981,8 @@ export default function App() {
             H
           </span>
           <div>
-            <strong>HOLO NOW</strong>
-            <p>홀로라이브 비공식 팬 아카이브</p>
+            <strong>{SITE_NAME}</strong>
+            <p>{SITE_TAGLINE}</p>
           </div>
         </div>
         <div className="footer-links">
@@ -2997,7 +3000,7 @@ export default function App() {
           </a>
         </div>
         <p className="disclaimer">
-          HOLO NOW는 팬이 만든 비공식 사이트입니다. hololive 및 각 탤런트 관련
+          {SITE_NAME}는 팬이 만든 비공식 사이트입니다. hololive 및 각 탤런트 관련
           권리는 COVER Corp.에 있습니다.
         </p>
       </footer>

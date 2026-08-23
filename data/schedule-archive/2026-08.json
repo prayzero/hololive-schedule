@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T04:06:21.368Z",
+  "generatedAt": "2026-08-23T04:50:55.016Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -19496,6 +19496,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "KFL7ivERy2c",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "17:00",
+      "startsAt": "2026-08-23T17:00:00+09:00",
+      "name": "風真いろは",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=KFL7ivERy2c",
+      "videoId": "KFL7ivERy2c",
+      "thumbnail": "https://img.youtube.com/vi/KFL7ivERy2c/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "-ldHQRLxaAY",
+      "date": "2026-08-23",
+      "dateLabel": "08/23 (日)",
+      "time": "17:00",
+      "startsAt": "2026-08-23T17:00:00+09:00",
+      "name": "風真いろは",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=-ldHQRLxaAY",
+      "videoId": "-ldHQRLxaAY",
+      "thumbnail": "https://img.youtube.com/vi/-ldHQRLxaAY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "MXQ-kP6Mi7I",

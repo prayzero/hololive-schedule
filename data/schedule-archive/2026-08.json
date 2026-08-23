@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T23:32:17.553Z",
+  "generatedAt": "2026-08-23T23:53:38.377Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20288,6 +20288,21 @@
       "url": "https://www.youtube.com/watch?v=DGoK0dLXnD8",
       "videoId": "DGoK0dLXnD8",
       "thumbnail": "https://img.youtube.com/vi/DGoK0dLXnD8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "9rbg76Xn0es",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "21:00",
+      "startsAt": "2026-08-24T21:00:00+09:00",
+      "name": "さくらみこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=9rbg76Xn0es",
+      "videoId": "9rbg76Xn0es",
+      "thumbnail": "https://img.youtube.com/vi/9rbg76Xn0es/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

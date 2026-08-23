@@ -386,8 +386,28 @@ const events = [
   },
 ];
 
+const officialBroadcasts = [
+  {
+    id: "official-minigame-announcement-2026-08-24",
+    title: "도망쳐!? 잡아!? ~신규 미니게임 발표~",
+    nativeTitle: "逃げる!?捕まえる!? ～新ミニゲーム発表～",
+    subtitle: "나키리 아야메 · 타카네 루이 · 이치조 리리카 · 토도로키 하지메 출연",
+    startsAt: "2026-08-24T21:00:00+09:00",
+    endsAt: null,
+    sourceLabel: "hololive Dreams 공식 X 방송 공지",
+    sourceUrl: "https://x.com/hololive_dreams/status/2091495681051812118",
+    watchUrl: "https://www.youtube.com/watch?v=aLVTIC3jzb8",
+    participantTalentIds: [
+      "nakiri-ayame",
+      "takane-lui",
+      "ichijou-ririka",
+      "todoroki-hajime",
+    ],
+  },
+];
+
 const payload = {
-  checkedAt: "2026-08-23T12:00:00+09:00",
+  checkedAt: "2026-08-23T22:45:00+09:00",
   sourceUrl: "https://www.hololive-dreams.com/en",
   officialNewsUrl: "https://hololive.hololivepro.com/en/news/20260723-01-401/",
   sourceNote:
@@ -491,6 +511,7 @@ const payload = {
       "https://www.hololive-dreams.com/news/detail/aku8rsuo9",
   },
   events,
+  officialBroadcasts,
   pickups,
   characters,
 };
@@ -586,6 +607,48 @@ for (const event of events) {
       throw new Error(`${event.id}: 이미지 경로가 public 밖을 가리킵니다.`);
     }
     await access(chapterImagePath);
+  }
+}
+
+const officialBroadcastIds = new Set();
+for (const broadcast of officialBroadcasts) {
+  if (
+    !broadcast.id ||
+    !broadcast.title ||
+    !broadcast.nativeTitle ||
+    !broadcast.startsAt ||
+    !broadcast.sourceUrl ||
+    !broadcast.watchUrl ||
+    !broadcast.participantTalentIds.length
+  ) {
+    throw new Error(`공식 방송 필수 정보가 비어 있습니다: ${broadcast.id}`);
+  }
+  if (officialBroadcastIds.has(broadcast.id)) {
+    throw new Error(`공식 방송 ID가 중복되었습니다: ${broadcast.id}`);
+  }
+  officialBroadcastIds.add(broadcast.id);
+  const broadcastStartsAt = Date.parse(broadcast.startsAt);
+  const broadcastEndsAt = broadcast.endsAt
+    ? Date.parse(broadcast.endsAt)
+    : null;
+  if (
+    !Number.isFinite(broadcastStartsAt) ||
+    (broadcastEndsAt !== null &&
+      (!Number.isFinite(broadcastEndsAt) ||
+        broadcastStartsAt > broadcastEndsAt))
+  ) {
+    throw new Error(`공식 방송 시작·종료 시각이 올바르지 않습니다: ${broadcast.id}`);
+  }
+  for (const talentId of broadcast.participantTalentIds) {
+    if (!dreamTalentIds.has(talentId)) {
+      throw new Error(`${broadcast.id}: 알 수 없는 출연자 ID입니다: ${talentId}`);
+    }
+  }
+  for (const url of [broadcast.sourceUrl, broadcast.watchUrl]) {
+    const parsedUrl = new URL(url);
+    if (parsedUrl.protocol !== "https:") {
+      throw new Error(`${broadcast.id}: HTTPS URL이 아닙니다: ${url}`);
+    }
   }
 }
 

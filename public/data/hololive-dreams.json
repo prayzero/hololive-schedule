@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-23T12:00:00+09:00",
+  "checkedAt": "2026-08-23T22:45:00+09:00",
   "sourceUrl": "https://www.hololive-dreams.com/en",
   "officialNewsUrl": "https://hololive.hololivepro.com/en/news/20260723-01-401/",
   "sourceNote": "공식 웹·X에 공개된 캐릭터, 픽업과 이벤트 일정을 정리했습니다. 제공 비율은 게임 내 화면 기준이며 외부 공식 채널에 없는 종료 시각과 비율은 확인 필요로 표시합니다.",
@@ -151,6 +151,25 @@
           "endsAt": null,
           "imageUrl": "images/dream-pickups/heated-summer-day-2026/ninomae-inanis.jpg"
         }
+      ]
+    }
+  ],
+  "officialBroadcasts": [
+    {
+      "id": "official-minigame-announcement-2026-08-24",
+      "title": "도망쳐!? 잡아!? ~신규 미니게임 발표~",
+      "nativeTitle": "逃げる!?捕まえる!? ～新ミニゲーム発表～",
+      "subtitle": "나키리 아야메 · 타카네 루이 · 이치조 리리카 · 토도로키 하지메 출연",
+      "startsAt": "2026-08-24T21:00:00+09:00",
+      "endsAt": null,
+      "sourceLabel": "hololive Dreams 공식 X 방송 공지",
+      "sourceUrl": "https://x.com/hololive_dreams/status/2091495681051812118",
+      "watchUrl": "https://www.youtube.com/watch?v=aLVTIC3jzb8",
+      "participantTalentIds": [
+        "nakiri-ayame",
+        "takane-lui",
+        "ichijou-ririka",
+        "todoroki-hajime"
       ]
     }
   ],

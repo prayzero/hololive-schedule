@@ -89,6 +89,23 @@ const DREAM_PICKUP_MOMENT_FORMATTER = new Intl.DateTimeFormat("ko-KR", {
   minute: "2-digit",
   hourCycle: "h23",
 });
+const DISMISSED_TOP_NOTICES_STORAGE_KEY =
+  "holo-now:dismissed-top-notices:v1";
+const DEFAULT_BROADCAST_VISIBILITY_MS = 6 * 60 * 60 * 1000;
+
+function readDismissedTopNoticeIds() {
+  try {
+    const parsed = JSON.parse(
+      window.localStorage.getItem(DISMISSED_TOP_NOTICES_STORAGE_KEY) ?? "[]",
+    );
+    if (!Array.isArray(parsed)) return new Set<string>();
+    return new Set(
+      parsed.filter((value): value is string => typeof value === "string"),
+    );
+  } catch {
+    return new Set<string>();
+  }
+}
 
 type PageView =
   | "schedule"
@@ -136,6 +153,91 @@ type ConcertItem =
 interface IconTextProps {
   icon: ComponentType<{ size?: number; strokeWidth?: number }>;
   children: ReactNode;
+}
+
+interface DreamTopNoticeProps {
+  tone: "event" | "broadcast";
+  eyebrow: string;
+  title: string;
+  timeLabel: string;
+  timeValue: string;
+  href: string;
+  cta: string;
+  icon: ReactNode;
+  dismissLabel: string;
+  onDismiss: () => void;
+  onNavigate?: () => void;
+  external?: boolean;
+}
+
+function DreamTopNotice({
+  tone,
+  eyebrow,
+  title,
+  timeLabel,
+  timeValue,
+  href,
+  cta,
+  icon,
+  dismissLabel,
+  onDismiss,
+  onNavigate,
+  external = false,
+}: DreamTopNoticeProps) {
+  return (
+    <section
+      className={`dream-broadcast-banner dream-broadcast-banner--${tone}`}
+    >
+      <a
+        className="dream-broadcast-banner__link"
+        href={href}
+        target={external ? "_blank" : undefined}
+        rel={external ? "noreferrer" : undefined}
+        onClick={
+          onNavigate
+            ? (event) => {
+                event.preventDefault();
+                onNavigate();
+              }
+            : undefined
+        }
+      >
+        <span className="dream-broadcast-banner__inner">
+          <span className="dream-broadcast-banner__icon" aria-hidden="true">
+            {icon}
+          </span>
+          <span className="dream-broadcast-banner__copy">
+            <span className="dream-broadcast-banner__eyebrow">
+              <span className="dream-broadcast-banner__live-dot" />
+              {eyebrow}
+            </span>
+            <strong>{title}</strong>
+          </span>
+          <span className="dream-broadcast-banner__time">
+            <span>{timeLabel}</span>
+            <strong>{timeValue}</strong>
+            <small>KST · JST</small>
+          </span>
+          <span className="dream-broadcast-banner__cta">
+            {cta}
+            {external ? (
+              <ArrowUpRight size={17} aria-hidden="true" />
+            ) : (
+              <ArrowRight size={17} aria-hidden="true" />
+            )}
+          </span>
+        </span>
+      </a>
+      <button
+        type="button"
+        className="dream-broadcast-banner__dismiss"
+        onClick={onDismiss}
+        aria-label={dismissLabel}
+      >
+        <X size={16} strokeWidth={2.3} aria-hidden="true" />
+      </button>
+    </section>
+  );
 }
 
 const PAGE_META: Record<
@@ -940,6 +1042,9 @@ export default function App() {
   const dateInputRef = useRef<HTMLInputElement>(null);
   const activeDateButtonRef = useRef<HTMLButtonElement>(null);
   const [now, setNow] = useState(() => new Date());
+  const [dismissedTopNoticeIds, setDismissedTopNoticeIds] = useState(
+    readDismissedTopNoticeIds,
+  );
   const [view, setView] = useState<PageView>(initialView);
   const [query, setQuery] = useState(() => paramValue("q") ?? "");
   const [selectedDate, setSelectedDate] = useState(
@@ -1962,6 +2067,33 @@ export default function App() {
     }, 0);
   }
 
+  function openDreamEvent() {
+    setView("dream");
+    setDreamPanel("event");
+    setQuery("");
+    window.setTimeout(() => {
+      document
+        .getElementById("hololive-dream")
+        ?.scrollIntoView({ behavior: "smooth", block: "start" });
+    }, 0);
+  }
+
+  function dismissTopNotice(noticeId: string) {
+    setDismissedTopNoticeIds((current) => {
+      const next = new Set(current);
+      next.add(noticeId);
+      try {
+        window.localStorage.setItem(
+          DISMISSED_TOP_NOTICES_STORAGE_KEY,
+          JSON.stringify([...next]),
+        );
+      } catch {
+        // The notice still closes for this session when storage is unavailable.
+      }
+      return next;
+    });
+  }
+
   function openMusicArchive() {
     document
       .getElementById("hololive-music")
@@ -2006,6 +2138,89 @@ export default function App() {
     };
   }, [data?.hololiveDreams.pickups, now]);
 
+  const dreamEventHighlight = useMemo(() => {
+    const entries = (data?.hololiveDreams.events ?? [])
+      .flatMap((event) =>
+        event.chapters.map((chapter, chapterIndex) => {
+          const startsAt = Date.parse(chapter.startsAt);
+          const nextChapter = event.chapters[chapterIndex + 1];
+          const nextStartsAt = nextChapter
+            ? Date.parse(nextChapter.startsAt)
+            : null;
+          const endsAt = chapter.endsAt
+            ? Date.parse(chapter.endsAt)
+            : nextStartsAt !== null
+              ? nextStartsAt - 1
+              : event.endsAt
+                ? Date.parse(event.endsAt)
+                : null;
+          return { event, chapter, startsAt, endsAt, nextStartsAt };
+        }),
+      )
+      .filter(({ startsAt, endsAt }) =>
+        Number.isFinite(startsAt) &&
+        (endsAt === null || Number.isFinite(endsAt)),
+      )
+      .sort((left, right) => left.startsAt - right.startsAt);
+    const nowTime = now.getTime();
+    const active = entries.filter(
+      ({ startsAt, endsAt }) =>
+        startsAt <= nowTime && (endsAt === null || nowTime <= endsAt),
+    );
+    const upcoming = entries.filter(({ startsAt }) => startsAt > nowTime);
+    const banner = active[0] ?? upcoming[0] ?? null;
+    return {
+      banner,
+      isActive: Boolean(banner && banner.startsAt <= nowTime),
+    };
+  }, [data?.hololiveDreams.events, now]);
+
+  const dreamBroadcastHighlight = useMemo(() => {
+    const nowTime = now.getTime();
+    const entries = (data?.hololiveDreams.officialBroadcasts ?? [])
+      .map((broadcast) => {
+        const startsAt = Date.parse(broadcast.startsAt);
+        const visibilityEndsAt = broadcast.endsAt
+          ? Date.parse(broadcast.endsAt)
+          : startsAt + DEFAULT_BROADCAST_VISIBILITY_MS;
+        return { broadcast, startsAt, visibilityEndsAt };
+      })
+      .filter(
+        ({ startsAt, visibilityEndsAt }) =>
+          Number.isFinite(startsAt) &&
+          Number.isFinite(visibilityEndsAt) &&
+          nowTime <= visibilityEndsAt,
+      )
+      .sort((left, right) => left.startsAt - right.startsAt);
+    const banner =
+      entries.find(({ startsAt }) => startsAt <= nowTime) ??
+      entries.find(({ startsAt }) => startsAt > nowTime) ??
+      null;
+    return {
+      banner,
+      isLive: Boolean(banner && banner.startsAt <= nowTime),
+    };
+  }, [data?.hololiveDreams.officialBroadcasts, now]);
+
+  const dreamEventNoticeId = dreamEventHighlight.banner
+    ? `dream-event:${dreamEventHighlight.banner.event.id}:${dreamEventHighlight.banner.chapter.talentId}:${dreamEventHighlight.banner.chapter.startsAt}`
+    : null;
+  const dreamBroadcastNoticeId = dreamBroadcastHighlight.banner
+    ? `dream-broadcast:${dreamBroadcastHighlight.banner.broadcast.id}`
+    : null;
+  const visibleDreamEventNotice =
+    dreamEventHighlight.banner &&
+    dreamEventNoticeId &&
+    !dismissedTopNoticeIds.has(dreamEventNoticeId)
+      ? dreamEventHighlight.banner
+      : null;
+  const visibleDreamBroadcastNotice =
+    dreamBroadcastHighlight.banner &&
+    dreamBroadcastNoticeId &&
+    !dismissedTopNoticeIds.has(dreamBroadcastNoticeId)
+      ? dreamBroadcastHighlight.banner
+      : null;
+
   const currentMeta = PAGE_META[view];
   const headerOfficialUrl =
     view === "dream"
@@ -2034,52 +2249,67 @@ export default function App() {
         본문으로 바로가기
       </a>
 
-      {dreamPickupHighlight.banner ? (
-        <a
-          className="dream-broadcast-banner"
-          href="?view=dream&dream=pickup"
-          onClick={(event) => {
-            event.preventDefault();
-            openDreamPickup();
-          }}
-          aria-label={`${dreamPickupHighlight.banner.pickup.title} 픽업 일정과 확률 보기`}
-        >
-          <span className="dream-broadcast-banner__inner">
-            <span className="dream-broadcast-banner__icon" aria-hidden="true">
-              <CalendarDays size={19} strokeWidth={2.2} />
-            </span>
-            <span className="dream-broadcast-banner__copy">
-              <span className="dream-broadcast-banner__eyebrow">
-                <span className="dream-broadcast-banner__live-dot" />
-                CURRENT PICKUP
-                {dreamPickupHighlight.activeCount > 1
-                  ? ` · ${dreamPickupHighlight.activeCount}종 동시 진행`
-                  : ""}
-              </span>
-              <strong>{dreamPickupHighlight.banner.pickup.title}</strong>
-            </span>
-            <span className="dream-broadcast-banner__time">
-              <span>
-                {DREAM_PICKUP_MOMENT_FORMATTER.format(
-                  new Date(dreamPickupHighlight.banner.startsAt),
-                )}{" "}
-                시작
-              </span>
-              <strong>
-                {dreamPickupHighlight.banner.endsAt
-                  ? DREAM_PICKUP_MOMENT_FORMATTER.format(
-                      new Date(dreamPickupHighlight.banner.endsAt),
-                    )
-                  : "종료 일정 확인 중"}
-              </strong>
-              <small>KST · JST</small>
-            </span>
-            <span className="dream-broadcast-banner__cta">
-              일정·확률 보기
-              <ArrowRight size={17} aria-hidden="true" />
-            </span>
-          </span>
-        </a>
+      {visibleDreamEventNotice || visibleDreamBroadcastNotice ? (
+        <div className="dream-broadcast-banners">
+          {visibleDreamEventNotice && dreamEventNoticeId ? (
+            <DreamTopNotice
+              tone="event"
+              eyebrow={`${
+                dreamEventHighlight.isActive ? "CURRENT EVENT" : "NEXT EVENT"
+              } · ${
+                talentById.get(visibleDreamEventNotice.chapter.talentId)
+                  ?.nameKo ?? visibleDreamEventNotice.chapter.talentId
+              }`}
+              title={`${visibleDreamEventNotice.event.title} · ${visibleDreamEventNotice.chapter.songTitle}`}
+              timeLabel={`${DREAM_PICKUP_MOMENT_FORMATTER.format(
+                new Date(visibleDreamEventNotice.startsAt),
+              )} 시작`}
+              timeValue={
+                visibleDreamEventNotice.nextStartsAt
+                  ? `${DREAM_PICKUP_MOMENT_FORMATTER.format(
+                      new Date(visibleDreamEventNotice.nextStartsAt),
+                    )} 전환`
+                  : visibleDreamEventNotice.endsAt
+                  ? `${DREAM_PICKUP_MOMENT_FORMATTER.format(
+                      new Date(visibleDreamEventNotice.endsAt),
+                    )}까지`
+                  : "종료 일정 확인 중"
+              }
+              href="?view=dream&dream=event"
+              cta="이벤트 보기"
+              icon={<CalendarDays size={19} strokeWidth={2.2} />}
+              dismissLabel={`${visibleDreamEventNotice.event.title} 이벤트 배너 닫기`}
+              onDismiss={() => dismissTopNotice(dreamEventNoticeId)}
+              onNavigate={openDreamEvent}
+            />
+          ) : null}
+
+          {visibleDreamBroadcastNotice && dreamBroadcastNoticeId ? (
+            <DreamTopNotice
+              tone="broadcast"
+              eyebrow={`${
+                dreamBroadcastHighlight.isLive
+                  ? "LIVE NOW"
+                  : "OFFICIAL STREAM"
+              } · ${visibleDreamBroadcastNotice.broadcast.participantTalentIds.length}명 출연`}
+              title={visibleDreamBroadcastNotice.broadcast.title}
+              timeLabel={
+                dreamBroadcastHighlight.isLive
+                  ? "공식 방송 진행 중"
+                  : "공식 방송 일정 확정"
+              }
+              timeValue={DREAM_PICKUP_MOMENT_FORMATTER.format(
+                new Date(visibleDreamBroadcastNotice.startsAt),
+              )}
+              href={visibleDreamBroadcastNotice.broadcast.watchUrl}
+              cta={dreamBroadcastHighlight.isLive ? "방송 보기" : "대기방 열기"}
+              icon={<Radio size={19} strokeWidth={2.2} />}
+              dismissLabel={`${visibleDreamBroadcastNotice.broadcast.title} 공식 방송 배너 닫기`}
+              onDismiss={() => dismissTopNotice(dreamBroadcastNoticeId)}
+              external
+            />
+          ) : null}
+        </div>
       ) : null}
 
       <header className="site-header">

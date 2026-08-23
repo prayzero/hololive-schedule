@@ -351,6 +351,19 @@ export interface DreamEvent {
   chapters: DreamEventChapter[];
 }
 
+export interface DreamOfficialBroadcast {
+  id: string;
+  title: string;
+  nativeTitle: string;
+  subtitle: string;
+  startsAt: string;
+  endsAt: string | null;
+  sourceLabel: string;
+  sourceUrl: string;
+  watchUrl: string;
+  participantTalentIds: string[];
+}
+
 export interface HololiveDreamsPayload {
   checkedAt: string;
   sourceUrl: string;
@@ -362,6 +375,7 @@ export interface HololiveDreamsPayload {
   ratesPublishedOnOfficialWeb: boolean;
   gachaRates: DreamGachaRates;
   events: DreamEvent[];
+  officialBroadcasts: DreamOfficialBroadcast[];
   pickups: DreamPickup[];
   characters: DreamCharacter[];
 }

@@ -94,6 +94,13 @@ img {
   overflow: hidden;
 }
 
+.dream-broadcast-banners {
+  position: relative;
+  z-index: 101;
+  display: grid;
+  box-shadow: 0 10px 30px rgba(66, 55, 146, 0.2);
+}
+
 .dream-broadcast-banner {
   position: relative;
   display: block;
@@ -102,8 +109,22 @@ img {
   background:
     radial-gradient(circle at 14% -90%, rgba(255, 255, 255, 0.52), transparent 36%),
     linear-gradient(112deg, #43368f 0%, #705bd0 46%, #269fc3 100%);
+}
+
+.dream-broadcast-banner + .dream-broadcast-banner {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dream-broadcast-banner--broadcast {
+  background:
+    radial-gradient(circle at 83% -80%, rgba(255, 255, 255, 0.46), transparent 34%),
+    linear-gradient(112deg, #8d315f 0%, #cb4d78 46%, #e58856 100%);
+}
+
+.dream-broadcast-banner__link {
+  display: block;
+  color: inherit;
   text-decoration: none;
-  box-shadow: 0 10px 30px rgba(66, 55, 146, 0.2);
 }
 
 .dream-broadcast-banner::before,
@@ -140,7 +161,8 @@ img {
   min-height: 68px;
   gap: 15px;
   margin: 0 auto;
-  padding: 8px 0;
+  padding: 8px 48px 8px 0;
+  box-sizing: border-box;
 }
 
 .dream-broadcast-banner__icon {
@@ -236,12 +258,12 @@ img {
     transform 160ms ease;
 }
 
-.dream-broadcast-banner:hover .dream-broadcast-banner__cta {
+.dream-broadcast-banner__link:hover .dream-broadcast-banner__cta {
   background: rgba(255, 255, 255, 0.22);
   transform: translateY(-1px);
 }
 
-.dream-broadcast-banner:hover .dream-broadcast-banner__cta svg {
+.dream-broadcast-banner__link:hover .dream-broadcast-banner__cta svg {
   transform: translate(2px, -2px);
 }
 
@@ -249,9 +271,39 @@ img {
   transition: transform 160ms ease;
 }
 
-.dream-broadcast-banner:focus-visible {
+.dream-broadcast-banner__link:focus-visible {
   outline-color: rgba(255, 255, 255, 0.92);
   outline-offset: -4px;
+}
+
+.dream-broadcast-banner__dismiss {
+  position: absolute;
+  z-index: 2;
+  top: 8px;
+  right: max(10px, calc((100vw - 1240px) / 2));
+  display: grid;
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: 11px;
+  color: #fff;
+  background: rgba(18, 21, 55, 0.2);
+  cursor: pointer;
+  transition:
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.dream-broadcast-banner__dismiss:hover {
+  background: rgba(18, 21, 55, 0.38);
+  transform: translateY(-1px);
+}
+
+.dream-broadcast-banner__dismiss:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
 }
 
 @keyframes dream-broadcast-pulse {
@@ -2604,6 +2656,14 @@ select:focus-visible {
     width: calc(100% - 24px);
     min-height: 64px;
     gap: 10px;
+    padding-right: 40px;
+  }
+
+  .dream-broadcast-banner__dismiss {
+    top: 6px;
+    right: 8px;
+    width: 32px;
+    height: 32px;
   }
 
   .dream-broadcast-banner__icon {

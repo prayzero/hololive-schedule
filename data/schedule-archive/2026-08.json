@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T14:44:50.530Z",
+  "generatedAt": "2026-08-23T15:08:47.682Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20243,6 +20243,51 @@
       "url": "https://www.youtube.com/watch?v=sYtKzxBXxIY",
       "videoId": "sYtKzxBXxIY",
       "thumbnail": "https://img.youtube.com/vi/sYtKzxBXxIY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "waPjpIg29J4",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "11:00",
+      "startsAt": "2026-08-25T11:00:00+09:00",
+      "name": "Kronii",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=waPjpIg29J4",
+      "videoId": "waPjpIg29J4",
+      "thumbnail": "https://img.youtube.com/vi/waPjpIg29J4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "q-YT1xx-Tbc",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "12:00",
+      "startsAt": "2026-08-25T12:00:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=q-YT1xx-Tbc",
+      "videoId": "q-YT1xx-Tbc",
+      "thumbnail": "https://img.youtube.com/vi/q-YT1xx-Tbc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "5_I_H3YUQ0E",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "21:00",
+      "startsAt": "2026-08-25T21:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=5_I_H3YUQ0E",
+      "videoId": "5_I_H3YUQ0E",
+      "thumbnail": "https://img.youtube.com/vi/5_I_H3YUQ0E/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

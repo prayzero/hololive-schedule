@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T18:52:40.486Z",
+  "generatedAt": "2026-08-23T19:31:02.248Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20041,8 +20041,8 @@
       "id": "3aL5prb1erI",
       "date": "2026-08-24",
       "dateLabel": "08/24 (月)",
-      "time": "04:00",
-      "startsAt": "2026-08-24T04:00:00+09:00",
+      "time": "03:58",
+      "startsAt": "2026-08-24T03:58:00+09:00",
       "name": "Elizabeth",
       "title": null,
       "url": "https://www.youtube.com/watch?v=3aL5prb1erI",
@@ -20188,6 +20188,21 @@
       "branch": "JP"
     },
     {
+      "id": "ROGeS8khPw8",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "19:00",
+      "startsAt": "2026-08-24T19:00:00+09:00",
+      "name": "星街すいせい",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ROGeS8khPw8",
+      "videoId": "ROGeS8khPw8",
+      "thumbnail": "https://img.youtube.com/vi/ROGeS8khPw8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "az3yZaivVVw",
       "date": "2026-08-24",
       "dateLabel": "08/24 (月)",
@@ -20308,6 +20323,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "jpaMDNZAlNU",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "23:00",
+      "startsAt": "2026-08-24T23:00:00+09:00",
+      "name": "Raora",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jpaMDNZAlNU",
+      "videoId": "jpaMDNZAlNU",
+      "thumbnail": "https://img.youtube.com/vi/jpaMDNZAlNU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "sYtKzxBXxIY",
       "date": "2026-08-24",
       "dateLabel": "08/24 (月)",
@@ -20396,6 +20426,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "U5CrO2VC9Bs",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "22:30",
+      "startsAt": "2026-08-25T22:30:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=U5CrO2VC9Bs",
+      "videoId": "U5CrO2VC9Bs",
+      "thumbnail": "https://img.youtube.com/vi/U5CrO2VC9Bs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     }
   ]
 }

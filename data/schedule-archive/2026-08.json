@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T23:53:38.377Z",
+  "generatedAt": "2026-08-24T01:54:50.970Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20131,8 +20131,8 @@
       "id": "2MMBGfSm5e8",
       "date": "2026-08-24",
       "dateLabel": "08/24 (月)",
-      "time": "09:00",
-      "startsAt": "2026-08-24T09:00:00+09:00",
+      "time": "09:01",
+      "startsAt": "2026-08-24T09:01:00+09:00",
       "name": "Calli",
       "title": null,
       "url": "https://www.youtube.com/watch?v=2MMBGfSm5e8",
@@ -20146,8 +20146,8 @@
       "id": "Jhq5b1obtfo",
       "date": "2026-08-24",
       "dateLabel": "08/24 (月)",
-      "time": "10:00",
-      "startsAt": "2026-08-24T10:00:00+09:00",
+      "time": "10:03",
+      "startsAt": "2026-08-24T10:03:00+09:00",
       "name": "Baelz",
       "title": null,
       "url": "https://www.youtube.com/watch?v=Jhq5b1obtfo",
@@ -20156,6 +20156,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "jGrhldHYKvk",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "10:42",
+      "startsAt": "2026-08-24T10:42:00+09:00",
+      "name": "常闇トワ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jGrhldHYKvk",
+      "videoId": "jGrhldHYKvk",
+      "thumbnail": "https://img.youtube.com/vi/jGrhldHYKvk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "GiPVZJvaZ3A",
@@ -20171,6 +20186,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
+    },
+    {
+      "id": "v1seipCdpms",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "12:00",
+      "startsAt": "2026-08-24T12:00:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=v1seipCdpms",
+      "videoId": "v1seipCdpms",
+      "thumbnail": "https://img.youtube.com/vi/v1seipCdpms/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "ey3d05sFcOU",
@@ -20263,6 +20293,21 @@
       "branch": "JP"
     },
     {
+      "id": "kRRPpDMmQ4E",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "20:00",
+      "startsAt": "2026-08-24T20:00:00+09:00",
+      "name": "常闇トワ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=kRRPpDMmQ4E",
+      "videoId": "kRRPpDMmQ4E",
+      "thumbnail": "https://img.youtube.com/vi/kRRPpDMmQ4E/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "O9LTxpLQ6bo",
       "date": "2026-08-24",
       "dateLabel": "08/24 (月)",
@@ -20288,6 +20333,21 @@
       "url": "https://www.youtube.com/watch?v=DGoK0dLXnD8",
       "videoId": "DGoK0dLXnD8",
       "thumbnail": "https://img.youtube.com/vi/DGoK0dLXnD8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "shTjdf6aE5g",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "21:00",
+      "startsAt": "2026-08-24T21:00:00+09:00",
+      "name": "夏色まつり",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=shTjdf6aE5g",
+      "videoId": "shTjdf6aE5g",
+      "thumbnail": "https://img.youtube.com/vi/shTjdf6aE5g/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

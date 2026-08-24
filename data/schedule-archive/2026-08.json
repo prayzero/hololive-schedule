@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T14:22:36.787Z",
+  "generatedAt": "2026-08-24T15:20:15.625Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20746,8 +20746,8 @@
       "id": "sYtKzxBXxIY",
       "date": "2026-08-24",
       "dateLabel": "08/24 (月)",
-      "time": "23:40",
-      "startsAt": "2026-08-24T23:40:00+09:00",
+      "time": "23:46",
+      "startsAt": "2026-08-24T23:46:00+09:00",
       "name": "アキロゼ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=sYtKzxBXxIY",
@@ -20891,6 +20891,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "3vfP22zB_BI",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "20:00",
+      "startsAt": "2026-08-25T20:00:00+09:00",
+      "name": "轟はじめ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=3vfP22zB_BI",
+      "videoId": "3vfP22zB_BI",
+      "thumbnail": "https://img.youtube.com/vi/3vfP22zB_BI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "5_I_H3YUQ0E",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T03:13:21.663Z",
+  "generatedAt": "2026-08-24T07:16:21.383Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20423,6 +20423,21 @@
       "url": "https://www.youtube.com/watch?v=WdlrRJzQgGk",
       "videoId": "WdlrRJzQgGk",
       "thumbnail": "https://img.youtube.com/vi/WdlrRJzQgGk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "UyMyiQAug3k",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "22:00",
+      "startsAt": "2026-08-24T22:00:00+09:00",
+      "name": "AZKi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=UyMyiQAug3k",
+      "videoId": "UyMyiQAug3k",
+      "thumbnail": "https://img.youtube.com/vi/UyMyiQAug3k/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

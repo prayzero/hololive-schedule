@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T10:58:01.940Z",
+  "generatedAt": "2026-08-24T11:39:25.340Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20488,21 +20488,6 @@
       "branch": "JP"
     },
     {
-      "id": "FgW-pOBmzFE",
-      "date": "2026-08-24",
-      "dateLabel": "08/24 (月)",
-      "time": "20:00",
-      "startsAt": "2026-08-24T20:00:00+09:00",
-      "name": "獅白ぼたん",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=FgW-pOBmzFE",
-      "videoId": "FgW-pOBmzFE",
-      "thumbnail": "https://img.youtube.com/vi/FgW-pOBmzFE/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "kRRPpDMmQ4E",
       "date": "2026-08-24",
       "dateLabel": "08/24 (月)",
@@ -20533,11 +20518,41 @@
       "branch": "JP"
     },
     {
+      "id": "FgW-pOBmzFE",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "20:01",
+      "startsAt": "2026-08-24T20:01:00+09:00",
+      "name": "獅白ぼたん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=FgW-pOBmzFE",
+      "videoId": "FgW-pOBmzFE",
+      "thumbnail": "https://img.youtube.com/vi/FgW-pOBmzFE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "n6EDv3OpYl4",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "20:01",
+      "startsAt": "2026-08-24T20:01:00+09:00",
+      "name": "一条莉々華",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=n6EDv3OpYl4",
+      "videoId": "n6EDv3OpYl4",
+      "thumbnail": "https://img.youtube.com/vi/n6EDv3OpYl4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "O9LTxpLQ6bo",
       "date": "2026-08-24",
       "dateLabel": "08/24 (月)",
-      "time": "20:00",
-      "startsAt": "2026-08-24T20:00:00+09:00",
+      "time": "20:01",
+      "startsAt": "2026-08-24T20:01:00+09:00",
       "name": "響咲リオナ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=O9LTxpLQ6bo",
@@ -20546,6 +20561,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "w6EcOtIolF4",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "20:24",
+      "startsAt": "2026-08-24T20:24:00+09:00",
+      "name": "Iofi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=w6EcOtIolF4",
+      "videoId": "w6EcOtIolF4",
+      "thumbnail": "https://img.youtube.com/vi/w6EcOtIolF4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "d-lQx9H5dsY",
@@ -20711,6 +20741,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "FMk_7aEJDso",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "06:00",
+      "startsAt": "2026-08-25T06:00:00+09:00",
+      "name": "Gigi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=FMk_7aEJDso",
+      "videoId": "FMk_7aEJDso",
+      "thumbnail": "https://img.youtube.com/vi/FMk_7aEJDso/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "q7I1pjvZ0nw",

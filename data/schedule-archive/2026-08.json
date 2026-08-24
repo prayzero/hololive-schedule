@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T10:08:08.873Z",
+  "generatedAt": "2026-08-24T10:58:01.940Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20413,21 +20413,6 @@
       "branch": "JP"
     },
     {
-      "id": "ROGeS8khPw8",
-      "date": "2026-08-24",
-      "dateLabel": "08/24 (月)",
-      "time": "19:00",
-      "startsAt": "2026-08-24T19:00:00+09:00",
-      "name": "星街すいせい",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=ROGeS8khPw8",
-      "videoId": "ROGeS8khPw8",
-      "thumbnail": "https://img.youtube.com/vi/ROGeS8khPw8/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "az3yZaivVVw",
       "date": "2026-08-24",
       "dateLabel": "08/24 (月)",
@@ -20453,6 +20438,36 @@
       "url": "https://www.youtube.com/watch?v=3EckYFvxB44",
       "videoId": "3EckYFvxB44",
       "thumbnail": "https://img.youtube.com/vi/3EckYFvxB44/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "ROGeS8khPw8",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "19:02",
+      "startsAt": "2026-08-24T19:02:00+09:00",
+      "name": "星街すいせい",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ROGeS8khPw8",
+      "videoId": "ROGeS8khPw8",
+      "thumbnail": "https://img.youtube.com/vi/ROGeS8khPw8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "ak-NcHyxDL4",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "19:04",
+      "startsAt": "2026-08-24T19:04:00+09:00",
+      "name": "癒月ちょこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ak-NcHyxDL4",
+      "videoId": "ak-NcHyxDL4",
+      "thumbnail": "https://img.youtube.com/vi/ak-NcHyxDL4/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

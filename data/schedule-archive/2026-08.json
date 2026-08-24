@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T08:08:45.506Z",
+  "generatedAt": "2026-08-24T09:09:01.662Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20293,6 +20293,81 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "l5xHsaSwe4M",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "17:07",
+      "startsAt": "2026-08-24T17:07:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=l5xHsaSwe4M",
+      "videoId": "l5xHsaSwe4M",
+      "thumbnail": "https://img.youtube.com/vi/l5xHsaSwe4M/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "MEgT1LIljT4",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "18:00",
+      "startsAt": "2026-08-24T18:00:00+09:00",
+      "name": "Anya",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=MEgT1LIljT4",
+      "videoId": "MEgT1LIljT4",
+      "thumbnail": "https://img.youtube.com/vi/MEgT1LIljT4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "HipKpgU5brw",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "18:00",
+      "startsAt": "2026-08-24T18:00:00+09:00",
+      "name": "FLOW GLOW",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=HipKpgU5brw",
+      "videoId": "HipKpgU5brw",
+      "thumbnail": "https://img.youtube.com/vi/HipKpgU5brw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "gWfRHoas-7k",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "18:00",
+      "startsAt": "2026-08-24T18:00:00+09:00",
+      "name": "ReGLOSS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=gWfRHoas-7k",
+      "videoId": "gWfRHoas-7k",
+      "thumbnail": "https://img.youtube.com/vi/gWfRHoas-7k/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "YTtuhL8jgQ8",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "18:00",
+      "startsAt": "2026-08-24T18:00:00+09:00",
+      "name": "Reine",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=YTtuhL8jgQ8",
+      "videoId": "YTtuhL8jgQ8",
+      "thumbnail": "https://img.youtube.com/vi/YTtuhL8jgQ8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "ey3d05sFcOU",
       "date": "2026-08-24",
       "dateLabel": "08/24 (月)",
@@ -20443,6 +20518,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "d-lQx9H5dsY",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "21:00",
+      "startsAt": "2026-08-24T21:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=d-lQx9H5dsY",
+      "videoId": "d-lQx9H5dsY",
+      "thumbnail": "https://img.youtube.com/vi/d-lQx9H5dsY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "DGoK0dLXnD8",
       "date": "2026-08-24",
       "dateLabel": "08/24 (月)",
@@ -20501,6 +20591,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "SwqyIG9MHL8",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "22:00",
+      "startsAt": "2026-08-24T22:00:00+09:00",
+      "name": "風真いろは",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=SwqyIG9MHL8",
+      "videoId": "SwqyIG9MHL8",
+      "thumbnail": "https://img.youtube.com/vi/SwqyIG9MHL8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "WdlrRJzQgGk",
@@ -20591,6 +20696,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "oowtfaiSqb4",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "08:00",
+      "startsAt": "2026-08-25T08:00:00+09:00",
+      "name": "ReGLOSS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=oowtfaiSqb4",
+      "videoId": "oowtfaiSqb4",
+      "thumbnail": "https://img.youtube.com/vi/oowtfaiSqb4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "waPjpIg29J4",

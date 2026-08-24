@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T20:53:49.599Z",
+  "generatedAt": "2026-08-24T21:39:52.880Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20773,16 +20773,46 @@
       "branch": "JP"
     },
     {
-      "id": "FMk_7aEJDso",
+      "id": "ivGiM8BD0z8",
       "date": "2026-08-25",
       "dateLabel": "08/25 (火)",
       "time": "06:00",
       "startsAt": "2026-08-25T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ivGiM8BD0z8",
+      "videoId": "ivGiM8BD0z8",
+      "thumbnail": "https://img.youtube.com/vi/ivGiM8BD0z8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "FMk_7aEJDso",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "06:03",
+      "startsAt": "2026-08-25T06:03:00+09:00",
       "name": "Gigi",
       "title": null,
       "url": "https://www.youtube.com/watch?v=FMk_7aEJDso",
       "videoId": "FMk_7aEJDso",
       "thumbnail": "https://img.youtube.com/vi/FMk_7aEJDso/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "Y7OLY0hZEH0",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "06:30",
+      "startsAt": "2026-08-25T06:30:00+09:00",
+      "name": "Kiara",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Y7OLY0hZEH0",
+      "videoId": "Y7OLY0hZEH0",
+      "thumbnail": "https://img.youtube.com/vi/Y7OLY0hZEH0/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

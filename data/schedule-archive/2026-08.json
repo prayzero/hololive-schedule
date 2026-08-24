@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T11:39:25.340Z",
+  "generatedAt": "2026-08-24T12:18:26.713Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20578,21 +20578,6 @@
       "branch": "ID"
     },
     {
-      "id": "d-lQx9H5dsY",
-      "date": "2026-08-24",
-      "dateLabel": "08/24 (月)",
-      "time": "21:00",
-      "startsAt": "2026-08-24T21:00:00+09:00",
-      "name": "大空スバル",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=d-lQx9H5dsY",
-      "videoId": "d-lQx9H5dsY",
-      "thumbnail": "https://img.youtube.com/vi/d-lQx9H5dsY/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "DGoK0dLXnD8",
       "date": "2026-08-24",
       "dateLabel": "08/24 (月)",
@@ -20608,11 +20593,26 @@
       "branch": "JP"
     },
     {
+      "id": "d-lQx9H5dsY",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "21:01",
+      "startsAt": "2026-08-24T21:01:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=d-lQx9H5dsY",
+      "videoId": "d-lQx9H5dsY",
+      "thumbnail": "https://img.youtube.com/vi/d-lQx9H5dsY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "9rbg76Xn0es",
       "date": "2026-08-24",
       "dateLabel": "08/24 (月)",
-      "time": "21:00",
-      "startsAt": "2026-08-24T21:00:00+09:00",
+      "time": "21:03",
+      "startsAt": "2026-08-24T21:03:00+09:00",
       "name": "さくらみこ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=9rbg76Xn0es",
@@ -20711,6 +20711,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "ZU-EeVi7Se8",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "22:30",
+      "startsAt": "2026-08-24T22:30:00+09:00",
+      "name": "Kaela",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ZU-EeVi7Se8",
+      "videoId": "ZU-EeVi7Se8",
+      "thumbnail": "https://img.youtube.com/vi/ZU-EeVi7Se8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "jpaMDNZAlNU",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T09:09:01.662Z",
+  "generatedAt": "2026-08-24T10:08:08.873Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20441,6 +20441,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "3EckYFvxB44",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "19:00",
+      "startsAt": "2026-08-24T19:00:00+09:00",
+      "name": "ホロライブ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=3EckYFvxB44",
+      "videoId": "3EckYFvxB44",
+      "thumbnail": "https://img.youtube.com/vi/3EckYFvxB44/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "RJ7p1SLMq0U",

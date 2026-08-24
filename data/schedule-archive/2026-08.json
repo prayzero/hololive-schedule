@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T01:54:50.970Z",
+  "generatedAt": "2026-08-24T03:13:21.663Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20173,26 +20173,11 @@
       "branch": "JP"
     },
     {
-      "id": "GiPVZJvaZ3A",
-      "date": "2026-08-24",
-      "dateLabel": "08/24 (月)",
-      "time": "12:00",
-      "startsAt": "2026-08-24T12:00:00+09:00",
-      "name": "Anya",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=GiPVZJvaZ3A",
-      "videoId": "GiPVZJvaZ3A",
-      "thumbnail": "https://img.youtube.com/vi/GiPVZJvaZ3A/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "ID"
-    },
-    {
       "id": "v1seipCdpms",
       "date": "2026-08-24",
       "dateLabel": "08/24 (月)",
-      "time": "12:00",
-      "startsAt": "2026-08-24T12:00:00+09:00",
+      "time": "11:57",
+      "startsAt": "2026-08-24T11:57:00+09:00",
       "name": "Bijou",
       "title": null,
       "url": "https://www.youtube.com/watch?v=v1seipCdpms",
@@ -20201,6 +20186,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "8Di6hB9A9Ag",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "12:00",
+      "startsAt": "2026-08-24T12:00:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=8Di6hB9A9Ag",
+      "videoId": "8Di6hB9A9Ag",
+      "thumbnail": "https://img.youtube.com/vi/8Di6hB9A9Ag/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "GiPVZJvaZ3A",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "12:01",
+      "startsAt": "2026-08-24T12:01:00+09:00",
+      "name": "Anya",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=GiPVZJvaZ3A",
+      "videoId": "GiPVZJvaZ3A",
+      "thumbnail": "https://img.youtube.com/vi/GiPVZJvaZ3A/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "ey3d05sFcOU",
@@ -20308,6 +20323,21 @@
       "branch": "JP"
     },
     {
+      "id": "shTjdf6aE5g",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "20:00",
+      "startsAt": "2026-08-24T20:00:00+09:00",
+      "name": "夏色まつり",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=shTjdf6aE5g",
+      "videoId": "shTjdf6aE5g",
+      "thumbnail": "https://img.youtube.com/vi/shTjdf6aE5g/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "O9LTxpLQ6bo",
       "date": "2026-08-24",
       "dateLabel": "08/24 (月)",
@@ -20333,21 +20363,6 @@
       "url": "https://www.youtube.com/watch?v=DGoK0dLXnD8",
       "videoId": "DGoK0dLXnD8",
       "thumbnail": "https://img.youtube.com/vi/DGoK0dLXnD8/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
-      "id": "shTjdf6aE5g",
-      "date": "2026-08-24",
-      "dateLabel": "08/24 (月)",
-      "time": "21:00",
-      "startsAt": "2026-08-24T21:00:00+09:00",
-      "name": "夏色まつり",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=shTjdf6aE5g",
-      "videoId": "shTjdf6aE5g",
-      "thumbnail": "https://img.youtube.com/vi/shTjdf6aE5g/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

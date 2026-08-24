@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T18:55:24.301Z",
+  "generatedAt": "2026-08-24T19:39:11.999Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20951,6 +20951,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "Rl4GLIZhu8o",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "21:00",
+      "startsAt": "2026-08-25T21:00:00+09:00",
+      "name": "Anya",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Rl4GLIZhu8o",
+      "videoId": "Rl4GLIZhu8o",
+      "thumbnail": "https://img.youtube.com/vi/Rl4GLIZhu8o/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "U5CrO2VC9Bs",

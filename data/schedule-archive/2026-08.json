@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T13:26:38.100Z",
+  "generatedAt": "2026-08-24T14:22:36.787Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20698,26 +20698,11 @@
       "branch": "JP"
     },
     {
-      "id": "HWv4hF23FUc",
-      "date": "2026-08-24",
-      "dateLabel": "08/24 (月)",
-      "time": "22:30",
-      "startsAt": "2026-08-24T22:30:00+09:00",
-      "name": "水宮枢",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=HWv4hF23FUc",
-      "videoId": "HWv4hF23FUc",
-      "thumbnail": "https://img.youtube.com/vi/HWv4hF23FUc/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "DEV_IS"
-    },
-    {
       "id": "ZU-EeVi7Se8",
       "date": "2026-08-24",
       "dateLabel": "08/24 (月)",
-      "time": "22:30",
-      "startsAt": "2026-08-24T22:30:00+09:00",
+      "time": "22:29",
+      "startsAt": "2026-08-24T22:29:00+09:00",
       "name": "Kaela",
       "title": null,
       "url": "https://www.youtube.com/watch?v=ZU-EeVi7Se8",
@@ -20728,11 +20713,26 @@
       "branch": "ID"
     },
     {
+      "id": "HWv4hF23FUc",
+      "date": "2026-08-24",
+      "dateLabel": "08/24 (月)",
+      "time": "22:32",
+      "startsAt": "2026-08-24T22:32:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=HWv4hF23FUc",
+      "videoId": "HWv4hF23FUc",
+      "thumbnail": "https://img.youtube.com/vi/HWv4hF23FUc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "jpaMDNZAlNU",
       "date": "2026-08-24",
       "dateLabel": "08/24 (月)",
-      "time": "23:00",
-      "startsAt": "2026-08-24T23:00:00+09:00",
+      "time": "23:06",
+      "startsAt": "2026-08-24T23:06:00+09:00",
       "name": "Raora",
       "title": null,
       "url": "https://www.youtube.com/watch?v=jpaMDNZAlNU",
@@ -20788,6 +20788,21 @@
       "branch": "JP"
     },
     {
+      "id": "H0wqDo0uoWY",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "08:00",
+      "startsAt": "2026-08-25T08:00:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=H0wqDo0uoWY",
+      "videoId": "H0wqDo0uoWY",
+      "thumbnail": "https://img.youtube.com/vi/H0wqDo0uoWY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "oowtfaiSqb4",
       "date": "2026-08-25",
       "dateLabel": "08/25 (火)",
@@ -20813,6 +20828,21 @@
       "url": "https://www.youtube.com/watch?v=waPjpIg29J4",
       "videoId": "waPjpIg29J4",
       "thumbnail": "https://img.youtube.com/vi/waPjpIg29J4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "RpuLixbZP7A",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "12:00",
+      "startsAt": "2026-08-25T12:00:00+09:00",
+      "name": "Baelz",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=RpuLixbZP7A",
+      "videoId": "RpuLixbZP7A",
+      "thumbnail": "https://img.youtube.com/vi/RpuLixbZP7A/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

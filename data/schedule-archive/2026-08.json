@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T07:55:45.005Z",
+  "generatedAt": "2026-08-25T08:55:40.362Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20923,6 +20923,66 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "0eILtDNvnIQ",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "17:00",
+      "startsAt": "2026-08-25T17:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=0eILtDNvnIQ",
+      "videoId": "0eILtDNvnIQ",
+      "thumbnail": "https://img.youtube.com/vi/0eILtDNvnIQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "4IkGWEJYrcA",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "17:00",
+      "startsAt": "2026-08-25T17:00:00+09:00",
+      "name": "癒月ちょこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=4IkGWEJYrcA",
+      "videoId": "4IkGWEJYrcA",
+      "thumbnail": "https://img.youtube.com/vi/4IkGWEJYrcA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "zfhl-6ncASM",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "17:15",
+      "startsAt": "2026-08-25T17:15:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=zfhl-6ncASM",
+      "videoId": "zfhl-6ncASM",
+      "thumbnail": "https://img.youtube.com/vi/zfhl-6ncASM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "CsF0B2qPra0",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "17:46",
+      "startsAt": "2026-08-25T17:46:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=CsF0B2qPra0",
+      "videoId": "CsF0B2qPra0",
+      "thumbnail": "https://img.youtube.com/vi/CsF0B2qPra0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "UrKxF_3fVPQ",
       "date": "2026-08-25",
       "dateLabel": "08/25 (火)",
@@ -20996,6 +21056,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "V5mkT0imklY",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "20:00",
+      "startsAt": "2026-08-25T20:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=V5mkT0imklY",
+      "videoId": "V5mkT0imklY",
+      "thumbnail": "https://img.youtube.com/vi/V5mkT0imklY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "W5tjwx0wfDE",
@@ -21086,6 +21161,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
+    },
+    {
+      "id": "sJhoVbTrhvk",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "22:00",
+      "startsAt": "2026-08-25T22:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=sJhoVbTrhvk",
+      "videoId": "sJhoVbTrhvk",
+      "thumbnail": "https://img.youtube.com/vi/sJhoVbTrhvk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "U5CrO2VC9Bs",

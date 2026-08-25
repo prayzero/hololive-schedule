@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T15:25:13.621Z",
+  "generatedAt": "2026-08-25T16:17:08.700Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -21511,8 +21511,8 @@
       "id": "RaX3FF2vpkE",
       "date": "2026-08-26",
       "dateLabel": "08/26 (水)",
-      "time": "01:00",
-      "startsAt": "2026-08-26T01:00:00+09:00",
+      "time": "01:01",
+      "startsAt": "2026-08-26T01:01:00+09:00",
       "name": "Kiara",
       "title": null,
       "url": "https://www.youtube.com/watch?v=RaX3FF2vpkE",
@@ -21566,6 +21566,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "zYymA9q5UgI",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "08:00",
+      "startsAt": "2026-08-26T08:00:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=zYymA9q5UgI",
+      "videoId": "zYymA9q5UgI",
+      "thumbnail": "https://img.youtube.com/vi/zYymA9q5UgI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "S9O__urxB84",
@@ -21623,6 +21638,21 @@
       "url": "https://www.youtube.com/watch?v=AEB4BYBHmrg",
       "videoId": "AEB4BYBHmrg",
       "thumbnail": "https://img.youtube.com/vi/AEB4BYBHmrg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "KLV9QNkUm3c",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "22:00",
+      "startsAt": "2026-08-26T22:00:00+09:00",
+      "name": "白上フブキ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=KLV9QNkUm3c",
+      "videoId": "KLV9QNkUm3c",
+      "thumbnail": "https://img.youtube.com/vi/KLV9QNkUm3c/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

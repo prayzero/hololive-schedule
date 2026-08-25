@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T13:24:29.473Z",
+  "generatedAt": "2026-08-25T14:25:14.627Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -21463,6 +21463,21 @@
       "branch": "JP"
     },
     {
+      "id": "L5cACLf6o6M",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "22:24",
+      "startsAt": "2026-08-25T22:24:00+09:00",
+      "name": "ラプラス",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=L5cACLf6o6M",
+      "videoId": "L5cACLf6o6M",
+      "thumbnail": "https://img.youtube.com/vi/L5cACLf6o6M/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "U5CrO2VC9Bs",
       "date": "2026-08-25",
       "dateLabel": "08/25 (火)",
@@ -21478,26 +21493,11 @@
       "branch": "DEV_IS"
     },
     {
-      "id": "L5cACLf6o6M",
-      "date": "2026-08-25",
-      "dateLabel": "08/25 (火)",
-      "time": "22:30",
-      "startsAt": "2026-08-25T22:30:00+09:00",
-      "name": "ラプラス",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=L5cACLf6o6M",
-      "videoId": "L5cACLf6o6M",
-      "thumbnail": "https://img.youtube.com/vi/L5cACLf6o6M/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "1MRPe77Up5I",
       "date": "2026-08-25",
       "dateLabel": "08/25 (火)",
-      "time": "23:00",
-      "startsAt": "2026-08-25T23:00:00+09:00",
+      "time": "23:03",
+      "startsAt": "2026-08-25T23:03:00+09:00",
       "name": "鷹嶺ルイ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=1MRPe77Up5I",

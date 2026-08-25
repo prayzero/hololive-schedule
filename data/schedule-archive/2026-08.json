@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T03:12:06.571Z",
+  "generatedAt": "2026-08-25T04:05:18.204Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -17893,21 +17893,6 @@
       "branch": "DEV_IS"
     },
     {
-      "id": "UrKxF_3fVPQ",
-      "date": "2026-08-21",
-      "dateLabel": "08/21 (金)",
-      "time": "19:00",
-      "startsAt": "2026-08-21T19:00:00+09:00",
-      "name": "常闇トワ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=UrKxF_3fVPQ",
-      "videoId": "UrKxF_3fVPQ",
-      "thumbnail": "https://img.youtube.com/vi/UrKxF_3fVPQ/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "U6t9UI76SaY",
       "date": "2026-08-21",
       "dateLabel": "08/21 (金)",
@@ -20908,6 +20893,21 @@
       "branch": "EN"
     },
     {
+      "id": "HfrjIye8o9Y",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "12:09",
+      "startsAt": "2026-08-25T12:09:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=HfrjIye8o9Y",
+      "videoId": "HfrjIye8o9Y",
+      "thumbnail": "https://img.youtube.com/vi/HfrjIye8o9Y/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "IHbC4UdyW6s",
       "date": "2026-08-25",
       "dateLabel": "08/25 (火)",
@@ -20921,6 +20921,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "UrKxF_3fVPQ",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "18:00",
+      "startsAt": "2026-08-25T18:00:00+09:00",
+      "name": "常闇トワ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=UrKxF_3fVPQ",
+      "videoId": "UrKxF_3fVPQ",
+      "thumbnail": "https://img.youtube.com/vi/UrKxF_3fVPQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "bKEN_FN2Svs",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "19:00",
+      "startsAt": "2026-08-25T19:00:00+09:00",
+      "name": "大神ミオ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=bKEN_FN2Svs",
+      "videoId": "bKEN_FN2Svs",
+      "thumbnail": "https://img.youtube.com/vi/bKEN_FN2Svs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "Aj3vFVgjAy0",

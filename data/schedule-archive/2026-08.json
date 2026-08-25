@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T22:50:13.193Z",
+  "generatedAt": "2026-08-25T23:17:09.620Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -21568,6 +21568,21 @@
       "branch": "EN"
     },
     {
+      "id": "zYymA9q5UgI",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "07:55",
+      "startsAt": "2026-08-26T07:55:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=zYymA9q5UgI",
+      "videoId": "zYymA9q5UgI",
+      "thumbnail": "https://img.youtube.com/vi/zYymA9q5UgI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "Qp75RDkiQi4",
       "date": "2026-08-26",
       "dateLabel": "08/26 (水)",
@@ -21583,16 +21598,16 @@
       "branch": "JP"
     },
     {
-      "id": "zYymA9q5UgI",
+      "id": "G2NKmCDqh7o",
       "date": "2026-08-26",
       "dateLabel": "08/26 (水)",
       "time": "08:00",
       "startsAt": "2026-08-26T08:00:00+09:00",
-      "name": "Bijou",
+      "name": "FUWAMOCO",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=zYymA9q5UgI",
-      "videoId": "zYymA9q5UgI",
-      "thumbnail": "https://img.youtube.com/vi/zYymA9q5UgI/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=G2NKmCDqh7o",
+      "videoId": "G2NKmCDqh7o",
+      "thumbnail": "https://img.youtube.com/vi/G2NKmCDqh7o/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"
@@ -21608,6 +21623,21 @@
       "url": "https://www.youtube.com/watch?v=S9O__urxB84",
       "videoId": "S9O__urxB84",
       "thumbnail": "https://img.youtube.com/vi/S9O__urxB84/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "qaCyE_mfotY",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "12:30",
+      "startsAt": "2026-08-26T12:30:00+09:00",
+      "name": "一条莉々華",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=qaCyE_mfotY",
+      "videoId": "qaCyE_mfotY",
+      "thumbnail": "https://img.youtube.com/vi/qaCyE_mfotY/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
@@ -21716,6 +21746,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "I4iQMxUdyPs",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "23:30",
+      "startsAt": "2026-08-26T23:30:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=I4iQMxUdyPs",
+      "videoId": "I4iQMxUdyPs",
+      "thumbnail": "https://img.youtube.com/vi/I4iQMxUdyPs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "1WDHebAydJ4",

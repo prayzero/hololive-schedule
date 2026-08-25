@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T23:11:23.241Z",
+  "generatedAt": "2026-08-25T01:54:38.626Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20953,6 +20953,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "W5tjwx0wfDE",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "20:00",
+      "startsAt": "2026-08-25T20:00:00+09:00",
+      "name": "白銀ノエル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=W5tjwx0wfDE",
+      "videoId": "W5tjwx0wfDE",
+      "thumbnail": "https://img.youtube.com/vi/W5tjwx0wfDE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "jlt6HHrZnpE",
       "date": "2026-08-25",
       "dateLabel": "08/25 (火)",
@@ -21011,6 +21026,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "IPfElU9uBso",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "05:00",
+      "startsAt": "2026-08-26T05:00:00+09:00",
+      "name": "Shiori",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=IPfElU9uBso",
+      "videoId": "IPfElU9uBso",
+      "thumbnail": "https://img.youtube.com/vi/IPfElU9uBso/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "W3VuxLUexXo",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T10:17:26.812Z",
+  "generatedAt": "2026-08-25T10:55:44.198Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -21418,6 +21418,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "1MRPe77Up5I",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "23:00",
+      "startsAt": "2026-08-25T23:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=1MRPe77Up5I",
+      "videoId": "1MRPe77Up5I",
+      "thumbnail": "https://img.youtube.com/vi/1MRPe77Up5I/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "IPfElU9uBso",
       "date": "2026-08-26",
       "dateLabel": "08/26 (水)",
@@ -21431,6 +21446,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "EGVQ-I0GE_E",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "19:00",
+      "startsAt": "2026-08-26T19:00:00+09:00",
+      "name": "一条莉々華",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=EGVQ-I0GE_E",
+      "videoId": "EGVQ-I0GE_E",
+      "thumbnail": "https://img.youtube.com/vi/EGVQ-I0GE_E/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "W3VuxLUexXo",

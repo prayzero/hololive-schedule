@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T04:51:29.617Z",
+  "generatedAt": "2026-08-25T07:55:45.005Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -21011,6 +21011,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "lDofM7EMAsc",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "20:00",
+      "startsAt": "2026-08-25T20:00:00+09:00",
+      "name": "常闇トワ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=lDofM7EMAsc",
+      "videoId": "lDofM7EMAsc",
+      "thumbnail": "https://img.youtube.com/vi/lDofM7EMAsc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "rePS1sqaToU",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "20:00",
+      "startsAt": "2026-08-25T20:00:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=rePS1sqaToU",
+      "videoId": "rePS1sqaToU",
+      "thumbnail": "https://img.youtube.com/vi/rePS1sqaToU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "jlt6HHrZnpE",

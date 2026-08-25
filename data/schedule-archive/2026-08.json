@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T04:05:18.204Z",
+  "generatedAt": "2026-08-25T04:51:29.617Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20933,6 +20933,21 @@
       "url": "https://www.youtube.com/watch?v=UrKxF_3fVPQ",
       "videoId": "UrKxF_3fVPQ",
       "thumbnail": "https://img.youtube.com/vi/UrKxF_3fVPQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "tAbqNddf0eg",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "18:00",
+      "startsAt": "2026-08-25T18:00:00+09:00",
+      "name": "ロボ子さん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=tAbqNddf0eg",
+      "videoId": "tAbqNddf0eg",
+      "thumbnail": "https://img.youtube.com/vi/tAbqNddf0eg/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

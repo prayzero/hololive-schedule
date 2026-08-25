@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T12:18:35.474Z",
+  "generatedAt": "2026-08-25T13:24:29.473Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -21388,19 +21388,19 @@
       "branch": "ID"
     },
     {
-      "id": "sJhoVbTrhvk",
+      "id": "Q8a87rz_ydg",
       "date": "2026-08-25",
       "dateLabel": "08/25 (火)",
-      "time": "22:00",
-      "startsAt": "2026-08-25T22:00:00+09:00",
-      "name": "兎田ぺこら",
+      "time": "21:59",
+      "startsAt": "2026-08-25T21:59:00+09:00",
+      "name": "Risu",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=sJhoVbTrhvk",
-      "videoId": "sJhoVbTrhvk",
-      "thumbnail": "https://img.youtube.com/vi/sJhoVbTrhvk/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=Q8a87rz_ydg",
+      "videoId": "Q8a87rz_ydg",
+      "thumbnail": "https://img.youtube.com/vi/Q8a87rz_ydg/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
-      "branch": "JP"
+      "branch": "ID"
     },
     {
       "id": "b-KIWxUwUL8",
@@ -21418,31 +21418,46 @@
       "branch": "ID"
     },
     {
-      "id": "Q8a87rz_ydg",
+      "id": "sJhoVbTrhvk",
       "date": "2026-08-25",
       "dateLabel": "08/25 (火)",
-      "time": "22:00",
-      "startsAt": "2026-08-25T22:00:00+09:00",
-      "name": "Risu",
+      "time": "22:01",
+      "startsAt": "2026-08-25T22:01:00+09:00",
+      "name": "兎田ぺこら",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=Q8a87rz_ydg",
-      "videoId": "Q8a87rz_ydg",
-      "thumbnail": "https://img.youtube.com/vi/Q8a87rz_ydg/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=sJhoVbTrhvk",
+      "videoId": "sJhoVbTrhvk",
+      "thumbnail": "https://img.youtube.com/vi/sJhoVbTrhvk/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
-      "branch": "ID"
+      "branch": "JP"
     },
     {
       "id": "GF2PRC1trPs",
       "date": "2026-08-25",
       "dateLabel": "08/25 (火)",
-      "time": "22:00",
-      "startsAt": "2026-08-25T22:00:00+09:00",
+      "time": "22:02",
+      "startsAt": "2026-08-25T22:02:00+09:00",
       "name": "ときのそら",
       "title": null,
       "url": "https://www.youtube.com/watch?v=GF2PRC1trPs",
       "videoId": "GF2PRC1trPs",
       "thumbnail": "https://img.youtube.com/vi/GF2PRC1trPs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "V0JpEIV4G5s",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "22:07",
+      "startsAt": "2026-08-25T22:07:00+09:00",
+      "name": "不知火フレア",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=V0JpEIV4G5s",
+      "videoId": "V0JpEIV4G5s",
+      "thumbnail": "https://img.youtube.com/vi/V0JpEIV4G5s/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -21461,6 +21476,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "L5cACLf6o6M",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "22:30",
+      "startsAt": "2026-08-25T22:30:00+09:00",
+      "name": "ラプラス",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=L5cACLf6o6M",
+      "videoId": "L5cACLf6o6M",
+      "thumbnail": "https://img.youtube.com/vi/L5cACLf6o6M/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "1MRPe77Up5I",
@@ -21521,6 +21551,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "Qp75RDkiQi4",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "08:00",
+      "startsAt": "2026-08-26T08:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Qp75RDkiQi4",
+      "videoId": "Qp75RDkiQi4",
+      "thumbnail": "https://img.youtube.com/vi/Qp75RDkiQi4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "S9O__urxB84",

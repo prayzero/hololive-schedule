@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T01:54:38.626Z",
+  "generatedAt": "2026-08-25T03:12:06.571Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20878,21 +20878,6 @@
       "branch": "EN"
     },
     {
-      "id": "RpuLixbZP7A",
-      "date": "2026-08-25",
-      "dateLabel": "08/25 (火)",
-      "time": "12:00",
-      "startsAt": "2026-08-25T12:00:00+09:00",
-      "name": "Baelz",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=RpuLixbZP7A",
-      "videoId": "RpuLixbZP7A",
-      "thumbnail": "https://img.youtube.com/vi/RpuLixbZP7A/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "EN"
-    },
-    {
       "id": "q-YT1xx-Tbc",
       "date": "2026-08-25",
       "dateLabel": "08/25 (火)",
@@ -20903,6 +20888,21 @@
       "url": "https://www.youtube.com/watch?v=q-YT1xx-Tbc",
       "videoId": "q-YT1xx-Tbc",
       "thumbnail": "https://img.youtube.com/vi/q-YT1xx-Tbc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "RpuLixbZP7A",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "12:03",
+      "startsAt": "2026-08-25T12:03:00+09:00",
+      "name": "Baelz",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=RpuLixbZP7A",
+      "videoId": "RpuLixbZP7A",
+      "thumbnail": "https://img.youtube.com/vi/RpuLixbZP7A/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"
@@ -21056,6 +21056,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
+    },
+    {
+      "id": "2hujYm8ccyU",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "22:00",
+      "startsAt": "2026-08-26T22:00:00+09:00",
+      "name": "白銀ノエル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=2hujYm8ccyU",
+      "videoId": "2hujYm8ccyU",
+      "thumbnail": "https://img.youtube.com/vi/2hujYm8ccyU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     }
   ]
 }

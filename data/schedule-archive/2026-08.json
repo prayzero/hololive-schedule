@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T23:17:09.620Z",
+  "generatedAt": "2026-08-25T23:43:54.375Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -21628,6 +21628,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "xlUmqI42Jnw",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "08:33",
+      "startsAt": "2026-08-26T08:33:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=xlUmqI42Jnw",
+      "videoId": "xlUmqI42Jnw",
+      "thumbnail": "https://img.youtube.com/vi/xlUmqI42Jnw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "qaCyE_mfotY",
       "date": "2026-08-26",
       "dateLabel": "08/26 (水)",
@@ -21671,6 +21686,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "0qGsgS1NTJQ",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "19:00",
+      "startsAt": "2026-08-26T19:00:00+09:00",
+      "name": "夏色まつり",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=0qGsgS1NTJQ",
+      "videoId": "0qGsgS1NTJQ",
+      "thumbnail": "https://img.youtube.com/vi/0qGsgS1NTJQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "zXllu4lz4kM",
@@ -21746,6 +21776,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "YDlaINx39SM",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "22:30",
+      "startsAt": "2026-08-26T22:30:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=YDlaINx39SM",
+      "videoId": "YDlaINx39SM",
+      "thumbnail": "https://img.youtube.com/vi/YDlaINx39SM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "I4iQMxUdyPs",

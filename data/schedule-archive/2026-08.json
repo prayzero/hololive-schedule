@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T11:38:21.137Z",
+  "generatedAt": "2026-08-25T12:18:35.474Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -21343,21 +21343,6 @@
       "branch": "DEV_IS"
     },
     {
-      "id": "jlt6HHrZnpE",
-      "date": "2026-08-25",
-      "dateLabel": "08/25 (火)",
-      "time": "21:00",
-      "startsAt": "2026-08-25T21:00:00+09:00",
-      "name": "綺々羅々ヴィヴィ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=jlt6HHrZnpE",
-      "videoId": "jlt6HHrZnpE",
-      "thumbnail": "https://img.youtube.com/vi/jlt6HHrZnpE/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "DEV_IS"
-    },
-    {
       "id": "5_I_H3YUQ0E",
       "date": "2026-08-25",
       "dateLabel": "08/25 (火)",
@@ -21373,11 +21358,26 @@
       "branch": "JP"
     },
     {
+      "id": "jlt6HHrZnpE",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "21:01",
+      "startsAt": "2026-08-25T21:01:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jlt6HHrZnpE",
+      "videoId": "jlt6HHrZnpE",
+      "thumbnail": "https://img.youtube.com/vi/jlt6HHrZnpE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "Rl4GLIZhu8o",
       "date": "2026-08-25",
       "dateLabel": "08/25 (火)",
-      "time": "21:00",
-      "startsAt": "2026-08-25T21:00:00+09:00",
+      "time": "21:01",
+      "startsAt": "2026-08-25T21:01:00+09:00",
       "name": "Anya",
       "title": null,
       "url": "https://www.youtube.com/watch?v=Rl4GLIZhu8o",
@@ -21416,6 +21416,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
+    },
+    {
+      "id": "Q8a87rz_ydg",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "22:00",
+      "startsAt": "2026-08-25T22:00:00+09:00",
+      "name": "Risu",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Q8a87rz_ydg",
+      "videoId": "Q8a87rz_ydg",
+      "thumbnail": "https://img.youtube.com/vi/Q8a87rz_ydg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "GF2PRC1trPs",
+      "date": "2026-08-25",
+      "dateLabel": "08/25 (火)",
+      "time": "22:00",
+      "startsAt": "2026-08-25T22:00:00+09:00",
+      "name": "ときのそら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=GF2PRC1trPs",
+      "videoId": "GF2PRC1trPs",
+      "thumbnail": "https://img.youtube.com/vi/GF2PRC1trPs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "U5CrO2VC9Bs",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T02:12:01.606Z",
+  "generatedAt": "2026-08-26T04:20:44.570Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -21728,6 +21728,36 @@
       "url": "https://www.youtube.com/watch?v=0qGsgS1NTJQ",
       "videoId": "0qGsgS1NTJQ",
       "thumbnail": "https://img.youtube.com/vi/0qGsgS1NTJQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "0rM5tw-eHTc",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "20:00",
+      "startsAt": "2026-08-26T20:00:00+09:00",
+      "name": "宝鐘マリン",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=0rM5tw-eHTc",
+      "videoId": "0rM5tw-eHTc",
+      "thumbnail": "https://img.youtube.com/vi/0rM5tw-eHTc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "YkbiOhFNByE",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "20:00",
+      "startsAt": "2026-08-26T20:00:00+09:00",
+      "name": "ロボ子さん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=YkbiOhFNByE",
+      "videoId": "YkbiOhFNByE",
+      "thumbnail": "https://img.youtube.com/vi/YkbiOhFNByE/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

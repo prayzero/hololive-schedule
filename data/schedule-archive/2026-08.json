@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T08:21:52.259Z",
+  "generatedAt": "2026-08-26T09:10:02.254Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -21793,6 +21793,36 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "lHgfYOXctF0",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "17:31",
+      "startsAt": "2026-08-26T17:31:00+09:00",
+      "name": "ロボ子さん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=lHgfYOXctF0",
+      "videoId": "lHgfYOXctF0",
+      "thumbnail": "https://img.youtube.com/vi/lHgfYOXctF0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "9hiTITIyuys",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "17:41",
+      "startsAt": "2026-08-26T17:41:00+09:00",
+      "name": "IRyS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=9hiTITIyuys",
+      "videoId": "9hiTITIyuys",
+      "thumbnail": "https://img.youtube.com/vi/9hiTITIyuys/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "b9KDz-30RzA",
       "date": "2026-08-26",
       "dateLabel": "08/26 (水)",
@@ -21821,6 +21851,66 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "7LR_S_4uSiM",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "18:00",
+      "startsAt": "2026-08-26T18:00:00+09:00",
+      "name": "AZKi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=7LR_S_4uSiM",
+      "videoId": "7LR_S_4uSiM",
+      "thumbnail": "https://img.youtube.com/vi/7LR_S_4uSiM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "xjfRgYtO7sI",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "18:00",
+      "startsAt": "2026-08-26T18:00:00+09:00",
+      "name": "FLOW GLOW",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=xjfRgYtO7sI",
+      "videoId": "xjfRgYtO7sI",
+      "thumbnail": "https://img.youtube.com/vi/xjfRgYtO7sI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "RX-nhY9MQTY",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "18:00",
+      "startsAt": "2026-08-26T18:00:00+09:00",
+      "name": "ReGLOSS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=RX-nhY9MQTY",
+      "videoId": "RX-nhY9MQTY",
+      "thumbnail": "https://img.youtube.com/vi/RX-nhY9MQTY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "rpV2TavIXA8",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "18:00",
+      "startsAt": "2026-08-26T18:00:00+09:00",
+      "name": "Reine",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=rpV2TavIXA8",
+      "videoId": "rpV2TavIXA8",
+      "thumbnail": "https://img.youtube.com/vi/rpV2TavIXA8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "EGVQ-I0GE_E",
@@ -22003,6 +22093,21 @@
       "branch": "JP"
     },
     {
+      "id": "YVDonl7K-NI",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "22:00",
+      "startsAt": "2026-08-26T22:00:00+09:00",
+      "name": "不知火フレア",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=YVDonl7K-NI",
+      "videoId": "YVDonl7K-NI",
+      "thumbnail": "https://img.youtube.com/vi/YVDonl7K-NI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "OylARRtmVqM",
       "date": "2026-08-26",
       "dateLabel": "08/26 (水)",
@@ -22151,6 +22256,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "rio-iTBOIxE",
+      "date": "2026-08-27",
+      "dateLabel": "08/27 (木)",
+      "time": "08:00",
+      "startsAt": "2026-08-27T08:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=rio-iTBOIxE",
+      "videoId": "rio-iTBOIxE",
+      "thumbnail": "https://img.youtube.com/vi/rio-iTBOIxE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "Zh2t42No7lo",

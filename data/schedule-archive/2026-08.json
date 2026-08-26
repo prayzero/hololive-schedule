@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T16:56:49.903Z",
+  "generatedAt": "2026-08-26T19:17:36.224Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -22348,6 +22348,21 @@
       "branch": "EN"
     },
     {
+      "id": "H1mnBqcyQfs",
+      "date": "2026-08-27",
+      "dateLabel": "08/27 (木)",
+      "time": "01:58",
+      "startsAt": "2026-08-27T01:58:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=H1mnBqcyQfs",
+      "videoId": "H1mnBqcyQfs",
+      "thumbnail": "https://img.youtube.com/vi/H1mnBqcyQfs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "y5rIc29LwyY",
       "date": "2026-08-27",
       "dateLabel": "08/27 (木)",
@@ -22378,6 +22393,21 @@
       "branch": "ID"
     },
     {
+      "id": "AG9ZmITHj_c",
+      "date": "2026-08-27",
+      "dateLabel": "08/27 (木)",
+      "time": "01:59",
+      "startsAt": "2026-08-27T01:59:00+09:00",
+      "name": "Reine",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=AG9ZmITHj_c",
+      "videoId": "AG9ZmITHj_c",
+      "thumbnail": "https://img.youtube.com/vi/AG9ZmITHj_c/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "Dd8iy0LrhAs",
       "date": "2026-08-27",
       "dateLabel": "08/27 (木)",
@@ -22393,26 +22423,11 @@
       "branch": "ID"
     },
     {
-      "id": "H1mnBqcyQfs",
-      "date": "2026-08-27",
-      "dateLabel": "08/27 (木)",
-      "time": "02:00",
-      "startsAt": "2026-08-27T02:00:00+09:00",
-      "name": "Bijou",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=H1mnBqcyQfs",
-      "videoId": "H1mnBqcyQfs",
-      "thumbnail": "https://img.youtube.com/vi/H1mnBqcyQfs/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "EN"
-    },
-    {
       "id": "aZf5U7Aiat4",
       "date": "2026-08-27",
       "dateLabel": "08/27 (木)",
-      "time": "02:00",
-      "startsAt": "2026-08-27T02:00:00+09:00",
+      "time": "02:01",
+      "startsAt": "2026-08-27T02:01:00+09:00",
       "name": "Kronii",
       "title": null,
       "url": "https://www.youtube.com/watch?v=aZf5U7Aiat4",
@@ -22421,21 +22436,6 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
-    },
-    {
-      "id": "AG9ZmITHj_c",
-      "date": "2026-08-27",
-      "dateLabel": "08/27 (木)",
-      "time": "02:00",
-      "startsAt": "2026-08-27T02:00:00+09:00",
-      "name": "Reine",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=AG9ZmITHj_c",
-      "videoId": "AG9ZmITHj_c",
-      "thumbnail": "https://img.youtube.com/vi/AG9ZmITHj_c/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "ID"
     },
     {
       "id": "Swe4Nnee1gs",
@@ -22633,6 +22633,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "EOarF-MFfME",
+      "date": "2026-08-27",
+      "dateLabel": "08/27 (木)",
+      "time": "22:00",
+      "startsAt": "2026-08-27T22:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=EOarF-MFfME",
+      "videoId": "EOarF-MFfME",
+      "thumbnail": "https://img.youtube.com/vi/EOarF-MFfME/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "AurxqUYrBuk",
       "date": "2026-08-27",
       "dateLabel": "08/27 (木)",
@@ -22703,6 +22718,21 @@
       "url": "https://www.youtube.com/watch?v=tQdDi81s2qE",
       "videoId": "tQdDi81s2qE",
       "thumbnail": "https://img.youtube.com/vi/tQdDi81s2qE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "jOXqd0RIYDc",
+      "date": "2026-08-28",
+      "dateLabel": "08/28 (金)",
+      "time": "19:00",
+      "startsAt": "2026-08-28T19:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jOXqd0RIYDc",
+      "videoId": "jOXqd0RIYDc",
+      "thumbnail": "https://img.youtube.com/vi/jOXqd0RIYDc/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

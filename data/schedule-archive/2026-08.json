@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T05:03:15.343Z",
+  "generatedAt": "2026-08-26T05:46:58.932Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -21908,6 +21908,36 @@
       "url": "https://www.youtube.com/watch?v=bR7AOCJjBFU",
       "videoId": "bR7AOCJjBFU",
       "thumbnail": "https://img.youtube.com/vi/bR7AOCJjBFU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "H1mnBqcyQfs",
+      "date": "2026-08-27",
+      "dateLabel": "08/27 (木)",
+      "time": "02:00",
+      "startsAt": "2026-08-27T02:00:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=H1mnBqcyQfs",
+      "videoId": "H1mnBqcyQfs",
+      "thumbnail": "https://img.youtube.com/vi/H1mnBqcyQfs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "aZf5U7Aiat4",
+      "date": "2026-08-27",
+      "dateLabel": "08/27 (木)",
+      "time": "02:00",
+      "startsAt": "2026-08-27T02:00:00+09:00",
+      "name": "Kronii",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=aZf5U7Aiat4",
+      "videoId": "aZf5U7Aiat4",
+      "thumbnail": "https://img.youtube.com/vi/aZf5U7Aiat4/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

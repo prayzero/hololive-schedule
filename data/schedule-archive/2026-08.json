@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T09:10:02.254Z",
+  "generatedAt": "2026-08-26T10:01:57.653Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -22286,6 +22286,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "7-YhFSgO0GY",
+      "date": "2026-08-27",
+      "dateLabel": "08/27 (木)",
+      "time": "19:00",
+      "startsAt": "2026-08-27T19:00:00+09:00",
+      "name": "儒烏風亭らでん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=7-YhFSgO0GY",
+      "videoId": "7-YhFSgO0GY",
+      "thumbnail": "https://img.youtube.com/vi/7-YhFSgO0GY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "1WDHebAydJ4",

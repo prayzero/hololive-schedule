@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T05:46:58.932Z",
+  "generatedAt": "2026-08-26T06:22:30.074Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -21718,6 +21718,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "JYcLHNmFbQI",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "18:00",
+      "startsAt": "2026-08-26T18:00:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=JYcLHNmFbQI",
+      "videoId": "JYcLHNmFbQI",
+      "thumbnail": "https://img.youtube.com/vi/JYcLHNmFbQI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "EGVQ-I0GE_E",
       "date": "2026-08-26",
       "dateLabel": "08/26 (水)",
@@ -21863,6 +21878,21 @@
       "url": "https://www.youtube.com/watch?v=2hujYm8ccyU",
       "videoId": "2hujYm8ccyU",
       "thumbnail": "https://img.youtube.com/vi/2hujYm8ccyU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "OylARRtmVqM",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "22:00",
+      "startsAt": "2026-08-26T22:00:00+09:00",
+      "name": "さくらみこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=OylARRtmVqM",
+      "videoId": "OylARRtmVqM",
+      "thumbnail": "https://img.youtube.com/vi/OylARRtmVqM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

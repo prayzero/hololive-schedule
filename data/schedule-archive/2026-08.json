@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T04:20:44.570Z",
+  "generatedAt": "2026-08-26T05:03:15.343Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -21688,6 +21688,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "cnEtj-K9r8c",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "14:45",
+      "startsAt": "2026-08-26T14:45:00+09:00",
+      "name": "Kaela",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=cnEtj-K9r8c",
+      "videoId": "cnEtj-K9r8c",
+      "thumbnail": "https://img.youtube.com/vi/cnEtj-K9r8c/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "b9KDz-30RzA",
       "date": "2026-08-26",
       "dateLabel": "08/26 (水)",
@@ -21731,6 +21746,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "nepNeM3X-BQ",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "20:00",
+      "startsAt": "2026-08-26T20:00:00+09:00",
+      "name": "音乃瀬奏",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=nepNeM3X-BQ",
+      "videoId": "nepNeM3X-BQ",
+      "thumbnail": "https://img.youtube.com/vi/nepNeM3X-BQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "0rM5tw-eHTc",

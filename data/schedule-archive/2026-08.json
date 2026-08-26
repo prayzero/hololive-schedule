@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T02:00:41.908Z",
+  "generatedAt": "2026-08-26T02:12:01.606Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -21653,6 +21653,21 @@
       "url": "https://www.youtube.com/watch?v=00Y_juzzrYY",
       "videoId": "00Y_juzzrYY",
       "thumbnail": "https://img.youtube.com/vi/00Y_juzzrYY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "OfHPonsKYSc",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "11:00",
+      "startsAt": "2026-08-26T11:00:00+09:00",
+      "name": "holo EN",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=OfHPonsKYSc",
+      "videoId": "OfHPonsKYSc",
+      "thumbnail": "https://img.youtube.com/vi/OfHPonsKYSc/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T11:51:24.695Z",
+  "generatedAt": "2026-08-26T12:38:45.956Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -22096,13 +22096,28 @@
       "id": "W3VuxLUexXo",
       "date": "2026-08-26",
       "dateLabel": "08/26 (水)",
-      "time": "21:00",
-      "startsAt": "2026-08-26T21:00:00+09:00",
+      "time": "21:01",
+      "startsAt": "2026-08-26T21:01:00+09:00",
       "name": "Anya",
       "title": null,
       "url": "https://www.youtube.com/watch?v=W3VuxLUexXo",
       "videoId": "W3VuxLUexXo",
       "thumbnail": "https://img.youtube.com/vi/W3VuxLUexXo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "jIUWhMZQBYs",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "21:33",
+      "startsAt": "2026-08-26T21:33:00+09:00",
+      "name": "Iofi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jIUWhMZQBYs",
+      "videoId": "jIUWhMZQBYs",
+      "thumbnail": "https://img.youtube.com/vi/jIUWhMZQBYs/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "ID"
@@ -22228,6 +22243,36 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "XBIEHHwrc_c",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "23:00",
+      "startsAt": "2026-08-26T23:00:00+09:00",
+      "name": "Iofi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=XBIEHHwrc_c",
+      "videoId": "XBIEHHwrc_c",
+      "thumbnail": "https://img.youtube.com/vi/XBIEHHwrc_c/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "AKKXa7xuUc8",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "23:00",
+      "startsAt": "2026-08-26T23:00:00+09:00",
+      "name": "Risu",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=AKKXa7xuUc8",
+      "videoId": "AKKXa7xuUc8",
+      "thumbnail": "https://img.youtube.com/vi/AKKXa7xuUc8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "I4iQMxUdyPs",
       "date": "2026-08-26",
       "dateLabel": "08/26 (水)",
@@ -22256,6 +22301,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "y5rIc29LwyY",
+      "date": "2026-08-27",
+      "dateLabel": "08/27 (木)",
+      "time": "01:59",
+      "startsAt": "2026-08-27T01:59:00+09:00",
+      "name": "Iofi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=y5rIc29LwyY",
+      "videoId": "y5rIc29LwyY",
+      "thumbnail": "https://img.youtube.com/vi/y5rIc29LwyY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "H1mnBqcyQfs",
@@ -22423,6 +22483,21 @@
       "branch": "JP"
     },
     {
+      "id": "SMAvGS1YwCo",
+      "date": "2026-08-27",
+      "dateLabel": "08/27 (木)",
+      "time": "21:00",
+      "startsAt": "2026-08-27T21:00:00+09:00",
+      "name": "白銀ノエル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=SMAvGS1YwCo",
+      "videoId": "SMAvGS1YwCo",
+      "thumbnail": "https://img.youtube.com/vi/SMAvGS1YwCo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "W7SjGWo1944",
       "date": "2026-08-27",
       "dateLabel": "08/27 (木)",
@@ -22436,6 +22511,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "z7D_HDq6jd0",
+      "date": "2026-08-27",
+      "dateLabel": "08/27 (木)",
+      "time": "21:00",
+      "startsAt": "2026-08-27T21:00:00+09:00",
+      "name": "夏色まつり",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=z7D_HDq6jd0",
+      "videoId": "z7D_HDq6jd0",
+      "thumbnail": "https://img.youtube.com/vi/z7D_HDq6jd0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "kFJttg_F-Dk",
+      "date": "2026-08-27",
+      "dateLabel": "08/27 (木)",
+      "time": "21:00",
+      "startsAt": "2026-08-27T21:00:00+09:00",
+      "name": "Ollie",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=kFJttg_F-Dk",
+      "videoId": "kFJttg_F-Dk",
+      "thumbnail": "https://img.youtube.com/vi/kFJttg_F-Dk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "1vIQx95QDhE",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T10:01:57.653Z",
+  "generatedAt": "2026-08-26T11:17:08.420Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -21943,6 +21943,36 @@
       "branch": "JP"
     },
     {
+      "id": "5s9fZv_Lh1s",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "19:00",
+      "startsAt": "2026-08-26T19:00:00+09:00",
+      "name": "ホロライブ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=5s9fZv_Lh1s",
+      "videoId": "5s9fZv_Lh1s",
+      "thumbnail": "https://img.youtube.com/vi/5s9fZv_Lh1s/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "0rM5tw-eHTc",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "19:59",
+      "startsAt": "2026-08-26T19:59:00+09:00",
+      "name": "宝鐘マリン",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=0rM5tw-eHTc",
+      "videoId": "0rM5tw-eHTc",
+      "thumbnail": "https://img.youtube.com/vi/0rM5tw-eHTc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "z97AhKXKSmk",
       "date": "2026-08-26",
       "dateLabel": "08/26 (水)",
@@ -21988,26 +22018,41 @@
       "branch": "DEV_IS"
     },
     {
-      "id": "0rM5tw-eHTc",
+      "id": "oRsqAE0v66A",
       "date": "2026-08-26",
       "dateLabel": "08/26 (水)",
       "time": "20:00",
       "startsAt": "2026-08-26T20:00:00+09:00",
-      "name": "宝鐘マリン",
+      "name": "一条莉々華",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=0rM5tw-eHTc",
-      "videoId": "0rM5tw-eHTc",
-      "thumbnail": "https://img.youtube.com/vi/0rM5tw-eHTc/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=oRsqAE0v66A",
+      "videoId": "oRsqAE0v66A",
+      "thumbnail": "https://img.youtube.com/vi/oRsqAE0v66A/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
-      "branch": "JP"
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "OkfcEhaqkKk",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "20:00",
+      "startsAt": "2026-08-26T20:00:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=OkfcEhaqkKk",
+      "videoId": "OkfcEhaqkKk",
+      "thumbnail": "https://img.youtube.com/vi/OkfcEhaqkKk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "YkbiOhFNByE",
       "date": "2026-08-26",
       "dateLabel": "08/26 (水)",
-      "time": "20:00",
-      "startsAt": "2026-08-26T20:00:00+09:00",
+      "time": "20:01",
+      "startsAt": "2026-08-26T20:01:00+09:00",
       "name": "ロボ子さん",
       "title": null,
       "url": "https://www.youtube.com/watch?v=YkbiOhFNByE",
@@ -22318,6 +22363,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "1g0ioelchZM",
+      "date": "2026-08-27",
+      "dateLabel": "08/27 (木)",
+      "time": "21:00",
+      "startsAt": "2026-08-27T21:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=1g0ioelchZM",
+      "videoId": "1g0ioelchZM",
+      "thumbnail": "https://img.youtube.com/vi/1g0ioelchZM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "W7SjGWo1944",
       "date": "2026-08-27",
       "dateLabel": "08/27 (木)",
@@ -22346,6 +22406,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "oBfQubaNIao",
+      "date": "2026-08-27",
+      "dateLabel": "08/27 (木)",
+      "time": "22:00",
+      "startsAt": "2026-08-27T22:00:00+09:00",
+      "name": "姫森ルーナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=oBfQubaNIao",
+      "videoId": "oBfQubaNIao",
+      "thumbnail": "https://img.youtube.com/vi/oBfQubaNIao/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     }
   ]
 }

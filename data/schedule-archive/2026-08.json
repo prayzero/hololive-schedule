@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T11:17:08.420Z",
+  "generatedAt": "2026-08-26T11:51:24.695Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -22063,6 +22063,21 @@
       "branch": "JP"
     },
     {
+      "id": "whjJXWeohXg",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "20:41",
+      "startsAt": "2026-08-26T20:41:00+09:00",
+      "name": "虎金妃笑虎",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=whjJXWeohXg",
+      "videoId": "whjJXWeohXg",
+      "thumbnail": "https://img.youtube.com/vi/whjJXWeohXg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "zXllu4lz4kM",
       "date": "2026-08-26",
       "dateLabel": "08/26 (水)",
@@ -22151,6 +22166,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "d2IaWzwKkrE",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "22:00",
+      "startsAt": "2026-08-26T22:00:00+09:00",
+      "name": "虎金妃笑虎",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=d2IaWzwKkrE",
+      "videoId": "d2IaWzwKkrE",
+      "thumbnail": "https://img.youtube.com/vi/d2IaWzwKkrE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "OylARRtmVqM",
@@ -22318,6 +22348,21 @@
       "branch": "JP"
     },
     {
+      "id": "LCBNTo27xaQ",
+      "date": "2026-08-27",
+      "dateLabel": "08/27 (木)",
+      "time": "08:00",
+      "startsAt": "2026-08-27T08:00:00+09:00",
+      "name": "ReGLOSS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=LCBNTo27xaQ",
+      "videoId": "LCBNTo27xaQ",
+      "thumbnail": "https://img.youtube.com/vi/LCBNTo27xaQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "Zh2t42No7lo",
       "date": "2026-08-27",
       "dateLabel": "08/27 (木)",
@@ -22406,6 +22451,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "AurxqUYrBuk",
+      "date": "2026-08-27",
+      "dateLabel": "08/27 (木)",
+      "time": "22:00",
+      "startsAt": "2026-08-27T22:00:00+09:00",
+      "name": "猫又おかゆ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=AurxqUYrBuk",
+      "videoId": "AurxqUYrBuk",
+      "thumbnail": "https://img.youtube.com/vi/AurxqUYrBuk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "oBfQubaNIao",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T19:17:36.224Z",
+  "generatedAt": "2026-08-26T22:20:50.815Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -22438,16 +22438,46 @@
       "branch": "EN"
     },
     {
-      "id": "Swe4Nnee1gs",
+      "id": "Hdl2j9fKjW8",
       "date": "2026-08-27",
       "dateLabel": "08/27 (木)",
       "time": "06:00",
       "startsAt": "2026-08-27T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Hdl2j9fKjW8",
+      "videoId": "Hdl2j9fKjW8",
+      "thumbnail": "https://img.youtube.com/vi/Hdl2j9fKjW8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Swe4Nnee1gs",
+      "date": "2026-08-27",
+      "dateLabel": "08/27 (木)",
+      "time": "06:08",
+      "startsAt": "2026-08-27T06:08:00+09:00",
       "name": "Gigi",
       "title": null,
       "url": "https://www.youtube.com/watch?v=Swe4Nnee1gs",
       "videoId": "Swe4Nnee1gs",
       "thumbnail": "https://img.youtube.com/vi/Swe4Nnee1gs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "v4zykMeq8Yc",
+      "date": "2026-08-27",
+      "dateLabel": "08/27 (木)",
+      "time": "07:30",
+      "startsAt": "2026-08-27T07:30:00+09:00",
+      "name": "Elizabeth",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=v4zykMeq8Yc",
+      "videoId": "v4zykMeq8Yc",
+      "thumbnail": "https://img.youtube.com/vi/v4zykMeq8Yc/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"
@@ -22481,6 +22511,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "8dFL2U9Py_k",
+      "date": "2026-08-27",
+      "dateLabel": "08/27 (木)",
+      "time": "09:00",
+      "startsAt": "2026-08-27T09:00:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=8dFL2U9Py_k",
+      "videoId": "8dFL2U9Py_k",
+      "thumbnail": "https://img.youtube.com/vi/8dFL2U9Py_k/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "Zh2t42No7lo",
@@ -22693,6 +22738,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "e3cRw0MMV20",
+      "date": "2026-08-28",
+      "dateLabel": "08/28 (金)",
+      "time": "01:00",
+      "startsAt": "2026-08-28T01:00:00+09:00",
+      "name": "Kiara",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=e3cRw0MMV20",
+      "videoId": "e3cRw0MMV20",
+      "thumbnail": "https://img.youtube.com/vi/e3cRw0MMV20/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "nw4coXG-zCg",
       "date": "2026-08-28",
       "dateLabel": "08/28 (金)",
@@ -22703,6 +22763,21 @@
       "url": "https://www.youtube.com/watch?v=nw4coXG-zCg",
       "videoId": "nw4coXG-zCg",
       "thumbnail": "https://img.youtube.com/vi/nw4coXG-zCg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "7seUd8nr6-8",
+      "date": "2026-08-28",
+      "dateLabel": "08/28 (金)",
+      "time": "10:00",
+      "startsAt": "2026-08-28T10:00:00+09:00",
+      "name": "Shiori",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=7seUd8nr6-8",
+      "videoId": "7seUd8nr6-8",
+      "thumbnail": "https://img.youtube.com/vi/7seUd8nr6-8/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

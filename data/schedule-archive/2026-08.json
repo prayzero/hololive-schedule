@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T00:26:18.609Z",
+  "generatedAt": "2026-08-26T02:00:41.908Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -21643,6 +21643,21 @@
       "branch": "EN"
     },
     {
+      "id": "00Y_juzzrYY",
+      "date": "2026-08-26",
+      "dateLabel": "08/26 (水)",
+      "time": "10:02",
+      "startsAt": "2026-08-26T10:02:00+09:00",
+      "name": "Kronii",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=00Y_juzzrYY",
+      "videoId": "00Y_juzzrYY",
+      "thumbnail": "https://img.youtube.com/vi/00Y_juzzrYY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "qaCyE_mfotY",
       "date": "2026-08-26",
       "dateLabel": "08/26 (水)",
@@ -21806,6 +21821,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "bR7AOCJjBFU",
+      "date": "2026-08-27",
+      "dateLabel": "08/27 (木)",
+      "time": "01:45",
+      "startsAt": "2026-08-27T01:45:00+09:00",
+      "name": "Kiara",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=bR7AOCJjBFU",
+      "videoId": "bR7AOCJjBFU",
+      "thumbnail": "https://img.youtube.com/vi/bR7AOCJjBFU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "KwGZ94H_aPw",
+      "date": "2026-08-27",
+      "dateLabel": "08/27 (木)",
+      "time": "02:00",
+      "startsAt": "2026-08-27T02:00:00+09:00",
+      "name": "Shiori",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=KwGZ94H_aPw",
+      "videoId": "KwGZ94H_aPw",
+      "thumbnail": "https://img.youtube.com/vi/KwGZ94H_aPw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "1WDHebAydJ4",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T22:20:50.815Z",
+  "generatedAt": "2026-08-27T03:25:06.633Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -22483,21 +22483,6 @@
       "branch": "EN"
     },
     {
-      "id": "rio-iTBOIxE",
-      "date": "2026-08-27",
-      "dateLabel": "08/27 (木)",
-      "time": "08:00",
-      "startsAt": "2026-08-27T08:00:00+09:00",
-      "name": "博衣こより",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=rio-iTBOIxE",
-      "videoId": "rio-iTBOIxE",
-      "thumbnail": "https://img.youtube.com/vi/rio-iTBOIxE/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "LCBNTo27xaQ",
       "date": "2026-08-27",
       "dateLabel": "08/27 (木)",
@@ -22513,11 +22498,26 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "rio-iTBOIxE",
+      "date": "2026-08-27",
+      "dateLabel": "08/27 (木)",
+      "time": "08:05",
+      "startsAt": "2026-08-27T08:05:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=rio-iTBOIxE",
+      "videoId": "rio-iTBOIxE",
+      "thumbnail": "https://img.youtube.com/vi/rio-iTBOIxE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "8dFL2U9Py_k",
       "date": "2026-08-27",
       "dateLabel": "08/27 (木)",
-      "time": "09:00",
-      "startsAt": "2026-08-27T09:00:00+09:00",
+      "time": "09:19",
+      "startsAt": "2026-08-27T09:19:00+09:00",
       "name": "Kobo",
       "title": null,
       "url": "https://www.youtube.com/watch?v=8dFL2U9Py_k",
@@ -22556,6 +22556,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "tHyvL8Niytk",
+      "date": "2026-08-27",
+      "dateLabel": "08/27 (木)",
+      "time": "12:20",
+      "startsAt": "2026-08-27T12:20:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=tHyvL8Niytk",
+      "videoId": "tHyvL8Niytk",
+      "thumbnail": "https://img.youtube.com/vi/tHyvL8Niytk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "3VXtwrv6tOE",
+      "date": "2026-08-27",
+      "dateLabel": "08/27 (木)",
+      "time": "12:30",
+      "startsAt": "2026-08-27T12:30:00+09:00",
+      "name": "Risu",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=3VXtwrv6tOE",
+      "videoId": "3VXtwrv6tOE",
+      "thumbnail": "https://img.youtube.com/vi/3VXtwrv6tOE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "7-YhFSgO0GY",
@@ -22723,6 +22753,21 @@
       "branch": "JP"
     },
     {
+      "id": "WvZgGU_71Yc",
+      "date": "2026-08-27",
+      "dateLabel": "08/27 (木)",
+      "time": "22:00",
+      "startsAt": "2026-08-27T22:00:00+09:00",
+      "name": "Gigi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=WvZgGU_71Yc",
+      "videoId": "WvZgGU_71Yc",
+      "thumbnail": "https://img.youtube.com/vi/WvZgGU_71Yc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "-5rAu8Ys9Zg",
       "date": "2026-08-27",
       "dateLabel": "08/27 (木)",
@@ -22778,6 +22823,21 @@
       "url": "https://www.youtube.com/watch?v=7seUd8nr6-8",
       "videoId": "7seUd8nr6-8",
       "thumbnail": "https://img.youtube.com/vi/7seUd8nr6-8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "UV_5N2-eNAQ",
+      "date": "2026-08-28",
+      "dateLabel": "08/28 (金)",
+      "time": "12:00",
+      "startsAt": "2026-08-28T12:00:00+09:00",
+      "name": "holo EN",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=UV_5N2-eNAQ",
+      "videoId": "UV_5N2-eNAQ",
+      "thumbnail": "https://img.youtube.com/vi/UV_5N2-eNAQ/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

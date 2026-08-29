@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T03:22:02.309Z",
+  "generatedAt": "2026-08-29T07:07:38.688Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -24511,8 +24511,8 @@
       "id": "HQx1pVAkQMw",
       "date": "2026-08-29",
       "dateLabel": "08/29 (土)",
-      "time": "12:30",
-      "startsAt": "2026-08-29T12:30:00+09:00",
+      "time": "12:31",
+      "startsAt": "2026-08-29T12:31:00+09:00",
       "name": "Risu",
       "title": null,
       "url": "https://www.youtube.com/watch?v=HQx1pVAkQMw",
@@ -24526,8 +24526,8 @@
       "id": "zp14xy6cn0E",
       "date": "2026-08-29",
       "dateLabel": "08/29 (土)",
-      "time": "13:00",
-      "startsAt": "2026-08-29T13:00:00+09:00",
+      "time": "13:04",
+      "startsAt": "2026-08-29T13:04:00+09:00",
       "name": "大空スバル",
       "title": null,
       "url": "https://www.youtube.com/watch?v=zp14xy6cn0E",
@@ -24541,8 +24541,8 @@
       "id": "SBLxHV1q_7k",
       "date": "2026-08-29",
       "dateLabel": "08/29 (土)",
-      "time": "14:00",
-      "startsAt": "2026-08-29T14:00:00+09:00",
+      "time": "14:01",
+      "startsAt": "2026-08-29T14:01:00+09:00",
       "name": "一条莉々華",
       "title": null,
       "url": "https://www.youtube.com/watch?v=SBLxHV1q_7k",
@@ -24566,6 +24566,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "_TUv2dVK0UI",
+      "date": "2026-08-29",
+      "dateLabel": "08/29 (土)",
+      "time": "18:30",
+      "startsAt": "2026-08-29T18:30:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=_TUv2dVK0UI",
+      "videoId": "_TUv2dVK0UI",
+      "thumbnail": "https://img.youtube.com/vi/_TUv2dVK0UI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "JrPytlClwI8",
@@ -24611,6 +24626,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "nrvWc9Zakp8",
+      "date": "2026-08-29",
+      "dateLabel": "08/29 (土)",
+      "time": "19:00",
+      "startsAt": "2026-08-29T19:00:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=nrvWc9Zakp8",
+      "videoId": "nrvWc9Zakp8",
+      "thumbnail": "https://img.youtube.com/vi/nrvWc9Zakp8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "_ybDq3b1HJo",
@@ -24671,6 +24701,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "qHC9c62GCpc",
+      "date": "2026-08-29",
+      "dateLabel": "08/29 (土)",
+      "time": "21:00",
+      "startsAt": "2026-08-29T21:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=qHC9c62GCpc",
+      "videoId": "qHC9c62GCpc",
+      "thumbnail": "https://img.youtube.com/vi/qHC9c62GCpc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "wO0M4UN6EWU",
+      "date": "2026-08-29",
+      "dateLabel": "08/29 (土)",
+      "time": "21:00",
+      "startsAt": "2026-08-29T21:00:00+09:00",
+      "name": "桃鈴ねね",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=wO0M4UN6EWU",
+      "videoId": "wO0M4UN6EWU",
+      "thumbnail": "https://img.youtube.com/vi/wO0M4UN6EWU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "u3-DOaMd4xo",
@@ -24748,6 +24808,21 @@
       "branch": "JP"
     },
     {
+      "id": "YzIPpdwu1Rw",
+      "date": "2026-08-30",
+      "dateLabel": "08/30 (日)",
+      "time": "00:30",
+      "startsAt": "2026-08-30T00:30:00+09:00",
+      "name": "Kaela",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=YzIPpdwu1Rw",
+      "videoId": "YzIPpdwu1Rw",
+      "thumbnail": "https://img.youtube.com/vi/YzIPpdwu1Rw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "DwMbf_o8UAc",
       "date": "2026-08-30",
       "dateLabel": "08/30 (日)",
@@ -24758,6 +24833,21 @@
       "url": "https://www.youtube.com/watch?v=DwMbf_o8UAc",
       "videoId": "DwMbf_o8UAc",
       "thumbnail": "https://img.youtube.com/vi/DwMbf_o8UAc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "NZozMxJTKfM",
+      "date": "2026-08-30",
+      "dateLabel": "08/30 (日)",
+      "time": "04:00",
+      "startsAt": "2026-08-30T04:00:00+09:00",
+      "name": "Elizabeth",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=NZozMxJTKfM",
+      "videoId": "NZozMxJTKfM",
+      "thumbnail": "https://img.youtube.com/vi/NZozMxJTKfM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"
@@ -24791,6 +24881,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "Drga5lIyP_g",
+      "date": "2026-08-30",
+      "dateLabel": "08/30 (日)",
+      "time": "11:00",
+      "startsAt": "2026-08-30T11:00:00+09:00",
+      "name": "ラプラス",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Drga5lIyP_g",
+      "videoId": "Drga5lIyP_g",
+      "thumbnail": "https://img.youtube.com/vi/Drga5lIyP_g/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "4a_TgDZpYNM",

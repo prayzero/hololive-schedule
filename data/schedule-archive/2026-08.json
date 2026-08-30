@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T05:28:14.358Z",
+  "generatedAt": "2026-08-30T07:25:13.022Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -25561,8 +25561,8 @@
       "id": "NLDMst8Zg58",
       "date": "2026-08-30",
       "dateLabel": "08/30 (日)",
-      "time": "15:30",
-      "startsAt": "2026-08-30T15:30:00+09:00",
+      "time": "16:45",
+      "startsAt": "2026-08-30T16:45:00+09:00",
       "name": "FUWAMOCO",
       "title": null,
       "url": "https://www.youtube.com/watch?v=NLDMst8Zg58",
@@ -25603,6 +25603,21 @@
       "branch": "JP"
     },
     {
+      "id": "4yD20fIteeE",
+      "date": "2026-08-30",
+      "dateLabel": "08/30 (日)",
+      "time": "19:00",
+      "startsAt": "2026-08-30T19:00:00+09:00",
+      "name": "白銀ノエル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=4yD20fIteeE",
+      "videoId": "4yD20fIteeE",
+      "thumbnail": "https://img.youtube.com/vi/4yD20fIteeE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "Wa8ZX0i_LPw",
       "date": "2026-08-30",
       "dateLabel": "08/30 (日)",
@@ -25616,6 +25631,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "9lx8GlofcjA",
+      "date": "2026-08-30",
+      "dateLabel": "08/30 (日)",
+      "time": "19:00",
+      "startsAt": "2026-08-30T19:00:00+09:00",
+      "name": "儒烏風亭らでん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=9lx8GlofcjA",
+      "videoId": "9lx8GlofcjA",
+      "thumbnail": "https://img.youtube.com/vi/9lx8GlofcjA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "7aVqlr6P4so",

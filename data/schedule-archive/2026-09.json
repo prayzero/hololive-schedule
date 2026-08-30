@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-08-30T17:37:38.113Z",
+  "source": "https://schedule.hololive.tv/lives/hololive",
+  "sources": [
+    "https://schedule.hololive.tv/lives/hololive",
+    "https://schedule.hololive.tv/lives/indonesia",
+    "https://schedule.hololive.tv/lives/english",
+    "https://schedule.hololive.tv/lives/dev_is"
+  ],
+  "sourceRefreshMinutes": 15,
+  "collectorVersion": "3.0.0",
+  "timezone": "Asia/Tokyo",
+  "month": "2026-09",
+  "entries": [
+    {
+      "id": "yqW1vrp5nEg",
+      "date": "2026-09-01",
+      "dateLabel": "09/01 (火)",
+      "time": "19:00",
+      "startsAt": "2026-09-01T19:00:00+09:00",
+      "name": "AZKi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=yqW1vrp5nEg",
+      "videoId": "yqW1vrp5nEg",
+      "thumbnail": "https://img.youtube.com/vi/yqW1vrp5nEg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    }
+  ]
+}

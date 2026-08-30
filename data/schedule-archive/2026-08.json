@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T17:37:38.113Z",
+  "generatedAt": "2026-08-30T22:49:52.951Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -26128,6 +26128,36 @@
       "branch": "EN"
     },
     {
+      "id": "ueLKBuGEQkg",
+      "date": "2026-08-31",
+      "dateLabel": "08/31 (月)",
+      "time": "05:06",
+      "startsAt": "2026-08-31T05:06:00+09:00",
+      "name": "Raora",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ueLKBuGEQkg",
+      "videoId": "ueLKBuGEQkg",
+      "thumbnail": "https://img.youtube.com/vi/ueLKBuGEQkg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "FEQqAEpaKXk",
+      "date": "2026-08-31",
+      "dateLabel": "08/31 (月)",
+      "time": "06:00",
+      "startsAt": "2026-08-31T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=FEQqAEpaKXk",
+      "videoId": "FEQqAEpaKXk",
+      "thumbnail": "https://img.youtube.com/vi/FEQqAEpaKXk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "_e7u802STXw",
       "date": "2026-08-31",
       "dateLabel": "08/31 (月)",
@@ -26336,6 +26366,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "SXxzqx1_izk",
+      "date": "2026-08-31",
+      "dateLabel": "08/31 (月)",
+      "time": "22:00",
+      "startsAt": "2026-08-31T22:00:00+09:00",
+      "name": "猫又おかゆ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=SXxzqx1_izk",
+      "videoId": "SXxzqx1_izk",
+      "thumbnail": "https://img.youtube.com/vi/SXxzqx1_izk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "0L1PGGw_-PQ",

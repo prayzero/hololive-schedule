@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T22:49:52.951Z",
+  "generatedAt": "2026-08-31T00:58:59.556Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -26188,6 +26188,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "rBB95cNpEp4",
+      "date": "2026-08-31",
+      "dateLabel": "08/31 (月)",
+      "time": "09:56",
+      "startsAt": "2026-08-31T09:56:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=rBB95cNpEp4",
+      "videoId": "rBB95cNpEp4",
+      "thumbnail": "https://img.youtube.com/vi/rBB95cNpEp4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "UZjSpAI9oWA",
       "date": "2026-08-31",
       "dateLabel": "08/31 (月)",
@@ -26201,21 +26216,6 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
-    },
-    {
-      "id": "rBB95cNpEp4",
-      "date": "2026-08-31",
-      "dateLabel": "08/31 (月)",
-      "time": "10:00",
-      "startsAt": "2026-08-31T10:00:00+09:00",
-      "name": "Bijou",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=rBB95cNpEp4",
-      "videoId": "rBB95cNpEp4",
-      "thumbnail": "https://img.youtube.com/vi/rBB95cNpEp4/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "EN"
     },
     {
       "id": "vdxLCfVroJ0",
@@ -26363,6 +26363,21 @@
       "url": "https://www.youtube.com/watch?v=HZOSaPAIWYc",
       "videoId": "HZOSaPAIWYc",
       "thumbnail": "https://img.youtube.com/vi/HZOSaPAIWYc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "4fIlr008mJQ",
+      "date": "2026-08-31",
+      "dateLabel": "08/31 (月)",
+      "time": "21:00",
+      "startsAt": "2026-08-31T21:00:00+09:00",
+      "name": "Elizabeth",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=4fIlr008mJQ",
+      "videoId": "4fIlr008mJQ",
+      "thumbnail": "https://img.youtube.com/vi/4fIlr008mJQ/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

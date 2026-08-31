@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T15:02:33.199Z",
+  "generatedAt": "2026-08-31T20:47:51.341Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -13,11 +13,26 @@
   "month": "2026-09",
   "entries": [
     {
+      "id": "BOjfwyJzX84",
+      "date": "2026-09-01",
+      "dateLabel": "09/01 (火)",
+      "time": "01:37",
+      "startsAt": "2026-09-01T01:37:00+09:00",
+      "name": "Ina",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=BOjfwyJzX84",
+      "videoId": "BOjfwyJzX84",
+      "thumbnail": "https://img.youtube.com/vi/BOjfwyJzX84/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "MOjT8edxMaw",
       "date": "2026-09-01",
       "dateLabel": "09/01 (火)",
-      "time": "04:00",
-      "startsAt": "2026-09-01T04:00:00+09:00",
+      "time": "04:04",
+      "startsAt": "2026-09-01T04:04:00+09:00",
       "name": "Elizabeth",
       "title": null,
       "url": "https://www.youtube.com/watch?v=MOjT8edxMaw",
@@ -88,6 +103,36 @@
       "branch": "EN"
     },
     {
+      "id": "RZZz94ZkVF4",
+      "date": "2026-09-01",
+      "dateLabel": "09/01 (火)",
+      "time": "13:00",
+      "startsAt": "2026-09-01T13:00:00+09:00",
+      "name": "IRyS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=RZZz94ZkVF4",
+      "videoId": "RZZz94ZkVF4",
+      "thumbnail": "https://img.youtube.com/vi/RZZz94ZkVF4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "oF9lN--CrN8",
+      "date": "2026-09-01",
+      "dateLabel": "09/01 (火)",
+      "time": "18:00",
+      "startsAt": "2026-09-01T18:00:00+09:00",
+      "name": "白銀ノエル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=oF9lN--CrN8",
+      "videoId": "oF9lN--CrN8",
+      "thumbnail": "https://img.youtube.com/vi/oF9lN--CrN8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "yqW1vrp5nEg",
       "date": "2026-09-01",
       "dateLabel": "09/01 (火)",
@@ -133,6 +178,21 @@
       "branch": "JP"
     },
     {
+      "id": "5nbJ5BAUlVA",
+      "date": "2026-09-01",
+      "dateLabel": "09/01 (火)",
+      "time": "22:30",
+      "startsAt": "2026-09-01T22:30:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=5nbJ5BAUlVA",
+      "videoId": "5nbJ5BAUlVA",
+      "thumbnail": "https://img.youtube.com/vi/5nbJ5BAUlVA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "J91MV67aARg",
       "date": "2026-09-02",
       "dateLabel": "09/02 (水)",
@@ -146,6 +206,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "a2p3UBRJ33s",
+      "date": "2026-09-02",
+      "dateLabel": "09/02 (水)",
+      "time": "20:00",
+      "startsAt": "2026-09-02T20:00:00+09:00",
+      "name": "戌神ころね",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=a2p3UBRJ33s",
+      "videoId": "a2p3UBRJ33s",
+      "thumbnail": "https://img.youtube.com/vi/a2p3UBRJ33s/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-30T22:49:52.951Z",
+  "generatedAt": "2026-08-31T05:41:18.831Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12,6 +12,36 @@
   "timezone": "Asia/Tokyo",
   "month": "2026-09",
   "entries": [
+    {
+      "id": "MOjT8edxMaw",
+      "date": "2026-09-01",
+      "dateLabel": "09/01 (火)",
+      "time": "04:00",
+      "startsAt": "2026-09-01T04:00:00+09:00",
+      "name": "Elizabeth",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=MOjT8edxMaw",
+      "videoId": "MOjT8edxMaw",
+      "thumbnail": "https://img.youtube.com/vi/MOjT8edxMaw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "oyODlBe7aFU",
+      "date": "2026-09-01",
+      "dateLabel": "09/01 (火)",
+      "time": "05:00",
+      "startsAt": "2026-09-01T05:00:00+09:00",
+      "name": "Shiori",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=oyODlBe7aFU",
+      "videoId": "oyODlBe7aFU",
+      "thumbnail": "https://img.youtube.com/vi/oyODlBe7aFU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
     {
       "id": "yqW1vrp5nEg",
       "date": "2026-09-01",

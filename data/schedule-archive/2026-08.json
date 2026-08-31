@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T00:58:59.556Z",
+  "generatedAt": "2026-08-31T05:41:18.831Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -26206,8 +26206,8 @@
       "id": "UZjSpAI9oWA",
       "date": "2026-08-31",
       "dateLabel": "08/31 (月)",
-      "time": "10:00",
-      "startsAt": "2026-08-31T10:00:00+09:00",
+      "time": "10:01",
+      "startsAt": "2026-08-31T10:01:00+09:00",
       "name": "儒烏風亭らでん",
       "title": null,
       "url": "https://www.youtube.com/watch?v=UZjSpAI9oWA",
@@ -26233,6 +26233,36 @@
       "branch": "EN"
     },
     {
+      "id": "3Ad-O0f2FKk",
+      "date": "2026-08-31",
+      "dateLabel": "08/31 (月)",
+      "time": "12:00",
+      "startsAt": "2026-08-31T12:00:00+09:00",
+      "name": "尾丸ポルカ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=3Ad-O0f2FKk",
+      "videoId": "3Ad-O0f2FKk",
+      "thumbnail": "https://img.youtube.com/vi/3Ad-O0f2FKk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Deji3kJWCvc",
+      "date": "2026-08-31",
+      "dateLabel": "08/31 (月)",
+      "time": "14:00",
+      "startsAt": "2026-08-31T14:00:00+09:00",
+      "name": "ReGLOSS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Deji3kJWCvc",
+      "videoId": "Deji3kJWCvc",
+      "thumbnail": "https://img.youtube.com/vi/Deji3kJWCvc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "u9blvdasFBA",
       "date": "2026-08-31",
       "dateLabel": "08/31 (月)",
@@ -26243,6 +26273,36 @@
       "url": "https://www.youtube.com/watch?v=u9blvdasFBA",
       "videoId": "u9blvdasFBA",
       "thumbnail": "https://img.youtube.com/vi/u9blvdasFBA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "tTWm_JOVVqE",
+      "date": "2026-08-31",
+      "dateLabel": "08/31 (月)",
+      "time": "18:00",
+      "startsAt": "2026-08-31T18:00:00+09:00",
+      "name": "白銀ノエル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=tTWm_JOVVqE",
+      "videoId": "tTWm_JOVVqE",
+      "thumbnail": "https://img.youtube.com/vi/tTWm_JOVVqE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "OasFKQl0ZPc",
+      "date": "2026-08-31",
+      "dateLabel": "08/31 (月)",
+      "time": "18:00",
+      "startsAt": "2026-08-31T18:00:00+09:00",
+      "name": "ホロライブ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=OasFKQl0ZPc",
+      "videoId": "OasFKQl0ZPc",
+      "thumbnail": "https://img.youtube.com/vi/OasFKQl0ZPc/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -26321,6 +26381,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "EYTGVvCzlr0",
+      "date": "2026-08-31",
+      "dateLabel": "08/31 (月)",
+      "time": "20:00",
+      "startsAt": "2026-08-31T20:00:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=EYTGVvCzlr0",
+      "videoId": "EYTGVvCzlr0",
+      "thumbnail": "https://img.youtube.com/vi/EYTGVvCzlr0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "PxlEm_nUBho",
@@ -26426,6 +26501,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "lwLTWCM21y0",
+      "date": "2026-08-31",
+      "dateLabel": "08/31 (月)",
+      "time": "23:00",
+      "startsAt": "2026-08-31T23:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=lwLTWCM21y0",
+      "videoId": "lwLTWCM21y0",
+      "thumbnail": "https://img.youtube.com/vi/lwLTWCM21y0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "or6VC0FkOOw",

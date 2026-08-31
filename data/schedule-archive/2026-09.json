@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T06:59:34.325Z",
+  "generatedAt": "2026-08-31T15:02:33.199Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -43,6 +43,21 @@
       "branch": "EN"
     },
     {
+      "id": "SQqpK0FbIQk",
+      "date": "2026-09-01",
+      "dateLabel": "09/01 (火)",
+      "time": "06:00",
+      "startsAt": "2026-09-01T06:00:00+09:00",
+      "name": "Gigi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=SQqpK0FbIQk",
+      "videoId": "SQqpK0FbIQk",
+      "thumbnail": "https://img.youtube.com/vi/SQqpK0FbIQk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "moY0AtG2frc",
       "date": "2026-09-01",
       "dateLabel": "09/01 (火)",
@@ -56,6 +71,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "GMJrWJCbzyI",
+      "date": "2026-09-01",
+      "dateLabel": "09/01 (火)",
+      "time": "10:00",
+      "startsAt": "2026-09-01T10:00:00+09:00",
+      "name": "Baelz",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=GMJrWJCbzyI",
+      "videoId": "GMJrWJCbzyI",
+      "thumbnail": "https://img.youtube.com/vi/GMJrWJCbzyI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "yqW1vrp5nEg",
@@ -101,6 +131,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "J91MV67aARg",
+      "date": "2026-09-02",
+      "dateLabel": "09/02 (水)",
+      "time": "08:00",
+      "startsAt": "2026-09-02T08:00:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=J91MV67aARg",
+      "videoId": "J91MV67aARg",
+      "thumbnail": "https://img.youtube.com/vi/J91MV67aARg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     }
   ]
 }

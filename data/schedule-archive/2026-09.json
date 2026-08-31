@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T05:41:18.831Z",
+  "generatedAt": "2026-08-31T06:59:34.325Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -43,6 +43,21 @@
       "branch": "EN"
     },
     {
+      "id": "moY0AtG2frc",
+      "date": "2026-09-01",
+      "dateLabel": "09/01 (火)",
+      "time": "07:00",
+      "startsAt": "2026-09-01T07:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=moY0AtG2frc",
+      "videoId": "moY0AtG2frc",
+      "thumbnail": "https://img.youtube.com/vi/moY0AtG2frc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "yqW1vrp5nEg",
       "date": "2026-09-01",
       "dateLabel": "09/01 (火)",
@@ -68,6 +83,21 @@
       "url": "https://www.youtube.com/watch?v=_tZftQNFexQ",
       "videoId": "_tZftQNFexQ",
       "thumbnail": "https://img.youtube.com/vi/_tZftQNFexQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "KNHiQfIgH-w",
+      "date": "2026-09-01",
+      "dateLabel": "09/01 (火)",
+      "time": "21:00",
+      "startsAt": "2026-09-01T21:00:00+09:00",
+      "name": "姫森ルーナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=KNHiQfIgH-w",
+      "videoId": "KNHiQfIgH-w",
+      "thumbnail": "https://img.youtube.com/vi/KNHiQfIgH-w/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

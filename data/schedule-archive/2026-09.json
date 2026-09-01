@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T21:18:06.529Z",
+  "generatedAt": "2026-09-01T23:24:29.944Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -781,8 +781,8 @@
       "id": "YGu-T-wMMms",
       "date": "2026-09-02",
       "dateLabel": "09/02 (水)",
-      "time": "08:00",
-      "startsAt": "2026-09-02T08:00:00+09:00",
+      "time": "07:56",
+      "startsAt": "2026-09-02T07:56:00+09:00",
       "name": "Bijou",
       "title": null,
       "url": "https://www.youtube.com/watch?v=YGu-T-wMMms",
@@ -796,8 +796,8 @@
       "id": "J91MV67aARg",
       "date": "2026-09-02",
       "dateLabel": "09/02 (水)",
-      "time": "08:00",
-      "startsAt": "2026-09-02T08:00:00+09:00",
+      "time": "08:30",
+      "startsAt": "2026-09-02T08:30:00+09:00",
       "name": "Calli",
       "title": null,
       "url": "https://www.youtube.com/watch?v=J91MV67aARg",
@@ -1031,6 +1031,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "Y99H1M3Nc2M",
+      "date": "2026-09-03",
+      "dateLabel": "09/03 (木)",
+      "time": "02:00",
+      "startsAt": "2026-09-03T02:00:00+09:00",
+      "name": "Kiara",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Y99H1M3Nc2M",
+      "videoId": "Y99H1M3Nc2M",
+      "thumbnail": "https://img.youtube.com/vi/Y99H1M3Nc2M/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "YCPYk8k2lCk",

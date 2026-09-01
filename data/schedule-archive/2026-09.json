@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-01T00:08:38.120Z",
+  "generatedAt": "2026-09-01T05:14:45.696Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -118,11 +118,41 @@
       "branch": "EN"
     },
     {
+      "id": "ANYwHt1FgeA",
+      "date": "2026-09-01",
+      "dateLabel": "09/01 (火)",
+      "time": "11:58",
+      "startsAt": "2026-09-01T11:58:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ANYwHt1FgeA",
+      "videoId": "ANYwHt1FgeA",
+      "thumbnail": "https://img.youtube.com/vi/ANYwHt1FgeA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "rReI0LV5FCo",
+      "date": "2026-09-01",
+      "dateLabel": "09/01 (火)",
+      "time": "12:36",
+      "startsAt": "2026-09-01T12:36:00+09:00",
+      "name": "Kronii",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=rReI0LV5FCo",
+      "videoId": "rReI0LV5FCo",
+      "thumbnail": "https://img.youtube.com/vi/rReI0LV5FCo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "RZZz94ZkVF4",
       "date": "2026-09-01",
       "dateLabel": "09/01 (火)",
-      "time": "13:00",
-      "startsAt": "2026-09-01T13:00:00+09:00",
+      "time": "13:28",
+      "startsAt": "2026-09-01T13:28:00+09:00",
       "name": "IRyS",
       "title": null,
       "url": "https://www.youtube.com/watch?v=RZZz94ZkVF4",
@@ -178,6 +208,36 @@
       "branch": "JP"
     },
     {
+      "id": "c_O70kYZOTU",
+      "date": "2026-09-01",
+      "dateLabel": "09/01 (火)",
+      "time": "20:00",
+      "startsAt": "2026-09-01T20:00:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=c_O70kYZOTU",
+      "videoId": "c_O70kYZOTU",
+      "thumbnail": "https://img.youtube.com/vi/c_O70kYZOTU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "G-Yy9ge3CO8",
+      "date": "2026-09-01",
+      "dateLabel": "09/01 (火)",
+      "time": "21:00",
+      "startsAt": "2026-09-01T21:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=G-Yy9ge3CO8",
+      "videoId": "G-Yy9ge3CO8",
+      "thumbnail": "https://img.youtube.com/vi/G-Yy9ge3CO8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "KNHiQfIgH-w",
       "date": "2026-09-01",
       "dateLabel": "09/01 (火)",
@@ -191,6 +251,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "K9dPgJLMHNk",
+      "date": "2026-09-01",
+      "dateLabel": "09/01 (火)",
+      "time": "21:00",
+      "startsAt": "2026-09-01T21:00:00+09:00",
+      "name": "Ollie",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=K9dPgJLMHNk",
+      "videoId": "K9dPgJLMHNk",
+      "thumbnail": "https://img.youtube.com/vi/K9dPgJLMHNk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "5nbJ5BAUlVA",
@@ -208,6 +283,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "GxLMvV3v5rU",
+      "date": "2026-09-02",
+      "dateLabel": "09/02 (水)",
+      "time": "05:00",
+      "startsAt": "2026-09-02T05:00:00+09:00",
+      "name": "Shiori",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=GxLMvV3v5rU",
+      "videoId": "GxLMvV3v5rU",
+      "thumbnail": "https://img.youtube.com/vi/GxLMvV3v5rU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "J91MV67aARg",
       "date": "2026-09-02",
       "dateLabel": "09/02 (水)",
@@ -221,6 +311,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "h6W0z71Ce3w",
+      "date": "2026-09-02",
+      "dateLabel": "09/02 (水)",
+      "time": "12:00",
+      "startsAt": "2026-09-02T12:00:00+09:00",
+      "name": "ロボ子さん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=h6W0z71Ce3w",
+      "videoId": "h6W0z71Ce3w",
+      "thumbnail": "https://img.youtube.com/vi/h6W0z71Ce3w/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "a2p3UBRJ33s",

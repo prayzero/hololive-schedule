@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T15:02:33.199Z",
+  "generatedAt": "2026-09-01T14:59:21.262Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20348,21 +20348,6 @@
       "url": "https://www.youtube.com/watch?v=YTtuhL8jgQ8",
       "videoId": "YTtuhL8jgQ8",
       "thumbnail": "https://img.youtube.com/vi/YTtuhL8jgQ8/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "ID"
-    },
-    {
-      "id": "ey3d05sFcOU",
-      "date": "2026-08-24",
-      "dateLabel": "08/24 (月)",
-      "time": "18:00",
-      "startsAt": "2026-08-24T18:00:00+09:00",
-      "name": "Zeta",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=ey3d05sFcOU",
-      "videoId": "ey3d05sFcOU",
-      "thumbnail": "https://img.youtube.com/vi/ey3d05sFcOU/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "ID"

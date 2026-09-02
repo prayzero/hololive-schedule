@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T04:39:56.019Z",
+  "generatedAt": "2026-09-02T06:07:46.862Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -883,6 +883,21 @@
       "branch": "ID"
     },
     {
+      "id": "byHbFaJECmA",
+      "date": "2026-09-02",
+      "dateLabel": "09/02 (水)",
+      "time": "14:00",
+      "startsAt": "2026-09-02T14:00:00+09:00",
+      "name": "Ollie",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=byHbFaJECmA",
+      "videoId": "byHbFaJECmA",
+      "thumbnail": "https://img.youtube.com/vi/byHbFaJECmA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "W8xA-3b8JF4",
       "date": "2026-09-02",
       "dateLabel": "09/02 (水)",
@@ -971,6 +986,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "7eGP1D5Mxqg",
+      "date": "2026-09-02",
+      "dateLabel": "09/02 (水)",
+      "time": "21:00",
+      "startsAt": "2026-09-02T21:00:00+09:00",
+      "name": "一条莉々華",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=7eGP1D5Mxqg",
+      "videoId": "7eGP1D5Mxqg",
+      "thumbnail": "https://img.youtube.com/vi/7eGP1D5Mxqg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "1206-hPOCpw",
@@ -1078,6 +1108,51 @@
       "branch": "JP"
     },
     {
+      "id": "EmteTL5Ij8g",
+      "date": "2026-09-02",
+      "dateLabel": "09/02 (水)",
+      "time": "22:00",
+      "startsAt": "2026-09-02T22:00:00+09:00",
+      "name": "不知火フレア",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=EmteTL5Ij8g",
+      "videoId": "EmteTL5Ij8g",
+      "thumbnail": "https://img.youtube.com/vi/EmteTL5Ij8g/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "yoldrsUJhF4",
+      "date": "2026-09-02",
+      "dateLabel": "09/02 (水)",
+      "time": "22:00",
+      "startsAt": "2026-09-02T22:00:00+09:00",
+      "name": "儒烏風亭らでん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=yoldrsUJhF4",
+      "videoId": "yoldrsUJhF4",
+      "thumbnail": "https://img.youtube.com/vi/yoldrsUJhF4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
+      "id": "hmCzzKyZ2Nw",
+      "date": "2026-09-02",
+      "dateLabel": "09/02 (水)",
+      "time": "22:00",
+      "startsAt": "2026-09-02T22:00:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=hmCzzKyZ2Nw",
+      "videoId": "hmCzzKyZ2Nw",
+      "thumbnail": "https://img.youtube.com/vi/hmCzzKyZ2Nw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "wsSt8S9wRl4",
       "date": "2026-09-02",
       "dateLabel": "09/02 (水)",
@@ -1151,6 +1226,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "9eOxA0i09EA",
+      "date": "2026-09-03",
+      "dateLabel": "09/03 (木)",
+      "time": "19:00",
+      "startsAt": "2026-09-03T19:00:00+09:00",
+      "name": "儒烏風亭らでん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=9eOxA0i09EA",
+      "videoId": "9eOxA0i09EA",
+      "thumbnail": "https://img.youtube.com/vi/9eOxA0i09EA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "QLnhKG18_Uc",

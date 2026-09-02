@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T15:16:02.088Z",
+  "generatedAt": "2026-09-02T18:48:08.224Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -1723,6 +1723,21 @@
       "branch": "EN"
     },
     {
+      "id": "9LpZ1cm-1zQ",
+      "date": "2026-09-03",
+      "dateLabel": "09/03 (木)",
+      "time": "12:00",
+      "startsAt": "2026-09-03T12:00:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=9LpZ1cm-1zQ",
+      "videoId": "9LpZ1cm-1zQ",
+      "thumbnail": "https://img.youtube.com/vi/9LpZ1cm-1zQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
+    },
+    {
       "id": "ImFaF1n6OxY",
       "date": "2026-09-03",
       "dateLabel": "09/03 (木)",
@@ -1753,6 +1768,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "O6sCDth4q34",
+      "date": "2026-09-03",
+      "dateLabel": "09/03 (木)",
+      "time": "19:00",
+      "startsAt": "2026-09-03T19:00:00+09:00",
+      "name": "姫森ルーナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=O6sCDth4q34",
+      "videoId": "O6sCDth4q34",
+      "thumbnail": "https://img.youtube.com/vi/O6sCDth4q34/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "ln-ghq9nNhc",
       "date": "2026-09-03",
       "dateLabel": "09/03 (木)",
@@ -1763,6 +1793,36 @@
       "url": "https://www.youtube.com/watch?v=ln-ghq9nNhc",
       "videoId": "ln-ghq9nNhc",
       "thumbnail": "https://img.youtube.com/vi/ln-ghq9nNhc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "9B7SFrpmzL0",
+      "date": "2026-09-03",
+      "dateLabel": "09/03 (木)",
+      "time": "20:00",
+      "startsAt": "2026-09-03T20:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=9B7SFrpmzL0",
+      "videoId": "9B7SFrpmzL0",
+      "thumbnail": "https://img.youtube.com/vi/9B7SFrpmzL0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "zoCXUR4U804",
+      "date": "2026-09-03",
+      "dateLabel": "09/03 (木)",
+      "time": "21:00",
+      "startsAt": "2026-09-03T21:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=zoCXUR4U804",
+      "videoId": "zoCXUR4U804",
+      "thumbnail": "https://img.youtube.com/vi/zoCXUR4U804/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

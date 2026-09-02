@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T21:22:52.909Z",
+  "generatedAt": "2026-09-02T23:32:22.690Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -1696,8 +1696,8 @@
       "id": "a1pfTx8xYQM",
       "date": "2026-09-03",
       "dateLabel": "09/03 (木)",
-      "time": "08:00",
-      "startsAt": "2026-09-03T08:00:00+09:00",
+      "time": "07:56",
+      "startsAt": "2026-09-03T07:56:00+09:00",
       "name": "Bijou",
       "title": null,
       "url": "https://www.youtube.com/watch?v=a1pfTx8xYQM",
@@ -1751,6 +1751,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "0URYkmOEHL0",
+      "date": "2026-09-03",
+      "dateLabel": "09/03 (木)",
+      "time": "12:00",
+      "startsAt": "2026-09-03T12:00:00+09:00",
+      "name": "Kronii",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=0URYkmOEHL0",
+      "videoId": "0URYkmOEHL0",
+      "thumbnail": "https://img.youtube.com/vi/0URYkmOEHL0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "ImFaF1n6OxY",

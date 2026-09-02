@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-02T18:48:08.224Z",
+  "generatedAt": "2026-09-02T21:22:52.909Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -1651,8 +1651,8 @@
       "id": "Y99H1M3Nc2M",
       "date": "2026-09-03",
       "dateLabel": "09/03 (木)",
-      "time": "03:30",
-      "startsAt": "2026-09-03T03:30:00+09:00",
+      "time": "03:59",
+      "startsAt": "2026-09-03T03:59:00+09:00",
       "name": "Kiara",
       "title": null,
       "url": "https://www.youtube.com/watch?v=Y99H1M3Nc2M",
@@ -1663,11 +1663,26 @@
       "branch": "EN"
     },
     {
-      "id": "vYaNze91YGA",
+      "id": "Ve7sF81MKT8",
       "date": "2026-09-03",
       "dateLabel": "09/03 (木)",
       "time": "06:00",
       "startsAt": "2026-09-03T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Ve7sF81MKT8",
+      "videoId": "Ve7sF81MKT8",
+      "thumbnail": "https://img.youtube.com/vi/Ve7sF81MKT8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "vYaNze91YGA",
+      "date": "2026-09-03",
+      "dateLabel": "09/03 (木)",
+      "time": "06:02",
+      "startsAt": "2026-09-03T06:02:00+09:00",
       "name": "Gigi",
       "title": null,
       "url": "https://www.youtube.com/watch?v=vYaNze91YGA",
@@ -1838,6 +1853,21 @@
       "url": "https://www.youtube.com/watch?v=QLnhKG18_Uc",
       "videoId": "QLnhKG18_Uc",
       "thumbnail": "https://img.youtube.com/vi/QLnhKG18_Uc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "dGRpYR84Mro",
+      "date": "2026-09-03",
+      "dateLabel": "09/03 (木)",
+      "time": "22:00",
+      "startsAt": "2026-09-03T22:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=dGRpYR84Mro",
+      "videoId": "dGRpYR84Mro",
+      "thumbnail": "https://img.youtube.com/vi/dGRpYR84Mro/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

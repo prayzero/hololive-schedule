@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T01:25:33.939Z",
+  "generatedAt": "2026-09-03T04:37:21.508Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -1756,8 +1756,8 @@
       "id": "0URYkmOEHL0",
       "date": "2026-09-03",
       "dateLabel": "09/03 (木)",
-      "time": "12:00",
-      "startsAt": "2026-09-03T12:00:00+09:00",
+      "time": "12:14",
+      "startsAt": "2026-09-03T12:14:00+09:00",
       "name": "Kronii",
       "title": null,
       "url": "https://www.youtube.com/watch?v=0URYkmOEHL0",
@@ -1766,6 +1766,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "o5hLRlKiPsc",
+      "date": "2026-09-03",
+      "dateLabel": "09/03 (木)",
+      "time": "18:00",
+      "startsAt": "2026-09-03T18:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=o5hLRlKiPsc",
+      "videoId": "o5hLRlKiPsc",
+      "thumbnail": "https://img.youtube.com/vi/o5hLRlKiPsc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "DEV_IS"
     },
     {
       "id": "ImFaF1n6OxY",
@@ -1796,6 +1811,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "KcZ270htins",
+      "date": "2026-09-03",
+      "dateLabel": "09/03 (木)",
+      "time": "19:00",
+      "startsAt": "2026-09-03T19:00:00+09:00",
+      "name": "癒月ちょこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=KcZ270htins",
+      "videoId": "KcZ270htins",
+      "thumbnail": "https://img.youtube.com/vi/KcZ270htins/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "O6sCDth4q34",

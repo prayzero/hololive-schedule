@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T04:37:21.508Z",
+  "generatedAt": "2026-09-03T06:27:51.979Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -1768,6 +1768,36 @@
       "branch": "EN"
     },
     {
+      "id": "XSjzPDwjfLI",
+      "date": "2026-09-03",
+      "dateLabel": "09/03 (木)",
+      "time": "14:46",
+      "startsAt": "2026-09-03T14:46:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=XSjzPDwjfLI",
+      "videoId": "XSjzPDwjfLI",
+      "thumbnail": "https://img.youtube.com/vi/XSjzPDwjfLI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "kf1yM_iWxaQ",
+      "date": "2026-09-03",
+      "dateLabel": "09/03 (木)",
+      "time": "17:00",
+      "startsAt": "2026-09-03T17:00:00+09:00",
+      "name": "AZKi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=kf1yM_iWxaQ",
+      "videoId": "kf1yM_iWxaQ",
+      "thumbnail": "https://img.youtube.com/vi/kf1yM_iWxaQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "o5hLRlKiPsc",
       "date": "2026-09-03",
       "dateLabel": "09/03 (木)",
@@ -1781,6 +1811,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "8m8Faj55g1k",
+      "date": "2026-09-03",
+      "dateLabel": "09/03 (木)",
+      "time": "18:00",
+      "startsAt": "2026-09-03T18:00:00+09:00",
+      "name": "Iofi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=8m8Faj55g1k",
+      "videoId": "8m8Faj55g1k",
+      "thumbnail": "https://img.youtube.com/vi/8m8Faj55g1k/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "vQDn0M_hf6A",
+      "date": "2026-09-03",
+      "dateLabel": "09/03 (木)",
+      "time": "18:00",
+      "startsAt": "2026-09-03T18:00:00+09:00",
+      "name": "Reine",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=vQDn0M_hf6A",
+      "videoId": "vQDn0M_hf6A",
+      "thumbnail": "https://img.youtube.com/vi/vQDn0M_hf6A/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "ImFaF1n6OxY",
@@ -1873,6 +1933,21 @@
       "branch": "JP"
     },
     {
+      "id": "LPsCuv6-AoY",
+      "date": "2026-09-03",
+      "dateLabel": "09/03 (木)",
+      "time": "21:00",
+      "startsAt": "2026-09-03T21:00:00+09:00",
+      "name": "白銀ノエル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=LPsCuv6-AoY",
+      "videoId": "LPsCuv6-AoY",
+      "thumbnail": "https://img.youtube.com/vi/LPsCuv6-AoY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "zoCXUR4U804",
       "date": "2026-09-03",
       "dateLabel": "09/03 (木)",
@@ -1916,6 +1991,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "5qlH-VBLE-4",
+      "date": "2026-09-03",
+      "dateLabel": "09/03 (木)",
+      "time": "22:00",
+      "startsAt": "2026-09-03T22:00:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=5qlH-VBLE-4",
+      "videoId": "5qlH-VBLE-4",
+      "thumbnail": "https://img.youtube.com/vi/5qlH-VBLE-4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "5nbJ5BAUlVA",

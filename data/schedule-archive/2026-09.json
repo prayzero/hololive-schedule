@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T18:47:08.237Z",
+  "generatedAt": "2026-09-03T21:26:42.364Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -2098,6 +2098,21 @@
       "branch": "JP"
     },
     {
+      "id": "uryyMzY0HpQ",
+      "date": "2026-09-03",
+      "dateLabel": "09/03 (木)",
+      "time": "19:00",
+      "startsAt": "2026-09-03T19:00:00+09:00",
+      "name": "アキロゼ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=uryyMzY0HpQ",
+      "videoId": "uryyMzY0HpQ",
+      "thumbnail": "https://img.youtube.com/vi/uryyMzY0HpQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "9eOxA0i09EA",
       "date": "2026-09-03",
       "dateLabel": "09/03 (木)",
@@ -2413,6 +2428,21 @@
       "branch": "EN"
     },
     {
+      "id": "tYcGT_redas",
+      "date": "2026-09-04",
+      "dateLabel": "09/04 (金)",
+      "time": "06:00",
+      "startsAt": "2026-09-04T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=tYcGT_redas",
+      "videoId": "tYcGT_redas",
+      "thumbnail": "https://img.youtube.com/vi/tYcGT_redas/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "xrK5P3XWnS8",
       "date": "2026-09-04",
       "dateLabel": "09/04 (金)",
@@ -2528,6 +2558,21 @@
       "url": "https://www.youtube.com/watch?v=HVXwIlaM4R4",
       "videoId": "HVXwIlaM4R4",
       "thumbnail": "https://img.youtube.com/vi/HVXwIlaM4R4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "8XKw2Mot81s",
+      "date": "2026-09-04",
+      "dateLabel": "09/04 (金)",
+      "time": "19:00",
+      "startsAt": "2026-09-04T19:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=8XKw2Mot81s",
+      "videoId": "8XKw2Mot81s",
+      "thumbnail": "https://img.youtube.com/vi/8XKw2Mot81s/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -2696,6 +2741,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "FUAHvR8kl24",
+      "date": "2026-09-04",
+      "dateLabel": "09/04 (金)",
+      "time": "19:00",
+      "startsAt": "2026-09-04T19:00:00+09:00",
+      "name": "Moona",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=FUAHvR8kl24",
+      "videoId": "FUAHvR8kl24",
+      "thumbnail": "https://img.youtube.com/vi/FUAHvR8kl24/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "0WQBsRQ4hxc",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T20:54:49.468Z",
+  "generatedAt": "2026-09-04T23:00:57.674Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -3283,6 +3283,21 @@
       "branch": "EN"
     },
     {
+      "id": "XWJiIhw0JnI",
+      "date": "2026-09-05",
+      "dateLabel": "09/05 (土)",
+      "time": "06:00",
+      "startsAt": "2026-09-05T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=XWJiIhw0JnI",
+      "videoId": "XWJiIhw0JnI",
+      "thumbnail": "https://img.youtube.com/vi/XWJiIhw0JnI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "nzSAaWwaY94",
       "date": "2026-09-05",
       "dateLabel": "09/05 (土)",
@@ -3746,6 +3761,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
+    },
+    {
+      "id": "mtgB0TbSHFA",
+      "date": "2026-09-06",
+      "dateLabel": "09/06 (日)",
+      "time": "02:00",
+      "startsAt": "2026-09-06T02:00:00+09:00",
+      "name": "Kiara",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=mtgB0TbSHFA",
+      "videoId": "mtgB0TbSHFA",
+      "thumbnail": "https://img.youtube.com/vi/mtgB0TbSHFA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "oP9O2eHyl1k",

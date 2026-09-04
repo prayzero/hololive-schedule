@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T04:41:53.038Z",
+  "generatedAt": "2026-09-04T06:13:24.896Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -2563,6 +2563,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "PgkQvhE3gqo",
+      "date": "2026-09-04",
+      "dateLabel": "09/04 (金)",
+      "time": "18:00",
+      "startsAt": "2026-09-04T18:00:00+09:00",
+      "name": "癒月ちょこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=PgkQvhE3gqo",
+      "videoId": "PgkQvhE3gqo",
+      "thumbnail": "https://img.youtube.com/vi/PgkQvhE3gqo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "HVXwIlaM4R4",
       "date": "2026-09-04",
       "dateLabel": "09/04 (金)",
@@ -2681,21 +2696,6 @@
       "avatar": null,
       "isLive": false,
       "branch": "DEV_IS"
-    },
-    {
-      "id": "PgkQvhE3gqo",
-      "date": "2026-09-04",
-      "dateLabel": "09/04 (金)",
-      "time": "19:00",
-      "startsAt": "2026-09-04T19:00:00+09:00",
-      "name": "癒月ちょこ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=PgkQvhE3gqo",
-      "videoId": "PgkQvhE3gqo",
-      "thumbnail": "https://img.youtube.com/vi/PgkQvhE3gqo/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
     },
     {
       "id": "qMCvAUx9Feg",
@@ -2996,6 +2996,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "RjaHLLC0Z9o",
+      "date": "2026-09-05",
+      "dateLabel": "09/05 (土)",
+      "time": "10:30",
+      "startsAt": "2026-09-05T10:30:00+09:00",
+      "name": "Zeta",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=RjaHLLC0Z9o",
+      "videoId": "RjaHLLC0Z9o",
+      "thumbnail": "https://img.youtube.com/vi/RjaHLLC0Z9o/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
     },
     {
       "id": "kbIhf8Yxdzg",

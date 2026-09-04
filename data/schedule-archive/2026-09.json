@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T01:20:39.469Z",
+  "generatedAt": "2026-09-04T04:41:53.038Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -2098,21 +2098,6 @@
       "branch": "JP"
     },
     {
-      "id": "uryyMzY0HpQ",
-      "date": "2026-09-03",
-      "dateLabel": "09/03 (木)",
-      "time": "19:00",
-      "startsAt": "2026-09-03T19:00:00+09:00",
-      "name": "アキロゼ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=uryyMzY0HpQ",
-      "videoId": "uryyMzY0HpQ",
-      "thumbnail": "https://img.youtube.com/vi/uryyMzY0HpQ/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "9eOxA0i09EA",
       "date": "2026-09-03",
       "dateLabel": "09/03 (木)",
@@ -2533,6 +2518,21 @@
       "branch": "EN"
     },
     {
+      "id": "FfxsZktvAYc",
+      "date": "2026-09-04",
+      "dateLabel": "09/04 (金)",
+      "time": "12:37",
+      "startsAt": "2026-09-04T12:37:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=FfxsZktvAYc",
+      "videoId": "FfxsZktvAYc",
+      "thumbnail": "https://img.youtube.com/vi/FfxsZktvAYc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "-4mdXGw_3Jc",
       "date": "2026-09-04",
       "dateLabel": "09/04 (金)",
@@ -2683,6 +2683,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "PgkQvhE3gqo",
+      "date": "2026-09-04",
+      "dateLabel": "09/04 (金)",
+      "time": "19:00",
+      "startsAt": "2026-09-04T19:00:00+09:00",
+      "name": "癒月ちょこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=PgkQvhE3gqo",
+      "videoId": "PgkQvhE3gqo",
+      "thumbnail": "https://img.youtube.com/vi/PgkQvhE3gqo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "qMCvAUx9Feg",
       "date": "2026-09-04",
       "dateLabel": "09/04 (金)",
@@ -2788,6 +2803,21 @@
       "branch": "EN"
     },
     {
+      "id": "uryyMzY0HpQ",
+      "date": "2026-09-04",
+      "dateLabel": "09/04 (金)",
+      "time": "19:00",
+      "startsAt": "2026-09-04T19:00:00+09:00",
+      "name": "アキロゼ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=uryyMzY0HpQ",
+      "videoId": "uryyMzY0HpQ",
+      "thumbnail": "https://img.youtube.com/vi/uryyMzY0HpQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "BMoPMmtKosQ",
       "date": "2026-09-04",
       "dateLabel": "09/04 (金)",
@@ -2813,6 +2843,36 @@
       "url": "https://www.youtube.com/watch?v=EaDL6uRQ5L0",
       "videoId": "EaDL6uRQ5L0",
       "thumbnail": "https://img.youtube.com/vi/EaDL6uRQ5L0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "_T2s2vEiGuA",
+      "date": "2026-09-04",
+      "dateLabel": "09/04 (金)",
+      "time": "20:00",
+      "startsAt": "2026-09-04T20:00:00+09:00",
+      "name": "大神ミオ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=_T2s2vEiGuA",
+      "videoId": "_T2s2vEiGuA",
+      "thumbnail": "https://img.youtube.com/vi/_T2s2vEiGuA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "erpFTjc_Bvk",
+      "date": "2026-09-04",
+      "dateLabel": "09/04 (金)",
+      "time": "21:00",
+      "startsAt": "2026-09-04T21:00:00+09:00",
+      "name": "白上フブキ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=erpFTjc_Bvk",
+      "videoId": "erpFTjc_Bvk",
+      "thumbnail": "https://img.youtube.com/vi/erpFTjc_Bvk/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -2923,6 +2983,21 @@
       "branch": "JP"
     },
     {
+      "id": "sEu1Yj-cICI",
+      "date": "2026-09-05",
+      "dateLabel": "09/05 (土)",
+      "time": "10:30",
+      "startsAt": "2026-09-05T10:30:00+09:00",
+      "name": "Shiori",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=sEu1Yj-cICI",
+      "videoId": "sEu1Yj-cICI",
+      "thumbnail": "https://img.youtube.com/vi/sEu1Yj-cICI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "kbIhf8Yxdzg",
       "date": "2026-09-05",
       "dateLabel": "09/05 (土)",
@@ -2963,6 +3038,21 @@
       "url": "https://www.youtube.com/watch?v=Vx-mQvkdHgg",
       "videoId": "Vx-mQvkdHgg",
       "thumbnail": "https://img.youtube.com/vi/Vx-mQvkdHgg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "v6Y1HIFKVac",
+      "date": "2026-09-05",
+      "dateLabel": "09/05 (土)",
+      "time": "19:00",
+      "startsAt": "2026-09-05T19:00:00+09:00",
+      "name": "赤井はあと",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=v6Y1HIFKVac",
+      "videoId": "v6Y1HIFKVac",
+      "thumbnail": "https://img.youtube.com/vi/v6Y1HIFKVac/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

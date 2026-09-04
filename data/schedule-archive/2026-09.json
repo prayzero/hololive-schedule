@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T18:21:48.191Z",
+  "generatedAt": "2026-09-04T20:54:49.468Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -3271,8 +3271,8 @@
       "id": "jEpz5fEg6bU",
       "date": "2026-09-05",
       "dateLabel": "09/05 (土)",
-      "time": "04:00",
-      "startsAt": "2026-09-05T04:00:00+09:00",
+      "time": "04:01",
+      "startsAt": "2026-09-05T04:01:00+09:00",
       "name": "Kiara",
       "title": null,
       "url": "https://www.youtube.com/watch?v=jEpz5fEg6bU",
@@ -3493,6 +3493,21 @@
       "branch": "JP"
     },
     {
+      "id": "_3id1nkx5QU",
+      "date": "2026-09-05",
+      "dateLabel": "09/05 (土)",
+      "time": "17:00",
+      "startsAt": "2026-09-05T17:00:00+09:00",
+      "name": "姫森ルーナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=_3id1nkx5QU",
+      "videoId": "_3id1nkx5QU",
+      "thumbnail": "https://img.youtube.com/vi/_3id1nkx5QU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "D6MvZKaCsvg",
       "date": "2026-09-05",
       "dateLabel": "09/05 (土)",
@@ -3623,6 +3638,21 @@
       "url": "https://www.youtube.com/watch?v=v6Y1HIFKVac",
       "videoId": "v6Y1HIFKVac",
       "thumbnail": "https://img.youtube.com/vi/v6Y1HIFKVac/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "1bVCR30bwy8",
+      "date": "2026-09-05",
+      "dateLabel": "09/05 (土)",
+      "time": "19:00",
+      "startsAt": "2026-09-05T19:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=1bVCR30bwy8",
+      "videoId": "1bVCR30bwy8",
+      "thumbnail": "https://img.youtube.com/vi/1bVCR30bwy8/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -3763,6 +3793,21 @@
       "branch": "JP"
     },
     {
+      "id": "_DbU-jizOho",
+      "date": "2026-09-06",
+      "dateLabel": "09/06 (日)",
+      "time": "11:30",
+      "startsAt": "2026-09-06T11:30:00+09:00",
+      "name": "Kronii",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=_DbU-jizOho",
+      "videoId": "_DbU-jizOho",
+      "thumbnail": "https://img.youtube.com/vi/_DbU-jizOho/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
       "id": "7xYekUcLRs4",
       "date": "2026-09-06",
       "dateLabel": "09/06 (日)",
@@ -3776,6 +3821,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "EN"
+    },
+    {
+      "id": "i0C3wsGt-ps",
+      "date": "2026-09-06",
+      "dateLabel": "09/06 (日)",
+      "time": "17:00",
+      "startsAt": "2026-09-06T17:00:00+09:00",
+      "name": "姫森ルーナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=i0C3wsGt-ps",
+      "videoId": "i0C3wsGt-ps",
+      "thumbnail": "https://img.youtube.com/vi/i0C3wsGt-ps/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "seq7NaNdpb4",

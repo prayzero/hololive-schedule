@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T04:34:33.919Z",
+  "generatedAt": "2026-09-05T05:40:05.387Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -3601,8 +3601,8 @@
       "id": "ztE1ZYwZt2o",
       "date": "2026-09-05",
       "dateLabel": "09/05 (土)",
-      "time": "14:00",
-      "startsAt": "2026-09-05T14:00:00+09:00",
+      "time": "14:01",
+      "startsAt": "2026-09-05T14:01:00+09:00",
       "name": "尾丸ポルカ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=ztE1ZYwZt2o",
@@ -3653,6 +3653,21 @@
       "url": "https://www.youtube.com/watch?v=eGu0ZIdk5PE",
       "videoId": "eGu0ZIdk5PE",
       "thumbnail": "https://img.youtube.com/vi/eGu0ZIdk5PE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "FrLpfQdAzuw",
+      "date": "2026-09-05",
+      "dateLabel": "09/05 (土)",
+      "time": "18:55",
+      "startsAt": "2026-09-05T18:55:00+09:00",
+      "name": "常闇トワ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=FrLpfQdAzuw",
+      "videoId": "FrLpfQdAzuw",
+      "thumbnail": "https://img.youtube.com/vi/FrLpfQdAzuw/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -3776,6 +3791,36 @@
       "avatar": null,
       "isLive": false,
       "branch": "JP"
+    },
+    {
+      "id": "pRLHQpvk9TM",
+      "date": "2026-09-05",
+      "dateLabel": "09/05 (土)",
+      "time": "19:00",
+      "startsAt": "2026-09-05T19:00:00+09:00",
+      "name": "AZKi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=pRLHQpvk9TM",
+      "videoId": "pRLHQpvk9TM",
+      "thumbnail": "https://img.youtube.com/vi/pRLHQpvk9TM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "IcAr3F7lDCc",
+      "date": "2026-09-05",
+      "dateLabel": "09/05 (土)",
+      "time": "19:00",
+      "startsAt": "2026-09-05T19:00:00+09:00",
+      "name": "Baelz",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=IcAr3F7lDCc",
+      "videoId": "IcAr3F7lDCc",
+      "thumbnail": "https://img.youtube.com/vi/IcAr3F7lDCc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
     },
     {
       "id": "nAMdeosS2Ws",

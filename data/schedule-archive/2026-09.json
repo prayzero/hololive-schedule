@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-05T20:29:41.343Z",
+  "generatedAt": "2026-09-05T22:14:59.462Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -4378,6 +4378,21 @@
       "branch": "EN"
     },
     {
+      "id": "-JOgjkFE2Jc",
+      "date": "2026-09-06",
+      "dateLabel": "09/06 (日)",
+      "time": "06:00",
+      "startsAt": "2026-09-06T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=-JOgjkFE2Jc",
+      "videoId": "-JOgjkFE2Jc",
+      "thumbnail": "https://img.youtube.com/vi/-JOgjkFE2Jc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "oP9O2eHyl1k",
       "date": "2026-09-06",
       "dateLabel": "09/06 (日)",
@@ -4396,8 +4411,8 @@
       "id": "T--YI-3MavA",
       "date": "2026-09-06",
       "dateLabel": "09/06 (日)",
-      "time": "06:00",
-      "startsAt": "2026-09-06T06:00:00+09:00",
+      "time": "06:01",
+      "startsAt": "2026-09-06T06:01:00+09:00",
       "name": "Gigi",
       "title": null,
       "url": "https://www.youtube.com/watch?v=T--YI-3MavA",
@@ -4628,6 +4643,36 @@
       "url": "https://www.youtube.com/watch?v=pe-GtSRI4Ao",
       "videoId": "pe-GtSRI4Ao",
       "thumbnail": "https://img.youtube.com/vi/pe-GtSRI4Ao/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "4NBzl763Ij0",
+      "date": "2026-09-06",
+      "dateLabel": "09/06 (日)",
+      "time": "19:00",
+      "startsAt": "2026-09-06T19:00:00+09:00",
+      "name": "不知火フレア",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=4NBzl763Ij0",
+      "videoId": "4NBzl763Ij0",
+      "thumbnail": "https://img.youtube.com/vi/4NBzl763Ij0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "3eqfxZud2p0",
+      "date": "2026-09-06",
+      "dateLabel": "09/06 (日)",
+      "time": "19:00",
+      "startsAt": "2026-09-06T19:00:00+09:00",
+      "name": "獅白ぼたん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=3eqfxZud2p0",
+      "videoId": "3eqfxZud2p0",
+      "thumbnail": "https://img.youtube.com/vi/3eqfxZud2p0/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

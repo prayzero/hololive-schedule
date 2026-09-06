@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T19:37:30.013Z",
+  "generatedAt": "2026-09-06T21:46:50.614Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -5383,6 +5383,21 @@
       "branch": "EN"
     },
     {
+      "id": "EOFrAMeg19Y",
+      "date": "2026-09-07",
+      "dateLabel": "09/07 (月)",
+      "time": "06:00",
+      "startsAt": "2026-09-07T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=EOFrAMeg19Y",
+      "videoId": "EOFrAMeg19Y",
+      "thumbnail": "https://img.youtube.com/vi/EOFrAMeg19Y/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "8ql3DX238Qw",
       "date": "2026-09-07",
       "dateLabel": "09/07 (月)",
@@ -5678,6 +5693,21 @@
       "url": "https://www.youtube.com/watch?v=t38GnSLYjpE",
       "videoId": "t38GnSLYjpE",
       "thumbnail": "https://img.youtube.com/vi/t38GnSLYjpE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "vcJWjyTE_cI",
+      "date": "2026-09-07",
+      "dateLabel": "09/07 (月)",
+      "time": "22:00",
+      "startsAt": "2026-09-07T22:00:00+09:00",
+      "name": "猫又おかゆ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=vcJWjyTE_cI",
+      "videoId": "vcJWjyTE_cI",
+      "thumbnail": "https://img.youtube.com/vi/vcJWjyTE_cI/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

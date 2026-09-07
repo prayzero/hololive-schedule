@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T23:17:07.625Z",
+  "generatedAt": "2026-09-07T01:07:33.265Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -5423,6 +5423,21 @@
       "url": "https://www.youtube.com/watch?v=2WbFXhsYH_4",
       "videoId": "2WbFXhsYH_4",
       "thumbnail": "https://img.youtube.com/vi/2WbFXhsYH_4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "EN"
+    },
+    {
+      "id": "6RZJBeRAszs",
+      "date": "2026-09-07",
+      "dateLabel": "09/07 (月)",
+      "time": "09:32",
+      "startsAt": "2026-09-07T09:32:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=6RZJBeRAszs",
+      "videoId": "6RZJBeRAszs",
+      "thumbnail": "https://img.youtube.com/vi/6RZJBeRAszs/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

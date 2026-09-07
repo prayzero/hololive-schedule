@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-07T01:07:33.265Z",
+  "generatedAt": "2026-09-07T04:47:16.000Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -5446,8 +5446,8 @@
       "id": "uRWAnCIReek",
       "date": "2026-09-07",
       "dateLabel": "09/07 (月)",
-      "time": "10:00",
-      "startsAt": "2026-09-07T10:00:00+09:00",
+      "time": "10:33",
+      "startsAt": "2026-09-07T10:33:00+09:00",
       "name": "Baelz",
       "title": null,
       "url": "https://www.youtube.com/watch?v=uRWAnCIReek",
@@ -5461,8 +5461,8 @@
       "id": "GfuKjXV1AY8",
       "date": "2026-09-07",
       "dateLabel": "09/07 (月)",
-      "time": "11:30",
-      "startsAt": "2026-09-07T11:30:00+09:00",
+      "time": "11:29",
+      "startsAt": "2026-09-07T11:29:00+09:00",
       "name": "Risu",
       "title": null,
       "url": "https://www.youtube.com/watch?v=GfuKjXV1AY8",
@@ -5528,6 +5528,36 @@
       "url": "https://www.youtube.com/watch?v=kxSLGQZmXq8",
       "videoId": "kxSLGQZmXq8",
       "thumbnail": "https://img.youtube.com/vi/kxSLGQZmXq8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "xxE6CQZ1sT8",
+      "date": "2026-09-07",
+      "dateLabel": "09/07 (月)",
+      "time": "16:00",
+      "startsAt": "2026-09-07T16:00:00+09:00",
+      "name": "Moona",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=xxE6CQZ1sT8",
+      "videoId": "xxE6CQZ1sT8",
+      "thumbnail": "https://img.youtube.com/vi/xxE6CQZ1sT8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
+      "id": "PbsnQNrUtiQ",
+      "date": "2026-09-07",
+      "dateLabel": "09/07 (月)",
+      "time": "16:00",
+      "startsAt": "2026-09-07T16:00:00+09:00",
+      "name": "Ollie",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=PbsnQNrUtiQ",
+      "videoId": "PbsnQNrUtiQ",
+      "thumbnail": "https://img.youtube.com/vi/PbsnQNrUtiQ/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "ID"
@@ -5713,6 +5743,21 @@
       "branch": "JP"
     },
     {
+      "id": "fdqaPJFMO3E",
+      "date": "2026-09-07",
+      "dateLabel": "09/07 (月)",
+      "time": "22:00",
+      "startsAt": "2026-09-07T22:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=fdqaPJFMO3E",
+      "videoId": "fdqaPJFMO3E",
+      "thumbnail": "https://img.youtube.com/vi/fdqaPJFMO3E/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "vcJWjyTE_cI",
       "date": "2026-09-07",
       "dateLabel": "09/07 (月)",
@@ -5743,6 +5788,21 @@
       "branch": "DEV_IS"
     },
     {
+      "id": "vXavZRlKjpw",
+      "date": "2026-09-07",
+      "dateLabel": "09/07 (月)",
+      "time": "22:00",
+      "startsAt": "2026-09-07T22:00:00+09:00",
+      "name": "Iofi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=vXavZRlKjpw",
+      "videoId": "vXavZRlKjpw",
+      "thumbnail": "https://img.youtube.com/vi/vXavZRlKjpw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "ID"
+    },
+    {
       "id": "3LTvDYp8GYs",
       "date": "2026-09-07",
       "dateLabel": "09/07 (月)",
@@ -5756,6 +5816,21 @@
       "avatar": null,
       "isLive": false,
       "branch": "ID"
+    },
+    {
+      "id": "B8AN9jlq4Cc",
+      "date": "2026-09-07",
+      "dateLabel": "09/07 (月)",
+      "time": "23:30",
+      "startsAt": "2026-09-07T23:30:00+09:00",
+      "name": "獅白ぼたん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=B8AN9jlq4Cc",
+      "videoId": "B8AN9jlq4Cc",
+      "thumbnail": "https://img.youtube.com/vi/B8AN9jlq4Cc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
     },
     {
       "id": "RprJd-LJyt4",

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T18:57:13.707Z",
+  "generatedAt": "2026-09-08T21:48:10.114Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -7198,6 +7198,36 @@
       "branch": "JP"
     },
     {
+      "id": "hrAFJKYiP6c",
+      "date": "2026-09-09",
+      "dateLabel": "09/09 (水)",
+      "time": "06:00",
+      "startsAt": "2026-09-09T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=hrAFJKYiP6c",
+      "videoId": "hrAFJKYiP6c",
+      "thumbnail": "https://img.youtube.com/vi/hrAFJKYiP6c/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "lB6hz8mWySc",
+      "date": "2026-09-09",
+      "dateLabel": "09/09 (水)",
+      "time": "07:00",
+      "startsAt": "2026-09-09T07:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=lB6hz8mWySc",
+      "videoId": "lB6hz8mWySc",
+      "thumbnail": "https://img.youtube.com/vi/lB6hz8mWySc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "M78Wpzs68s8",
       "date": "2026-09-09",
       "dateLabel": "09/09 (水)",
@@ -7448,6 +7478,21 @@
       "url": "https://www.youtube.com/watch?v=vnTSdJSAWrg",
       "videoId": "vnTSdJSAWrg",
       "thumbnail": "https://img.youtube.com/vi/vnTSdJSAWrg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "MziJjLR4sa8",
+      "date": "2026-09-09",
+      "dateLabel": "09/09 (水)",
+      "time": "22:45",
+      "startsAt": "2026-09-09T22:45:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=MziJjLR4sa8",
+      "videoId": "MziJjLR4sa8",
+      "thumbnail": "https://img.youtube.com/vi/MziJjLR4sa8/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

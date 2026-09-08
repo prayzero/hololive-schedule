@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T15:23:27.246Z",
+  "generatedAt": "2026-09-08T18:57:13.707Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -7168,6 +7168,21 @@
       "branch": "JP"
     },
     {
+      "id": "V1_RIGJUYys",
+      "date": "2026-09-09",
+      "dateLabel": "09/09 (水)",
+      "time": "01:05",
+      "startsAt": "2026-09-09T01:05:00+09:00",
+      "name": "Cecilia",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=V1_RIGJUYys",
+      "videoId": "V1_RIGJUYys",
+      "thumbnail": "https://img.youtube.com/vi/V1_RIGJUYys/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "5OonFH9bjxM",
       "date": "2026-09-09",
       "dateLabel": "09/09 (水)",
@@ -7243,6 +7258,36 @@
       "branch": "JP"
     },
     {
+      "id": "JiIQde1GPOI",
+      "date": "2026-09-09",
+      "dateLabel": "09/09 (水)",
+      "time": "12:00",
+      "startsAt": "2026-09-09T12:00:00+09:00",
+      "name": "IRyS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=JiIQde1GPOI",
+      "videoId": "JiIQde1GPOI",
+      "thumbnail": "https://img.youtube.com/vi/JiIQde1GPOI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "VOtoiE4KfVQ",
+      "date": "2026-09-09",
+      "dateLabel": "09/09 (水)",
+      "time": "12:30",
+      "startsAt": "2026-09-09T12:30:00+09:00",
+      "name": "一条莉々華",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=VOtoiE4KfVQ",
+      "videoId": "VOtoiE4KfVQ",
+      "thumbnail": "https://img.youtube.com/vi/VOtoiE4KfVQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "wK0cKEVi9A4",
       "date": "2026-09-09",
       "dateLabel": "09/09 (水)",
@@ -7253,6 +7298,21 @@
       "url": "https://www.youtube.com/watch?v=wK0cKEVi9A4",
       "videoId": "wK0cKEVi9A4",
       "thumbnail": "https://img.youtube.com/vi/wK0cKEVi9A4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "fS73iEDpV0E",
+      "date": "2026-09-09",
+      "dateLabel": "09/09 (水)",
+      "time": "19:00",
+      "startsAt": "2026-09-09T19:00:00+09:00",
+      "name": "猫又おかゆ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=fS73iEDpV0E",
+      "videoId": "fS73iEDpV0E",
+      "thumbnail": "https://img.youtube.com/vi/fS73iEDpV0E/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -7288,6 +7348,36 @@
       "branch": "JP"
     },
     {
+      "id": "XGyLmhUPMyk",
+      "date": "2026-09-09",
+      "dateLabel": "09/09 (水)",
+      "time": "20:00",
+      "startsAt": "2026-09-09T20:00:00+09:00",
+      "name": "一条莉々華",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=XGyLmhUPMyk",
+      "videoId": "XGyLmhUPMyk",
+      "thumbnail": "https://img.youtube.com/vi/XGyLmhUPMyk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "eX02LKDWsk4",
+      "date": "2026-09-09",
+      "dateLabel": "09/09 (水)",
+      "time": "20:00",
+      "startsAt": "2026-09-09T20:00:00+09:00",
+      "name": "夏色まつり",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=eX02LKDWsk4",
+      "videoId": "eX02LKDWsk4",
+      "thumbnail": "https://img.youtube.com/vi/eX02LKDWsk4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "vIGbbcGJSzM",
       "date": "2026-09-09",
       "dateLabel": "09/09 (水)",
@@ -7313,6 +7403,21 @@
       "url": "https://www.youtube.com/watch?v=tYLnktu3OPU",
       "videoId": "tYLnktu3OPU",
       "thumbnail": "https://img.youtube.com/vi/tYLnktu3OPU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "lD_3LBv14qQ",
+      "date": "2026-09-09",
+      "dateLabel": "09/09 (水)",
+      "time": "22:30",
+      "startsAt": "2026-09-09T22:30:00+09:00",
+      "name": "猫又おかゆ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=lD_3LBv14qQ",
+      "videoId": "lD_3LBv14qQ",
+      "thumbnail": "https://img.youtube.com/vi/lD_3LBv14qQ/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

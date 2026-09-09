@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T23:42:41.174Z",
+  "generatedAt": "2026-09-09T01:37:54.724Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -7228,11 +7228,26 @@
       "branch": "JP"
     },
     {
+      "id": "abKHLvPa56Y",
+      "date": "2026-09-09",
+      "dateLabel": "09/09 (水)",
+      "time": "09:55",
+      "startsAt": "2026-09-09T09:55:00+09:00",
+      "name": "FUWAMOCO",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=abKHLvPa56Y",
+      "videoId": "abKHLvPa56Y",
+      "thumbnail": "https://img.youtube.com/vi/abKHLvPa56Y/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "M78Wpzs68s8",
       "date": "2026-09-09",
       "dateLabel": "09/09 (水)",
-      "time": "10:00",
-      "startsAt": "2026-09-09T10:00:00+09:00",
+      "time": "09:57",
+      "startsAt": "2026-09-09T09:57:00+09:00",
       "name": "Bijou",
       "title": null,
       "url": "https://www.youtube.com/watch?v=M78Wpzs68s8",
@@ -7243,16 +7258,16 @@
       "branch": "JP"
     },
     {
-      "id": "abKHLvPa56Y",
+      "id": "yeRFyNwakUk",
       "date": "2026-09-09",
       "dateLabel": "09/09 (水)",
-      "time": "10:00",
-      "startsAt": "2026-09-09T10:00:00+09:00",
-      "name": "FUWAMOCO",
+      "time": "09:59",
+      "startsAt": "2026-09-09T09:59:00+09:00",
+      "name": "Calli",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=abKHLvPa56Y",
-      "videoId": "abKHLvPa56Y",
-      "thumbnail": "https://img.youtube.com/vi/abKHLvPa56Y/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=yeRFyNwakUk",
+      "videoId": "yeRFyNwakUk",
+      "thumbnail": "https://img.youtube.com/vi/yeRFyNwakUk/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

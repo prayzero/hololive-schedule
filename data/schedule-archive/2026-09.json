@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T16:33:50.387Z",
+  "generatedAt": "2026-09-09T19:28:19.893Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -8131,8 +8131,8 @@
       "id": "uExVKXTn4dk",
       "date": "2026-09-10",
       "dateLabel": "09/10 (木)",
-      "time": "02:00",
-      "startsAt": "2026-09-10T02:00:00+09:00",
+      "time": "01:56",
+      "startsAt": "2026-09-10T01:56:00+09:00",
       "name": "桃鈴ねね",
       "title": null,
       "url": "https://www.youtube.com/watch?v=uExVKXTn4dk",
@@ -8263,6 +8263,21 @@
       "branch": "JP"
     },
     {
+      "id": "LhjsifCe7tQ",
+      "date": "2026-09-10",
+      "dateLabel": "09/10 (木)",
+      "time": "20:00",
+      "startsAt": "2026-09-10T20:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=LhjsifCe7tQ",
+      "videoId": "LhjsifCe7tQ",
+      "thumbnail": "https://img.youtube.com/vi/LhjsifCe7tQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "6Pe4NNewLYk",
       "date": "2026-09-10",
       "dateLabel": "09/10 (木)",
@@ -8308,6 +8323,21 @@
       "branch": "JP"
     },
     {
+      "id": "jIwPff9zoZI",
+      "date": "2026-09-10",
+      "dateLabel": "09/10 (木)",
+      "time": "20:00",
+      "startsAt": "2026-09-10T20:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jIwPff9zoZI",
+      "videoId": "jIwPff9zoZI",
+      "thumbnail": "https://img.youtube.com/vi/jIwPff9zoZI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "vbgjtnGFv7A",
       "date": "2026-09-10",
       "dateLabel": "09/10 (木)",
@@ -8318,6 +8348,21 @@
       "url": "https://www.youtube.com/watch?v=vbgjtnGFv7A",
       "videoId": "vbgjtnGFv7A",
       "thumbnail": "https://img.youtube.com/vi/vbgjtnGFv7A/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "P8CcHKiCWLE",
+      "date": "2026-09-10",
+      "dateLabel": "09/10 (木)",
+      "time": "22:00",
+      "startsAt": "2026-09-10T22:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=P8CcHKiCWLE",
+      "videoId": "P8CcHKiCWLE",
+      "thumbnail": "https://img.youtube.com/vi/P8CcHKiCWLE/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -8368,6 +8413,21 @@
       "branch": "JP"
     },
     {
+      "id": "Gh_KBdLlHB4",
+      "date": "2026-09-11",
+      "dateLabel": "09/11 (金)",
+      "time": "20:00",
+      "startsAt": "2026-09-11T20:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Gh_KBdLlHB4",
+      "videoId": "Gh_KBdLlHB4",
+      "thumbnail": "https://img.youtube.com/vi/Gh_KBdLlHB4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "o-FEa_9Sgmk",
       "date": "2026-09-11",
       "dateLabel": "09/11 (金)",
@@ -8393,6 +8453,21 @@
       "url": "https://www.youtube.com/watch?v=X1gxkuNzMf4",
       "videoId": "X1gxkuNzMf4",
       "thumbnail": "https://img.youtube.com/vi/X1gxkuNzMf4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "weUPE4II290",
+      "date": "2026-09-11",
+      "dateLabel": "09/11 (金)",
+      "time": "22:00",
+      "startsAt": "2026-09-11T22:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=weUPE4II290",
+      "videoId": "weUPE4II290",
+      "thumbnail": "https://img.youtube.com/vi/weUPE4II290/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

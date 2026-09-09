@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T19:28:19.893Z",
+  "generatedAt": "2026-09-09T21:56:14.695Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -8138,6 +8138,21 @@
       "url": "https://www.youtube.com/watch?v=uExVKXTn4dk",
       "videoId": "uExVKXTn4dk",
       "thumbnail": "https://img.youtube.com/vi/uExVKXTn4dk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "NP3LzG9SaFc",
+      "date": "2026-09-10",
+      "dateLabel": "09/10 (木)",
+      "time": "06:00",
+      "startsAt": "2026-09-10T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=NP3LzG9SaFc",
+      "videoId": "NP3LzG9SaFc",
+      "thumbnail": "https://img.youtube.com/vi/NP3LzG9SaFc/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

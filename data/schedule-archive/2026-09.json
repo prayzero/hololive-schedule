@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T04:47:24.424Z",
+  "generatedAt": "2026-09-09T06:46:22.059Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -7378,6 +7378,21 @@
       "branch": "JP"
     },
     {
+      "id": "oFo1ol9Dt3Q",
+      "date": "2026-09-09",
+      "dateLabel": "09/09 (水)",
+      "time": "18:00",
+      "startsAt": "2026-09-09T18:00:00+09:00",
+      "name": "桃鈴ねね",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=oFo1ol9Dt3Q",
+      "videoId": "oFo1ol9Dt3Q",
+      "thumbnail": "https://img.youtube.com/vi/oFo1ol9Dt3Q/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "fS73iEDpV0E",
       "date": "2026-09-09",
       "dateLabel": "09/09 (水)",
@@ -7408,6 +7423,21 @@
       "branch": "JP"
     },
     {
+      "id": "Inh714HnG9I",
+      "date": "2026-09-09",
+      "dateLabel": "09/09 (水)",
+      "time": "19:00",
+      "startsAt": "2026-09-09T19:00:00+09:00",
+      "name": "白上フブキ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Inh714HnG9I",
+      "videoId": "Inh714HnG9I",
+      "thumbnail": "https://img.youtube.com/vi/Inh714HnG9I/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "tL_lW4w4RxI",
       "date": "2026-09-09",
       "dateLabel": "09/09 (水)",
@@ -7418,6 +7448,21 @@
       "url": "https://www.youtube.com/watch?v=tL_lW4w4RxI",
       "videoId": "tL_lW4w4RxI",
       "thumbnail": "https://img.youtube.com/vi/tL_lW4w4RxI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "60Xrl55b7Fs",
+      "date": "2026-09-09",
+      "dateLabel": "09/09 (水)",
+      "time": "20:00",
+      "startsAt": "2026-09-09T20:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=60Xrl55b7Fs",
+      "videoId": "60Xrl55b7Fs",
+      "thumbnail": "https://img.youtube.com/vi/60Xrl55b7Fs/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -7478,6 +7523,21 @@
       "url": "https://www.youtube.com/watch?v=3ssnNDv0hno",
       "videoId": "3ssnNDv0hno",
       "thumbnail": "https://img.youtube.com/vi/3ssnNDv0hno/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "hvlAlhDS9SQ",
+      "date": "2026-09-09",
+      "dateLabel": "09/09 (水)",
+      "time": "21:00",
+      "startsAt": "2026-09-09T21:00:00+09:00",
+      "name": "白上フブキ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=hvlAlhDS9SQ",
+      "videoId": "hvlAlhDS9SQ",
+      "thumbnail": "https://img.youtube.com/vi/hvlAlhDS9SQ/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -7703,6 +7763,21 @@
       "url": "https://www.youtube.com/watch?v=mfh4XCpk8WI",
       "videoId": "mfh4XCpk8WI",
       "thumbnail": "https://img.youtube.com/vi/mfh4XCpk8WI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "zGpnj2PRp1E",
+      "date": "2026-09-10",
+      "dateLabel": "09/10 (木)",
+      "time": "19:00",
+      "startsAt": "2026-09-10T19:00:00+09:00",
+      "name": "白上フブキ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=zGpnj2PRp1E",
+      "videoId": "zGpnj2PRp1E",
+      "thumbnail": "https://img.youtube.com/vi/zGpnj2PRp1E/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

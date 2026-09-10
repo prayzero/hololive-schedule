@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T20:06:35.644Z",
+  "generatedAt": "2026-09-10T22:34:16.362Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -8863,6 +8863,36 @@
       "branch": "JP"
     },
     {
+      "id": "YVIo3pOmJns",
+      "date": "2026-09-11",
+      "dateLabel": "09/11 (金)",
+      "time": "06:00",
+      "startsAt": "2026-09-11T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=YVIo3pOmJns",
+      "videoId": "YVIo3pOmJns",
+      "thumbnail": "https://img.youtube.com/vi/YVIo3pOmJns/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "ARdIdsT_YVM",
+      "date": "2026-09-11",
+      "dateLabel": "09/11 (金)",
+      "time": "11:30",
+      "startsAt": "2026-09-11T11:30:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ARdIdsT_YVM",
+      "videoId": "ARdIdsT_YVM",
+      "thumbnail": "https://img.youtube.com/vi/ARdIdsT_YVM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "Gh_KBdLlHB4",
       "date": "2026-09-11",
       "dateLabel": "09/11 (金)",
@@ -9008,6 +9038,21 @@
       "url": "https://www.youtube.com/watch?v=mRlzbsJDjeg",
       "videoId": "mRlzbsJDjeg",
       "thumbnail": "https://img.youtube.com/vi/mRlzbsJDjeg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "trqjwvddTDw",
+      "date": "2026-09-11",
+      "dateLabel": "09/11 (金)",
+      "time": "21:00",
+      "startsAt": "2026-09-11T21:00:00+09:00",
+      "name": "猫又おかゆ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=trqjwvddTDw",
+      "videoId": "trqjwvddTDw",
+      "thumbnail": "https://img.youtube.com/vi/trqjwvddTDw/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

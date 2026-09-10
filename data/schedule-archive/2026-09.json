@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T17:39:45.020Z",
+  "generatedAt": "2026-09-10T20:06:35.644Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -8933,6 +8933,36 @@
       "url": "https://www.youtube.com/watch?v=o-FEa_9Sgmk",
       "videoId": "o-FEa_9Sgmk",
       "thumbnail": "https://img.youtube.com/vi/o-FEa_9Sgmk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "B-qxc7rAaOA",
+      "date": "2026-09-11",
+      "dateLabel": "09/11 (金)",
+      "time": "20:00",
+      "startsAt": "2026-09-11T20:00:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=B-qxc7rAaOA",
+      "videoId": "B-qxc7rAaOA",
+      "thumbnail": "https://img.youtube.com/vi/B-qxc7rAaOA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "hR_U7-vMdiU",
+      "date": "2026-09-11",
+      "dateLabel": "09/11 (金)",
+      "time": "20:00",
+      "startsAt": "2026-09-11T20:00:00+09:00",
+      "name": "Moona",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=hR_U7-vMdiU",
+      "videoId": "hR_U7-vMdiU",
+      "thumbnail": "https://img.youtube.com/vi/hR_U7-vMdiU/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

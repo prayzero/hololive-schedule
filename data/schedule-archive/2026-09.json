@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T04:45:26.531Z",
+  "generatedAt": "2026-09-11T05:11:26.422Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -8953,6 +8953,21 @@
       "branch": "JP"
     },
     {
+      "id": "bwAc8fPdaJQ",
+      "date": "2026-09-11",
+      "dateLabel": "09/11 (金)",
+      "time": "19:00",
+      "startsAt": "2026-09-11T19:00:00+09:00",
+      "name": "宝鐘マリン",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=bwAc8fPdaJQ",
+      "videoId": "bwAc8fPdaJQ",
+      "thumbnail": "https://img.youtube.com/vi/bwAc8fPdaJQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "Pn57-Ur31EU",
       "date": "2026-09-11",
       "dateLabel": "09/11 (金)",
@@ -9023,6 +9038,21 @@
       "url": "https://www.youtube.com/watch?v=9Nfr_fRjNH0",
       "videoId": "9Nfr_fRjNH0",
       "thumbnail": "https://img.youtube.com/vi/9Nfr_fRjNH0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "ncdGCUazeFo",
+      "date": "2026-09-11",
+      "dateLabel": "09/11 (金)",
+      "time": "20:00",
+      "startsAt": "2026-09-11T20:00:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ncdGCUazeFo",
+      "videoId": "ncdGCUazeFo",
+      "thumbnail": "https://img.youtube.com/vi/ncdGCUazeFo/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -9173,6 +9203,21 @@
       "url": "https://www.youtube.com/watch?v=weUPE4II290",
       "videoId": "weUPE4II290",
       "thumbnail": "https://img.youtube.com/vi/weUPE4II290/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "cxmZQfUNTaw",
+      "date": "2026-09-11",
+      "dateLabel": "09/11 (金)",
+      "time": "22:00",
+      "startsAt": "2026-09-11T22:00:00+09:00",
+      "name": "Ina",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=cxmZQfUNTaw",
+      "videoId": "cxmZQfUNTaw",
+      "thumbnail": "https://img.youtube.com/vi/cxmZQfUNTaw/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

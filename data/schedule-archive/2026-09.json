@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T22:34:16.362Z",
+  "generatedAt": "2026-09-11T00:31:57.691Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -8878,6 +8878,21 @@
       "branch": "JP"
     },
     {
+      "id": "RpX4HlK70jk",
+      "date": "2026-09-11",
+      "dateLabel": "09/11 (金)",
+      "time": "10:00",
+      "startsAt": "2026-09-11T10:00:00+09:00",
+      "name": "Ina",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=RpX4HlK70jk",
+      "videoId": "RpX4HlK70jk",
+      "thumbnail": "https://img.youtube.com/vi/RpX4HlK70jk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "ARdIdsT_YVM",
       "date": "2026-09-11",
       "dateLabel": "09/11 (金)",
@@ -8888,6 +8903,21 @@
       "url": "https://www.youtube.com/watch?v=ARdIdsT_YVM",
       "videoId": "ARdIdsT_YVM",
       "thumbnail": "https://img.youtube.com/vi/ARdIdsT_YVM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "50PEQJ1GfH8",
+      "date": "2026-09-11",
+      "dateLabel": "09/11 (金)",
+      "time": "18:00",
+      "startsAt": "2026-09-11T18:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=50PEQJ1GfH8",
+      "videoId": "50PEQJ1GfH8",
+      "thumbnail": "https://img.youtube.com/vi/50PEQJ1GfH8/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

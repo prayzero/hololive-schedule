@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T17:43:20.764Z",
+  "generatedAt": "2026-09-11T20:05:28.487Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -9751,8 +9751,8 @@
       "id": "tTrJESVzQW4",
       "date": "2026-09-12",
       "dateLabel": "09/12 (土)",
-      "time": "14:00",
-      "startsAt": "2026-09-12T14:00:00+09:00",
+      "time": "15:00",
+      "startsAt": "2026-09-12T15:00:00+09:00",
       "name": "Kaela",
       "title": null,
       "url": "https://www.youtube.com/watch?v=tTrJESVzQW4",
@@ -9908,6 +9908,21 @@
       "url": "https://www.youtube.com/watch?v=sAsX1iOV2cw",
       "videoId": "sAsX1iOV2cw",
       "thumbnail": "https://img.youtube.com/vi/sAsX1iOV2cw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "P5jX6414KQY",
+      "date": "2026-09-12",
+      "dateLabel": "09/12 (土)",
+      "time": "23:00",
+      "startsAt": "2026-09-12T23:00:00+09:00",
+      "name": "Raora",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=P5jX6414KQY",
+      "videoId": "P5jX6414KQY",
+      "thumbnail": "https://img.youtube.com/vi/P5jX6414KQY/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

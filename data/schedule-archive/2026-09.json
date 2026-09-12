@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T16:14:42.963Z",
+  "generatedAt": "2026-09-12T18:30:09.842Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -10513,6 +10513,21 @@
       "branch": "JP"
     },
     {
+      "id": "Dg3GP4V-4BU",
+      "date": "2026-09-13",
+      "dateLabel": "09/13 (日)",
+      "time": "09:00",
+      "startsAt": "2026-09-13T09:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Dg3GP4V-4BU",
+      "videoId": "Dg3GP4V-4BU",
+      "thumbnail": "https://img.youtube.com/vi/Dg3GP4V-4BU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "QmxzjAsWqAI",
       "date": "2026-09-13",
       "dateLabel": "09/13 (日)",
@@ -10603,6 +10618,21 @@
       "branch": "JP"
     },
     {
+      "id": "vMVUobE0kSM",
+      "date": "2026-09-13",
+      "dateLabel": "09/13 (日)",
+      "time": "14:00",
+      "startsAt": "2026-09-13T14:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=vMVUobE0kSM",
+      "videoId": "vMVUobE0kSM",
+      "thumbnail": "https://img.youtube.com/vi/vMVUobE0kSM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "LROFl9rIVH0",
       "date": "2026-09-13",
       "dateLabel": "09/13 (日)",
@@ -10628,6 +10658,21 @@
       "url": "https://www.youtube.com/watch?v=CQEoZ0t70w8",
       "videoId": "CQEoZ0t70w8",
       "thumbnail": "https://img.youtube.com/vi/CQEoZ0t70w8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "kSVbWIgVqK0",
+      "date": "2026-09-13",
+      "dateLabel": "09/13 (日)",
+      "time": "18:00",
+      "startsAt": "2026-09-13T18:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=kSVbWIgVqK0",
+      "videoId": "kSVbWIgVqK0",
+      "thumbnail": "https://img.youtube.com/vi/kSVbWIgVqK0/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -10718,6 +10763,21 @@
       "url": "https://www.youtube.com/watch?v=GdRsVoVdDtI",
       "videoId": "GdRsVoVdDtI",
       "thumbnail": "https://img.youtube.com/vi/GdRsVoVdDtI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "xMXB89pHc0M",
+      "date": "2026-09-14",
+      "dateLabel": "09/14 (月)",
+      "time": "10:00",
+      "startsAt": "2026-09-14T10:00:00+09:00",
+      "name": "Ina",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=xMXB89pHc0M",
+      "videoId": "xMXB89pHc0M",
+      "thumbnail": "https://img.youtube.com/vi/xMXB89pHc0M/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

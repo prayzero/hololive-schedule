@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T15:06:25.766Z",
+  "generatedAt": "2026-09-13T18:10:44.438Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -11293,6 +11293,21 @@
       "branch": "JP"
     },
     {
+      "id": "DmopJSAJkDk",
+      "date": "2026-09-14",
+      "dateLabel": "09/14 (月)",
+      "time": "00:00",
+      "startsAt": "2026-09-14T00:00:00+09:00",
+      "name": "Nerissa",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=DmopJSAJkDk",
+      "videoId": "DmopJSAJkDk",
+      "thumbnail": "https://img.youtube.com/vi/DmopJSAJkDk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "XHvJCmL7TRs",
       "date": "2026-09-14",
       "dateLabel": "09/14 (月)",
@@ -11311,8 +11326,8 @@
       "id": "t2WUvNJbbHU",
       "date": "2026-09-14",
       "dateLabel": "09/14 (月)",
-      "time": "01:00",
-      "startsAt": "2026-09-14T01:00:00+09:00",
+      "time": "01:11",
+      "startsAt": "2026-09-14T01:11:00+09:00",
       "name": "虎金妃笑虎",
       "title": null,
       "url": "https://www.youtube.com/watch?v=t2WUvNJbbHU",
@@ -11348,6 +11363,21 @@
       "url": "https://www.youtube.com/watch?v=Qftnj5tXyg8",
       "videoId": "Qftnj5tXyg8",
       "thumbnail": "https://img.youtube.com/vi/Qftnj5tXyg8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "ZIAzbhfrlZ8",
+      "date": "2026-09-14",
+      "dateLabel": "09/14 (月)",
+      "time": "07:30",
+      "startsAt": "2026-09-14T07:30:00+09:00",
+      "name": "Gigi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ZIAzbhfrlZ8",
+      "videoId": "ZIAzbhfrlZ8",
+      "thumbnail": "https://img.youtube.com/vi/ZIAzbhfrlZ8/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -11398,6 +11428,21 @@
       "branch": "JP"
     },
     {
+      "id": "CeCHAnt_Atk",
+      "date": "2026-09-14",
+      "dateLabel": "09/14 (月)",
+      "time": "19:00",
+      "startsAt": "2026-09-14T19:00:00+09:00",
+      "name": "猫又おかゆ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=CeCHAnt_Atk",
+      "videoId": "CeCHAnt_Atk",
+      "thumbnail": "https://img.youtube.com/vi/CeCHAnt_Atk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "DjbOkB_3KXs",
       "date": "2026-09-14",
       "dateLabel": "09/14 (月)",
@@ -11413,6 +11458,21 @@
       "branch": "JP"
     },
     {
+      "id": "IkaiVFEeJFE",
+      "date": "2026-09-14",
+      "dateLabel": "09/14 (月)",
+      "time": "19:30",
+      "startsAt": "2026-09-14T19:30:00+09:00",
+      "name": "ときのそら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=IkaiVFEeJFE",
+      "videoId": "IkaiVFEeJFE",
+      "thumbnail": "https://img.youtube.com/vi/IkaiVFEeJFE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "x2Ztg8Y8V6U",
       "date": "2026-09-14",
       "dateLabel": "09/14 (月)",
@@ -11423,6 +11483,21 @@
       "url": "https://www.youtube.com/watch?v=x2Ztg8Y8V6U",
       "videoId": "x2Ztg8Y8V6U",
       "thumbnail": "https://img.youtube.com/vi/x2Ztg8Y8V6U/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "l0aJlBNTIgU",
+      "date": "2026-09-15",
+      "dateLabel": "09/15 (火)",
+      "time": "07:00",
+      "startsAt": "2026-09-15T07:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=l0aJlBNTIgU",
+      "videoId": "l0aJlBNTIgU",
+      "thumbnail": "https://img.youtube.com/vi/l0aJlBNTIgU/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T18:10:44.438Z",
+  "generatedAt": "2026-09-13T20:57:22.960Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -11428,6 +11428,21 @@
       "branch": "JP"
     },
     {
+      "id": "5sq4GTghjJw",
+      "date": "2026-09-14",
+      "dateLabel": "09/14 (月)",
+      "time": "19:00",
+      "startsAt": "2026-09-14T19:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=5sq4GTghjJw",
+      "videoId": "5sq4GTghjJw",
+      "thumbnail": "https://img.youtube.com/vi/5sq4GTghjJw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "CeCHAnt_Atk",
       "date": "2026-09-14",
       "dateLabel": "09/14 (月)",
@@ -11468,6 +11483,21 @@
       "url": "https://www.youtube.com/watch?v=IkaiVFEeJFE",
       "videoId": "IkaiVFEeJFE",
       "thumbnail": "https://img.youtube.com/vi/IkaiVFEeJFE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "59tkGey7Pkg",
+      "date": "2026-09-14",
+      "dateLabel": "09/14 (月)",
+      "time": "21:00",
+      "startsAt": "2026-09-14T21:00:00+09:00",
+      "name": "Risu",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=59tkGey7Pkg",
+      "videoId": "59tkGey7Pkg",
+      "thumbnail": "https://img.youtube.com/vi/59tkGey7Pkg/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-13T11:43:34.183Z",
+  "updatedAt": "2026-09-13T15:06:25.766Z",
   "timezone": "Asia/Tokyo",
-  "totalEntries": 2825,
+  "totalEntries": 2831,
   "dates": [
     {
       "date": "2026-07-25",
@@ -256,12 +256,17 @@
     {
       "date": "2026-09-13",
       "month": "2026-09",
-      "count": 51
+      "count": 53
     },
     {
       "date": "2026-09-14",
       "month": "2026-09",
-      "count": 6
+      "count": 9
+    },
+    {
+      "date": "2026-09-15",
+      "month": "2026-09",
+      "count": 1
     }
   ],
   "months": [
@@ -281,9 +286,9 @@
     },
     {
       "month": "2026-09",
-      "count": 756,
+      "count": 762,
       "firstDate": "2026-09-01",
-      "lastDate": "2026-09-14",
+      "lastDate": "2026-09-15",
       "url": "data/schedule-archive/2026-09.json"
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T23:06:05.613Z",
+  "generatedAt": "2026-09-14T01:01:55.390Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -11393,6 +11393,21 @@
       "url": "https://www.youtube.com/watch?v=ZIAzbhfrlZ8",
       "videoId": "ZIAzbhfrlZ8",
       "thumbnail": "https://img.youtube.com/vi/ZIAzbhfrlZ8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "qhG8esS_WMo",
+      "date": "2026-09-14",
+      "dateLabel": "09/14 (月)",
+      "time": "08:35",
+      "startsAt": "2026-09-14T08:35:00+09:00",
+      "name": "Kiara",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=qhG8esS_WMo",
+      "videoId": "qhG8esS_WMo",
+      "thumbnail": "https://img.youtube.com/vi/qhG8esS_WMo/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

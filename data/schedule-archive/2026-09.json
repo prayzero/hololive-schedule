@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T05:02:03.837Z",
+  "generatedAt": "2026-09-14T06:10:44.809Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -11573,6 +11573,21 @@
       "url": "https://www.youtube.com/watch?v=srmUY7FK00k",
       "videoId": "srmUY7FK00k",
       "thumbnail": "https://img.youtube.com/vi/srmUY7FK00k/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "dNRr1PQJRyY",
+      "date": "2026-09-14",
+      "dateLabel": "09/14 (月)",
+      "time": "19:00",
+      "startsAt": "2026-09-14T19:00:00+09:00",
+      "name": "Ollie",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=dNRr1PQJRyY",
+      "videoId": "dNRr1PQJRyY",
+      "thumbnail": "https://img.youtube.com/vi/dNRr1PQJRyY/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

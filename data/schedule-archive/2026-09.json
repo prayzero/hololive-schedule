@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T13:03:23.165Z",
+  "generatedAt": "2026-09-14T18:34:29.133Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12043,11 +12043,26 @@
       "branch": "JP"
     },
     {
+      "id": "wdEN7JBdEIc",
+      "date": "2026-09-14",
+      "dateLabel": "09/14 (月)",
+      "time": "22:12",
+      "startsAt": "2026-09-14T22:12:00+09:00",
+      "name": "星街すいせい",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=wdEN7JBdEIc",
+      "videoId": "wdEN7JBdEIc",
+      "thumbnail": "https://img.youtube.com/vi/wdEN7JBdEIc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "x2Ztg8Y8V6U",
       "date": "2026-09-14",
       "dateLabel": "09/14 (月)",
-      "time": "23:40",
-      "startsAt": "2026-09-14T23:40:00+09:00",
+      "time": "23:41",
+      "startsAt": "2026-09-14T23:41:00+09:00",
       "name": "アキロゼ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=x2Ztg8Y8V6U",
@@ -12073,6 +12088,21 @@
       "branch": "JP"
     },
     {
+      "id": "r6V7HgcTn9k",
+      "date": "2026-09-15",
+      "dateLabel": "09/15 (火)",
+      "time": "07:00",
+      "startsAt": "2026-09-15T07:00:00+09:00",
+      "name": "Gigi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=r6V7HgcTn9k",
+      "videoId": "r6V7HgcTn9k",
+      "thumbnail": "https://img.youtube.com/vi/r6V7HgcTn9k/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "A5H2cZw1Nzs",
       "date": "2026-09-15",
       "dateLabel": "09/15 (火)",
@@ -12083,6 +12113,21 @@
       "url": "https://www.youtube.com/watch?v=A5H2cZw1Nzs",
       "videoId": "A5H2cZw1Nzs",
       "thumbnail": "https://img.youtube.com/vi/A5H2cZw1Nzs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "MQbAJKg5g7M",
+      "date": "2026-09-15",
+      "dateLabel": "09/15 (火)",
+      "time": "18:00",
+      "startsAt": "2026-09-15T18:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=MQbAJKg5g7M",
+      "videoId": "MQbAJKg5g7M",
+      "thumbnail": "https://img.youtube.com/vi/MQbAJKg5g7M/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -12133,6 +12178,21 @@
       "branch": "JP"
     },
     {
+      "id": "SrJ_RD6c-xQ",
+      "date": "2026-09-15",
+      "dateLabel": "09/15 (火)",
+      "time": "19:00",
+      "startsAt": "2026-09-15T19:00:00+09:00",
+      "name": "AZKi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=SrJ_RD6c-xQ",
+      "videoId": "SrJ_RD6c-xQ",
+      "thumbnail": "https://img.youtube.com/vi/SrJ_RD6c-xQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "zTD4n-B41u4",
       "date": "2026-09-15",
       "dateLabel": "09/15 (火)",
@@ -12143,6 +12203,36 @@
       "url": "https://www.youtube.com/watch?v=zTD4n-B41u4",
       "videoId": "zTD4n-B41u4",
       "thumbnail": "https://img.youtube.com/vi/zTD4n-B41u4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "j4-uVkepyLk",
+      "date": "2026-09-16",
+      "dateLabel": "09/16 (水)",
+      "time": "08:00",
+      "startsAt": "2026-09-16T08:00:00+09:00",
+      "name": "Kiara",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=j4-uVkepyLk",
+      "videoId": "j4-uVkepyLk",
+      "thumbnail": "https://img.youtube.com/vi/j4-uVkepyLk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "XgJOjDn5Z7Q",
+      "date": "2026-09-16",
+      "dateLabel": "09/16 (水)",
+      "time": "18:00",
+      "startsAt": "2026-09-16T18:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=XgJOjDn5Z7Q",
+      "videoId": "XgJOjDn5Z7Q",
+      "thumbnail": "https://img.youtube.com/vi/XgJOjDn5Z7Q/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

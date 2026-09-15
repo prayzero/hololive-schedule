@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-15T00:32:37.505Z",
+  "generatedAt": "2026-09-15T04:58:30.404Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12151,8 +12151,8 @@
       "id": "A5H2cZw1Nzs",
       "date": "2026-09-15",
       "dateLabel": "09/15 (火)",
-      "time": "10:00",
-      "startsAt": "2026-09-15T10:00:00+09:00",
+      "time": "09:59",
+      "startsAt": "2026-09-15T09:59:00+09:00",
       "name": "Calli",
       "title": null,
       "url": "https://www.youtube.com/watch?v=A5H2cZw1Nzs",
@@ -12173,6 +12173,21 @@
       "url": "https://www.youtube.com/watch?v=MQbAJKg5g7M",
       "videoId": "MQbAJKg5g7M",
       "thumbnail": "https://img.youtube.com/vi/MQbAJKg5g7M/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "3VCOIL07DcQ",
+      "date": "2026-09-15",
+      "dateLabel": "09/15 (火)",
+      "time": "18:00",
+      "startsAt": "2026-09-15T18:00:00+09:00",
+      "name": "Iofi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=3VCOIL07DcQ",
+      "videoId": "3VCOIL07DcQ",
+      "thumbnail": "https://img.youtube.com/vi/3VCOIL07DcQ/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -12203,6 +12218,21 @@
       "url": "https://www.youtube.com/watch?v=w9BbS2ByjwA",
       "videoId": "w9BbS2ByjwA",
       "thumbnail": "https://img.youtube.com/vi/w9BbS2ByjwA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "f5sNX7FLT1w",
+      "date": "2026-09-15",
+      "dateLabel": "09/15 (火)",
+      "time": "19:00",
+      "startsAt": "2026-09-15T19:00:00+09:00",
+      "name": "風真いろは",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=f5sNX7FLT1w",
+      "videoId": "f5sNX7FLT1w",
+      "thumbnail": "https://img.youtube.com/vi/f5sNX7FLT1w/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -12268,6 +12298,21 @@
       "branch": "JP"
     },
     {
+      "id": "wtZod84wA24",
+      "date": "2026-09-15",
+      "dateLabel": "09/15 (火)",
+      "time": "21:15",
+      "startsAt": "2026-09-15T21:15:00+09:00",
+      "name": "Iofi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=wtZod84wA24",
+      "videoId": "wtZod84wA24",
+      "thumbnail": "https://img.youtube.com/vi/wtZod84wA24/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "BmZ1_i96-Ig",
       "date": "2026-09-15",
       "dateLabel": "09/15 (火)",
@@ -12293,6 +12338,21 @@
       "url": "https://www.youtube.com/watch?v=zTD4n-B41u4",
       "videoId": "zTD4n-B41u4",
       "thumbnail": "https://img.youtube.com/vi/zTD4n-B41u4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "njUPvgePbUA",
+      "date": "2026-09-15",
+      "dateLabel": "09/15 (火)",
+      "time": "22:00",
+      "startsAt": "2026-09-15T22:00:00+09:00",
+      "name": "Iofi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=njUPvgePbUA",
+      "videoId": "njUPvgePbUA",
+      "thumbnail": "https://img.youtube.com/vi/njUPvgePbUA/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

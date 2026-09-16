@@ -79,10 +79,23 @@ jobs:
 
       - name: Refresh official YouTube live archive
         if: github.event_name == 'workflow_dispatch' || github.event.schedule == '17 0 * * *'
+        shell: bash
         run: |
-          node research/fetch-youtube-jp.mjs
-          npm run enrich:youtube-archive
-          npm run update:youtube-archive
+          if node research/fetch-youtube-jp.mjs; then
+            npm run enrich:youtube-archive
+            npm run update:youtube-archive
+          else
+            refresh_status=$?
+            if [ "$refresh_status" -ne 3 ]; then
+              exit "$refresh_status"
+            fi
+            echo "::warning::YouTube did not provide usable search data. Keeping the last validated live archive without changing its checkedAt timestamp."
+            {
+              echo "### YouTube archive refresh deferred"
+              echo "YouTube search data was unavailable to this runner. The restored, previously validated archive and its original checkedAt timestamp are preserved."
+              echo "The current Holodule schedule is still collected, validated and deployed. Security and data-validation errors remain fatal."
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
 
       - name: Prepare cumulative archive candidate
         shell: bash

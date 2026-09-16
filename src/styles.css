@@ -1836,6 +1836,16 @@ img {
   box-shadow: var(--shadow-sm);
 }
 
+.region-tabs {
+  max-width: 100%;
+  overflow-x: auto;
+  scrollbar-width: thin;
+}
+
+.region-tabs button {
+  flex: 0 0 auto;
+}
+
 .segmented-tabs button,
 .region-tabs button {
   display: inline-flex;
@@ -2841,6 +2851,10 @@ select:focus-visible {
   .region-tabs button {
     flex: 1;
     justify-content: center;
+  }
+
+  .region-tabs button {
+    flex: 0 0 auto;
   }
 
   .section-heading h2 {

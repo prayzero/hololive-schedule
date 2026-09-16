@@ -78,7 +78,8 @@ export type EventCategory =
   | "festival"
   | "exhibition";
 
-export type EventRegion = "JP" | "KR" | "GLOBAL";
+export type EventCountryRegion = "JP" | "KR" | "US" | "TW" | "CN";
+export type EventRegion = EventCountryRegion | "GLOBAL";
 
 export interface CuratedEvent {
   id: string;
@@ -86,6 +87,7 @@ export interface CuratedEvent {
   titleKo: string;
   categories: EventCategory[];
   region: EventRegion;
+  supportedRegions?: EventCountryRegion[];
   city: string;
   venue: string;
   startsAt: string;

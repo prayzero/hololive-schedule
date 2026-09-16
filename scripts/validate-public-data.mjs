@@ -1,6 +1,7 @@
 import { access, open, readdir } from "node:fs/promises";
 import { dirname, relative, resolve, sep } from "node:path";
 import { fileURLToPath } from "node:url";
+import { validateCuratedEvents } from "./lib/event-schema.mjs";
 
 const scriptDirectory = dirname(fileURLToPath(import.meta.url));
 const projectRoot = resolve(scriptDirectory, "..");
@@ -448,6 +449,13 @@ function validateKnownShape(filePath, payload) {
   }
   if (name === "hololive-dreams.json") {
     validateHololiveDreams(filePath, payload);
+  }
+  if (name === "events.json") {
+    try {
+      validateCuratedEvents(payload.events);
+    } catch (error) {
+      fail(filePath, messageOf(error));
+    }
   }
 }
 

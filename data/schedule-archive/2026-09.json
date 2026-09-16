@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T21:50:02.576Z",
+  "generatedAt": "2026-09-16T23:58:29.473Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -13558,6 +13558,21 @@
       "branch": "JP"
     },
     {
+      "id": "0uXBz97Ao6A",
+      "date": "2026-09-17",
+      "dateLabel": "09/17 (木)",
+      "time": "08:00",
+      "startsAt": "2026-09-17T08:00:00+09:00",
+      "name": "Shiori",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=0uXBz97Ao6A",
+      "videoId": "0uXBz97Ao6A",
+      "thumbnail": "https://img.youtube.com/vi/0uXBz97Ao6A/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "IBeyD6ibq8o",
       "date": "2026-09-17",
       "dateLabel": "09/17 (木)",
@@ -13643,6 +13658,36 @@
       "url": "https://www.youtube.com/watch?v=kVIP05MlL4I",
       "videoId": "kVIP05MlL4I",
       "thumbnail": "https://img.youtube.com/vi/kVIP05MlL4I/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "8qK5XfS1RZI",
+      "date": "2026-09-17",
+      "dateLabel": "09/17 (木)",
+      "time": "21:00",
+      "startsAt": "2026-09-17T21:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=8qK5XfS1RZI",
+      "videoId": "8qK5XfS1RZI",
+      "thumbnail": "https://img.youtube.com/vi/8qK5XfS1RZI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "x0__t5HchqI",
+      "date": "2026-09-18",
+      "dateLabel": "09/18 (金)",
+      "time": "19:00",
+      "startsAt": "2026-09-18T19:00:00+09:00",
+      "name": "猫又おかゆ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=x0__t5HchqI",
+      "videoId": "x0__t5HchqI",
+      "thumbnail": "https://img.youtube.com/vi/x0__t5HchqI/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

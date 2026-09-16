@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T00:31:12.934Z",
+  "generatedAt": "2026-09-16T03:56:17.652Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12778,6 +12778,36 @@
       "branch": "JP"
     },
     {
+      "id": "CZ7GgKPwot4",
+      "date": "2026-09-16",
+      "dateLabel": "09/16 (水)",
+      "time": "11:00",
+      "startsAt": "2026-09-16T11:00:00+09:00",
+      "name": "holo EN",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=CZ7GgKPwot4",
+      "videoId": "CZ7GgKPwot4",
+      "thumbnail": "https://img.youtube.com/vi/CZ7GgKPwot4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "QrJ5lZRtdwY",
+      "date": "2026-09-16",
+      "dateLabel": "09/16 (水)",
+      "time": "12:00",
+      "startsAt": "2026-09-16T12:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=QrJ5lZRtdwY",
+      "videoId": "QrJ5lZRtdwY",
+      "thumbnail": "https://img.youtube.com/vi/QrJ5lZRtdwY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "XgJOjDn5Z7Q",
       "date": "2026-09-16",
       "dateLabel": "09/16 (水)",
@@ -12818,6 +12848,21 @@
       "url": "https://www.youtube.com/watch?v=Q9C83hv8VoY",
       "videoId": "Q9C83hv8VoY",
       "thumbnail": "https://img.youtube.com/vi/Q9C83hv8VoY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Gc6yGrK3gnQ",
+      "date": "2026-09-16",
+      "dateLabel": "09/16 (水)",
+      "time": "19:00",
+      "startsAt": "2026-09-16T19:00:00+09:00",
+      "name": "姫森ルーナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Gc6yGrK3gnQ",
+      "videoId": "Gc6yGrK3gnQ",
+      "thumbnail": "https://img.youtube.com/vi/Gc6yGrK3gnQ/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -12893,6 +12938,21 @@
       "url": "https://www.youtube.com/watch?v=aZpa7Jw8bNk",
       "videoId": "aZpa7Jw8bNk",
       "thumbnail": "https://img.youtube.com/vi/aZpa7Jw8bNk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "azYbykXLlKo",
+      "date": "2026-09-16",
+      "dateLabel": "09/16 (水)",
+      "time": "22:45",
+      "startsAt": "2026-09-16T22:45:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=azYbykXLlKo",
+      "videoId": "azYbykXLlKo",
+      "thumbnail": "https://img.youtube.com/vi/azYbykXLlKo/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

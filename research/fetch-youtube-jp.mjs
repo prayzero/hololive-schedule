@@ -118,12 +118,27 @@ function findInitialData(html) {
   );
 }
 
+export class SourceUnavailableError extends Error {
+  constructor(message, options) {
+    super(message, options);
+    this.name = "SourceUnavailableError";
+  }
+}
+
 export function requireInitialData(html, sourceLabel = "YouTube response") {
   const initialData = findInitialData(html);
   if (!initialData) {
-    throw new Error(`${sourceLabel} did not contain valid ytInitialData.`);
+    throw new SourceUnavailableError(
+      `${sourceLabel} did not contain valid ytInitialData.`,
+    );
   }
   return initialData;
+}
+
+export function handleCliError(error, stderr = process.stderr) {
+  if (!(error instanceof SourceUnavailableError)) throw error;
+  stderr.write(`YouTube source unavailable: ${error.message}\n`);
+  return 3;
 }
 
 function findPlayerResponse(html) {
@@ -685,5 +700,9 @@ if (
   process.argv[1] &&
   path.resolve(process.argv[1]) === path.resolve(fileURLToPath(import.meta.url))
 ) {
-  await main();
+  try {
+    await main();
+  } catch (error) {
+    process.exitCode = handleCliError(error);
+  }
 }

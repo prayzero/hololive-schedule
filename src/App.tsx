@@ -2859,7 +2859,9 @@ export default function App() {
                   </span>
                   <strong>{isScheduleFresh ? liveNow.length : "—"}</strong>
                 </div>
-                {!isScheduleFresh ? (
+                {!data ? (
+                  <p>{error ? "방송 일정을 표시할 수 없습니다." : "일정을 불러오는 중입니다."}</p>
+                ) : !isScheduleFresh ? (
                   <p>일정 갱신이 지연되어 현재 방송 여부를 확인할 수 없습니다.</p>
                 ) : liveNow.length > 0 ? (
                   <div className="live-chips">
@@ -2882,7 +2884,9 @@ export default function App() {
 
               <div className="now-block now-block-next">
                 <span className="now-block-label">NEXT UP</span>
-                {!isScheduleFresh ? (
+                {!data ? (
+                  <p>{error ? "방송 일정을 표시할 수 없습니다." : "일정을 불러오는 중입니다."}</p>
+                ) : !isScheduleFresh ? (
                   <p>일정 갱신 후 다음 방송을 표시합니다.</p>
                 ) : nextBroadcast ? (
                   <div>

@@ -1,9 +1,11 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import {
+  handleCliError,
   hydrateCandidate,
   matchesStrongEventTitle,
   requireInitialData,
+  SourceUnavailableError,
 } from "../research/fetch-youtube-jp.mjs";
 
 const KoyoriTitle =
@@ -49,9 +51,27 @@ test("JP source parsing fails closed when ytInitialData is absent", () => {
     ),
     { contents: { ok: true } },
   );
-  assert.throws(
-    () => requireInitialData("<html>consent page</html>", "test search"),
+  let sourceError;
+  try {
+    requireInitialData("<html>consent page</html>", "test search");
+  } catch (error) {
+    sourceError = error;
+  }
+  assert.ok(sourceError instanceof SourceUnavailableError);
+  assert.match(
+    sourceError.message,
     /test search did not contain valid ytInitialData/,
+  );
+
+  let warning = "";
+  assert.equal(
+    handleCliError(sourceError, { write: (message) => (warning += message) }),
+    3,
+  );
+  assert.match(warning, /YouTube source unavailable: test search/);
+  assert.throws(
+    () => handleCliError(new TypeError("fetch failed")),
+    /fetch failed/,
   );
 });
 

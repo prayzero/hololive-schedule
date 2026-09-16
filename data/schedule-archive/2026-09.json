@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T18:51:23.872Z",
+  "generatedAt": "2026-09-16T21:50:02.576Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -13513,6 +13513,36 @@
       "branch": "JP"
     },
     {
+      "id": "Aev1DwVEccU",
+      "date": "2026-09-17",
+      "dateLabel": "09/17 (木)",
+      "time": "04:12",
+      "startsAt": "2026-09-17T04:12:00+09:00",
+      "name": "Raora",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Aev1DwVEccU",
+      "videoId": "Aev1DwVEccU",
+      "thumbnail": "https://img.youtube.com/vi/Aev1DwVEccU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "pjkjf4NXOLc",
+      "date": "2026-09-17",
+      "dateLabel": "09/17 (木)",
+      "time": "06:00",
+      "startsAt": "2026-09-17T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=pjkjf4NXOLc",
+      "videoId": "pjkjf4NXOLc",
+      "thumbnail": "https://img.youtube.com/vi/pjkjf4NXOLc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "uxYg4CCEn-w",
       "date": "2026-09-17",
       "dateLabel": "09/17 (木)",
@@ -13568,6 +13598,21 @@
       "url": "https://www.youtube.com/watch?v=Pu1uR5DSH8o",
       "videoId": "Pu1uR5DSH8o",
       "thumbnail": "https://img.youtube.com/vi/Pu1uR5DSH8o/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "UTTsicHSoeI",
+      "date": "2026-09-17",
+      "dateLabel": "09/17 (木)",
+      "time": "20:00",
+      "startsAt": "2026-09-17T20:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=UTTsicHSoeI",
+      "videoId": "UTTsicHSoeI",
+      "thumbnail": "https://img.youtube.com/vi/UTTsicHSoeI/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

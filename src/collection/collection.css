@@ -977,3 +977,29 @@
     transition-duration: 0.01ms !important;
   }
 }
+.collection-upcoming {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 18px 20px;
+  margin-bottom: 20px;
+  border: 1px solid #c6e5ee;
+  border-radius: 16px;
+  background: #edf8fb;
+  color: #234a57;
+}
+
+.collection-upcoming p {
+  margin: 6px 0 0;
+  font-size: 13px;
+}
+
+.collection-upcoming a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: inherit;
+  font-weight: 700;
+}

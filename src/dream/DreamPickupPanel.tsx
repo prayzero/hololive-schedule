@@ -5,6 +5,7 @@ import {
   History,
   Megaphone,
   Sparkles,
+  Users,
 } from "lucide-react";
 import { useMemo, useState, type CSSProperties } from "react";
 import type { DreamPickup, Talent } from "../types";
@@ -159,7 +160,9 @@ export function DreamPickupPanel({
             statusOrder[left.status] - statusOrder[right.status] ||
             (left.status === "ended"
               ? right.pickup.startsOn.localeCompare(left.pickup.startsOn)
-              : left.pickup.startsOn.localeCompare(right.pickup.startsOn))
+              : left.status === "upcoming"
+                ? left.pickup.startsOn.localeCompare(right.pickup.startsOn)
+                : right.pickup.startsOn.localeCompare(left.pickup.startsOn))
           );
         }),
     [now, pickups],
@@ -178,12 +181,26 @@ export function DreamPickupPanel({
             ...(talent?.aliases ?? []),
           ];
         });
+        const participantNames = (pickup.participantTalentIds ?? []).flatMap(
+          (talentId) => {
+            const talent = talentById.get(talentId);
+            return talent
+              ? [
+                  talent.name,
+                  talent.nameKo,
+                  talent.nativeName,
+                  ...talent.aliases,
+                ]
+              : [talentId];
+          },
+        );
         return normalizeSearch(
           [
             pickup.title,
             pickup.subtitle,
             pickup.sourceLabel,
             ...cardNames,
+            ...participantNames,
           ]
             .filter(Boolean)
             .join(" "),
@@ -216,6 +233,14 @@ export function DreamPickupPanel({
           ]
         : []
     : [];
+  const featuredParticipantIds = featured
+    ? featured.pickup.participantTalentIds?.length
+      ? featured.pickup.participantTalentIds
+      : [...new Set(featured.pickup.cards.map((card) => card.talentId))]
+    : [];
+  const featuredParticipantNames = featuredParticipantIds.map(
+    (talentId) => talentById.get(talentId)?.nameKo ?? talentId,
+  );
 
   return (
     <div className="dream-pickup-panel">
@@ -317,6 +342,36 @@ export function DreamPickupPanel({
             </div>
           </header>
 
+          {featured.pickup.bannerImageUrl ? (
+            <figure className="dream-pickup-feature__banner">
+              <img
+                src={featured.pickup.bannerImageUrl}
+                alt={`${featured.pickup.title} 공식 이미지`}
+                loading="lazy"
+                decoding="async"
+                referrerPolicy="no-referrer"
+              />
+              {featuredParticipantNames.length ? (
+                <figcaption aria-label="픽업 참여 멤버">
+                  <Users size={14} aria-hidden="true" />
+                  {featuredParticipantNames.map((name) => (
+                    <span key={name}>{name}</span>
+                  ))}
+                </figcaption>
+              ) : null}
+            </figure>
+          ) : featuredParticipantNames.length ? (
+            <div
+              className="dream-pickup-feature__participants"
+              aria-label="픽업 참여 멤버"
+            >
+              <Users size={14} aria-hidden="true" />
+              {featuredParticipantNames.map((name) => (
+                <span key={name}>{name}</span>
+              ))}
+            </div>
+          ) : null}
+
           <div
             className="dream-pickup-rate-breakdown"
             aria-label={`${featured.pickup.title} 세부 제공 비율`}
@@ -339,12 +394,13 @@ export function DreamPickupPanel({
             )}
           </div>
 
-          <div
-            className={`dream-pickup-gallery${
-              featured.pickup.cards.length === 2 ? " is-duo" : ""
-            }`}
-          >
-            {featured.pickup.cards.map((card) => {
+          {featured.pickup.cards.length ? (
+            <div
+              className={`dream-pickup-gallery${
+                featured.pickup.cards.length === 2 ? " is-duo" : ""
+              }`}
+            >
+              {featured.pickup.cards.map((card) => {
               const talent = talentById.get(card.talentId);
               const style = {
                 "--pickup-position": card.imagePosition ?? "50% 50%",
@@ -380,8 +436,9 @@ export function DreamPickupPanel({
                   </figcaption>
                 </figure>
               );
-            })}
-          </div>
+              })}
+            </div>
+          ) : null}
 
           <footer className="dream-pickup-feature__footer">
             <div>
@@ -430,10 +487,13 @@ export function DreamPickupPanel({
         {visibleEntries.length ? (
           <div className="dream-pickup-history__list">
             {visibleEntries.map(({ pickup, status }) => {
-              const names = pickup.cards
+              const participantIds = pickup.participantTalentIds?.length
+                ? pickup.participantTalentIds
+                : [...new Set(pickup.cards.map((card) => card.talentId))];
+              const names = participantIds
                 .map(
-                  (card) =>
-                    talentById.get(card.talentId)?.nameKo ?? card.talentId,
+                  (talentId) =>
+                    talentById.get(talentId)?.nameKo ?? talentId,
                 )
                 .join(" · ");
               return (
@@ -450,8 +510,7 @@ export function DreamPickupPanel({
                       {pickup.targetRatePercent
                         ? ` ${formatRatePercent(pickup.targetRatePercent)}%`
                         : ""}
-                      {" · "}
-                      {names}
+                      {names ? ` · ${names}` : ""}
                     </p>
                   </div>
                   <div className="dream-pickup-history__note">

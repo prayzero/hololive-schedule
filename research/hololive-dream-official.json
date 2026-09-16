@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-07-26T12:24:21+09:00",
+  "checkedAt": "2026-09-16T12:42:00+09:00",
   "game": {
     "title": "hololive Dreams",
     "shortName": "holodori",
@@ -81,6 +81,76 @@
       "card stats",
       "individual pull probability",
       "card-specific gacha availability"
+    ]
+  },
+  "liveOperationsSnapshot": {
+    "sourcePolicy": "Developer-published App Store event pages by QualiArts are treated as official primary sources. Dates below are the structured App Store metadata converted from UTC to JST.",
+    "events": [
+      {
+        "title": "アルティメットサマー！for Me？",
+        "startsAtJstInAppStore": "2026-08-18T12:00:00+09:00",
+        "endsAtJst": "2026-08-27T19:00:00+09:00",
+        "sourceUrl": "https://apps.apple.com/jp/app/id6756641135?eventid=6800967713",
+        "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/J1s73q6g17US0qnPWV-mdg/1200x630fo.jpg",
+        "note": "The tracker keeps the earlier 2026-08-17 20:00 JST in-game start announced on the official hololive Dreams X account, while using the App Store metadata for the previously missing end time."
+      },
+      {
+        "title": "無人島ジャック！真夏のサバイバルデイズ",
+        "startsAtJst": "2026-08-29T12:00:00+09:00",
+        "endsAtJst": "2026-09-06T19:00:00+09:00",
+        "participantTalentIds": [
+          "shirakami-fubuki",
+          "ookami-mio",
+          "nekomata-okayu",
+          "inugami-korone"
+        ],
+        "sourceUrl": "https://apps.apple.com/jp/app/id6756641135?eventid=6804530518",
+        "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/eD5Q3VaqCN4bCXTSAEJscA/1200x630fo.jpg",
+        "officiallyDisclosedScope": "Story appearances and event memories for the four named talents; no per-song chapter schedule is disclosed on this public page."
+      },
+      {
+        "title": "無邪気なふたり、見守るeyes",
+        "startsAtJst": "2026-09-08T12:00:00+09:00",
+        "endsAtJst": "2026-09-17T19:00:00+09:00",
+        "participantTalentIds": [
+          "takane-lui",
+          "fuwawa-abyssgard",
+          "mococo-abyssgard"
+        ],
+        "sourceUrl": "https://apps.apple.com/jp/app/id6756641135?eventid=6809318027",
+        "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/eMAN_UPkNi_-WVzWqkyBbg/1200x630fo.jpg",
+        "officiallyDisclosedScope": "Three songs, including a newly written hololive Dreams unit song, and event memories for the three named talents; individual song titles are not disclosed on this public page."
+      }
+    ],
+    "gacha": [
+      {
+        "title": "熱帯びる夏の一日",
+        "startsAtJstInAppStore": "2026-08-17T12:00:00+09:00",
+        "endsAtJst": "2026-08-29T10:00:00+09:00",
+        "participantTalentIds": [
+          "mori-calliope",
+          "nakiri-ayame",
+          "kureiji-ollie",
+          "himemori-luna",
+          "ninomae-inanis"
+        ],
+        "sourceUrl": "https://apps.apple.com/jp/app/id6756641135?eventid=6800665008",
+        "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/EEJnV5XX7vbEVbccYoChIQ/1200x630fo.jpg",
+        "note": "The tracker keeps the earlier 2026-08-17 11:00 JST start announced by the official hololive Dreams X account and uses the App Store metadata for the previously missing end time."
+      },
+      {
+        "title": "秘密のバケーション",
+        "startsAtJst": "2026-09-08T11:00:00+09:00",
+        "endsAtJst": "2026-09-19T10:00:00+09:00",
+        "participantTalentIds": [
+          "takane-lui",
+          "fuwawa-abyssgard",
+          "mococo-abyssgard"
+        ],
+        "sourceUrl": "https://apps.apple.com/jp/app/id6756641135?eventid=6809317539",
+        "imageUrl": "https://is1-ssl.mzstatic.com/image/thumb/wNjQ7VI2LWV5AsTxXDdmLw/1200x630fo.jpg",
+        "officiallyDisclosedScope": "New swimsuit 5-star members and a selectable gacha with increased rate for the selected member. Individual card titles and numeric rates are not disclosed on this public page."
+      }
     ]
   },
   "characters": [
@@ -555,6 +625,16 @@
         "free-to-play PC release",
         "in-app and chance-based purchases",
         "developer and publisher"
+      ]
+    },
+    {
+      "name": "QualiArts official App Store event metadata",
+      "url": "https://apps.apple.com/jp/app/id6756641135",
+      "supports": [
+        "developer-published live event titles and descriptions",
+        "structured event start and end timestamps",
+        "official event and gacha promotional images",
+        "publicly named event and gacha participants"
       ]
     }
   ]

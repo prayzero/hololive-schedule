@@ -16,7 +16,7 @@ const maximumDepth = 50;
 const dangerousKeys = new Set(["__proto__", "prototype", "constructor"]);
 const identityKeys = ["id", "videoId"];
 const urlKeyPattern = /(?:urls?|uris?|links?|thumbnails?|avatars?|sources?)$/i;
-const imageUrlKeyPattern = /^(?:imageUrl|thumbnailUrl|portraitUrl|thumbnail|avatar)$/i;
+const imageUrlKeyPattern = /^(?:imageUrl|bannerImageUrl|thumbnailUrl|portraitUrl|thumbnail|avatar)$/i;
 const absoluteSchemePattern = /^[a-z][a-z\d+.-]*:/i;
 const dangerousSchemePattern = /^(?:javascript|vbscript|data|file|blob):/i;
 const approvedImageHosts = new Set([
@@ -33,6 +33,7 @@ const approvedImageHosts = new Set([
   "images.microcms-assets.io",
   "img.hmv.co.jp",
   "img.youtube.com",
+  "is1-ssl.mzstatic.com",
   "lottecityhotel.jp",
   "midnight-grand-orchestra.com",
   "midnight-grand-orchestra.jp",
@@ -49,9 +50,11 @@ const approvedImageHosts = new Set([
 ]);
 const approvedDreamHosts = new Set([
   "appmedia.jp",
+  "apps.apple.com",
   "game8.jp",
   "hololive.hololivepro.com",
   "images.microcms-assets.io",
+  "is1-ssl.mzstatic.com",
   "itunes.apple.com",
   "play.google.com",
   "store.steampowered.com",
@@ -562,6 +565,7 @@ function validateHololiveDreams(filePath, payload) {
     if (!Array.isArray(pickup.cards) || pickup.cards.length > 100) {
       fail(filePath, `pickup ${pickup.id} has invalid cards`);
     }
+    validateDreamAnnouncement(filePath, pickup, talentIds, "bannerImageUrl", !pickup.cards.length);
     for (const card of pickup.cards) {
       if (
         !card ||
@@ -580,12 +584,12 @@ function validateHololiveDreams(filePath, payload) {
       typeof event !== "object" ||
       !isSafeCatalogId(event.id) ||
       !Array.isArray(event.chapters) ||
-      event.chapters.length < 1 ||
       event.chapters.length > 100
     ) {
       fail(filePath, "hololive Dreams event has an invalid shape");
     }
     validateTimeRange(filePath, event.startsAt, event.endsAt, `event ${event.id}`);
+    validateDreamAnnouncement(filePath, event, talentIds, "imageUrl", !event.chapters.length);
     for (const chapter of event.chapters) {
       if (!chapter || typeof chapter !== "object" || !talentIds.has(chapter.talentId)) {
         fail(filePath, `event ${event.id} references an unknown talent`);
@@ -620,6 +624,24 @@ function validateHololiveDreams(filePath, payload) {
       `broadcast ${broadcast.id}`,
     );
     validateCanonicalYouTubeWatchUrl(filePath, broadcast.watchUrl, broadcast.id);
+  }
+}
+
+function validateDreamAnnouncement(filePath, item, talentIds, imageKey, required) {
+  if (required && (!item[imageKey] || !item.participantTalentIds?.length)) {
+    fail(filePath, `${item.id} needs a verified banner and participants when details are unpublished`);
+  }
+  if (item[imageKey] !== undefined && (typeof item[imageKey] !== "string" || !item[imageKey])) {
+    fail(filePath, `${item.id} has an invalid announcement image`);
+  }
+  if (item.participantTalentIds !== undefined && (
+    !Array.isArray(item.participantTalentIds) ||
+    item.participantTalentIds.length < 1 ||
+    item.participantTalentIds.length > 54 ||
+    new Set(item.participantTalentIds).size !== item.participantTalentIds.length ||
+    item.participantTalentIds.some((id) => !talentIds.has(id))
+  )) {
+    fail(filePath, `${item.id} has invalid announcement participants`);
   }
 }
 
@@ -706,6 +728,23 @@ function validateCollectionCatalog(filePath, payload, name) {
 
   const releaseIds = new Set();
   const membershipCounts = new Map();
+  if (payload.upcomingReleases !== undefined) {
+    if (!Array.isArray(payload.upcomingReleases) || payload.upcomingReleases.length > 20) {
+      fail(filePath, "upcomingReleases must contain at most 20 announcements");
+    }
+    const announcementIds = new Set();
+    for (const announcement of payload.upcomingReleases) {
+      if (!announcement || !isSafeCatalogId(announcement.id) || announcementIds.has(announcement.id) ||
+          releases.some((release) => release.id === announcement.id) ||
+          typeof announcement.name !== "string" || !announcement.name.trim() ||
+          !/^\d{4}-(0[1-9]|1[0-2])$/.test(announcement.releaseMonth) ||
+          !Number.isSafeInteger(announcement.cardCount) || announcement.cardCount < 1 || announcement.cardCount > 1000) {
+        fail(filePath, "invalid upcoming release announcement");
+      }
+      announcementIds.add(announcement.id);
+      validateCatalogUrlHost(filePath, announcement.sourceUrl, expectedHost, announcement.id);
+    }
+  }
   for (const release of releases) {
     if (!release || typeof release !== "object") {
       fail(filePath, "releases must contain objects");

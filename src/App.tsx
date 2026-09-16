@@ -36,6 +36,10 @@ import {
   type CollectionCatalogKind,
 } from "./collection/CollectionCatalogPage";
 import { DreamPage } from "./dream/DreamPage";
+import {
+  dreamEventConfirmedEndTime,
+  dreamEventDisplayExpiryTime,
+} from "./dream/eventTiming";
 import { MusicPage } from "./music/MusicPage";
 import { includesSearch, normalizeSearch } from "./search";
 import { safeYouTubeWatchUrl } from "./securityUrls";
@@ -93,6 +97,8 @@ const DREAM_PICKUP_MOMENT_FORMATTER = new Intl.DateTimeFormat("ko-KR", {
 const DISMISSED_TOP_NOTICES_STORAGE_KEY =
   "holo-now:dismissed-top-notices:v1";
 const DEFAULT_BROADCAST_VISIBILITY_MS = 6 * 60 * 60 * 1000;
+const MIN_SCHEDULE_FRESHNESS_WINDOW_MS = 60 * 60 * 1_000;
+const SCHEDULE_CLOCK_SKEW_MS = 5 * 60 * 1_000;
 const MAX_DISMISSED_TOP_NOTICE_IDS = 100;
 const MAX_STORAGE_ID_LENGTH = 512;
 const MAX_DISMISSED_NOTICE_STORAGE_LENGTH = 64 * 1024;
@@ -134,7 +140,7 @@ type ConcertPeriod = "upcoming" | "past";
 type DreamPanel = "collection" | "event" | "pickup" | "calculator";
 type YouTubeCategoryFilter = "all" | YouTubeLiveCategory;
 type LocalEventFilter = "ALL" | "JP" | "KR" | "ENDED";
-type BroadcastStatus = "live" | "upcoming" | "ended";
+type BroadcastStatus = "live" | "upcoming" | "ended" | "unknown";
 type EventStatus = "ongoing" | "upcoming" | "ended";
 
 interface LoadedData {
@@ -172,6 +178,7 @@ interface IconTextProps {
 interface DreamTopNoticeProps {
   tone: "event" | "broadcast";
   eyebrow: string;
+  participantLabel?: string;
   title: string;
   timeLabel: string;
   timeValue: string;
@@ -182,11 +189,13 @@ interface DreamTopNoticeProps {
   onDismiss: () => void;
   onNavigate?: () => void;
   external?: boolean;
+  imageUrl?: string;
 }
 
 function DreamTopNotice({
   tone,
   eyebrow,
+  participantLabel,
   title,
   timeLabel,
   timeValue,
@@ -197,6 +206,7 @@ function DreamTopNotice({
   onDismiss,
   onNavigate,
   external = false,
+  imageUrl,
 }: DreamTopNoticeProps) {
   return (
     <section
@@ -217,13 +227,32 @@ function DreamTopNotice({
         }
       >
         <span className="dream-broadcast-banner__inner">
-          <span className="dream-broadcast-banner__icon" aria-hidden="true">
-            {icon}
+          <span
+            className={`dream-broadcast-banner__icon${
+              imageUrl ? " has-image" : ""
+            }`}
+            aria-hidden="true"
+          >
+            {imageUrl ? (
+              <img
+                src={imageUrl}
+                alt=""
+                decoding="async"
+                referrerPolicy="no-referrer"
+              />
+            ) : (
+              icon
+            )}
           </span>
           <span className="dream-broadcast-banner__copy">
             <span className="dream-broadcast-banner__eyebrow">
               <span className="dream-broadcast-banner__live-dot" />
               {eyebrow}
+              {participantLabel ? (
+                <span className="dream-broadcast-banner__participants">
+                  · {participantLabel}
+                </span>
+              ) : null}
             </span>
             <strong>{title}</strong>
           </span>
@@ -522,7 +551,16 @@ function formatDuration(totalSeconds: number | null): string | null {
 function broadcastStatus(
   entry: ScheduleEntry,
   now: Date,
+  scheduleIsFresh = true,
 ): BroadcastStatus {
+  if (!scheduleIsFresh && entry.isLive) {
+    return "unknown";
+  }
+
+  if (!scheduleIsFresh && entry.date === dateKey(now)) {
+    return "unknown";
+  }
+
   if (entry.isLive) {
     return "live";
   }
@@ -534,6 +572,22 @@ function broadcastStatus(
   return new Date(entry.startsAt).getTime() > now.getTime()
     ? "upcoming"
     : "ended";
+}
+
+function scheduleDataIsFresh(schedule: SchedulePayload, now: Date): boolean {
+  const generatedAt = Date.parse(schedule.generatedAt);
+  if (!Number.isFinite(generatedAt)) return false;
+
+  const refreshMinutes = Math.min(
+    60,
+    Math.max(1, Number(schedule.sourceRefreshMinutes) || 15),
+  );
+  const maximumAge = Math.max(
+    MIN_SCHEDULE_FRESHNESS_WINDOW_MS,
+    refreshMinutes * 3 * 60_000,
+  );
+  const age = now.getTime() - generatedAt;
+  return age >= -SCHEDULE_CLOCK_SKEW_MS && age <= maximumAge;
 }
 
 function eventStatus(
@@ -558,6 +612,10 @@ function statusLabel(status: BroadcastStatus | EventStatus): string {
 
   if (status === "upcoming") {
     return "예정";
+  }
+
+  if (status === "unknown") {
+    return "일정 확인";
   }
 
   return "종료";
@@ -733,15 +791,17 @@ function EmptyState({
 function BroadcastCard({
   entry,
   now,
+  scheduleIsFresh,
   talent,
   onTalentSelect,
 }: {
   entry: ScheduleEntry;
   now: Date;
+  scheduleIsFresh: boolean;
   talent?: Talent;
   onTalentSelect: (talent: Talent) => void;
 }) {
-  const status = broadcastStatus(entry, now);
+  const status = broadcastStatus(entry, now, scheduleIsFresh);
 
   return (
     <article className="broadcast-card">
@@ -781,7 +841,7 @@ function BroadcastCard({
           )}
           <div>
             <strong>{talent?.nameKo ?? entry.name}</strong>
-            <span>{entry.branch ?? talent?.branch ?? "hololive"}</span>
+            <span>{talent?.branch ?? entry.branch ?? "hololive"}</span>
           </div>
         </div>
         <h3>{entry.title || `${entry.name}의 공식 방송`}</h3>
@@ -1539,6 +1599,9 @@ export default function App() {
         ),
     [data?.schedule.entries],
   );
+  const isScheduleFresh = data
+    ? scheduleDataIsFresh(data.schedule, now)
+    : false;
 
   const hololiveSchedule = useMemo(() => {
     const entriesByVideoId = new Map<string, ScheduleEntry>();
@@ -1716,6 +1779,11 @@ export default function App() {
     }
   };
 
+  const selectTodaySchedule = () => {
+    setSelectedDate(dateKey(new Date()));
+    setHideEnded(true);
+  };
+
   const openDatePicker = () => {
     const input = dateInputRef.current;
 
@@ -1743,7 +1811,10 @@ export default function App() {
           return false;
         }
 
-        if (hideEnded && broadcastStatus(entry, now) === "ended") {
+        if (
+          hideEnded &&
+          broadcastStatus(entry, now, isScheduleFresh) === "ended"
+        ) {
           return false;
         }
 
@@ -1752,23 +1823,34 @@ export default function App() {
           normalizedQuery,
         );
       }),
-    [hololiveSchedule, hideEnded, normalizedQuery, now, selectedDate],
+    [
+      hololiveSchedule,
+      hideEnded,
+      isScheduleFresh,
+      normalizedQuery,
+      now,
+      selectedDate,
+    ],
   );
 
   const liveNow = useMemo(
     () =>
-      currentSchedule.filter(
-        (entry) => broadcastStatus(entry, now) === "live",
-      ),
-    [currentSchedule, now],
+      isScheduleFresh
+        ? currentSchedule.filter(
+            (entry) => broadcastStatus(entry, now, true) === "live",
+          )
+        : [],
+    [currentSchedule, isScheduleFresh, now],
   );
 
   const nextBroadcast = useMemo(
     () =>
-      currentSchedule.find(
-        (entry) => broadcastStatus(entry, now) === "upcoming",
-      ),
-    [currentSchedule, now],
+      isScheduleFresh
+        ? currentSchedule.find(
+            (entry) => broadcastStatus(entry, now, true) === "upcoming",
+          )
+        : undefined,
+    [currentSchedule, isScheduleFresh, now],
   );
 
   const upcomingSoloLives = useMemo(
@@ -2166,44 +2248,41 @@ export default function App() {
     const ended = entries
       .filter(({ endsAt }) => endsAt !== null && endsAt < nowTime)
       .sort((left, right) => right.startsAt - left.startsAt);
+    const current = active.at(-1) ?? null;
     return {
-      primary: active[0] ?? upcoming[0] ?? ended[0] ?? null,
-      banner: active[0] ?? upcoming[0] ?? null,
+      primary: current ?? upcoming[0] ?? ended[0] ?? null,
+      banner: current ?? upcoming[0] ?? null,
       activeCount: active.length,
     };
   }, [data?.hololiveDreams.pickups, now]);
 
   const dreamEventHighlight = useMemo(() => {
-    const entries = (data?.hololiveDreams.events ?? [])
-      .flatMap((event) =>
-        event.chapters.map((chapter, chapterIndex) => {
-          const startsAt = Date.parse(chapter.startsAt);
-          const nextChapter = event.chapters[chapterIndex + 1];
-          const nextStartsAt = nextChapter
-            ? Date.parse(nextChapter.startsAt)
-            : null;
-          const endsAt = chapter.endsAt
-            ? Date.parse(chapter.endsAt)
-            : nextStartsAt !== null
-              ? nextStartsAt - 1
-              : event.endsAt
-                ? Date.parse(event.endsAt)
-                : null;
-          return { event, chapter, startsAt, endsAt, nextStartsAt };
-        }),
-      )
-      .filter(({ startsAt, endsAt }) =>
+    const events = [...(data?.hololiveDreams.events ?? [])].sort(
+      (left, right) => Date.parse(left.startsAt) - Date.parse(right.startsAt),
+    );
+    const entries = events
+      .map((event, eventIndex) => {
+        const nextEvent = events[eventIndex + 1] ?? null;
+        return {
+          event,
+          startsAt: Date.parse(event.startsAt),
+          confirmedEndsAt: dreamEventConfirmedEndTime(event),
+          displayExpiresAt: dreamEventDisplayExpiryTime(event, nextEvent),
+        };
+      })
+      .filter(({ startsAt, displayExpiresAt }) =>
         Number.isFinite(startsAt) &&
-        (endsAt === null || Number.isFinite(endsAt)),
+        displayExpiresAt !== null &&
+        Number.isFinite(displayExpiresAt),
       )
       .sort((left, right) => left.startsAt - right.startsAt);
     const nowTime = now.getTime();
     const active = entries.filter(
-      ({ startsAt, endsAt }) =>
-        startsAt <= nowTime && (endsAt === null || nowTime <= endsAt),
+      ({ startsAt, displayExpiresAt }) =>
+        startsAt <= nowTime && nowTime <= displayExpiresAt!,
     );
     const upcoming = entries.filter(({ startsAt }) => startsAt > nowTime);
-    const banner = active[0] ?? upcoming[0] ?? null;
+    const banner = active.at(-1) ?? upcoming[0] ?? null;
     return {
       banner,
       isActive: Boolean(banner && banner.startsAt <= nowTime),
@@ -2238,7 +2317,7 @@ export default function App() {
   }, [data?.hololiveDreams.officialBroadcasts, now]);
 
   const dreamEventNoticeId = dreamEventHighlight.banner
-    ? `dream-event:${dreamEventHighlight.banner.event.id}:${dreamEventHighlight.banner.chapter.talentId}:${dreamEventHighlight.banner.chapter.startsAt}`
+    ? `dream-event:${dreamEventHighlight.banner.event.id}:${dreamEventHighlight.banner.event.startsAt}`
     : null;
   const dreamBroadcastNoticeId = dreamBroadcastHighlight.banner
     ? `dream-broadcast:${dreamBroadcastHighlight.banner.broadcast.id}`
@@ -2261,6 +2340,20 @@ export default function App() {
   const visibleDreamBroadcastNotice = visibleDreamBroadcastWatchUrl
     ? visibleDreamBroadcastCandidate
     : null;
+  const visibleDreamEventParticipantIds = visibleDreamEventNotice
+    ? visibleDreamEventNotice.event.participantTalentIds?.length
+      ? visibleDreamEventNotice.event.participantTalentIds
+      : [...
+          new Set(
+            visibleDreamEventNotice.event.chapters.map(
+              (chapter) => chapter.talentId,
+            ),
+          ),
+        ]
+    : [];
+  const visibleDreamEventParticipantNames = visibleDreamEventParticipantIds.map(
+    (talentId) => talentById.get(talentId)?.nameKo ?? talentId,
+  );
 
   const currentMeta = PAGE_META[view];
   const headerOfficialUrl =
@@ -2295,30 +2388,25 @@ export default function App() {
           {visibleDreamEventNotice && dreamEventNoticeId ? (
             <DreamTopNotice
               tone="event"
-              eyebrow={`${
+              eyebrow={
                 dreamEventHighlight.isActive ? "CURRENT EVENT" : "NEXT EVENT"
-              } · ${
-                talentById.get(visibleDreamEventNotice.chapter.talentId)
-                  ?.nameKo ?? visibleDreamEventNotice.chapter.talentId
-              }`}
-              title={`${visibleDreamEventNotice.event.title} · ${visibleDreamEventNotice.chapter.songTitle}`}
+              }
+              participantLabel={visibleDreamEventParticipantNames.join(" · ")}
+              title={visibleDreamEventNotice.event.title}
               timeLabel={`${DREAM_PICKUP_MOMENT_FORMATTER.format(
                 new Date(visibleDreamEventNotice.startsAt),
               )} 시작`}
               timeValue={
-                visibleDreamEventNotice.nextStartsAt
+                visibleDreamEventNotice.confirmedEndsAt
                   ? `${DREAM_PICKUP_MOMENT_FORMATTER.format(
-                      new Date(visibleDreamEventNotice.nextStartsAt),
-                    )} 전환`
-                  : visibleDreamEventNotice.endsAt
-                  ? `${DREAM_PICKUP_MOMENT_FORMATTER.format(
-                      new Date(visibleDreamEventNotice.endsAt),
+                      new Date(visibleDreamEventNotice.confirmedEndsAt),
                     )}까지`
                   : "종료 일정 확인 중"
               }
               href="?view=dream&dream=event"
               cta="이벤트 보기"
               icon={<CalendarDays size={19} strokeWidth={2.2} />}
+              imageUrl={visibleDreamEventNotice.event.imageUrl}
               dismissLabel={`${visibleDreamEventNotice.event.title} 이벤트 배너 닫기`}
               onDismiss={() => dismissTopNotice(dreamEventNoticeId)}
               onNavigate={openDreamEvent}
@@ -2666,7 +2754,7 @@ export default function App() {
                 <div className="dashboard-stats">
                   <div>
                     <Radio size={18} aria-hidden="true" />
-                    <strong>{liveNow.length}</strong>
+                    <strong>{isScheduleFresh ? liveNow.length : "—"}</strong>
                     <span>지금 LIVE</span>
                   </div>
                   <div>
@@ -2748,11 +2836,15 @@ export default function App() {
               action={
                 data ? (
                   <span className="update-chip">
-                    <span className="status-light" />
+                    {isScheduleFresh ? (
+                      <span className="status-light" />
+                    ) : (
+                      <Info size={14} aria-hidden="true" />
+                    )}
                     {UPDATE_FORMATTER.format(
                       new Date(data.schedule.generatedAt),
                     )}{" "}
-                    갱신
+                    {isScheduleFresh ? "갱신" : "마지막 갱신 · 확인 필요"}
                   </span>
                 ) : null
               }
@@ -2765,9 +2857,11 @@ export default function App() {
                     <span className="pulse-dot" />
                     지금 방송 중
                   </span>
-                  <strong>{liveNow.length}</strong>
+                  <strong>{isScheduleFresh ? liveNow.length : "—"}</strong>
                 </div>
-                {liveNow.length > 0 ? (
+                {!isScheduleFresh ? (
+                  <p>일정 갱신이 지연되어 현재 방송 여부를 확인할 수 없습니다.</p>
+                ) : liveNow.length > 0 ? (
                   <div className="live-chips">
                     {liveNow.slice(0, 6).map((entry) => (
                       <a
@@ -2788,7 +2882,9 @@ export default function App() {
 
               <div className="now-block now-block-next">
                 <span className="now-block-label">NEXT UP</span>
-                {nextBroadcast ? (
+                {!isScheduleFresh ? (
+                  <p>일정 갱신 후 다음 방송을 표시합니다.</p>
+                ) : nextBroadcast ? (
                   <div>
                     <strong>
                       {talentForBroadcast(nextBroadcast)?.nameKo ??
@@ -2808,6 +2904,16 @@ export default function App() {
             <div className="schedule-controls">
               <div className="schedule-date-picker">
                 <div className="date-jump-control">
+                  <button
+                    type="button"
+                    className="date-jump-trigger"
+                    onClick={selectTodaySchedule}
+                    aria-current={
+                      selectedDate === dateKey(now) ? "date" : undefined
+                    }
+                  >
+                    오늘
+                  </button>
                   <button
                     type="button"
                     className="date-jump-trigger"
@@ -2866,6 +2972,7 @@ export default function App() {
                     key={entry.id}
                     entry={entry}
                     now={now}
+                    scheduleIsFresh={isScheduleFresh}
                     talent={talentForBroadcast(entry)}
                     onTalentSelect={selectTalent}
                   />

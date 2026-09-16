@@ -12,6 +12,7 @@ import {
   writeFileAtomically,
 } from "./lib/secure-io.mjs";
 import { approvedMusicHttpsUrl } from "./lib/music-url-policy.mjs";
+import { assertMusicCoverage, normalizeMusicHeaders } from "./lib/music-source-schema.mjs";
 
 const ORIGINAL_SONGS_URL =
   "https://docs.google.com/spreadsheets/d/1NYZza5QTN4ZIyot6XWvD8VwROL1R0EptlkJttySZ4Ew/export?format=csv&gid=387240143";
@@ -123,8 +124,8 @@ const [originalCsv, coverCsv] = await Promise.all([
   fetchText(ORIGINAL_SONGS_URL),
   fetchText(COVER_SONGS_URL),
 ]);
-const originalRows = csvRecords(originalCsv);
-const coverRows = csvRecords(coverCsv);
+const originalRows = csvRecords(originalCsv, ["title", "members_romaji", "release_date", "video_link", "music_link"]);
+const coverRows = csvRecords(coverCsv, ["title", "performers", "date", "link"]);
 const talentMatchers = createTalentMatchers(talents);
 
 console.log(`Loaded ${originalRows.length} original-song rows.`);
@@ -177,6 +178,7 @@ const coverDrafts = deduplicateCoverTracks(
     .map((row) => coverTrackFromRow(row, talentMatchers))
     .filter(Boolean),
 );
+assertMusicCoverage([...originalDrafts, ...coverDrafts], previousMusicPayload.tracks);
 
 const originalVideoIds = Array.from(
   new Set(
@@ -272,6 +274,12 @@ const { tracks, preservedIdCount, newIdCount } = reconcileTrackIds(
   sortedTracks,
   previousMusicPayload.tracks,
 );
+// A source sheet removing a row does not confirm removal of the recording.
+// Preserve existing archive entries and their saved IDs until reviewed.
+const currentTrackIds = new Set(tracks.map((track) => track.id));
+const retainedTracks = previousMusicPayload.tracks.filter((track) => !currentTrackIds.has(track.id));
+tracks.push(...retainedTracks);
+tracks.sort(compareTracks);
 
 const payload = {
   checkedAt: new Date().toISOString(),
@@ -377,9 +385,9 @@ function parseCsv(input) {
   return rows;
 }
 
-function csvRecords(input) {
+function csvRecords(input, requiredHeaders) {
   const rows = parseCsv(input);
-  const headers = rows.shift() ?? [];
+  const headers = normalizeMusicHeaders(rows.shift() ?? [], requiredHeaders);
 
   return rows.map((values) =>
     Object.fromEntries(
@@ -421,15 +429,15 @@ function matchTalentIds(value, matchers) {
 }
 
 function originalTrackFromRow(row, matchers) {
-  const memberIds = matchTalentIds(row.Members_Romaji, matchers);
+  const memberIds = matchTalentIds(row.members_romaji, matchers);
   if (memberIds.length === 0) {
     return null;
   }
 
-  const registeredTitle = cleanValue(row.Title_Registered);
-  const nativeTitle = cleanValue(row.Title);
-  const translatedTitle = cleanValue(row.Title_Translated);
-  const romanizedTitle = cleanValue(row.Title_Romaji);
+  const registeredTitle = cleanValue(row.title_registered);
+  const nativeTitle = cleanValue(row.title);
+  const translatedTitle = cleanValue(row.title_translated);
+  const romanizedTitle = cleanValue(row.title_romaji);
   const title =
     registeredTitle ??
     nativeTitle ??
@@ -443,16 +451,16 @@ function originalTrackFromRow(row, matchers) {
     romanizedTitle,
   );
   const videoId =
-    firstYouTubeId(row.Music_link) ?? firstYouTubeId(row.Video_link);
+    firstYouTubeId(row.music_link) ?? firstYouTubeId(row.video_link);
   const releaseType = releaseTypeFromLocation(
-    row.Song_location || row.Song_Location || row.Song_type,
+    row.song_location || row.song_type,
   );
   const albumTitle =
     releaseType === "album" || releaseType === "ep"
-      ? cleanValue(row.CD_source)
+      ? cleanValue(row.cd_source)
       : null;
   const membersAmount = normalizeName(
-    row.Members_amount || row.Members_Amount,
+    row.members_amount,
   );
   const isExplicitlySolo =
     membersAmount === "solo" ||
@@ -463,17 +471,17 @@ function originalTrackFromRow(row, matchers) {
       ? "collaboration"
       : "solo";
   const links = [
-    ...youtubeLinks(row.Video_link),
-    ...typedLinks("streaming", row["Download/Streaming_link"]),
-    ...typedLinks("music", row.Music_link),
-    ...typedLinks("album", row.CD_link),
+    ...youtubeLinks(row.video_link),
+    ...typedLinks("streaming", row["download/streaming_link"]),
+    ...typedLinks("music", row.music_link),
+    ...typedLinks("album", row.cd_link),
   ];
-  const releaseDate = normalizeDate(row.Release_date);
+  const releaseDate = normalizeDate(row.release_date);
 
   return {
     id: stableTrackId("original", [
       title,
-      cleanValue(row.Members_Romaji),
+      cleanValue(row.members_romaji),
       releaseDate,
     ]),
     title,
@@ -481,8 +489,8 @@ function originalTrackFromRow(row, matchers) {
     category,
     memberIds,
     artist:
-      cleanValue(row.Members_Romaji) ??
-      cleanValue(row.Members) ??
+      cleanValue(row.members_romaji) ??
+      cleanValue(row.members) ??
       memberIds.join(", "),
     releaseDate,
     durationSeconds: null,

@@ -227,6 +227,31 @@ const heatedSummerDayPickupCards = [
 
 const pickups = [
   {
+    id: "secret-vacation-2026",
+    title: "「비밀의 바캉스」 가챠",
+    subtitle: "신규 수영복 ★5 타카네 루이·후와와·모코코 · 선택 가능 가챠 동시 개최",
+    targetRatePercent: null,
+    rateLabel: "신규 수영복 ★5 세 명 · 선택 대상 출현율 상승",
+    rateBreakdown: [],
+    startsOn: "2026-09-08",
+    endsOn: "2026-09-19",
+    startsAt: "2026-09-08T11:00:00+09:00",
+    endsAt: "2026-09-19T10:00:00+09:00",
+    announcedOn: "2026-09-08",
+    sourceLabel: "QualiArts 공식 App Store 이벤트",
+    sourceUrl: "https://apps.apple.com/jp/app/id6756641135?eventid=6809317539",
+    bannerImageUrl:
+      "https://is1-ssl.mzstatic.com/image/thumb/wNjQ7VI2LWV5AsTxXDdmLw/1200x630fo.jpg",
+    participantTalentIds: [
+      "takane-lui",
+      "fuwawa-abyssgard",
+      "mococo-abyssgard",
+    ],
+    scheduleNote:
+      "App Store의 QualiArts 공식 이벤트 메타데이터는 2026년 9월 8일 11:00부터 9월 19일 10:00(JST)까지로 안내합니다. 수영복 ★5 타카네 루이·후와와·모코코와 선택 가능 가챠의 동시 개최까지만 공식 공개되어, 개별 카드명과 제공 비율은 확정하지 않았습니다.",
+    cards: [],
+  },
+  {
     id: "heated-summer-day-selectable-2026",
     title: "선택 가능! 「열기를 띤 여름의 하루」 가챠",
     subtitle: "신규 수영복 ★5 5명 중 1명을 선택 · 선택 대상 출현율 상승 · 파크·라이브 의상 포함",
@@ -234,14 +259,16 @@ const pickups = [
     rateLabel: "선택한 신규 수영복 ★5 한 명",
     rateBreakdown: [],
     startsOn: "2026-08-17",
-    endsOn: null,
+    endsOn: "2026-08-29",
     startsAt: "2026-08-17T11:00:00+09:00",
-    endsAt: null,
+    endsAt: "2026-08-29T10:00:00+09:00",
     announcedOn: "2026-08-16",
     sourceLabel: "hololive Dreams 공식 X 신규 픽업 공지",
     sourceUrl: "https://x.com/hololive_dreams/status/2089171498506621279",
+    scheduleSourceUrl:
+      "https://apps.apple.com/jp/app/id6756641135?eventid=6800665008",
     scheduleNote:
-      "2026년 8월 17일 11시부터 일반형과 동시에 개최됩니다. 칼리오페·아야메·올리·루나·이나 중 한 명을 선택하면 해당 멤버의 출현율이 더 올라갑니다. 종료 시각과 숫자 제공 비율은 외부 공식 채널에 공개되지 않아 게임 내 공지에서 확인해야 합니다.",
+      "공식 X 기준 2026년 8월 17일 11시부터 일반형과 동시에 개최됐으며, QualiArts의 App Store 이벤트 메타데이터 기준 8월 29일 10시에 종료됐습니다. 칼리오페·아야메·올리·루나·이나 중 한 명을 선택하면 해당 멤버의 출현율이 더 올라갑니다. 숫자 제공 비율은 외부 공식 채널에 공개되지 않았습니다.",
     cards: heatedSummerDayPickupCards,
   },
   {
@@ -252,14 +279,16 @@ const pickups = [
     rateLabel: "신규 수영복 ★5 다섯 명 전체",
     rateBreakdown: [],
     startsOn: "2026-08-17",
-    endsOn: null,
+    endsOn: "2026-08-29",
     startsAt: "2026-08-17T11:00:00+09:00",
-    endsAt: null,
+    endsAt: "2026-08-29T10:00:00+09:00",
     announcedOn: "2026-08-16",
     sourceLabel: "hololive Dreams 공식 X 신규 픽업 공지",
     sourceUrl: "https://x.com/hololive_dreams/status/2089171498506621279",
+    scheduleSourceUrl:
+      "https://apps.apple.com/jp/app/id6756641135?eventid=6800665008",
     scheduleNote:
-      "2026년 8월 17일 11시부터 선택형과 동시에 개최됩니다. 신규 카드를 획득하면 각 멤버의 파크 의상과 라이브 의상도 함께 획득합니다. 종료 시각과 숫자 제공 비율은 외부 공식 채널에 공개되지 않아 게임 내 공지에서 확인해야 합니다. 신규 멤버는 이후 개최 가챠에도 등장하지만 상시 홀로도리 가챠에서는 배출되지 않습니다.",
+      "공식 X 기준 2026년 8월 17일 11시부터 선택형과 동시에 개최됐으며, QualiArts의 App Store 이벤트 메타데이터 기준 8월 29일 10시에 종료됐습니다. 신규 카드를 획득하면 각 멤버의 파크 의상과 라이브 의상도 함께 획득합니다. 숫자 제공 비율은 외부 공식 채널에 공개되지 않았습니다. 신규 멤버는 이후 개최 가챠에도 등장하지만 상시 홀로도리 가챠에서는 배출되지 않습니다.",
     cards: heatedSummerDayPickupCards,
   },
   {
@@ -335,7 +364,7 @@ const events = [
     nativeTitle: "アルティメットサマー！ for Me？",
     subtitle: "5명의 솔로 챕터가 이틀마다 교체되는 스코어 이벤트",
     startsAt: "2026-08-17T20:00:00+09:00",
-    endsAt: null,
+    endsAt: "2026-08-27T19:00:00+09:00",
     sourceLabel: "hololive Dreams 공식 X 이벤트 공지",
     sourceUrl: "https://x.com/hololive_dreams/status/2088838162592243714",
     scheduleSourceUrl:
@@ -385,6 +414,51 @@ const events = [
       },
     ],
   },
+  {
+    id: "survival-days-2026",
+    title: "무인도 잭! 한여름의 서바이벌 데이즈",
+    nativeTitle: "無人島ジャック！真夏のサバイバルデイズ",
+    subtitle: "시라카미 후부키·오오카미 미오·네코마타 오카유·이누가미 코로네의 스토리와 이벤트 메모리",
+    startsAt: "2026-08-29T12:00:00+09:00",
+    endsAt: "2026-09-06T19:00:00+09:00",
+    sourceLabel: "QualiArts 공식 App Store 이벤트",
+    sourceUrl: "https://apps.apple.com/jp/app/id6756641135?eventid=6804530518",
+    scheduleSourceUrl:
+      "https://apps.apple.com/jp/app/id6756641135?eventid=6804530518",
+    songsSourceUrl:
+      "https://apps.apple.com/jp/app/id6756641135?eventid=6804530518",
+    imageUrl:
+      "https://is1-ssl.mzstatic.com/image/thumb/eD5Q3VaqCN4bCXTSAEJscA/1200x630fo.jpg",
+    participantTalentIds: [
+      "shirakami-fubuki",
+      "ookami-mio",
+      "nekomata-okayu",
+      "inugami-korone",
+    ],
+    chapters: [],
+  },
+  {
+    id: "innocent-two-watching-eyes-2026",
+    title: "천진난만한 두 사람, 지켜보는 eyes",
+    nativeTitle: "無邪気なふたり、見守るeyes",
+    subtitle: "타카네 루이·후와와·모코코의 신규 유닛곡을 포함한 3곡과 이벤트 메모리",
+    startsAt: "2026-09-08T12:00:00+09:00",
+    endsAt: "2026-09-17T19:00:00+09:00",
+    sourceLabel: "QualiArts 공식 App Store 이벤트",
+    sourceUrl: "https://apps.apple.com/jp/app/id6756641135?eventid=6809318027",
+    scheduleSourceUrl:
+      "https://apps.apple.com/jp/app/id6756641135?eventid=6809318027",
+    songsSourceUrl:
+      "https://apps.apple.com/jp/app/id6756641135?eventid=6809318027",
+    imageUrl:
+      "https://is1-ssl.mzstatic.com/image/thumb/eMAN_UPkNi_-WVzWqkyBbg/1200x630fo.jpg",
+    participantTalentIds: [
+      "takane-lui",
+      "fuwawa-abyssgard",
+      "mococo-abyssgard",
+    ],
+    chapters: [],
+  },
 ];
 
 const officialBroadcasts = [
@@ -408,11 +482,11 @@ const officialBroadcasts = [
 ];
 
 const payload = {
-  checkedAt: "2026-08-23T22:45:00+09:00",
+  checkedAt: "2026-09-16T12:42:00+09:00",
   sourceUrl: "https://www.hololive-dreams.com/en",
   officialNewsUrl: "https://hololive.hololivepro.com/en/news/20260723-01-401/",
   sourceNote:
-    "공식 웹·X에 공개된 캐릭터, 픽업과 이벤트 일정을 정리했습니다. 제공 비율은 게임 내 화면 기준이며 외부 공식 채널에 없는 종료 시각과 비율은 확인 필요로 표시합니다.",
+    "공식 웹·X와 QualiArts가 게시한 App Store 메타데이터에 공개된 캐릭터, 픽업과 이벤트 일정을 정리했습니다. 외부 공식 채널에 없는 개별 카드명·곡명·제공 비율은 추정하지 않습니다.",
   launchDate: "2026-07-23",
   game: {
     title: "hololive Dreams",
@@ -564,7 +638,8 @@ for (const event of events) {
     !event.sourceUrl ||
     !event.scheduleSourceUrl ||
     !event.songsSourceUrl ||
-    !event.chapters.length
+    (!event.chapters.length &&
+      (!event.imageUrl || !event.participantTalentIds?.length))
   ) {
     throw new Error(`이벤트 필수 정보가 비어 있습니다: ${event.id}`);
   }
@@ -580,6 +655,20 @@ for (const event of events) {
       (!Number.isFinite(eventEndsAt) || eventStartsAt > eventEndsAt))
   ) {
     throw new Error(`이벤트 시작·종료 시각이 올바르지 않습니다: ${event.id}`);
+  }
+  if (!event.chapters.length) {
+    const eventImage = new URL(event.imageUrl);
+    if (
+      eventImage.protocol !== "https:" ||
+      eventImage.hostname !== "is1-ssl.mzstatic.com"
+    ) {
+      throw new Error(`${event.id}: 공식 App Store 배너 URL이 아닙니다.`);
+    }
+    for (const talentId of event.participantTalentIds) {
+      if (!dreamTalentIds.has(talentId)) {
+        throw new Error(`${event.id}: 알 수 없는 출연자 ID입니다: ${talentId}`);
+      }
+    }
   }
   const chapterTalentIds = new Set();
   let previousChapterStartsAt = 0;
@@ -708,7 +797,21 @@ for (const pickup of pickups) {
     throw new Error(`픽업 세부 확률이 올바르지 않습니다: ${pickup.id}`);
   }
   if (!pickup.cards.length) {
-    throw new Error(`픽업 카드가 비어 있습니다: ${pickup.id}`);
+    if (!pickup.bannerImageUrl || !pickup.participantTalentIds?.length) {
+      throw new Error(`픽업 카드와 공식 배너 정보가 모두 비어 있습니다: ${pickup.id}`);
+    }
+    const pickupBanner = new URL(pickup.bannerImageUrl);
+    if (
+      pickupBanner.protocol !== "https:" ||
+      pickupBanner.hostname !== "is1-ssl.mzstatic.com"
+    ) {
+      throw new Error(`${pickup.id}: 공식 App Store 배너 URL이 아닙니다.`);
+    }
+    for (const talentId of pickup.participantTalentIds) {
+      if (!dreamTalentIds.has(talentId)) {
+        throw new Error(`${pickup.id}: 알 수 없는 출연자 ID입니다: ${talentId}`);
+      }
+    }
   }
   const cardIdsInPickup = new Set();
   for (const card of pickup.cards) {

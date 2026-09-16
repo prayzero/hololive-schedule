@@ -36,30 +36,45 @@ import {
   type CollectionCatalogKind,
 } from "./collection/CollectionCatalogPage";
 import { DreamPage } from "./dream/DreamPage";
+import { validateSiteResourcePayload } from "./dataValidation";
+import {
+  archiveErrorForView,
+  fallbackScheduleDate,
+  loadSiteResources,
+  resourceErrorForView,
+  type ResourceErrors,
+  type SiteData,
+} from "./dataLoading";
 import {
   dreamEventConfirmedEndTime,
   dreamEventDisplayExpiryTime,
 } from "./dream/eventTiming";
+import {
+  eventMatchesRegionFilter,
+  eventRegionLabel,
+  isDiscoverableLocalEvent,
+  isEventRegion,
+  LOCAL_EVENT_FILTERS,
+  localEventFilterLabel,
+  type LocalEventFilter,
+} from "./eventRegions";
 import { MusicPage } from "./music/MusicPage";
+import {
+  broadcastSearchValues,
+  talentSearchValues,
+} from "./scheduleSearch";
 import { includesSearch, normalizeSearch } from "./search";
 import { safeYouTubeWatchUrl } from "./securityUrls";
 import type {
   CollectionCatalogPayload,
   CuratedEvent,
-  EventRegion,
-  EventsPayload,
-  HololiveDreamsPayload,
   MusicPayload,
-  ScheduleIndexPayload,
   ScheduleEntry,
   SchedulePayload,
   SoloLive,
-  SoloLivesPayload,
   Talent,
-  TalentsPayload,
   YouTubeLive,
   YouTubeLiveCategory,
-  YouTubeLivesPayload,
 } from "./types";
 
 const BASE_URL = import.meta.env.BASE_URL;
@@ -139,19 +154,8 @@ type PageView =
 type ConcertPeriod = "upcoming" | "past";
 type DreamPanel = "collection" | "event" | "pickup" | "calculator";
 type YouTubeCategoryFilter = "all" | YouTubeLiveCategory;
-type LocalEventFilter = "ALL" | "JP" | "KR" | "ENDED";
 type BroadcastStatus = "live" | "upcoming" | "ended" | "unknown";
 type EventStatus = "ongoing" | "upcoming" | "ended";
-
-interface LoadedData {
-  schedule: SchedulePayload;
-  scheduleIndex: ScheduleIndexPayload;
-  events: EventsPayload;
-  talents: TalentsPayload;
-  solos: SoloLivesPayload;
-  youtubeLives: YouTubeLivesPayload;
-  hololiveDreams: HololiveDreamsPayload;
-}
 
 type ConcertItem =
   | {
@@ -305,9 +309,9 @@ const PAGE_META: Record<
       "생일·주년·3D·무료 콘서트 영상을 멤버와 카테고리별로 찾아보세요.",
   },
   local: {
-    eyebrow: "JP · KR LOCAL",
-    title: "일본·한국 현지 행사",
-    description: "팝업·전시·카페·카드게임 행사를 지역별로 확인하세요.",
+    eyebrow: "REGIONAL EVENTS",
+    title: "지역별 홀로라이브 행사",
+    description: "팝업·전시·페스티벌·컬래버레이션 행사를 지역별로 확인하세요.",
   },
   music: {
     eyebrow: "HOLOLIVE MUSIC",
@@ -335,7 +339,7 @@ const NAV_ITEMS: Array<{ id: PageView; label: string; shortLabel: string }> = [
   { id: "schedule", label: "방송 일정", shortLabel: "방송" },
   { id: "concerts", label: "콘서트", shortLabel: "공연" },
   { id: "solo", label: "YouTube 라이브", shortLabel: "영상" },
-  { id: "local", label: "일본·한국", shortLabel: "현지" },
+  { id: "local", label: "행사", shortLabel: "행사" },
   { id: "music", label: "음악", shortLabel: "음악" },
   { id: "dream", label: "홀로도리", shortLabel: "홀로도리" },
   { id: "cards", label: "공식 카드게임", shortLabel: "카드" },
@@ -481,7 +485,7 @@ function initialDreamPanel(): DreamPanel {
 function initialRegion(): LocalEventFilter {
   if (paramValue("status") === "ended") return "ENDED";
   const value = paramValue("region");
-  return value === "JP" || value === "KR" ? value : "ALL";
+  return isEventRegion(value) ? value : "ALL";
 }
 
 function dateKey(date: Date): string {
@@ -647,34 +651,11 @@ function formatRelative(startsAt: string | null, now: Date): string {
   return rest > 0 ? `${hours}시간 ${rest}분 뒤` : `${hours}시간 뒤`;
 }
 
-function talentSearchValues(talent: Talent): string[] {
-  return [
-    talent.name,
-    talent.nameKo,
-    talent.nativeName,
-    talent.branch,
-    talent.generation,
-    ...talent.aliases,
-  ];
-}
-
 function isHololiveScheduleEntry(entry: ScheduleEntry): boolean {
   const normalizedName = normalizeSearch(entry.name);
   return !MALE_NAME_MARKERS.some((marker) =>
     normalizedName.includes(normalizeSearch(marker)),
   );
-}
-
-function regionLabel(region: EventRegion): string {
-  if (region === "JP") {
-    return "일본";
-  }
-
-  if (region === "KR") {
-    return "한국";
-  }
-
-  return "글로벌";
 }
 
 function IconText({ icon: Icon, children }: IconTextProps) {
@@ -885,7 +866,7 @@ function EventCard({
           {statusLabel(status)}
         </span>
         <span className={`region-badge region-${event.region.toLowerCase()}`}>
-          {regionLabel(event.region)}
+          {eventRegionLabel(event.region)}
         </span>
       </a>
       <div className="event-body">
@@ -1092,14 +1073,14 @@ function LoadingGrid() {
 }
 
 export default function App() {
-  const [data, setData] = useState<LoadedData | null>(null);
-  const [error, setError] = useState<string | null>(null);
-  const [archiveError, setArchiveError] = useState<string | null>(null);
+  const [data, setData] = useState<Partial<SiteData>>({});
+  const [dataErrors, setDataErrors] = useState<ResourceErrors>({});
+  const [archiveError, setArchiveError] = useState<{
+    month: string;
+    message: string;
+  } | null>(null);
   const [archiveMonths, setArchiveMonths] = useState(
     () => new Map<string, ScheduleEntry[]>(),
-  );
-  const [archiveLoadingMonth, setArchiveLoadingMonth] = useState<string | null>(
-    null,
   );
   const [musicData, setMusicData] = useState<MusicPayload | null>(null);
   const [musicError, setMusicError] = useState<string | null>(null);
@@ -1120,9 +1101,13 @@ export default function App() {
     readDismissedTopNoticeIds,
   );
   const [view, setView] = useState<PageView>(initialView);
+  const error = resourceErrorForView(view, dataErrors);
   const [query, setQuery] = useState(() => paramValue("q") ?? "");
   const [selectedDate, setSelectedDate] = useState(
     () => paramValue("day") ?? dateKey(new Date()),
+  );
+  const activeArchiveError = archiveErrorForView(
+    view, selectedDate, archiveError,
   );
   const [hideEnded, setHideEnded] = useState(() => {
     const requestedDate = paramValue("day");
@@ -1173,101 +1158,33 @@ export default function App() {
       controller = new AbortController();
 
       try {
-        setError(null);
-        const [
-          scheduleResponse,
-          scheduleIndexResponse,
-          eventsResponse,
-          talentsResponse,
-          solosResponse,
-          youtubeLivesResponse,
-          hololiveDreamsResponse,
-        ] = await Promise.all([
-          fetch(DATA_URLS.schedule, {
-            cache: "no-store",
-            signal: controller.signal,
-          }),
-          fetch(DATA_URLS.scheduleIndex, {
-            cache: "no-store",
-            signal: controller.signal,
-          }),
-          fetch(DATA_URLS.events, {
-            cache: "no-store",
-            signal: controller.signal,
-          }),
-          fetch(DATA_URLS.talents, {
-            cache: "no-store",
-            signal: controller.signal,
-          }),
-          fetch(DATA_URLS.solos, {
-            cache: "no-store",
-            signal: controller.signal,
-          }),
-          fetch(DATA_URLS.youtubeLives, {
-            cache: "no-store",
-            signal: controller.signal,
-          }),
-          fetch(DATA_URLS.hololiveDreams, {
-            cache: "no-store",
-            signal: controller.signal,
-          }),
-        ]);
-
-        const responses = [
-          scheduleResponse,
-          scheduleIndexResponse,
-          eventsResponse,
-          talentsResponse,
-          solosResponse,
-          youtubeLivesResponse,
-          hololiveDreamsResponse,
-        ];
-
-        if (responses.some((response) => !response.ok)) {
-          throw new Error("사이트 데이터 일부를 불러오지 못했습니다.");
-        }
-
-        const [
-          schedule,
-          scheduleIndex,
-          events,
-          talents,
-          solos,
-          youtubeLives,
-          hololiveDreams,
-        ] = await Promise.all([
-            scheduleResponse.json() as Promise<SchedulePayload>,
-            scheduleIndexResponse.json() as Promise<ScheduleIndexPayload>,
-            eventsResponse.json() as Promise<EventsPayload>,
-            talentsResponse.json() as Promise<TalentsPayload>,
-            solosResponse.json() as Promise<SoloLivesPayload>,
-            youtubeLivesResponse.json() as Promise<YouTubeLivesPayload>,
-            hololiveDreamsResponse.json() as Promise<HololiveDreamsPayload>,
-          ]);
-
-        if (disposed) return;
-        setData({
-          schedule,
-          scheduleIndex,
-          events,
-          talents,
-          solos,
-          youtubeLives,
-          hololiveDreams,
-        });
-        const refreshMinutes = Math.min(
-          60,
-          Math.max(1, Number(schedule.sourceRefreshMinutes) || 15),
+        let failed = false;
+        let refreshMinutes = 15;
+        await loadSiteResources(
+          DATA_URLS,
+          controller.signal,
+          (key, value) => {
+            if (disposed) return;
+            // Commit independently: a broken auxiliary feed never hides healthy data.
+            setData((previous) => ({ ...previous, [key]: value }));
+            setDataErrors((previous) => ({ ...previous, [key]: null }));
+            if (key === "schedule") {
+              refreshMinutes = Math.min(
+                60,
+                Math.max(1, Number((value as SchedulePayload).sourceRefreshMinutes) || 15),
+              );
+            }
+          },
+          (key, message) => {
+            failed = true;
+            if (!disposed) {
+              setDataErrors((previous) => ({ ...previous, [key]: message }));
+            }
+            // Keep the last successful payload, including its original timestamp.
+          },
         );
-        scheduleRefresh(refreshMinutes * 60_000);
-      } catch (loadError) {
-        if (!controller?.signal.aborted && !disposed) {
-          setError(
-            loadError instanceof Error
-              ? loadError.message
-              : "사이트 데이터를 불러오지 못했습니다.",
-          );
-          scheduleRefresh(60_000);
+        if (!disposed && !controller.signal.aborted) {
+          scheduleRefresh((failed ? 1 : refreshMinutes) * 60_000);
         }
       } finally {
         loading = false;
@@ -1528,9 +1445,9 @@ export default function App() {
     youtubeCategory,
   ]);
 
-  const talents = data?.talents.talents ?? [];
-  const soloLives = data?.solos.lives ?? [];
-  const youtubeLives = data?.youtubeLives.lives ?? [];
+  const talents = data.talents?.talents ?? [];
+  const soloLives = data.solos?.lives ?? [];
+  const youtubeLives = data.youtubeLives?.lives ?? [];
   const musicTracks = musicData?.tracks ?? [];
   const normalizedQuery = normalizeSearch(query);
 
@@ -1592,16 +1509,26 @@ export default function App() {
 
   const currentSchedule = useMemo(
     () =>
-      (data?.schedule.entries ?? [])
+      (data.schedule?.entries ?? [])
         .filter(isHololiveScheduleEntry)
         .sort((a, b) =>
           String(a.startsAt ?? "").localeCompare(String(b.startsAt ?? "")),
         ),
-    [data?.schedule.entries],
+    [data.schedule?.entries],
   );
-  const isScheduleFresh = data
+  const isScheduleFresh = data.schedule
     ? scheduleDataIsFresh(data.schedule, now)
     : false;
+  const selectedDayInCurrentSchedule = currentSchedule.some(
+    (entry) => entry.date === selectedDate,
+  );
+  const selectedMonth = selectedDate.slice(0, 7);
+  const scheduleLoading = (!data.schedule && !dataErrors.schedule) ||
+    (!selectedDayInCurrentSchedule && (
+      (!data.scheduleIndex && !dataErrors.scheduleIndex) ||
+      (data.scheduleIndex?.months.some((item) => item.month === selectedMonth) &&
+        !archiveMonths.has(selectedMonth) && !activeArchiveError)
+    ));
 
   const hololiveSchedule = useMemo(() => {
     const entriesByVideoId = new Map<string, ScheduleEntry>();
@@ -1634,7 +1561,7 @@ export default function App() {
   };
 
   const dateOptions = useMemo(() => {
-    if (data?.scheduleIndex.dates.length) {
+    if (data.scheduleIndex?.dates.length) {
       return data.scheduleIndex.dates.map(({ date, count }) => {
         const parsed = new Date(`${date}T12:00:00+09:00`);
         return { value: date, label: DAY_FORMATTER.format(parsed), count };
@@ -1654,24 +1581,19 @@ export default function App() {
       const parsed = new Date(`${value}T12:00:00+09:00`);
       return { value, label: DAY_FORMATTER.format(parsed), count };
       });
-  }, [currentSchedule, data?.scheduleIndex.dates]);
+  }, [currentSchedule, data.scheduleIndex?.dates]);
 
   useEffect(() => {
-    if (
-      dateOptions.length > 0 &&
-      !dateOptions.some((option) => option.value === selectedDate)
-    ) {
-      const today = dateKey(new Date());
-      const firstCurrentOrFuture = dateOptions.find(
-        (option) => option.value >= today,
-      );
-      setSelectedDate(
-        dateOptions.find((option) => option.value === today)?.value ??
-          firstCurrentOrFuture?.value ??
-          dateOptions.at(-1)!.value,
-      );
+    // Do not discard a deep-linked archive date while its index is still loading.
+    if (!data.scheduleIndex) return;
+    const fallback = fallbackScheduleDate(
+      dateOptions.map((option) => option.value), selectedDate, dateKey(now),
+    );
+    if (fallback) {
+      setSelectedDate(fallback.date);
+      setHideEnded(fallback.hideEnded);
     }
-  }, [dateOptions, selectedDate]);
+  }, [dateOptions, selectedDate, data.scheduleIndex, now]);
 
   const visibleDateOptions = useMemo(() => {
     if (dateOptions.length <= 15) {
@@ -1692,12 +1614,12 @@ export default function App() {
   useEffect(() => {
     const month = selectedDate.slice(0, 7);
     const hasArchivedMonth = archiveMonths.has(month);
-    const monthExists = data?.scheduleIndex.months.some(
+    const monthExists = data.scheduleIndex?.months.some(
       (item) => item.month === month,
     );
 
     if (
-      !data ||
+      view !== "schedule" ||
       !monthExists ||
       hasArchivedMonth
     ) {
@@ -1705,8 +1627,14 @@ export default function App() {
     }
 
     const controller = new AbortController();
+    const archiveTimeout = window.setTimeout(() => {
+      controller.abort();
+      setArchiveError({
+        month,
+        message: "방송 기록 요청 시간이 초과되었습니다. 다시 시도해 주세요.",
+      });
+    }, 15_000);
     setArchiveError(null);
-    setArchiveLoadingMonth(month);
 
     void fetch(
       `${BASE_URL}data/schedule-archive/${encodeURIComponent(month)}.json`,
@@ -1722,9 +1650,10 @@ export default function App() {
         return response.json() as Promise<SchedulePayload>;
       })
       .then((payload) => {
-        if (!Array.isArray(payload.entries)) {
+        if (!validateSiteResourcePayload("schedule", payload)) {
           throw new Error("방송 기록 파일의 형식이 올바르지 않습니다.");
         }
+        if (controller.signal.aborted) return;
         setArchiveMonths((previous) => {
           const next = new Map(previous);
           next.set(month, payload.entries);
@@ -1733,27 +1662,28 @@ export default function App() {
       })
       .catch((loadError: unknown) => {
         if (!controller.signal.aborted) {
-          setArchiveError(
-            loadError instanceof Error
+          setArchiveError({
+            month,
+            message: loadError instanceof Error
               ? loadError.message
               : "방송 기록을 불러오지 못했습니다.",
-          );
+          });
         }
       })
       .finally(() => {
-        if (!controller.signal.aborted) {
-          setArchiveLoadingMonth((loadingMonth) =>
-            loadingMonth === month ? null : loadingMonth,
-          );
-        }
+        window.clearTimeout(archiveTimeout);
       });
 
-    return () => controller.abort();
+    return () => {
+      window.clearTimeout(archiveTimeout);
+      controller.abort();
+    };
   }, [
     archiveMonths,
-    data,
+    data.scheduleIndex,
     dataReloadRequest,
     selectedDate,
+    view,
   ]);
 
   useEffect(() => {
@@ -1819,7 +1749,7 @@ export default function App() {
         }
 
         return includesQuery(
-          [entry.name, entry.title, entry.branch],
+          broadcastSearchValues(entry, talentForBroadcast(entry)),
           normalizedQuery,
         );
       }),
@@ -1830,6 +1760,7 @@ export default function App() {
       normalizedQuery,
       now,
       selectedDate,
+      talents,
     ],
   );
 
@@ -1948,7 +1879,7 @@ export default function App() {
     const items: ConcertItem[] = [];
     const keyToIndex = new Map<string, number>();
 
-    (data?.events.events ?? [])
+    (data.events?.events ?? [])
       .filter((event) => event.categories.includes("concert"))
       .forEach((event) => {
         const keys = concertIdentityKeys(
@@ -2008,7 +1939,7 @@ export default function App() {
     });
 
     return items;
-  }, [data?.events.events, soloLives]);
+  }, [data.events?.events, soloLives]);
 
   const upcomingConcerts = useMemo(
     () =>
@@ -2085,13 +2016,9 @@ export default function App() {
 
   const localEvents = useMemo(
     () =>
-      (data?.events.events ?? [])
+      (data.events?.events ?? [])
         .filter(
-          (event) =>
-            (event.region === "JP" || event.region === "KR") &&
-            (event.categories.includes("collaboration") ||
-              event.categories.includes("exhibition") ||
-              event.categories.includes("festival")),
+          (event) => isDiscoverableLocalEvent(event),
         )
         .filter((event) => {
           const status = eventStatus(event, now);
@@ -2101,9 +2028,7 @@ export default function App() {
         })
         .filter(
           (event) =>
-            region === "ALL" ||
-            region === "ENDED" ||
-            event.region === region,
+            eventMatchesRegionFilter(event, region),
         )
         .filter((event) =>
           includesQuery(
@@ -2112,6 +2037,8 @@ export default function App() {
               event.titleKo,
               event.city,
               event.venue,
+              eventRegionLabel(event.region),
+              ...(event.supportedRegions ?? []).map(eventRegionLabel),
               ...event.participants,
             ],
             normalizedQuery,
@@ -2133,7 +2060,7 @@ export default function App() {
               new Date(right.startsAt).getTime()
           );
         }),
-    [data?.events.events, normalizedQuery, now, region],
+    [data.events?.events, normalizedQuery, now, region],
   );
 
   const featuredSolo = upcomingSoloLives[0];
@@ -2226,7 +2153,7 @@ export default function App() {
   }
 
   const dreamPickupHighlight = useMemo(() => {
-    const entries = (data?.hololiveDreams.pickups ?? [])
+    const entries = (data.hololiveDreams?.pickups ?? [])
       .map((pickup) => {
         const startsAt = Date.parse(
           pickup.startsAt ?? `${pickup.startsOn}T00:00:00+09:00`,
@@ -2254,10 +2181,10 @@ export default function App() {
       banner: current ?? upcoming[0] ?? null,
       activeCount: active.length,
     };
-  }, [data?.hololiveDreams.pickups, now]);
+  }, [data.hololiveDreams?.pickups, now]);
 
   const dreamEventHighlight = useMemo(() => {
-    const events = [...(data?.hololiveDreams.events ?? [])].sort(
+    const events = [...(data.hololiveDreams?.events ?? [])].sort(
       (left, right) => Date.parse(left.startsAt) - Date.parse(right.startsAt),
     );
     const entries = events
@@ -2287,11 +2214,11 @@ export default function App() {
       banner,
       isActive: Boolean(banner && banner.startsAt <= nowTime),
     };
-  }, [data?.hololiveDreams.events, now]);
+  }, [data.hololiveDreams?.events, now]);
 
   const dreamBroadcastHighlight = useMemo(() => {
     const nowTime = now.getTime();
-    const entries = (data?.hololiveDreams.officialBroadcasts ?? [])
+    const entries = (data.hololiveDreams?.officialBroadcasts ?? [])
       .map((broadcast) => {
         const startsAt = Date.parse(broadcast.startsAt);
         const visibilityEndsAt = broadcast.endsAt
@@ -2314,7 +2241,7 @@ export default function App() {
       banner,
       isLive: Boolean(banner && banner.startsAt <= nowTime),
     };
-  }, [data?.hololiveDreams.officialBroadcasts, now]);
+  }, [data.hololiveDreams?.officialBroadcasts, now]);
 
   const dreamEventNoticeId = dreamEventHighlight.banner
     ? `dream-event:${dreamEventHighlight.banner.event.id}:${dreamEventHighlight.banner.event.startsAt}`
@@ -2600,7 +2527,7 @@ export default function App() {
                 <div className="dashboard-stats">
                   <div>
                     <UsersRound size={18} aria-hidden="true" />
-                    <strong>{data?.hololiveDreams.characters.length ?? 54}</strong>
+                    <strong>{data.hololiveDreams?.characters.length ?? "—"}</strong>
                     <span>참여 멤버</span>
                   </div>
                   <div>
@@ -2611,8 +2538,8 @@ export default function App() {
                   <div>
                     <CalendarDays size={18} aria-hidden="true" />
                     <strong>
-                      {(data?.hololiveDreams.events?.length ?? 0) +
-                        (data?.hololiveDreams.pickups?.length ?? 0)}
+                      {(data.hololiveDreams?.events?.length ?? 0) +
+                        (data.hololiveDreams?.pickups?.length ?? 0)}
                     </strong>
                     <span>이벤트 · 픽업</span>
                   </div>
@@ -2761,7 +2688,7 @@ export default function App() {
                     <CalendarDays size={18} aria-hidden="true" />
                     <strong>
                       {(
-                        data?.scheduleIndex.totalEntries ??
+                        data.scheduleIndex?.totalEntries ??
                         currentSchedule.length
                       ).toLocaleString("ko-KR")}
                     </strong>
@@ -2801,7 +2728,7 @@ export default function App() {
         </section>
 
         {error ||
-        archiveError ||
+        activeArchiveError ||
         (view === "music" && musicError) ||
         activeCollectionError ? (
           <div className="data-alert" role="alert">
@@ -2810,7 +2737,7 @@ export default function App() {
               <strong>사이트 데이터를 불러오지 못했습니다.</strong>
               <p>
                 {error ??
-                  archiveError ??
+                  activeArchiveError ??
                   (view === "music" ? musicError : null) ??
                   activeCollectionError}
               </p>
@@ -2834,7 +2761,7 @@ export default function App() {
               title="방송 일정"
               description="Holodule의 hololive·English·Indonesia·DEV_IS 탭만 모아 15분 단위로 갱신합니다."
               action={
-                data ? (
+                data.schedule ? (
                   <span className="update-chip">
                     {isScheduleFresh ? (
                       <span className="status-light" />
@@ -2859,7 +2786,7 @@ export default function App() {
                   </span>
                   <strong>{isScheduleFresh ? liveNow.length : "—"}</strong>
                 </div>
-                {!data ? (
+                {!data.schedule ? (
                   <p>{error ? "방송 일정을 표시할 수 없습니다." : "일정을 불러오는 중입니다."}</p>
                 ) : !isScheduleFresh ? (
                   <p>일정 갱신이 지연되어 현재 방송 여부를 확인할 수 없습니다.</p>
@@ -2884,7 +2811,7 @@ export default function App() {
 
               <div className="now-block now-block-next">
                 <span className="now-block-label">NEXT UP</span>
-                {!data ? (
+                {!data.schedule ? (
                   <p>{error ? "방송 일정을 표시할 수 없습니다." : "일정을 불러오는 중입니다."}</p>
                 ) : !isScheduleFresh ? (
                   <p>일정 갱신 후 다음 방송을 표시합니다.</p>
@@ -2967,7 +2894,7 @@ export default function App() {
               </label>
             </div>
 
-            {!data || archiveLoadingMonth === selectedDate.slice(0, 7) ? (
+            {scheduleLoading ? (
               <LoadingGrid />
             ) : visibleBroadcasts.length > 0 ? (
               <div className="card-grid broadcast-grid">
@@ -3020,7 +2947,7 @@ export default function App() {
               }
             />
 
-            {!data ? (
+            {!data.events && !data.solos && !dataErrors.events && !dataErrors.solos ? (
               <LoadingGrid />
             ) : visibleConcerts.length > 0 ? (
               <div className="event-grid concert-grid">
@@ -3180,7 +3107,7 @@ export default function App() {
               </div>
             ) : null}
 
-            {!data ? (
+            {!data.youtubeLives && !dataErrors.youtubeLives ? (
               <LoadingGrid />
             ) : visibleYoutubeLives.length > 0 ? (
               <div className="youtube-live-grid">
@@ -3214,7 +3141,7 @@ export default function App() {
               <Video size={18} aria-hidden="true" />
               <p>
                 공식 공개 YouTube 채널 기준
-                {data?.youtubeLives.checkedAt
+                {data.youtubeLives?.checkedAt
                   ? ` · ${UPDATE_FORMATTER.format(
                       new Date(data.youtubeLives.checkedAt),
                     )} 확인`
@@ -3235,15 +3162,15 @@ export default function App() {
         {view === "local" ? (
           <section className="page-section">
             <SectionHeading
-              eyebrow="OFFLINE & COLLAB"
-              title="일본 · 한국 현지 일정"
-              description="진행·예정 행사는 지역별로 보고, 기간이 지난 행사는 종료 기록에서 다시 볼 수 있습니다."
+              eyebrow="EVENTS & COLLAB"
+              title="지역별 행사 일정"
+              description="진행·예정 행사는 국가·글로벌 범위로 보고, 기간이 지난 행사는 종료 기록에서 다시 볼 수 있습니다."
               action={
                 <div
                   className="region-tabs"
-                  aria-label="현지 일정 지역과 상태 선택"
+                  aria-label="행사 지역과 상태 선택"
                 >
-                  {(["ALL", "JP", "KR", "ENDED"] as const).map((item) => (
+                  {LOCAL_EVENT_FILTERS.map((item) => (
                     <button
                       type="button"
                       key={item}
@@ -3252,20 +3179,14 @@ export default function App() {
                       }`}
                       onClick={() => setRegion(item)}
                     >
-                      {item === "ALL"
-                        ? "전체"
-                        : item === "JP"
-                          ? "일본"
-                          : item === "KR"
-                            ? "한국"
-                            : "종료"}
+                      {localEventFilterLabel(item)}
                     </button>
                   ))}
                 </div>
               }
             />
 
-            {!data ? (
+            {!data.events && !dataErrors.events ? (
               <LoadingGrid />
             ) : localEvents.length > 0 ? (
               <div className="event-grid">
@@ -3283,7 +3204,7 @@ export default function App() {
                 title={
                   region === "ENDED"
                     ? "조건에 맞는 종료 행사가 없습니다"
-                    : "조건에 맞는 현지 행사가 없습니다"
+                    : "조건에 맞는 행사가 없습니다"
                 }
                 description={
                   region === "ENDED"
@@ -3305,7 +3226,7 @@ export default function App() {
         ) : null}
 
         {view === "music" ? (
-          data && musicData ? (
+          musicData ? (
             <MusicPage
               payload={musicData}
               talents={talents}
@@ -3315,7 +3236,7 @@ export default function App() {
             />
           ) : (
             <section className="page-section" id="hololive-music">
-              <LoadingGrid />
+              {musicError ? <EmptyState title="음악 데이터를 표시할 수 없습니다" description="위의 다시 시도 버튼으로 불러올 수 있습니다." /> : <LoadingGrid />}
             </section>
           )
         ) : null}
@@ -3336,13 +3257,13 @@ export default function App() {
                 view === "cards" ? "hololive-card-game" : "hololive-wafer"
               }
             >
-              <LoadingGrid />
+              {activeCollectionError ? <EmptyState title="카드 데이터를 표시할 수 없습니다" description="위의 다시 시도 버튼으로 불러올 수 있습니다." /> : <LoadingGrid />}
             </section>
           )
         ) : null}
 
         {view === "dream" ? (
-          data ? (
+          data.hololiveDreams ? (
             <DreamPage
               payload={data.hololiveDreams}
               talents={talents}
@@ -3353,7 +3274,7 @@ export default function App() {
             />
           ) : (
             <section className="page-section" id="hololive-dream">
-              <LoadingGrid />
+              {dataErrors.hololiveDreams ? <EmptyState title="홀로도리 데이터를 표시할 수 없습니다" description="위의 다시 시도 버튼으로 불러올 수 있습니다." /> : <LoadingGrid />}
             </section>
           )
         ) : null}

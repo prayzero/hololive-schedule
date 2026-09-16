@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-16T12:42:00+09:00",
+  "checkedAt": "2026-09-16T13:38:40+09:00",
   "sourceNote": "hololive/COVER 및 공식 협업사 공지에서 날짜·장소를 확인했습니다.",
   "events": [
     {
@@ -1077,6 +1077,7 @@
       "titleKo": "네리사 레이븐크로프트 × 포토이즘",
       "categories": ["collaboration"],
       "region": "GLOBAL",
+      "supportedRegions": ["JP", "KR"],
       "city": "글로벌",
       "venue": "PHOTOISM 일부 매장",
       "startsAt": "2026-08-31T00:00:00+09:00",
@@ -1089,7 +1090,7 @@
       "description": "네리사 레이븐크로프트의 생일을 기념해 전 세계 일부 PHOTOISM 매장에서 한정 포토 프레임을 운영합니다.",
       "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/08/260828_main.webp",
       "sourceUrl": "https://hololive.hololivepro.com/en/news/20260828-01-233/",
-      "note": "공식 공지 기준 한국 표준시 행사 기간"
+      "note": "공식 공지 기준 한국 표준시 행사 기간 · 일부 매장 한정, 공식 매장 안내 확인"
     },
     {
       "id": "hololive-justice-city-groove-2026",
@@ -1212,6 +1213,87 @@
       "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/09/260912_sub2_07.webp",
       "sourceUrl": "https://hololive.hololivepro.com/news/20260912-02-83/",
       "note": "공연 시간·티켓 정보는 공식 추후 공개"
+    },
+    {
+      "id": "hololive-anime-nyc-2026",
+      "title": "hololive production at Anime NYC 2026",
+      "titleKo": "Anime NYC 2026 홀로라이브 프로덕션 부스",
+      "categories": ["festival", "exhibition"],
+      "region": "US",
+      "city": "뉴욕",
+      "venue": "Javits Convention Center · 부스 #1710",
+      "startsAt": "2026-08-20T00:00:00-04:00",
+      "endsAt": "2026-08-23T23:59:59-04:00",
+      "dateLabel": "2026. 08. 20–23",
+      "timeLabel": "운영 시간은 Anime NYC 공식 안내 확인",
+      "format": "컨벤션 부스 + 라이브 교류 + 카라오케 + 그리팅",
+      "participants": ["Mori Calliope", "IRyS", "Hakos Baelz", "Ninomae Ina’nis", "Cecilia Immergreen", "Fuwawa Abyssgard", "Mococo Abyssgard", "Isaki Riona", "Koganei Niko", "Airani Iofifteen", "Kureiji Ollie", "Ouro Kronii", "Raora Panthera", "Shirakami Fubuki", "Nakiri Ayame", "Ookami Mio", "Kobo Kanaeru", "Koseki Bijou", "Nerissa Ravencroft", "Axel Syrios", "Octavio", "Machina X Flayon", "Banzoin Hakka"],
+      "participantIds": ["mori-calliope", "irys", "hakos-baelz", "ninomae-inanis", "cecilia-immergreen", "fuwawa-abyssgard", "mococo-abyssgard", "isaki-riona", "koganei-niko", "airani-iofifteen", "kureiji-ollie", "ouro-kronii", "raora-panthera", "shirakami-fubuki", "nakiri-ayame", "ookami-mio", "kobo-kanaeru", "koseki-bijou", "nerissa-ravencroft"],
+      "description": "Anime NYC 2026의 홀로라이브 프로덕션 부스에서 한정 라이브 교류, SUPER KARAOKE PARTY, 쁘띠 그리팅, 홀로카 체험과 hololive Dreams 전시를 진행했습니다.",
+      "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/06/260624_main.webp",
+      "sourceUrl": "https://hololive.hololivepro.com/en/news/20260624-01-216/",
+      "officialUrl": "https://animenyc.com/hololive",
+      "note": "공식 공지에 일별 부스 운영시간 미기재 · 행사 날짜 범위로 기록"
+    },
+    {
+      "id": "hololive-kenting-travel-diary-2026",
+      "title": "hololive production “Midsummer｜Kenting Travel Diary”",
+      "titleKo": "홀로라이브 한여름·컨딩 여행일기 팝업 스토어",
+      "categories": ["collaboration", "exhibition"],
+      "region": "TW",
+      "city": "타이중",
+      "venue": "Top City Taichung 11F Event Plaza",
+      "startsAt": "2026-08-11T00:00:00+08:00",
+      "endsAt": "2026-09-09T23:59:59+08:00",
+      "dateLabel": "2026. 08. 11–09. 09",
+      "timeLabel": "Top City Taichung 운영시간에 따름",
+      "format": "대만 현지 팝업 스토어 + 체험 콘텐츠",
+      "participants": ["Shirakami Fubuki", "Houshou Marine", "Tsunomaki Watame", "Kobo Kanaeru", "Hakos Baelz", "Juufuutei Raden"],
+      "participantIds": ["shirakami-fubuki", "houshou-marine", "tsunomaki-watame", "kobo-kanaeru", "hakos-baelz", "juufuutei-raden"],
+      "description": "컨딩의 여름 바다 여행을 테마로 신규 상품, 추첨기, 수집 카드 기기와 포토 부스를 선보인 타이중 팝업 스토어입니다.",
+      "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/08/260806_main.webp",
+      "sourceUrl": "https://hololive.hololivepro.com/en/news/20260806-01-226/",
+      "note": "2026년 9월 9일 종료"
+    },
+    {
+      "id": "holonatsu-paradise-shanghai-2026",
+      "title": "SUNRISEPOP × hololive production “holonatsu Paradise”",
+      "titleKo": "SUNRISEPOP × 홀로라이브 프로덕션 ‘홀로나츠 파라다이스’",
+      "categories": ["collaboration", "exhibition"],
+      "region": "CN",
+      "city": "상하이",
+      "venue": "Bailian ZX Creative Center 1F Atrium",
+      "startsAt": "2026-08-30T00:00:00+08:00",
+      "endsAt": "2026-09-09T23:59:59+08:00",
+      "dateLabel": "2026. 08. 30–09. 09",
+      "timeLabel": "운영 시간은 공식 안내 확인",
+      "format": "중국 현지 여름 테마 팝업 이벤트",
+      "participants": ["Oozora Subaru", "Usada Pekora", "Shiranui Flare", "Shirogane Noel", "Houshou Marine", "Kobo Kanaeru", "Mori Calliope"],
+      "participantIds": ["oozora-subaru", "usada-pekora", "shiranui-flare", "shirogane-noel", "houshou-marine", "kobo-kanaeru", "mori-calliope"],
+      "description": "별하늘, 불꽃놀이와 여름 축제를 테마로 한 키 비주얼과 한정 상품, 상하이 한정 기념 상품을 선보인 팝업 이벤트입니다.",
+      "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/08/260810_main.webp",
+      "sourceUrl": "https://hololive.hololivepro.com/en/news/20260810-01-228/",
+      "note": "공식 공지에 운영시간 미기재 · 2026년 9월 9일 종료"
+    },
+    {
+      "id": "hololive-dj-night-taipei-2026",
+      "title": "hololive DJ Night ft. OTAKUNI in Taipei",
+      "titleKo": "홀로라이브 DJ 나이트 ft. OTAKUNI 인 타이베이",
+      "categories": ["concert", "collaboration"],
+      "region": "TW",
+      "city": "타이베이",
+      "venue": "SUB Live",
+      "startsAt": "2026-09-12T19:30:00+08:00",
+      "endsAt": "2026-09-13T23:59:59+08:00",
+      "dateLabel": "2026. 09. 12–13",
+      "timeLabel": "DAY1 입장 18:30·공연 19:30 · DAY2 입장 17:30·공연 18:30 (UTC+8)",
+      "format": "2일간 현장 DJ 이벤트",
+      "participants": ["Rindo Chihaya", "Kikirara Vivi", "Todoroki Hajime"],
+      "participantIds": ["rindo-chihaya", "kikirara-vivi", "todoroki-hajime"],
+      "description": "멤버들이 직접 선곡과 구성을 감수한 세트리스트를 OTAKUNI가 현장에서 연주한 타이베이 공식 DJ 이벤트입니다.",
+      "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/07/260706_main.webp",
+      "sourceUrl": "https://hololive.hololivepro.com/en/news/20260706-01-220/",
+      "note": "공식 종료 시각 미공개 · endsAt은 행사 마지막 날 범위 종료값"
     }
   ]
 }

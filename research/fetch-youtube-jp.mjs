@@ -54,7 +54,7 @@ const CHANNEL_OVERRIDES = {
 
 const LIVE_MARKER = String.raw`(?:(?<!HOLO)LIVE|(?<!ホロ)ライブ|CONCERT)`;
 const STRONG_EVENT_PATTERN = new RegExp(
-  String.raw`(?:3D\s*(?:MUSIC\s*)?${LIVE_MARKER}|${LIVE_MARKER}\s*3D|3D(?:生誕祭?|周年(?:記念)?)|(?:生誕祭?|周年(?:記念)?)3D|(?:誕生日|生誕祭?|BIRTHDAY).{0,45}${LIVE_MARKER}|${LIVE_MARKER}.{0,45}(?:誕生日|生誕祭?|BIRTHDAY)|(?:周年|ANNIVERSARY).{0,45}${LIVE_MARKER}|${LIVE_MARKER}.{0,45}(?:周年|ANNIVERSARY)|SPECIAL\s*(?:3D\s*)?${LIVE_MARKER}|(?:全編無料|無料配信|無料ライブ|FREE\s*(?:ONLINE\s*)?).{0,50}${LIVE_MARKER}|${LIVE_MARKER}.{0,50}(?:全編無料|無料配信|FREE))`,
+  String.raw`(?:3D\s*(?:MUSIC\s*)?${LIVE_MARKER}|3D.{1,45}${LIVE_MARKER}|${LIVE_MARKER}\s*3D|3D(?:生誕祭?|周年(?:記念)?)|(?:生誕祭?|周年(?:記念)?)3D|(?:誕生日|生誕祭?|BIRTHDAY).{0,45}${LIVE_MARKER}|${LIVE_MARKER}.{0,45}(?:誕生日|生誕祭?|BIRTHDAY)|(?:周年|ANNIVERSARY).{0,45}${LIVE_MARKER}|${LIVE_MARKER}.{0,45}(?:周年|ANNIVERSARY)|SPECIAL\s*(?:3D\s*)?${LIVE_MARKER}|(?:全編無料|無料配信|無料ライブ|FREE\s*(?:ONLINE\s*)?).{0,50}${LIVE_MARKER}|${LIVE_MARKER}.{0,50}(?:全編無料|無料配信|FREE))`,
   "iu",
 );
 
@@ -116,6 +116,14 @@ function findInitialData(html) {
     extractBalancedJson(html, "window[\"ytInitialData\"] =") ??
     extractBalancedJson(html, "ytInitialData =")
   );
+}
+
+export function requireInitialData(html, sourceLabel = "YouTube response") {
+  const initialData = findInitialData(html);
+  if (!initialData) {
+    throw new Error(`${sourceLabel} did not contain valid ytInitialData.`);
+  }
+  return initialData;
 }
 
 function findPlayerResponse(html) {
@@ -195,54 +203,28 @@ function collectVideoRenderers(node) {
   return results;
 }
 
-async function fetchText(url, retries = 3) {
-  let lastError;
-  for (let attempt = 0; attempt < retries; attempt += 1) {
-    try {
-      const response = await fetchTextWithPolicy(
-        url,
-        {
-          headers: {
-            "Accept-Language": "ja-JP,ja;q=0.9,en;q=0.7",
-            "User-Agent":
-              "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/138 Safari/537.36",
-          },
-        },
-        YOUTUBE_REQUEST_POLICY,
-      );
-      return response.text;
-    } catch (error) {
-      lastError = error;
-      if (attempt + 1 < retries) {
-        await new Promise((resolve) =>
-          setTimeout(resolve, 500 * (attempt + 1)),
-        );
-      }
-    }
-  }
-  throw lastError;
+async function fetchText(url) {
+  const response = await fetchTextWithPolicy(
+    url,
+    {
+      headers: {
+        "Accept-Language": "ja-JP,ja;q=0.9,en;q=0.7",
+        "User-Agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/138 Safari/537.36",
+      },
+    },
+    YOUTUBE_REQUEST_POLICY,
+  );
+  return response.text;
 }
 
-async function fetchJson(url, init, retries = 4) {
-  let lastError;
-  for (let attempt = 0; attempt < retries; attempt += 1) {
-    try {
-      const response = await fetchJsonWithPolicy(
-        url,
-        init,
-        YOUTUBE_REQUEST_POLICY,
-      );
-      return response.json;
-    } catch (error) {
-      lastError = error;
-      if (attempt + 1 < retries) {
-        await new Promise((resolve) =>
-          setTimeout(resolve, 800 * 2 ** attempt + Math.random() * 400),
-        );
-      }
-    }
-  }
-  throw lastError;
+async function fetchJson(url, init) {
+  const response = await fetchJsonWithPolicy(
+    url,
+    init,
+    YOUTUBE_REQUEST_POLICY,
+  );
+  return response.json;
 }
 
 async function runPool(items, concurrency, worker) {
@@ -266,6 +248,16 @@ function categoryFor(title) {
     if (pattern.test(title)) return category;
   }
   return "special";
+}
+
+export function matchesStrongEventTitle(title) {
+  return (
+    typeof title === "string" &&
+    title.length > 0 &&
+    title.length <= MAX_VIDEO_TITLE_LENGTH &&
+    STRONG_EVENT_PATTERN.test(title) &&
+    !EXCLUDE_PATTERN.test(title)
+  );
 }
 
 function requiredTalentId(value) {
@@ -341,8 +333,10 @@ async function collectSearchCandidates(talent) {
     );
     searchUrl.searchParams.set("query", term);
     const html = await fetchText(searchUrl.toString());
-    const initialData = findInitialData(html);
-    if (!initialData) continue;
+    const initialData = requireInitialData(
+      html,
+      `${talent.id} search for ${JSON.stringify(term)}`,
+    );
 
     const renderers = collectVideoRenderers(initialData);
     if (process.env.DEBUG_VIDEO) {
@@ -366,12 +360,7 @@ async function collectSearchCandidates(talent) {
     for (const renderer of renderers) {
       if (!isYouTubeVideoId(renderer.videoId)) continue;
       const title = textOf(renderer.title);
-      if (
-        !title ||
-        title.length > MAX_VIDEO_TITLE_LENGTH ||
-        !STRONG_EVENT_PATTERN.test(title)
-      ) continue;
-      if (EXCLUDE_PATTERN.test(title)) continue;
+      if (!matchesStrongEventTitle(title)) continue;
       if (renderer.upcomingEventData) continue;
       const ownerChannelId = ownerChannelIdOf(renderer);
       if (ownerChannelId && ownerChannelId !== talent.channelId) continue;
@@ -414,92 +403,94 @@ async function collectSearchCandidates(talent) {
   return [...candidates.values()];
 }
 
-async function hydrateCandidate(talent, candidate) {
-  try {
-    const videoId = requiredYouTubeVideoId(candidate.videoId);
-    const sourceUrlObject = new URL("/watch", YOUTUBE_ORIGIN);
-    sourceUrlObject.searchParams.set("v", videoId);
-    const sourceUrl = sourceUrlObject.toString();
-    if (process.env.NO_HYDRATE) {
-      return null;
-    }
-    const playerResponse = await fetchJson(
-      "https://www.youtube.com/youtubei/v1/player?prettyPrint=false",
-      {
-        method: "POST",
-        headers: {
-          "Accept-Language": "ja-JP,ja;q=0.9,en;q=0.7",
-          "Content-Type": "application/json",
-          "User-Agent":
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/138 Safari/537.36",
-        },
-        body: JSON.stringify({
-          context: {
-            client: {
-              clientName: "WEB",
-              clientVersion: "2.20260723.01.00",
-              hl: "ja",
-              gl: "JP",
-            },
-          },
-          videoId,
-        }),
-      },
-    );
-
-    const details = playerResponse.videoDetails ?? {};
-    const title = details.title ?? candidate.searchTitle;
-    const durationSeconds = parseDurationSeconds(playerResponse);
-    const publishedAt = getPublishedAt(playerResponse);
-
-    if (process.env.DEBUG_JP === talent.id) {
-      process.stderr.write(
-        `[debug hydrate] ${candidate.videoId}: channel=${details.channelId}; duration=${durationSeconds}; live=${details.isLiveContent}; unplugged=${details.isUnpluggedCorpus}; title=${title}\n`,
-      );
-    }
-    if (details.channelId !== talent.channelId) return null;
-    if (details.isPrivate) return null;
-    if (
-      typeof title !== "string" ||
-      title.length === 0 ||
-      title.length > MAX_VIDEO_TITLE_LENGTH ||
-      !STRONG_EVENT_PATTERN.test(title) ||
-      EXCLUDE_PATTERN.test(title)
-    ) {
-      return null;
-    }
-    if (!Number.isFinite(durationSeconds) || durationSeconds < 20 * 60) {
-      return null;
-    }
-    if (
-      typeof publishedAt !== "string" ||
-      !Number.isFinite(Date.parse(publishedAt)) ||
-      Date.parse(publishedAt) > Date.now() + 24 * 60 * 60 * 1_000
-    ) return null;
-
-    const thumbnailUrl = `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
-
-    return {
-      memberId: talent.id,
-      videoId,
-      title,
-      publishedAt,
-      category: categoryFor(title),
-      sourceUrl,
-      thumbnailUrl,
-      durationSeconds,
-      isLiveArchive: isLiveArchive(playerResponse),
-    };
-  } catch (error) {
-    if (process.env.DEBUG_JP === talent.id) {
-      process.stderr.write(
-        `[debug hydrate] ${candidate.videoId}: ${error?.stack ?? error}\n`,
-      );
-    }
+export async function hydrateCandidate(
+  talent,
+  candidate,
+  { fetchPlayer = fetchJson } = {},
+) {
+  const videoId = requiredYouTubeVideoId(candidate.videoId);
+  const sourceUrlObject = new URL("/watch", YOUTUBE_ORIGIN);
+  sourceUrlObject.searchParams.set("v", videoId);
+  const sourceUrl = sourceUrlObject.toString();
+  if (process.env.NO_HYDRATE) {
     return null;
   }
+  const playerResponse = await fetchPlayer(
+    "https://www.youtube.com/youtubei/v1/player?prettyPrint=false",
+    {
+      method: "POST",
+      headers: {
+        "Accept-Language": "ja-JP,ja;q=0.9,en;q=0.7",
+        "Content-Type": "application/json",
+        "User-Agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/138 Safari/537.36",
+      },
+      body: JSON.stringify({
+        context: {
+          client: {
+            clientName: "WEB",
+            clientVersion: "2.20260723.01.00",
+            hl: "ja",
+            gl: "JP",
+          },
+        },
+        videoId,
+      }),
+    },
+  );
+
+  if (
+    !playerResponse ||
+    typeof playerResponse !== "object" ||
+    !playerResponse.playabilityStatus ||
+    typeof playerResponse.playabilityStatus !== "object"
+  ) {
+    throw new Error(`YouTube player response is invalid for ${videoId}.`);
+  }
+
+  const details = playerResponse.videoDetails;
+  if (!details || typeof details !== "object") return null;
+  if (details.videoId && details.videoId !== videoId) {
+    throw new Error(`YouTube player returned the wrong video for ${videoId}.`);
+  }
+  const title = details.title ?? candidate.searchTitle;
+  const durationSeconds = parseDurationSeconds(playerResponse);
+  const publishedAt = getPublishedAt(playerResponse);
+
+  if (process.env.DEBUG_JP === talent.id) {
+    process.stderr.write(
+      `[debug hydrate] ${candidate.videoId}: channel=${details.channelId}; duration=${durationSeconds}; live=${details.isLiveContent}; unplugged=${details.isUnpluggedCorpus}; title=${title}\n`,
+    );
+  }
+  if (details.channelId !== talent.channelId) return null;
+  if (details.isPrivate) return null;
+  if (!matchesStrongEventTitle(title)) return null;
+  if (!Number.isFinite(durationSeconds) || durationSeconds < 20 * 60) {
+    return null;
+  }
+  if (!isLiveArchive(playerResponse)) return null;
+  if (
+    typeof publishedAt !== "string" ||
+    !Number.isFinite(Date.parse(publishedAt)) ||
+    Date.parse(publishedAt) > Date.now() + 24 * 60 * 60 * 1_000
+  ) return null;
+
+  const thumbnailUrl = `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
+
+  return {
+    memberId: talent.id,
+    videoId,
+    title,
+    publishedAt,
+    category: categoryFor(title),
+    sourceUrl,
+    thumbnailUrl,
+    durationSeconds,
+    isLiveArchive: true,
+  };
 }
 
+async function main() {
 const talentPayload = await readJsonFileStrict(TALENTS_PATH, {
   label: "talent catalog",
 });
@@ -519,6 +510,9 @@ const talents = talentPayload.talents
 const selectedTalents = process.env.DEBUG_JP
   ? talents.filter((talent) => talent.id === process.env.DEBUG_JP)
   : talents;
+if (selectedTalents.length === 0) {
+  throw new Error("No JP talents were selected for YouTube collection.");
+}
 if (selectedTalents.length > MAX_SELECTED_TALENTS) {
   throw new Error(
     `Selected talent count exceeds the ${MAX_SELECTED_TALENTS}-talent safety limit.`,
@@ -592,6 +586,11 @@ if (hydrationJobs.length > MAX_HYDRATION_JOBS) {
     `Hydration jobs exceed the ${MAX_HYDRATION_JOBS}-request safety limit.`,
   );
 }
+if (hydrationJobs.length === 0) {
+  throw new Error(
+    "Validated YouTube searches returned no qualifying hydration candidates.",
+  );
+}
 
 const hydrated = await runPool(hydrationJobs, 2, async ({ talent, candidate }) =>
   hydrateCandidate(talent, candidate),
@@ -608,6 +607,11 @@ const discoveredRecords = hydrated
     sourceUrl: record.sourceUrl,
     thumbnailUrl: record.thumbnailUrl,
   }));
+if (discoveredRecords.length === 0) {
+  throw new Error(
+    "YouTube player metadata validated no qualifying JP live archives.",
+  );
+}
 const recordsByKey = new Map();
 for (const record of [...preservedRecords, ...discoveredRecords]) {
   if (!jpMemberIds.has(record.memberId) || !record.videoId) continue;
@@ -640,7 +644,10 @@ const missingMembers = talents
   }));
 
 const payload = {
-  checkedAt: new Date().toISOString(),
+  checkedAt:
+    selectedTalents.length === talents.length
+      ? new Date().toISOString()
+      : previousPayload.checkedAt ?? new Date().toISOString(),
   scope:
     "Official hololive JP talents marked active or affiliate in talents.json. Public official-channel birthday, anniversary, 3D music live, free solo concert, and comparable special live archives only.",
   methodology:
@@ -672,3 +679,11 @@ await writeFileAtomically(
 process.stderr.write(
   `Wrote ${records.length} records for ${membersWithRecords.size}/${talents.length} members to ${OUTPUT_PATH}\n`,
 );
+}
+
+if (
+  process.argv[1] &&
+  path.resolve(process.argv[1]) === path.resolve(fileURLToPath(import.meta.url))
+) {
+  await main();
+}

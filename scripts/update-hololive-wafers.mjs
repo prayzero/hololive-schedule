@@ -611,10 +611,20 @@ const rarities = [
 const payload = {
   checkedAt,
   sourceNote:
-    "반다이 공식 제품 페이지에 공개된 일반 수집형 홀로라이브 웨하스 8종, 301장을 정리했습니다. 2026년 8월 31일 출시 예정 vol.6을 포함하며, 카드게임용 트윈 웨하스와 전체 카드 이미지가 공개되지 않은 vol.7은 제외했습니다.",
+    "반다이 공식 제품 페이지의 수집형 웨하스 8종·301장과 2026년 11월 발매 예정 vol.7의 공식 발표를 정리했습니다. vol.6은 2026년 8월 31일 발매됐으며, vol.7은 전체 카드 이미지 공개 전까지 출시 안내로 표시합니다.",
   sourceUrls: [
     officialProductIndexUrl,
     ...releases.map(({ sourceUrl }) => sourceUrl),
+    "https://www.bandai.co.jp/candy/products/2026/4570117930874000.html",
+  ],
+  upcomingReleases: [
+    {
+      id: "hololive-production-wafer-vol7-2026",
+      name: "웨하스 vol.7",
+      releaseMonth: "2026-11",
+      cardCount: 32,
+      sourceUrl: "https://www.bandai.co.jp/candy/products/2026/4570117930874000.html",
+    },
   ],
   releases,
   rarities,

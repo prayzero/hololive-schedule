@@ -620,6 +620,23 @@ export function CollectionCatalogPage({
         ) : null}
       </div>
 
+      {payload.upcomingReleases?.map((release) => {
+        const sourceUrl = safeCollectionOfficialUrl(kind, release.sourceUrl);
+        if (!sourceUrl) return null;
+        const [year, month] = release.releaseMonth.split("-");
+        return (
+          <aside className="collection-upcoming" key={release.id}>
+            <div>
+              <strong>{release.name} · {year}년 {Number(month)}월 발매 예정</strong>
+              <p>전 {release.cardCount}종 · 정확한 발매일과 전체 카드 이미지 공개 대기</p>
+            </div>
+            <a href={sourceUrl} target="_blank" rel="noreferrer">
+              공식 발표 <ExternalLink size={15} aria-hidden="true" />
+            </a>
+          </aside>
+        );
+      })}
+
       <div className="collection-catalog-progress">
         <div className="collection-catalog-progress__main">
           <div

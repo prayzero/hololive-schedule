@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-11T07:29:05.302Z",
+  "checkedAt": "2026-09-16T03:52:53.312Z",
   "collectorVersion": "curated-official-channel-1.0.0",
   "sourceNote": "공식 hololive 탤런트 YouTube 채널에서 공개된 생일·주년·3D 음악 라이브와 무료 콘서트 기록입니다. 일반 노래방·게임·잡담·후일담·미리보기·Shorts·단일 곡 영상은 제외했습니다.",
   "sourceUrl": "https://www.youtube.com/",
@@ -9,6 +9,36 @@
     "kikirara-vivi"
   ],
   "lives": [
+    {
+      "id": "_Rvx92mPFT0",
+      "videoId": "_Rvx92mPFT0",
+      "memberIds": [
+        "hakui-koyori"
+      ],
+      "channelId": "UC6eWCld0KwmyHFbAqK3V-Rw",
+      "title": "【完全生3D】 #博衣こより超重大告知 アリ‼ アコースティックライブin Autumn #holoAcousticLive 【AZKi/常闇トワ/こぼ・かなえる/虎金妃笑虎/博衣こより／ホロライブ】",
+      "category": "special",
+      "publishedLabel": null,
+      "publishedAt": "2026-09-12T05:11:06-07:00",
+      "durationSeconds": 4050,
+      "videoUrl": "https://www.youtube.com/watch?v=_Rvx92mPFT0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/_Rvx92mPFT0/hqdefault.jpg"
+    },
+    {
+      "id": "qp1bA1A5bTQ",
+      "videoId": "qp1bA1A5bTQ",
+      "memberIds": [
+        "houshou-marine"
+      ],
+      "channelId": "UCCzUftO8KOVkV4wQG1vkUvg",
+      "title": "【水着新衣装お披露目!!】#宝鐘マリン7周年3DLIVE【ホロライブ/宝鐘マリン】",
+      "category": "anniversary",
+      "publishedLabel": null,
+      "publishedAt": "2026-08-11T06:11:27-07:00",
+      "durationSeconds": 3919,
+      "videoUrl": "https://www.youtube.com/watch?v=qp1bA1A5bTQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/qp1bA1A5bTQ/hqdefault.jpg"
+    },
     {
       "id": "07qx3PL4b3U",
       "videoId": "07qx3PL4b3U",
@@ -323,6 +353,21 @@
       "durationSeconds": 4144,
       "videoUrl": "https://www.youtube.com/watch?v=w37yVSXhV_c",
       "thumbnailUrl": "https://i.ytimg.com/vi/w37yVSXhV_c/hqdefault.jpg"
+    },
+    {
+      "id": "_Pr8U9kG2vY",
+      "videoId": "_Pr8U9kG2vY",
+      "memberIds": [
+        "shiranui-flare"
+      ],
+      "channelId": "UCvInZx9h3jC2JzsIzoOebWg",
+      "title": "【 #不知火フレア生誕祭2026 】先日のBEMANI楽曲３D LIVE！をみんなで振り返ろう～！【不知火フレア/ホロライブ】",
+      "category": "birthday",
+      "publishedLabel": null,
+      "publishedAt": "2026-04-26T12:01:07+00:00",
+      "durationSeconds": 11144,
+      "videoUrl": "https://www.youtube.com/watch?v=_Pr8U9kG2vY",
+      "thumbnailUrl": "https://i.ytimg.com/vi/_Pr8U9kG2vY/hqdefault.jpg"
     },
     {
       "id": "PGppUhILuP4",
@@ -1738,6 +1783,21 @@
       "thumbnailUrl": "https://i.ytimg.com/vi/0LoG81pLS8c/hqdefault.jpg"
     },
     {
+      "id": "-a68MSMFuuM",
+      "videoId": "-a68MSMFuuM",
+      "memberIds": [
+        "shirakami-fubuki"
+      ],
+      "channelId": "UCdn5BQ06XqgXoAxIhbqw5Rg",
+      "title": "【3DLIVE】白上フブキ生誕祭2024　#FBKINGDOMPROLOGUE【ホロライブ/白上フブキ 】",
+      "category": "birthday",
+      "publishedLabel": null,
+      "publishedAt": "2024-10-05T10:58:15+00:00",
+      "durationSeconds": 4448,
+      "videoUrl": "https://www.youtube.com/watch?v=-a68MSMFuuM",
+      "thumbnailUrl": "https://i.ytimg.com/vi/-a68MSMFuuM/hqdefault.jpg"
+    },
+    {
       "id": "DNDhaDTXta4",
       "videoId": "DNDhaDTXta4",
       "memberIds": [
@@ -2472,6 +2532,21 @@
       "durationSeconds": 4418,
       "videoUrl": "https://www.youtube.com/watch?v=5Ney9Z_WnTU",
       "thumbnailUrl": "https://i.ytimg.com/vi/5Ney9Z_WnTU/hqdefault.jpg"
+    },
+    {
+      "id": "EDWxOuVDUJk",
+      "videoId": "EDWxOuVDUJk",
+      "memberIds": [
+        "omaru-polka"
+      ],
+      "channelId": "UCK9V2B22uJYu3N7eR_BT9QA",
+      "title": "【#尾丸ポルカ3周年】POLPOLPOLKA! ~遅れてやってきたぞ💓記念3DLIVE~【尾丸ポルカ/ホロライブ】",
+      "category": "anniversary",
+      "publishedLabel": null,
+      "publishedAt": "2023-11-10T10:57:25+00:00",
+      "durationSeconds": 3768,
+      "videoUrl": "https://www.youtube.com/watch?v=EDWxOuVDUJk",
+      "thumbnailUrl": "https://i.ytimg.com/vi/EDWxOuVDUJk/hqdefault.jpg"
     },
     {
       "id": "CXLL4W4w4I8",
@@ -3464,6 +3539,36 @@
       "thumbnailUrl": "https://i.ytimg.com/vi/KyURvb-eIU8/hqdefault.jpg"
     },
     {
+      "id": "twAfWd7qSWQ",
+      "videoId": "twAfWd7qSWQ",
+      "memberIds": [
+        "shiranui-flare"
+      ],
+      "channelId": "UCvInZx9h3jC2JzsIzoOebWg",
+      "title": "【#不知火フレア3周年記念LIVE】大感謝祭！今日もバカみたいに騒ごう！【不知火フレア/ホロライブ】",
+      "category": "anniversary",
+      "publishedLabel": null,
+      "publishedAt": "2022-08-07T11:57:10+00:00",
+      "durationSeconds": 3852,
+      "videoUrl": "https://www.youtube.com/watch?v=twAfWd7qSWQ",
+      "thumbnailUrl": "https://i.ytimg.com/vi/twAfWd7qSWQ/hqdefault.jpg"
+    },
+    {
+      "id": "aelRhCHNP0s",
+      "videoId": "aelRhCHNP0s",
+      "memberIds": [
+        "sakura-miko"
+      ],
+      "channelId": "UC-hM6YJuNYVAmUWxeIr9FeA",
+      "title": "【 #さくらみこ4周年 】ゲストあり！Baby Dance Live 🎉4th Anniversary 3D LIVE【ホロライブ/さくらみこ】",
+      "category": "anniversary",
+      "publishedLabel": null,
+      "publishedAt": "2022-08-01T11:59:25+00:00",
+      "durationSeconds": 4793,
+      "videoUrl": "https://www.youtube.com/watch?v=aelRhCHNP0s",
+      "thumbnailUrl": "https://i.ytimg.com/vi/aelRhCHNP0s/hqdefault.jpg"
+    },
+    {
       "id": "wF_VmniNI2I",
       "videoId": "wF_VmniNI2I",
       "memberIds": [
@@ -3809,6 +3914,21 @@
       "thumbnailUrl": "https://i.ytimg.com/vi/3UVUtXHOtV4/hqdefault.jpg"
     },
     {
+      "id": "YsvEWEEUWa8",
+      "videoId": "YsvEWEEUWa8",
+      "memberIds": [
+        "tokoyami-towa"
+      ],
+      "channelId": "UC1uv2Oq6kNxgATlCiez59hw",
+      "title": "【3DLIVE】この叫びを届けるためにｰScreamｰ【#常闇トワ2周年記念】",
+      "category": "anniversary",
+      "publishedLabel": null,
+      "publishedAt": "2022-01-03T04:04:51-08:00",
+      "durationSeconds": 3578,
+      "videoUrl": "https://www.youtube.com/watch?v=YsvEWEEUWa8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/YsvEWEEUWa8/hqdefault.jpg"
+    },
+    {
       "id": "TV8rLERH6yU",
       "videoId": "TV8rLERH6yU",
       "memberIds": [
@@ -3944,6 +4064,36 @@
       "thumbnailUrl": "https://i.ytimg.com/vi/0kGVDYAKcGc/hqdefault.jpg"
     },
     {
+      "id": "cEJGu0wlFt8",
+      "videoId": "cEJGu0wlFt8",
+      "memberIds": [
+        "himemori-luna"
+      ],
+      "channelId": "UCa9Y57gfeY0Zro_noHRVrnw",
+      "title": "【 #姫森ルーナ誕生祭 】たくさんお祝いして欲しいのら！💗Luna's Birthday Live【ホロライブ】",
+      "category": "birthday",
+      "publishedLabel": null,
+      "publishedAt": "2021-10-10T11:58:45+00:00",
+      "durationSeconds": 3464,
+      "videoUrl": "https://www.youtube.com/watch?v=cEJGu0wlFt8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/cEJGu0wlFt8/hqdefault.jpg"
+    },
+    {
+      "id": "mhvHZpK-9Ss",
+      "videoId": "mhvHZpK-9Ss",
+      "memberIds": [
+        "oozora-subaru"
+      ],
+      "channelId": "UCvzGlP9oQwU--Y0r9id_jnA",
+      "title": "【#大空スバル３周年】おまたせ！今日はたのしんでってな～！！！！：SUBARU 3rd anniversary Live【ホロライブ】",
+      "category": "anniversary",
+      "publishedLabel": null,
+      "publishedAt": "2021-10-07T12:00:27+00:00",
+      "durationSeconds": 3526,
+      "videoUrl": "https://www.youtube.com/watch?v=mhvHZpK-9Ss",
+      "thumbnailUrl": "https://i.ytimg.com/vi/mhvHZpK-9Ss/hqdefault.jpg"
+    },
+    {
       "id": "7Vs-5Rwu8ks",
       "videoId": "7Vs-5Rwu8ks",
       "memberIds": [
@@ -4034,6 +4184,21 @@
       "thumbnailUrl": "https://i.ytimg.com/vi/_xL58zG9k5k/hqdefault.jpg"
     },
     {
+      "id": "spHKQDaz0C0",
+      "videoId": "spHKQDaz0C0",
+      "memberIds": [
+        "yuzuki-choco"
+      ],
+      "channelId": "UC1suqwovbL1kzsoaZgFZLKg",
+      "title": "【#癒月ちょこ3周年】３周年記念3D配信⚡重大告知あり！【ホロライブ/癒月ちょこ】",
+      "category": "anniversary",
+      "publishedLabel": null,
+      "publishedAt": "2021-09-04T11:00:08+00:00",
+      "durationSeconds": 4560,
+      "videoUrl": "https://www.youtube.com/watch?v=spHKQDaz0C0",
+      "thumbnailUrl": "https://i.ytimg.com/vi/spHKQDaz0C0/hqdefault.jpg"
+    },
+    {
       "id": "1lqiDPRHgWE",
       "videoId": "1lqiDPRHgWE",
       "memberIds": [
@@ -4064,6 +4229,21 @@
       "thumbnailUrl": "https://i.ytimg.com/vi/ChMwx4yeI3g/hqdefault.jpg"
     },
     {
+      "id": "as7iNw5gSi8",
+      "videoId": "as7iNw5gSi8",
+      "memberIds": [
+        "omaru-polka"
+      ],
+      "channelId": "UCK9V2B22uJYu3N7eR_BT9QA",
+      "title": "【#尾丸ポルカ一周年】エッ！？1時間でガチの即興曲を！？いい話もあるよ！【3DLIVE】",
+      "category": "anniversary",
+      "publishedLabel": null,
+      "publishedAt": "2021-08-16T11:01:09+00:00",
+      "durationSeconds": 3628,
+      "videoUrl": "https://www.youtube.com/watch?v=as7iNw5gSi8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/as7iNw5gSi8/hqdefault.jpg"
+    },
+    {
       "id": "hoDuE5v4a08",
       "videoId": "hoDuE5v4a08",
       "memberIds": [
@@ -4077,6 +4257,21 @@
       "durationSeconds": 3470,
       "videoUrl": "https://www.youtube.com/watch?v=hoDuE5v4a08",
       "thumbnailUrl": "https://i.ytimg.com/vi/hoDuE5v4a08/hqdefault.jpg"
+    },
+    {
+      "id": "5gE4VLNSN1E",
+      "videoId": "5gE4VLNSN1E",
+      "memberIds": [
+        "momosuzu-nene"
+      ],
+      "channelId": "UCAWSyEs_Io8MtpY3m-zqILA",
+      "title": "【 #Nene1stAnniversary】✨桃鈴ねね1周年✨【3DLIVE】",
+      "category": "anniversary",
+      "publishedLabel": null,
+      "publishedAt": "2021-08-13T06:07:38-07:00",
+      "durationSeconds": 3758,
+      "videoUrl": "https://www.youtube.com/watch?v=5gE4VLNSN1E",
+      "thumbnailUrl": "https://i.ytimg.com/vi/5gE4VLNSN1E/hqdefault.jpg"
     },
     {
       "id": "CtOkB0YQljY",
@@ -4319,6 +4514,21 @@
       "thumbnailUrl": "https://i.ytimg.com/vi/aPHng8urnYY/hqdefault.jpg"
     },
     {
+      "id": "TjhOZn1vNW4",
+      "videoId": "TjhOZn1vNW4",
+      "memberIds": [
+        "tokoyami-towa"
+      ],
+      "channelId": "UC1uv2Oq6kNxgATlCiez59hw",
+      "title": "【3D】生演奏！？楽しんだもん勝ちのBANDLIVE！【#常闇トワ1周年記念】",
+      "category": "anniversary",
+      "publishedLabel": null,
+      "publishedAt": "2021-04-17T10:58:22+00:00",
+      "durationSeconds": 3368,
+      "videoUrl": "https://www.youtube.com/watch?v=TjhOZn1vNW4",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TjhOZn1vNW4/hqdefault.jpg"
+    },
+    {
       "id": "Ajwv4ANSSg0",
       "videoId": "Ajwv4ANSSg0",
       "memberIds": [
@@ -4347,6 +4557,21 @@
       "durationSeconds": 3322,
       "videoUrl": "https://www.youtube.com/watch?v=v8tFy6_6R84",
       "thumbnailUrl": "https://i.ytimg.com/vi/v8tFy6_6R84/hqdefault.jpg"
+    },
+    {
+      "id": "QA8KoMko9u8",
+      "videoId": "QA8KoMko9u8",
+      "memberIds": [
+        "robocosan"
+      ],
+      "channelId": "UCDqI2jOz0weumE8s7paEk6g",
+      "title": "【３D全身】３周年記念🎉泣いて笑って…バラードオンリーライブ-Robot Memory-【ホロライブ/ロボ子さん】",
+      "category": "anniversary",
+      "publishedLabel": null,
+      "publishedAt": "2021-03-20T12:03:07+00:00",
+      "durationSeconds": 3897,
+      "videoUrl": "https://www.youtube.com/watch?v=QA8KoMko9u8",
+      "thumbnailUrl": "https://i.ytimg.com/vi/QA8KoMko9u8/hqdefault.jpg"
     },
     {
       "id": "1Ts7X3vtYgQ",
@@ -4392,6 +4617,21 @@
       "durationSeconds": 3700,
       "videoUrl": "https://www.youtube.com/watch?v=8lkam88qeZw",
       "thumbnailUrl": "https://i.ytimg.com/vi/8lkam88qeZw/hqdefault.jpg"
+    },
+    {
+      "id": "TgiT1DQe_io",
+      "videoId": "TgiT1DQe_io",
+      "memberIds": [
+        "tsunomaki-watame"
+      ],
+      "channelId": "UCqm3BQLlJfvkTsX_hvm0UmA",
+      "title": "【 #角巻わため1周年 】角巻わため 1st Anniversary Live Fever!!🌟【ホロライブ４期生】",
+      "category": "anniversary",
+      "publishedLabel": null,
+      "publishedAt": "2020-12-29T11:00:03+00:00",
+      "durationSeconds": 3623,
+      "videoUrl": "https://www.youtube.com/watch?v=TgiT1DQe_io",
+      "thumbnailUrl": "https://i.ytimg.com/vi/TgiT1DQe_io/hqdefault.jpg"
     },
     {
       "id": "mmUVwNut2-Y",
@@ -4482,6 +4722,21 @@
       "durationSeconds": 3485,
       "videoUrl": "https://www.youtube.com/watch?v=-1iLScVyydk",
       "thumbnailUrl": "https://i.ytimg.com/vi/-1iLScVyydk/hqdefault.jpg"
+    },
+    {
+      "id": "uogHc9x2etA",
+      "videoId": "uogHc9x2etA",
+      "memberIds": [
+        "tokoyami-towa"
+      ],
+      "channelId": "UC1uv2Oq6kNxgATlCiez59hw",
+      "title": "【誕生日3D配信】常闇トワ生誕後夜祭🌟アコースティックライブ🎤【#常闇トワ生誕2020】",
+      "category": "birthday",
+      "publishedLabel": null,
+      "publishedAt": "2020-08-09T12:59:43+00:00",
+      "durationSeconds": 2947,
+      "videoUrl": "https://www.youtube.com/watch?v=uogHc9x2etA",
+      "thumbnailUrl": "https://i.ytimg.com/vi/uogHc9x2etA/hqdefault.jpg"
     },
     {
       "id": "SIU7AhRwCWQ",

@@ -7,7 +7,21 @@ import {
   resolveContainedPath,
   validateExternalArchiveRoot,
 } from "./lib/secure-io.mjs";
-import { validateUrl } from "./lib/safe-fetch.mjs";
+import {
+  fetchTextWithPolicy,
+  validateUrl,
+} from "./lib/safe-fetch.mjs";
+
+async function withMockFetch(mock, operation) {
+  const originalFetch = globalThis.fetch;
+  globalThis.fetch = mock;
+
+  try {
+    return await operation();
+  } finally {
+    globalThis.fetch = originalFetch;
+  }
+}
 
 test("request URL policy is HTTPS-only and fail-closed", () => {
   const policy = { allowedOrigins: ["https://www.youtube.com"] };
@@ -35,6 +49,330 @@ test("hostname suffix policy requires a DNS label boundary", () => {
   );
   assert.throws(() => validateUrl("https://artist.lnk.to.example.test", policy));
   assert.throws(() => validateUrl("https://notlnk.to", policy));
+});
+
+test("safe fetch retries a bounded number of transient transport failures", {
+  concurrency: false,
+}, async () => {
+  let calls = 0;
+
+  await withMockFetch(
+    async () => {
+      calls += 1;
+      if (calls < 3) {
+        throw new TypeError("fetch failed", {
+          cause: Object.assign(new Error("connection reset"), {
+            code: "ECONNRESET",
+          }),
+        });
+      }
+      return new Response("ok");
+    },
+    async () => {
+      const result = await fetchTextWithPolicy(
+        "https://schedule.example.test/lives",
+        {},
+        {
+          allowedOrigins: ["https://schedule.example.test"],
+          maxRetries: 2,
+          retryBaseDelayMs: 0,
+        },
+      );
+
+      assert.equal(result.text, "ok");
+    },
+  );
+
+  assert.equal(calls, 3);
+
+  calls = 0;
+  await withMockFetch(
+    async () => {
+      calls += 1;
+      throw new TypeError("fetch failed", {
+        cause: Object.assign(new Error("connection reset"), {
+          code: "ECONNRESET",
+        }),
+      });
+    },
+    async () => {
+      await assert.rejects(
+        fetchTextWithPolicy(
+          "https://schedule.example.test/lives",
+          {},
+          {
+            allowedOrigins: ["https://schedule.example.test"],
+            maxRetries: 2,
+            retryBaseDelayMs: 0,
+          },
+        ),
+        /fetch failed/,
+      );
+    },
+  );
+  assert.equal(calls, 3);
+});
+
+test("safe fetch retries transient HTTP status but not authorization failure", {
+  concurrency: false,
+}, async () => {
+  let transientCalls = 0;
+  await withMockFetch(
+    async () => {
+      transientCalls += 1;
+      return transientCalls === 1
+        ? new Response("", {
+            status: 503,
+            statusText: "Service Unavailable",
+            headers: { "Retry-After": "0" },
+          })
+        : new Response("recovered");
+    },
+    async () => {
+      const result = await fetchTextWithPolicy(
+        "https://schedule.example.test/lives",
+        {},
+        {
+          allowedOrigins: ["https://schedule.example.test"],
+          maxRetries: 1,
+          retryBaseDelayMs: 0,
+        },
+      );
+      assert.equal(result.text, "recovered");
+    },
+  );
+  assert.equal(transientCalls, 2);
+
+  let forbiddenCalls = 0;
+  await withMockFetch(
+    async () => {
+      forbiddenCalls += 1;
+      return new Response("", { status: 403, statusText: "Forbidden" });
+    },
+    async () => {
+      await assert.rejects(
+        fetchTextWithPolicy(
+          "https://schedule.example.test/lives",
+          {},
+          {
+            allowedOrigins: ["https://schedule.example.test"],
+            maxRetries: 3,
+            retryBaseDelayMs: 0,
+          },
+        ),
+        /responded with 403 Forbidden/,
+      );
+    },
+  );
+  assert.equal(forbiddenCalls, 1);
+});
+
+test("safe fetch rejects disallowed origins before any retry or request", {
+  concurrency: false,
+}, async () => {
+  let calls = 0;
+
+  await withMockFetch(
+    async () => {
+      calls += 1;
+      return new Response("unexpected");
+    },
+    async () => {
+      await assert.rejects(
+        fetchTextWithPolicy(
+          "https://attacker.example.test/lives",
+          {},
+          {
+            allowedOrigins: ["https://schedule.example.test"],
+            maxRetries: 3,
+            retryBaseDelayMs: 0,
+          },
+        ),
+        /not allowlisted/,
+      );
+    },
+  );
+
+  assert.equal(calls, 0);
+});
+
+test("safe fetch revalidates every redirect without retrying policy failures", {
+  concurrency: false,
+}, async () => {
+  let calls = 0;
+
+  await withMockFetch(
+    async () => {
+      calls += 1;
+      return new Response("", {
+        status: 302,
+        headers: { Location: "https://attacker.example.test/redirected" },
+      });
+    },
+    async () => {
+      await assert.rejects(
+        fetchTextWithPolicy(
+          "https://schedule.example.test/lives",
+          {},
+          {
+            allowedOrigins: ["https://schedule.example.test"],
+            maxRetries: 3,
+            retryBaseDelayMs: 0,
+          },
+        ),
+        /not allowlisted/,
+      );
+    },
+  );
+
+  assert.equal(calls, 1);
+
+  calls = 0;
+  await withMockFetch(
+    async () => {
+      calls += 1;
+      return new Response("", {
+        status: 302,
+        headers: { Location: "/again" },
+      });
+    },
+    async () => {
+      await assert.rejects(
+        fetchTextWithPolicy(
+          "https://schedule.example.test/lives",
+          {},
+          {
+            allowedOrigins: ["https://schedule.example.test"],
+            maxRedirects: 0,
+            maxRetries: 3,
+            retryBaseDelayMs: 0,
+          },
+        ),
+        /Too many redirects while requesting https:\/\/schedule\.example\.test\/lives/,
+      );
+    },
+  );
+  assert.equal(calls, 1);
+});
+
+test("safe fetch does not retry response-size violations or unsafe methods", {
+  concurrency: false,
+}, async () => {
+  let oversizedCalls = 0;
+  await withMockFetch(
+    async () => {
+      oversizedCalls += 1;
+      return new Response("oversized", {
+        headers: { "Content-Length": "9" },
+      });
+    },
+    async () => {
+      await assert.rejects(
+        fetchTextWithPolicy(
+          "https://schedule.example.test/lives",
+          {},
+          {
+            allowedOrigins: ["https://schedule.example.test"],
+            maxBytes: 4,
+            maxRetries: 3,
+            retryBaseDelayMs: 0,
+          },
+        ),
+        /exceeds 4 bytes/,
+      );
+    },
+  );
+  assert.equal(oversizedCalls, 1);
+
+  let postCalls = 0;
+  await withMockFetch(
+    async () => {
+      postCalls += 1;
+      throw new TypeError("fetch failed", {
+        cause: Object.assign(new Error("connection reset"), {
+          code: "ECONNRESET",
+        }),
+      });
+    },
+    async () => {
+      await assert.rejects(
+        fetchTextWithPolicy(
+          "https://schedule.example.test/lives",
+          { method: "POST", body: "payload" },
+          {
+            allowedOrigins: ["https://schedule.example.test"],
+            maxRetries: 3,
+            retryBaseDelayMs: 0,
+          },
+        ),
+        /fetch failed/,
+      );
+    },
+  );
+  assert.equal(postCalls, 1);
+});
+
+test("safe fetch retries its own timeout but never retries caller cancellation", {
+  concurrency: false,
+}, async () => {
+  let timeoutCalls = 0;
+  await withMockFetch(
+    async (_url, { signal }) => {
+      timeoutCalls += 1;
+      return await new Promise((resolve, reject) => {
+        signal.addEventListener(
+          "abort",
+          () => reject(signal.reason ?? new Error("aborted")),
+          { once: true },
+        );
+      });
+    },
+    async () => {
+      await assert.rejects(
+        fetchTextWithPolicy(
+          "https://schedule.example.test/lives",
+          {},
+          {
+            allowedOrigins: ["https://schedule.example.test"],
+            timeoutMs: 5,
+            maxRetries: 1,
+            retryBaseDelayMs: 0,
+          },
+        ),
+        /timed out after 5ms/,
+      );
+    },
+  );
+  assert.equal(timeoutCalls, 2);
+
+  const caller = new AbortController();
+  let cancelledCalls = 0;
+  await withMockFetch(
+    async (_url, { signal }) => {
+      cancelledCalls += 1;
+      return await new Promise((resolve, reject) => {
+        signal.addEventListener(
+          "abort",
+          () => reject(signal.reason ?? new Error("aborted")),
+          { once: true },
+        );
+      });
+    },
+    async () => {
+      const request = fetchTextWithPolicy(
+        "https://schedule.example.test/lives",
+        { signal: caller.signal },
+        {
+          allowedOrigins: ["https://schedule.example.test"],
+          maxRetries: 3,
+          retryBaseDelayMs: 0,
+        },
+      );
+      caller.abort(new Error("caller cancelled"));
+      await assert.rejects(request, /caller cancelled/);
+    },
+  );
+  assert.equal(cancelledCalls, 1);
 });
 
 test("music links reject deceptive or credentialed URLs", () => {

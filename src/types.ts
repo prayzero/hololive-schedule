@@ -242,6 +242,13 @@ export interface CollectionCatalogPayload {
   releases: CollectionRelease[];
   rarities: CollectionRarity[];
   cards: CollectionCard[];
+  upcomingReleases?: Array<{
+    id: string;
+    name: string;
+    releaseMonth: string;
+    cardCount: number;
+    sourceUrl: string;
+  }>;
 }
 
 export interface DreamCharacter {
@@ -326,6 +333,8 @@ export interface DreamPickup {
   sourceLabel: string;
   sourceUrl: string;
   scheduleNote: string;
+  bannerImageUrl?: string;
+  participantTalentIds?: string[];
   cards: DreamPickupCard[];
 }
 
@@ -348,6 +357,8 @@ export interface DreamEvent {
   sourceUrl: string;
   scheduleSourceUrl: string;
   songsSourceUrl: string;
+  imageUrl?: string;
+  participantTalentIds?: string[];
   chapters: DreamEventChapter[];
 }
 

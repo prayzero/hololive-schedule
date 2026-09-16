@@ -23,6 +23,10 @@ import type {
 import { includesSearch, normalizeSearch } from "../search";
 import { DreamPickupPanel } from "./DreamPickupPanel";
 import {
+  dreamEventChapterTimingStatus,
+  dreamEventTimingStatus,
+} from "./eventTiming";
+import {
   calculateLuck,
   formatExpected,
   formatProbability,
@@ -195,8 +199,26 @@ export function DreamPage({
     () =>
       (payload.events ?? [])
         .map((event) => {
+          const participantNames = (event.participantTalentIds ?? []).flatMap(
+            (talentId) => {
+              const talent = talentById.get(talentId);
+              return talent
+                ? [
+                    talent.name,
+                    talent.nameKo,
+                    talent.nativeName,
+                    ...talent.aliases,
+                  ]
+                : [talentId];
+            },
+          );
           const matchesEvent = includesSearch(
-            [event.title, event.nativeTitle, event.subtitle],
+            [
+              event.title,
+              event.nativeTitle,
+              event.subtitle,
+              ...participantNames,
+            ],
             normalizedQuery,
           );
           const chapters = matchesEvent
@@ -214,11 +236,51 @@ export function DreamPage({
                   normalizedQuery,
                 );
               });
-          return { event, chapters };
+          return { event, chapters, matchesEvent };
         })
-        .filter(({ chapters }) => chapters.length > 0),
+        .filter(({ chapters, matchesEvent }) =>
+          normalizedQuery ? matchesEvent || chapters.length > 0 : true,
+        ),
     [normalizedQuery, payload.events, talentById],
   );
+  const orderedVisibleEvents = useMemo(() => {
+    const eventsByStart = [...payload.events].sort(
+      (left, right) => Date.parse(left.startsAt) - Date.parse(right.startsAt),
+    );
+    const nextEventById = new Map(
+      eventsByStart.map((event, index) => [
+        event.id,
+        eventsByStart[index + 1] ?? null,
+      ]),
+    );
+    const statusOrder = {
+      live: 0,
+      upcoming: 1,
+      ended: 2,
+      unknown: 3,
+    } as const;
+    const nowTime = now.getTime();
+
+    return [...visibleEvents].sort((left, right) => {
+      const leftStatus = dreamEventTimingStatus(
+        left.event,
+        nowTime,
+        nextEventById.get(left.event.id),
+      );
+      const rightStatus = dreamEventTimingStatus(
+        right.event,
+        nowTime,
+        nextEventById.get(right.event.id),
+      );
+      const statusDifference =
+        statusOrder[leftStatus] - statusOrder[rightStatus];
+      if (statusDifference !== 0) return statusDifference;
+
+      const startDifference =
+        Date.parse(left.event.startsAt) - Date.parse(right.event.startsAt);
+      return leftStatus === "upcoming" ? startDifference : -startDifference;
+    });
+  }, [now, payload.events, visibleEvents]);
   const baseCharacters = useMemo<CollectionCharacter[]>(
     () =>
       [...payload.characters]
@@ -661,20 +723,33 @@ export function DreamPage({
           )}
         </>
       ) : panel === "event" ? (
-        visibleEvents.length ? (
+        orderedVisibleEvents.length ? (
           <div className="dream-event-list">
-            {visibleEvents.map(({ event, chapters }) => {
+            {orderedVisibleEvents.map(({ event, chapters }) => {
               const nowTime = now.getTime();
               const eventStartsAt = new Date(event.startsAt).getTime();
-              const eventEndsAt = event.endsAt
-                ? new Date(event.endsAt).getTime()
-                : null;
-              const eventStatus =
-                nowTime < eventStartsAt
-                  ? "upcoming"
-                  : eventEndsAt !== null && nowTime > eventEndsAt
-                    ? "ended"
-                    : "live";
+              const nextEvent = payload.events
+                .filter(
+                  (candidate) =>
+                    candidate.id !== event.id &&
+                    new Date(candidate.startsAt).getTime() > eventStartsAt,
+                )
+                .sort(
+                  (left, right) =>
+                    new Date(left.startsAt).getTime() -
+                    new Date(right.startsAt).getTime(),
+                )[0];
+              const eventStatus = dreamEventTimingStatus(
+                event,
+                nowTime,
+                nextEvent,
+              );
+              const participantIds = event.participantTalentIds?.length
+                ? event.participantTalentIds
+                : [...new Set(event.chapters.map((chapter) => chapter.talentId))];
+              const participantNames = participantIds.map(
+                (talentId) => talentById.get(talentId)?.nameKo ?? talentId,
+              );
 
               return (
                 <article className="dream-event-card" key={event.id}>
@@ -687,7 +762,9 @@ export function DreamPage({
                         ? "진행 중"
                         : eventStatus === "upcoming"
                           ? "예정"
-                          : "종료"}
+                          : eventStatus === "ended"
+                            ? "종료"
+                            : "일정 확인 필요"}
                     </span>
                     <div>
                       <small>GAME EVENT</small>
@@ -704,6 +781,36 @@ export function DreamPage({
                     </a>
                   </header>
 
+                  {event.imageUrl ? (
+                    <figure className="dream-event-hero">
+                      <img
+                        src={event.imageUrl}
+                        alt={`${event.title} 공식 이벤트 이미지`}
+                        loading="lazy"
+                        decoding="async"
+                        referrerPolicy="no-referrer"
+                      />
+                      {participantNames.length ? (
+                        <figcaption aria-label="이벤트 참여 멤버">
+                          <Users size={14} aria-hidden="true" />
+                          {participantNames.map((name) => (
+                            <span key={name}>{name}</span>
+                          ))}
+                        </figcaption>
+                      ) : null}
+                    </figure>
+                  ) : participantNames.length ? (
+                    <div
+                      className="dream-event-participants"
+                      aria-label="이벤트 참여 멤버"
+                    >
+                      <Users size={14} aria-hidden="true" />
+                      {participantNames.map((name) => (
+                        <span key={name}>{name}</span>
+                      ))}
+                    </div>
+                  ) : null}
+
                   <div className="dream-event-meta">
                     <span>
                       <CalendarDays size={15} aria-hidden="true" />
@@ -715,30 +822,27 @@ export function DreamPage({
                     </span>
                     <span>
                       <Info size={15} aria-hidden="true" />
-                      {event.subtitle} · 종료 시각은 게임 내 공지 확인
+                      {event.subtitle} ·{" "}
+                      {event.endsAt
+                        ? `${DREAM_EVENT_TIME_FORMATTER.format(
+                            new Date(event.endsAt),
+                          )} 종료`
+                        : "종료 시각은 게임 내 공지 확인"}
                     </span>
                   </div>
 
-                  <div className="dream-event-chapter-grid">
-                    {chapters.map((chapter) => {
+                  {chapters.length ? (
+                    <div className="dream-event-chapter-grid">
+                      {chapters.map((chapter) => {
                       const chapterIndex = event.chapters.findIndex(
                         (item) => item.talentId === chapter.talentId,
                       );
-                      const nextChapter = event.chapters[chapterIndex + 1];
-                      const chapterStartsAt = new Date(
-                        chapter.startsAt,
-                      ).getTime();
-                      const chapterEndsAt = chapter.endsAt
-                        ? new Date(chapter.endsAt).getTime()
-                        : nextChapter
-                          ? new Date(nextChapter.startsAt).getTime()
-                          : null;
-                      const chapterStatus =
-                        nowTime < chapterStartsAt
-                          ? "upcoming"
-                          : chapterEndsAt !== null && nowTime >= chapterEndsAt
-                            ? "ended"
-                            : "live";
+                      const chapterStatus = dreamEventChapterTimingStatus(
+                        event,
+                        chapterIndex,
+                        nowTime,
+                        nextEvent,
+                      );
                       const talent = talentById.get(chapter.talentId);
 
                       return (
@@ -759,7 +863,9 @@ export function DreamPage({
                                 ? "NOW"
                                 : chapterStatus === "upcoming"
                                   ? "NEXT"
-                                  : "END"}
+                                  : chapterStatus === "ended"
+                                    ? "END"
+                                    : "CHECK"}
                             </b>
                           </span>
                           <span className="dream-event-chapter__copy">
@@ -773,8 +879,14 @@ export function DreamPage({
                           </span>
                         </div>
                       );
-                    })}
-                  </div>
+                      })}
+                    </div>
+                  ) : (
+                    <div className="dream-event-no-chapters">
+                      <Info size={15} aria-hidden="true" />
+                      <span>세부 챕터 정보는 공식 이벤트 페이지에서 확인해 주세요.</span>
+                    </div>
+                  )}
                 </article>
               );
             })}

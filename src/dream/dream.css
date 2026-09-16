@@ -175,6 +175,76 @@
   font-weight: 850;
 }
 
+.dream-event-hero {
+  position: relative;
+  aspect-ratio: 1200 / 630;
+  max-height: 430px;
+  margin: 21px 0 0;
+  overflow: hidden;
+  border: 1px solid #dde1ed;
+  border-radius: 20px;
+  background: #edf1f7;
+}
+
+.dream-event-hero > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dream-event-hero figcaption,
+.dream-event-participants {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.dream-event-hero figcaption {
+  position: absolute;
+  right: 13px;
+  bottom: 13px;
+  left: 13px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 13px;
+  color: #fff;
+  background: rgba(21, 27, 51, 0.72);
+  box-shadow: 0 9px 26px rgba(21, 27, 51, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.dream-event-participants {
+  margin-top: 17px;
+  padding: 11px 13px;
+  border: 1px solid #e1e4ef;
+  border-radius: 14px;
+  color: #55647c;
+  background: #f8f9fc;
+}
+
+.dream-event-hero figcaption svg,
+.dream-event-participants svg {
+  flex: 0 0 auto;
+}
+
+.dream-event-hero figcaption span,
+.dream-event-participants span {
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 9px;
+  font-weight: 850;
+}
+
+.dream-event-hero figcaption span {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.dream-event-participants span {
+  color: var(--dream-purple-dark);
+  background: #efedff;
+}
+
 .dream-event-meta {
   display: flex;
   flex-wrap: wrap;
@@ -204,6 +274,24 @@
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 12px;
+}
+
+.dream-event-no-chapters {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 15px;
+  border: 1px dashed #d8dbe9;
+  border-radius: 15px;
+  color: #778399;
+  background: rgba(248, 249, 253, 0.72);
+  font-size: 10px;
+  font-weight: 750;
+}
+
+.dream-event-no-chapters svg {
+  flex: 0 0 auto;
+  color: var(--dream-purple);
 }
 
 .dream-event-chapter {
@@ -1094,6 +1182,76 @@
   color: #738198;
   font-size: 12px;
   line-height: 1.6;
+}
+
+.dream-pickup-feature__banner {
+  position: relative;
+  aspect-ratio: 1200 / 630;
+  max-height: 430px;
+  margin: 0 25px 17px;
+  overflow: hidden;
+  border: 1px solid #dfe2ed;
+  border-radius: 21px;
+  background: #edf1f7;
+}
+
+.dream-pickup-feature__banner > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dream-pickup-feature__banner figcaption,
+.dream-pickup-feature__participants {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.dream-pickup-feature__banner figcaption {
+  position: absolute;
+  right: 13px;
+  bottom: 13px;
+  left: 13px;
+  padding: 10px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 13px;
+  color: #fff;
+  background: rgba(21, 27, 51, 0.72);
+  box-shadow: 0 9px 26px rgba(21, 27, 51, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.dream-pickup-feature__participants {
+  margin: 0 25px 17px;
+  padding: 11px 13px;
+  border: 1px solid #e1e4ef;
+  border-radius: 14px;
+  color: #55647c;
+  background: rgba(248, 249, 253, 0.84);
+}
+
+.dream-pickup-feature__banner figcaption svg,
+.dream-pickup-feature__participants svg {
+  flex: 0 0 auto;
+}
+
+.dream-pickup-feature__banner figcaption span,
+.dream-pickup-feature__participants span {
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 9px;
+  font-weight: 850;
+}
+
+.dream-pickup-feature__banner figcaption span {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.dream-pickup-feature__participants span {
+  color: var(--dream-purple-dark);
+  background: #efedff;
 }
 
 .dream-pickup-schedule {
@@ -2832,6 +2990,24 @@
     margin-top: 17px;
   }
 
+  .dream-event-hero {
+    margin-top: 17px;
+    border-radius: 16px;
+  }
+
+  .dream-event-hero figcaption {
+    right: 8px;
+    bottom: 8px;
+    left: 8px;
+    gap: 5px;
+    padding: 8px;
+  }
+
+  .dream-event-hero figcaption span {
+    padding: 3px 6px;
+    font-size: 8px;
+  }
+
   .dream-event-chapter-grid {
     grid-template-columns: none;
     grid-auto-columns: min(78vw, 310px);
@@ -3007,6 +3183,28 @@
 
   .dream-pickup-feature__header > div:first-child > p {
     font-size: 11px;
+  }
+
+  .dream-pickup-feature__banner {
+    margin: 0 16px 15px;
+    border-radius: 16px;
+  }
+
+  .dream-pickup-feature__banner figcaption {
+    right: 8px;
+    bottom: 8px;
+    left: 8px;
+    gap: 5px;
+    padding: 8px;
+  }
+
+  .dream-pickup-feature__banner figcaption span {
+    padding: 3px 6px;
+    font-size: 8px;
+  }
+
+  .dream-pickup-feature__participants {
+    margin: 0 16px 15px;
   }
 
   .dream-pickup-rate-breakdown {

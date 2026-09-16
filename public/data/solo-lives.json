@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-20T11:50:00+09:00",
+  "checkedAt": "2026-09-16T12:42:00+09:00",
   "sourceUrl": "https://hololive.hololivepro.com/events-archive/",
   "sourceNote": "hololive/COVER 및 공식 주최·레이블 페이지에서 단독·원맨 공연으로 확인되는 주요 기록입니다. 공동 형식 공연은 각 솔로 헤드라이너에 연결했습니다.",
   "lives": [
@@ -723,6 +723,36 @@
       "format": "현장 공연 · 시간·티켓 추후 공개",
       "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/06/260611_main.webp",
       "sourceUrl": "https://hololive.hololivepro.com/news/20260611-01-390/",
+      "note": "첫 솔로 라이브"
+    },
+    {
+      "id": "hakos-baelz-regalia-2026",
+      "memberId": "hakos-baelz",
+      "title": "Hakos Baelz 1st Concert “REGALIA”",
+      "titleKo": "하코스 벨즈 1st Concert ‘REGALIA’",
+      "startsAt": "2026-12-01T00:00:00+09:00",
+      "endsAt": "2026-12-01T23:59:59+09:00",
+      "dateLabel": "2026. 12. 01",
+      "city": "도쿄",
+      "venue": "Kanadevia Hall",
+      "format": "현장 솔로 콘서트 · 시간·티켓 추후 공개",
+      "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/08/260823_sub_02.webp",
+      "sourceUrl": "https://hololive.hololivepro.com/news/20260823-01-405/",
+      "note": "첫 솔로 콘서트"
+    },
+    {
+      "id": "hakui-koyori-dream-spark-2026",
+      "memberId": "hakui-koyori",
+      "title": "Hakui Koyori 1st Live “Dream Spark”",
+      "titleKo": "하쿠이 코요리 1st Live ‘Dream Spark’",
+      "startsAt": "2026-12-22T00:00:00+09:00",
+      "endsAt": "2026-12-22T23:59:59+09:00",
+      "dateLabel": "2026. 12. 22",
+      "city": "도쿄",
+      "venue": "Tokyo Garden Theater",
+      "format": "현장 솔로 라이브 · 시간·티켓 추후 공개",
+      "imageUrl": "https://hololive.hololivepro.com/wp-content/uploads/2026/09/260912_sub2_07.webp",
+      "sourceUrl": "https://hololive.hololivepro.com/news/20260912-02-83/",
       "note": "첫 솔로 라이브"
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-16T14:55:58.315Z",
+  "generatedAt": "2026-09-16T18:51:23.872Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -13498,6 +13498,21 @@
       "branch": "JP"
     },
     {
+      "id": "t2c5kLPiWe4",
+      "date": "2026-09-17",
+      "dateLabel": "09/17 (木)",
+      "time": "03:02",
+      "startsAt": "2026-09-17T03:02:00+09:00",
+      "name": "Kiara",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=t2c5kLPiWe4",
+      "videoId": "t2c5kLPiWe4",
+      "thumbnail": "https://img.youtube.com/vi/t2c5kLPiWe4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "uxYg4CCEn-w",
       "date": "2026-09-17",
       "dateLabel": "09/17 (木)",
@@ -13508,6 +13523,21 @@
       "url": "https://www.youtube.com/watch?v=uxYg4CCEn-w",
       "videoId": "uxYg4CCEn-w",
       "thumbnail": "https://img.youtube.com/vi/uxYg4CCEn-w/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "IBeyD6ibq8o",
+      "date": "2026-09-17",
+      "dateLabel": "09/17 (木)",
+      "time": "19:00",
+      "startsAt": "2026-09-17T19:00:00+09:00",
+      "name": "獅白ぼたん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=IBeyD6ibq8o",
+      "videoId": "IBeyD6ibq8o",
+      "thumbnail": "https://img.youtube.com/vi/IBeyD6ibq8o/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

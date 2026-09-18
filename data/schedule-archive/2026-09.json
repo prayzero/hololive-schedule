@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T21:38:52.635Z",
+  "generatedAt": "2026-09-18T23:39:28.256Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -14998,6 +14998,21 @@
       "branch": "JP"
     },
     {
+      "id": "eYKypby7vrY",
+      "date": "2026-09-19",
+      "dateLabel": "09/19 (土)",
+      "time": "08:00",
+      "startsAt": "2026-09-19T08:00:00+09:00",
+      "name": "Shiori",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=eYKypby7vrY",
+      "videoId": "eYKypby7vrY",
+      "thumbnail": "https://img.youtube.com/vi/eYKypby7vrY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "_Wfsik30eNM",
       "date": "2026-09-19",
       "dateLabel": "09/19 (土)",
@@ -15023,6 +15038,21 @@
       "url": "https://www.youtube.com/watch?v=1Hx3cPKCRhw",
       "videoId": "1Hx3cPKCRhw",
       "thumbnail": "https://img.youtube.com/vi/1Hx3cPKCRhw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Snvkb-GOuBw",
+      "date": "2026-09-19",
+      "dateLabel": "09/19 (土)",
+      "time": "10:00",
+      "startsAt": "2026-09-19T10:00:00+09:00",
+      "name": "Ina",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Snvkb-GOuBw",
+      "videoId": "Snvkb-GOuBw",
+      "thumbnail": "https://img.youtube.com/vi/Snvkb-GOuBw/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -15278,6 +15308,21 @@
       "url": "https://www.youtube.com/watch?v=PPcylxH_3kw",
       "videoId": "PPcylxH_3kw",
       "thumbnail": "https://img.youtube.com/vi/PPcylxH_3kw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "94Y3lKsAaTk",
+      "date": "2026-09-19",
+      "dateLabel": "09/19 (土)",
+      "time": "23:00",
+      "startsAt": "2026-09-19T23:00:00+09:00",
+      "name": "Kiara",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=94Y3lKsAaTk",
+      "videoId": "94Y3lKsAaTk",
+      "thumbnail": "https://img.youtube.com/vi/94Y3lKsAaTk/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T16:19:56.308Z",
+  "generatedAt": "2026-09-18T19:05:23.560Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -14956,8 +14956,8 @@
       "id": "zY4xF3Q3i9E",
       "date": "2026-09-19",
       "dateLabel": "09/19 (土)",
-      "time": "01:45",
-      "startsAt": "2026-09-19T01:45:00+09:00",
+      "time": "01:48",
+      "startsAt": "2026-09-19T01:48:00+09:00",
       "name": "鷹嶺ルイ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=zY4xF3Q3i9E",
@@ -15133,6 +15133,21 @@
       "branch": "JP"
     },
     {
+      "id": "UwJGso9F9CA",
+      "date": "2026-09-19",
+      "dateLabel": "09/19 (土)",
+      "time": "20:00",
+      "startsAt": "2026-09-19T20:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=UwJGso9F9CA",
+      "videoId": "UwJGso9F9CA",
+      "thumbnail": "https://img.youtube.com/vi/UwJGso9F9CA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "b6H54qq6c0A",
       "date": "2026-09-19",
       "dateLabel": "09/19 (土)",
@@ -15143,6 +15158,21 @@
       "url": "https://www.youtube.com/watch?v=b6H54qq6c0A",
       "videoId": "b6H54qq6c0A",
       "thumbnail": "https://img.youtube.com/vi/b6H54qq6c0A/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "xOtl3ca64wA",
+      "date": "2026-09-19",
+      "dateLabel": "09/19 (土)",
+      "time": "20:00",
+      "startsAt": "2026-09-19T20:00:00+09:00",
+      "name": "アキロゼ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=xOtl3ca64wA",
+      "videoId": "xOtl3ca64wA",
+      "thumbnail": "https://img.youtube.com/vi/xOtl3ca64wA/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

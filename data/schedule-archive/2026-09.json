@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T17:38:18.099Z",
+  "generatedAt": "2026-09-19T19:37:04.105Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -16168,6 +16168,21 @@
       "branch": "JP"
     },
     {
+      "id": "pBGZLmB-Qik",
+      "date": "2026-09-20",
+      "dateLabel": "09/20 (日)",
+      "time": "13:00",
+      "startsAt": "2026-09-20T13:00:00+09:00",
+      "name": "夏色まつり",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=pBGZLmB-Qik",
+      "videoId": "pBGZLmB-Qik",
+      "thumbnail": "https://img.youtube.com/vi/pBGZLmB-Qik/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "T2351eZtQC0",
       "date": "2026-09-20",
       "dateLabel": "09/20 (日)",
@@ -16313,6 +16328,21 @@
       "url": "https://www.youtube.com/watch?v=X8KNgKhk8VA",
       "videoId": "X8KNgKhk8VA",
       "thumbnail": "https://img.youtube.com/vi/X8KNgKhk8VA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "40O-mkKBbyo",
+      "date": "2026-09-20",
+      "dateLabel": "09/20 (日)",
+      "time": "22:30",
+      "startsAt": "2026-09-20T22:30:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=40O-mkKBbyo",
+      "videoId": "40O-mkKBbyo",
+      "thumbnail": "https://img.youtube.com/vi/40O-mkKBbyo/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

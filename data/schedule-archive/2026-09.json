@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T04:41:49.919Z",
+  "generatedAt": "2026-09-19T06:42:41.698Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -15286,8 +15286,8 @@
       "id": "Q078kz0Kmvo",
       "date": "2026-09-19",
       "dateLabel": "09/19 (土)",
-      "time": "14:00",
-      "startsAt": "2026-09-19T14:00:00+09:00",
+      "time": "13:58",
+      "startsAt": "2026-09-19T13:58:00+09:00",
       "name": "Reine",
       "title": null,
       "url": "https://www.youtube.com/watch?v=Q078kz0Kmvo",
@@ -15301,8 +15301,8 @@
       "id": "1Tyituaop-c",
       "date": "2026-09-19",
       "dateLabel": "09/19 (土)",
-      "time": "14:15",
-      "startsAt": "2026-09-19T14:15:00+09:00",
+      "time": "14:14",
+      "startsAt": "2026-09-19T14:14:00+09:00",
       "name": "Kaela",
       "title": null,
       "url": "https://www.youtube.com/watch?v=1Tyituaop-c",
@@ -15323,6 +15323,21 @@
       "url": "https://www.youtube.com/watch?v=Nd-e83Kupgc",
       "videoId": "Nd-e83Kupgc",
       "thumbnail": "https://img.youtube.com/vi/Nd-e83Kupgc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "aGCoecmKCoo",
+      "date": "2026-09-19",
+      "dateLabel": "09/19 (土)",
+      "time": "17:00",
+      "startsAt": "2026-09-19T17:00:00+09:00",
+      "name": "音乃瀬奏",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=aGCoecmKCoo",
+      "videoId": "aGCoecmKCoo",
+      "thumbnail": "https://img.youtube.com/vi/aGCoecmKCoo/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -15433,6 +15448,21 @@
       "branch": "JP"
     },
     {
+      "id": "M6J_J9d1t2s",
+      "date": "2026-09-19",
+      "dateLabel": "09/19 (土)",
+      "time": "20:00",
+      "startsAt": "2026-09-19T20:00:00+09:00",
+      "name": "宝鐘マリン",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=M6J_J9d1t2s",
+      "videoId": "M6J_J9d1t2s",
+      "thumbnail": "https://img.youtube.com/vi/M6J_J9d1t2s/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "xOtl3ca64wA",
       "date": "2026-09-19",
       "dateLabel": "09/19 (土)",
@@ -15538,6 +15568,21 @@
       "branch": "JP"
     },
     {
+      "id": "izYULn_WC3o",
+      "date": "2026-09-19",
+      "dateLabel": "09/19 (土)",
+      "time": "22:00",
+      "startsAt": "2026-09-19T22:00:00+09:00",
+      "name": "Iofi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=izYULn_WC3o",
+      "videoId": "izYULn_WC3o",
+      "thumbnail": "https://img.youtube.com/vi/izYULn_WC3o/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "94Y3lKsAaTk",
       "date": "2026-09-19",
       "dateLabel": "09/19 (土)",
@@ -15548,6 +15593,21 @@
       "url": "https://www.youtube.com/watch?v=94Y3lKsAaTk",
       "videoId": "94Y3lKsAaTk",
       "thumbnail": "https://img.youtube.com/vi/94Y3lKsAaTk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "6kQGqozufjM",
+      "date": "2026-09-20",
+      "dateLabel": "09/20 (日)",
+      "time": "03:00",
+      "startsAt": "2026-09-20T03:00:00+09:00",
+      "name": "Elizabeth Sub",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=6kQGqozufjM",
+      "videoId": "6kQGqozufjM",
+      "thumbnail": "https://img.youtube.com/vi/6kQGqozufjM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

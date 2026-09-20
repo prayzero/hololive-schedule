@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T16:20:30.415Z",
+  "generatedAt": "2026-09-20T18:55:50.248Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -17008,21 +17008,6 @@
       "branch": "JP"
     },
     {
-      "id": "OINwbTebFHU",
-      "date": "2026-09-21",
-      "dateLabel": "09/21 (月)",
-      "time": "10:00",
-      "startsAt": "2026-09-21T10:00:00+09:00",
-      "name": "Elizabeth",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=OINwbTebFHU",
-      "videoId": "OINwbTebFHU",
-      "thumbnail": "https://img.youtube.com/vi/OINwbTebFHU/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "7C7i5XCvhAo",
       "date": "2026-09-21",
       "dateLabel": "09/21 (月)",
@@ -17033,6 +17018,21 @@
       "url": "https://www.youtube.com/watch?v=7C7i5XCvhAo",
       "videoId": "7C7i5XCvhAo",
       "thumbnail": "https://img.youtube.com/vi/7C7i5XCvhAo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "OINwbTebFHU",
+      "date": "2026-09-21",
+      "dateLabel": "09/21 (月)",
+      "time": "11:00",
+      "startsAt": "2026-09-21T11:00:00+09:00",
+      "name": "Elizabeth",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=OINwbTebFHU",
+      "videoId": "OINwbTebFHU",
+      "thumbnail": "https://img.youtube.com/vi/OINwbTebFHU/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -17128,6 +17128,21 @@
       "branch": "JP"
     },
     {
+      "id": "Dn0YzSOmMNk",
+      "date": "2026-09-21",
+      "dateLabel": "09/21 (月)",
+      "time": "22:00",
+      "startsAt": "2026-09-21T22:00:00+09:00",
+      "name": "Iofi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Dn0YzSOmMNk",
+      "videoId": "Dn0YzSOmMNk",
+      "thumbnail": "https://img.youtube.com/vi/Dn0YzSOmMNk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "mxrDakiAjZo",
       "date": "2026-09-21",
       "dateLabel": "09/21 (月)",
@@ -17138,6 +17153,21 @@
       "url": "https://www.youtube.com/watch?v=mxrDakiAjZo",
       "videoId": "mxrDakiAjZo",
       "thumbnail": "https://img.youtube.com/vi/mxrDakiAjZo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "4BVf_1YzAFM",
+      "date": "2026-09-22",
+      "dateLabel": "09/22 (火)",
+      "time": "07:00",
+      "startsAt": "2026-09-22T07:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=4BVf_1YzAFM",
+      "videoId": "4BVf_1YzAFM",
+      "thumbnail": "https://img.youtube.com/vi/4BVf_1YzAFM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T23:39:46.261Z",
+  "generatedAt": "2026-09-20T01:43:47.508Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -16108,6 +16108,21 @@
       "branch": "JP"
     },
     {
+      "id": "fzOJGe7-ch0",
+      "date": "2026-09-20",
+      "dateLabel": "09/20 (日)",
+      "time": "10:45",
+      "startsAt": "2026-09-20T10:45:00+09:00",
+      "name": "Anya",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=fzOJGe7-ch0",
+      "videoId": "fzOJGe7-ch0",
+      "thumbnail": "https://img.youtube.com/vi/fzOJGe7-ch0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "F3Hi50DRw64",
       "date": "2026-09-20",
       "dateLabel": "09/20 (日)",
@@ -16213,6 +16228,21 @@
       "branch": "JP"
     },
     {
+      "id": "iufpAjIf3Yw",
+      "date": "2026-09-20",
+      "dateLabel": "09/20 (日)",
+      "time": "14:30",
+      "startsAt": "2026-09-20T14:30:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=iufpAjIf3Yw",
+      "videoId": "iufpAjIf3Yw",
+      "thumbnail": "https://img.youtube.com/vi/iufpAjIf3Yw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "vFNbYTSAvwk",
       "date": "2026-09-20",
       "dateLabel": "09/20 (日)",
@@ -16223,6 +16253,21 @@
       "url": "https://www.youtube.com/watch?v=vFNbYTSAvwk",
       "videoId": "vFNbYTSAvwk",
       "thumbnail": "https://img.youtube.com/vi/vFNbYTSAvwk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "HWFQEW9W5A0",
+      "date": "2026-09-20",
+      "dateLabel": "09/20 (日)",
+      "time": "17:00",
+      "startsAt": "2026-09-20T17:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=HWFQEW9W5A0",
+      "videoId": "HWFQEW9W5A0",
+      "thumbnail": "https://img.youtube.com/vi/HWFQEW9W5A0/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -16283,6 +16328,21 @@
       "url": "https://www.youtube.com/watch?v=Fn2Xhj6DQpc",
       "videoId": "Fn2Xhj6DQpc",
       "thumbnail": "https://img.youtube.com/vi/Fn2Xhj6DQpc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "bPRCgTOHXjE",
+      "date": "2026-09-20",
+      "dateLabel": "09/20 (日)",
+      "time": "19:00",
+      "startsAt": "2026-09-20T19:00:00+09:00",
+      "name": "Anya",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=bPRCgTOHXjE",
+      "videoId": "bPRCgTOHXjE",
+      "thumbnail": "https://img.youtube.com/vi/bPRCgTOHXjE/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -16358,6 +16418,21 @@
       "url": "https://www.youtube.com/watch?v=40O-mkKBbyo",
       "videoId": "40O-mkKBbyo",
       "thumbnail": "https://img.youtube.com/vi/40O-mkKBbyo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Cxc7q7WF_7Y",
+      "date": "2026-09-21",
+      "dateLabel": "09/21 (月)",
+      "time": "00:00",
+      "startsAt": "2026-09-21T00:00:00+09:00",
+      "name": "Kiara",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Cxc7q7WF_7Y",
+      "videoId": "Cxc7q7WF_7Y",
+      "thumbnail": "https://img.youtube.com/vi/Cxc7q7WF_7Y/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

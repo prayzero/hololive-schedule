@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T04:57:43.745Z",
+  "generatedAt": "2026-09-20T07:06:54.534Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -16276,8 +16276,8 @@
       "id": "iufpAjIf3Yw",
       "date": "2026-09-20",
       "dateLabel": "09/20 (日)",
-      "time": "14:30",
-      "startsAt": "2026-09-20T14:30:00+09:00",
+      "time": "14:31",
+      "startsAt": "2026-09-20T14:31:00+09:00",
       "name": "鷹嶺ルイ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=iufpAjIf3Yw",
@@ -16288,11 +16288,26 @@
       "branch": "JP"
     },
     {
+      "id": "_Zxb-wcEZ7c",
+      "date": "2026-09-20",
+      "dateLabel": "09/20 (日)",
+      "time": "15:31",
+      "startsAt": "2026-09-20T15:31:00+09:00",
+      "name": "ときのそら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=_Zxb-wcEZ7c",
+      "videoId": "_Zxb-wcEZ7c",
+      "thumbnail": "https://img.youtube.com/vi/_Zxb-wcEZ7c/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "vFNbYTSAvwk",
       "date": "2026-09-20",
       "dateLabel": "09/20 (日)",
-      "time": "16:00",
-      "startsAt": "2026-09-20T16:00:00+09:00",
+      "time": "15:59",
+      "startsAt": "2026-09-20T15:59:00+09:00",
       "name": "姫森ルーナ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=vFNbYTSAvwk",
@@ -16358,6 +16373,21 @@
       "url": "https://www.youtube.com/watch?v=8tKGB5Q9KHk",
       "videoId": "8tKGB5Q9KHk",
       "thumbnail": "https://img.youtube.com/vi/8tKGB5Q9KHk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Leqxfa6jYzM",
+      "date": "2026-09-20",
+      "dateLabel": "09/20 (日)",
+      "time": "18:00",
+      "startsAt": "2026-09-20T18:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Leqxfa6jYzM",
+      "videoId": "Leqxfa6jYzM",
+      "thumbnail": "https://img.youtube.com/vi/Leqxfa6jYzM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -16468,6 +16498,21 @@
       "branch": "JP"
     },
     {
+      "id": "QYXz6-CRGDA",
+      "date": "2026-09-20",
+      "dateLabel": "09/20 (日)",
+      "time": "21:00",
+      "startsAt": "2026-09-20T21:00:00+09:00",
+      "name": "宝鐘マリン",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=QYXz6-CRGDA",
+      "videoId": "QYXz6-CRGDA",
+      "thumbnail": "https://img.youtube.com/vi/QYXz6-CRGDA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "X9oyNC0B_MQ",
       "date": "2026-09-20",
       "dateLabel": "09/20 (日)",
@@ -16498,6 +16543,21 @@
       "branch": "JP"
     },
     {
+      "id": "jeQMNeqsqlw",
+      "date": "2026-09-20",
+      "dateLabel": "09/20 (日)",
+      "time": "22:00",
+      "startsAt": "2026-09-20T22:00:00+09:00",
+      "name": "Ollie",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jeQMNeqsqlw",
+      "videoId": "jeQMNeqsqlw",
+      "thumbnail": "https://img.youtube.com/vi/jeQMNeqsqlw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "40O-mkKBbyo",
       "date": "2026-09-20",
       "dateLabel": "09/20 (日)",
@@ -16513,6 +16573,21 @@
       "branch": "JP"
     },
     {
+      "id": "8hdi7QizDVc",
+      "date": "2026-09-20",
+      "dateLabel": "09/20 (日)",
+      "time": "22:30",
+      "startsAt": "2026-09-20T22:30:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=8hdi7QizDVc",
+      "videoId": "8hdi7QizDVc",
+      "thumbnail": "https://img.youtube.com/vi/8hdi7QizDVc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "Cxc7q7WF_7Y",
       "date": "2026-09-21",
       "dateLabel": "09/21 (月)",
@@ -16523,6 +16598,21 @@
       "url": "https://www.youtube.com/watch?v=Cxc7q7WF_7Y",
       "videoId": "Cxc7q7WF_7Y",
       "thumbnail": "https://img.youtube.com/vi/Cxc7q7WF_7Y/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "OINwbTebFHU",
+      "date": "2026-09-21",
+      "dateLabel": "09/21 (月)",
+      "time": "10:00",
+      "startsAt": "2026-09-21T10:00:00+09:00",
+      "name": "Elizabeth",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=OINwbTebFHU",
+      "videoId": "OINwbTebFHU",
+      "thumbnail": "https://img.youtube.com/vi/OINwbTebFHU/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

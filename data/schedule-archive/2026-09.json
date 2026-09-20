@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T18:55:50.248Z",
+  "generatedAt": "2026-09-20T21:29:37.480Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -16963,6 +16963,21 @@
       "branch": "JP"
     },
     {
+      "id": "5lnwLeuKmwM",
+      "date": "2026-09-21",
+      "dateLabel": "09/21 (月)",
+      "time": "06:00",
+      "startsAt": "2026-09-21T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=5lnwLeuKmwM",
+      "videoId": "5lnwLeuKmwM",
+      "thumbnail": "https://img.youtube.com/vi/5lnwLeuKmwM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "8hdi7QizDVc",
       "date": "2026-09-21",
       "dateLabel": "09/21 (月)",
@@ -16988,6 +17003,21 @@
       "url": "https://www.youtube.com/watch?v=-GtwH8PdIxs",
       "videoId": "-GtwH8PdIxs",
       "thumbnail": "https://img.youtube.com/vi/-GtwH8PdIxs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "sjzbg7oglCg",
+      "date": "2026-09-21",
+      "dateLabel": "09/21 (月)",
+      "time": "10:00",
+      "startsAt": "2026-09-21T10:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=sjzbg7oglCg",
+      "videoId": "sjzbg7oglCg",
+      "thumbnail": "https://img.youtube.com/vi/sjzbg7oglCg/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -17023,6 +17053,21 @@
       "branch": "JP"
     },
     {
+      "id": "7sNs2-U3gns",
+      "date": "2026-09-21",
+      "dateLabel": "09/21 (月)",
+      "time": "11:00",
+      "startsAt": "2026-09-21T11:00:00+09:00",
+      "name": "白銀ノエル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=7sNs2-U3gns",
+      "videoId": "7sNs2-U3gns",
+      "thumbnail": "https://img.youtube.com/vi/7sNs2-U3gns/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "OINwbTebFHU",
       "date": "2026-09-21",
       "dateLabel": "09/21 (月)",
@@ -17048,6 +17093,21 @@
       "url": "https://www.youtube.com/watch?v=lyaIVc6rWHg",
       "videoId": "lyaIVc6rWHg",
       "thumbnail": "https://img.youtube.com/vi/lyaIVc6rWHg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "CdlaEz76_MU",
+      "date": "2026-09-21",
+      "dateLabel": "09/21 (月)",
+      "time": "14:30",
+      "startsAt": "2026-09-21T14:30:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=CdlaEz76_MU",
+      "videoId": "CdlaEz76_MU",
+      "thumbnail": "https://img.youtube.com/vi/CdlaEz76_MU/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -17168,6 +17228,21 @@
       "url": "https://www.youtube.com/watch?v=4BVf_1YzAFM",
       "videoId": "4BVf_1YzAFM",
       "thumbnail": "https://img.youtube.com/vi/4BVf_1YzAFM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Lana5wKIi_E",
+      "date": "2026-09-22",
+      "dateLabel": "09/22 (火)",
+      "time": "10:00",
+      "startsAt": "2026-09-22T10:00:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Lana5wKIi_E",
+      "videoId": "Lana5wKIi_E",
+      "thumbnail": "https://img.youtube.com/vi/Lana5wKIi_E/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

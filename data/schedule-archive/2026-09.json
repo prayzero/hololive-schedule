@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T19:37:46.716Z",
+  "generatedAt": "2026-09-21T22:51:26.052Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -17848,6 +17848,21 @@
       "branch": "JP"
     },
     {
+      "id": "fTWFB-BC61k",
+      "date": "2026-09-22",
+      "dateLabel": "09/22 (火)",
+      "time": "06:00",
+      "startsAt": "2026-09-22T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=fTWFB-BC61k",
+      "videoId": "fTWFB-BC61k",
+      "thumbnail": "https://img.youtube.com/vi/fTWFB-BC61k/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "4BVf_1YzAFM",
       "date": "2026-09-22",
       "dateLabel": "09/22 (火)",
@@ -18013,6 +18028,36 @@
       "branch": "JP"
     },
     {
+      "id": "LyQJRzm0J9Q",
+      "date": "2026-09-22",
+      "dateLabel": "09/22 (火)",
+      "time": "20:00",
+      "startsAt": "2026-09-22T20:00:00+09:00",
+      "name": "戌神ころね",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=LyQJRzm0J9Q",
+      "videoId": "LyQJRzm0J9Q",
+      "thumbnail": "https://img.youtube.com/vi/LyQJRzm0J9Q/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "EHcGLCvLxRk",
+      "date": "2026-09-22",
+      "dateLabel": "09/22 (火)",
+      "time": "21:00",
+      "startsAt": "2026-09-22T21:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=EHcGLCvLxRk",
+      "videoId": "EHcGLCvLxRk",
+      "thumbnail": "https://img.youtube.com/vi/EHcGLCvLxRk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "poTgZqk4Z38",
       "date": "2026-09-22",
       "dateLabel": "09/22 (火)",
@@ -18023,6 +18068,21 @@
       "url": "https://www.youtube.com/watch?v=poTgZqk4Z38",
       "videoId": "poTgZqk4Z38",
       "thumbnail": "https://img.youtube.com/vi/poTgZqk4Z38/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "KK1s6V3r-zA",
+      "date": "2026-09-22",
+      "dateLabel": "09/22 (火)",
+      "time": "22:00",
+      "startsAt": "2026-09-22T22:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=KK1s6V3r-zA",
+      "videoId": "KK1s6V3r-zA",
+      "thumbnail": "https://img.youtube.com/vi/KK1s6V3r-zA/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -18083,6 +18143,21 @@
       "url": "https://www.youtube.com/watch?v=ncv9cwF-XUs",
       "videoId": "ncv9cwF-XUs",
       "thumbnail": "https://img.youtube.com/vi/ncv9cwF-XUs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "E1-SAXfsQZQ",
+      "date": "2026-09-23",
+      "dateLabel": "09/23 (水)",
+      "time": "18:00",
+      "startsAt": "2026-09-23T18:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=E1-SAXfsQZQ",
+      "videoId": "E1-SAXfsQZQ",
+      "thumbnail": "https://img.youtube.com/vi/E1-SAXfsQZQ/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

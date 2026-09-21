@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T23:29:13.129Z",
+  "generatedAt": "2026-09-21T01:36:39.043Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -17008,16 +17008,16 @@
       "branch": "JP"
     },
     {
-      "id": "sjzbg7oglCg",
+      "id": "yo3vzAZmhQQ",
       "date": "2026-09-21",
       "dateLabel": "09/21 (月)",
-      "time": "10:00",
-      "startsAt": "2026-09-21T10:00:00+09:00",
-      "name": "鷹嶺ルイ",
+      "time": "09:00",
+      "startsAt": "2026-09-21T09:00:00+09:00",
+      "name": "holo EN",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=sjzbg7oglCg",
-      "videoId": "sjzbg7oglCg",
-      "thumbnail": "https://img.youtube.com/vi/sjzbg7oglCg/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=yo3vzAZmhQQ",
+      "videoId": "yo3vzAZmhQQ",
+      "thumbnail": "https://img.youtube.com/vi/yo3vzAZmhQQ/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -17033,6 +17033,21 @@
       "url": "https://www.youtube.com/watch?v=SfcOKSyA_B4",
       "videoId": "SfcOKSyA_B4",
       "thumbnail": "https://img.youtube.com/vi/SfcOKSyA_B4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "sjzbg7oglCg",
+      "date": "2026-09-21",
+      "dateLabel": "09/21 (月)",
+      "time": "10:02",
+      "startsAt": "2026-09-21T10:02:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=sjzbg7oglCg",
+      "videoId": "sjzbg7oglCg",
+      "thumbnail": "https://img.youtube.com/vi/sjzbg7oglCg/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

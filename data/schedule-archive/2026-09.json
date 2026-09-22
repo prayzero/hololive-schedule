@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T20:09:27.093Z",
+  "generatedAt": "2026-09-22T23:02:19.143Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -18568,6 +18568,36 @@
       "branch": "JP"
     },
     {
+      "id": "6ErD_panVEY",
+      "date": "2026-09-23",
+      "dateLabel": "09/23 (水)",
+      "time": "05:59",
+      "startsAt": "2026-09-23T05:59:00+09:00",
+      "name": "尾丸ポルカ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=6ErD_panVEY",
+      "videoId": "6ErD_panVEY",
+      "thumbnail": "https://img.youtube.com/vi/6ErD_panVEY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "6F0kuvS3tqE",
+      "date": "2026-09-23",
+      "dateLabel": "09/23 (水)",
+      "time": "06:00",
+      "startsAt": "2026-09-23T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=6F0kuvS3tqE",
+      "videoId": "6F0kuvS3tqE",
+      "thumbnail": "https://img.youtube.com/vi/6F0kuvS3tqE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "FQY8Xh3amJI",
       "date": "2026-09-23",
       "dateLabel": "09/23 (水)",
@@ -18623,6 +18653,21 @@
       "url": "https://www.youtube.com/watch?v=qZpO05cQXvw",
       "videoId": "qZpO05cQXvw",
       "thumbnail": "https://img.youtube.com/vi/qZpO05cQXvw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "_teljPCxeFM",
+      "date": "2026-09-23",
+      "dateLabel": "09/23 (水)",
+      "time": "14:30",
+      "startsAt": "2026-09-23T14:30:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=_teljPCxeFM",
+      "videoId": "_teljPCxeFM",
+      "thumbnail": "https://img.youtube.com/vi/_teljPCxeFM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -18758,6 +18803,21 @@
       "url": "https://www.youtube.com/watch?v=n0NYvgFBVJg",
       "videoId": "n0NYvgFBVJg",
       "thumbnail": "https://img.youtube.com/vi/n0NYvgFBVJg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Jq_6H1Zute4",
+      "date": "2026-09-23",
+      "dateLabel": "09/23 (水)",
+      "time": "22:00",
+      "startsAt": "2026-09-23T22:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Jq_6H1Zute4",
+      "videoId": "Jq_6H1Zute4",
+      "thumbnail": "https://img.youtube.com/vi/Jq_6H1Zute4/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

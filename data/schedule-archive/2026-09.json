@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T01:23:19.300Z",
+  "generatedAt": "2026-09-22T05:02:19.936Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -17938,21 +17938,6 @@
       "branch": "JP"
     },
     {
-      "id": "Lana5wKIi_E",
-      "date": "2026-09-22",
-      "dateLabel": "09/22 (火)",
-      "time": "10:00",
-      "startsAt": "2026-09-22T10:00:00+09:00",
-      "name": "Kobo",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=Lana5wKIi_E",
-      "videoId": "Lana5wKIi_E",
-      "thumbnail": "https://img.youtube.com/vi/Lana5wKIi_E/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "N-RBlIBPbic",
       "date": "2026-09-22",
       "dateLabel": "09/22 (火)",
@@ -17968,16 +17953,61 @@
       "branch": "JP"
     },
     {
-      "id": "RrpVc4o4Hw4",
+      "id": "Lana5wKIi_E",
+      "date": "2026-09-22",
+      "dateLabel": "09/22 (火)",
+      "time": "10:33",
+      "startsAt": "2026-09-22T10:33:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Lana5wKIi_E",
+      "videoId": "Lana5wKIi_E",
+      "thumbnail": "https://img.youtube.com/vi/Lana5wKIi_E/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "bNKwoq-PWlg",
       "date": "2026-09-22",
       "dateLabel": "09/22 (火)",
       "time": "12:00",
       "startsAt": "2026-09-22T12:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=bNKwoq-PWlg",
+      "videoId": "bNKwoq-PWlg",
+      "thumbnail": "https://img.youtube.com/vi/bNKwoq-PWlg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "RrpVc4o4Hw4",
+      "date": "2026-09-22",
+      "dateLabel": "09/22 (火)",
+      "time": "12:17",
+      "startsAt": "2026-09-22T12:17:00+09:00",
       "name": "博衣こより",
       "title": null,
       "url": "https://www.youtube.com/watch?v=RrpVc4o4Hw4",
       "videoId": "RrpVc4o4Hw4",
       "thumbnail": "https://img.youtube.com/vi/RrpVc4o4Hw4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "XwymRrdMVwY",
+      "date": "2026-09-22",
+      "dateLabel": "09/22 (火)",
+      "time": "13:01",
+      "startsAt": "2026-09-22T13:01:00+09:00",
+      "name": "IRyS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=XwymRrdMVwY",
+      "videoId": "XwymRrdMVwY",
+      "thumbnail": "https://img.youtube.com/vi/XwymRrdMVwY/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -18013,6 +18043,21 @@
       "branch": "JP"
     },
     {
+      "id": "jzRnyX3FhtE",
+      "date": "2026-09-22",
+      "dateLabel": "09/22 (火)",
+      "time": "16:00",
+      "startsAt": "2026-09-22T16:00:00+09:00",
+      "name": "Moona",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jzRnyX3FhtE",
+      "videoId": "jzRnyX3FhtE",
+      "thumbnail": "https://img.youtube.com/vi/jzRnyX3FhtE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "Yf8bQ_jptps",
       "date": "2026-09-22",
       "dateLabel": "09/22 (火)",
@@ -18023,6 +18068,21 @@
       "url": "https://www.youtube.com/watch?v=Yf8bQ_jptps",
       "videoId": "Yf8bQ_jptps",
       "thumbnail": "https://img.youtube.com/vi/Yf8bQ_jptps/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "hZfAOQA60jo",
+      "date": "2026-09-22",
+      "dateLabel": "09/22 (火)",
+      "time": "18:30",
+      "startsAt": "2026-09-22T18:30:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=hZfAOQA60jo",
+      "videoId": "hZfAOQA60jo",
+      "thumbnail": "https://img.youtube.com/vi/hZfAOQA60jo/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -18073,21 +18133,6 @@
       "branch": "JP"
     },
     {
-      "id": "jHAV43khTSk",
-      "date": "2026-09-22",
-      "dateLabel": "09/22 (火)",
-      "time": "20:00",
-      "startsAt": "2026-09-22T20:00:00+09:00",
-      "name": "Zeta",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=jHAV43khTSk",
-      "videoId": "jHAV43khTSk",
-      "thumbnail": "https://img.youtube.com/vi/jHAV43khTSk/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "EHcGLCvLxRk",
       "date": "2026-09-22",
       "dateLabel": "09/22 (火)",
@@ -18128,6 +18173,21 @@
       "url": "https://www.youtube.com/watch?v=KK1s6V3r-zA",
       "videoId": "KK1s6V3r-zA",
       "thumbnail": "https://img.youtube.com/vi/KK1s6V3r-zA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "jHAV43khTSk",
+      "date": "2026-09-22",
+      "dateLabel": "09/22 (火)",
+      "time": "22:00",
+      "startsAt": "2026-09-22T22:00:00+09:00",
+      "name": "Zeta",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jHAV43khTSk",
+      "videoId": "jHAV43khTSk",
+      "thumbnail": "https://img.youtube.com/vi/jHAV43khTSk/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

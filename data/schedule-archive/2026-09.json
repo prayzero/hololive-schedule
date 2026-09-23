@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-22T23:02:19.143Z",
+  "generatedAt": "2026-09-23T01:27:12.318Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -18598,6 +18598,21 @@
       "branch": "JP"
     },
     {
+      "id": "b2ng2K_NXG4",
+      "date": "2026-09-23",
+      "dateLabel": "09/23 (水)",
+      "time": "09:00",
+      "startsAt": "2026-09-23T09:00:00+09:00",
+      "name": "holo EN",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=b2ng2K_NXG4",
+      "videoId": "b2ng2K_NXG4",
+      "thumbnail": "https://img.youtube.com/vi/b2ng2K_NXG4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "FQY8Xh3amJI",
       "date": "2026-09-23",
       "dateLabel": "09/23 (水)",
@@ -18773,6 +18788,21 @@
       "url": "https://www.youtube.com/watch?v=7wi3P8vrhU4",
       "videoId": "7wi3P8vrhU4",
       "thumbnail": "https://img.youtube.com/vi/7wi3P8vrhU4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "2Qvw9afY2jg",
+      "date": "2026-09-23",
+      "dateLabel": "09/23 (水)",
+      "time": "21:00",
+      "startsAt": "2026-09-23T21:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=2Qvw9afY2jg",
+      "videoId": "2Qvw9afY2jg",
+      "thumbnail": "https://img.youtube.com/vi/2Qvw9afY2jg/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

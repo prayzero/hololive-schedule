@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T17:19:11.120Z",
+  "generatedAt": "2026-09-23T20:32:14.154Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -19483,6 +19483,21 @@
       "branch": "JP"
     },
     {
+      "id": "BFyBEBctL3A",
+      "date": "2026-09-24",
+      "dateLabel": "09/24 (木)",
+      "time": "15:00",
+      "startsAt": "2026-09-24T15:00:00+09:00",
+      "name": "Kaela",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=BFyBEBctL3A",
+      "videoId": "BFyBEBctL3A",
+      "thumbnail": "https://img.youtube.com/vi/BFyBEBctL3A/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "XQc9KZlXL3E",
       "date": "2026-09-24",
       "dateLabel": "09/24 (木)",
@@ -19588,6 +19603,21 @@
       "branch": "JP"
     },
     {
+      "id": "jxDtCG3i30s",
+      "date": "2026-09-24",
+      "dateLabel": "09/24 (木)",
+      "time": "21:00",
+      "startsAt": "2026-09-24T21:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jxDtCG3i30s",
+      "videoId": "jxDtCG3i30s",
+      "thumbnail": "https://img.youtube.com/vi/jxDtCG3i30s/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "SQXiAp3L7K0",
       "date": "2026-09-24",
       "dateLabel": "09/24 (木)",
@@ -19613,6 +19643,21 @@
       "url": "https://www.youtube.com/watch?v=lR3vLa7ee5I",
       "videoId": "lR3vLa7ee5I",
       "thumbnail": "https://img.youtube.com/vi/lR3vLa7ee5I/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "PtbDj9jg380",
+      "date": "2026-09-24",
+      "dateLabel": "09/24 (木)",
+      "time": "23:00",
+      "startsAt": "2026-09-24T23:00:00+09:00",
+      "name": "Kiara",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=PtbDj9jg380",
+      "videoId": "PtbDj9jg380",
+      "thumbnail": "https://img.youtube.com/vi/PtbDj9jg380/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

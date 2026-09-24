@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T20:44:57.775Z",
+  "generatedAt": "2026-09-24T23:34:35.696Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20273,6 +20273,36 @@
       "url": "https://www.youtube.com/watch?v=meIteEbwgQg",
       "videoId": "meIteEbwgQg",
       "thumbnail": "https://img.youtube.com/vi/meIteEbwgQg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "1cIGWS6WvCc",
+      "date": "2026-09-25",
+      "dateLabel": "09/25 (金)",
+      "time": "06:00",
+      "startsAt": "2026-09-25T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=1cIGWS6WvCc",
+      "videoId": "1cIGWS6WvCc",
+      "thumbnail": "https://img.youtube.com/vi/1cIGWS6WvCc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "SE0sxgNCeD4",
+      "date": "2026-09-25",
+      "dateLabel": "09/25 (金)",
+      "time": "07:00",
+      "startsAt": "2026-09-25T07:00:00+09:00",
+      "name": "桃鈴ねね",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=SE0sxgNCeD4",
+      "videoId": "SE0sxgNCeD4",
+      "thumbnail": "https://img.youtube.com/vi/SE0sxgNCeD4/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

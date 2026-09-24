@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T17:24:11.047Z",
+  "generatedAt": "2026-09-24T20:44:57.775Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20378,6 +20378,36 @@
       "url": "https://www.youtube.com/watch?v=m6FdZU1SW5w",
       "videoId": "m6FdZU1SW5w",
       "thumbnail": "https://img.youtube.com/vi/m6FdZU1SW5w/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "jkpxQ344l-E",
+      "date": "2026-09-25",
+      "dateLabel": "09/25 (金)",
+      "time": "22:00",
+      "startsAt": "2026-09-25T22:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jkpxQ344l-E",
+      "videoId": "jkpxQ344l-E",
+      "thumbnail": "https://img.youtube.com/vi/jkpxQ344l-E/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "PXpnTX8dld4",
+      "date": "2026-09-25",
+      "dateLabel": "09/25 (金)",
+      "time": "22:00",
+      "startsAt": "2026-09-25T22:00:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=PXpnTX8dld4",
+      "videoId": "PXpnTX8dld4",
+      "thumbnail": "https://img.youtube.com/vi/PXpnTX8dld4/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

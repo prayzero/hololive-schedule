@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T04:56:59.240Z",
+  "generatedAt": "2026-09-24T06:42:33.376Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -19591,8 +19591,8 @@
       "id": "BFyBEBctL3A",
       "date": "2026-09-24",
       "dateLabel": "09/24 (木)",
-      "time": "15:00",
-      "startsAt": "2026-09-24T15:00:00+09:00",
+      "time": "14:59",
+      "startsAt": "2026-09-24T14:59:00+09:00",
       "name": "Kaela",
       "title": null,
       "url": "https://www.youtube.com/watch?v=BFyBEBctL3A",
@@ -19783,6 +19783,21 @@
       "branch": "JP"
     },
     {
+      "id": "cTeiGKte9uo",
+      "date": "2026-09-24",
+      "dateLabel": "09/24 (木)",
+      "time": "21:00",
+      "startsAt": "2026-09-24T21:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=cTeiGKte9uo",
+      "videoId": "cTeiGKte9uo",
+      "thumbnail": "https://img.youtube.com/vi/cTeiGKte9uo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "3InqyVRGFTo",
       "date": "2026-09-24",
       "dateLabel": "09/24 (木)",
@@ -19858,6 +19873,21 @@
       "branch": "JP"
     },
     {
+      "id": "wi-QysXMreI",
+      "date": "2026-09-24",
+      "dateLabel": "09/24 (木)",
+      "time": "23:00",
+      "startsAt": "2026-09-24T23:00:00+09:00",
+      "name": "Baelz",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=wi-QysXMreI",
+      "videoId": "wi-QysXMreI",
+      "thumbnail": "https://img.youtube.com/vi/wi-QysXMreI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "PtbDj9jg380",
       "date": "2026-09-24",
       "dateLabel": "09/24 (木)",
@@ -19868,6 +19898,21 @@
       "url": "https://www.youtube.com/watch?v=PtbDj9jg380",
       "videoId": "PtbDj9jg380",
       "thumbnail": "https://img.youtube.com/vi/PtbDj9jg380/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "m7fX9PYU5-A",
+      "date": "2026-09-24",
+      "dateLabel": "09/24 (木)",
+      "time": "23:00",
+      "startsAt": "2026-09-24T23:00:00+09:00",
+      "name": "Raora",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=m7fX9PYU5-A",
+      "videoId": "m7fX9PYU5-A",
+      "thumbnail": "https://img.youtube.com/vi/m7fX9PYU5-A/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

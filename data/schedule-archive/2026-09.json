@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-24T23:34:35.696Z",
+  "generatedAt": "2026-09-25T05:01:57.376Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20308,6 +20308,51 @@
       "branch": "JP"
     },
     {
+      "id": "i985Rc1Gc3o",
+      "date": "2026-09-25",
+      "dateLabel": "09/25 (金)",
+      "time": "12:00",
+      "startsAt": "2026-09-25T12:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=i985Rc1Gc3o",
+      "videoId": "i985Rc1Gc3o",
+      "thumbnail": "https://img.youtube.com/vi/i985Rc1Gc3o/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Q-DuuFEFVsY",
+      "date": "2026-09-25",
+      "dateLabel": "09/25 (金)",
+      "time": "16:00",
+      "startsAt": "2026-09-25T16:00:00+09:00",
+      "name": "Iofi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Q-DuuFEFVsY",
+      "videoId": "Q-DuuFEFVsY",
+      "thumbnail": "https://img.youtube.com/vi/Q-DuuFEFVsY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "s9zHPReS72Y",
+      "date": "2026-09-25",
+      "dateLabel": "09/25 (金)",
+      "time": "18:30",
+      "startsAt": "2026-09-25T18:30:00+09:00",
+      "name": "さくらみこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=s9zHPReS72Y",
+      "videoId": "s9zHPReS72Y",
+      "thumbnail": "https://img.youtube.com/vi/s9zHPReS72Y/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "qzZG5O_wx08",
       "date": "2026-09-25",
       "dateLabel": "09/25 (金)",
@@ -20428,6 +20473,21 @@
       "branch": "JP"
     },
     {
+      "id": "4UXtHi0_8D4",
+      "date": "2026-09-25",
+      "dateLabel": "09/25 (金)",
+      "time": "22:00",
+      "startsAt": "2026-09-25T22:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=4UXtHi0_8D4",
+      "videoId": "4UXtHi0_8D4",
+      "thumbnail": "https://img.youtube.com/vi/4UXtHi0_8D4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "PXpnTX8dld4",
       "date": "2026-09-25",
       "dateLabel": "09/25 (金)",
@@ -20438,6 +20498,36 @@
       "url": "https://www.youtube.com/watch?v=PXpnTX8dld4",
       "videoId": "PXpnTX8dld4",
       "thumbnail": "https://img.youtube.com/vi/PXpnTX8dld4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "09PC6CQbHeQ",
+      "date": "2026-09-25",
+      "dateLabel": "09/25 (金)",
+      "time": "22:00",
+      "startsAt": "2026-09-25T22:00:00+09:00",
+      "name": "アソビ★まわり隊！",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=09PC6CQbHeQ",
+      "videoId": "09PC6CQbHeQ",
+      "thumbnail": "https://img.youtube.com/vi/09PC6CQbHeQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "-atHbK9CF-U",
+      "date": "2026-09-25",
+      "dateLabel": "09/25 (金)",
+      "time": "23:00",
+      "startsAt": "2026-09-25T23:00:00+09:00",
+      "name": "儒烏風亭らでん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=-atHbK9CF-U",
+      "videoId": "-atHbK9CF-U",
+      "thumbnail": "https://img.youtube.com/vi/-atHbK9CF-U/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

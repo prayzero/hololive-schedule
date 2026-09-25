@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T17:55:39.989Z",
+  "generatedAt": "2026-09-25T21:30:31.823Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20908,6 +20908,21 @@
       "branch": "JP"
     },
     {
+      "id": "Vm1r_QD8V1E",
+      "date": "2026-09-26",
+      "dateLabel": "09/26 (土)",
+      "time": "06:00",
+      "startsAt": "2026-09-26T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Vm1r_QD8V1E",
+      "videoId": "Vm1r_QD8V1E",
+      "thumbnail": "https://img.youtube.com/vi/Vm1r_QD8V1E/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "B6q-96i0raE",
       "date": "2026-09-26",
       "dateLabel": "09/26 (土)",
@@ -21088,6 +21103,21 @@
       "branch": "JP"
     },
     {
+      "id": "qGglGbvHaSA",
+      "date": "2026-09-26",
+      "dateLabel": "09/26 (土)",
+      "time": "20:00",
+      "startsAt": "2026-09-26T20:00:00+09:00",
+      "name": "猫又おかゆ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=qGglGbvHaSA",
+      "videoId": "qGglGbvHaSA",
+      "thumbnail": "https://img.youtube.com/vi/qGglGbvHaSA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "1F-u70Qf7W4",
       "date": "2026-09-26",
       "dateLabel": "09/26 (土)",
@@ -21113,6 +21143,21 @@
       "url": "https://www.youtube.com/watch?v=mvLjwGCje64",
       "videoId": "mvLjwGCje64",
       "thumbnail": "https://img.youtube.com/vi/mvLjwGCje64/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "DC-jTgas4jw",
+      "date": "2026-09-26",
+      "dateLabel": "09/26 (土)",
+      "time": "21:00",
+      "startsAt": "2026-09-26T21:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=DC-jTgas4jw",
+      "videoId": "DC-jTgas4jw",
+      "thumbnail": "https://img.youtube.com/vi/DC-jTgas4jw/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -21218,6 +21263,21 @@
       "url": "https://www.youtube.com/watch?v=yP8OIadPmQc",
       "videoId": "yP8OIadPmQc",
       "thumbnail": "https://img.youtube.com/vi/yP8OIadPmQc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "SqQWD7yy06U",
+      "date": "2026-09-27",
+      "dateLabel": "09/27 (日)",
+      "time": "13:00",
+      "startsAt": "2026-09-27T13:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=SqQWD7yy06U",
+      "videoId": "SqQWD7yy06U",
+      "thumbnail": "https://img.youtube.com/vi/SqQWD7yy06U/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

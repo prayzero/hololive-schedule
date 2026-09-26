@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-26T17:59:41.008Z",
+  "generatedAt": "2026-09-26T21:03:54.870Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -21823,6 +21823,21 @@
       "branch": "JP"
     },
     {
+      "id": "e4yFFBF8GmI",
+      "date": "2026-09-27",
+      "dateLabel": "09/27 (日)",
+      "time": "06:00",
+      "startsAt": "2026-09-27T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=e4yFFBF8GmI",
+      "videoId": "e4yFFBF8GmI",
+      "thumbnail": "https://img.youtube.com/vi/e4yFFBF8GmI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "Xb1LKIdb4Ps",
       "date": "2026-09-27",
       "dateLabel": "09/27 (日)",
@@ -21878,6 +21893,21 @@
       "url": "https://www.youtube.com/watch?v=uHDGJmhsX7k",
       "videoId": "uHDGJmhsX7k",
       "thumbnail": "https://img.youtube.com/vi/uHDGJmhsX7k/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "EOxKbtzW50M",
+      "date": "2026-09-27",
+      "dateLabel": "09/27 (日)",
+      "time": "12:00",
+      "startsAt": "2026-09-27T12:00:00+09:00",
+      "name": "Anya",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=EOxKbtzW50M",
+      "videoId": "EOxKbtzW50M",
+      "thumbnail": "https://img.youtube.com/vi/EOxKbtzW50M/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -21998,6 +22028,21 @@
       "url": "https://www.youtube.com/watch?v=84hMf442z7w",
       "videoId": "84hMf442z7w",
       "thumbnail": "https://img.youtube.com/vi/84hMf442z7w/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "LKWMaCecqBw",
+      "date": "2026-09-27",
+      "dateLabel": "09/27 (日)",
+      "time": "22:30",
+      "startsAt": "2026-09-27T22:30:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=LKWMaCecqBw",
+      "videoId": "LKWMaCecqBw",
+      "thumbnail": "https://img.youtube.com/vi/LKWMaCecqBw/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

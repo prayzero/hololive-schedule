@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-25T21:30:31.823Z",
+  "generatedAt": "2026-09-26T00:07:56.766Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -20926,8 +20926,8 @@
       "id": "B6q-96i0raE",
       "date": "2026-09-26",
       "dateLabel": "09/26 (土)",
-      "time": "07:00",
-      "startsAt": "2026-09-26T07:00:00+09:00",
+      "time": "07:01",
+      "startsAt": "2026-09-26T07:01:00+09:00",
       "name": "Gigi",
       "title": null,
       "url": "https://www.youtube.com/watch?v=B6q-96i0raE",
@@ -20953,21 +20953,6 @@
       "branch": "JP"
     },
     {
-      "id": "0GDQs_jJF3M",
-      "date": "2026-09-26",
-      "dateLabel": "09/26 (土)",
-      "time": "09:00",
-      "startsAt": "2026-09-26T09:00:00+09:00",
-      "name": "Kronii",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=0GDQs_jJF3M",
-      "videoId": "0GDQs_jJF3M",
-      "thumbnail": "https://img.youtube.com/vi/0GDQs_jJF3M/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "qa3bFuPMI8Y",
       "date": "2026-09-26",
       "dateLabel": "09/26 (土)",
@@ -20978,6 +20963,21 @@
       "url": "https://www.youtube.com/watch?v=qa3bFuPMI8Y",
       "videoId": "qa3bFuPMI8Y",
       "thumbnail": "https://img.youtube.com/vi/qa3bFuPMI8Y/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "0GDQs_jJF3M",
+      "date": "2026-09-26",
+      "dateLabel": "09/26 (土)",
+      "time": "09:01",
+      "startsAt": "2026-09-26T09:01:00+09:00",
+      "name": "Kronii",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=0GDQs_jJF3M",
+      "videoId": "0GDQs_jJF3M",
+      "thumbnail": "https://img.youtube.com/vi/0GDQs_jJF3M/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

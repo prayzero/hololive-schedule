@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T17:49:36.784Z",
+  "generatedAt": "2026-09-27T20:33:56.878Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -22726,8 +22726,8 @@
       "id": "QO2rhoB8nqQ",
       "date": "2026-09-28",
       "dateLabel": "09/28 (月)",
-      "time": "03:30",
-      "startsAt": "2026-09-28T03:30:00+09:00",
+      "time": "03:32",
+      "startsAt": "2026-09-28T03:32:00+09:00",
       "name": "Elizabeth",
       "title": null,
       "url": "https://www.youtube.com/watch?v=QO2rhoB8nqQ",
@@ -22748,6 +22748,21 @@
       "url": "https://www.youtube.com/watch?v=Jr4bYLjNYpM",
       "videoId": "Jr4bYLjNYpM",
       "thumbnail": "https://img.youtube.com/vi/Jr4bYLjNYpM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "EVnItjScKOk",
+      "date": "2026-09-28",
+      "dateLabel": "09/28 (月)",
+      "time": "04:45",
+      "startsAt": "2026-09-28T04:45:00+09:00",
+      "name": "Elizabeth",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=EVnItjScKOk",
+      "videoId": "EVnItjScKOk",
+      "thumbnail": "https://img.youtube.com/vi/EVnItjScKOk/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -22793,6 +22808,21 @@
       "url": "https://www.youtube.com/watch?v=DVvbv1-YDsc",
       "videoId": "DVvbv1-YDsc",
       "thumbnail": "https://img.youtube.com/vi/DVvbv1-YDsc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "a-wuEJwnYF8",
+      "date": "2026-09-28",
+      "dateLabel": "09/28 (月)",
+      "time": "09:30",
+      "startsAt": "2026-09-28T09:30:00+09:00",
+      "name": "Ina",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=a-wuEJwnYF8",
+      "videoId": "a-wuEJwnYF8",
+      "thumbnail": "https://img.youtube.com/vi/a-wuEJwnYF8/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -22963,6 +22993,21 @@
       "branch": "JP"
     },
     {
+      "id": "hZHAzSPjXpE",
+      "date": "2026-09-28",
+      "dateLabel": "09/28 (月)",
+      "time": "20:00",
+      "startsAt": "2026-09-28T20:00:00+09:00",
+      "name": "宙科そぴあ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=hZHAzSPjXpE",
+      "videoId": "hZHAzSPjXpE",
+      "thumbnail": "https://img.youtube.com/vi/hZHAzSPjXpE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "rV7esp4Zcak",
       "date": "2026-09-28",
       "dateLabel": "09/28 (月)",
@@ -23123,21 +23168,6 @@
       "url": "https://www.youtube.com/watch?v=Cs7QI0hZ4XM",
       "videoId": "Cs7QI0hZ4XM",
       "thumbnail": "https://img.youtube.com/vi/Cs7QI0hZ4XM/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
-      "id": "hZHAzSPjXpE",
-      "date": "2026-09-29",
-      "dateLabel": "09/29 (火)",
-      "time": "20:00",
-      "startsAt": "2026-09-29T20:00:00+09:00",
-      "name": "宙科そぴあ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=hZHAzSPjXpE",
-      "videoId": "hZHAzSPjXpE",
-      "thumbnail": "https://img.youtube.com/vi/hZHAzSPjXpE/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

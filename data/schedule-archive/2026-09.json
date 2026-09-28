@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T23:23:06.294Z",
+  "generatedAt": "2026-09-28T01:57:32.708Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -22846,8 +22846,8 @@
       "id": "DVvbv1-YDsc",
       "date": "2026-09-28",
       "dateLabel": "09/28 (月)",
-      "time": "09:00",
-      "startsAt": "2026-09-28T09:00:00+09:00",
+      "time": "08:56",
+      "startsAt": "2026-09-28T08:56:00+09:00",
       "name": "Shiori",
       "title": null,
       "url": "https://www.youtube.com/watch?v=DVvbv1-YDsc",
@@ -22883,6 +22883,21 @@
       "url": "https://www.youtube.com/watch?v=K4akfqw3smE",
       "videoId": "K4akfqw3smE",
       "thumbnail": "https://img.youtube.com/vi/K4akfqw3smE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "XkNLDt2J37M",
+      "date": "2026-09-28",
+      "dateLabel": "09/28 (月)",
+      "time": "10:02",
+      "startsAt": "2026-09-28T10:02:00+09:00",
+      "name": "Kronii",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=XkNLDt2J37M",
+      "videoId": "XkNLDt2J37M",
+      "thumbnail": "https://img.youtube.com/vi/XkNLDt2J37M/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

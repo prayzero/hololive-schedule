@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T15:03:05.208Z",
+  "generatedAt": "2026-09-28T17:03:41.959Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -3488,21 +3488,6 @@
       "url": "https://www.youtube.com/watch?v=z1vE21rZEv8",
       "videoId": "z1vE21rZEv8",
       "thumbnail": "https://img.youtube.com/vi/z1vE21rZEv8/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "EN"
-    },
-    {
-      "id": "YgRGMmcfHO8",
-      "date": "2026-07-31",
-      "dateLabel": "07/31 (金)",
-      "time": "12:00",
-      "startsAt": "2026-07-31T12:00:00+09:00",
-      "name": "IRyS",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=YgRGMmcfHO8",
-      "videoId": "YgRGMmcfHO8",
-      "thumbnail": "https://img.youtube.com/vi/YgRGMmcfHO8/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "EN"

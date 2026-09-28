@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T01:57:32.708Z",
+  "generatedAt": "2026-09-28T05:29:04.441Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -22936,13 +22936,28 @@
       "id": "TWIWV3RbXvM",
       "date": "2026-09-28",
       "dateLabel": "09/28 (月)",
-      "time": "12:00",
-      "startsAt": "2026-09-28T12:00:00+09:00",
+      "time": "12:01",
+      "startsAt": "2026-09-28T12:01:00+09:00",
       "name": "鷹嶺ルイ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=TWIWV3RbXvM",
       "videoId": "TWIWV3RbXvM",
       "thumbnail": "https://img.youtube.com/vi/TWIWV3RbXvM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Mf5iJ2NpR48",
+      "date": "2026-09-28",
+      "dateLabel": "09/28 (月)",
+      "time": "19:00",
+      "startsAt": "2026-09-28T19:00:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Mf5iJ2NpR48",
+      "videoId": "Mf5iJ2NpR48",
+      "thumbnail": "https://img.youtube.com/vi/Mf5iJ2NpR48/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

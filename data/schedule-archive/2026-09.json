@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T15:08:49.667Z",
+  "generatedAt": "2026-09-29T20:02:43.029Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -24733,6 +24733,51 @@
       "branch": "JP"
     },
     {
+      "id": "wRNO-yz4f20",
+      "date": "2026-09-30",
+      "dateLabel": "09/30 (水)",
+      "time": "07:00",
+      "startsAt": "2026-09-30T07:00:00+09:00",
+      "name": "風真いろは",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=wRNO-yz4f20",
+      "videoId": "wRNO-yz4f20",
+      "thumbnail": "https://img.youtube.com/vi/wRNO-yz4f20/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Ig-fbNUYYFY",
+      "date": "2026-09-30",
+      "dateLabel": "09/30 (水)",
+      "time": "08:00",
+      "startsAt": "2026-09-30T08:00:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Ig-fbNUYYFY",
+      "videoId": "Ig-fbNUYYFY",
+      "thumbnail": "https://img.youtube.com/vi/Ig-fbNUYYFY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "LpnBAELPrKU",
+      "date": "2026-09-30",
+      "dateLabel": "09/30 (水)",
+      "time": "08:00",
+      "startsAt": "2026-09-30T08:00:00+09:00",
+      "name": "Gigi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=LpnBAELPrKU",
+      "videoId": "LpnBAELPrKU",
+      "thumbnail": "https://img.youtube.com/vi/LpnBAELPrKU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "dSJCoIVheEo",
       "date": "2026-09-30",
       "dateLabel": "09/30 (水)",
@@ -24853,6 +24898,21 @@
       "branch": "JP"
     },
     {
+      "id": "D8rrDy4nFrQ",
+      "date": "2026-09-30",
+      "dateLabel": "09/30 (水)",
+      "time": "20:00",
+      "startsAt": "2026-09-30T20:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=D8rrDy4nFrQ",
+      "videoId": "D8rrDy4nFrQ",
+      "thumbnail": "https://img.youtube.com/vi/D8rrDy4nFrQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "5JhyDHpdBJs",
       "date": "2026-09-30",
       "dateLabel": "09/30 (水)",
@@ -24898,6 +24958,36 @@
       "branch": "JP"
     },
     {
+      "id": "VToHFrkPpW0",
+      "date": "2026-09-30",
+      "dateLabel": "09/30 (水)",
+      "time": "21:00",
+      "startsAt": "2026-09-30T21:00:00+09:00",
+      "name": "IRyS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=VToHFrkPpW0",
+      "videoId": "VToHFrkPpW0",
+      "thumbnail": "https://img.youtube.com/vi/VToHFrkPpW0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Ql-R2AG8KAM",
+      "date": "2026-09-30",
+      "dateLabel": "09/30 (水)",
+      "time": "21:00",
+      "startsAt": "2026-09-30T21:00:00+09:00",
+      "name": "Moona",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Ql-R2AG8KAM",
+      "videoId": "Ql-R2AG8KAM",
+      "thumbnail": "https://img.youtube.com/vi/Ql-R2AG8KAM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "vlJ4s7NvxVk",
       "date": "2026-09-30",
       "dateLabel": "09/30 (水)",
@@ -24923,6 +25013,21 @@
       "url": "https://www.youtube.com/watch?v=0XfSSfCjakE",
       "videoId": "0XfSSfCjakE",
       "thumbnail": "https://img.youtube.com/vi/0XfSSfCjakE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "aGHE6jSxncw",
+      "date": "2026-09-30",
+      "dateLabel": "09/30 (水)",
+      "time": "23:00",
+      "startsAt": "2026-09-30T23:00:00+09:00",
+      "name": "Raora",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=aGHE6jSxncw",
+      "videoId": "aGHE6jSxncw",
+      "thumbnail": "https://img.youtube.com/vi/aGHE6jSxncw/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

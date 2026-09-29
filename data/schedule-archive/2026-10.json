@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-09-29T15:08:49.667Z",
+  "source": "https://schedule.hololive.tv/lives/hololive",
+  "sources": [
+    "https://schedule.hololive.tv/lives/hololive",
+    "https://schedule.hololive.tv/lives/indonesia",
+    "https://schedule.hololive.tv/lives/english",
+    "https://schedule.hololive.tv/lives/dev_is"
+  ],
+  "sourceRefreshMinutes": 15,
+  "collectorVersion": "3.0.0",
+  "timezone": "Asia/Tokyo",
+  "month": "2026-10",
+  "entries": [
+    {
+      "id": "PJv4XSMhjps",
+      "date": "2026-10-01",
+      "dateLabel": "10/01 (木)",
+      "time": "13:00",
+      "startsAt": "2026-10-01T13:00:00+09:00",
+      "name": "Ollie",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=PJv4XSMhjps",
+      "videoId": "PJv4XSMhjps",
+      "thumbnail": "https://img.youtube.com/vi/PJv4XSMhjps/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "LKWMaCecqBw",
+      "date": "2026-10-01",
+      "dateLabel": "10/01 (木)",
+      "time": "22:30",
+      "startsAt": "2026-10-01T22:30:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=LKWMaCecqBw",
+      "videoId": "LKWMaCecqBw",
+      "thumbnail": "https://img.youtube.com/vi/LKWMaCecqBw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    }
+  ]
+}

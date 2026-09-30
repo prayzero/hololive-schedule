@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T15:52:39.923Z",
+  "generatedAt": "2026-09-30T20:45:55.860Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12,6 +12,21 @@
   "timezone": "Asia/Tokyo",
   "month": "2026-10",
   "entries": [
+    {
+      "id": "Wq4h-Ty4kbM",
+      "date": "2026-10-01",
+      "dateLabel": "10/01 (木)",
+      "time": "07:00",
+      "startsAt": "2026-10-01T07:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Wq4h-Ty4kbM",
+      "videoId": "Wq4h-Ty4kbM",
+      "thumbnail": "https://img.youtube.com/vi/Wq4h-Ty4kbM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
     {
       "id": "KpCdU2wEHYs",
       "date": "2026-10-01",
@@ -58,6 +73,21 @@
       "branch": "JP"
     },
     {
+      "id": "6TI2ObQ4u1Y",
+      "date": "2026-10-01",
+      "dateLabel": "10/01 (木)",
+      "time": "12:00",
+      "startsAt": "2026-10-01T12:00:00+09:00",
+      "name": "風真いろは",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=6TI2ObQ4u1Y",
+      "videoId": "6TI2ObQ4u1Y",
+      "thumbnail": "https://img.youtube.com/vi/6TI2ObQ4u1Y/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "7EwSHuAAiUo",
       "date": "2026-10-01",
       "dateLabel": "10/01 (木)",
@@ -88,6 +118,21 @@
       "branch": "JP"
     },
     {
+      "id": "t0ypeQFOuts",
+      "date": "2026-10-01",
+      "dateLabel": "10/01 (木)",
+      "time": "16:00",
+      "startsAt": "2026-10-01T16:00:00+09:00",
+      "name": "夏色まつり",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=t0ypeQFOuts",
+      "videoId": "t0ypeQFOuts",
+      "thumbnail": "https://img.youtube.com/vi/t0ypeQFOuts/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "x9F-2UR4oJ8",
       "date": "2026-10-01",
       "dateLabel": "10/01 (木)",
@@ -98,6 +143,21 @@
       "url": "https://www.youtube.com/watch?v=x9F-2UR4oJ8",
       "videoId": "x9F-2UR4oJ8",
       "thumbnail": "https://img.youtube.com/vi/x9F-2UR4oJ8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "pPXaqk00utA",
+      "date": "2026-10-01",
+      "dateLabel": "10/01 (木)",
+      "time": "16:00",
+      "startsAt": "2026-10-01T16:00:00+09:00",
+      "name": "Kaela",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=pPXaqk00utA",
+      "videoId": "pPXaqk00utA",
+      "thumbnail": "https://img.youtube.com/vi/pPXaqk00utA/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -128,6 +188,21 @@
       "url": "https://www.youtube.com/watch?v=dy0y6uIvo6M",
       "videoId": "dy0y6uIvo6M",
       "thumbnail": "https://img.youtube.com/vi/dy0y6uIvo6M/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "JnCMZw3EQ1c",
+      "date": "2026-10-01",
+      "dateLabel": "10/01 (木)",
+      "time": "18:30",
+      "startsAt": "2026-10-01T18:30:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=JnCMZw3EQ1c",
+      "videoId": "JnCMZw3EQ1c",
+      "thumbnail": "https://img.youtube.com/vi/JnCMZw3EQ1c/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -178,6 +253,21 @@
       "branch": "JP"
     },
     {
+      "id": "HMDpQW57xC0",
+      "date": "2026-10-01",
+      "dateLabel": "10/01 (木)",
+      "time": "20:00",
+      "startsAt": "2026-10-01T20:00:00+09:00",
+      "name": "戌神ころね",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=HMDpQW57xC0",
+      "videoId": "HMDpQW57xC0",
+      "thumbnail": "https://img.youtube.com/vi/HMDpQW57xC0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "4T5ad5fi6Y8",
       "date": "2026-10-01",
       "dateLabel": "10/01 (木)",
@@ -208,6 +298,21 @@
       "branch": "JP"
     },
     {
+      "id": "v_c0sXi0gTE",
+      "date": "2026-10-01",
+      "dateLabel": "10/01 (木)",
+      "time": "21:00",
+      "startsAt": "2026-10-01T21:00:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=v_c0sXi0gTE",
+      "videoId": "v_c0sXi0gTE",
+      "thumbnail": "https://img.youtube.com/vi/v_c0sXi0gTE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "zscbFBdOvyI",
       "date": "2026-10-01",
       "dateLabel": "10/01 (木)",
@@ -218,6 +323,36 @@
       "url": "https://www.youtube.com/watch?v=zscbFBdOvyI",
       "videoId": "zscbFBdOvyI",
       "thumbnail": "https://img.youtube.com/vi/zscbFBdOvyI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "e4khfv6cZvQ",
+      "date": "2026-10-01",
+      "dateLabel": "10/01 (木)",
+      "time": "22:00",
+      "startsAt": "2026-10-01T22:00:00+09:00",
+      "name": "星街すいせい",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=e4khfv6cZvQ",
+      "videoId": "e4khfv6cZvQ",
+      "thumbnail": "https://img.youtube.com/vi/e4khfv6cZvQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Ilw5E3EE8oM",
+      "date": "2026-10-01",
+      "dateLabel": "10/01 (木)",
+      "time": "22:00",
+      "startsAt": "2026-10-01T22:00:00+09:00",
+      "name": "姫森ルーナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Ilw5E3EE8oM",
+      "videoId": "Ilw5E3EE8oM",
+      "thumbnail": "https://img.youtube.com/vi/Ilw5E3EE8oM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -248,6 +383,21 @@
       "url": "https://www.youtube.com/watch?v=LKWMaCecqBw",
       "videoId": "LKWMaCecqBw",
       "thumbnail": "https://img.youtube.com/vi/LKWMaCecqBw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "-x5I9D9wXqQ",
+      "date": "2026-10-01",
+      "dateLabel": "10/01 (木)",
+      "time": "23:00",
+      "startsAt": "2026-10-01T23:00:00+09:00",
+      "name": "Raora",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=-x5I9D9wXqQ",
+      "videoId": "-x5I9D9wXqQ",
+      "thumbnail": "https://img.youtube.com/vi/-x5I9D9wXqQ/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

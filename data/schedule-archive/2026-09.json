@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-30T02:28:44.066Z",
+  "generatedAt": "2026-09-30T05:37:18.240Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -24868,11 +24868,26 @@
       "branch": "JP"
     },
     {
+      "id": "HdFmAfzZ-GU",
+      "date": "2026-09-30",
+      "dateLabel": "09/30 (水)",
+      "time": "12:02",
+      "startsAt": "2026-09-30T12:02:00+09:00",
+      "name": "ReGLOSS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=HdFmAfzZ-GU",
+      "videoId": "HdFmAfzZ-GU",
+      "thumbnail": "https://img.youtube.com/vi/HdFmAfzZ-GU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "jYzhcVoSE0E",
       "date": "2026-09-30",
       "dateLabel": "09/30 (水)",
-      "time": "14:00",
-      "startsAt": "2026-09-30T14:00:00+09:00",
+      "time": "14:02",
+      "startsAt": "2026-09-30T14:02:00+09:00",
       "name": "尾丸ポルカ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=jYzhcVoSE0E",
@@ -24913,6 +24928,21 @@
       "branch": "JP"
     },
     {
+      "id": "IquaQ2XcN-E",
+      "date": "2026-09-30",
+      "dateLabel": "09/30 (水)",
+      "time": "18:00",
+      "startsAt": "2026-09-30T18:00:00+09:00",
+      "name": "ホロライブ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=IquaQ2XcN-E",
+      "videoId": "IquaQ2XcN-E",
+      "thumbnail": "https://img.youtube.com/vi/IquaQ2XcN-E/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "vLN5q3b_2WI",
       "date": "2026-09-30",
       "dateLabel": "09/30 (水)",
@@ -24938,6 +24968,21 @@
       "url": "https://www.youtube.com/watch?v=a7gN7nU0cr8",
       "videoId": "a7gN7nU0cr8",
       "thumbnail": "https://img.youtube.com/vi/a7gN7nU0cr8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "m03oad5dRIw",
+      "date": "2026-09-30",
+      "dateLabel": "09/30 (水)",
+      "time": "19:00",
+      "startsAt": "2026-09-30T19:00:00+09:00",
+      "name": "癒月ちょこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=m03oad5dRIw",
+      "videoId": "m03oad5dRIw",
+      "thumbnail": "https://img.youtube.com/vi/m03oad5dRIw/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

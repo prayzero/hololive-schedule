@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T15:08:49.667Z",
+  "generatedAt": "2026-09-30T05:37:18.240Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -23,6 +23,21 @@
       "url": "https://www.youtube.com/watch?v=PJv4XSMhjps",
       "videoId": "PJv4XSMhjps",
       "thumbnail": "https://img.youtube.com/vi/PJv4XSMhjps/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "_RP6UbtnO3k",
+      "date": "2026-10-01",
+      "dateLabel": "10/01 (木)",
+      "time": "19:00",
+      "startsAt": "2026-10-01T19:00:00+09:00",
+      "name": "熱千めら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=_RP6UbtnO3k",
+      "videoId": "_RP6UbtnO3k",
+      "thumbnail": "https://img.youtube.com/vi/_RP6UbtnO3k/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

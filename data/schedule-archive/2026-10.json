@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T06:01:17.639Z",
+  "generatedAt": "2026-10-01T06:10:06.867Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -178,31 +178,31 @@
       "branch": "JP"
     },
     {
-      "id": "LDx8h1fxjcU",
-      "date": "2026-10-01",
-      "dateLabel": "10/01 (木)",
-      "time": "15:00",
-      "startsAt": "2026-10-01T15:00:00+09:00",
-      "name": "Bijou",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=LDx8h1fxjcU",
-      "videoId": "LDx8h1fxjcU",
-      "thumbnail": "https://img.youtube.com/vi/LDx8h1fxjcU/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "pPXaqk00utA",
       "date": "2026-10-01",
       "dateLabel": "10/01 (木)",
-      "time": "15:00",
-      "startsAt": "2026-10-01T15:00:00+09:00",
+      "time": "14:58",
+      "startsAt": "2026-10-01T14:58:00+09:00",
       "name": "Kaela",
       "title": null,
       "url": "https://www.youtube.com/watch?v=pPXaqk00utA",
       "videoId": "pPXaqk00utA",
       "thumbnail": "https://img.youtube.com/vi/pPXaqk00utA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "LDx8h1fxjcU",
+      "date": "2026-10-01",
+      "dateLabel": "10/01 (木)",
+      "time": "15:01",
+      "startsAt": "2026-10-01T15:01:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=LDx8h1fxjcU",
+      "videoId": "LDx8h1fxjcU",
+      "thumbnail": "https://img.youtube.com/vi/LDx8h1fxjcU/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -503,6 +503,21 @@
       "url": "https://www.youtube.com/watch?v=v_c0sXi0gTE",
       "videoId": "v_c0sXi0gTE",
       "thumbnail": "https://img.youtube.com/vi/v_c0sXi0gTE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "d-5bPUqVbHk",
+      "date": "2026-10-01",
+      "dateLabel": "10/01 (木)",
+      "time": "21:00",
+      "startsAt": "2026-10-01T21:00:00+09:00",
+      "name": "白上フブキ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=d-5bPUqVbHk",
+      "videoId": "d-5bPUqVbHk",
+      "thumbnail": "https://img.youtube.com/vi/d-5bPUqVbHk/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T15:06:05.435Z",
+  "generatedAt": "2026-10-02T19:56:01.269Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -2188,6 +2188,21 @@
       "branch": "JP"
     },
     {
+      "id": "nUBmqJrE2Ek",
+      "date": "2026-10-03",
+      "dateLabel": "10/03 (土)",
+      "time": "01:10",
+      "startsAt": "2026-10-03T01:10:00+09:00",
+      "name": "アキロゼ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=nUBmqJrE2Ek",
+      "videoId": "nUBmqJrE2Ek",
+      "thumbnail": "https://img.youtube.com/vi/nUBmqJrE2Ek/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "isiBH6e0IWE",
       "date": "2026-10-03",
       "dateLabel": "10/03 (土)",
@@ -2228,6 +2243,36 @@
       "url": "https://www.youtube.com/watch?v=C18dYjfCMB4",
       "videoId": "C18dYjfCMB4",
       "thumbnail": "https://img.youtube.com/vi/C18dYjfCMB4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "GYsrk9aT-Lg",
+      "date": "2026-10-03",
+      "dateLabel": "10/03 (土)",
+      "time": "10:00",
+      "startsAt": "2026-10-03T10:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=GYsrk9aT-Lg",
+      "videoId": "GYsrk9aT-Lg",
+      "thumbnail": "https://img.youtube.com/vi/GYsrk9aT-Lg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "pAVsnFge6tA",
+      "date": "2026-10-03",
+      "dateLabel": "10/03 (土)",
+      "time": "10:00",
+      "startsAt": "2026-10-03T10:00:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=pAVsnFge6tA",
+      "videoId": "pAVsnFge6tA",
+      "thumbnail": "https://img.youtube.com/vi/pAVsnFge6tA/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -2278,6 +2323,21 @@
       "branch": "JP"
     },
     {
+      "id": "DSdYOeISvTo",
+      "date": "2026-10-03",
+      "dateLabel": "10/03 (土)",
+      "time": "11:00",
+      "startsAt": "2026-10-03T11:00:00+09:00",
+      "name": "Ollie",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=DSdYOeISvTo",
+      "videoId": "DSdYOeISvTo",
+      "thumbnail": "https://img.youtube.com/vi/DSdYOeISvTo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "M5it5mDf5H4",
       "date": "2026-10-03",
       "dateLabel": "10/03 (土)",
@@ -2308,6 +2368,21 @@
       "branch": "JP"
     },
     {
+      "id": "nVLlI4TBy_w",
+      "date": "2026-10-03",
+      "dateLabel": "10/03 (土)",
+      "time": "13:00",
+      "startsAt": "2026-10-03T13:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=nVLlI4TBy_w",
+      "videoId": "nVLlI4TBy_w",
+      "thumbnail": "https://img.youtube.com/vi/nVLlI4TBy_w/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "C1WvGkD8Zfo",
       "date": "2026-10-03",
       "dateLabel": "10/03 (土)",
@@ -2318,6 +2393,21 @@
       "url": "https://www.youtube.com/watch?v=C1WvGkD8Zfo",
       "videoId": "C1WvGkD8Zfo",
       "thumbnail": "https://img.youtube.com/vi/C1WvGkD8Zfo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "W2O1OWa7p98",
+      "date": "2026-10-03",
+      "dateLabel": "10/03 (土)",
+      "time": "13:00",
+      "startsAt": "2026-10-03T13:00:00+09:00",
+      "name": "IRyS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=W2O1OWa7p98",
+      "videoId": "W2O1OWa7p98",
+      "thumbnail": "https://img.youtube.com/vi/W2O1OWa7p98/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -2353,16 +2443,16 @@
       "branch": "JP"
     },
     {
-      "id": "DSdYOeISvTo",
+      "id": "_DaNHhyTHA8",
       "date": "2026-10-03",
       "dateLabel": "10/03 (土)",
-      "time": "21:00",
-      "startsAt": "2026-10-03T21:00:00+09:00",
-      "name": "Ollie",
+      "time": "19:00",
+      "startsAt": "2026-10-03T19:00:00+09:00",
+      "name": "博衣こより",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=DSdYOeISvTo",
-      "videoId": "DSdYOeISvTo",
-      "thumbnail": "https://img.youtube.com/vi/DSdYOeISvTo/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=_DaNHhyTHA8",
+      "videoId": "_DaNHhyTHA8",
+      "thumbnail": "https://img.youtube.com/vi/_DaNHhyTHA8/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -2398,6 +2488,21 @@
       "branch": "JP"
     },
     {
+      "id": "Hjr4R-WVDMo",
+      "date": "2026-10-03",
+      "dateLabel": "10/03 (土)",
+      "time": "22:00",
+      "startsAt": "2026-10-03T22:00:00+09:00",
+      "name": "AZKi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Hjr4R-WVDMo",
+      "videoId": "Hjr4R-WVDMo",
+      "thumbnail": "https://img.youtube.com/vi/Hjr4R-WVDMo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "z3_J7k_DahM",
       "date": "2026-10-03",
       "dateLabel": "10/03 (土)",
@@ -2408,6 +2513,21 @@
       "url": "https://www.youtube.com/watch?v=z3_J7k_DahM",
       "videoId": "z3_J7k_DahM",
       "thumbnail": "https://img.youtube.com/vi/z3_J7k_DahM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "2U64RtX8cwY",
+      "date": "2026-10-03",
+      "dateLabel": "10/03 (土)",
+      "time": "22:00",
+      "startsAt": "2026-10-03T22:00:00+09:00",
+      "name": "Ollie",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=2U64RtX8cwY",
+      "videoId": "2U64RtX8cwY",
+      "thumbnail": "https://img.youtube.com/vi/2U64RtX8cwY/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -2443,6 +2563,21 @@
       "branch": "JP"
     },
     {
+      "id": "BOjKLly-bLQ",
+      "date": "2026-10-04",
+      "dateLabel": "10/04 (日)",
+      "time": "13:00",
+      "startsAt": "2026-10-04T13:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=BOjKLly-bLQ",
+      "videoId": "BOjKLly-bLQ",
+      "thumbnail": "https://img.youtube.com/vi/BOjKLly-bLQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "Tpd_eeg2NfM",
       "date": "2026-10-04",
       "dateLabel": "10/04 (日)",
@@ -2453,6 +2588,36 @@
       "url": "https://www.youtube.com/watch?v=Tpd_eeg2NfM",
       "videoId": "Tpd_eeg2NfM",
       "thumbnail": "https://img.youtube.com/vi/Tpd_eeg2NfM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "0NXb049wNSs",
+      "date": "2026-10-04",
+      "dateLabel": "10/04 (日)",
+      "time": "18:00",
+      "startsAt": "2026-10-04T18:00:00+09:00",
+      "name": "姫森ルーナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=0NXb049wNSs",
+      "videoId": "0NXb049wNSs",
+      "thumbnail": "https://img.youtube.com/vi/0NXb049wNSs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "VSxQqM-2QwA",
+      "date": "2026-10-04",
+      "dateLabel": "10/04 (日)",
+      "time": "19:00",
+      "startsAt": "2026-10-04T19:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=VSxQqM-2QwA",
+      "videoId": "VSxQqM-2QwA",
+      "thumbnail": "https://img.youtube.com/vi/VSxQqM-2QwA/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

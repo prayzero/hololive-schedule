@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-02T02:19:39.370Z",
+  "generatedAt": "2026-10-02T05:43:59.199Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -1273,11 +1273,26 @@
       "branch": "JP"
     },
     {
+      "id": "r824CVNNLUI",
+      "date": "2026-10-02",
+      "dateLabel": "10/02 (金)",
+      "time": "13:01",
+      "startsAt": "2026-10-02T13:01:00+09:00",
+      "name": "Moona",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=r824CVNNLUI",
+      "videoId": "r824CVNNLUI",
+      "thumbnail": "https://img.youtube.com/vi/r824CVNNLUI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "5kRb9M0E5E4",
       "date": "2026-10-02",
       "dateLabel": "10/02 (金)",
-      "time": "13:00",
-      "startsAt": "2026-10-02T13:00:00+09:00",
+      "time": "13:01",
+      "startsAt": "2026-10-02T13:01:00+09:00",
       "name": "Ollie",
       "title": null,
       "url": "https://www.youtube.com/watch?v=5kRb9M0E5E4",
@@ -1291,8 +1306,8 @@
       "id": "SHcVV3yE42E",
       "date": "2026-10-02",
       "dateLabel": "10/02 (金)",
-      "time": "13:00",
-      "startsAt": "2026-10-02T13:00:00+09:00",
+      "time": "13:01",
+      "startsAt": "2026-10-02T13:01:00+09:00",
       "name": "Reine",
       "title": null,
       "url": "https://www.youtube.com/watch?v=SHcVV3yE42E",
@@ -1328,6 +1343,21 @@
       "url": "https://www.youtube.com/watch?v=sQWAjBR4oSM",
       "videoId": "sQWAjBR4oSM",
       "thumbnail": "https://img.youtube.com/vi/sQWAjBR4oSM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "8o8SVRKsiT8",
+      "date": "2026-10-02",
+      "dateLabel": "10/02 (金)",
+      "time": "18:00",
+      "startsAt": "2026-10-02T18:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=8o8SVRKsiT8",
+      "videoId": "8o8SVRKsiT8",
+      "thumbnail": "https://img.youtube.com/vi/8o8SVRKsiT8/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -1438,6 +1468,21 @@
       "branch": "JP"
     },
     {
+      "id": "9bDHBikrQI8",
+      "date": "2026-10-02",
+      "dateLabel": "10/02 (金)",
+      "time": "20:00",
+      "startsAt": "2026-10-02T20:00:00+09:00",
+      "name": "さくらみこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=9bDHBikrQI8",
+      "videoId": "9bDHBikrQI8",
+      "thumbnail": "https://img.youtube.com/vi/9bDHBikrQI8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "Iw8_HkwkpeY",
       "date": "2026-10-02",
       "dateLabel": "10/02 (金)",
@@ -1463,6 +1508,21 @@
       "url": "https://www.youtube.com/watch?v=FkbNASARqvM",
       "videoId": "FkbNASARqvM",
       "thumbnail": "https://img.youtube.com/vi/FkbNASARqvM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "08qTq9agZ2Y",
+      "date": "2026-10-02",
+      "dateLabel": "10/02 (金)",
+      "time": "21:00",
+      "startsAt": "2026-10-02T21:00:00+09:00",
+      "name": "Iofi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=08qTq9agZ2Y",
+      "videoId": "08qTq9agZ2Y",
+      "thumbnail": "https://img.youtube.com/vi/08qTq9agZ2Y/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -1508,6 +1568,21 @@
       "url": "https://www.youtube.com/watch?v=thX2A1-Ktyk",
       "videoId": "thX2A1-Ktyk",
       "thumbnail": "https://img.youtube.com/vi/thX2A1-Ktyk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "t4Kmf04cRQA",
+      "date": "2026-10-02",
+      "dateLabel": "10/02 (金)",
+      "time": "22:00",
+      "startsAt": "2026-10-02T22:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=t4Kmf04cRQA",
+      "videoId": "t4Kmf04cRQA",
+      "thumbnail": "https://img.youtube.com/vi/t4Kmf04cRQA/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -1588,6 +1663,21 @@
       "branch": "JP"
     },
     {
+      "id": "aoFsQp_pWmc",
+      "date": "2026-10-02",
+      "dateLabel": "10/02 (金)",
+      "time": "23:00",
+      "startsAt": "2026-10-02T23:00:00+09:00",
+      "name": "Raora",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=aoFsQp_pWmc",
+      "videoId": "aoFsQp_pWmc",
+      "thumbnail": "https://img.youtube.com/vi/aoFsQp_pWmc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "nTlLAx9m9vE",
       "date": "2026-10-02",
       "dateLabel": "10/02 (金)",
@@ -1618,6 +1708,21 @@
       "branch": "JP"
     },
     {
+      "id": "M5it5mDf5H4",
+      "date": "2026-10-03",
+      "dateLabel": "10/03 (土)",
+      "time": "12:00",
+      "startsAt": "2026-10-03T12:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=M5it5mDf5H4",
+      "videoId": "M5it5mDf5H4",
+      "thumbnail": "https://img.youtube.com/vi/M5it5mDf5H4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "CMlnK7XN8go",
       "date": "2026-10-03",
       "dateLabel": "10/03 (土)",
@@ -1628,6 +1733,21 @@
       "url": "https://www.youtube.com/watch?v=CMlnK7XN8go",
       "videoId": "CMlnK7XN8go",
       "thumbnail": "https://img.youtube.com/vi/CMlnK7XN8go/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "ieiWUGMQ-oE",
+      "date": "2026-10-03",
+      "dateLabel": "10/03 (土)",
+      "time": "22:00",
+      "startsAt": "2026-10-03T22:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ieiWUGMQ-oE",
+      "videoId": "ieiWUGMQ-oE",
+      "thumbnail": "https://img.youtube.com/vi/ieiWUGMQ-oE/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

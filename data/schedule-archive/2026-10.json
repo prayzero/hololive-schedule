@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T20:14:07.667Z",
+  "generatedAt": "2026-10-03T23:10:28.608Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -3193,11 +3193,26 @@
       "branch": "JP"
     },
     {
-      "id": "nl7VxDtpbKA",
+      "id": "eBdN7PPp27w",
       "date": "2026-10-04",
       "dateLabel": "10/04 (日)",
       "time": "06:00",
       "startsAt": "2026-10-04T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=eBdN7PPp27w",
+      "videoId": "eBdN7PPp27w",
+      "thumbnail": "https://img.youtube.com/vi/eBdN7PPp27w/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "nl7VxDtpbKA",
+      "date": "2026-10-04",
+      "dateLabel": "10/04 (日)",
+      "time": "06:09",
+      "startsAt": "2026-10-04T06:09:00+09:00",
       "name": "Cecilia",
       "title": null,
       "url": "https://www.youtube.com/watch?v=nl7VxDtpbKA",
@@ -3353,6 +3368,21 @@
       "url": "https://www.youtube.com/watch?v=ZNzyrv24iVI",
       "videoId": "ZNzyrv24iVI",
       "thumbnail": "https://img.youtube.com/vi/ZNzyrv24iVI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "ffiRtvdubvA",
+      "date": "2026-10-04",
+      "dateLabel": "10/04 (日)",
+      "time": "18:00",
+      "startsAt": "2026-10-04T18:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ffiRtvdubvA",
+      "videoId": "ffiRtvdubvA",
+      "thumbnail": "https://img.youtube.com/vi/ffiRtvdubvA/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -3548,6 +3578,21 @@
       "url": "https://www.youtube.com/watch?v=JYsWj4sXeYw",
       "videoId": "JYsWj4sXeYw",
       "thumbnail": "https://img.youtube.com/vi/JYsWj4sXeYw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "pwJeqkeHtPM",
+      "date": "2026-10-05",
+      "dateLabel": "10/05 (月)",
+      "time": "00:30",
+      "startsAt": "2026-10-05T00:30:00+09:00",
+      "name": "Kiara",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=pwJeqkeHtPM",
+      "videoId": "pwJeqkeHtPM",
+      "thumbnail": "https://img.youtube.com/vi/pwJeqkeHtPM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T17:41:00.591Z",
+  "generatedAt": "2026-10-03T20:14:07.667Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -3313,6 +3313,21 @@
       "branch": "JP"
     },
     {
+      "id": "JPRGdxVEAWU",
+      "date": "2026-10-04",
+      "dateLabel": "10/04 (日)",
+      "time": "15:00",
+      "startsAt": "2026-10-04T15:00:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=JPRGdxVEAWU",
+      "videoId": "JPRGdxVEAWU",
+      "thumbnail": "https://img.youtube.com/vi/JPRGdxVEAWU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "VzgiaEu59Uk",
       "date": "2026-10-04",
       "dateLabel": "10/04 (日)",
@@ -3323,6 +3338,21 @@
       "url": "https://www.youtube.com/watch?v=VzgiaEu59Uk",
       "videoId": "VzgiaEu59Uk",
       "thumbnail": "https://img.youtube.com/vi/VzgiaEu59Uk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "ZNzyrv24iVI",
+      "date": "2026-10-04",
+      "dateLabel": "10/04 (日)",
+      "time": "18:00",
+      "startsAt": "2026-10-04T18:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ZNzyrv24iVI",
+      "videoId": "ZNzyrv24iVI",
+      "thumbnail": "https://img.youtube.com/vi/ZNzyrv24iVI/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -3448,6 +3478,21 @@
       "branch": "JP"
     },
     {
+      "id": "Sk2dBKF7mAk",
+      "date": "2026-10-04",
+      "dateLabel": "10/04 (日)",
+      "time": "21:00",
+      "startsAt": "2026-10-04T21:00:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Sk2dBKF7mAk",
+      "videoId": "Sk2dBKF7mAk",
+      "thumbnail": "https://img.youtube.com/vi/Sk2dBKF7mAk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "WBgYlpUP0zc",
       "date": "2026-10-04",
       "dateLabel": "10/04 (日)",
@@ -3458,6 +3503,21 @@
       "url": "https://www.youtube.com/watch?v=WBgYlpUP0zc",
       "videoId": "WBgYlpUP0zc",
       "thumbnail": "https://img.youtube.com/vi/WBgYlpUP0zc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "vbSzq1qClNE",
+      "date": "2026-10-04",
+      "dateLabel": "10/04 (日)",
+      "time": "22:00",
+      "startsAt": "2026-10-04T22:00:00+09:00",
+      "name": "夏色まつり",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=vbSzq1qClNE",
+      "videoId": "vbSzq1qClNE",
+      "thumbnail": "https://img.youtube.com/vi/vbSzq1qClNE/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

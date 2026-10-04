@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-03T23:10:28.608Z",
+  "generatedAt": "2026-10-04T02:45:22.125Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -3268,21 +3268,6 @@
       "branch": "JP"
     },
     {
-      "id": "hzs0kNAzMPw",
-      "date": "2026-10-04",
-      "dateLabel": "10/04 (日)",
-      "time": "10:00",
-      "startsAt": "2026-10-04T10:00:00+09:00",
-      "name": "Moona",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=hzs0kNAzMPw",
-      "videoId": "hzs0kNAzMPw",
-      "thumbnail": "https://img.youtube.com/vi/hzs0kNAzMPw/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "Tpd_eeg2NfM",
       "date": "2026-10-04",
       "dateLabel": "10/04 (日)",
@@ -3293,6 +3278,51 @@
       "url": "https://www.youtube.com/watch?v=Tpd_eeg2NfM",
       "videoId": "Tpd_eeg2NfM",
       "thumbnail": "https://img.youtube.com/vi/Tpd_eeg2NfM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "TyeutXf70YI",
+      "date": "2026-10-04",
+      "dateLabel": "10/04 (日)",
+      "time": "10:05",
+      "startsAt": "2026-10-04T10:05:00+09:00",
+      "name": "Anya",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=TyeutXf70YI",
+      "videoId": "TyeutXf70YI",
+      "thumbnail": "https://img.youtube.com/vi/TyeutXf70YI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "ykeElX_3QSg",
+      "date": "2026-10-04",
+      "dateLabel": "10/04 (日)",
+      "time": "10:07",
+      "startsAt": "2026-10-04T10:07:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ykeElX_3QSg",
+      "videoId": "ykeElX_3QSg",
+      "thumbnail": "https://img.youtube.com/vi/ykeElX_3QSg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "hzs0kNAzMPw",
+      "date": "2026-10-04",
+      "dateLabel": "10/04 (日)",
+      "time": "10:24",
+      "startsAt": "2026-10-04T10:24:00+09:00",
+      "name": "Moona",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=hzs0kNAzMPw",
+      "videoId": "hzs0kNAzMPw",
+      "thumbnail": "https://img.youtube.com/vi/hzs0kNAzMPw/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -3353,6 +3383,21 @@
       "url": "https://www.youtube.com/watch?v=VzgiaEu59Uk",
       "videoId": "VzgiaEu59Uk",
       "thumbnail": "https://img.youtube.com/vi/VzgiaEu59Uk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "w6AE3f_b3bs",
+      "date": "2026-10-04",
+      "dateLabel": "10/04 (日)",
+      "time": "17:00",
+      "startsAt": "2026-10-04T17:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=w6AE3f_b3bs",
+      "videoId": "w6AE3f_b3bs",
+      "thumbnail": "https://img.youtube.com/vi/w6AE3f_b3bs/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

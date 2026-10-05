@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T21:44:15.571Z",
+  "generatedAt": "2026-10-05T00:14:40.409Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -4433,6 +4433,21 @@
       "url": "https://www.youtube.com/watch?v=VrdeGNP4mjU",
       "videoId": "VrdeGNP4mjU",
       "thumbnail": "https://img.youtube.com/vi/VrdeGNP4mjU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "8IjJlC5iaVo",
+      "date": "2026-10-05",
+      "dateLabel": "10/05 (月)",
+      "time": "09:30",
+      "startsAt": "2026-10-05T09:30:00+09:00",
+      "name": "Ina",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=8IjJlC5iaVo",
+      "videoId": "8IjJlC5iaVo",
+      "thumbnail": "https://img.youtube.com/vi/8IjJlC5iaVo/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

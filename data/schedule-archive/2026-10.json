@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T15:53:22.947Z",
+  "generatedAt": "2026-10-06T20:56:04.040Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -6328,6 +6328,21 @@
       "branch": "JP"
     },
     {
+      "id": "es8u97HLyms",
+      "date": "2026-10-07",
+      "dateLabel": "10/07 (水)",
+      "time": "06:00",
+      "startsAt": "2026-10-07T06:00:00+09:00",
+      "name": "尾丸ポルカ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=es8u97HLyms",
+      "videoId": "es8u97HLyms",
+      "thumbnail": "https://img.youtube.com/vi/es8u97HLyms/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "z439QYphZK8",
       "date": "2026-10-07",
       "dateLabel": "10/07 (水)",
@@ -6403,6 +6418,21 @@
       "branch": "JP"
     },
     {
+      "id": "bxPTC-TCHQo",
+      "date": "2026-10-07",
+      "dateLabel": "10/07 (水)",
+      "time": "10:00",
+      "startsAt": "2026-10-07T10:00:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=bxPTC-TCHQo",
+      "videoId": "bxPTC-TCHQo",
+      "thumbnail": "https://img.youtube.com/vi/bxPTC-TCHQo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "dE-ED90uFp0",
       "date": "2026-10-07",
       "dateLabel": "10/07 (水)",
@@ -6463,6 +6493,21 @@
       "branch": "JP"
     },
     {
+      "id": "4eE6-W3Btrc",
+      "date": "2026-10-07",
+      "dateLabel": "10/07 (水)",
+      "time": "12:00",
+      "startsAt": "2026-10-07T12:00:00+09:00",
+      "name": "Anya",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=4eE6-W3Btrc",
+      "videoId": "4eE6-W3Btrc",
+      "thumbnail": "https://img.youtube.com/vi/4eE6-W3Btrc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "jgs6vYj8dwQ",
       "date": "2026-10-07",
       "dateLabel": "10/07 (水)",
@@ -6473,6 +6518,36 @@
       "url": "https://www.youtube.com/watch?v=jgs6vYj8dwQ",
       "videoId": "jgs6vYj8dwQ",
       "thumbnail": "https://img.youtube.com/vi/jgs6vYj8dwQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "w8YJY2D608E",
+      "date": "2026-10-07",
+      "dateLabel": "10/07 (水)",
+      "time": "15:00",
+      "startsAt": "2026-10-07T15:00:00+09:00",
+      "name": "Kaela",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=w8YJY2D608E",
+      "videoId": "w8YJY2D608E",
+      "thumbnail": "https://img.youtube.com/vi/w8YJY2D608E/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "oasHD6OMXZk",
+      "date": "2026-10-07",
+      "dateLabel": "10/07 (水)",
+      "time": "17:00",
+      "startsAt": "2026-10-07T17:00:00+09:00",
+      "name": "Moona",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=oasHD6OMXZk",
+      "videoId": "oasHD6OMXZk",
+      "thumbnail": "https://img.youtube.com/vi/oasHD6OMXZk/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -6568,6 +6643,21 @@
       "branch": "JP"
     },
     {
+      "id": "kLsldZDUa70",
+      "date": "2026-10-07",
+      "dateLabel": "10/07 (水)",
+      "time": "20:00",
+      "startsAt": "2026-10-07T20:00:00+09:00",
+      "name": "宙科そぴあ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=kLsldZDUa70",
+      "videoId": "kLsldZDUa70",
+      "thumbnail": "https://img.youtube.com/vi/kLsldZDUa70/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "Kub1-xkf2Bk",
       "date": "2026-10-07",
       "dateLabel": "10/07 (水)",
@@ -6623,6 +6713,21 @@
       "url": "https://www.youtube.com/watch?v=N6Aop1nYJB4",
       "videoId": "N6Aop1nYJB4",
       "thumbnail": "https://img.youtube.com/vi/N6Aop1nYJB4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "r9WlsCrnq6M",
+      "date": "2026-10-07",
+      "dateLabel": "10/07 (水)",
+      "time": "22:00",
+      "startsAt": "2026-10-07T22:00:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=r9WlsCrnq6M",
+      "videoId": "r9WlsCrnq6M",
+      "thumbnail": "https://img.youtube.com/vi/r9WlsCrnq6M/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -6698,6 +6803,21 @@
       "url": "https://www.youtube.com/watch?v=8XJSCqpX4Uo",
       "videoId": "8XJSCqpX4Uo",
       "thumbnail": "https://img.youtube.com/vi/8XJSCqpX4Uo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "kWkREam1us0",
+      "date": "2026-10-08",
+      "dateLabel": "10/08 (木)",
+      "time": "23:00",
+      "startsAt": "2026-10-08T23:00:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=kWkREam1us0",
+      "videoId": "kWkREam1us0",
+      "thumbnail": "https://img.youtube.com/vi/kWkREam1us0/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

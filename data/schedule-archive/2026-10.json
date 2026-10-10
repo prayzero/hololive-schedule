@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T19:22:37.871Z",
+  "generatedAt": "2026-10-10T22:54:22.038Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -10903,11 +10903,26 @@
       "branch": "JP"
     },
     {
+      "id": "LxbSYO9Skxw",
+      "date": "2026-10-11",
+      "dateLabel": "10/11 (日)",
+      "time": "06:00",
+      "startsAt": "2026-10-11T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=LxbSYO9Skxw",
+      "videoId": "LxbSYO9Skxw",
+      "thumbnail": "https://img.youtube.com/vi/LxbSYO9Skxw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "LqN7_slfuGU",
       "date": "2026-10-11",
       "dateLabel": "10/11 (日)",
-      "time": "07:00",
-      "startsAt": "2026-10-11T07:00:00+09:00",
+      "time": "06:59",
+      "startsAt": "2026-10-11T06:59:00+09:00",
       "name": "風真いろは",
       "title": null,
       "url": "https://www.youtube.com/watch?v=LqN7_slfuGU",
@@ -10928,6 +10943,21 @@
       "url": "https://www.youtube.com/watch?v=g4xhPCBFews",
       "videoId": "g4xhPCBFews",
       "thumbnail": "https://img.youtube.com/vi/g4xhPCBFews/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "1jfrtUlxO0E",
+      "date": "2026-10-11",
+      "dateLabel": "10/11 (日)",
+      "time": "09:00",
+      "startsAt": "2026-10-11T09:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=1jfrtUlxO0E",
+      "videoId": "1jfrtUlxO0E",
+      "thumbnail": "https://img.youtube.com/vi/1jfrtUlxO0E/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -10988,6 +11018,21 @@
       "url": "https://www.youtube.com/watch?v=Izt0HwjcY3I",
       "videoId": "Izt0HwjcY3I",
       "thumbnail": "https://img.youtube.com/vi/Izt0HwjcY3I/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "CufVK7_UA5o",
+      "date": "2026-10-11",
+      "dateLabel": "10/11 (日)",
+      "time": "11:00",
+      "startsAt": "2026-10-11T11:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=CufVK7_UA5o",
+      "videoId": "CufVK7_UA5o",
+      "thumbnail": "https://img.youtube.com/vi/CufVK7_UA5o/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -11063,6 +11108,21 @@
       "url": "https://www.youtube.com/watch?v=FImpd4roHXM",
       "videoId": "FImpd4roHXM",
       "thumbnail": "https://img.youtube.com/vi/FImpd4roHXM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "JK8qZPCZiL8",
+      "date": "2026-10-11",
+      "dateLabel": "10/11 (日)",
+      "time": "14:00",
+      "startsAt": "2026-10-11T14:00:00+09:00",
+      "name": "風真いろは",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=JK8qZPCZiL8",
+      "videoId": "JK8qZPCZiL8",
+      "thumbnail": "https://img.youtube.com/vi/JK8qZPCZiL8/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -11278,6 +11338,21 @@
       "branch": "JP"
     },
     {
+      "id": "RSQe2OoIV2Q",
+      "date": "2026-10-11",
+      "dateLabel": "10/11 (日)",
+      "time": "22:30",
+      "startsAt": "2026-10-11T22:30:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=RSQe2OoIV2Q",
+      "videoId": "RSQe2OoIV2Q",
+      "thumbnail": "https://img.youtube.com/vi/RSQe2OoIV2Q/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "zIvjTJszfkM",
       "date": "2026-10-11",
       "dateLabel": "10/11 (日)",
@@ -11288,6 +11363,21 @@
       "url": "https://www.youtube.com/watch?v=zIvjTJszfkM",
       "videoId": "zIvjTJszfkM",
       "thumbnail": "https://img.youtube.com/vi/zIvjTJszfkM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "aqUN0NpH1l0",
+      "date": "2026-10-11",
+      "dateLabel": "10/11 (日)",
+      "time": "23:00",
+      "startsAt": "2026-10-11T23:00:00+09:00",
+      "name": "Kiara",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=aqUN0NpH1l0",
+      "videoId": "aqUN0NpH1l0",
+      "thumbnail": "https://img.youtube.com/vi/aqUN0NpH1l0/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -11363,6 +11453,21 @@
       "url": "https://www.youtube.com/watch?v=x4eIbYKOZXo",
       "videoId": "x4eIbYKOZXo",
       "thumbnail": "https://img.youtube.com/vi/x4eIbYKOZXo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "B8uQ19SjIVQ",
+      "date": "2026-10-12",
+      "dateLabel": "10/12 (月)",
+      "time": "22:30",
+      "startsAt": "2026-10-12T22:30:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=B8uQ19SjIVQ",
+      "videoId": "B8uQ19SjIVQ",
+      "thumbnail": "https://img.youtube.com/vi/B8uQ19SjIVQ/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

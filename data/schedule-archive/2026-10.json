@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T05:52:34.418Z",
+  "generatedAt": "2026-10-11T07:55:09.230Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -11263,6 +11263,21 @@
       "branch": "JP"
     },
     {
+      "id": "XdlFykuyUQg",
+      "date": "2026-10-11",
+      "dateLabel": "10/11 (日)",
+      "time": "16:00",
+      "startsAt": "2026-10-11T16:00:00+09:00",
+      "name": "姫森ルーナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=XdlFykuyUQg",
+      "videoId": "XdlFykuyUQg",
+      "thumbnail": "https://img.youtube.com/vi/XdlFykuyUQg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "7QvLKuPSqmE",
       "date": "2026-10-11",
       "dateLabel": "10/11 (日)",
@@ -11318,6 +11333,21 @@
       "url": "https://www.youtube.com/watch?v=xjIuE_ej0So",
       "videoId": "xjIuE_ej0So",
       "thumbnail": "https://img.youtube.com/vi/xjIuE_ej0So/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "PPOAqpd6Pz4",
+      "date": "2026-10-11",
+      "dateLabel": "10/11 (日)",
+      "time": "17:00",
+      "startsAt": "2026-10-11T17:00:00+09:00",
+      "name": "アキロゼ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=PPOAqpd6Pz4",
+      "videoId": "PPOAqpd6Pz4",
+      "thumbnail": "https://img.youtube.com/vi/PPOAqpd6Pz4/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -11533,6 +11563,21 @@
       "branch": "JP"
     },
     {
+      "id": "dbMiQqtqP_Y",
+      "date": "2026-10-11",
+      "dateLabel": "10/11 (日)",
+      "time": "22:30",
+      "startsAt": "2026-10-11T22:30:00+09:00",
+      "name": "アキロゼ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=dbMiQqtqP_Y",
+      "videoId": "dbMiQqtqP_Y",
+      "thumbnail": "https://img.youtube.com/vi/dbMiQqtqP_Y/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "zIvjTJszfkM",
       "date": "2026-10-11",
       "dateLabel": "10/11 (日)",
@@ -11578,6 +11623,21 @@
       "branch": "JP"
     },
     {
+      "id": "vMIcA8-VaPg",
+      "date": "2026-10-12",
+      "dateLabel": "10/12 (月)",
+      "time": "10:00",
+      "startsAt": "2026-10-12T10:00:00+09:00",
+      "name": "FUWAMOCO",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=vMIcA8-VaPg",
+      "videoId": "vMIcA8-VaPg",
+      "thumbnail": "https://img.youtube.com/vi/vMIcA8-VaPg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "zNCnpGZRo8s",
       "date": "2026-10-12",
       "dateLabel": "10/12 (月)",
@@ -11618,6 +11678,21 @@
       "url": "https://www.youtube.com/watch?v=LAMRZYO7gf0",
       "videoId": "LAMRZYO7gf0",
       "thumbnail": "https://img.youtube.com/vi/LAMRZYO7gf0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "W6shqY3W-Es",
+      "date": "2026-10-12",
+      "dateLabel": "10/12 (月)",
+      "time": "19:00",
+      "startsAt": "2026-10-12T19:00:00+09:00",
+      "name": "熱千めら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=W6shqY3W-Es",
+      "videoId": "W6shqY3W-Es",
+      "thumbnail": "https://img.youtube.com/vi/W6shqY3W-Es/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

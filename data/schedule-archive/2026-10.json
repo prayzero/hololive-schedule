@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-11T19:30:07.304Z",
+  "generatedAt": "2026-10-11T23:07:29.067Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12058,6 +12058,36 @@
       "branch": "JP"
     },
     {
+      "id": "l7p-VKl2Tco",
+      "date": "2026-10-12",
+      "dateLabel": "10/12 (月)",
+      "time": "05:58",
+      "startsAt": "2026-10-12T05:58:00+09:00",
+      "name": "尾丸ポルカ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=l7p-VKl2Tco",
+      "videoId": "l7p-VKl2Tco",
+      "thumbnail": "https://img.youtube.com/vi/l7p-VKl2Tco/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "UZuPnKRZ_t8",
+      "date": "2026-10-12",
+      "dateLabel": "10/12 (月)",
+      "time": "06:00",
+      "startsAt": "2026-10-12T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=UZuPnKRZ_t8",
+      "videoId": "UZuPnKRZ_t8",
+      "thumbnail": "https://img.youtube.com/vi/UZuPnKRZ_t8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "AndoHgj3x5s",
       "date": "2026-10-12",
       "dateLabel": "10/12 (月)",
@@ -12076,8 +12106,8 @@
       "id": "v49bZ8yH0I0",
       "date": "2026-10-12",
       "dateLabel": "10/12 (月)",
-      "time": "07:30",
-      "startsAt": "2026-10-12T07:30:00+09:00",
+      "time": "07:31",
+      "startsAt": "2026-10-12T07:31:00+09:00",
       "name": "大神ミオ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=v49bZ8yH0I0",
@@ -12298,6 +12328,21 @@
       "branch": "JP"
     },
     {
+      "id": "jpdm5xPEeLg",
+      "date": "2026-10-12",
+      "dateLabel": "10/12 (月)",
+      "time": "15:00",
+      "startsAt": "2026-10-12T15:00:00+09:00",
+      "name": "Elizabeth Sub",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jpdm5xPEeLg",
+      "videoId": "jpdm5xPEeLg",
+      "thumbnail": "https://img.youtube.com/vi/jpdm5xPEeLg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "ww3CjqrlhZw",
       "date": "2026-10-12",
       "dateLabel": "10/12 (月)",
@@ -12383,6 +12428,36 @@
       "url": "https://www.youtube.com/watch?v=x4eIbYKOZXo",
       "videoId": "x4eIbYKOZXo",
       "thumbnail": "https://img.youtube.com/vi/x4eIbYKOZXo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "f0yybBkE94g",
+      "date": "2026-10-12",
+      "dateLabel": "10/12 (月)",
+      "time": "22:00",
+      "startsAt": "2026-10-12T22:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=f0yybBkE94g",
+      "videoId": "f0yybBkE94g",
+      "thumbnail": "https://img.youtube.com/vi/f0yybBkE94g/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "yntknFdGzFw",
+      "date": "2026-10-12",
+      "dateLabel": "10/12 (月)",
+      "time": "22:00",
+      "startsAt": "2026-10-12T22:00:00+09:00",
+      "name": "Kiara",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=yntknFdGzFw",
+      "videoId": "yntknFdGzFw",
+      "thumbnail": "https://img.youtube.com/vi/yntknFdGzFw/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

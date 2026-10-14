@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T19:39:47.245Z",
+  "generatedAt": "2026-10-14T22:42:55.358Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -15733,6 +15733,21 @@
       "branch": "JP"
     },
     {
+      "id": "vdKP5nGY5J8",
+      "date": "2026-10-15",
+      "dateLabel": "10/15 (木)",
+      "time": "06:00",
+      "startsAt": "2026-10-15T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=vdKP5nGY5J8",
+      "videoId": "vdKP5nGY5J8",
+      "thumbnail": "https://img.youtube.com/vi/vdKP5nGY5J8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "C93-V8yu8wE",
       "date": "2026-10-15",
       "dateLabel": "10/15 (木)",
@@ -15958,6 +15973,36 @@
       "branch": "JP"
     },
     {
+      "id": "SO4RGesjHjc",
+      "date": "2026-10-15",
+      "dateLabel": "10/15 (木)",
+      "time": "21:00",
+      "startsAt": "2026-10-15T21:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=SO4RGesjHjc",
+      "videoId": "SO4RGesjHjc",
+      "thumbnail": "https://img.youtube.com/vi/SO4RGesjHjc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "yysalaEg0ng",
+      "date": "2026-10-15",
+      "dateLabel": "10/15 (木)",
+      "time": "22:30",
+      "startsAt": "2026-10-15T22:30:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=yysalaEg0ng",
+      "videoId": "yysalaEg0ng",
+      "thumbnail": "https://img.youtube.com/vi/yysalaEg0ng/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "YpHDZs_IMfY",
       "date": "2026-10-16",
       "dateLabel": "10/16 (金)",
@@ -15968,6 +16013,21 @@
       "url": "https://www.youtube.com/watch?v=YpHDZs_IMfY",
       "videoId": "YpHDZs_IMfY",
       "thumbnail": "https://img.youtube.com/vi/YpHDZs_IMfY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "csCxiQIJ6TM",
+      "date": "2026-10-16",
+      "dateLabel": "10/16 (金)",
+      "time": "22:00",
+      "startsAt": "2026-10-16T22:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=csCxiQIJ6TM",
+      "videoId": "csCxiQIJ6TM",
+      "thumbnail": "https://img.youtube.com/vi/csCxiQIJ6TM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T15:26:31.413Z",
+  "generatedAt": "2026-10-14T19:39:47.245Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -15703,6 +15703,21 @@
       "branch": "JP"
     },
     {
+      "id": "b-_VT1mu7bk",
+      "date": "2026-10-15",
+      "dateLabel": "10/15 (木)",
+      "time": "00:30",
+      "startsAt": "2026-10-15T00:30:00+09:00",
+      "name": "ロボ子さん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=b-_VT1mu7bk",
+      "videoId": "b-_VT1mu7bk",
+      "thumbnail": "https://img.youtube.com/vi/b-_VT1mu7bk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "zvZl-BCHFak",
       "date": "2026-10-15",
       "dateLabel": "10/15 (木)",
@@ -15743,6 +15758,21 @@
       "url": "https://www.youtube.com/watch?v=JbVlx_55QRE",
       "videoId": "JbVlx_55QRE",
       "thumbnail": "https://img.youtube.com/vi/JbVlx_55QRE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "uH9AFj1qbyA",
+      "date": "2026-10-15",
+      "dateLabel": "10/15 (木)",
+      "time": "10:00",
+      "startsAt": "2026-10-15T10:00:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=uH9AFj1qbyA",
+      "videoId": "uH9AFj1qbyA",
+      "thumbnail": "https://img.youtube.com/vi/uH9AFj1qbyA/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -15883,6 +15913,21 @@
       "branch": "JP"
     },
     {
+      "id": "-RyJYPrczs0",
+      "date": "2026-10-15",
+      "dateLabel": "10/15 (木)",
+      "time": "20:00",
+      "startsAt": "2026-10-15T20:00:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=-RyJYPrczs0",
+      "videoId": "-RyJYPrczs0",
+      "thumbnail": "https://img.youtube.com/vi/-RyJYPrczs0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "j_cR2j0yStw",
       "date": "2026-10-15",
       "dateLabel": "10/15 (木)",
@@ -15908,6 +15953,21 @@
       "url": "https://www.youtube.com/watch?v=tQS9sZ_zoZI",
       "videoId": "tQS9sZ_zoZI",
       "thumbnail": "https://img.youtube.com/vi/tQS9sZ_zoZI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "YpHDZs_IMfY",
+      "date": "2026-10-16",
+      "dateLabel": "10/16 (金)",
+      "time": "19:00",
+      "startsAt": "2026-10-16T19:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=YpHDZs_IMfY",
+      "videoId": "YpHDZs_IMfY",
+      "thumbnail": "https://img.youtube.com/vi/YpHDZs_IMfY/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-14T04:58:26.990Z",
+  "generatedAt": "2026-10-14T05:22:10.794Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -14701,8 +14701,8 @@
       "id": "xkUVLMBAJXo",
       "date": "2026-10-14",
       "dateLabel": "10/14 (水)",
-      "time": "14:00",
-      "startsAt": "2026-10-14T14:00:00+09:00",
+      "time": "14:01",
+      "startsAt": "2026-10-14T14:01:00+09:00",
       "name": "Iofi",
       "title": null,
       "url": "https://www.youtube.com/watch?v=xkUVLMBAJXo",
@@ -14818,6 +14818,21 @@
       "branch": "JP"
     },
     {
+      "id": "9gu3Re3YTtQ",
+      "date": "2026-10-14",
+      "dateLabel": "10/14 (水)",
+      "time": "19:00",
+      "startsAt": "2026-10-14T19:00:00+09:00",
+      "name": "ReGLOSS",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=9gu3Re3YTtQ",
+      "videoId": "9gu3Re3YTtQ",
+      "thumbnail": "https://img.youtube.com/vi/9gu3Re3YTtQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "pHmyFfovwj8",
       "date": "2026-10-14",
       "dateLabel": "10/14 (水)",
@@ -14843,6 +14858,21 @@
       "url": "https://www.youtube.com/watch?v=xKhbOWNoYN8",
       "videoId": "xKhbOWNoYN8",
       "thumbnail": "https://img.youtube.com/vi/xKhbOWNoYN8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "FSDwet-B1P8",
+      "date": "2026-10-14",
+      "dateLabel": "10/14 (水)",
+      "time": "20:00",
+      "startsAt": "2026-10-14T20:00:00+09:00",
+      "name": "癒月ちょこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=FSDwet-B1P8",
+      "videoId": "FSDwet-B1P8",
+      "thumbnail": "https://img.youtube.com/vi/FSDwet-B1P8/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T19:17:10.982Z",
+  "generatedAt": "2026-10-15T22:28:39.014Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -16678,16 +16678,46 @@
       "branch": "JP"
     },
     {
-      "id": "WB3MxWLBYXU",
+      "id": "rc8PRhVCQdM",
       "date": "2026-10-16",
       "dateLabel": "10/16 (金)",
       "time": "06:00",
       "startsAt": "2026-10-16T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=rc8PRhVCQdM",
+      "videoId": "rc8PRhVCQdM",
+      "thumbnail": "https://img.youtube.com/vi/rc8PRhVCQdM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "WB3MxWLBYXU",
+      "date": "2026-10-16",
+      "dateLabel": "10/16 (金)",
+      "time": "06:01",
+      "startsAt": "2026-10-16T06:01:00+09:00",
       "name": "Gigi",
       "title": null,
       "url": "https://www.youtube.com/watch?v=WB3MxWLBYXU",
       "videoId": "WB3MxWLBYXU",
       "thumbnail": "https://img.youtube.com/vi/WB3MxWLBYXU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "9E92-AwEBfQ",
+      "date": "2026-10-16",
+      "dateLabel": "10/16 (金)",
+      "time": "07:01",
+      "startsAt": "2026-10-16T07:01:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=9E92-AwEBfQ",
+      "videoId": "9E92-AwEBfQ",
+      "thumbnail": "https://img.youtube.com/vi/9E92-AwEBfQ/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -16768,6 +16798,21 @@
       "branch": "JP"
     },
     {
+      "id": "N4i72xMwAqM",
+      "date": "2026-10-16",
+      "dateLabel": "10/16 (金)",
+      "time": "11:00",
+      "startsAt": "2026-10-16T11:00:00+09:00",
+      "name": "Kronii",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=N4i72xMwAqM",
+      "videoId": "N4i72xMwAqM",
+      "thumbnail": "https://img.youtube.com/vi/N4i72xMwAqM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "hWFJG6gLJ-Y",
       "date": "2026-10-16",
       "dateLabel": "10/16 (金)",
@@ -16808,6 +16853,21 @@
       "url": "https://www.youtube.com/watch?v=nxuUKS_yq44",
       "videoId": "nxuUKS_yq44",
       "thumbnail": "https://img.youtube.com/vi/nxuUKS_yq44/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "UoIEc0ChGLA",
+      "date": "2026-10-16",
+      "dateLabel": "10/16 (金)",
+      "time": "20:00",
+      "startsAt": "2026-10-16T20:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=UoIEc0ChGLA",
+      "videoId": "UoIEc0ChGLA",
+      "thumbnail": "https://img.youtube.com/vi/UoIEc0ChGLA/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -16868,6 +16928,21 @@
       "url": "https://www.youtube.com/watch?v=OIMQ1zT21Sk",
       "videoId": "OIMQ1zT21Sk",
       "thumbnail": "https://img.youtube.com/vi/OIMQ1zT21Sk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "pcSdYxScZbo",
+      "date": "2026-10-16",
+      "dateLabel": "10/16 (金)",
+      "time": "20:00",
+      "startsAt": "2026-10-16T20:00:00+09:00",
+      "name": "Kaela",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=pcSdYxScZbo",
+      "videoId": "pcSdYxScZbo",
+      "thumbnail": "https://img.youtube.com/vi/pcSdYxScZbo/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

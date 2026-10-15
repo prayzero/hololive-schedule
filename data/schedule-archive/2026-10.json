@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T04:46:00.436Z",
+  "generatedAt": "2026-10-15T05:50:53.947Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -15923,6 +15923,21 @@
       "url": "https://www.youtube.com/watch?v=ZNlovMQZ83g",
       "videoId": "ZNlovMQZ83g",
       "thumbnail": "https://img.youtube.com/vi/ZNlovMQZ83g/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "swhK067-WOc",
+      "date": "2026-10-15",
+      "dateLabel": "10/15 (木)",
+      "time": "18:00",
+      "startsAt": "2026-10-15T18:00:00+09:00",
+      "name": "風真いろは",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=swhK067-WOc",
+      "videoId": "swhK067-WOc",
+      "thumbnail": "https://img.youtube.com/vi/swhK067-WOc/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

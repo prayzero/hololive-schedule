@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T15:20:48.225Z",
+  "generatedAt": "2026-10-15T19:17:10.982Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -16636,8 +16636,8 @@
       "id": "2oT8JMG5uBY",
       "date": "2026-10-16",
       "dateLabel": "10/16 (金)",
-      "time": "00:30",
-      "startsAt": "2026-10-16T00:30:00+09:00",
+      "time": "00:32",
+      "startsAt": "2026-10-16T00:32:00+09:00",
       "name": "癒月ちょこ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=2oT8JMG5uBY",
@@ -16648,11 +16648,26 @@
       "branch": "JP"
     },
     {
+      "id": "xA8eCKIhybg",
+      "date": "2026-10-16",
+      "dateLabel": "10/16 (金)",
+      "time": "00:46",
+      "startsAt": "2026-10-16T00:46:00+09:00",
+      "name": "Reine",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=xA8eCKIhybg",
+      "videoId": "xA8eCKIhybg",
+      "thumbnail": "https://img.youtube.com/vi/xA8eCKIhybg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "cXp659B2-gQ",
       "date": "2026-10-16",
       "dateLabel": "10/16 (金)",
-      "time": "03:00",
-      "startsAt": "2026-10-16T03:00:00+09:00",
+      "time": "03:02",
+      "startsAt": "2026-10-16T03:02:00+09:00",
       "name": "Cecilia",
       "title": null,
       "url": "https://www.youtube.com/watch?v=cXp659B2-gQ",
@@ -16753,6 +16768,21 @@
       "branch": "JP"
     },
     {
+      "id": "hWFJG6gLJ-Y",
+      "date": "2026-10-16",
+      "dateLabel": "10/16 (金)",
+      "time": "14:00",
+      "startsAt": "2026-10-16T14:00:00+09:00",
+      "name": "Reine",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=hWFJG6gLJ-Y",
+      "videoId": "hWFJG6gLJ-Y",
+      "thumbnail": "https://img.youtube.com/vi/hWFJG6gLJ-Y/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "YpHDZs_IMfY",
       "date": "2026-10-16",
       "dateLabel": "10/16 (金)",
@@ -16783,6 +16813,21 @@
       "branch": "JP"
     },
     {
+      "id": "iNaRzlLqWVw",
+      "date": "2026-10-16",
+      "dateLabel": "10/16 (金)",
+      "time": "20:00",
+      "startsAt": "2026-10-16T20:00:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=iNaRzlLqWVw",
+      "videoId": "iNaRzlLqWVw",
+      "thumbnail": "https://img.youtube.com/vi/iNaRzlLqWVw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "6HzGZ_73acM",
       "date": "2026-10-16",
       "dateLabel": "10/16 (金)",
@@ -16808,6 +16853,21 @@
       "url": "https://www.youtube.com/watch?v=q2JtQgCCI1E",
       "videoId": "q2JtQgCCI1E",
       "thumbnail": "https://img.youtube.com/vi/q2JtQgCCI1E/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "OIMQ1zT21Sk",
+      "date": "2026-10-16",
+      "dateLabel": "10/16 (金)",
+      "time": "20:00",
+      "startsAt": "2026-10-16T20:00:00+09:00",
+      "name": "AZKi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=OIMQ1zT21Sk",
+      "videoId": "OIMQ1zT21Sk",
+      "thumbnail": "https://img.youtube.com/vi/OIMQ1zT21Sk/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

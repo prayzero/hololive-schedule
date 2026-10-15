@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T00:58:50.443Z",
+  "generatedAt": "2026-10-15T04:46:00.436Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -15823,21 +15823,6 @@
       "branch": "JP"
     },
     {
-      "id": "7kDvAsFbW2E",
-      "date": "2026-10-15",
-      "dateLabel": "10/15 (木)",
-      "time": "10:00",
-      "startsAt": "2026-10-15T10:00:00+09:00",
-      "name": "Bijou",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=7kDvAsFbW2E",
-      "videoId": "7kDvAsFbW2E",
-      "thumbnail": "https://img.youtube.com/vi/7kDvAsFbW2E/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "t4b9y5XGlw8",
       "date": "2026-10-15",
       "dateLabel": "10/15 (木)",
@@ -15868,6 +15853,21 @@
       "branch": "JP"
     },
     {
+      "id": "7kDvAsFbW2E",
+      "date": "2026-10-15",
+      "dateLabel": "10/15 (木)",
+      "time": "10:08",
+      "startsAt": "2026-10-15T10:08:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=7kDvAsFbW2E",
+      "videoId": "7kDvAsFbW2E",
+      "thumbnail": "https://img.youtube.com/vi/7kDvAsFbW2E/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "Dl64zfZPeYI",
       "date": "2026-10-15",
       "dateLabel": "10/15 (木)",
@@ -15893,6 +15893,21 @@
       "url": "https://www.youtube.com/watch?v=jcDQsEftkpk",
       "videoId": "jcDQsEftkpk",
       "thumbnail": "https://img.youtube.com/vi/jcDQsEftkpk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "95jxlctrd6s",
+      "date": "2026-10-15",
+      "dateLabel": "10/15 (木)",
+      "time": "18:00",
+      "startsAt": "2026-10-15T18:00:00+09:00",
+      "name": "白銀ノエル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=95jxlctrd6s",
+      "videoId": "95jxlctrd6s",
+      "thumbnail": "https://img.youtube.com/vi/95jxlctrd6s/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -15943,6 +15958,21 @@
       "branch": "JP"
     },
     {
+      "id": "577mhxKG9cQ",
+      "date": "2026-10-15",
+      "dateLabel": "10/15 (木)",
+      "time": "20:00",
+      "startsAt": "2026-10-15T20:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=577mhxKG9cQ",
+      "videoId": "577mhxKG9cQ",
+      "thumbnail": "https://img.youtube.com/vi/577mhxKG9cQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "-RyJYPrczs0",
       "date": "2026-10-15",
       "dateLabel": "10/15 (木)",
@@ -15988,6 +16018,21 @@
       "branch": "JP"
     },
     {
+      "id": "sfhaGNWf0X4",
+      "date": "2026-10-15",
+      "dateLabel": "10/15 (木)",
+      "time": "20:00",
+      "startsAt": "2026-10-15T20:00:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=sfhaGNWf0X4",
+      "videoId": "sfhaGNWf0X4",
+      "thumbnail": "https://img.youtube.com/vi/sfhaGNWf0X4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "SO4RGesjHjc",
       "date": "2026-10-15",
       "dateLabel": "10/15 (木)",
@@ -15998,6 +16043,21 @@
       "url": "https://www.youtube.com/watch?v=SO4RGesjHjc",
       "videoId": "SO4RGesjHjc",
       "thumbnail": "https://img.youtube.com/vi/SO4RGesjHjc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "8pF4qHcshDc",
+      "date": "2026-10-15",
+      "dateLabel": "10/15 (木)",
+      "time": "21:00",
+      "startsAt": "2026-10-15T21:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=8pF4qHcshDc",
+      "videoId": "8pF4qHcshDc",
+      "thumbnail": "https://img.youtube.com/vi/8pF4qHcshDc/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T22:28:39.014Z",
+  "generatedAt": "2026-10-16T00:42:40.418Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -16753,6 +16753,21 @@
       "branch": "JP"
     },
     {
+      "id": "9sjXc6K-R24",
+      "date": "2026-10-16",
+      "dateLabel": "10/16 (金)",
+      "time": "10:00",
+      "startsAt": "2026-10-16T10:00:00+09:00",
+      "name": "Gigi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=9sjXc6K-R24",
+      "videoId": "9sjXc6K-R24",
+      "thumbnail": "https://img.youtube.com/vi/9sjXc6K-R24/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "IEE5lHnZVRk",
       "date": "2026-10-16",
       "dateLabel": "10/16 (金)",
@@ -16858,6 +16873,21 @@
       "branch": "JP"
     },
     {
+      "id": "nMl9IXxPhDU",
+      "date": "2026-10-16",
+      "dateLabel": "10/16 (金)",
+      "time": "19:55",
+      "startsAt": "2026-10-16T19:55:00+09:00",
+      "name": "獅白ぼたん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=nMl9IXxPhDU",
+      "videoId": "nMl9IXxPhDU",
+      "thumbnail": "https://img.youtube.com/vi/nMl9IXxPhDU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "UoIEc0ChGLA",
       "date": "2026-10-16",
       "dateLabel": "10/16 (金)",
@@ -16898,6 +16928,21 @@
       "url": "https://www.youtube.com/watch?v=6HzGZ_73acM",
       "videoId": "6HzGZ_73acM",
       "thumbnail": "https://img.youtube.com/vi/6HzGZ_73acM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "gMNqo-VKOO4",
+      "date": "2026-10-16",
+      "dateLabel": "10/16 (金)",
+      "time": "20:00",
+      "startsAt": "2026-10-16T20:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=gMNqo-VKOO4",
+      "videoId": "gMNqo-VKOO4",
+      "thumbnail": "https://img.youtube.com/vi/gMNqo-VKOO4/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

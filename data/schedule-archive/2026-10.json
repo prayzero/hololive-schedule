@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T04:36:47.027Z",
+  "generatedAt": "2026-10-16T05:10:21.865Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -16838,6 +16838,21 @@
       "url": "https://www.youtube.com/watch?v=hWFJG6gLJ-Y",
       "videoId": "hWFJG6gLJ-Y",
       "thumbnail": "https://img.youtube.com/vi/hWFJG6gLJ-Y/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "qRWzJTFgqe4",
+      "date": "2026-10-16",
+      "dateLabel": "10/16 (金)",
+      "time": "14:30",
+      "startsAt": "2026-10-16T14:30:00+09:00",
+      "name": "常闇トワ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=qRWzJTFgqe4",
+      "videoId": "qRWzJTFgqe4",
+      "thumbnail": "https://img.youtube.com/vi/qRWzJTFgqe4/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

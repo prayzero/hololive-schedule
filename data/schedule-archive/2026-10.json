@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T18:27:28.279Z",
+  "generatedAt": "2026-10-16T21:39:49.637Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -17683,11 +17683,41 @@
       "branch": "JP"
     },
     {
-      "id": "mrXHDxX_ylM",
+      "id": "tc170O6Ibao",
+      "date": "2026-10-17",
+      "dateLabel": "10/17 (土)",
+      "time": "03:53",
+      "startsAt": "2026-10-17T03:53:00+09:00",
+      "name": "Kiara",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=tc170O6Ibao",
+      "videoId": "tc170O6Ibao",
+      "thumbnail": "https://img.youtube.com/vi/tc170O6Ibao/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "C6pxXhbyBz0",
       "date": "2026-10-17",
       "dateLabel": "10/17 (土)",
       "time": "06:00",
       "startsAt": "2026-10-17T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=C6pxXhbyBz0",
+      "videoId": "C6pxXhbyBz0",
+      "thumbnail": "https://img.youtube.com/vi/C6pxXhbyBz0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "mrXHDxX_ylM",
+      "date": "2026-10-17",
+      "dateLabel": "10/17 (土)",
+      "time": "06:02",
+      "startsAt": "2026-10-17T06:02:00+09:00",
       "name": "Gigi",
       "title": null,
       "url": "https://www.youtube.com/watch?v=mrXHDxX_ylM",
@@ -17728,6 +17758,21 @@
       "branch": "JP"
     },
     {
+      "id": "0aO8zxPn6cQ",
+      "date": "2026-10-17",
+      "dateLabel": "10/17 (土)",
+      "time": "08:00",
+      "startsAt": "2026-10-17T08:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=0aO8zxPn6cQ",
+      "videoId": "0aO8zxPn6cQ",
+      "thumbnail": "https://img.youtube.com/vi/0aO8zxPn6cQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "HWwZVS-lz-U",
       "date": "2026-10-17",
       "dateLabel": "10/17 (土)",
@@ -17738,6 +17783,21 @@
       "url": "https://www.youtube.com/watch?v=HWwZVS-lz-U",
       "videoId": "HWwZVS-lz-U",
       "thumbnail": "https://img.youtube.com/vi/HWwZVS-lz-U/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "gBUFIQ8G4sg",
+      "date": "2026-10-17",
+      "dateLabel": "10/17 (土)",
+      "time": "09:00",
+      "startsAt": "2026-10-17T09:00:00+09:00",
+      "name": "不知火フレア",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=gBUFIQ8G4sg",
+      "videoId": "gBUFIQ8G4sg",
+      "thumbnail": "https://img.youtube.com/vi/gBUFIQ8G4sg/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T20:54:51.330Z",
+  "generatedAt": "2026-10-17T23:03:55.375Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -18748,11 +18748,26 @@
       "branch": "JP"
     },
     {
-      "id": "JXx5vnvdjvQ",
+      "id": "1d6vh20_cw8",
       "date": "2026-10-18",
       "dateLabel": "10/18 (日)",
       "time": "06:00",
       "startsAt": "2026-10-18T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=1d6vh20_cw8",
+      "videoId": "1d6vh20_cw8",
+      "thumbnail": "https://img.youtube.com/vi/1d6vh20_cw8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "JXx5vnvdjvQ",
+      "date": "2026-10-18",
+      "dateLabel": "10/18 (日)",
+      "time": "06:03",
+      "startsAt": "2026-10-18T06:03:00+09:00",
       "name": "Gigi",
       "title": null,
       "url": "https://www.youtube.com/watch?v=JXx5vnvdjvQ",
@@ -18781,8 +18796,8 @@
       "id": "Rdfv_gljE-Y",
       "date": "2026-10-18",
       "dateLabel": "10/18 (日)",
-      "time": "08:00",
-      "startsAt": "2026-10-18T08:00:00+09:00",
+      "time": "07:56",
+      "startsAt": "2026-10-18T07:56:00+09:00",
       "name": "Bijou",
       "title": null,
       "url": "https://www.youtube.com/watch?v=Rdfv_gljE-Y",
@@ -18863,6 +18878,21 @@
       "url": "https://www.youtube.com/watch?v=3sM_Hp2W-vo",
       "videoId": "3sM_Hp2W-vo",
       "thumbnail": "https://img.youtube.com/vi/3sM_Hp2W-vo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "3Czc-bPlFR8",
+      "date": "2026-10-18",
+      "dateLabel": "10/18 (日)",
+      "time": "14:30",
+      "startsAt": "2026-10-18T14:30:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=3Czc-bPlFR8",
+      "videoId": "3Czc-bPlFR8",
+      "thumbnail": "https://img.youtube.com/vi/3Czc-bPlFR8/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T04:16:31.717Z",
+  "generatedAt": "2026-10-17T04:33:11.832Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -18068,6 +18068,21 @@
       "url": "https://www.youtube.com/watch?v=2aY6d7tMDOs",
       "videoId": "2aY6d7tMDOs",
       "thumbnail": "https://img.youtube.com/vi/2aY6d7tMDOs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "TGHLjRcU9sk",
+      "date": "2026-10-17",
+      "dateLabel": "10/17 (土)",
+      "time": "14:00",
+      "startsAt": "2026-10-17T14:00:00+09:00",
+      "name": "癒月ちょこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=TGHLjRcU9sk",
+      "videoId": "TGHLjRcU9sk",
+      "thumbnail": "https://img.youtube.com/vi/TGHLjRcU9sk/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

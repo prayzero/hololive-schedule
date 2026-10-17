@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T18:25:19.050Z",
+  "generatedAt": "2026-10-17T20:54:51.330Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -18928,6 +18928,21 @@
       "branch": "JP"
     },
     {
+      "id": "25waBu_edn0",
+      "date": "2026-10-18",
+      "dateLabel": "10/18 (日)",
+      "time": "22:00",
+      "startsAt": "2026-10-18T22:00:00+09:00",
+      "name": "さくらみこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=25waBu_edn0",
+      "videoId": "25waBu_edn0",
+      "thumbnail": "https://img.youtube.com/vi/25waBu_edn0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "yaGBdBwtvWA",
       "date": "2026-10-18",
       "dateLabel": "10/18 (日)",
@@ -18953,6 +18968,21 @@
       "url": "https://www.youtube.com/watch?v=301EPXwoc_A",
       "videoId": "301EPXwoc_A",
       "thumbnail": "https://img.youtube.com/vi/301EPXwoc_A/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "GTmgp_nFrXM",
+      "date": "2026-10-18",
+      "dateLabel": "10/18 (日)",
+      "time": "23:00",
+      "startsAt": "2026-10-18T23:00:00+09:00",
+      "name": "Raora",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=GTmgp_nFrXM",
+      "videoId": "GTmgp_nFrXM",
+      "thumbnail": "https://img.youtube.com/vi/GTmgp_nFrXM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

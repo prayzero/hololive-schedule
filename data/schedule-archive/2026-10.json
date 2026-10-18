@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T17:17:46.251Z",
+  "generatedAt": "2026-10-18T19:29:28.437Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -19828,6 +19828,21 @@
       "branch": "JP"
     },
     {
+      "id": "Dt5OHkR6Tok",
+      "date": "2026-10-19",
+      "dateLabel": "10/19 (月)",
+      "time": "11:00",
+      "startsAt": "2026-10-19T11:00:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Dt5OHkR6Tok",
+      "videoId": "Dt5OHkR6Tok",
+      "thumbnail": "https://img.youtube.com/vi/Dt5OHkR6Tok/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "hBef1wJIjVk",
       "date": "2026-10-19",
       "dateLabel": "10/19 (月)",
@@ -19853,6 +19868,21 @@
       "url": "https://www.youtube.com/watch?v=k8oEFAZ-RQc",
       "videoId": "k8oEFAZ-RQc",
       "thumbnail": "https://img.youtube.com/vi/k8oEFAZ-RQc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "IRtl8s__ptk",
+      "date": "2026-10-19",
+      "dateLabel": "10/19 (月)",
+      "time": "17:00",
+      "startsAt": "2026-10-19T17:00:00+09:00",
+      "name": "白銀ノエル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=IRtl8s__ptk",
+      "videoId": "IRtl8s__ptk",
+      "thumbnail": "https://img.youtube.com/vi/IRtl8s__ptk/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -20008,6 +20038,21 @@
       "branch": "JP"
     },
     {
+      "id": "Ee5Hcmx2oX8",
+      "date": "2026-10-19",
+      "dateLabel": "10/19 (月)",
+      "time": "22:30",
+      "startsAt": "2026-10-19T22:30:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Ee5Hcmx2oX8",
+      "videoId": "Ee5Hcmx2oX8",
+      "thumbnail": "https://img.youtube.com/vi/Ee5Hcmx2oX8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "C8W03Z6zWFk",
       "date": "2026-10-19",
       "dateLabel": "10/19 (月)",
@@ -20018,6 +20063,21 @@
       "url": "https://www.youtube.com/watch?v=C8W03Z6zWFk",
       "videoId": "C8W03Z6zWFk",
       "thumbnail": "https://img.youtube.com/vi/C8W03Z6zWFk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "4k5k9SkR25c",
+      "date": "2026-10-20",
+      "dateLabel": "10/20 (火)",
+      "time": "00:00",
+      "startsAt": "2026-10-20T00:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=4k5k9SkR25c",
+      "videoId": "4k5k9SkR25c",
+      "thumbnail": "https://img.youtube.com/vi/4k5k9SkR25c/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

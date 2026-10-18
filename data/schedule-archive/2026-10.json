@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T19:29:28.437Z",
+  "generatedAt": "2026-10-18T21:49:21.509Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -19768,6 +19768,21 @@
       "branch": "JP"
     },
     {
+      "id": "Je2UJX_q82k",
+      "date": "2026-10-19",
+      "dateLabel": "10/19 (月)",
+      "time": "06:00",
+      "startsAt": "2026-10-19T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Je2UJX_q82k",
+      "videoId": "Je2UJX_q82k",
+      "thumbnail": "https://img.youtube.com/vi/Je2UJX_q82k/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "QPinYOs0DfE",
       "date": "2026-10-19",
       "dateLabel": "10/19 (月)",
@@ -19808,6 +19823,21 @@
       "url": "https://www.youtube.com/watch?v=i7PxwGBGIl0",
       "videoId": "i7PxwGBGIl0",
       "thumbnail": "https://img.youtube.com/vi/i7PxwGBGIl0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "_x8dbbbDqMY",
+      "date": "2026-10-19",
+      "dateLabel": "10/19 (月)",
+      "time": "10:00",
+      "startsAt": "2026-10-19T10:00:00+09:00",
+      "name": "Kronii",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=_x8dbbbDqMY",
+      "videoId": "_x8dbbbDqMY",
+      "thumbnail": "https://img.youtube.com/vi/_x8dbbbDqMY/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

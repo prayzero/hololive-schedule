@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-18T21:49:21.509Z",
+  "generatedAt": "2026-10-18T23:46:12.492Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -19813,6 +19813,21 @@
       "branch": "JP"
     },
     {
+      "id": "zvMJdhNvlMI",
+      "date": "2026-10-19",
+      "dateLabel": "10/19 (月)",
+      "time": "09:00",
+      "startsAt": "2026-10-19T09:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=zvMJdhNvlMI",
+      "videoId": "zvMJdhNvlMI",
+      "thumbnail": "https://img.youtube.com/vi/zvMJdhNvlMI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "i7PxwGBGIl0",
       "date": "2026-10-19",
       "dateLabel": "10/19 (月)",
@@ -19868,6 +19883,21 @@
       "url": "https://www.youtube.com/watch?v=Dt5OHkR6Tok",
       "videoId": "Dt5OHkR6Tok",
       "thumbnail": "https://img.youtube.com/vi/Dt5OHkR6Tok/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "3pYMoZq0rqI",
+      "date": "2026-10-19",
+      "dateLabel": "10/19 (月)",
+      "time": "11:10",
+      "startsAt": "2026-10-19T11:10:00+09:00",
+      "name": "Gigi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=3pYMoZq0rqI",
+      "videoId": "3pYMoZq0rqI",
+      "thumbnail": "https://img.youtube.com/vi/3pYMoZq0rqI/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

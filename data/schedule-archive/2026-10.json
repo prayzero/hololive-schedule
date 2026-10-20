@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-20T14:31:28.214Z",
+  "generatedAt": "2026-10-20T18:41:48.698Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -21793,6 +21793,21 @@
       "branch": "JP"
     },
     {
+      "id": "nNAjbIxlmDA",
+      "date": "2026-10-21",
+      "dateLabel": "10/21 (水)",
+      "time": "01:01",
+      "startsAt": "2026-10-21T01:01:00+09:00",
+      "name": "アキロゼ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=nNAjbIxlmDA",
+      "videoId": "nNAjbIxlmDA",
+      "thumbnail": "https://img.youtube.com/vi/nNAjbIxlmDA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "ISUv-q0U5b4",
       "date": "2026-10-21",
       "dateLabel": "10/21 (水)",
@@ -21868,6 +21883,36 @@
       "branch": "JP"
     },
     {
+      "id": "XcDskINdvo4",
+      "date": "2026-10-21",
+      "dateLabel": "10/21 (水)",
+      "time": "08:00",
+      "startsAt": "2026-10-21T08:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=XcDskINdvo4",
+      "videoId": "XcDskINdvo4",
+      "thumbnail": "https://img.youtube.com/vi/XcDskINdvo4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "7IhINpnafwI",
+      "date": "2026-10-21",
+      "dateLabel": "10/21 (水)",
+      "time": "08:00",
+      "startsAt": "2026-10-21T08:00:00+09:00",
+      "name": "風真いろは",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=7IhINpnafwI",
+      "videoId": "7IhINpnafwI",
+      "thumbnail": "https://img.youtube.com/vi/7IhINpnafwI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "LPw6xcrP9mY",
       "date": "2026-10-21",
       "dateLabel": "10/21 (水)",
@@ -21913,6 +21958,36 @@
       "branch": "JP"
     },
     {
+      "id": "SKsBzv6XUsQ",
+      "date": "2026-10-21",
+      "dateLabel": "10/21 (水)",
+      "time": "13:00",
+      "startsAt": "2026-10-21T13:00:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=SKsBzv6XUsQ",
+      "videoId": "SKsBzv6XUsQ",
+      "thumbnail": "https://img.youtube.com/vi/SKsBzv6XUsQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "CaDX-pheWK0",
+      "date": "2026-10-21",
+      "dateLabel": "10/21 (水)",
+      "time": "15:00",
+      "startsAt": "2026-10-21T15:00:00+09:00",
+      "name": "Reine",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=CaDX-pheWK0",
+      "videoId": "CaDX-pheWK0",
+      "thumbnail": "https://img.youtube.com/vi/CaDX-pheWK0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "I6_3dC3tfhA",
       "date": "2026-10-21",
       "dateLabel": "10/21 (水)",
@@ -21928,6 +22003,36 @@
       "branch": "JP"
     },
     {
+      "id": "p6gozBm1ivg",
+      "date": "2026-10-21",
+      "dateLabel": "10/21 (水)",
+      "time": "19:00",
+      "startsAt": "2026-10-21T19:00:00+09:00",
+      "name": "姫森ルーナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=p6gozBm1ivg",
+      "videoId": "p6gozBm1ivg",
+      "thumbnail": "https://img.youtube.com/vi/p6gozBm1ivg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "mxO8GECgCas",
+      "date": "2026-10-21",
+      "dateLabel": "10/21 (水)",
+      "time": "20:00",
+      "startsAt": "2026-10-21T20:00:00+09:00",
+      "name": "宙科そぴあ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=mxO8GECgCas",
+      "videoId": "mxO8GECgCas",
+      "thumbnail": "https://img.youtube.com/vi/mxO8GECgCas/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "6QdqwaNwa68",
       "date": "2026-10-21",
       "dateLabel": "10/21 (水)",
@@ -21938,6 +22043,36 @@
       "url": "https://www.youtube.com/watch?v=6QdqwaNwa68",
       "videoId": "6QdqwaNwa68",
       "thumbnail": "https://img.youtube.com/vi/6QdqwaNwa68/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "dmPELDvXPKA",
+      "date": "2026-10-21",
+      "dateLabel": "10/21 (水)",
+      "time": "22:00",
+      "startsAt": "2026-10-21T22:00:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=dmPELDvXPKA",
+      "videoId": "dmPELDvXPKA",
+      "thumbnail": "https://img.youtube.com/vi/dmPELDvXPKA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Jjq5nAIVcTI",
+      "date": "2026-10-22",
+      "dateLabel": "10/22 (木)",
+      "time": "04:00",
+      "startsAt": "2026-10-22T04:00:00+09:00",
+      "name": "Elizabeth Sub",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Jjq5nAIVcTI",
+      "videoId": "Jjq5nAIVcTI",
+      "thumbnail": "https://img.youtube.com/vi/Jjq5nAIVcTI/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

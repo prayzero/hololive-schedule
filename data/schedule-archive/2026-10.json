@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T00:34:32.919Z",
+  "generatedAt": "2026-10-21T04:55:15.847Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -22003,6 +22003,21 @@
       "branch": "JP"
     },
     {
+      "id": "x_TQ0xw4c7I",
+      "date": "2026-10-21",
+      "dateLabel": "10/21 (水)",
+      "time": "11:00",
+      "startsAt": "2026-10-21T11:00:00+09:00",
+      "name": "holo EN",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=x_TQ0xw4c7I",
+      "videoId": "x_TQ0xw4c7I",
+      "thumbnail": "https://img.youtube.com/vi/x_TQ0xw4c7I/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "z2eCGbnrPIA",
       "date": "2026-10-21",
       "dateLabel": "10/21 (水)",
@@ -22033,11 +22048,41 @@
       "branch": "JP"
     },
     {
+      "id": "KvYeE9Ongm8",
+      "date": "2026-10-21",
+      "dateLabel": "10/21 (水)",
+      "time": "13:01",
+      "startsAt": "2026-10-21T13:01:00+09:00",
+      "name": "Ollie",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=KvYeE9Ongm8",
+      "videoId": "KvYeE9Ongm8",
+      "thumbnail": "https://img.youtube.com/vi/KvYeE9Ongm8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Pl_iW9hU8G4",
+      "date": "2026-10-21",
+      "dateLabel": "10/21 (水)",
+      "time": "13:02",
+      "startsAt": "2026-10-21T13:02:00+09:00",
+      "name": "Moona",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Pl_iW9hU8G4",
+      "videoId": "Pl_iW9hU8G4",
+      "thumbnail": "https://img.youtube.com/vi/Pl_iW9hU8G4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "SKsBzv6XUsQ",
       "date": "2026-10-21",
       "dateLabel": "10/21 (水)",
-      "time": "13:00",
-      "startsAt": "2026-10-21T13:00:00+09:00",
+      "time": "13:11",
+      "startsAt": "2026-10-21T13:11:00+09:00",
       "name": "Kobo",
       "title": null,
       "url": "https://www.youtube.com/watch?v=SKsBzv6XUsQ",
@@ -22078,6 +22123,21 @@
       "branch": "JP"
     },
     {
+      "id": "fanR5mMMtyM",
+      "date": "2026-10-21",
+      "dateLabel": "10/21 (水)",
+      "time": "18:00",
+      "startsAt": "2026-10-21T18:00:00+09:00",
+      "name": "ロボ子さん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=fanR5mMMtyM",
+      "videoId": "fanR5mMMtyM",
+      "thumbnail": "https://img.youtube.com/vi/fanR5mMMtyM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "I6_3dC3tfhA",
       "date": "2026-10-21",
       "dateLabel": "10/21 (水)",
@@ -22088,6 +22148,21 @@
       "url": "https://www.youtube.com/watch?v=I6_3dC3tfhA",
       "videoId": "I6_3dC3tfhA",
       "thumbnail": "https://img.youtube.com/vi/I6_3dC3tfhA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "D_Lz6j9PBOE",
+      "date": "2026-10-21",
+      "dateLabel": "10/21 (水)",
+      "time": "19:00",
+      "startsAt": "2026-10-21T19:00:00+09:00",
+      "name": "赤井はあと",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=D_Lz6j9PBOE",
+      "videoId": "D_Lz6j9PBOE",
+      "thumbnail": "https://img.youtube.com/vi/D_Lz6j9PBOE/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -22153,6 +22228,21 @@
       "branch": "JP"
     },
     {
+      "id": "Bu2RjjOeIx8",
+      "date": "2026-10-21",
+      "dateLabel": "10/21 (水)",
+      "time": "23:00",
+      "startsAt": "2026-10-21T23:00:00+09:00",
+      "name": "百灯キョーコ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Bu2RjjOeIx8",
+      "videoId": "Bu2RjjOeIx8",
+      "thumbnail": "https://img.youtube.com/vi/Bu2RjjOeIx8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "Jjq5nAIVcTI",
       "date": "2026-10-22",
       "dateLabel": "10/22 (木)",
@@ -22163,6 +22253,36 @@
       "url": "https://www.youtube.com/watch?v=Jjq5nAIVcTI",
       "videoId": "Jjq5nAIVcTI",
       "thumbnail": "https://img.youtube.com/vi/Jjq5nAIVcTI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "eAQXQI2Sl_I",
+      "date": "2026-10-22",
+      "dateLabel": "10/22 (木)",
+      "time": "06:00",
+      "startsAt": "2026-10-22T06:00:00+09:00",
+      "name": "Gigi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=eAQXQI2Sl_I",
+      "videoId": "eAQXQI2Sl_I",
+      "thumbnail": "https://img.youtube.com/vi/eAQXQI2Sl_I/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "YQu-0jotU0w",
+      "date": "2026-10-22",
+      "dateLabel": "10/22 (木)",
+      "time": "08:00",
+      "startsAt": "2026-10-22T08:00:00+09:00",
+      "name": "Shiori",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=YQu-0jotU0w",
+      "videoId": "YQu-0jotU0w",
+      "thumbnail": "https://img.youtube.com/vi/YQu-0jotU0w/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

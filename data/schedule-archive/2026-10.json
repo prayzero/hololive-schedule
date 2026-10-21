@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T19:33:42.781Z",
+  "generatedAt": "2026-10-21T22:42:38.679Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -22948,6 +22948,21 @@
       "branch": "JP"
     },
     {
+      "id": "4lhNId4gqUE",
+      "date": "2026-10-22",
+      "dateLabel": "10/22 (木)",
+      "time": "06:00",
+      "startsAt": "2026-10-22T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=4lhNId4gqUE",
+      "videoId": "4lhNId4gqUE",
+      "thumbnail": "https://img.youtube.com/vi/4lhNId4gqUE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "eAQXQI2Sl_I",
       "date": "2026-10-22",
       "dateLabel": "10/22 (木)",
@@ -22958,6 +22973,21 @@
       "url": "https://www.youtube.com/watch?v=eAQXQI2Sl_I",
       "videoId": "eAQXQI2Sl_I",
       "thumbnail": "https://img.youtube.com/vi/eAQXQI2Sl_I/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "1kPBkAmaHkA",
+      "date": "2026-10-22",
+      "dateLabel": "10/22 (木)",
+      "time": "06:01",
+      "startsAt": "2026-10-22T06:01:00+09:00",
+      "name": "Gigi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=1kPBkAmaHkA",
+      "videoId": "1kPBkAmaHkA",
+      "thumbnail": "https://img.youtube.com/vi/1kPBkAmaHkA/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -23003,6 +23033,21 @@
       "url": "https://www.youtube.com/watch?v=lVXJOLiUX0c",
       "videoId": "lVXJOLiUX0c",
       "thumbnail": "https://img.youtube.com/vi/lVXJOLiUX0c/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "KviedHsy-8M",
+      "date": "2026-10-22",
+      "dateLabel": "10/22 (木)",
+      "time": "13:00",
+      "startsAt": "2026-10-22T13:00:00+09:00",
+      "name": "Kobo",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=KviedHsy-8M",
+      "videoId": "KviedHsy-8M",
+      "thumbnail": "https://img.youtube.com/vi/KviedHsy-8M/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -23108,6 +23153,21 @@
       "url": "https://www.youtube.com/watch?v=0cflsAhcWZM",
       "videoId": "0cflsAhcWZM",
       "thumbnail": "https://img.youtube.com/vi/0cflsAhcWZM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "t8q3XEmK0aM",
+      "date": "2026-10-22",
+      "dateLabel": "10/22 (木)",
+      "time": "21:00",
+      "startsAt": "2026-10-22T21:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=t8q3XEmK0aM",
+      "videoId": "t8q3XEmK0aM",
+      "thumbnail": "https://img.youtube.com/vi/t8q3XEmK0aM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

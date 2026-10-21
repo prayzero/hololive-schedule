@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T04:55:15.847Z",
+  "generatedAt": "2026-10-21T05:17:30.983Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -22093,6 +22093,36 @@
       "branch": "JP"
     },
     {
+      "id": "5jSOa1k65Bc",
+      "date": "2026-10-21",
+      "dateLabel": "10/21 (水)",
+      "time": "13:56",
+      "startsAt": "2026-10-21T13:56:00+09:00",
+      "name": "Kiara",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=5jSOa1k65Bc",
+      "videoId": "5jSOa1k65Bc",
+      "thumbnail": "https://img.youtube.com/vi/5jSOa1k65Bc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "QnOG89sUJJ8",
+      "date": "2026-10-21",
+      "dateLabel": "10/21 (水)",
+      "time": "15:00",
+      "startsAt": "2026-10-21T15:00:00+09:00",
+      "name": "Anya",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=QnOG89sUJJ8",
+      "videoId": "QnOG89sUJJ8",
+      "thumbnail": "https://img.youtube.com/vi/QnOG89sUJJ8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "CaDX-pheWK0",
       "date": "2026-10-21",
       "dateLabel": "10/21 (水)",
@@ -22103,6 +22133,21 @@
       "url": "https://www.youtube.com/watch?v=CaDX-pheWK0",
       "videoId": "CaDX-pheWK0",
       "thumbnail": "https://img.youtube.com/vi/CaDX-pheWK0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "vAghMnlaPvM",
+      "date": "2026-10-21",
+      "dateLabel": "10/21 (水)",
+      "time": "15:00",
+      "startsAt": "2026-10-21T15:00:00+09:00",
+      "name": "Risu",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=vAghMnlaPvM",
+      "videoId": "vAghMnlaPvM",
+      "thumbnail": "https://img.youtube.com/vi/vAghMnlaPvM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

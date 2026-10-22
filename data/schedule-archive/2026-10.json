@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T04:55:01.830Z",
+  "generatedAt": "2026-10-22T06:04:11.275Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -23098,6 +23098,36 @@
       "branch": "JP"
     },
     {
+      "id": "LSJGijQxogg",
+      "date": "2026-10-22",
+      "dateLabel": "10/22 (木)",
+      "time": "14:00",
+      "startsAt": "2026-10-22T14:00:00+09:00",
+      "name": "Kronii",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=LSJGijQxogg",
+      "videoId": "LSJGijQxogg",
+      "thumbnail": "https://img.youtube.com/vi/LSJGijQxogg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "NJvTv2Vya5M",
+      "date": "2026-10-22",
+      "dateLabel": "10/22 (木)",
+      "time": "16:00",
+      "startsAt": "2026-10-22T16:00:00+09:00",
+      "name": "ロボ子さん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=NJvTv2Vya5M",
+      "videoId": "NJvTv2Vya5M",
+      "thumbnail": "https://img.youtube.com/vi/NJvTv2Vya5M/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "mOeNtn8bn3A",
       "date": "2026-10-22",
       "dateLabel": "10/22 (木)",
@@ -23228,6 +23258,21 @@
       "url": "https://www.youtube.com/watch?v=t8q3XEmK0aM",
       "videoId": "t8q3XEmK0aM",
       "thumbnail": "https://img.youtube.com/vi/t8q3XEmK0aM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "-OUq_BR3XV4",
+      "date": "2026-10-22",
+      "dateLabel": "10/22 (木)",
+      "time": "23:00",
+      "startsAt": "2026-10-22T23:00:00+09:00",
+      "name": "Raora",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=-OUq_BR3XV4",
+      "videoId": "-OUq_BR3XV4",
+      "thumbnail": "https://img.youtube.com/vi/-OUq_BR3XV4/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

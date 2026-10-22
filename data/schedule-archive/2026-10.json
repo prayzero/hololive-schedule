@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T16:05:55.202Z",
+  "generatedAt": "2026-10-22T20:04:42.322Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -23833,6 +23833,21 @@
       "branch": "JP"
     },
     {
+      "id": "7c2WFgUAxJg",
+      "date": "2026-10-23",
+      "dateLabel": "10/23 (金)",
+      "time": "01:44",
+      "startsAt": "2026-10-23T01:44:00+09:00",
+      "name": "癒月ちょこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=7c2WFgUAxJg",
+      "videoId": "7c2WFgUAxJg",
+      "thumbnail": "https://img.youtube.com/vi/7c2WFgUAxJg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "LmHO_FLZvk0",
       "date": "2026-10-23",
       "dateLabel": "10/23 (金)",
@@ -23873,6 +23888,21 @@
       "url": "https://www.youtube.com/watch?v=3XASCt7gbRg",
       "videoId": "3XASCt7gbRg",
       "thumbnail": "https://img.youtube.com/vi/3XASCt7gbRg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "6aCrhJAEPyk",
+      "date": "2026-10-23",
+      "dateLabel": "10/23 (金)",
+      "time": "08:00",
+      "startsAt": "2026-10-23T08:00:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=6aCrhJAEPyk",
+      "videoId": "6aCrhJAEPyk",
+      "thumbnail": "https://img.youtube.com/vi/6aCrhJAEPyk/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -23938,6 +23968,21 @@
       "branch": "JP"
     },
     {
+      "id": "tY-webWlO4Y",
+      "date": "2026-10-23",
+      "dateLabel": "10/23 (金)",
+      "time": "12:00",
+      "startsAt": "2026-10-23T12:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=tY-webWlO4Y",
+      "videoId": "tY-webWlO4Y",
+      "thumbnail": "https://img.youtube.com/vi/tY-webWlO4Y/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "jaal44YdGPQ",
       "date": "2026-10-23",
       "dateLabel": "10/23 (金)",
@@ -23963,6 +24008,21 @@
       "url": "https://www.youtube.com/watch?v=t0alZwYhHL4",
       "videoId": "t0alZwYhHL4",
       "thumbnail": "https://img.youtube.com/vi/t0alZwYhHL4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "7D-DTq6bfqg",
+      "date": "2026-10-23",
+      "dateLabel": "10/23 (金)",
+      "time": "19:00",
+      "startsAt": "2026-10-23T19:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=7D-DTq6bfqg",
+      "videoId": "7D-DTq6bfqg",
+      "thumbnail": "https://img.youtube.com/vi/7D-DTq6bfqg/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -24058,6 +24118,21 @@
       "branch": "JP"
     },
     {
+      "id": "9hje3DkpyBY",
+      "date": "2026-10-23",
+      "dateLabel": "10/23 (金)",
+      "time": "22:00",
+      "startsAt": "2026-10-23T22:00:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=9hje3DkpyBY",
+      "videoId": "9hje3DkpyBY",
+      "thumbnail": "https://img.youtube.com/vi/9hje3DkpyBY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "u6ui44uX8ZQ",
       "date": "2026-10-23",
       "dateLabel": "10/23 (金)",
@@ -24068,6 +24143,21 @@
       "url": "https://www.youtube.com/watch?v=u6ui44uX8ZQ",
       "videoId": "u6ui44uX8ZQ",
       "thumbnail": "https://img.youtube.com/vi/u6ui44uX8ZQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "jHKZlIRSd0g",
+      "date": "2026-10-23",
+      "dateLabel": "10/23 (金)",
+      "time": "22:30",
+      "startsAt": "2026-10-23T22:30:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=jHKZlIRSd0g",
+      "videoId": "jHKZlIRSd0g",
+      "thumbnail": "https://img.youtube.com/vi/jHKZlIRSd0g/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

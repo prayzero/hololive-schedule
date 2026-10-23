@@ -84,6 +84,7 @@ test("corrupt required nested records fail closed for every resource", () => {
     ["solos", (payload) => { payload.lives[0].startsAt = "not-a-date"; }],
     ["youtubeLives", (payload) => { payload.lives[0].memberIds = null; }],
     ["hololiveDreams", (payload) => { payload.gachaRates.normalRates.star5 = Number.NaN; }],
+    ["hololiveDreams", (payload) => { payload.pickups[0].scheduleSourceUrl = 123; }],
   ];
 
   for (const [key, mutate] of cases) {

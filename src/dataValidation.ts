@@ -370,6 +370,7 @@ function validateDreamPickup(value: unknown): boolean {
     isText(value.sourceUrl, MAX_URL_LENGTH) &&
     isText(value.scheduleNote) &&
     isArrayOf(value.cards, validateDreamPickupCard, 2_000) &&
+    isOptional(value, "scheduleSourceUrl", (url) => isText(url, MAX_URL_LENGTH)) &&
     isOptional(value, "startsAt", isDateText) &&
     isOptional(value, "endsAt", isNullableDateText) &&
     isOptional(value, "bannerImageUrl", (url) => isText(url, MAX_URL_LENGTH)) &&

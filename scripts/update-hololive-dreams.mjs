@@ -225,7 +225,92 @@ const heatedSummerDayPickupCards = [
   },
 ];
 
+// General and selectable banners are separate draws; keep their IDs stable for
+// locally saved pull histories. Dates below are in-game times, not store promos.
+const recentPickupCampaigns = [
+  {
+    id: "blissful-seaside-days",
+    title: "지복의 시사이드 데이즈",
+    nativeTitle: "至福のシーサイドデイズ",
+    members: "토와·카엘라·보탄·비쥬",
+    participantTalentIds: ["tokoyami-towa", "kaela-kovalskia", "shishiro-botan", "koseki-bijou"],
+    startsAt: "2026-10-19T11:00:00+09:00",
+    endsAt: "2026-10-29T10:59:59+09:00",
+    announcedOn: "2026-10-19",
+    sourceUrl: "https://x.com/hololive_dreams/status/2112001681504551213",
+    scheduleSourceUrl: "https://www.gamer.ne.jp/news/202610190009/",
+    bannerImageUrl: "https://pbs.twimg.com/media/HU9MOgQboAAMcLX?format=webp&name=small",
+    scheduleNote: "일반형·선택형 동시 개최와 대상은 공식 X에서 확인했습니다. 기간은 QualiArts·COVER 발표문을 게재한 Gamer의 10월 19일 기사 기준 10/19 11:00~10/29 10:59(JST/KST)입니다. App Store의 홍보 노출 시각은 게임 개최 시각으로 사용하지 않았습니다.",
+  },
+  {
+    id: "ocean-create",
+    title: "다리를 놓는 오션 크리에이트",
+    nativeTitle: "橋を架けるオーシャンクリエイト",
+    members: "폴카·라미·리리카",
+    participantTalentIds: ["omaru-polka", "yukihana-lamy", "ichijou-ririka"],
+    startsAt: "2026-10-07T11:00:00+09:00",
+    endsAt: "2026-10-19T10:59:59+09:00",
+    announcedOn: "2026-10-07",
+    sourceUrl: "https://x.com/hololive_dreams/status/2107652787425456410",
+    scheduleSourceUrl: "https://x.com/hololive_dreams/status/2110656928334676449",
+    bannerImageUrl: "https://pbs.twimg.com/media/HT_dE1va4AAmNp4?format=webp&name=small",
+    scheduleNote: "공식 X의 신규 멤버 예고(10/6), 개최 공지(10/7), 종료 안내(10/15)를 확인했습니다. 일반형과 선택형은 10/7 11:00~10/19 10:59(JST/KST)에 동시 개최됐습니다.",
+  },
+  {
+    id: "dreamy-deep-blue",
+    title: "꿈꾸는 블루 프런티어",
+    nativeTitle: "夢みるブルーフロンティア",
+    members: "마린·코요리·코보·벨즈",
+    participantTalentIds: ["houshou-marine", "hakui-koyori", "kobo-kanaeru", "hakos-baelz"],
+    startsAt: "2026-09-29T11:00:00+09:00",
+    endsAt: "2026-10-19T10:59:59+09:00",
+    announcedOn: "2026-09-29",
+    sourceUrl: "https://x.com/hololive_dreams/status/2109207384581190079",
+    scheduleSourceUrl: "https://www.einpresswire.com/article/946062521/hololive-dreams-holodori-adds-new-area-soda-pop-lagoon-today-september-29-in-its-first-major-update",
+    bannerImageUrl: "https://is1-ssl.mzstatic.com/image/thumb/ZD-gbJxjZQnZm6GGHyULmA/1200x630fo.jpg",
+    scheduleNote: "QualiArts의 9월 29일 기업 발표 기준 일반형과 선택형은 9/29 11:00~10/19 10:59(JST/KST)에 동시 개최됐습니다. 종료 시각은 공식 X의 10월 11일 공지에서도 확인했습니다.",
+  },
+  {
+    id: "seeking-summer-cool",
+    title: "시원함을 찾아 떠나는 여행",
+    nativeTitle: "涼を求めるトリップ",
+    members: "아키·시오리·라플라스·아냐",
+    participantTalentIds: ["aki-rosenthal", "shiori-novella", "la-darknesss", "anya-melfissa"],
+    startsAt: "2026-09-19T11:00:00+09:00",
+    endsAt: "2026-09-29T05:59:59+09:00",
+    announcedOn: "2026-09-19",
+    sourceUrl: "https://x.com/hololive_dreams/status/2101132185428496498",
+    scheduleSourceUrl: "https://www.einpresswire.com/article/943860924/hololive-dreams-in-game-event-a-dreamy-summer-escape-begins-september-19",
+    bannerImageUrl: "https://pbs.twimg.com/media/HSizvRJaIAA--at?format=webp&name=small",
+    scheduleNote: "동시 개최와 대상은 공식 X, 기간은 QualiArts 기업 발표에서 확인했습니다. 9/19 11:00~9/29 05:59(JST/KST) 개최로, 다음 픽업 시작 시각과 다릅니다.",
+  },
+];
+
 const pickups = [
+  ...recentPickupCampaigns.flatMap((campaign) =>
+    ["selectable", "standard"].map((variant) => ({
+      id: `${campaign.id}-${variant}-2026`,
+      title: `${variant === "selectable" ? "선택 가능! " : ""}「${campaign.title}」 가챠`,
+      subtitle: `${campaign.nativeTitle} · 신규 수영복 ★5 ${campaign.members}`,
+      targetRatePercent: null,
+      rateLabel: variant === "selectable"
+        ? "선택한 신규 수영복 ★5 한 명 · 출현율 상승"
+        : `신규 수영복 ★5 ${campaign.participantTalentIds.length}명`,
+      rateBreakdown: [],
+      startsOn: campaign.startsAt.slice(0, 10),
+      endsOn: campaign.endsAt.slice(0, 10),
+      startsAt: campaign.startsAt,
+      endsAt: campaign.endsAt,
+      announcedOn: campaign.announcedOn,
+      sourceLabel: "hololive Dreams 공식 X 픽업 공지",
+      sourceUrl: campaign.sourceUrl,
+      scheduleSourceUrl: campaign.scheduleSourceUrl,
+      bannerImageUrl: campaign.bannerImageUrl,
+      participantTalentIds: campaign.participantTalentIds,
+      scheduleNote: `${campaign.scheduleNote} 확인한 공지에 숫자 제공 비율이 없어 확률은 미확인으로 표시합니다.`,
+      cards: [],
+    })),
+  ),
   {
     id: "secret-vacation-2026",
     title: "「비밀의 바캉스」 가챠",
@@ -482,11 +567,11 @@ const officialBroadcasts = [
 ];
 
 const payload = {
-  checkedAt: "2026-09-16T12:42:00+09:00",
+  checkedAt: "2026-10-23T16:28:00+09:00",
   sourceUrl: "https://www.hololive-dreams.com/en",
   officialNewsUrl: "https://hololive.hololivepro.com/en/news/20260723-01-401/",
   sourceNote:
-    "공식 웹·X와 QualiArts가 게시한 App Store 메타데이터에 공개된 캐릭터, 픽업과 이벤트 일정을 정리했습니다. 외부 공식 채널에 없는 개별 카드명·곡명·제공 비율은 추정하지 않습니다.",
+    "10월 23일 공식 X와 QualiArts 기업 발표·발표문 게재 기사를 확인해 9월 19일 이후 픽업 일정을 갱신했습니다. 캐릭터·기존 이벤트는 앞서 확인한 공식 웹·X·App Store 자료를 유지합니다. 확인되지 않은 카드명·제공 비율은 추정하지 않습니다.",
   launchDate: "2026-07-23",
   game: {
     title: "hololive Dreams",
@@ -803,9 +888,10 @@ for (const pickup of pickups) {
     const pickupBanner = new URL(pickup.bannerImageUrl);
     if (
       pickupBanner.protocol !== "https:" ||
-      pickupBanner.hostname !== "is1-ssl.mzstatic.com"
+      pickupBanner.username || pickupBanner.password || pickupBanner.port ||
+      !["is1-ssl.mzstatic.com", "pbs.twimg.com"].includes(pickupBanner.hostname)
     ) {
-      throw new Error(`${pickup.id}: 공식 App Store 배너 URL이 아닙니다.`);
+      throw new Error(`${pickup.id}: 승인된 공식 배너 URL이 아닙니다.`);
     }
     for (const talentId of pickup.participantTalentIds) {
       if (!dreamTalentIds.has(talentId)) {

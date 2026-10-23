@@ -6,7 +6,7 @@ import {
   rename,
   rm,
 } from "node:fs/promises";
-import { basename, dirname, parse, relative, resolve, sep } from "node:path";
+import { basename, dirname, isAbsolute, parse, relative, resolve, sep } from "node:path";
 
 export async function writeFileAtomically(path, contents, encoding = "utf8") {
   const destination = resolve(path);
@@ -149,7 +149,9 @@ function isPathInside(parent, candidate) {
   const pathFromParent = relative(parent, candidate);
   return (
     pathFromParent === "" ||
-    (!pathFromParent.startsWith(`..${sep}`) && pathFromParent !== "..")
+    (!isAbsolute(pathFromParent) &&
+      !pathFromParent.startsWith(`..${sep}`) &&
+      pathFromParent !== "..")
   );
 }
 

@@ -391,6 +391,43 @@ test("contained paths cannot traverse outside their root", () => {
   assert.throws(() => resolveContainedPath(root, "..", "outside.json"));
 });
 
+test("Windows archive roots distinguish separate drives and enforce RUNNER_TEMP", {
+  skip: process.platform !== "win32",
+  concurrency: false,
+}, () => {
+  const previousActions = process.env.GITHUB_ACTIONS;
+  const previousRunnerTemp = process.env.RUNNER_TEMP;
+  const workspaceRoot = "C:\\holo-now-workspace\\site";
+  const runnerTemp = "D:\\holo-now-runner-temp";
+  const archiveRoot = resolve(runnerTemp, "schedule-archive");
+
+  try {
+    process.env.GITHUB_ACTIONS = "true";
+    process.env.RUNNER_TEMP = runnerTemp;
+    assert.equal(
+      validateExternalArchiveRoot(archiveRoot, { workspaceRoot }),
+      archiveRoot,
+    );
+    assert.throws(
+      () => validateExternalArchiveRoot("E:\\holo-now-runner-temp\\schedule-archive", { workspaceRoot }),
+      /strict descendant of RUNNER_TEMP/,
+    );
+    assert.throws(
+      () => validateExternalArchiveRoot(resolve(workspaceRoot, "archive"), { workspaceRoot }),
+      /outside and must not contain the workspace/,
+    );
+    assert.throws(
+      () => validateExternalArchiveRoot("C:\\holo-now-workspace", { workspaceRoot }),
+      /outside and must not contain the workspace/,
+    );
+  } finally {
+    if (previousActions === undefined) delete process.env.GITHUB_ACTIONS;
+    else process.env.GITHUB_ACTIONS = previousActions;
+    if (previousRunnerTemp === undefined) delete process.env.RUNNER_TEMP;
+    else process.env.RUNNER_TEMP = previousRunnerTemp;
+  }
+});
+
 test("GitHub Actions archive roots must stay below RUNNER_TEMP", {
   concurrency: false,
 }, () => {

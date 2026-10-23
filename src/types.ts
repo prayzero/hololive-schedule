@@ -334,6 +334,7 @@ export interface DreamPickup {
   announcedOn: string;
   sourceLabel: string;
   sourceUrl: string;
+  scheduleSourceUrl?: string;
   scheduleNote: string;
   bannerImageUrl?: string;
   participantTalentIds?: string[];

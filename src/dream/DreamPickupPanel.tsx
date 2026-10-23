@@ -455,6 +455,12 @@ export function DreamPickupPanel({
               {featured.pickup.sourceLabel}
               <ExternalLink size={13} aria-hidden="true" />
             </a>
+            {featured.pickup.scheduleSourceUrl ? (
+              <a href={featured.pickup.scheduleSourceUrl} target="_blank" rel="noreferrer">
+                개최 기간 근거
+                <ExternalLink size={13} aria-hidden="true" />
+              </a>
+            ) : null}
           </footer>
         </article>
       ) : (
@@ -515,7 +521,14 @@ export function DreamPickupPanel({
                   </div>
                   <div className="dream-pickup-history__note">
                     <Clock3 size={14} aria-hidden="true" />
-                    <span>{pickup.scheduleNote}</span>
+                    <span>
+                      {pickup.scheduleNote}
+                      {pickup.scheduleSourceUrl ? (
+                        <> <a href={pickup.scheduleSourceUrl} target="_blank" rel="noreferrer">
+                          개최 기간 근거
+                        </a></>
+                      ) : null}
+                    </span>
                   </div>
                   <a
                     href={pickup.sourceUrl}

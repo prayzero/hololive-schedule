@@ -1,0 +1,39 @@
+{
+  "checkedAt": "2026-10-23T16:28:00+09:00",
+  "scope": "9월 19일~10월 23일 신규 픽업 4종의 일반형·선택형 일정",
+  "method": "공식 X 원문, QualiArts 기업 발표, 공식 발표문 게재 기사를 대조했습니다. 한국어 제목은 일본어 제목의 번역이며 공식 한국어 명칭으로 주장하지 않습니다. 종료 시각이 분 단위로 공지되어 기존 데이터 규칙대로 해당 분의 59초까지 표시합니다.",
+  "campaigns": [
+    {
+      "id": "blissful-seaside-days",
+      "officialAnnouncementUrl": "https://x.com/hololive_dreams/status/2112001681504551213",
+      "officialStartUrl": "https://x.com/holo_dreams_en/status/2111744093852430799",
+      "schedulePublicationUrl": "https://www.gamer.ne.jp/news/202610190009/",
+      "schedulePublicationType": "QualiArts·COVER 발표 정보를 게재한 매체 기사. X 개최 공지 자체에는 종료 시각이 없습니다.",
+      "imageSourceUrl": "https://x.com/holo_dreams_en/status/2112001885003821550",
+      "storeEventUrl": "https://apps.apple.com/jp/app/id6756641135?eventid=6824371315",
+      "storeMetadataDiscrepancy": "App Store 홍보 기간은 10/19 17:00~10/29 10:00(JST)입니다. 게임 개최 기간 10/19 11:00~10/29 10:59와 달라 일정 근거로 사용하지 않았습니다."
+    },
+    {
+      "id": "ocean-create",
+      "officialAnnouncementUrl": "https://x.com/hololive_dreams/status/2107652787425456410",
+      "officialStartUrl": "https://x.com/hololive_dreams/status/2107395447673508070",
+      "officialEndUrl": "https://x.com/hololive_dreams/status/2110656928334676449",
+      "imageSourceUrl": "https://x.com/hololive_dreams/status/2107652787425456410"
+    },
+    {
+      "id": "dreamy-deep-blue",
+      "corporateReleaseUrl": "https://www.einpresswire.com/article/946062521/hololive-dreams-holodori-adds-new-area-soda-pop-lagoon-today-september-29-in-its-first-major-update",
+      "officialEndUrl": "https://x.com/hololive_dreams/status/2109207384581190079",
+      "imageSourceUrl": "https://apps.apple.com/ec/app/hololive-dreams/id6756641249?eventid=6816033289"
+    },
+    {
+      "id": "seeking-summer-cool",
+      "officialAnnouncementUrl": "https://x.com/hololive_dreams/status/2101132185428496498",
+      "corporateReleaseUrl": "https://www.einpresswire.com/article/943860924/hololive-dreams-in-game-event-a-dreamy-summer-escape-begins-september-19",
+      "imageSourceUrl": "https://x.com/hololive_dreams/status/2101132185428496498",
+      "timingNote": "기업 발표의 가챠 종료는 9/29 05:59(JST)입니다. 같은 날 다음 가챠의 시작 11:00까지로 연장해서 표시하지 않습니다."
+    }
+  ],
+  "ratePolicy": "확인한 공식 공지에 수치가 없어 신규 8개 항목의 targetRatePercent는 null, rateBreakdown은 빈 배열로 둡니다. 일반형과 선택형의 수치를 이전 가챠에서 복사하지 않습니다.",
+  "preservation": "기존 6개 픽업 ID와 기록은 유지합니다. 기존 가챠 확률 표, 캐릭터, 이벤트, 공식 방송 목록 전체를 이번에 재검증한 것은 아닙니다."
+}

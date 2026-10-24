@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T21:15:49.301Z",
+  "generatedAt": "2026-10-24T23:25:01.905Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -25543,21 +25543,6 @@
       "branch": "JP"
     },
     {
-      "id": "0S2WSM0OrXg",
-      "date": "2026-10-24",
-      "dateLabel": "10/24 (土)",
-      "time": "21:00",
-      "startsAt": "2026-10-24T21:00:00+09:00",
-      "name": "ときのそら",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=0S2WSM0OrXg",
-      "videoId": "0S2WSM0OrXg",
-      "thumbnail": "https://img.youtube.com/vi/0S2WSM0OrXg/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "ghEg55I_Ahc",
       "date": "2026-10-24",
       "dateLabel": "10/24 (土)",
@@ -25613,6 +25598,21 @@
       "url": "https://www.youtube.com/watch?v=Z5mEiQb_Fz8",
       "videoId": "Z5mEiQb_Fz8",
       "thumbnail": "https://img.youtube.com/vi/Z5mEiQb_Fz8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "0S2WSM0OrXg",
+      "date": "2026-10-24",
+      "dateLabel": "10/24 (土)",
+      "time": "21:20",
+      "startsAt": "2026-10-24T21:20:00+09:00",
+      "name": "ときのそら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=0S2WSM0OrXg",
+      "videoId": "0S2WSM0OrXg",
+      "thumbnail": "https://img.youtube.com/vi/0S2WSM0OrXg/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -25936,8 +25936,8 @@
       "id": "6WJ-K0SFnEk",
       "date": "2026-10-25",
       "dateLabel": "10/25 (日)",
-      "time": "08:00",
-      "startsAt": "2026-10-25T08:00:00+09:00",
+      "time": "07:55",
+      "startsAt": "2026-10-25T07:55:00+09:00",
       "name": "FUWAMOCO",
       "title": null,
       "url": "https://www.youtube.com/watch?v=6WJ-K0SFnEk",

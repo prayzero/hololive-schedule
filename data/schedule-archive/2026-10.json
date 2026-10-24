@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-23T23:27:36.358Z",
+  "generatedAt": "2026-10-24T01:56:03.967Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -24928,26 +24928,11 @@
       "branch": "JP"
     },
     {
-      "id": "nvRAkeG0-0o",
-      "date": "2026-10-24",
-      "dateLabel": "10/24 (土)",
-      "time": "10:00",
-      "startsAt": "2026-10-24T10:00:00+09:00",
-      "name": "大空スバル",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=nvRAkeG0-0o",
-      "videoId": "nvRAkeG0-0o",
-      "thumbnail": "https://img.youtube.com/vi/nvRAkeG0-0o/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "M_6eIQaexuQ",
       "date": "2026-10-24",
       "dateLabel": "10/24 (土)",
-      "time": "10:00",
-      "startsAt": "2026-10-24T10:00:00+09:00",
+      "time": "09:58",
+      "startsAt": "2026-10-24T09:58:00+09:00",
       "name": "Bijou",
       "title": null,
       "url": "https://www.youtube.com/watch?v=M_6eIQaexuQ",
@@ -24958,16 +24943,31 @@
       "branch": "JP"
     },
     {
-      "id": "6WJ-K0SFnEk",
+      "id": "-9zT53eD8Ik",
       "date": "2026-10-24",
       "dateLabel": "10/24 (土)",
       "time": "10:00",
       "startsAt": "2026-10-24T10:00:00+09:00",
-      "name": "FUWAMOCO",
+      "name": "Bijou",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=6WJ-K0SFnEk",
-      "videoId": "6WJ-K0SFnEk",
-      "thumbnail": "https://img.youtube.com/vi/6WJ-K0SFnEk/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=-9zT53eD8Ik",
+      "videoId": "-9zT53eD8Ik",
+      "thumbnail": "https://img.youtube.com/vi/-9zT53eD8Ik/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "nvRAkeG0-0o",
+      "date": "2026-10-24",
+      "dateLabel": "10/24 (土)",
+      "time": "10:01",
+      "startsAt": "2026-10-24T10:01:00+09:00",
+      "name": "大空スバル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=nvRAkeG0-0o",
+      "videoId": "nvRAkeG0-0o",
+      "thumbnail": "https://img.youtube.com/vi/nvRAkeG0-0o/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -25058,6 +25058,21 @@
       "url": "https://www.youtube.com/watch?v=nlU8K-cuW7o",
       "videoId": "nlU8K-cuW7o",
       "thumbnail": "https://img.youtube.com/vi/nlU8K-cuW7o/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "ZAVMgXi7-aQ",
+      "date": "2026-10-24",
+      "dateLabel": "10/24 (土)",
+      "time": "19:00",
+      "startsAt": "2026-10-24T19:00:00+09:00",
+      "name": "赤井はあと",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ZAVMgXi7-aQ",
+      "videoId": "ZAVMgXi7-aQ",
+      "thumbnail": "https://img.youtube.com/vi/ZAVMgXi7-aQ/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -25183,6 +25198,21 @@
       "branch": "JP"
     },
     {
+      "id": "HvxZVWRaiKk",
+      "date": "2026-10-24",
+      "dateLabel": "10/24 (土)",
+      "time": "22:00",
+      "startsAt": "2026-10-24T22:00:00+09:00",
+      "name": "百灯キョーコ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=HvxZVWRaiKk",
+      "videoId": "HvxZVWRaiKk",
+      "thumbnail": "https://img.youtube.com/vi/HvxZVWRaiKk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "EwxON07swbU",
       "date": "2026-10-24",
       "dateLabel": "10/24 (土)",
@@ -25208,6 +25238,21 @@
       "url": "https://www.youtube.com/watch?v=JPSqr-x7ZWo",
       "videoId": "JPSqr-x7ZWo",
       "thumbnail": "https://img.youtube.com/vi/JPSqr-x7ZWo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "6WJ-K0SFnEk",
+      "date": "2026-10-25",
+      "dateLabel": "10/25 (日)",
+      "time": "08:00",
+      "startsAt": "2026-10-25T08:00:00+09:00",
+      "name": "FUWAMOCO",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=6WJ-K0SFnEk",
+      "videoId": "6WJ-K0SFnEk",
+      "thumbnail": "https://img.youtube.com/vi/6WJ-K0SFnEk/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

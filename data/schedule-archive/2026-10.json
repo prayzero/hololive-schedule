@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T15:53:13.909Z",
+  "generatedAt": "2026-10-24T18:45:07.821Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -25873,6 +25873,21 @@
       "branch": "JP"
     },
     {
+      "id": "iHzmEUgxcm0",
+      "date": "2026-10-25",
+      "dateLabel": "10/25 (日)",
+      "time": "01:24",
+      "startsAt": "2026-10-25T01:24:00+09:00",
+      "name": "癒月ちょこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=iHzmEUgxcm0",
+      "videoId": "iHzmEUgxcm0",
+      "thumbnail": "https://img.youtube.com/vi/iHzmEUgxcm0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "eiuX72ejH6g",
       "date": "2026-10-25",
       "dateLabel": "10/25 (日)",
@@ -26018,6 +26033,21 @@
       "url": "https://www.youtube.com/watch?v=8_Xl7UK3D_E",
       "videoId": "8_Xl7UK3D_E",
       "thumbnail": "https://img.youtube.com/vi/8_Xl7UK3D_E/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "g2fCOjojJhQ",
+      "date": "2026-10-25",
+      "dateLabel": "10/25 (日)",
+      "time": "19:00",
+      "startsAt": "2026-10-25T19:00:00+09:00",
+      "name": "熱千めら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=g2fCOjojJhQ",
+      "videoId": "g2fCOjojJhQ",
+      "thumbnail": "https://img.youtube.com/vi/g2fCOjojJhQ/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

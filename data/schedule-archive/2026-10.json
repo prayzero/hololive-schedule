@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T16:35:46.644Z",
+  "generatedAt": "2026-10-25T19:15:02.518Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -26983,6 +26983,21 @@
       "branch": "JP"
     },
     {
+      "id": "7Ttu78AKUOI",
+      "date": "2026-10-26",
+      "dateLabel": "10/26 (月)",
+      "time": "11:00",
+      "startsAt": "2026-10-26T11:00:00+09:00",
+      "name": "Raora",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=7Ttu78AKUOI",
+      "videoId": "7Ttu78AKUOI",
+      "thumbnail": "https://img.youtube.com/vi/7Ttu78AKUOI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "0PgUff6IQ-Y",
       "date": "2026-10-26",
       "dateLabel": "10/26 (月)",
@@ -27013,6 +27028,21 @@
       "branch": "JP"
     },
     {
+      "id": "QfgdNsAwuUc",
+      "date": "2026-10-26",
+      "dateLabel": "10/26 (月)",
+      "time": "20:00",
+      "startsAt": "2026-10-26T20:00:00+09:00",
+      "name": "宙科そぴあ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=QfgdNsAwuUc",
+      "videoId": "QfgdNsAwuUc",
+      "thumbnail": "https://img.youtube.com/vi/QfgdNsAwuUc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "mbFmBqlbyXs",
       "date": "2026-10-26",
       "dateLabel": "10/26 (月)",
@@ -27023,6 +27053,21 @@
       "url": "https://www.youtube.com/watch?v=mbFmBqlbyXs",
       "videoId": "mbFmBqlbyXs",
       "thumbnail": "https://img.youtube.com/vi/mbFmBqlbyXs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Xfh5EZDGCrU",
+      "date": "2026-10-26",
+      "dateLabel": "10/26 (月)",
+      "time": "21:30",
+      "startsAt": "2026-10-26T21:30:00+09:00",
+      "name": "不知火フレア",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Xfh5EZDGCrU",
+      "videoId": "Xfh5EZDGCrU",
+      "thumbnail": "https://img.youtube.com/vi/Xfh5EZDGCrU/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -27083,6 +27128,21 @@
       "url": "https://www.youtube.com/watch?v=mQTx-WStvH4",
       "videoId": "mQTx-WStvH4",
       "thumbnail": "https://img.youtube.com/vi/mQTx-WStvH4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "9XKRUCDekUo",
+      "date": "2026-10-27",
+      "dateLabel": "10/27 (火)",
+      "time": "21:30",
+      "startsAt": "2026-10-27T21:30:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=9XKRUCDekUo",
+      "videoId": "9XKRUCDekUo",
+      "thumbnail": "https://img.youtube.com/vi/9XKRUCDekUo/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

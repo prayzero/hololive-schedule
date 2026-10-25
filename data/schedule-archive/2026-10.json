@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-24T23:25:01.905Z",
+  "generatedAt": "2026-10-25T01:34:38.770Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -25993,6 +25993,21 @@
       "branch": "JP"
     },
     {
+      "id": "QuhsRznIp9w",
+      "date": "2026-10-25",
+      "dateLabel": "10/25 (日)",
+      "time": "11:00",
+      "startsAt": "2026-10-25T11:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=QuhsRznIp9w",
+      "videoId": "QuhsRznIp9w",
+      "thumbnail": "https://img.youtube.com/vi/QuhsRznIp9w/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "hBW6EfapVKY",
       "date": "2026-10-25",
       "dateLabel": "10/25 (日)",
@@ -26018,6 +26033,21 @@
       "url": "https://www.youtube.com/watch?v=xZLz587JZt4",
       "videoId": "xZLz587JZt4",
       "thumbnail": "https://img.youtube.com/vi/xZLz587JZt4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "04r1RxO_CpY",
+      "date": "2026-10-25",
+      "dateLabel": "10/25 (日)",
+      "time": "14:00",
+      "startsAt": "2026-10-25T14:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=04r1RxO_CpY",
+      "videoId": "04r1RxO_CpY",
+      "thumbnail": "https://img.youtube.com/vi/04r1RxO_CpY/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

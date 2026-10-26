@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T17:18:10.659Z",
+  "generatedAt": "2026-10-26T21:41:41.741Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -27703,6 +27703,21 @@
       "branch": "JP"
     },
     {
+      "id": "aIfkb0hzs8c",
+      "date": "2026-10-27",
+      "dateLabel": "10/27 (火)",
+      "time": "06:00",
+      "startsAt": "2026-10-27T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=aIfkb0hzs8c",
+      "videoId": "aIfkb0hzs8c",
+      "thumbnail": "https://img.youtube.com/vi/aIfkb0hzs8c/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "TLT-4CNbRc8",
       "date": "2026-10-27",
       "dateLabel": "10/27 (火)",
@@ -27713,21 +27728,6 @@
       "url": "https://www.youtube.com/watch?v=TLT-4CNbRc8",
       "videoId": "TLT-4CNbRc8",
       "thumbnail": "https://img.youtube.com/vi/TLT-4CNbRc8/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
-      "id": "YlzdFQIPBTM",
-      "date": "2026-10-27",
-      "dateLabel": "10/27 (火)",
-      "time": "08:00",
-      "startsAt": "2026-10-27T08:00:00+09:00",
-      "name": "Bijou",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=YlzdFQIPBTM",
-      "videoId": "YlzdFQIPBTM",
-      "thumbnail": "https://img.youtube.com/vi/YlzdFQIPBTM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -27838,6 +27838,21 @@
       "branch": "JP"
     },
     {
+      "id": "koFtuzOOVwQ",
+      "date": "2026-10-27",
+      "dateLabel": "10/27 (火)",
+      "time": "21:00",
+      "startsAt": "2026-10-27T21:00:00+09:00",
+      "name": "白上フブキ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=koFtuzOOVwQ",
+      "videoId": "koFtuzOOVwQ",
+      "thumbnail": "https://img.youtube.com/vi/koFtuzOOVwQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "mQTx-WStvH4",
       "date": "2026-10-27",
       "dateLabel": "10/27 (火)",
@@ -27853,6 +27868,21 @@
       "branch": "JP"
     },
     {
+      "id": "bfDKD4wk7Vk",
+      "date": "2026-10-27",
+      "dateLabel": "10/27 (火)",
+      "time": "22:30",
+      "startsAt": "2026-10-27T22:30:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=bfDKD4wk7Vk",
+      "videoId": "bfDKD4wk7Vk",
+      "thumbnail": "https://img.youtube.com/vi/bfDKD4wk7Vk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "F3z7xeNZJRI",
       "date": "2026-10-28",
       "dateLabel": "10/28 (水)",
@@ -27863,6 +27893,21 @@
       "url": "https://www.youtube.com/watch?v=F3z7xeNZJRI",
       "videoId": "F3z7xeNZJRI",
       "thumbnail": "https://img.youtube.com/vi/F3z7xeNZJRI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "YlzdFQIPBTM",
+      "date": "2026-10-28",
+      "dateLabel": "10/28 (水)",
+      "time": "08:00",
+      "startsAt": "2026-10-28T08:00:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=YlzdFQIPBTM",
+      "videoId": "YlzdFQIPBTM",
+      "thumbnail": "https://img.youtube.com/vi/YlzdFQIPBTM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

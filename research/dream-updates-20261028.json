@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-10-28T03:12:00+09:00",
+  "scope": "10월 27일 저녁 공식 방송 이후 신규 발표",
+  "method": "공식 X의 공개 syndication API에서 작성자·본문·이미지를 확인했습니다. 긴 픽업 공지의 잘린 부분은 x.com 원문의 og:description 전체 텍스트로 확인했습니다.",
+  "pickup": {
+    "id": "cosplay-night",
+    "nativeTitle": "変幻自在☆Cosplay Night",
+    "sourceUrl": "https://x.com/hololive_dreams/status/2115047737985016004",
+    "startsAt": "2026-10-29T11:00:00+09:00",
+    "endsAt": null,
+    "participantTalentIds": ["natsuiro-matsuri", "vestia-zeta", "nerissa-ravencroft", "juufuutei-raden", "todoroki-hajime"],
+    "bannerImageUrl": "https://pbs.twimg.com/media/HVom9W1aEAAkkIZ.jpg",
+    "variants": "일반형과 선택형 동시 개최 예고",
+    "freeDraw": "출시 100일 기념 첫 10연차 무료는 일반형만 대상입니다. 선택형은 제외한다고 공식 원문에 명시되어 있습니다.",
+    "unknowns": "종료 시각과 숫자 제공 비율은 공지에 없어 null 및 빈 비율 배열로 유지합니다. 임의 종료일이나 이전 가챠 비율을 복사하지 않습니다."
+  },
+  "notices": [
+    {
+      "sourceUrl": "https://x.com/hololive_dreams/status/2115063030287614098",
+      "summary": "10/28 12:00~14:00 전후(JST) 점검 예정. 종료는 확정이 아니며 변경될 수 있습니다."
+    },
+    {
+      "sourceUrl": "https://x.com/hololive_dreams/status/2115051902815879371",
+      "timeZoneSourceUrl": "https://x.com/holo_dreams_en/status/2115054270576029906",
+      "summary": "怪宴スペクタクル / KaienSpectacle MV는 10/28 20:00 JST 공개 예정이며 게임 내 곡은 다음 이벤트와 함께 추가 예정입니다. 이벤트 일정은 이번 공지에 없으므로 생성하지 않습니다."
+    }
+  ],
+  "preservation": "기존 14개 픽업과 8개 이벤트, 3개 공식 방송을 보존했습니다. 연구 기록 20261027의 후속 픽업 미확인은 당시 시점의 기록이며 이번 발표로 갱신되었습니다."
+}

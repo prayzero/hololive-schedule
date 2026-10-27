@@ -229,6 +229,22 @@ const heatedSummerDayPickupCards = [
 // locally saved pull histories. Dates below are in-game times, not store promos.
 const recentPickupCampaigns = [
   {
+    id: "cosplay-night",
+    title: "변화무쌍☆Cosplay Night",
+    nativeTitle: "変幻自在☆Cosplay Night",
+    members: "마츠리·제타·네리사·라덴·하지메",
+    costumeLabel: "코스튬",
+    firstTenFree: true,
+    participantTalentIds: ["natsuiro-matsuri", "vestia-zeta", "nerissa-ravencroft", "juufuutei-raden", "todoroki-hajime"],
+    startsAt: "2026-10-29T11:00:00+09:00",
+    endsAt: null,
+    announcedOn: "2026-10-27",
+    sourceUrl: "https://x.com/hololive_dreams/status/2115047737985016004",
+    scheduleSourceUrl: "https://x.com/hololive_dreams/status/2115047737985016004",
+    bannerImageUrl: "https://pbs.twimg.com/media/HVom9W1aEAAkkIZ.jpg",
+    scheduleNote: "10/27 공식 X에서 10/29 11:00(JST/KST) 시작과 일반형·선택형 동시 개최를 예고했습니다. 종료일은 발표되지 않아 미확인으로 표시합니다.",
+  },
+  {
     id: "blissful-seaside-days",
     title: "지복의 시사이드 데이즈",
     nativeTitle: "至福のシーサイドデイズ",
@@ -291,14 +307,14 @@ const pickups = [
     ["selectable", "standard"].map((variant) => ({
       id: `${campaign.id}-${variant}-2026`,
       title: `${variant === "selectable" ? "선택 가능! " : ""}「${campaign.title}」 가챠`,
-      subtitle: `${campaign.nativeTitle} · 신규 수영복 ★5 ${campaign.members}`,
+      subtitle: `${campaign.nativeTitle} · 신규 ${campaign.costumeLabel ?? "수영복"} ★5 ${campaign.members}${campaign.firstTenFree ? (variant === "standard" ? " · 첫 10연차 무료" : " · 첫 10연차 무료 대상 제외") : ""}`,
       targetRatePercent: null,
       rateLabel: variant === "selectable"
-        ? "선택한 신규 수영복 ★5 한 명 · 출현율 상승"
-        : `신규 수영복 ★5 ${campaign.participantTalentIds.length}명`,
+        ? `선택한 신규 ${campaign.costumeLabel ?? "수영복"} ★5 한 명 · 출현율 상승`
+        : `신규 ${campaign.costumeLabel ?? "수영복"} ★5 ${campaign.participantTalentIds.length}명`,
       rateBreakdown: [],
       startsOn: campaign.startsAt.slice(0, 10),
-      endsOn: campaign.endsAt.slice(0, 10),
+      endsOn: campaign.endsAt?.slice(0, 10) ?? null,
       startsAt: campaign.startsAt,
       endsAt: campaign.endsAt,
       announcedOn: campaign.announcedOn,
@@ -307,7 +323,7 @@ const pickups = [
       scheduleSourceUrl: campaign.scheduleSourceUrl,
       bannerImageUrl: campaign.bannerImageUrl,
       participantTalentIds: campaign.participantTalentIds,
-      scheduleNote: `${campaign.scheduleNote} 확인한 공지에 숫자 제공 비율이 없어 확률은 미확인으로 표시합니다.`,
+      scheduleNote: `${campaign.scheduleNote}${campaign.firstTenFree ? (variant === "standard" ? " 출시 100일 기념으로 일반형의 첫 10연차는 무료입니다." : " 선택형은 첫 10연차 무료 대상이 아닙니다.") : ""} 확인한 공지에 숫자 제공 비율이 없어 확률은 미확인으로 표시합니다.`,
       cards: [],
     })),
   ),
@@ -693,11 +709,11 @@ const officialBroadcasts = [
 ];
 
 const payload = {
-  checkedAt: "2026-10-27T14:57:00+09:00",
+  checkedAt: "2026-10-28T03:12:00+09:00",
   sourceUrl: "https://www.hololive-dreams.com/en",
   officialNewsUrl: "https://hololive.hololivepro.com/en/news/20260723-01-401/",
   sourceNote:
-    "10월 27일 공식 X·YouTube와 QualiArts 발표 자료를 확인해 신규 공지, 9월 19일 이후 이벤트와 공식 방송을 보완했습니다. 현재 픽업은 10월 29일 10:59 종료이며 후속 픽업은 공식 발표 확인 전까지 추가하지 않습니다. 캐릭터·기존 제공 비율은 이번 갱신 대상이 아닙니다.",
+    "10월 28일 공식 X를 추가 확인해 10/29 11:00 시작 예정인 Cosplay Night 일반형·선택형과 점검·신곡 MV 예고를 반영했습니다. 후속 픽업의 종료일·숫자 제공 비율은 미발표입니다. 9월 19일 이후 이벤트·공식 방송은 10월 27일 확인 자료이며 캐릭터·기존 제공 비율은 이번 갱신 대상이 아닙니다.",
   launchDate: "2026-07-23",
   game: {
     title: "hololive Dreams",
@@ -799,6 +815,22 @@ const payload = {
   events,
   officialBroadcasts,
   notices: [
+    {
+      id: "maintenance-2026-10-28",
+      title: "10월 28일 12:00~14:00 전후 점검 예정",
+      body: "한국·일본 시간 기준 12:00부터 점검이 예정되어 있습니다. 점검 중에는 게임을 이용할 수 없으며, 종료 예정은 14:00 전후입니다. 실제 종료 시각은 변경될 수 있습니다.",
+      publishedOn: "2026-10-27",
+      sourceLabel: "hololive Dreams 공식 X",
+      sourceUrl: "https://x.com/hololive_dreams/status/2115063030287614098",
+    },
+    {
+      id: "kaien-spectacle-mv-2026",
+      title: "신곡 「怪宴スペクタクル」 MV 공개 예고",
+      body: "MV는 10월 28일 20:00(KST/JST) 공개 예정입니다. 곡은 다음 이벤트와 함께 추가될 예정이며, 이번 공지에는 이벤트의 구체적인 개최 시각이 안내되지 않았습니다.",
+      publishedOn: "2026-10-27",
+      sourceLabel: "hololive Dreams 공식 X",
+      sourceUrl: "https://x.com/hololive_dreams/status/2115051902815879371",
+    },
     {
       id: "november-premium-mission-pass-2026",
       title: "11월 프리미엄 미션 패스: 마녀 모자",

@@ -428,6 +428,20 @@ function validateDreamBroadcast(value: unknown): boolean {
   );
 }
 
+function validateDreamNotice(value: unknown): boolean {
+  return (
+    isRecord(value) &&
+    isText(value.id, MAX_ID_LENGTH) &&
+    isText(value.title) &&
+    isText(value.body) &&
+    isDateText(value.publishedOn) &&
+    /^\d{4}-\d{2}-\d{2}$/.test(value.publishedOn) &&
+    new Date(value.publishedOn).toISOString().slice(0, 10) === value.publishedOn &&
+    isText(value.sourceUrl, MAX_URL_LENGTH) &&
+    isText(value.sourceLabel, 2_048)
+  );
+}
+
 function validateDreamGame(value: unknown): boolean {
   return (
     isRecord(value) &&
@@ -491,6 +505,9 @@ function validateHololiveDreams(value: unknown): boolean {
     validateDreamGachaRates(value.gachaRates) &&
     isArrayOf(value.events, validateDreamEvent, 2_000) &&
     isArrayOf(value.officialBroadcasts, validateDreamBroadcast, 2_000) &&
+    isOptional(value, "notices", (notices) =>
+      isArrayOf(notices, validateDreamNotice, 2_000),
+    ) &&
     isArrayOf(value.pickups, validateDreamPickup, 2_000) &&
     isArrayOf(value.characters, validateDreamCharacter, 5_000)
   );

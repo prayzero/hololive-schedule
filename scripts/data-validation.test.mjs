@@ -115,11 +115,43 @@ test("nullable fields stay valid while invalid dates and unsafe numbers are reje
     validation.validateSiteResourcePayload(
       "hololiveDreams",
       corrupted("hololiveDreams", (payload) => {
-        payload.events[0].chapters[0].startsAt = "invalid";
+        const chapter = payload.events.flatMap((event) => event.chapters)[0];
+        assert.ok(chapter, "the fixture must include a chapter");
+        chapter.startsAt = "invalid";
       }),
     ),
     false,
   );
+});
+
+test("optional Dreams notices accept date-only announcements and reject malformed data", () => {
+  const payload = structuredClone(payloads.hololiveDreams);
+  delete payload.notices;
+  assert.equal(validation.validateSiteResourcePayload("hololiveDreams", payload), true);
+  const notice = {
+    id: "notice-fixture",
+    title: "미션 패스 예고",
+    body: "11월 1일 시작 예정입니다.",
+    publishedOn: "2026-10-26",
+    sourceLabel: "공식 X",
+    sourceUrl: "https://x.com/hololive_dreams",
+  };
+  for (const notices of [[], [notice]]) {
+    payload.notices = notices;
+    assert.equal(validation.validateSiteResourcePayload("hololiveDreams", payload), true);
+  }
+  for (const invalid of [
+    null,
+    {},
+    [{ ...notice, publishedOn: "2026-02-30" }],
+    [{ ...notice, publishedOn: "2026-10-26T12:00:00+09:00" }],
+    [{ ...notice, body: "x".repeat(16_385) }],
+    [{ ...notice, sourceUrl: 123 }],
+    new Array(1),
+  ]) {
+    payload.notices = invalid;
+    assert.equal(validation.validateSiteResourcePayload("hololiveDreams", payload), false);
+  }
 });
 
 test("unknown resources, sparse arrays and oversized strings fail closed", () => {

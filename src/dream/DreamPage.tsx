@@ -195,6 +195,15 @@ export function DreamPage({
     [talents],
   );
   const normalizedQuery = normalizeSearch(query);
+  const visibleNotices = useMemo(
+    () =>
+      [...(payload.notices ?? [])]
+        .filter((notice) =>
+          includesSearch([notice.title, notice.body], normalizedQuery),
+        )
+        .sort((left, right) => right.publishedOn.localeCompare(left.publishedOn)),
+    [normalizedQuery, payload.notices],
+  );
   const visibleEvents = useMemo(
     () =>
       (payload.events ?? [])
@@ -723,181 +732,215 @@ export function DreamPage({
           )}
         </>
       ) : panel === "event" ? (
-        orderedVisibleEvents.length ? (
-          <div className="dream-event-list">
-            {orderedVisibleEvents.map(({ event, chapters }) => {
-              const nowTime = now.getTime();
-              const eventStartsAt = new Date(event.startsAt).getTime();
-              const nextEvent = payload.events
-                .filter(
-                  (candidate) =>
-                    candidate.id !== event.id &&
-                    new Date(candidate.startsAt).getTime() > eventStartsAt,
-                )
-                .sort(
-                  (left, right) =>
-                    new Date(left.startsAt).getTime() -
-                    new Date(right.startsAt).getTime(),
-                )[0];
-              const eventStatus = dreamEventTimingStatus(
-                event,
-                nowTime,
-                nextEvent,
-              );
-              const participantIds = event.participantTalentIds?.length
-                ? event.participantTalentIds
-                : [...new Set(event.chapters.map((chapter) => chapter.talentId))];
-              const participantNames = participantIds.map(
-                (talentId) => talentById.get(talentId)?.nameKo ?? talentId,
-              );
-
-              return (
-                <article className="dream-event-card" key={event.id}>
-                  <header className="dream-event-heading">
-                    <span
-                      className={`dream-event-status is-${eventStatus}`}
-                    >
-                      <Trophy size={15} aria-hidden="true" />
-                      {eventStatus === "live"
-                        ? "진행 중"
-                        : eventStatus === "upcoming"
-                          ? "예정"
-                          : eventStatus === "ended"
-                            ? "종료"
-                            : "일정 확인 필요"}
-                    </span>
-                    <div>
-                      <small>GAME EVENT</small>
-                      <h3>{event.title}</h3>
-                      <p>{event.nativeTitle}</p>
-                    </div>
-                    <a
-                      href={event.scheduleSourceUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      공식 일정
+        <>
+          {visibleNotices.length ? (
+            <section
+              className="dream-event-card dream-notices"
+              aria-labelledby="dream-notices-title"
+            >
+              <header className="dream-event-heading">
+                <span className="dream-event-status">
+                  <Info size={15} aria-hidden="true" />
+                  공지
+                </span>
+                <div>
+                  <small>OFFICIAL NEWS</small>
+                  <h3 id="dream-notices-title">새 공식 공지</h3>
+                </div>
+              </header>
+              <ul className="dream-notice-list">
+                {visibleNotices.map((notice) => (
+                  <li key={notice.id}>
+                    <h4>{notice.title}</h4>
+                    <time dateTime={notice.publishedOn}>
+                      {notice.publishedOn.replaceAll("-", ".")} 게시
+                    </time>
+                    <p>{notice.body}</p>
+                    <a href={notice.sourceUrl} target="_blank" rel="noreferrer">
+                      {notice.sourceLabel}
                       <ExternalLink size={13} aria-hidden="true" />
                     </a>
-                  </header>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ) : null}
+          {orderedVisibleEvents.length ? (
+            <div className="dream-event-list">
+              {orderedVisibleEvents.map(({ event, chapters }) => {
+                const nowTime = now.getTime();
+                const eventStartsAt = new Date(event.startsAt).getTime();
+                const nextEvent = payload.events
+                  .filter(
+                    (candidate) =>
+                      candidate.id !== event.id &&
+                      new Date(candidate.startsAt).getTime() > eventStartsAt,
+                  )
+                  .sort(
+                    (left, right) =>
+                      new Date(left.startsAt).getTime() -
+                      new Date(right.startsAt).getTime(),
+                  )[0];
+                const eventStatus = dreamEventTimingStatus(
+                  event,
+                  nowTime,
+                  nextEvent,
+                );
+                const participantIds = event.participantTalentIds?.length
+                  ? event.participantTalentIds
+                  : [...new Set(event.chapters.map((chapter) => chapter.talentId))];
+                const participantNames = participantIds.map(
+                  (talentId) => talentById.get(talentId)?.nameKo ?? talentId,
+                );
 
-                  {event.imageUrl ? (
-                    <figure className="dream-event-hero">
-                      <img
-                        src={event.imageUrl}
-                        alt={`${event.title} 공식 이벤트 이미지`}
-                        loading="lazy"
-                        decoding="async"
-                        referrerPolicy="no-referrer"
-                      />
-                      {participantNames.length ? (
-                        <figcaption aria-label="이벤트 참여 멤버">
-                          <Users size={14} aria-hidden="true" />
-                          {participantNames.map((name) => (
-                            <span key={name}>{name}</span>
-                          ))}
-                        </figcaption>
-                      ) : null}
-                    </figure>
-                  ) : participantNames.length ? (
-                    <div
-                      className="dream-event-participants"
-                      aria-label="이벤트 참여 멤버"
-                    >
-                      <Users size={14} aria-hidden="true" />
-                      {participantNames.map((name) => (
-                        <span key={name}>{name}</span>
-                      ))}
+                return (
+                  <article className="dream-event-card" key={event.id}>
+                    <header className="dream-event-heading">
+                      <span
+                        className={`dream-event-status is-${eventStatus}`}
+                      >
+                        <Trophy size={15} aria-hidden="true" />
+                        {eventStatus === "live"
+                          ? "진행 중"
+                          : eventStatus === "upcoming"
+                            ? "예정"
+                            : eventStatus === "ended"
+                              ? "종료"
+                              : "일정 확인 필요"}
+                      </span>
+                      <div>
+                        <small>GAME EVENT</small>
+                        <h3>{event.title}</h3>
+                        <p>{event.nativeTitle}</p>
+                      </div>
+                      <a
+                        href={event.scheduleSourceUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        공식 일정
+                        <ExternalLink size={13} aria-hidden="true" />
+                      </a>
+                    </header>
+
+                    {event.imageUrl ? (
+                      <figure className="dream-event-hero">
+                        <img
+                          src={event.imageUrl}
+                          alt={`${event.title} 공식 이벤트 이미지`}
+                          loading="lazy"
+                          decoding="async"
+                          referrerPolicy="no-referrer"
+                        />
+                        {participantNames.length ? (
+                          <figcaption aria-label="이벤트 참여 멤버">
+                            <Users size={14} aria-hidden="true" />
+                            {participantNames.map((name) => (
+                              <span key={name}>{name}</span>
+                            ))}
+                          </figcaption>
+                        ) : null}
+                      </figure>
+                    ) : participantNames.length ? (
+                      <div
+                        className="dream-event-participants"
+                        aria-label="이벤트 참여 멤버"
+                      >
+                        <Users size={14} aria-hidden="true" />
+                        {participantNames.map((name) => (
+                          <span key={name}>{name}</span>
+                        ))}
+                      </div>
+                    ) : null}
+
+                    <div className="dream-event-meta">
+                      <span>
+                        <CalendarDays size={15} aria-hidden="true" />
+                        <time dateTime={event.startsAt}>
+                          {DREAM_EVENT_TIME_FORMATTER.format(
+                            new Date(event.startsAt),
+                          )} 시작
+                        </time>
+                      </span>
+                      <span>
+                        <Info size={15} aria-hidden="true" />
+                        {event.subtitle} ·{" "}
+                        {event.endsAt
+                          ? `${DREAM_EVENT_TIME_FORMATTER.format(
+                              new Date(event.endsAt),
+                            )} 종료`
+                          : "종료 시각은 게임 내 공지 확인"}
+                      </span>
                     </div>
-                  ) : null}
 
-                  <div className="dream-event-meta">
-                    <span>
-                      <CalendarDays size={15} aria-hidden="true" />
-                      <time dateTime={event.startsAt}>
-                        {DREAM_EVENT_TIME_FORMATTER.format(
-                          new Date(event.startsAt),
-                        )} 시작
-                      </time>
-                    </span>
-                    <span>
-                      <Info size={15} aria-hidden="true" />
-                      {event.subtitle} ·{" "}
-                      {event.endsAt
-                        ? `${DREAM_EVENT_TIME_FORMATTER.format(
-                            new Date(event.endsAt),
-                          )} 종료`
-                        : "종료 시각은 게임 내 공지 확인"}
-                    </span>
-                  </div>
+                    {chapters.length ? (
+                      <div className="dream-event-chapter-grid">
+                        {chapters.map((chapter) => {
+                          const chapterIndex = event.chapters.findIndex(
+                            (item) => item.talentId === chapter.talentId,
+                          );
+                          const chapterStatus = dreamEventChapterTimingStatus(
+                            event,
+                            chapterIndex,
+                            nowTime,
+                            nextEvent,
+                          );
+                          const talent = talentById.get(chapter.talentId);
 
-                  {chapters.length ? (
-                    <div className="dream-event-chapter-grid">
-                      {chapters.map((chapter) => {
-                      const chapterIndex = event.chapters.findIndex(
-                        (item) => item.talentId === chapter.talentId,
-                      );
-                      const chapterStatus = dreamEventChapterTimingStatus(
-                        event,
-                        chapterIndex,
-                        nowTime,
-                        nextEvent,
-                      );
-                      const talent = talentById.get(chapter.talentId);
-
-                      return (
-                        <div
-                          className={`dream-event-chapter is-${chapterStatus}`}
-                          key={`${event.id}-${chapter.talentId}`}
-                        >
-                          <span className="dream-event-chapter__image">
-                            <img
-                              src={chapter.imageUrl}
-                              alt=""
-                              loading="lazy"
-                              decoding="async"
-                              referrerPolicy="no-referrer"
-                            />
-                            <b>
-                              {chapterStatus === "live"
-                                ? "NOW"
-                                : chapterStatus === "upcoming"
-                                  ? "NEXT"
-                                  : chapterStatus === "ended"
-                                    ? "END"
-                                    : "CHECK"}
-                            </b>
-                          </span>
-                          <span className="dream-event-chapter__copy">
-                            <time dateTime={chapter.startsAt}>
-                              {DREAM_EVENT_TIME_FORMATTER.format(
-                                new Date(chapter.startsAt),
-                              )}
-                            </time>
-                            <strong>{talent?.nameKo ?? chapter.talentId}</strong>
-                            <span>{chapter.songTitle}</span>
-                          </span>
-                        </div>
-                      );
-                      })}
-                    </div>
-                  ) : (
-                    <div className="dream-event-no-chapters">
-                      <Info size={15} aria-hidden="true" />
-                      <span>세부 챕터 정보는 공식 이벤트 페이지에서 확인해 주세요.</span>
-                    </div>
-                  )}
-                </article>
-              );
-            })}
-          </div>
-        ) : (
-          <div className="dream-empty">
-            <SearchX size={30} aria-hidden="true" />
-            <strong>검색과 일치하는 이벤트가 없습니다</strong>
-            <p>이벤트명·멤버·곡명으로 다시 검색해 주세요.</p>
-          </div>
-        )
+                          return (
+                            <div
+                              className={`dream-event-chapter is-${chapterStatus}`}
+                              key={`${event.id}-${chapter.talentId}`}
+                            >
+                              <span className="dream-event-chapter__image">
+                                <img
+                                  src={chapter.imageUrl}
+                                  alt=""
+                                  loading="lazy"
+                                  decoding="async"
+                                  referrerPolicy="no-referrer"
+                                />
+                                <b>
+                                  {chapterStatus === "live"
+                                    ? "NOW"
+                                    : chapterStatus === "upcoming"
+                                      ? "NEXT"
+                                      : chapterStatus === "ended"
+                                        ? "END"
+                                        : "CHECK"}
+                                </b>
+                              </span>
+                              <span className="dream-event-chapter__copy">
+                                <time dateTime={chapter.startsAt}>
+                                  {DREAM_EVENT_TIME_FORMATTER.format(
+                                    new Date(chapter.startsAt),
+                                  )}
+                                </time>
+                                <strong>{talent?.nameKo ?? chapter.talentId}</strong>
+                                <span>{chapter.songTitle}</span>
+                              </span>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    ) : (
+                      <div className="dream-event-no-chapters">
+                        <Info size={15} aria-hidden="true" />
+                        <span>이벤트 상세와 보상은 공식 이벤트 페이지에서 확인해 주세요.</span>
+                      </div>
+                    )}
+                  </article>
+                );
+              })}
+            </div>
+          ) : !visibleNotices.length ? (
+            <div className="dream-empty">
+              <SearchX size={30} aria-hidden="true" />
+              <strong>검색과 일치하는 공지·이벤트가 없습니다</strong>
+              <p>공지·이벤트명·멤버·곡명으로 다시 검색해 주세요.</p>
+            </div>
+          ) : null}
+        </>
       ) : panel === "pickup" ? (
         <DreamPickupPanel
           pickups={payload.pickups ?? []}

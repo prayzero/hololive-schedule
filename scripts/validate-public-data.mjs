@@ -600,7 +600,8 @@ function validateHololiveDreams(filePath, payload) {
       fail(filePath, "hololive Dreams event has an invalid shape");
     }
     validateTimeRange(filePath, event.startsAt, event.endsAt, `event ${event.id}`);
-    validateDreamAnnouncement(filePath, event, talentIds, "imageUrl", !event.chapters.length);
+    // Point rallies may have no featured talent; do not invent participants.
+    validateDreamAnnouncement(filePath, event, talentIds, "imageUrl", !event.chapters.length, false);
     for (const chapter of event.chapters) {
       if (!chapter || typeof chapter !== "object" || !talentIds.has(chapter.talentId)) {
         fail(filePath, `event ${event.id} references an unknown talent`);
@@ -638,8 +639,8 @@ function validateHololiveDreams(filePath, payload) {
   }
 }
 
-function validateDreamAnnouncement(filePath, item, talentIds, imageKey, required) {
-  if (required && (!item[imageKey] || !item.participantTalentIds?.length)) {
+function validateDreamAnnouncement(filePath, item, talentIds, imageKey, required, participantsRequired = required) {
+  if ((required && !item[imageKey]) || (participantsRequired && !item.participantTalentIds?.length)) {
     fail(filePath, `${item.id} needs a verified banner and participants when details are unpublished`);
   }
   if (item[imageKey] !== undefined && (typeof item[imageKey] !== "string" || !item[imageKey])) {

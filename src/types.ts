@@ -378,6 +378,15 @@ export interface DreamOfficialBroadcast {
   participantTalentIds: string[];
 }
 
+export interface DreamNotice {
+  id: string;
+  title: string;
+  body: string;
+  publishedOn: string;
+  sourceUrl: string;
+  sourceLabel: string;
+}
+
 export interface HololiveDreamsPayload {
   checkedAt: string;
   sourceUrl: string;
@@ -390,6 +399,7 @@ export interface HololiveDreamsPayload {
   gachaRates: DreamGachaRates;
   events: DreamEvent[];
   officialBroadcasts: DreamOfficialBroadcast[];
+  notices?: DreamNotice[];
   pickups: DreamPickup[];
   characters: DreamCharacter[];
 }

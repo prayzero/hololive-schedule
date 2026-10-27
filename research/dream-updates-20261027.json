@@ -1,0 +1,87 @@
+{
+  "checkedAt": "2026-10-27T14:57:00+09:00",
+  "scope": "9월 19일 이후 누락 이벤트 5건, 공식 방송 2건, 11월 예고 공지 2건",
+  "method": "공식 X 원문은 브라우저 및 X 공개 oEmbed/syndication API에서 작성자·본문·미디어를 확인했습니다. QualiArts 배포 발표문과 공식 YouTube 설명을 교차 확인했습니다. 한국어 제목은 일본어 원문의 번역입니다. 분 단위 종료 공지는 기존 규칙대로 해당 분의 59초까지 표시합니다. App Store 홍보 노출 시각은 게임 개최 시각으로 사용하지 않습니다.",
+  "events": [
+    {
+      "id": "dreamy-summer-escape-2026",
+      "sourceUrl": "https://x.com/hololive_dreams/status/2100796964501848553",
+      "scheduleSourceUrl": "https://www.einpresswire.com/article/943860924/hololive-dreams-in-game-event-a-dreamy-summer-escape-begins-september-19",
+      "songsSourceUrl": "https://x.com/hololive_dreams/status/2100804508628746697",
+      "imageSourceUrl": "https://x.com/hololive_dreams/status/2100796964501848553",
+      "period": "2026-09-19 20:00 ~ 2026-09-27 19:59 JST",
+      "chapterSchedule": "아키 9/19 20:00~9/21 19:59, 시오리 9/21 20:00~9/23 19:59, 라플라스 9/23 20:00~9/25 19:59, 아냐 9/25 20:00~9/27 19:59. 사이트에는 이벤트 전체 기간·대상·과제곡을 기록합니다."
+    },
+    {
+      "id": "sea-splash-hype-2026",
+      "sourceUrl": "https://x.com/hololive_dreams/status/2104511444511232197",
+      "scheduleSourceUrl": "https://www.einpresswire.com/article/946062521/hololive-dreams-holodori-adds-new-area-soda-pop-lagoon-today-september-29-in-its-first-major-update",
+      "songsSourceUrl": "https://x.com/hololive_dreams/status/2104511445182324943",
+      "period": "2026-09-29 12:00 ~ 2026-10-05 19:59 JST"
+    },
+    {
+      "id": "ocean-chase-2026",
+      "sourceUrl": "https://x.com/hololive_dreams/status/2107078362217029679",
+      "scheduleSourceUrl": "https://x.com/hololive_dreams/status/2107671629589618826",
+      "songsSourceUrl": "https://x.com/hololive_dreams/status/2107078362577637376",
+      "period": "2026-10-07 12:00 ~ 2026-10-13 19:59 JST"
+    },
+    {
+      "id": "sunshine-jamboree-2026",
+      "sourceUrl": "https://x.com/hololive_dreams/status/2110567720328773842",
+      "scheduleSourceUrl": "https://x.com/hololive_dreams/status/2110203942483407163",
+      "songsSourceUrl": "https://x.com/hololive_dreams/status/2109841557226418405",
+      "period": "2026-10-15 12:00 ~ 2026-10-17 19:59 JST",
+      "participantsNote": "特定メンバー限定の記載は確認できないため、歌唱者を参加条件として推測しません。サイトに架空の対象メンバーは追加しません。"
+    },
+    {
+      "id": "seaside-dress-code-2026",
+      "sourceUrl": "https://x.com/hololive_dreams/status/2111668593268260916",
+      "chapterScheduleSourceUrl": "https://x.com/hololive_dreams/status/2111668594010697934",
+      "songsSourceUrl": "https://x.com/hololive_dreams/status/2111676144647065862",
+      "fullSchedulePublicationUrl": "https://www.gamer.ne.jp/news/202610190009/",
+      "publicationType": "QualiArts・COVER 발표문을 재게재한 기사. 공식 X API의 긴 본문이 잘리는 항목을 전체 발표문으로 보완했습니다.",
+      "latestChapterSourceUrl": "https://x.com/hololive_dreams/status/2114313556065992992",
+      "imageSourceUrl": "https://x.com/hololive_dreams/status/2111668593268260916",
+      "chapterImageSources": [
+        "https://x.com/hololive_dreams/status/2111744101108658380",
+        "https://x.com/hololive_dreams/status/2111747865634574496",
+        "https://x.com/hololive_dreams/status/2111751640520757391",
+        "https://x.com/hololive_dreams/status/2111755415654687093"
+      ],
+      "period": "2026-10-19 20:00 ~ 2026-10-27 19:59 JST"
+    }
+  ],
+  "broadcasts": [
+    {
+      "id": "official-soda-pop-lagoon-2026-09-22",
+      "sourceUrl": "https://x.com/hololive_dreams/status/2101974846750273837",
+      "watchUrl": "https://www.youtube.com/watch?v=zlzdNODf30o",
+      "startsAt": "2026-09-22T21:00:00+09:00"
+    },
+    {
+      "id": "official-big-catch-bingo-2026-10-27",
+      "sourceUrl": "https://x.com/hololive_dreams/status/2114658309357597086",
+      "correctionUrl": "https://x.com/hololive_dreams/status/2114681632531820814",
+      "watchUrl": "https://www.youtube.com/watch?v=AstMMYnUD5A",
+      "startsAt": "2026-10-27T19:00:00+09:00",
+      "participantsNote": "YouTube 설명을 직접 펼쳐 마츠리·제타·네리사·라덴·하지메를 확인했습니다. 아냐라는 이전 오기는 공식 정정에 따라 반영하지 않습니다."
+    }
+  ],
+  "notices": [
+    {
+      "id": "november-premium-mission-pass-2026",
+      "sourceUrl": "https://x.com/hololive_dreams/status/2114552618420732002",
+      "period": "2026-11-01 ~ 2026-11-30",
+      "note": "정확한 시작·종료 시각과 가격·획득 조건은 확인되지 않아 날짜 범위만 예고로 표시합니다."
+    },
+    {
+      "id": "november-membership-titles-2026",
+      "sourceUrl": "https://x.com/hololive_dreams/status/2113087948531073395",
+      "date": "2026-11-01",
+      "note": "추가 예고입니다. 구현 완료나 메달 소요량을 추정하지 않습니다."
+    }
+  ],
+  "pickupReview": "10월 29일 10:59에 끝나는 至福のシーサイドデイズ가 확인된 최신 픽업입니다. 후속 픽업 발표를 확인하지 못했으므로 기존 14개 픽업 데이터와 저장 기록 ID를 변경하지 않았습니다.",
+  "preserved": "기존 3개 이벤트·기존 방송·캐릭터54명·제공비율은 유지했습니다. 모든 과거 정보나 전체 사이트의 다른 카탈로그를 재검증한 것은 아닙니다."
+}

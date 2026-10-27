@@ -444,6 +444,108 @@ const pickups = [
 
 const events = [
   {
+    id: "dreamy-summer-escape-2026",
+    title: "몽환의 서머 이스케이프!?",
+    nativeTitle: "夢幻のサマーエスケープ！？",
+    subtitle: "아키·시오리·라플라스·아냐의 스포트라이트 이벤트. 과제곡: Grave of Halo / Glitch Through / リーサルドーズ・パラノイド / 64.",
+    startsAt: "2026-09-19T20:00:00+09:00",
+    endsAt: "2026-09-27T19:59:59+09:00",
+    sourceLabel: "hololive Dreams 공식 X·QualiArts 배포 발표문",
+    sourceUrl: "https://x.com/hololive_dreams/status/2100796964501848553",
+    scheduleSourceUrl: "https://www.einpresswire.com/article/943860924/hololive-dreams-in-game-event-a-dreamy-summer-escape-begins-september-19",
+    songsSourceUrl: "https://x.com/hololive_dreams/status/2100804508628746697",
+    imageUrl: "https://pbs.twimg.com/amplify_video_thumb/2100752898766626816/img/DqoUyob1uNhhnSh1.jpg",
+    participantTalentIds: ["aki-rosenthal", "shiori-novella", "la-darknesss", "anya-melfissa"],
+    chapters: [],
+  },
+  {
+    id: "sea-splash-hype-2026",
+    title: "두근두근 블루 스플래시!",
+    nativeTitle: "わくわくブルースプラッシュ！",
+    subtitle: "마린·코요리·벨즈·코보의 스코어 챌린지. 과제곡: きゃぴ / 爆ラブ+ケミストリー / Play Dice! / プロポーズ",
+    startsAt: "2026-09-29T12:00:00+09:00",
+    endsAt: "2026-10-05T19:59:59+09:00",
+    sourceLabel: "hololive Dreams 공식 X·QualiArts 배포 발표문",
+    sourceUrl: "https://x.com/hololive_dreams/status/2104511444511232197",
+    scheduleSourceUrl: "https://www.einpresswire.com/article/946062521/hololive-dreams-holodori-adds-new-area-soda-pop-lagoon-today-september-29-in-its-first-major-update",
+    songsSourceUrl: "https://x.com/hololive_dreams/status/2104511445182324943",
+    imageUrl: "https://pbs.twimg.com/media/HTSMwK7bkAAzwd9.jpg",
+    participantTalentIds: ["houshou-marine", "hakui-koyori", "hakos-baelz", "kobo-kanaeru"],
+    chapters: [],
+  },
+  {
+    id: "ocean-chase-2026",
+    title: "양보할 수 없는 오션 체이스",
+    nativeTitle: "ゆずれぬオーシャンチェイス",
+    subtitle: "폴카·라미·리리카의 스코어 챌린지. 과제곡: HOLOGRAM CIRCUS / ラミィズバリバリワークアウト / トウキョウ・シャンディ・ランデヴ",
+    startsAt: "2026-10-07T12:00:00+09:00",
+    endsAt: "2026-10-13T19:59:59+09:00",
+    sourceLabel: "hololive Dreams 공식 X",
+    sourceUrl: "https://x.com/hololive_dreams/status/2107078362217029679",
+    scheduleSourceUrl: "https://x.com/hololive_dreams/status/2107671629589618826",
+    songsSourceUrl: "https://x.com/hololive_dreams/status/2107078362577637376",
+    imageUrl: "https://pbs.twimg.com/media/HT_mu2xbkAAzOtq.jpg",
+    participantTalentIds: ["omaru-polka", "yukihana-lamy", "ichijou-ririka"],
+    chapters: [],
+  },
+  {
+    id: "sunshine-jamboree-2026",
+    title: "물들여라♪ 선샤인 잼버리",
+    nativeTitle: "彩れ♪サンシャインジャンボリー",
+    subtitle: "라이브·미니게임에서 포인트와 이벤트 배지를 모으는 포인트 랠리. 과제곡: PARADISE！",
+    startsAt: "2026-10-15T12:00:00+09:00",
+    endsAt: "2026-10-17T19:59:59+09:00",
+    sourceLabel: "hololive Dreams 공식 X",
+    sourceUrl: "https://x.com/hololive_dreams/status/2110567720328773842",
+    scheduleSourceUrl: "https://x.com/hololive_dreams/status/2110203942483407163",
+    songsSourceUrl: "https://x.com/hololive_dreams/status/2109841557226418405",
+    imageUrl: "https://pbs.twimg.com/media/HUjbc10aAAAHfNa.jpg",
+    chapters: [],
+  },
+  {
+    id: "seaside-dress-code-2026",
+    title: "넘치는 빛과 해변의 드레스 코드",
+    nativeTitle: "あふれる光と、渚のドレスコード",
+    subtitle: "토와·카엘라·보탄·비쥬의 솔로 신곡과 4개 챕터로 진행되는 스포트라이트 이벤트",
+    startsAt: "2026-10-19T20:00:00+09:00",
+    endsAt: "2026-10-27T19:59:59+09:00",
+    sourceLabel: "hololive Dreams 공식 X·QualiArts 발표문",
+    sourceUrl: "https://x.com/hololive_dreams/status/2111668593268260916",
+    scheduleSourceUrl: "https://www.gamer.ne.jp/news/202610190009/",
+    songsSourceUrl: "https://www.gamer.ne.jp/news/202610190009/",
+    imageUrl: "https://pbs.twimg.com/amplify_video_thumb/2110920436687261696/img/nKcOZqQKeequm-jt.jpg",
+    chapters: [
+      {
+        talentId: "tokoyami-towa",
+        songTitle: "Shallow Shadow",
+        startsAt: "2026-10-19T20:00:00+09:00",
+        endsAt: "2026-10-21T19:59:59+09:00",
+        imageUrl: "https://pbs.twimg.com/media/HU4TW6ZbUAAVt0F.jpg",
+      },
+      {
+        talentId: "kaela-kovalskia",
+        songTitle: "Forge My Soul",
+        startsAt: "2026-10-21T20:00:00+09:00",
+        endsAt: "2026-10-23T19:59:59+09:00",
+        imageUrl: "https://pbs.twimg.com/media/HU5r37PbsAAkPu3.jpg",
+      },
+      {
+        talentId: "shishiro-botan",
+        songTitle: "アマリリス",
+        startsAt: "2026-10-23T20:00:00+09:00",
+        endsAt: "2026-10-25T19:59:59+09:00",
+        imageUrl: "https://pbs.twimg.com/media/HUuDGeqbsAAznvy.jpg",
+      },
+      {
+        talentId: "koseki-bijou",
+        songTitle: "CORE//UNBREAKABLE",
+        startsAt: "2026-10-25T20:00:00+09:00",
+        endsAt: "2026-10-27T19:59:59+09:00",
+        imageUrl: "https://pbs.twimg.com/media/HU5tGUfacAAH2l0.jpg",
+      },
+    ],
+  },
+  {
     id: "ultimate-summer-for-me-2026",
     title: "알티메트 서머! for Me?",
     nativeTitle: "アルティメットサマー！ for Me？",
@@ -548,6 +650,30 @@ const events = [
 
 const officialBroadcasts = [
   {
+    id: "official-soda-pop-lagoon-2026-09-22",
+    title: "대형 업데이트! 여름이다! 바다다! 대어다! ~신규 에어리어 발표~",
+    nativeTitle: "大型アップデート！夏だ！海だ！大漁だ！ ～新エリア発表～",
+    subtitle: "폴카 · 코요리 · 벨즈 · 리리카 출연",
+    startsAt: "2026-09-22T21:00:00+09:00",
+    endsAt: null,
+    sourceLabel: "hololive Dreams 공식 X 방송 공지·공식 YouTube",
+    sourceUrl: "https://x.com/hololive_dreams/status/2101974846750273837",
+    watchUrl: "https://www.youtube.com/watch?v=zlzdNODf30o",
+    participantTalentIds: ["omaru-polka", "hakui-koyori", "hakos-baelz", "ichijou-ririka"],
+  },
+  {
+    id: "official-big-catch-bingo-2026-10-27",
+    title: "홀로도리 대어 빙고 추첨회 ~향후 게임 정보도 발표!~",
+    nativeTitle: "ホロドリ大漁ビンゴ 抽せん会 〜今後のゲーム情報も発表！〜",
+    subtitle: "마츠리 · 제타 · 네리사 · 라덴 · 하지메 출연. 공식 정정 공지에 따라 제타로 반영했습니다.",
+    startsAt: "2026-10-27T19:00:00+09:00",
+    endsAt: null,
+    sourceLabel: "hololive Dreams 공식 X 방송 공지·공식 YouTube",
+    sourceUrl: "https://x.com/hololive_dreams/status/2114658309357597086",
+    watchUrl: "https://www.youtube.com/watch?v=AstMMYnUD5A",
+    participantTalentIds: ["natsuiro-matsuri", "vestia-zeta", "nerissa-ravencroft", "juufuutei-raden", "todoroki-hajime"],
+  },
+  {
     id: "official-minigame-announcement-2026-08-24",
     title: "도망쳐!? 잡아!? ~신규 미니게임 발표~",
     nativeTitle: "逃げる!?捕まえる!? ～新ミニゲーム発表～",
@@ -567,11 +693,11 @@ const officialBroadcasts = [
 ];
 
 const payload = {
-  checkedAt: "2026-10-23T16:28:00+09:00",
+  checkedAt: "2026-10-27T14:57:00+09:00",
   sourceUrl: "https://www.hololive-dreams.com/en",
   officialNewsUrl: "https://hololive.hololivepro.com/en/news/20260723-01-401/",
   sourceNote:
-    "10월 23일 공식 X와 QualiArts 기업 발표·발표문 게재 기사를 확인해 9월 19일 이후 픽업 일정을 갱신했습니다. 캐릭터·기존 이벤트는 앞서 확인한 공식 웹·X·App Store 자료를 유지합니다. 확인되지 않은 카드명·제공 비율은 추정하지 않습니다.",
+    "10월 27일 공식 X·YouTube와 QualiArts 발표 자료를 확인해 신규 공지, 9월 19일 이후 이벤트와 공식 방송을 보완했습니다. 현재 픽업은 10월 29일 10:59 종료이며 후속 픽업은 공식 발표 확인 전까지 추가하지 않습니다. 캐릭터·기존 제공 비율은 이번 갱신 대상이 아닙니다.",
   launchDate: "2026-07-23",
   game: {
     title: "hololive Dreams",
@@ -672,6 +798,24 @@ const payload = {
   },
   events,
   officialBroadcasts,
+  notices: [
+    {
+      id: "november-premium-mission-pass-2026",
+      title: "11월 프리미엄 미션 패스: 마녀 모자",
+      body: "11월 1일~30일 개최 예정입니다. 마녀 모자 액세서리는 홀로멤 54명 모두 착용할 수 있습니다. 정확한 시작·종료 시각과 획득 조건은 게임 내 공지를 확인해 주세요.",
+      publishedOn: "2026-10-26",
+      sourceLabel: "hololive Dreams 공식 X",
+      sourceUrl: "https://x.com/hololive_dreams/status/2114552618420732002",
+    },
+    {
+      id: "november-membership-titles-2026",
+      title: "11월 1일 멤버십 신규 칭호 추가 예고",
+      body: "모든 탤런트의 신규 칭호가 교환 특전으로 추가될 예정입니다. 가입·갱신으로 받는 멤버십 메달로 교환할 수 있으며, 멤버십은 매월 자동 갱신되는 서비스입니다. 추가 시각과 교환 조건은 게임 내 공지를 확인해 주세요.",
+      publishedOn: "2026-10-22",
+      sourceLabel: "hololive Dreams 공식 X",
+      sourceUrl: "https://x.com/hololive_dreams/status/2113087948531073395",
+    },
+  ],
   pickups,
   characters,
 };
@@ -723,8 +867,7 @@ for (const event of events) {
     !event.sourceUrl ||
     !event.scheduleSourceUrl ||
     !event.songsSourceUrl ||
-    (!event.chapters.length &&
-      (!event.imageUrl || !event.participantTalentIds?.length))
+    (!event.chapters.length && !event.imageUrl)
   ) {
     throw new Error(`이벤트 필수 정보가 비어 있습니다: ${event.id}`);
   }
@@ -745,11 +888,12 @@ for (const event of events) {
     const eventImage = new URL(event.imageUrl);
     if (
       eventImage.protocol !== "https:" ||
-      eventImage.hostname !== "is1-ssl.mzstatic.com"
+      eventImage.username || eventImage.password || eventImage.port ||
+      !["is1-ssl.mzstatic.com", "pbs.twimg.com"].includes(eventImage.hostname)
     ) {
-      throw new Error(`${event.id}: 공식 App Store 배너 URL이 아닙니다.`);
+      throw new Error(`${event.id}: 승인된 공식 이벤트 배너 URL이 아닙니다.`);
     }
-    for (const talentId of event.participantTalentIds) {
+    for (const talentId of event.participantTalentIds ?? []) {
       if (!dreamTalentIds.has(talentId)) {
         throw new Error(`${event.id}: 알 수 없는 출연자 ID입니다: ${talentId}`);
       }
@@ -777,11 +921,22 @@ for (const event of events) {
     }
     chapterTalentIds.add(chapter.talentId);
     previousChapterStartsAt = chapterStartsAt;
-    const chapterImagePath = path.resolve(publicRoot, chapter.imageUrl);
-    if (!chapterImagePath.startsWith(`${publicRoot}${path.sep}`)) {
-      throw new Error(`${event.id}: 이미지 경로가 public 밖을 가리킵니다.`);
+    if (chapter.imageUrl.startsWith("https://")) {
+      const chapterImage = new URL(chapter.imageUrl);
+      if (
+        chapterImage.hostname !== "pbs.twimg.com" ||
+        chapterImage.username || chapterImage.password || chapterImage.port ||
+        !chapterImage.pathname.startsWith("/media/")
+      ) {
+        throw new Error(`${event.id}: 승인된 공식 챕터 이미지 URL이 아닙니다.`);
+      }
+    } else {
+      const chapterImagePath = path.resolve(publicRoot, chapter.imageUrl);
+      if (!chapterImagePath.startsWith(`${publicRoot}${path.sep}`)) {
+        throw new Error(`${event.id}: 이미지 경로가 public 밖을 가리킵니다.`);
+      }
+      await access(chapterImagePath);
     }
-    await access(chapterImagePath);
   }
 }
 

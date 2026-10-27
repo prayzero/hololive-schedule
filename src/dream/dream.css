@@ -108,6 +108,51 @@
   box-shadow: 0 14px 45px rgba(60, 64, 127, 0.09);
 }
 
+.dream-notices {
+  margin-bottom: 22px;
+}
+
+.dream-notice-list {
+  display: grid;
+  gap: 18px;
+  margin: 20px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dream-notice-list li + li {
+  padding-top: 18px;
+  border-top: 1px solid #dedff4;
+}
+
+.dream-notice-list h4 {
+  margin: 0 0 5px;
+  color: #1d2943;
+  font-size: 15px;
+}
+
+.dream-notice-list time {
+  color: #708099;
+  font-size: 11px;
+}
+
+.dream-notice-list p {
+  margin: 10px 0;
+  color: #536078;
+  font-size: 13px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.dream-notice-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--dream-purple-dark);
+  font-size: 12px;
+  font-weight: 750;
+}
+
 .dream-event-heading {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;

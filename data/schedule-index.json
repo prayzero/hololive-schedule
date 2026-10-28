@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-10-27T22:25:28.955Z",
+  "updatedAt": "2026-10-28T01:39:52.371Z",
   "timezone": "Asia/Tokyo",
-  "totalEntries": 5701,
+  "totalEntries": 5702,
   "dates": [
     {
       "date": "2026-07-25",
@@ -486,7 +486,7 @@
     {
       "date": "2026-10-29",
       "month": "2026-10",
-      "count": 5
+      "count": 6
     }
   ],
   "months": [
@@ -513,7 +513,7 @@
     },
     {
       "month": "2026-10",
-      "count": 1911,
+      "count": 1912,
       "firstDate": "2026-10-01",
       "lastDate": "2026-10-29",
       "url": "data/schedule-archive/2026-10.json"

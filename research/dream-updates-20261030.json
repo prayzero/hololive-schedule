@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-10-30T15:17:00+09:00",
+  "scope": "10/28 검토 이후 할로윈 픽업·이벤트·공지 갱신",
+  "method": "공식 X 작성자·게시 시각·본문·이미지를 공개 syndication 응답으로 확인하고 잘린 본문은 X 원문 og:description으로 대조했습니다. 검색·팬 사이트는 공식 링크 탐색에만 사용했습니다. 픽업 종료일은 QualiArts·COVER 발표문을 게재한 Gamer에서 확인했습니다.",
+  "pickup": {
+    "preservedIds": ["cosplay-night-standard-2026", "cosplay-night-selectable-2026"],
+    "sourceUrl": "https://x.com/hololive_dreams/status/2115625419370287134",
+    "scheduleSourceUrl": "https://www.gamer.ne.jp/news/202610280043/",
+    "crossCheckUrl": "https://gamebiz.jp/news/434762",
+    "startsAt": "2026-10-29T11:00:00+09:00",
+    "endsAt": "2026-11-06T10:59:59+09:00",
+    "bannerImageUrl": "https://pbs.twimg.com/media/HVwqzZkbcAADQvv.jpg",
+    "freeDraw": "일반형 첫 10연차 무료, 선택형은 제외. 공식 개최 공지의 원문 설명에서 재확인했습니다.",
+    "rates": "숫자 제공 비율은 검증 가능한 공식 공개 자료에서 확인하지 못해 null/빈 배열을 보존합니다.",
+    "conflictResolved": "Game8은 픽업 종료를 이벤트 종료인 11/4 19:59로 기재했지만, 공식 발표문은 11/6 10:59입니다. 공식 발표문을 채택하고 두 기간을 구분했습니다."
+  },
+  "event": {
+    "id": "halloween-fever-2026",
+    "nativeTitle": "私たちのHalloween Fever！",
+    "sourceUrl": "https://x.com/hololive_dreams/status/2115642986910630184",
+    "startSourceUrl": "https://x.com/hololive_dreams/status/2115277388938354763",
+    "startsAt": "2026-10-29T12:00:00+09:00",
+    "endsAt": "2026-11-04T19:59:59+09:00",
+    "bannerImageUrl": "https://pbs.twimg.com/media/HVw61IZaEAA-o0T.jpg",
+    "songsSourceUrl": "https://x.com/hololive_dreams/status/2115292474818068654",
+    "songs": ["怪宴スペクタクル", "ENDLESS FES", "Break It Down", "Sweetest Scarlet", "Miracle Palette", "BANZAI"],
+    "participants": ["natsuiro-matsuri", "vestia-zeta", "nerissa-ravencroft", "juufuutei-raden", "todoroki-hajime"],
+    "note": "포인트 랠리이며 별도 캐릭터 챕터 일정은 만들지 않았습니다. 공식 개최 공지의 원문 설명에 11/4 19:59 종료가 명시되어 있습니다."
+  },
+  "notices": [
+    {"sourceUrl": "https://x.com/hololive_dreams/status/2115993110606119095", "summary": "10/30 Ver.1.2.101 적용·경미한 버그 수정"},
+    {"sourceUrl": "https://x.com/hololive_dreams/status/2115748032507703522", "summary": "10/28 Ver.1.2.100 적용 완료를 10/29 발표. 점검 예정 공지를 갱신하되 실제 점검 종료 시각은 추정하지 않습니다."},
+    {"sourceUrl": "https://x.com/hololive_dreams/status/2115630224440512914", "summary": "블루 다이아로 1회 한정 ★5 확정 10연차. 10/29 11:00~11/8 10:59. 신규 5명 한정 픽업이라고 하지 않습니다."},
+    {"sourceUrl": "https://x.com/hololive_dreams/status/2115654863967449550", "summary": "로그인 보너스 10/29 11:00~11/16 04:59, 최대 7일분"},
+    {"sourceUrl": "https://x.com/hololive_dreams/status/2115669961784087003", "summary": "낚시 캠페인 달성 레드 다이아 1000 전원 배포 완료, 배포 후 30일 내 수령"},
+    {"sourceUrl": "https://x.com/hololive_dreams/status/2115338204706746819", "summary": "설문 응답자 한정 라이브 부스트 드링크 20 배포 완료, 원문 설명에서 30일 수령 기한 확인"},
+    {"sourceUrl": "https://x.com/hololive_dreams/status/2115398172189044871", "watchUrl": "https://youtu.be/R-ChvjRIKdk", "summary": "怪宴スペクタクル MV 10/28 20:00 공개 완료"},
+    {"sourceUrl": "https://x.com/hololive_dreams/status/2115800461433511969", "crossCheckUrl": "https://x.com/hololive_dreams/status/2115800464587649218", "summary": "Sakuraful March 10/29 21:30 추가 및 제공 중 안내"},
+    {"sourceUrl": "https://x.com/hololive_dreams/status/2115038479487041928", "summary": "11월 말 챌린지 라이브 예정"},
+    {"sourceUrl": "https://x.com/hololive_dreams/status/2115038855967777177", "summary": "11월 말 보드게임형 미니게임 예정"},
+    {"sourceUrl": "https://x.com/hololive_dreams/status/2115039412207903136", "summary": "12월 말 파티 모드·크리에이트 채보 등 리듬게임 대형 업데이트 예정. 정확한 일자는 미발표."}
+  ],
+  "unconfirmed": [
+    {"sourceUrl": "https://x.com/hololive_dreams/status/2115031782387322990", "reason": "퀴즈 레드 다이아 500개는 10/29 배포 예고만 확인했습니다. 배포 완료 공지로 추가하지 않습니다."},
+    {"sourceUrl": "https://x.com/hololive_dreams/status/2115047317560795504", "reason": "마츠리 우승 기념 칭호는 10/29 11:00 배포 예고만 확인했습니다. 배포 완료 공지로 추가하지 않습니다."}
+  ],
+  "preservation": "기존 픽업 16개의 ID, 기존 이벤트 8건·공식 방송 3건·캐릭터 54명 및 과거 가챠 확률을 보존합니다. 신규 이벤트 1건과 신규 공지 7건을 추가하고 기존 예고 공지 2건을 갱신합니다. 사용자 브라우저 저장 기록의 구조는 변경하지 않습니다."
+}

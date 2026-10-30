@@ -36,6 +36,7 @@ import {
   type CollectionCatalogKind,
 } from "./collection/CollectionCatalogPage";
 import { DreamPage } from "./dream/DreamPage";
+import { ScheduleDateTabs } from "./ScheduleDateTabs";
 import { validateSiteResourcePayload } from "./dataValidation";
 import {
   archiveErrorForView,
@@ -1095,7 +1096,6 @@ export default function App() {
   const searchInputRef = useRef<HTMLInputElement>(null);
   const activeNavButtonRef = useRef<HTMLButtonElement>(null);
   const dateInputRef = useRef<HTMLInputElement>(null);
-  const activeDateButtonRef = useRef<HTMLButtonElement>(null);
   const [now, setNow] = useState(() => new Date());
   const [dismissedTopNoticeIds, setDismissedTopNoticeIds] = useState(
     readDismissedTopNoticeIds,
@@ -1685,22 +1685,6 @@ export default function App() {
     selectedDate,
     view,
   ]);
-
-  useEffect(() => {
-    const activeButton = activeDateButtonRef.current;
-    const dateTabs = activeButton?.parentElement;
-
-    if (!activeButton || !dateTabs) {
-      return;
-    }
-
-    dateTabs.scrollTo({
-      behavior: "smooth",
-      left:
-        activeButton.offsetLeft -
-        (dateTabs.clientWidth - activeButton.clientWidth) / 2,
-    });
-  }, [selectedDate, visibleDateOptions]);
 
   const selectScheduleDate = (value: string) => {
     setSelectedDate(value);
@@ -2864,24 +2848,11 @@ export default function App() {
                     }
                   />
                 </div>
-                <div className="date-tabs" aria-label="방송 날짜 선택">
-                  {visibleDateOptions.map((option) => {
-                    const isActive = selectedDate === option.value;
-                    return (
-                      <button
-                        type="button"
-                        key={option.value}
-                        ref={isActive ? activeDateButtonRef : undefined}
-                        className={isActive ? "is-active" : ""}
-                        aria-current={isActive ? "date" : undefined}
-                        onClick={() => selectScheduleDate(option.value)}
-                      >
-                        <span>{option.label}</span>
-                        <strong>{option.count}</strong>
-                      </button>
-                    );
-                  })}
-                </div>
+                <ScheduleDateTabs
+                  options={visibleDateOptions}
+                  selectedDate={selectedDate}
+                  onSelect={selectScheduleDate}
+                />
               </div>
               <label className="switch-control">
                 <input

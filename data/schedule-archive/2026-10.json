@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-30T06:22:26.614Z",
+  "generatedAt": "2026-10-30T07:20:22.475Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -30283,6 +30283,21 @@
       "branch": "JP"
     },
     {
+      "id": "pbdSTX70bRU",
+      "date": "2026-10-30",
+      "dateLabel": "10/30 (金)",
+      "time": "16:01",
+      "startsAt": "2026-10-30T16:01:00+09:00",
+      "name": "癒月ちょこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=pbdSTX70bRU",
+      "videoId": "pbdSTX70bRU",
+      "thumbnail": "https://img.youtube.com/vi/pbdSTX70bRU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "FI1HuollS5U",
       "date": "2026-10-30",
       "dateLabel": "10/30 (金)",
@@ -30508,6 +30523,21 @@
       "branch": "JP"
     },
     {
+      "id": "Sq8z79nQlsY",
+      "date": "2026-10-30",
+      "dateLabel": "10/30 (金)",
+      "time": "19:00",
+      "startsAt": "2026-10-30T19:00:00+09:00",
+      "name": "Raora",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Sq8z79nQlsY",
+      "videoId": "Sq8z79nQlsY",
+      "thumbnail": "https://img.youtube.com/vi/Sq8z79nQlsY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "8PIZ8QE7e7s",
       "date": "2026-10-30",
       "dateLabel": "10/30 (金)",
@@ -30533,6 +30563,21 @@
       "url": "https://www.youtube.com/watch?v=We0W8ZoqCp4",
       "videoId": "We0W8ZoqCp4",
       "thumbnail": "https://img.youtube.com/vi/We0W8ZoqCp4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "J_0fi6QvUfE",
+      "date": "2026-10-30",
+      "dateLabel": "10/30 (金)",
+      "time": "20:00",
+      "startsAt": "2026-10-30T20:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=J_0fi6QvUfE",
+      "videoId": "J_0fi6QvUfE",
+      "thumbnail": "https://img.youtube.com/vi/J_0fi6QvUfE/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -30673,6 +30718,21 @@
       "branch": "JP"
     },
     {
+      "id": "KvJk00Vf4H0",
+      "date": "2026-10-30",
+      "dateLabel": "10/30 (金)",
+      "time": "22:00",
+      "startsAt": "2026-10-30T22:00:00+09:00",
+      "name": "白上フブキ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=KvJk00Vf4H0",
+      "videoId": "KvJk00Vf4H0",
+      "thumbnail": "https://img.youtube.com/vi/KvJk00Vf4H0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "wIAWYWAAlBU",
       "date": "2026-10-30",
       "dateLabel": "10/30 (金)",
@@ -30743,6 +30803,21 @@
       "url": "https://www.youtube.com/watch?v=O9V_EFbgpKQ",
       "videoId": "O9V_EFbgpKQ",
       "thumbnail": "https://img.youtube.com/vi/O9V_EFbgpKQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "SRdO1hBERWU",
+      "date": "2026-10-31",
+      "dateLabel": "10/31 (土)",
+      "time": "08:00",
+      "startsAt": "2026-10-31T08:00:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=SRdO1hBERWU",
+      "videoId": "SRdO1hBERWU",
+      "thumbnail": "https://img.youtube.com/vi/SRdO1hBERWU/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

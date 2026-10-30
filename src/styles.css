@@ -1277,6 +1277,19 @@ img {
   overflow-x: auto;
   scroll-snap-type: x proximity;
   scrollbar-width: none;
+  overscroll-behavior-x: contain;
+  touch-action: pan-x pan-y pinch-zoom;
+  cursor: grab;
+  user-select: none;
+}
+
+.date-tabs[data-dragging="true"] {
+  scroll-snap-type: none;
+}
+
+.date-tabs[data-dragging="true"],
+.date-tabs[data-dragging="true"] button {
+  cursor: grabbing;
 }
 
 .date-tabs::-webkit-scrollbar,
@@ -1296,7 +1309,7 @@ img {
   border-radius: 13px;
   color: #6e7d94;
   background: transparent;
-  cursor: pointer;
+  cursor: grab;
   font-size: 12px;
   font-weight: 750;
   scroll-snap-align: center;

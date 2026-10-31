@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T08:49:57.084Z",
+  "generatedAt": "2026-10-31T14:54:11.547Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -23,6 +23,21 @@
       "url": "https://www.youtube.com/watch?v=6b_lYraAX38",
       "videoId": "6b_lYraAX38",
       "thumbnail": "https://img.youtube.com/vi/6b_lYraAX38/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "aOHjykM4YM0",
+      "date": "2026-11-01",
+      "dateLabel": "11/01 (日)",
+      "time": "06:00",
+      "startsAt": "2026-11-01T06:00:00+09:00",
+      "name": "Gigi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=aOHjykM4YM0",
+      "videoId": "aOHjykM4YM0",
+      "thumbnail": "https://img.youtube.com/vi/aOHjykM4YM0/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -83,6 +98,21 @@
       "url": "https://www.youtube.com/watch?v=ahhAUnfp9eI",
       "videoId": "ahhAUnfp9eI",
       "thumbnail": "https://img.youtube.com/vi/ahhAUnfp9eI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "m_CcqIxgJOY",
+      "date": "2026-11-01",
+      "dateLabel": "11/01 (日)",
+      "time": "11:00",
+      "startsAt": "2026-11-01T11:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=m_CcqIxgJOY",
+      "videoId": "m_CcqIxgJOY",
+      "thumbnail": "https://img.youtube.com/vi/m_CcqIxgJOY/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -218,6 +248,21 @@
       "url": "https://www.youtube.com/watch?v=QZ-GN3Yo7dU",
       "videoId": "QZ-GN3Yo7dU",
       "thumbnail": "https://img.youtube.com/vi/QZ-GN3Yo7dU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "PFuUPdIM1e8",
+      "date": "2026-11-01",
+      "dateLabel": "11/01 (日)",
+      "time": "23:00",
+      "startsAt": "2026-11-01T23:00:00+09:00",
+      "name": "Raora",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=PFuUPdIM1e8",
+      "videoId": "PFuUPdIM1e8",
+      "thumbnail": "https://img.youtube.com/vi/PFuUPdIM1e8/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

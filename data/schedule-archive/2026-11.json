@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-31T14:54:11.547Z",
+  "generatedAt": "2026-10-31T19:14:22.180Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -13,6 +13,21 @@
   "month": "2026-11",
   "entries": [
     {
+      "id": "g60ws7KwfmY",
+      "date": "2026-11-01",
+      "dateLabel": "11/01 (日)",
+      "time": "00:44",
+      "startsAt": "2026-11-01T00:44:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=g60ws7KwfmY",
+      "videoId": "g60ws7KwfmY",
+      "thumbnail": "https://img.youtube.com/vi/g60ws7KwfmY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "6b_lYraAX38",
       "date": "2026-11-01",
       "dateLabel": "11/01 (日)",
@@ -23,6 +38,21 @@
       "url": "https://www.youtube.com/watch?v=6b_lYraAX38",
       "videoId": "6b_lYraAX38",
       "thumbnail": "https://img.youtube.com/vi/6b_lYraAX38/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "S1Ituq89HVE",
+      "date": "2026-11-01",
+      "dateLabel": "11/01 (日)",
+      "time": "05:45",
+      "startsAt": "2026-11-01T05:45:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=S1Ituq89HVE",
+      "videoId": "S1Ituq89HVE",
+      "thumbnail": "https://img.youtube.com/vi/S1Ituq89HVE/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -83,6 +113,21 @@
       "url": "https://www.youtube.com/watch?v=iNmJjLc1_RU",
       "videoId": "iNmJjLc1_RU",
       "thumbnail": "https://img.youtube.com/vi/iNmJjLc1_RU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "uwCg7lqLELE",
+      "date": "2026-11-01",
+      "dateLabel": "11/01 (日)",
+      "time": "10:00",
+      "startsAt": "2026-11-01T10:00:00+09:00",
+      "name": "白銀ノエル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=uwCg7lqLELE",
+      "videoId": "uwCg7lqLELE",
+      "thumbnail": "https://img.youtube.com/vi/uwCg7lqLELE/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -193,6 +238,21 @@
       "branch": "JP"
     },
     {
+      "id": "oIgWCd0kIZc",
+      "date": "2026-11-01",
+      "dateLabel": "11/01 (日)",
+      "time": "19:00",
+      "startsAt": "2026-11-01T19:00:00+09:00",
+      "name": "熱千めら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=oIgWCd0kIZc",
+      "videoId": "oIgWCd0kIZc",
+      "thumbnail": "https://img.youtube.com/vi/oIgWCd0kIZc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "SP2vZfE5b-0",
       "date": "2026-11-01",
       "dateLabel": "11/01 (日)",
@@ -253,6 +313,21 @@
       "branch": "JP"
     },
     {
+      "id": "Aj_IjmDH-qU",
+      "date": "2026-11-01",
+      "dateLabel": "11/01 (日)",
+      "time": "21:45",
+      "startsAt": "2026-11-01T21:45:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Aj_IjmDH-qU",
+      "videoId": "Aj_IjmDH-qU",
+      "thumbnail": "https://img.youtube.com/vi/Aj_IjmDH-qU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "PFuUPdIM1e8",
       "date": "2026-11-01",
       "dateLabel": "11/01 (日)",
@@ -278,6 +353,36 @@
       "url": "https://www.youtube.com/watch?v=r2Ax7ADRSWg",
       "videoId": "r2Ax7ADRSWg",
       "thumbnail": "https://img.youtube.com/vi/r2Ax7ADRSWg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "FZ7rqXi-Bvg",
+      "date": "2026-11-02",
+      "dateLabel": "11/02 (月)",
+      "time": "04:45",
+      "startsAt": "2026-11-02T04:45:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=FZ7rqXi-Bvg",
+      "videoId": "FZ7rqXi-Bvg",
+      "thumbnail": "https://img.youtube.com/vi/FZ7rqXi-Bvg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "4Ebb33QFZBQ",
+      "date": "2026-11-02",
+      "dateLabel": "11/02 (月)",
+      "time": "23:40",
+      "startsAt": "2026-11-02T23:40:00+09:00",
+      "name": "アキロゼ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=4Ebb33QFZBQ",
+      "videoId": "4Ebb33QFZBQ",
+      "thumbnail": "https://img.youtube.com/vi/4Ebb33QFZBQ/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

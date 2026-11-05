@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T03:43:35.742Z",
+  "generatedAt": "2026-11-05T06:53:54.330Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -3883,6 +3883,21 @@
       "branch": "JP"
     },
     {
+      "id": "MSWGF2IAVVs",
+      "date": "2026-11-05",
+      "dateLabel": "11/05 (木)",
+      "time": "14:57",
+      "startsAt": "2026-11-05T14:57:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=MSWGF2IAVVs",
+      "videoId": "MSWGF2IAVVs",
+      "thumbnail": "https://img.youtube.com/vi/MSWGF2IAVVs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "VHvJy-KW9y8",
       "date": "2026-11-05",
       "dateLabel": "11/05 (木)",
@@ -3943,6 +3958,21 @@
       "branch": "JP"
     },
     {
+      "id": "rGfFaldh8V8",
+      "date": "2026-11-05",
+      "dateLabel": "11/05 (木)",
+      "time": "19:00",
+      "startsAt": "2026-11-05T19:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=rGfFaldh8V8",
+      "videoId": "rGfFaldh8V8",
+      "thumbnail": "https://img.youtube.com/vi/rGfFaldh8V8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "tT3AIXi7KMw",
       "date": "2026-11-05",
       "dateLabel": "11/05 (木)",
@@ -3983,6 +4013,21 @@
       "url": "https://www.youtube.com/watch?v=XLpSn9ilNbU",
       "videoId": "XLpSn9ilNbU",
       "thumbnail": "https://img.youtube.com/vi/XLpSn9ilNbU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "EWdKaGccKWU",
+      "date": "2026-11-05",
+      "dateLabel": "11/05 (木)",
+      "time": "20:00",
+      "startsAt": "2026-11-05T20:00:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=EWdKaGccKWU",
+      "videoId": "EWdKaGccKWU",
+      "thumbnail": "https://img.youtube.com/vi/EWdKaGccKWU/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -4103,6 +4148,21 @@
       "url": "https://www.youtube.com/watch?v=DfgbSnr9Icw",
       "videoId": "DfgbSnr9Icw",
       "thumbnail": "https://img.youtube.com/vi/DfgbSnr9Icw/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "_ByDJ4vJ5hA",
+      "date": "2026-11-05",
+      "dateLabel": "11/05 (木)",
+      "time": "23:00",
+      "startsAt": "2026-11-05T23:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=_ByDJ4vJ5hA",
+      "videoId": "_ByDJ4vJ5hA",
+      "thumbnail": "https://img.youtube.com/vi/_ByDJ4vJ5hA/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

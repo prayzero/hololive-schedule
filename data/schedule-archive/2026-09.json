@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T06:01:17.639Z",
+  "generatedAt": "2026-11-06T20:50:28.856Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -19403,21 +19403,6 @@
       "url": "https://www.youtube.com/watch?v=EwFHypyxeyg",
       "videoId": "EwFHypyxeyg",
       "thumbnail": "https://img.youtube.com/vi/EwFHypyxeyg/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
-      "id": "Sxa1ZPn6C5I",
-      "date": "2026-09-23",
-      "dateLabel": "09/23 (水)",
-      "time": "23:45",
-      "startsAt": "2026-09-23T23:45:00+09:00",
-      "name": "ときのそら",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=Sxa1ZPn6C5I",
-      "videoId": "Sxa1ZPn6C5I",
-      "thumbnail": "https://img.youtube.com/vi/Sxa1ZPn6C5I/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

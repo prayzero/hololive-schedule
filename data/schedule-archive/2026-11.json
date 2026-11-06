@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-05T19:04:40.357Z",
+  "generatedAt": "2026-11-06T00:10:40.492Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -4648,11 +4648,26 @@
       "branch": "JP"
     },
     {
+      "id": "h6YxFsV4f9c",
+      "date": "2026-11-06",
+      "dateLabel": "11/06 (金)",
+      "time": "06:00",
+      "startsAt": "2026-11-06T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=h6YxFsV4f9c",
+      "videoId": "h6YxFsV4f9c",
+      "thumbnail": "https://img.youtube.com/vi/h6YxFsV4f9c/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "VFnWKiZS4S0",
       "date": "2026-11-06",
       "dateLabel": "11/06 (金)",
-      "time": "07:00",
-      "startsAt": "2026-11-06T07:00:00+09:00",
+      "time": "07:02",
+      "startsAt": "2026-11-06T07:02:00+09:00",
       "name": "Gigi",
       "title": null,
       "url": "https://www.youtube.com/watch?v=VFnWKiZS4S0",
@@ -4688,6 +4703,21 @@
       "url": "https://www.youtube.com/watch?v=6oGdOpLqkws",
       "videoId": "6oGdOpLqkws",
       "thumbnail": "https://img.youtube.com/vi/6oGdOpLqkws/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "ftVpJ8YB_NA",
+      "date": "2026-11-06",
+      "dateLabel": "11/06 (金)",
+      "time": "10:00",
+      "startsAt": "2026-11-06T10:00:00+09:00",
+      "name": "Anya",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ftVpJ8YB_NA",
+      "videoId": "ftVpJ8YB_NA",
+      "thumbnail": "https://img.youtube.com/vi/ftVpJ8YB_NA/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -4733,6 +4763,21 @@
       "url": "https://www.youtube.com/watch?v=U1x0E4tXVk4",
       "videoId": "U1x0E4tXVk4",
       "thumbnail": "https://img.youtube.com/vi/U1x0E4tXVk4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "qyTuqZUh3DM",
+      "date": "2026-11-06",
+      "dateLabel": "11/06 (金)",
+      "time": "18:00",
+      "startsAt": "2026-11-06T18:00:00+09:00",
+      "name": "Elizabeth Sub",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=qyTuqZUh3DM",
+      "videoId": "qyTuqZUh3DM",
+      "thumbnail": "https://img.youtube.com/vi/qyTuqZUh3DM/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-07T18:16:30.465Z",
+  "generatedAt": "2026-11-07T22:03:04.462Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -6598,6 +6598,21 @@
       "branch": "JP"
     },
     {
+      "id": "GeUN6NTPZMQ",
+      "date": "2026-11-08",
+      "dateLabel": "11/08 (日)",
+      "time": "06:00",
+      "startsAt": "2026-11-08T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=GeUN6NTPZMQ",
+      "videoId": "GeUN6NTPZMQ",
+      "thumbnail": "https://img.youtube.com/vi/GeUN6NTPZMQ/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "HP1mpa7eAJg",
       "date": "2026-11-08",
       "dateLabel": "11/08 (日)",
@@ -6613,21 +6628,6 @@
       "branch": "JP"
     },
     {
-      "id": "YnpgOMIHGsU",
-      "date": "2026-11-08",
-      "dateLabel": "11/08 (日)",
-      "time": "09:00",
-      "startsAt": "2026-11-08T09:00:00+09:00",
-      "name": "鷹嶺ルイ",
-      "title": null,
-      "url": "https://www.youtube.com/watch?v=YnpgOMIHGsU",
-      "videoId": "YnpgOMIHGsU",
-      "thumbnail": "https://img.youtube.com/vi/YnpgOMIHGsU/mqdefault.jpg",
-      "avatar": null,
-      "isLive": false,
-      "branch": "JP"
-    },
-    {
       "id": "1lnTcqnqB-o",
       "date": "2026-11-08",
       "dateLabel": "11/08 (日)",
@@ -6638,6 +6638,36 @@
       "url": "https://www.youtube.com/watch?v=1lnTcqnqB-o",
       "videoId": "1lnTcqnqB-o",
       "thumbnail": "https://img.youtube.com/vi/1lnTcqnqB-o/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "ITPrSx_TY3k",
+      "date": "2026-11-08",
+      "dateLabel": "11/08 (日)",
+      "time": "10:00",
+      "startsAt": "2026-11-08T10:00:00+09:00",
+      "name": "白銀ノエル",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ITPrSx_TY3k",
+      "videoId": "ITPrSx_TY3k",
+      "thumbnail": "https://img.youtube.com/vi/ITPrSx_TY3k/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "YnpgOMIHGsU",
+      "date": "2026-11-08",
+      "dateLabel": "11/08 (日)",
+      "time": "10:00",
+      "startsAt": "2026-11-08T10:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=YnpgOMIHGsU",
+      "videoId": "YnpgOMIHGsU",
+      "thumbnail": "https://img.youtube.com/vi/YnpgOMIHGsU/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -6763,6 +6793,21 @@
       "branch": "JP"
     },
     {
+      "id": "Q_tugwQP_f8",
+      "date": "2026-11-08",
+      "dateLabel": "11/08 (日)",
+      "time": "17:00",
+      "startsAt": "2026-11-08T17:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Q_tugwQP_f8",
+      "videoId": "Q_tugwQP_f8",
+      "thumbnail": "https://img.youtube.com/vi/Q_tugwQP_f8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "XloQPhUDsKk",
       "date": "2026-11-08",
       "dateLabel": "11/08 (日)",
@@ -6773,6 +6818,36 @@
       "url": "https://www.youtube.com/watch?v=XloQPhUDsKk",
       "videoId": "XloQPhUDsKk",
       "thumbnail": "https://img.youtube.com/vi/XloQPhUDsKk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "HNsjOXRyBPA",
+      "date": "2026-11-08",
+      "dateLabel": "11/08 (日)",
+      "time": "18:00",
+      "startsAt": "2026-11-08T18:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=HNsjOXRyBPA",
+      "videoId": "HNsjOXRyBPA",
+      "thumbnail": "https://img.youtube.com/vi/HNsjOXRyBPA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "v4nKi8VJY1g",
+      "date": "2026-11-08",
+      "dateLabel": "11/08 (日)",
+      "time": "18:00",
+      "startsAt": "2026-11-08T18:00:00+09:00",
+      "name": "綺々羅々ヴィヴィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=v4nKi8VJY1g",
+      "videoId": "v4nKi8VJY1g",
+      "thumbnail": "https://img.youtube.com/vi/v4nKi8VJY1g/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -6793,6 +6868,21 @@
       "branch": "JP"
     },
     {
+      "id": "gS67Tmgliv8",
+      "date": "2026-11-08",
+      "dateLabel": "11/08 (日)",
+      "time": "18:00",
+      "startsAt": "2026-11-08T18:00:00+09:00",
+      "name": "鈴鳴つづり",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=gS67Tmgliv8",
+      "videoId": "gS67Tmgliv8",
+      "thumbnail": "https://img.youtube.com/vi/gS67Tmgliv8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "mF73slVZul0",
       "date": "2026-11-08",
       "dateLabel": "11/08 (日)",
@@ -6803,6 +6893,36 @@
       "url": "https://www.youtube.com/watch?v=mF73slVZul0",
       "videoId": "mF73slVZul0",
       "thumbnail": "https://img.youtube.com/vi/mF73slVZul0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "YrLbv32taAU",
+      "date": "2026-11-08",
+      "dateLabel": "11/08 (日)",
+      "time": "18:00",
+      "startsAt": "2026-11-08T18:00:00+09:00",
+      "name": "博衣こより",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=YrLbv32taAU",
+      "videoId": "YrLbv32taAU",
+      "thumbnail": "https://img.youtube.com/vi/YrLbv32taAU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "W7meQ6PrDpo",
+      "date": "2026-11-08",
+      "dateLabel": "11/08 (日)",
+      "time": "18:00",
+      "startsAt": "2026-11-08T18:00:00+09:00",
+      "name": "獅白ぼたん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=W7meQ6PrDpo",
+      "videoId": "W7meQ6PrDpo",
+      "thumbnail": "https://img.youtube.com/vi/W7meQ6PrDpo/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -6883,6 +7003,21 @@
       "branch": "JP"
     },
     {
+      "id": "ew6vJm5cK8c",
+      "date": "2026-11-08",
+      "dateLabel": "11/08 (日)",
+      "time": "18:00",
+      "startsAt": "2026-11-08T18:00:00+09:00",
+      "name": "さくらみこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=ew6vJm5cK8c",
+      "videoId": "ew6vJm5cK8c",
+      "thumbnail": "https://img.youtube.com/vi/ew6vJm5cK8c/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "SStzDq4MONU",
       "date": "2026-11-08",
       "dateLabel": "11/08 (日)",
@@ -6893,6 +7028,21 @@
       "url": "https://www.youtube.com/watch?v=SStzDq4MONU",
       "videoId": "SStzDq4MONU",
       "thumbnail": "https://img.youtube.com/vi/SStzDq4MONU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "CSScHhS82x0",
+      "date": "2026-11-08",
+      "dateLabel": "11/08 (日)",
+      "time": "21:00",
+      "startsAt": "2026-11-08T21:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=CSScHhS82x0",
+      "videoId": "CSScHhS82x0",
+      "thumbnail": "https://img.youtube.com/vi/CSScHhS82x0/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

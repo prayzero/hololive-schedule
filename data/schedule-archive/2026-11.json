@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T06:08:19.518Z",
+  "generatedAt": "2026-11-08T07:55:34.748Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -6868,6 +6868,36 @@
       "branch": "JP"
     },
     {
+      "id": "Fe8UIQUdnFs",
+      "date": "2026-11-08",
+      "dateLabel": "11/08 (日)",
+      "time": "15:13",
+      "startsAt": "2026-11-08T15:13:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Fe8UIQUdnFs",
+      "videoId": "Fe8UIQUdnFs",
+      "thumbnail": "https://img.youtube.com/vi/Fe8UIQUdnFs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "MfKxTtg-8oo",
+      "date": "2026-11-08",
+      "dateLabel": "11/08 (日)",
+      "time": "15:30",
+      "startsAt": "2026-11-08T15:30:00+09:00",
+      "name": "熱千めら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=MfKxTtg-8oo",
+      "videoId": "MfKxTtg-8oo",
+      "thumbnail": "https://img.youtube.com/vi/MfKxTtg-8oo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "Q_tugwQP_f8",
       "date": "2026-11-08",
       "dateLabel": "11/08 (日)",
@@ -6943,6 +6973,21 @@
       "branch": "JP"
     },
     {
+      "id": "aM7w-nnuP5Y",
+      "date": "2026-11-08",
+      "dateLabel": "11/08 (日)",
+      "time": "18:00",
+      "startsAt": "2026-11-08T18:00:00+09:00",
+      "name": "大神ミオ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=aM7w-nnuP5Y",
+      "videoId": "aM7w-nnuP5Y",
+      "thumbnail": "https://img.youtube.com/vi/aM7w-nnuP5Y/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "gS67Tmgliv8",
       "date": "2026-11-08",
       "dateLabel": "11/08 (日)",
@@ -6983,6 +7028,21 @@
       "url": "https://www.youtube.com/watch?v=YrLbv32taAU",
       "videoId": "YrLbv32taAU",
       "thumbnail": "https://img.youtube.com/vi/YrLbv32taAU/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Lf__4xwxjzE",
+      "date": "2026-11-08",
+      "dateLabel": "11/08 (日)",
+      "time": "18:00",
+      "startsAt": "2026-11-08T18:00:00+09:00",
+      "name": "百灯キョーコ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Lf__4xwxjzE",
+      "videoId": "Lf__4xwxjzE",
+      "thumbnail": "https://img.youtube.com/vi/Lf__4xwxjzE/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -7043,6 +7103,21 @@
       "url": "https://www.youtube.com/watch?v=4AWfksK_tbY",
       "videoId": "4AWfksK_tbY",
       "thumbnail": "https://img.youtube.com/vi/4AWfksK_tbY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Ze6c6QIuRFQ",
+      "date": "2026-11-08",
+      "dateLabel": "11/08 (日)",
+      "time": "18:00",
+      "startsAt": "2026-11-08T18:00:00+09:00",
+      "name": "音乃瀬奏",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Ze6c6QIuRFQ",
+      "videoId": "Ze6c6QIuRFQ",
+      "thumbnail": "https://img.youtube.com/vi/Ze6c6QIuRFQ/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -7243,6 +7318,21 @@
       "branch": "JP"
     },
     {
+      "id": "aLoVNTHo0_4",
+      "date": "2026-11-08",
+      "dateLabel": "11/08 (日)",
+      "time": "22:00",
+      "startsAt": "2026-11-08T22:00:00+09:00",
+      "name": "百灯キョーコ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=aLoVNTHo0_4",
+      "videoId": "aLoVNTHo0_4",
+      "thumbnail": "https://img.youtube.com/vi/aLoVNTHo0_4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "Kv4thi6Cz78",
       "date": "2026-11-08",
       "dateLabel": "11/08 (日)",
@@ -7358,6 +7448,36 @@
       "url": "https://www.youtube.com/watch?v=D4hu48ehy3c",
       "videoId": "D4hu48ehy3c",
       "thumbnail": "https://img.youtube.com/vi/D4hu48ehy3c/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "JyHztd5iGqs",
+      "date": "2026-11-09",
+      "dateLabel": "11/09 (月)",
+      "time": "12:00",
+      "startsAt": "2026-11-09T12:00:00+09:00",
+      "name": "熱千めら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=JyHztd5iGqs",
+      "videoId": "JyHztd5iGqs",
+      "thumbnail": "https://img.youtube.com/vi/JyHztd5iGqs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "IHm3yvo50Dw",
+      "date": "2026-11-09",
+      "dateLabel": "11/09 (月)",
+      "time": "19:05",
+      "startsAt": "2026-11-09T19:05:00+09:00",
+      "name": "虎金妃笑虎",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=IHm3yvo50Dw",
+      "videoId": "IHm3yvo50Dw",
+      "thumbnail": "https://img.youtube.com/vi/IHm3yvo50Dw/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

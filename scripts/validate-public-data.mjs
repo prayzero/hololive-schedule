@@ -54,6 +54,7 @@ const approvedDreamHosts = new Set([
   "apps.apple.com",
   "game8.jp",
   "hololive.hololivepro.com",
+  "hololivepro.com",
   "images.microcms-assets.io",
   "is1-ssl.mzstatic.com",
   "itunes.apple.com",

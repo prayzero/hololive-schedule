@@ -1,0 +1,101 @@
+{
+  "checkedAt": "2026-11-09T20:59:10+09:00",
+  "scope": "10/30 검토 이후 신규 파자마 픽업·이벤트와 11월 공지 갱신",
+  "method": "공식 X의 공개 syndication 응답에서 작성자 hololive_dreams, 게시 시각, 본문, 첨부 이미지를 확인했습니다. 기간·이벤트 방식은 QualiArts·COVER 발표를 전재한 Gamer와 대조했습니다. 팬 사이트는 공식 원문 링크 탐색에만 사용했습니다.",
+  "pickup": {
+    "ids": ["warm-chill-time-selectable-2026", "warm-chill-time-standard-2026"],
+    "nativeTitle": "ぬくもりのチルタイム",
+    "sourceUrl": "https://x.com/hololive_dreams/status/2118524397648859631",
+    "sourceCreatedAt": "2026-11-06T02:02:31Z",
+    "scheduleSourceUrl": "https://www.gamer.ne.jp/news/202611050053/",
+    "startsAt": "2026-11-06T11:00:00+09:00",
+    "endsAt": "2026-11-14T10:59:59+09:00",
+    "participantTalentIds": ["ayunda-risu", "moona-hoshinova", "airani-iofifteen"],
+    "bannerImageUrl": "https://pbs.twimg.com/media/HWZ3DY0bcAAFMPm.jpg",
+    "variants": "일반형 및 신규 3명 중 1명을 선택해 출현율을 높이는 선택형 동시 개최",
+    "ratesAndFreeDraws": "공식 확인 자료에 숫자 제공 비율·무료 10연차 조건이 없어 null/빈 배열을 사용합니다. 이전 Cosplay Night의 무료 조건을 복사하지 않았습니다.",
+    "periodEvidence": "11/14 종료 시각은 공식 X에서 직접 찾지 못했으며 QualiArts·COVER 발표 전재를 근거로 명시합니다. 이벤트 종료일 11/12와 구분합니다."
+  },
+  "event": {
+    "id": "autumn-night-under-one-roof-2026",
+    "nativeTitle": "秋の夜長に、ひとつ屋根の下",
+    "sourceUrl": "https://x.com/hololive_dreams/status/2118541334177014225",
+    "sourceCreatedAt": "2026-11-06T03:09:49Z",
+    "startSourceUrl": "https://x.com/hololive_dreams/status/2118176497043181646",
+    "startsAt": "2026-11-06T12:00:00+09:00",
+    "endsAt": "2026-11-12T19:59:59+09:00",
+    "bannerImageUrl": "https://pbs.twimg.com/media/HWaDDuIa4AARLUT.jpg",
+    "type": "스코어 챌린지: 과제곡 최고점 합계로 순위를 겨루며 이벤트 Pt 랭킹은 없음",
+    "songs": ["Dramatic XViltration", "メトロポリス (metropolis)", "Multiverse", "Lucu Juga"],
+    "songsSourceUrl": "https://www.gamer.ne.jp/news/202611050053/",
+    "songCorrectionUrl": "https://x.com/hololive_dreams/status/2118355025688957409",
+    "note": "공식 곡명 정정을 반영했습니다. 별도 챕터 일정을 만들지 않았고, 팬 자료에만 있는 배지·미니게임 보너스 수치는 추가하지 않았습니다."
+  },
+  "newNotices": [
+    {
+      "id": "zeta-love-mission-2026-11-07",
+      "sourceUrl": "https://x.com/hololive_dreams/status/2118721810103722423",
+      "sourceCreatedAt": "2026-11-06T15:06:58Z",
+      "summary": "11/7 KST 제타 생일 기념 LOVE MISSION♡ 게임 내 추가"
+    },
+    {
+      "id": "zeta-birthday-reward-2026-11-07",
+      "sourceUrl": "https://x.com/hololive_dreams/status/2118720785393270926",
+      "sourceCreatedAt": "2026-11-06T15:02:53Z",
+      "summary": "생일 칭호·드링크 3개 선물. 드링크 수령은 11/8 23:59까지로 현재 종료. 이 기한을 칭호에도 적용하지 않습니다."
+    },
+    {
+      "id": "kanade-greatest-mv-2026-11-05",
+      "sourceUrl": "https://x.com/hololive_dreams/status/2118297272132002088",
+      "sourceCreatedAt": "2026-11-05T11:00:00Z",
+      "summary": "GREATEST MV를 11/5 19:00 KST 추가해 라이브 배경으로 선택 가능. 게시 시각 20:00과 추가 시각 19:00을 구분합니다."
+    },
+    {
+      "id": "training-support-missions-2026-11-05",
+      "sourceUrl": "https://x.com/hololive_dreams/status/2118161376086818828",
+      "sourceCreatedAt": "2026-11-05T02:00:00Z",
+      "summary": "육성 응원 미션 달성으로 가챠 티켓·홀로리움 등 획득. 종료 시각은 확인한 공식 공지에 없어 기재하지 않습니다."
+    },
+    {
+      "id": "anime-frontier-dreams-booth-2026",
+      "sourceUrl": "https://hololivepro.com/news_en/20261106-01-277/",
+      "publishedOn": "2026-11-06",
+      "summary": "12/4~6 미국 현지 날짜, 포트워스 컨벤션센터 부스. 현장 모바일 앱 설치·기설치자 대상 실물 부채 54종 중 무작위 1종 제공 예정. 온라인 게임 내 보상으로 표현하지 않습니다."
+    },
+    {
+      "id": "agf-korea-dreams-booth-2026",
+      "sourceUrl": "https://hololivepro.com/news_en/20261102-01-275/",
+      "publishedOn": "2026-11-02",
+      "summary": "12/4~6 한국 일산 KINTEX AGF 공식 부스, 방문 특전·미니게임·실시간 탤런트 무대 예고. 미발표 출연자·세부 시간은 기재하지 않습니다."
+    }
+  ],
+  "updatedNotices": [
+    {
+      "preservedId": "kaien-spectacle-mv-2026",
+      "sourceUrl": "https://x.com/hololive_dreams/status/2117934885059047484",
+      "sourceCreatedAt": "2026-11-04T11:00:00Z",
+      "previousSourceUrl": "https://x.com/hololive_dreams/status/2115398172189044871",
+      "summary": "10/28 MV 공개 안내를 11/4 풀 버전 공개 안내로 갱신"
+    },
+    {
+      "preservedId": "november-premium-mission-pass-2026",
+      "sourceUrl": "https://x.com/hololive_dreams/status/2116726931869544798",
+      "sourceCreatedAt": "2026-11-01T03:00:02Z",
+      "previousSourceUrl": "https://x.com/hololive_dreams/status/2114552618420732002",
+      "summary": "예고에서 실제 판매 중 안내로 갱신. 11/30까지, 유료 프리미엄 보상 칸·최대 6600 다이아·마녀 모자. 정확한 종료 시각은 추정하지 않습니다."
+    },
+    {
+      "preservedId": "november-membership-titles-2026",
+      "sourceUrl": "https://x.com/hololive_dreams/status/2116817520845893768",
+      "sourceCreatedAt": "2026-11-01T09:00:00Z",
+      "previousSourceUrl": "https://x.com/hololive_dreams/status/2113087948531073395",
+      "summary": "예고에서 실제 칭호 추가 완료로 갱신. 가입·갱신 메달 교환, 자동 갱신 서비스 안내 유지."
+    }
+  ],
+  "limitations": [
+    "공식 계정의 전체 최신 타임라인을 완전히 열람하지 못했습니다. 확인한 게시물 범위를 기록하며, 이후 공지·픽업 예고의 부재를 확정하지 않습니다.",
+    "팬 사이트의 신규 픽업 숫자 확률과 육성 미션 종료 시각은 검증 가능한 공식 근거가 없어 채택하지 않았습니다.",
+    "기존 캐릭터 54명·과거 확률·공식 방송을 이번에 전체 재검증하지 않았습니다."
+  ],
+  "preservation": "기존 픽업 16개와 이벤트 9개, 공식 방송 3건, 캐릭터 54명, 과거 확률, 갱신 대상 외 기존 공지 8건은 보존합니다. 신규 픽업 2개·이벤트 1개·공지 6개를 추가하고 기존 공지 3개의 ID를 유지한 채 본문·출처를 갱신합니다. 사용자 저장 기록 구조는 변경하지 않습니다."
+}

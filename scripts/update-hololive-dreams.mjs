@@ -229,6 +229,21 @@ const heatedSummerDayPickupCards = [
 // locally saved pull histories. Dates below are in-game times, not store promos.
 const recentPickupCampaigns = [
   {
+    id: "warm-chill-time",
+    title: "포근한 칠 타임",
+    nativeTitle: "ぬくもりのチルタイム",
+    members: "리스·무나·이오피",
+    costumeLabel: "파자마",
+    participantTalentIds: ["ayunda-risu", "moona-hoshinova", "airani-iofifteen"],
+    startsAt: "2026-11-06T11:00:00+09:00",
+    endsAt: "2026-11-14T10:59:59+09:00",
+    announcedOn: "2026-11-06",
+    sourceUrl: "https://x.com/hololive_dreams/status/2118524397648859631",
+    scheduleSourceUrl: "https://www.gamer.ne.jp/news/202611050053/",
+    bannerImageUrl: "https://pbs.twimg.com/media/HWZ3DY0bcAAFMPm.jpg",
+    scheduleNote: "일반형·선택형 동시 개최와 대상 3명은 공식 X에서 확인했습니다. 기간은 QualiArts·COVER 발표문을 게재한 Gamer 기준 11/6 11:00~11/14 10:59(JST/KST)입니다. 신규 멤버를 획득하면 파자마 모티프의 파크 의상과 라이브 의상을 받을 수 있습니다.",
+  },
+  {
     id: "cosplay-night",
     title: "변화무쌍☆Cosplay Night",
     nativeTitle: "変幻自在☆Cosplay Night",
@@ -459,6 +474,21 @@ const pickups = [
 ];
 
 const events = [
+  {
+    id: "autumn-night-under-one-roof-2026",
+    title: "가을의 긴 밤, 한 지붕 아래",
+    nativeTitle: "秋の夜長に、ひとつ屋根の下",
+    subtitle: "리스·무나·이오피의 스코어 챌린지. 과제곡: Dramatic XViltration / メトロポリス (metropolis) / Multiverse / Lucu Juga. 과제곡 최고점의 합계로 순위를 겨루며 이벤트 Pt 랭킹은 없습니다. 라이브·미니게임에서 모은 배지는 이벤트 메모리·육성 소재로 교환합니다.",
+    startsAt: "2026-11-06T12:00:00+09:00",
+    endsAt: "2026-11-12T19:59:59+09:00",
+    sourceLabel: "hololive Dreams 공식 X 개최·기간 공지",
+    sourceUrl: "https://x.com/hololive_dreams/status/2118541334177014225",
+    scheduleSourceUrl: "https://www.gamer.ne.jp/news/202611050053/",
+    songsSourceUrl: "https://www.gamer.ne.jp/news/202611050053/",
+    imageUrl: "https://pbs.twimg.com/media/HWaDDuIa4AARLUT.jpg",
+    participantTalentIds: ["ayunda-risu", "moona-hoshinova", "airani-iofifteen"],
+    chapters: [],
+  },
   {
     id: "halloween-fever-2026",
     title: "우리들의 Halloween Fever!",
@@ -724,11 +754,11 @@ const officialBroadcasts = [
 ];
 
 const payload = {
-  checkedAt: "2026-10-30T15:17:00+09:00",
+  checkedAt: "2026-11-09T20:59:10+09:00",
   sourceUrl: "https://www.hololive-dreams.com/en",
   officialNewsUrl: "https://hololive.hololivepro.com/en/news/20260723-01-401/",
   sourceNote:
-    "10월 30일 공식 X와 QualiArts·COVER 발표문을 확인해 Cosplay Night 픽업 종료일, Halloween Fever 이벤트·과제곡, 할로윈 보상·가챠 및 최신 버전 공지를 갱신했습니다. 신규 픽업의 숫자 제공 비율은 확인하지 못해 미확인으로 유지합니다. 기존 이벤트·공식 방송·캐릭터와 과거 확률 자료는 보존했으며 이번에 전체 재검증하지 않았습니다.",
+    "11월 9일 확인 가능한 공식 X 공지와 QualiArts·COVER 발표문을 대조해 포근한 칠 타임 픽업, 가을의 긴 밤 이벤트·과제곡, 신규 곡·MV·육성 미션·11월 패스·멤버십 및 AGF·Anime Frontier 출전 공지를 갱신했습니다. 신규 픽업의 숫자 제공 비율과 무료 뽑기 조건은 확인하지 못해 추정하지 않습니다. 기존 이벤트·공식 방송·캐릭터와 과거 확률 자료는 보존했으며 이번에 전체 재검증하지 않았습니다.",
   launchDate: "2026-07-23",
   game: {
     title: "hololive Dreams",
@@ -831,6 +861,54 @@ const payload = {
   officialBroadcasts,
   notices: [
     {
+      id: "zeta-love-mission-2026-11-07",
+      title: "베스티아 제타 「LOVE MISSION♡」 추가",
+      body: "11월 7일 제타의 생일을 기념해 오리지널 곡 「LOVE MISSION♡」이 게임에 추가됐습니다. 리듬게임에서 플레이할 수 있습니다.",
+      publishedOn: "2026-11-07",
+      sourceLabel: "hololive Dreams 공식 X",
+      sourceUrl: "https://x.com/hololive_dreams/status/2118721810103722423",
+    },
+    {
+      id: "zeta-birthday-reward-2026-11-07",
+      title: "제타 생일 칭호·드링크 선물 안내",
+      body: "11월 7일 생일 기념 칭호와 라이브 부스트 드링크 3개가 선물로 안내됐습니다. 드링크 수령 기한은 11월 8일 23:59(KST/JST)였으며 현재 종료됐습니다.",
+      publishedOn: "2026-11-07",
+      sourceLabel: "hololive Dreams 공식 X",
+      sourceUrl: "https://x.com/hololive_dreams/status/2118720785393270926",
+    },
+    {
+      id: "kanade-greatest-mv-2026-11-05",
+      title: "오토노세 카나데 「GREATEST」 MV 추가",
+      body: "11월 5일 19:00(KST/JST)부터 「GREATEST」의 MV가 게임에 추가됐습니다. 리듬게임 라이브의 배경으로 MV를 설정할 수 있습니다.",
+      publishedOn: "2026-11-05",
+      sourceLabel: "hololive Dreams 공식 X",
+      sourceUrl: "https://x.com/hololive_dreams/status/2118297272132002088",
+    },
+    {
+      id: "training-support-missions-2026-11-05",
+      title: "육성 응원 미션 개최 안내",
+      body: "11월 5일 공식 공지에서 육성 응원 미션 개최를 안내했습니다. 미션을 달성하면 홀로도리 가챠 티켓·홀로리움 등을 받을 수 있습니다. 세부 미션과 종료 시각은 게임 내 공지를 확인해 주세요.",
+      publishedOn: "2026-11-05",
+      sourceLabel: "hololive Dreams 공식 X",
+      sourceUrl: "https://x.com/hololive_dreams/status/2118161376086818828",
+    },
+    {
+      id: "anime-frontier-dreams-booth-2026",
+      title: "12월 Anime Frontier: 홀로도리 현장 부스 예고",
+      body: "12월 4~6일(미국 현지 날짜) 텍사스 포트워스 컨벤션센터의 홀로라이브 부스에 홀로도리 코너가 마련될 예정입니다. 현장에서 모바일 앱을 설치하거나 이미 설치한 플레이어에게 게임 일러스트 실물 부채 54종 중 무작위 1종을 제공하는 캠페인을 안내했습니다. 자세한 참가 방법은 공식 후속 공지를 확인해 주세요.",
+      publishedOn: "2026-11-06",
+      sourceLabel: "hololive production 공식 발표",
+      sourceUrl: "https://hololivepro.com/news_en/20261106-01-277/",
+    },
+    {
+      id: "agf-korea-dreams-booth-2026",
+      title: "12월 4~6일 한국 AGF: 홀로도리 공식 부스 출전",
+      body: "일산 KINTEX에서 열리는 AGF 2026에 홀로도리 공식 부스가 출전할 예정입니다. 방문 특전, 게임 미니게임을 즐기는 무대, 홀로라이브 탤런트가 실시간으로 출연하는 무대 등을 예고했습니다. 출연자와 세부 운영 일정은 공식 후속 공지를 확인해 주세요.",
+      publishedOn: "2026-11-02",
+      sourceLabel: "hololive production 공식 발표",
+      sourceUrl: "https://hololivepro.com/news_en/20261102-01-275/",
+    },
+    {
       id: "version-1-2-101-2026-10-30",
       title: "Ver.1.2.101 업데이트: 경미한 버그 수정",
       body: "10월 30일 공식 공지에서 Ver.1.2.101 적용 완료를 안내했습니다. 경미한 버그가 수정됐으며, 세부 내용은 게임 내 공지를 확인해 주세요.",
@@ -896,27 +974,27 @@ const payload = {
     },
     {
       id: "kaien-spectacle-mv-2026",
-      title: "신곡 「怪宴スペクタクル」 MV 공개",
-      body: "10월 28일 20:00(KST/JST)에 MV가 공개됐습니다. 마츠리·제타·네리사·라덴·하지메가 부르는 신규 유닛곡으로, 10월 29일 시작하는 Halloween Fever 이벤트의 과제곡입니다. 공식 공지에서 MV 시청 링크를 확인할 수 있습니다.",
-      publishedOn: "2026-10-28",
+      title: "「怪宴スペクタクル」 풀 버전 공개",
+      body: "11월 4일 20:00(KST/JST)에 풀 버전 공개를 안내했습니다. 마츠리·제타·네리사·라덴·하지메가 부르는 Halloween Fever 이벤트 유닛곡이며, 공식 공지의 YouTube 링크에서 감상할 수 있습니다.",
+      publishedOn: "2026-11-04",
       sourceLabel: "hololive Dreams 공식 X",
-      sourceUrl: "https://x.com/hololive_dreams/status/2115398172189044871",
+      sourceUrl: "https://x.com/hololive_dreams/status/2117934885059047484",
     },
     {
       id: "november-premium-mission-pass-2026",
       title: "11월 프리미엄 미션 패스: 마녀 모자",
-      body: "11월 1일~30일 개최 예정입니다. 마녀 모자 액세서리는 홀로멤 54명 모두 착용할 수 있습니다. 정확한 시작·종료 시각과 획득 조건은 게임 내 공지를 확인해 주세요.",
-      publishedOn: "2026-10-26",
+      body: "11월 1일 공식 공지에서 판매 중임을 안내했으며 11월 30일까지 개최합니다. 프리미엄 패스를 구매하면 해당 월의 프리미엄 보상 칸이 열리고, 미션 진행으로 최대 6,600개 다이아와 마녀 모자 액세서리 등을 받을 수 있습니다. 세부 조건과 종료 시각은 게임 내 공지를 확인해 주세요.",
+      publishedOn: "2026-11-01",
       sourceLabel: "hololive Dreams 공식 X",
-      sourceUrl: "https://x.com/hololive_dreams/status/2114552618420732002",
+      sourceUrl: "https://x.com/hololive_dreams/status/2116726931869544798",
     },
     {
       id: "november-membership-titles-2026",
-      title: "11월 1일 멤버십 신규 칭호 추가 예고",
-      body: "모든 탤런트의 신규 칭호가 교환 특전으로 추가될 예정입니다. 가입·갱신으로 받는 멤버십 메달로 교환할 수 있으며, 멤버십은 매월 자동 갱신되는 서비스입니다. 추가 시각과 교환 조건은 게임 내 공지를 확인해 주세요.",
-      publishedOn: "2026-10-22",
+      title: "11월 멤버십 신규 칭호 추가 완료",
+      body: "11월 1일 모든 탤런트의 신규 칭호가 교환 특전으로 추가됐다고 공식 공지했습니다. 가입·갱신으로 받는 멤버십 메달로 교환할 수 있으며, 멤버십은 매월 자동 갱신되는 서비스입니다. 세부 교환 조건은 게임 내 공지를 확인해 주세요.",
+      publishedOn: "2026-11-01",
       sourceLabel: "hololive Dreams 공식 X",
-      sourceUrl: "https://x.com/hololive_dreams/status/2113087948531073395",
+      sourceUrl: "https://x.com/hololive_dreams/status/2116817520845893768",
     },
   ],
   pickups,

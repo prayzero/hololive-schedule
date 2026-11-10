@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T21:01:35.104Z",
+  "generatedAt": "2026-11-10T03:28:44.177Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -8563,6 +8563,21 @@
       "branch": "JP"
     },
     {
+      "id": "pAi_KNHsoDs",
+      "date": "2026-11-10",
+      "dateLabel": "11/10 (火)",
+      "time": "06:00",
+      "startsAt": "2026-11-10T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=pAi_KNHsoDs",
+      "videoId": "pAi_KNHsoDs",
+      "thumbnail": "https://img.youtube.com/vi/pAi_KNHsoDs/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "RJlBFR7ZnTc",
       "date": "2026-11-10",
       "dateLabel": "11/10 (火)",
@@ -8593,11 +8608,26 @@
       "branch": "JP"
     },
     {
-      "id": "FyNJO0aVBEc",
+      "id": "SkkgeNSZs_k",
       "date": "2026-11-10",
       "dateLabel": "11/10 (火)",
       "time": "12:00",
       "startsAt": "2026-11-10T12:00:00+09:00",
+      "name": "Ollie",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=SkkgeNSZs_k",
+      "videoId": "SkkgeNSZs_k",
+      "thumbnail": "https://img.youtube.com/vi/SkkgeNSZs_k/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "FyNJO0aVBEc",
+      "date": "2026-11-10",
+      "dateLabel": "11/10 (火)",
+      "time": "12:01",
+      "startsAt": "2026-11-10T12:01:00+09:00",
       "name": "輪堂千速",
       "title": null,
       "url": "https://www.youtube.com/watch?v=FyNJO0aVBEc",
@@ -8608,11 +8638,26 @@
       "branch": "JP"
     },
     {
+      "id": "hwRDqS5YND4",
+      "date": "2026-11-10",
+      "dateLabel": "11/10 (火)",
+      "time": "12:01",
+      "startsAt": "2026-11-10T12:01:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=hwRDqS5YND4",
+      "videoId": "hwRDqS5YND4",
+      "thumbnail": "https://img.youtube.com/vi/hwRDqS5YND4/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "vK_G9vi58ok",
       "date": "2026-11-10",
       "dateLabel": "11/10 (火)",
-      "time": "12:00",
-      "startsAt": "2026-11-10T12:00:00+09:00",
+      "time": "12:03",
+      "startsAt": "2026-11-10T12:03:00+09:00",
       "name": "百灯キョーコ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=vK_G9vi58ok",
@@ -8623,16 +8668,16 @@
       "branch": "JP"
     },
     {
-      "id": "hwRDqS5YND4",
+      "id": "9thpKuQctd8",
       "date": "2026-11-10",
       "dateLabel": "11/10 (火)",
-      "time": "12:00",
-      "startsAt": "2026-11-10T12:00:00+09:00",
-      "name": "Bijou",
+      "time": "12:20",
+      "startsAt": "2026-11-10T12:20:00+09:00",
+      "name": "水宮枢",
       "title": null,
-      "url": "https://www.youtube.com/watch?v=hwRDqS5YND4",
-      "videoId": "hwRDqS5YND4",
-      "thumbnail": "https://img.youtube.com/vi/hwRDqS5YND4/mqdefault.jpg",
+      "url": "https://www.youtube.com/watch?v=9thpKuQctd8",
+      "videoId": "9thpKuQctd8",
+      "thumbnail": "https://img.youtube.com/vi/9thpKuQctd8/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -8798,6 +8843,21 @@
       "url": "https://www.youtube.com/watch?v=oaZxyiBKnyA",
       "videoId": "oaZxyiBKnyA",
       "thumbnail": "https://img.youtube.com/vi/oaZxyiBKnyA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "4JM6zH5pTsw",
+      "date": "2026-11-11",
+      "dateLabel": "11/11 (水)",
+      "time": "07:00",
+      "startsAt": "2026-11-11T07:00:00+09:00",
+      "name": "Shiori",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=4JM6zH5pTsw",
+      "videoId": "4JM6zH5pTsw",
+      "thumbnail": "https://img.youtube.com/vi/4JM6zH5pTsw/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

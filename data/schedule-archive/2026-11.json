@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-13T04:26:52.347Z",
+  "generatedAt": "2026-11-13T06:50:50.722Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -11053,6 +11053,21 @@
       "branch": "JP"
     },
     {
+      "id": "1yEvpTM1GGk",
+      "date": "2026-11-13",
+      "dateLabel": "11/13 (金)",
+      "time": "18:00",
+      "startsAt": "2026-11-13T18:00:00+09:00",
+      "name": "雪花ラミィ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=1yEvpTM1GGk",
+      "videoId": "1yEvpTM1GGk",
+      "thumbnail": "https://img.youtube.com/vi/1yEvpTM1GGk/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "qL9LbE5oKj0",
       "date": "2026-11-13",
       "dateLabel": "11/13 (金)",
@@ -11168,6 +11183,36 @@
       "url": "https://www.youtube.com/watch?v=Vo9WRfC5jxc",
       "videoId": "Vo9WRfC5jxc",
       "thumbnail": "https://img.youtube.com/vi/Vo9WRfC5jxc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "f3aMm--VG3c",
+      "date": "2026-11-13",
+      "dateLabel": "11/13 (金)",
+      "time": "19:00",
+      "startsAt": "2026-11-13T19:00:00+09:00",
+      "name": "AZKi",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=f3aMm--VG3c",
+      "videoId": "f3aMm--VG3c",
+      "thumbnail": "https://img.youtube.com/vi/f3aMm--VG3c/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "AN-DOr-BUlc",
+      "date": "2026-11-13",
+      "dateLabel": "11/13 (金)",
+      "time": "20:00",
+      "startsAt": "2026-11-13T20:00:00+09:00",
+      "name": "獅白ぼたん",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=AN-DOr-BUlc",
+      "videoId": "AN-DOr-BUlc",
+      "thumbnail": "https://img.youtube.com/vi/AN-DOr-BUlc/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -11413,6 +11458,21 @@
       "branch": "JP"
     },
     {
+      "id": "GImIw_LzGx0",
+      "date": "2026-11-14",
+      "dateLabel": "11/14 (土)",
+      "time": "21:00",
+      "startsAt": "2026-11-14T21:00:00+09:00",
+      "name": "癒月ちょこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=GImIw_LzGx0",
+      "videoId": "GImIw_LzGx0",
+      "thumbnail": "https://img.youtube.com/vi/GImIw_LzGx0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "RFKeljZW5s0",
       "date": "2026-11-14",
       "dateLabel": "11/14 (土)",
@@ -11423,6 +11483,21 @@
       "url": "https://www.youtube.com/watch?v=RFKeljZW5s0",
       "videoId": "RFKeljZW5s0",
       "thumbnail": "https://img.youtube.com/vi/RFKeljZW5s0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "8QqmuUHhKcI",
+      "date": "2026-11-14",
+      "dateLabel": "11/14 (土)",
+      "time": "23:00",
+      "startsAt": "2026-11-14T23:00:00+09:00",
+      "name": "輪堂千速",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=8QqmuUHhKcI",
+      "videoId": "8QqmuUHhKcI",
+      "thumbnail": "https://img.youtube.com/vi/8QqmuUHhKcI/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

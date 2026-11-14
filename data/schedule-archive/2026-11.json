@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-14T19:18:30.450Z",
+  "generatedAt": "2026-11-14T23:10:10.080Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -12748,11 +12748,26 @@
       "branch": "JP"
     },
     {
+      "id": "LLQji4IMcfY",
+      "date": "2026-11-15",
+      "dateLabel": "11/15 (日)",
+      "time": "06:00",
+      "startsAt": "2026-11-15T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=LLQji4IMcfY",
+      "videoId": "LLQji4IMcfY",
+      "thumbnail": "https://img.youtube.com/vi/LLQji4IMcfY/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "A7md2snxL6w",
       "date": "2026-11-15",
       "dateLabel": "11/15 (日)",
-      "time": "07:00",
-      "startsAt": "2026-11-15T07:00:00+09:00",
+      "time": "06:57",
+      "startsAt": "2026-11-15T06:57:00+09:00",
       "name": "Shiori",
       "title": null,
       "url": "https://www.youtube.com/watch?v=A7md2snxL6w",
@@ -12983,6 +12998,21 @@
       "url": "https://www.youtube.com/watch?v=0Heo2FKeE9Q",
       "videoId": "0Heo2FKeE9Q",
       "thumbnail": "https://img.youtube.com/vi/0Heo2FKeE9Q/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "k-fiYPedgwA",
+      "date": "2026-11-15",
+      "dateLabel": "11/15 (日)",
+      "time": "19:00",
+      "startsAt": "2026-11-15T19:00:00+09:00",
+      "name": "水宮枢",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=k-fiYPedgwA",
+      "videoId": "k-fiYPedgwA",
+      "thumbnail": "https://img.youtube.com/vi/k-fiYPedgwA/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T17:16:28.988Z",
+  "generatedAt": "2026-11-15T21:54:06.947Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -13741,13 +13741,28 @@
       "id": "KnaMSt8ABUg",
       "date": "2026-11-16",
       "dateLabel": "11/16 (月)",
-      "time": "05:00",
-      "startsAt": "2026-11-16T05:00:00+09:00",
+      "time": "05:02",
+      "startsAt": "2026-11-16T05:02:00+09:00",
       "name": "Elizabeth",
       "title": null,
       "url": "https://www.youtube.com/watch?v=KnaMSt8ABUg",
       "videoId": "KnaMSt8ABUg",
       "thumbnail": "https://img.youtube.com/vi/KnaMSt8ABUg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "pr7fzBQOXp4",
+      "date": "2026-11-16",
+      "dateLabel": "11/16 (月)",
+      "time": "06:00",
+      "startsAt": "2026-11-16T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=pr7fzBQOXp4",
+      "videoId": "pr7fzBQOXp4",
+      "thumbnail": "https://img.youtube.com/vi/pr7fzBQOXp4/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -13783,6 +13798,21 @@
       "branch": "JP"
     },
     {
+      "id": "Mu1w6EsGVks",
+      "date": "2026-11-16",
+      "dateLabel": "11/16 (月)",
+      "time": "10:00",
+      "startsAt": "2026-11-16T10:00:00+09:00",
+      "name": "Anya",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Mu1w6EsGVks",
+      "videoId": "Mu1w6EsGVks",
+      "thumbnail": "https://img.youtube.com/vi/Mu1w6EsGVks/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "VqkiTQbWk0c",
       "date": "2026-11-16",
       "dateLabel": "11/16 (月)",
@@ -13793,6 +13823,21 @@
       "url": "https://www.youtube.com/watch?v=VqkiTQbWk0c",
       "videoId": "VqkiTQbWk0c",
       "thumbnail": "https://img.youtube.com/vi/VqkiTQbWk0c/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "CrIEIMzlt1s",
+      "date": "2026-11-16",
+      "dateLabel": "11/16 (月)",
+      "time": "12:00",
+      "startsAt": "2026-11-16T12:00:00+09:00",
+      "name": "Bijou",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=CrIEIMzlt1s",
+      "videoId": "CrIEIMzlt1s",
+      "thumbnail": "https://img.youtube.com/vi/CrIEIMzlt1s/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

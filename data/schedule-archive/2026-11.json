@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T01:56:37.353Z",
+  "generatedAt": "2026-11-16T06:36:59.077Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -13813,6 +13813,21 @@
       "branch": "JP"
     },
     {
+      "id": "T1g0vNaH7As",
+      "date": "2026-11-16",
+      "dateLabel": "11/16 (月)",
+      "time": "11:58",
+      "startsAt": "2026-11-16T11:58:00+09:00",
+      "name": "Kaela",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=T1g0vNaH7As",
+      "videoId": "T1g0vNaH7As",
+      "thumbnail": "https://img.youtube.com/vi/T1g0vNaH7As/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "VqkiTQbWk0c",
       "date": "2026-11-16",
       "dateLabel": "11/16 (月)",
@@ -13831,8 +13846,8 @@
       "id": "CrIEIMzlt1s",
       "date": "2026-11-16",
       "dateLabel": "11/16 (月)",
-      "time": "12:00",
-      "startsAt": "2026-11-16T12:00:00+09:00",
+      "time": "12:30",
+      "startsAt": "2026-11-16T12:30:00+09:00",
       "name": "Bijou",
       "title": null,
       "url": "https://www.youtube.com/watch?v=CrIEIMzlt1s",
@@ -13873,6 +13888,21 @@
       "branch": "JP"
     },
     {
+      "id": "yQnfpYZxZXA",
+      "date": "2026-11-16",
+      "dateLabel": "11/16 (月)",
+      "time": "20:00",
+      "startsAt": "2026-11-16T20:00:00+09:00",
+      "name": "白上フブキ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=yQnfpYZxZXA",
+      "videoId": "yQnfpYZxZXA",
+      "thumbnail": "https://img.youtube.com/vi/yQnfpYZxZXA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "sa_soQ5X4cE",
       "date": "2026-11-16",
       "dateLabel": "11/16 (月)",
@@ -13883,6 +13913,21 @@
       "url": "https://www.youtube.com/watch?v=sa_soQ5X4cE",
       "videoId": "sa_soQ5X4cE",
       "thumbnail": "https://img.youtube.com/vi/sa_soQ5X4cE/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Xw-VRQo2AvA",
+      "date": "2026-11-16",
+      "dateLabel": "11/16 (月)",
+      "time": "20:00",
+      "startsAt": "2026-11-16T20:00:00+09:00",
+      "name": "さくらみこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Xw-VRQo2AvA",
+      "videoId": "Xw-VRQo2AvA",
+      "thumbnail": "https://img.youtube.com/vi/Xw-VRQo2AvA/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -13948,6 +13993,21 @@
       "branch": "JP"
     },
     {
+      "id": "tkwzJvnIUm0",
+      "date": "2026-11-17",
+      "dateLabel": "11/17 (火)",
+      "time": "01:00",
+      "startsAt": "2026-11-17T01:00:00+09:00",
+      "name": "Cecilia",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=tkwzJvnIUm0",
+      "videoId": "tkwzJvnIUm0",
+      "thumbnail": "https://img.youtube.com/vi/tkwzJvnIUm0/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "K9RZln0MW80",
       "date": "2026-11-17",
       "dateLabel": "11/17 (火)",
@@ -13973,6 +14033,21 @@
       "url": "https://www.youtube.com/watch?v=GRh8oUOsuBo",
       "videoId": "GRh8oUOsuBo",
       "thumbnail": "https://img.youtube.com/vi/GRh8oUOsuBo/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "Kpe1dOPOntI",
+      "date": "2026-11-17",
+      "dateLabel": "11/17 (火)",
+      "time": "19:00",
+      "startsAt": "2026-11-17T19:00:00+09:00",
+      "name": "風真いろは",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=Kpe1dOPOntI",
+      "videoId": "Kpe1dOPOntI",
+      "thumbnail": "https://img.youtube.com/vi/Kpe1dOPOntI/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

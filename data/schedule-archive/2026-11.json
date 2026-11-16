@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-15T21:54:06.947Z",
+  "generatedAt": "2026-11-16T01:56:37.353Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -13771,8 +13771,8 @@
       "id": "2eDChrtlUiY",
       "date": "2026-11-16",
       "dateLabel": "11/16 (月)",
-      "time": "07:30",
-      "startsAt": "2026-11-16T07:30:00+09:00",
+      "time": "07:32",
+      "startsAt": "2026-11-16T07:32:00+09:00",
       "name": "大神ミオ",
       "title": null,
       "url": "https://www.youtube.com/watch?v=2eDChrtlUiY",
@@ -13786,8 +13786,8 @@
       "id": "KpRtAaOQ8YU",
       "date": "2026-11-16",
       "dateLabel": "11/16 (月)",
-      "time": "08:00",
-      "startsAt": "2026-11-16T08:00:00+09:00",
+      "time": "07:59",
+      "startsAt": "2026-11-16T07:59:00+09:00",
       "name": "風真いろは",
       "title": null,
       "url": "https://www.youtube.com/watch?v=KpRtAaOQ8YU",
@@ -13903,6 +13903,21 @@
       "branch": "JP"
     },
     {
+      "id": "x71pYWcTqqg",
+      "date": "2026-11-16",
+      "dateLabel": "11/16 (月)",
+      "time": "21:00",
+      "startsAt": "2026-11-16T21:00:00+09:00",
+      "name": "Calli",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=x71pYWcTqqg",
+      "videoId": "x71pYWcTqqg",
+      "thumbnail": "https://img.youtube.com/vi/x71pYWcTqqg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "-Hat1gYDP7U",
       "date": "2026-11-16",
       "dateLabel": "11/16 (月)",
@@ -13943,6 +13958,21 @@
       "url": "https://www.youtube.com/watch?v=K9RZln0MW80",
       "videoId": "K9RZln0MW80",
       "thumbnail": "https://img.youtube.com/vi/K9RZln0MW80/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "GRh8oUOsuBo",
+      "date": "2026-11-17",
+      "dateLabel": "11/17 (火)",
+      "time": "11:00",
+      "startsAt": "2026-11-17T11:00:00+09:00",
+      "name": "Shiori",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=GRh8oUOsuBo",
+      "videoId": "GRh8oUOsuBo",
+      "thumbnail": "https://img.youtube.com/vi/GRh8oUOsuBo/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

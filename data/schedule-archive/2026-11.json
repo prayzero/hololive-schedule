@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T07:02:59.898Z",
+  "generatedAt": "2026-11-20T07:22:38.473Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -17243,6 +17243,21 @@
       "url": "https://www.youtube.com/watch?v=_XgsO_az3MI",
       "videoId": "_XgsO_az3MI",
       "thumbnail": "https://img.youtube.com/vi/_XgsO_az3MI/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "NgWa_PPVwmw",
+      "date": "2026-11-21",
+      "dateLabel": "11/21 (土)",
+      "time": "13:00",
+      "startsAt": "2026-11-21T13:00:00+09:00",
+      "name": "FLOW GLOW",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=NgWa_PPVwmw",
+      "videoId": "NgWa_PPVwmw",
+      "thumbnail": "https://img.youtube.com/vi/NgWa_PPVwmw/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

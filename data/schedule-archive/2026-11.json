@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T07:45:39.308Z",
+  "generatedAt": "2026-11-23T08:09:01.079Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -19603,6 +19603,36 @@
       "branch": "JP"
     },
     {
+      "id": "KEL__E2twSg",
+      "date": "2026-11-23",
+      "dateLabel": "11/23 (月)",
+      "time": "17:00",
+      "startsAt": "2026-11-23T17:00:00+09:00",
+      "name": "癒月ちょこ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=KEL__E2twSg",
+      "videoId": "KEL__E2twSg",
+      "thumbnail": "https://img.youtube.com/vi/KEL__E2twSg/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "v7zzDu5G-mM",
+      "date": "2026-11-23",
+      "dateLabel": "11/23 (月)",
+      "time": "17:00",
+      "startsAt": "2026-11-23T17:00:00+09:00",
+      "name": "響咲リオナ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=v7zzDu5G-mM",
+      "videoId": "v7zzDu5G-mM",
+      "thumbnail": "https://img.youtube.com/vi/v7zzDu5G-mM/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "KM14kMDVaus",
       "date": "2026-11-23",
       "dateLabel": "11/23 (月)",
@@ -19703,6 +19733,21 @@
       "url": "https://www.youtube.com/watch?v=qREmVttAYn8",
       "videoId": "qREmVttAYn8",
       "thumbnail": "https://img.youtube.com/vi/qREmVttAYn8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "nXJRXJG7JeI",
+      "date": "2026-11-23",
+      "dateLabel": "11/23 (月)",
+      "time": "19:00",
+      "startsAt": "2026-11-23T19:00:00+09:00",
+      "name": "兎田ぺこら",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=nXJRXJG7JeI",
+      "videoId": "nXJRXJG7JeI",
+      "thumbnail": "https://img.youtube.com/vi/nXJRXJG7JeI/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"

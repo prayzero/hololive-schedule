@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-25T08:52:16.722Z",
+  "updatedAt": "2026-11-25T19:09:37.766Z",
   "timezone": "Asia/Tokyo",
-  "totalEntries": 7395,
+  "totalEntries": 7427,
   "dates": [
     {
       "date": "2026-07-25",
@@ -621,12 +621,17 @@
     {
       "date": "2026-11-25",
       "month": "2026-11",
-      "count": 38
+      "count": 58
     },
     {
       "date": "2026-11-26",
       "month": "2026-11",
-      "count": 4
+      "count": 15
+    },
+    {
+      "date": "2026-11-27",
+      "month": "2026-11",
+      "count": 1
     }
   ],
   "months": [
@@ -660,9 +665,9 @@
     },
     {
       "month": "2026-11",
-      "count": 1439,
+      "count": 1471,
       "firstDate": "2026-11-01",
-      "lastDate": "2026-11-26",
+      "lastDate": "2026-11-27",
       "url": "data/schedule-archive/2026-11.json"
     }
   ]

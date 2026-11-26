@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-25T19:09:37.766Z",
+  "generatedAt": "2026-11-26T02:17:38.193Z",
   "source": "https://schedule.hololive.tv/lives/hololive",
   "sources": [
     "https://schedule.hololive.tv/lives/hololive",
@@ -21868,6 +21868,36 @@
       "branch": "JP"
     },
     {
+      "id": "6NkQfxqmCRc",
+      "date": "2026-11-26",
+      "dateLabel": "11/26 (木)",
+      "time": "06:00",
+      "startsAt": "2026-11-26T06:00:00+09:00",
+      "name": "角巻わため",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=6NkQfxqmCRc",
+      "videoId": "6NkQfxqmCRc",
+      "thumbnail": "https://img.youtube.com/vi/6NkQfxqmCRc/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "rCM4qSWy1HA",
+      "date": "2026-11-26",
+      "dateLabel": "11/26 (木)",
+      "time": "09:37",
+      "startsAt": "2026-11-26T09:37:00+09:00",
+      "name": "Elizabeth",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=rCM4qSWy1HA",
+      "videoId": "rCM4qSWy1HA",
+      "thumbnail": "https://img.youtube.com/vi/rCM4qSWy1HA/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
       "id": "4-k63J7kn24",
       "date": "2026-11-26",
       "dateLabel": "11/26 (木)",
@@ -21938,6 +21968,21 @@
       "url": "https://www.youtube.com/watch?v=W9sQzf_gAB8",
       "videoId": "W9sQzf_gAB8",
       "thumbnail": "https://img.youtube.com/vi/W9sQzf_gAB8/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "acuH5faVKak",
+      "date": "2026-11-26",
+      "dateLabel": "11/26 (木)",
+      "time": "13:30",
+      "startsAt": "2026-11-26T13:30:00+09:00",
+      "name": "不知火フレア",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=acuH5faVKak",
+      "videoId": "acuH5faVKak",
+      "thumbnail": "https://img.youtube.com/vi/acuH5faVKak/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
@@ -22058,6 +22103,21 @@
       "url": "https://www.youtube.com/watch?v=E4cWCJ3-v3Y",
       "videoId": "E4cWCJ3-v3Y",
       "thumbnail": "https://img.youtube.com/vi/E4cWCJ3-v3Y/mqdefault.jpg",
+      "avatar": null,
+      "isLive": false,
+      "branch": "JP"
+    },
+    {
+      "id": "vkRqjfp0qWc",
+      "date": "2026-11-27",
+      "dateLabel": "11/27 (金)",
+      "time": "20:00",
+      "startsAt": "2026-11-27T20:00:00+09:00",
+      "name": "鷹嶺ルイ",
+      "title": null,
+      "url": "https://www.youtube.com/watch?v=vkRqjfp0qWc",
+      "videoId": "vkRqjfp0qWc",
+      "thumbnail": "https://img.youtube.com/vi/vkRqjfp0qWc/mqdefault.jpg",
       "avatar": null,
       "isLive": false,
       "branch": "JP"
